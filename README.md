@@ -1,4 +1,5 @@
-## 🔁 GitHub 협업 규칙
+
+## 🧾 Git 커밋 컨벤션 (Git Commit Convention)
 
 우리 팀은 GitHub를 이용해 코드 협업을 진행합니다.  일단이정도 방식으로 진행할거니깐 인지하고계세용 
 
