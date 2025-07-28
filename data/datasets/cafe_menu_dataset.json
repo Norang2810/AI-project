@@ -1,0 +1,931 @@
+{
+  "cafe_beverages": [
+    {
+      "id": 1,
+      "name": "아메리카노",
+      "english_name": "Americano",
+      "category": "coffee",
+      "ingredients": ["에스프레소", "물"],
+      "allergens": [],
+      "description": "에스프레소에 뜨거운 물을 섞어 만든 커피"
+    },
+    {
+      "id": 2,
+      "name": "카페라떼",
+      "english_name": "Cafe Latte",
+      "category": "coffee",
+      "ingredients": ["에스프레소", "우유", "우유 거품"],
+      "allergens": ["우유"],
+      "description": "에스프레소와 스팀 밀크를 섞어 만든 커피"
+    },
+    {
+      "id": 3,
+      "name": "카푸치노",
+      "english_name": "Cappuccino",
+      "category": "coffee",
+      "ingredients": ["에스프레소", "우유", "우유 거품"],
+      "allergens": ["우유"],
+      "description": "에스프레소, 스팀 밀크, 우유 거품이 1:1:1 비율의 커피"
+    },
+    {
+      "id": 4,
+      "name": "카페모카",
+      "english_name": "Cafe Mocha",
+      "category": "coffee",
+      "ingredients": ["에스프레소", "우유", "초콜릿 시럽", "우유 거품"],
+      "allergens": ["우유", "초콜릿"],
+      "description": "에스프레소에 초콜릿 시럽과 우유를 섞어 만든 커피"
+    },
+    {
+      "id": 5,
+      "name": "바닐라 라떼",
+      "english_name": "Vanilla Latte",
+      "category": "coffee",
+      "ingredients": ["에스프레소", "우유", "바닐라 시럽", "우유 거품"],
+      "allergens": ["우유"],
+      "description": "에스프레소에 바닐라 시럽과 우유를 섞어 만든 커피"
+    },
+    {
+      "id": 6,
+      "name": "카라멜 마끼아또",
+      "english_name": "Caramel Macchiato",
+      "category": "coffee",
+      "ingredients": ["에스프레소", "우유", "카라멜 시럽", "우유 거품"],
+      "allergens": ["우유"],
+      "description": "에스프레소에 카라멜 시럽과 우유를 섞어 만든 커피"
+    },
+    {
+      "id": 7,
+      "name": "헤이즐넛 라떼",
+      "english_name": "Hazelnut Latte",
+      "category": "coffee",
+      "ingredients": ["에스프레소", "우유", "헤이즐넛 시럽", "우유 거품"],
+      "allergens": ["우유", "헤이즐넛"],
+      "description": "에스프레소에 헤이즐넛 시럽과 우유를 섞어 만든 커피"
+    },
+    {
+      "id": 8,
+      "name": "에스프레소",
+      "english_name": "Espresso",
+      "category": "coffee",
+      "ingredients": ["커피 원두"],
+      "allergens": [],
+      "description": "고압으로 추출한 농축 커피"
+    },
+    {
+      "id": 9,
+      "name": "콜드브루",
+      "english_name": "Cold Brew",
+      "category": "coffee",
+      "ingredients": ["커피 원두", "물"],
+      "allergens": [],
+      "description": "차가운 물로 장시간 추출한 커피"
+    },
+    {
+      "id": 10,
+      "name": "아이스 아메리카노",
+      "english_name": "Iced Americano",
+      "category": "coffee",
+      "ingredients": ["에스프레소", "물", "얼음"],
+      "allergens": [],
+      "description": "에스프레소에 차가운 물과 얼음을 섞어 만든 커피"
+    },
+    {
+      "id": 11,
+      "name": "아이스 카페라떼",
+      "english_name": "Iced Cafe Latte",
+      "category": "coffee",
+      "ingredients": ["에스프레소", "우유", "얼음"],
+      "allergens": ["우유"],
+      "description": "에스프레소에 차가운 우유와 얼음을 섞어 만든 커피"
+    },
+    {
+      "id": 12,
+      "name": "녹차 라떼",
+      "english_name": "Green Tea Latte",
+      "category": "tea",
+      "ingredients": ["녹차 가루", "우유", "우유 거품"],
+      "allergens": ["우유"],
+      "description": "녹차 가루와 우유를 섞어 만든 음료"
+    },
+    {
+      "id": 13,
+      "name": "홍차 라떼",
+      "english_name": "Black Tea Latte",
+      "category": "tea",
+      "ingredients": ["홍차", "우유", "우유 거품"],
+      "allergens": ["우유"],
+      "description": "홍차와 우유를 섞어 만든 음료"
+    },
+    {
+      "id": 14,
+      "name": "캐모마일",
+      "english_name": "Chamomile",
+      "category": "tea",
+      "ingredients": ["캐모마일 꽃"],
+      "allergens": [],
+      "description": "캐모마일 꽃으로 만든 허브차"
+    },
+    {
+      "id": 15,
+      "name": "페퍼민트",
+      "english_name": "Peppermint",
+      "category": "tea",
+      "ingredients": ["페퍼민트 잎"],
+      "allergens": [],
+      "description": "페퍼민트 잎으로 만든 허브차"
+    },
+    {
+      "id": 16,
+      "name": "레몬 에이드",
+      "english_name": "Lemonade",
+      "category": "juice",
+      "ingredients": ["레몬", "설탕", "물"],
+      "allergens": [],
+      "description": "레몬과 설탕으로 만든 음료"
+    },
+    {
+      "id": 17,
+      "name": "오렌지 주스",
+      "english_name": "Orange Juice",
+      "category": "juice",
+      "ingredients": ["오렌지"],
+      "allergens": [],
+      "description": "오렌지로 만든 주스"
+    },
+    {
+      "id": 18,
+      "name": "사과 주스",
+      "english_name": "Apple Juice",
+      "category": "juice",
+      "ingredients": ["사과"],
+      "allergens": [],
+      "description": "사과로 만든 주스"
+    },
+    {
+      "id": 19,
+      "name": "딸기 스무디",
+      "english_name": "Strawberry Smoothie",
+      "category": "smoothie",
+      "ingredients": ["딸기", "우유", "요거트", "얼음"],
+      "allergens": ["우유"],
+      "description": "딸기와 우유, 요거트로 만든 스무디"
+    },
+    {
+      "id": 20,
+      "name": "망고 스무디",
+      "english_name": "Mango Smoothie",
+      "category": "smoothie",
+      "ingredients": ["망고", "우유", "요거트", "얼음"],
+      "allergens": ["우유"],
+      "description": "망고와 우유, 요거트로 만든 스무디"
+    },
+    {
+      "id": 21,
+      "name": "바닐라 밀크셰이크",
+      "english_name": "Vanilla Milkshake",
+      "category": "milkshake",
+      "ingredients": ["우유", "바닐라 아이스크림", "바닐라 시럽"],
+      "allergens": ["우유"],
+      "description": "우유와 바닐라 아이스크림으로 만든 밀크셰이크"
+    },
+    {
+      "id": 22,
+      "name": "초콜릿 밀크셰이크",
+      "english_name": "Chocolate Milkshake",
+      "category": "milkshake",
+      "ingredients": ["우유", "초콜릿 아이스크림", "초콜릿 시럽"],
+      "allergens": ["우유", "초콜릿"],
+      "description": "우유와 초콜릿 아이스크림으로 만든 밀크셰이크"
+    },
+    {
+      "id": 23,
+      "name": "딸기 밀크셰이크",
+      "english_name": "Strawberry Milkshake",
+      "category": "milkshake",
+      "ingredients": ["우유", "딸기 아이스크림", "딸기 시럽"],
+      "allergens": ["우유"],
+      "description": "우유와 딸기 아이스크림으로 만든 밀크셰이크"
+    },
+    {
+      "id": 24,
+      "name": "핫 초콜릿",
+      "english_name": "Hot Chocolate",
+      "category": "chocolate",
+      "ingredients": ["우유", "초콜릿 가루", "설탕"],
+      "allergens": ["우유", "초콜릿"],
+      "description": "우유와 초콜릿 가루로 만든 뜨거운 음료"
+    },
+    {
+      "id": 25,
+      "name": "아이스 초콜릿",
+      "english_name": "Iced Chocolate",
+      "category": "chocolate",
+      "ingredients": ["우유", "초콜릿 가루", "설탕", "얼음"],
+      "allergens": ["우유", "초콜릿"],
+      "description": "우유와 초콜릿 가루로 만든 차가운 음료"
+    },
+    {
+      "id": 26,
+      "name": "아몬드 라떼",
+      "english_name": "Almond Latte",
+      "category": "coffee",
+      "ingredients": ["에스프레소", "아몬드 우유", "아몬드 시럽"],
+      "allergens": ["아몬드"],
+      "description": "에스프레소와 아몬드 우유로 만든 라떼"
+    },
+    {
+      "id": 27,
+      "name": "오트 라떼",
+      "english_name": "Oat Latte",
+      "category": "coffee",
+      "ingredients": ["에스프레소", "오트밀 우유", "오트밀"],
+      "allergens": [],
+      "description": "에스프레소와 오트밀 우유로 만든 라떼"
+    },
+    {
+      "id": 28,
+      "name": "코코넛 라떼",
+      "english_name": "Coconut Latte",
+      "category": "coffee",
+      "ingredients": ["에스프레소", "코코넛 우유", "코코넛 시럽"],
+      "allergens": [],
+      "description": "에스프레소와 코코넛 우유로 만든 라떼"
+    },
+    {
+      "id": 29,
+      "name": "티라떼",
+      "english_name": "Tea Latte",
+      "category": "tea",
+      "ingredients": ["홍차", "우유", "우유 거품"],
+      "allergens": ["우유"],
+      "description": "홍차와 우유로 만든 라떼"
+    },
+    {
+      "id": 30,
+      "name": "얼그레이 라떼",
+      "english_name": "Earl Grey Latte",
+      "category": "tea",
+      "ingredients": ["얼그레이 홍차", "우유", "우유 거품"],
+      "allergens": ["우유"],
+      "description": "얼그레이 홍차와 우유로 만든 라떼"
+    },
+    {
+      "id": 31,
+      "name": "루이보스 라떼",
+      "english_name": "Rooibos Latte",
+      "category": "tea",
+      "ingredients": ["루이보스 차", "우유", "우유 거품"],
+      "allergens": ["우유"],
+      "description": "루이보스 차와 우유로 만든 라떼"
+    },
+    {
+      "id": 32,
+      "name": "캐모마일 라떼",
+      "english_name": "Chamomile Latte",
+      "category": "tea",
+      "ingredients": ["캐모마일 꽃", "우유", "우유 거품"],
+      "allergens": ["우유"],
+      "description": "캐모마일과 우유로 만든 라떼"
+    },
+    {
+      "id": 33,
+      "name": "페퍼민트 라떼",
+      "english_name": "Peppermint Latte",
+      "category": "tea",
+      "ingredients": ["페퍼민트 잎", "우유", "우유 거품"],
+      "allergens": ["우유"],
+      "description": "페퍼민트와 우유로 만든 라떼"
+    },
+    {
+      "id": 34,
+      "name": "레몬 그라스",
+      "english_name": "Lemongrass",
+      "category": "tea",
+      "ingredients": ["레몬그라스 잎"],
+      "allergens": [],
+      "description": "레몬그라스 잎으로 만든 허브차"
+    },
+    {
+      "id": 35,
+      "name": "진저 티",
+      "english_name": "Ginger Tea",
+      "category": "tea",
+      "ingredients": ["생강", "꿀"],
+      "allergens": [],
+      "description": "생강과 꿀로 만든 차"
+    },
+    {
+      "id": 36,
+      "name": "히비스커스",
+      "english_name": "Hibiscus",
+      "category": "tea",
+      "ingredients": ["히비스커스 꽃"],
+      "allergens": [],
+      "description": "히비스커스 꽃으로 만든 차"
+    },
+    {
+      "id": 37,
+      "name": "라벤더",
+      "english_name": "Lavender",
+      "category": "tea",
+      "ingredients": ["라벤더 꽃"],
+      "allergens": [],
+      "description": "라벤더 꽃으로 만든 허브차"
+    },
+    {
+      "id": 38,
+      "name": "로즈마리",
+      "english_name": "Rosemary",
+      "category": "tea",
+      "ingredients": ["로즈마리 잎"],
+      "allergens": [],
+      "description": "로즈마리 잎으로 만든 허브차"
+    },
+    {
+      "id": 39,
+      "name": "세이지",
+      "english_name": "Sage",
+      "category": "tea",
+      "ingredients": ["세이지 잎"],
+      "allergens": [],
+      "description": "세이지 잎으로 만든 허브차"
+    },
+    {
+      "id": 40,
+      "name": "타임",
+      "english_name": "Thyme",
+      "category": "tea",
+      "ingredients": ["타임 잎"],
+      "allergens": [],
+      "description": "타임 잎으로 만든 허브차"
+    },
+    {
+      "id": 41,
+      "name": "오렌지 에이드",
+      "english_name": "Orange Ade",
+      "category": "juice",
+      "ingredients": ["오렌지", "레몬", "설탕", "물"],
+      "allergens": [],
+      "description": "오렌지와 레몬으로 만든 에이드"
+    },
+    {
+      "id": 42,
+      "name": "라임 에이드",
+      "english_name": "Lime Ade",
+      "category": "juice",
+      "ingredients": ["라임", "설탕", "물"],
+      "allergens": [],
+      "description": "라임으로 만든 에이드"
+    },
+    {
+      "id": 43,
+      "name": "자몽 에이드",
+      "english_name": "Grapefruit Ade",
+      "category": "juice",
+      "ingredients": ["자몽", "설탕", "물"],
+      "allergens": [],
+      "description": "자몽으로 만든 에이드"
+    },
+    {
+      "id": 44,
+      "name": "포도 주스",
+      "english_name": "Grape Juice",
+      "category": "juice",
+      "ingredients": ["포도"],
+      "allergens": [],
+      "description": "포도로 만든 주스"
+    },
+    {
+      "id": 45,
+      "name": "파인애플 주스",
+      "english_name": "Pineapple Juice",
+      "category": "juice",
+      "ingredients": ["파인애플"],
+      "allergens": [],
+      "description": "파인애플로 만든 주스"
+    },
+    {
+      "id": 46,
+      "name": "망고 주스",
+      "english_name": "Mango Juice",
+      "category": "juice",
+      "ingredients": ["망고"],
+      "allergens": [],
+      "description": "망고로 만든 주스"
+    },
+    {
+      "id": 47,
+      "name": "키위 주스",
+      "english_name": "Kiwi Juice",
+      "category": "juice",
+      "ingredients": ["키위"],
+      "allergens": [],
+      "description": "키위로 만든 주스"
+    },
+    {
+      "id": 48,
+      "name": "복숭아 주스",
+      "english_name": "Peach Juice",
+      "category": "juice",
+      "ingredients": ["복숭아"],
+      "allergens": [],
+      "description": "복숭아로 만든 주스"
+    },
+    {
+      "id": 49,
+      "name": "배 주스",
+      "english_name": "Pear Juice",
+      "category": "juice",
+      "ingredients": ["배"],
+      "allergens": [],
+      "description": "배로 만든 주스"
+    },
+    {
+      "id": 50,
+      "name": "체리 주스",
+      "english_name": "Cherry Juice",
+      "category": "juice",
+      "ingredients": ["체리"],
+      "allergens": [],
+      "description": "체리로 만든 주스"
+    },
+    {
+      "id": 51,
+      "name": "블루베리 스무디",
+      "english_name": "Blueberry Smoothie",
+      "category": "smoothie",
+      "ingredients": ["블루베리", "우유", "요거트", "얼음"],
+      "allergens": ["우유"],
+      "description": "블루베리와 우유, 요거트로 만든 스무디"
+    },
+    {
+      "id": 52,
+      "name": "라즈베리 스무디",
+      "english_name": "Raspberry Smoothie",
+      "category": "smoothie",
+      "ingredients": ["라즈베리", "우유", "요거트", "얼음"],
+      "allergens": ["우유"],
+      "description": "라즈베리와 우유, 요거트로 만든 스무디"
+    },
+    {
+      "id": 53,
+      "name": "블랙베리 스무디",
+      "english_name": "Blackberry Smoothie",
+      "category": "smoothie",
+      "ingredients": ["블랙베리", "우유", "요거트", "얼음"],
+      "allergens": ["우유"],
+      "description": "블랙베리와 우유, 요거트로 만든 스무디"
+    },
+    {
+      "id": 54,
+      "name": "복숭아 스무디",
+      "english_name": "Peach Smoothie",
+      "category": "smoothie",
+      "ingredients": ["복숭아", "우유", "요거트", "얼음"],
+      "allergens": ["우유"],
+      "description": "복숭아와 우유, 요거트로 만든 스무디"
+    },
+    {
+      "id": 55,
+      "name": "바나나 스무디",
+      "english_name": "Banana Smoothie",
+      "category": "smoothie",
+      "ingredients": ["바나나", "우유", "요거트", "얼음"],
+      "allergens": ["우유"],
+      "description": "바나나와 우유, 요거트로 만든 스무디"
+    },
+    {
+      "id": 56,
+      "name": "키위 스무디",
+      "english_name": "Kiwi Smoothie",
+      "category": "smoothie",
+      "ingredients": ["키위", "우유", "요거트", "얼음"],
+      "allergens": ["우유"],
+      "description": "키위와 우유, 요거트로 만든 스무디"
+    },
+    {
+      "id": 57,
+      "name": "파인애플 스무디",
+      "english_name": "Pineapple Smoothie",
+      "category": "smoothie",
+      "ingredients": ["파인애플", "우유", "요거트", "얼음"],
+      "allergens": ["우유"],
+      "description": "파인애플과 우유, 요거트로 만든 스무디"
+    },
+    {
+      "id": 58,
+      "name": "오렌지 스무디",
+      "english_name": "Orange Smoothie",
+      "category": "smoothie",
+      "ingredients": ["오렌지", "우유", "요거트", "얼음"],
+      "allergens": ["우유"],
+      "description": "오렌지와 우유, 요거트로 만든 스무디"
+    },
+    {
+      "id": 59,
+      "name": "레몬 스무디",
+      "english_name": "Lemon Smoothie",
+      "category": "smoothie",
+      "ingredients": ["레몬", "우유", "요거트", "얼음"],
+      "allergens": ["우유"],
+      "description": "레몬과 우유, 요거트로 만든 스무디"
+    },
+    {
+      "id": 60,
+      "name": "라임 스무디",
+      "english_name": "Lime Smoothie",
+      "category": "smoothie",
+      "ingredients": ["라임", "우유", "요거트", "얼음"],
+      "allergens": ["우유"],
+      "description": "라임과 우유, 요거트로 만든 스무디"
+    },
+    {
+      "id": 61,
+      "name": "딸기 밀크셰이크",
+      "english_name": "Strawberry Milkshake",
+      "category": "milkshake",
+      "ingredients": ["우유", "딸기 아이스크림", "딸기 시럽"],
+      "allergens": ["우유"],
+      "description": "우유와 딸기 아이스크림으로 만든 밀크셰이크"
+    },
+    {
+      "id": 62,
+      "name": "바닐라 밀크셰이크",
+      "english_name": "Vanilla Milkshake",
+      "category": "milkshake",
+      "ingredients": ["우유", "바닐라 아이스크림", "바닐라 시럽"],
+      "allergens": ["우유"],
+      "description": "우유와 바닐라 아이스크림으로 만든 밀크셰이크"
+    },
+    {
+      "id": 63,
+      "name": "초콜릿 밀크셰이크",
+      "english_name": "Chocolate Milkshake",
+      "category": "milkshake",
+      "ingredients": ["우유", "초콜릿 아이스크림", "초콜릿 시럽"],
+      "allergens": ["우유", "초콜릿"],
+      "description": "우유와 초콜릿 아이스크림으로 만든 밀크셰이크"
+    },
+    {
+      "id": 64,
+      "name": "카라멜 밀크셰이크",
+      "english_name": "Caramel Milkshake",
+      "category": "milkshake",
+      "ingredients": ["우유", "카라멜 아이스크림", "카라멜 시럽"],
+      "allergens": ["우유"],
+      "description": "우유와 카라멜 아이스크림으로 만든 밀크셰이크"
+    },
+    {
+      "id": 65,
+      "name": "커피 밀크셰이크",
+      "english_name": "Coffee Milkshake",
+      "category": "milkshake",
+      "ingredients": ["우유", "커피 아이스크림", "커피 시럽"],
+      "allergens": ["우유"],
+      "description": "우유와 커피 아이스크림으로 만든 밀크셰이크"
+    },
+    {
+      "id": 66,
+      "name": "민트 초콜릿 밀크셰이크",
+      "english_name": "Mint Chocolate Milkshake",
+      "category": "milkshake",
+      "ingredients": ["우유", "민트 아이스크림", "초콜릿 시럽"],
+      "allergens": ["우유", "초콜릿"],
+      "description": "우유와 민트 아이스크림으로 만든 밀크셰이크"
+    },
+    {
+      "id": 67,
+      "name": "쿠키 앤 크림 밀크셰이크",
+      "english_name": "Cookies and Cream Milkshake",
+      "category": "milkshake",
+      "ingredients": ["우유", "쿠키 앤 크림 아이스크림", "쿠키"],
+      "allergens": ["우유", "밀"],
+      "description": "우유와 쿠키 앤 크림 아이스크림으로 만든 밀크셰이크"
+    },
+    {
+      "id": 68,
+      "name": "바닐라 초콜릿 밀크셰이크",
+      "english_name": "Vanilla Chocolate Milkshake",
+      "category": "milkshake",
+      "ingredients": ["우유", "바닐라 아이스크림", "초콜릿 시럽"],
+      "allergens": ["우유", "초콜릿"],
+      "description": "우유와 바닐라 아이스크림으로 만든 밀크셰이크"
+    },
+    {
+      "id": 69,
+      "name": "딸기 바닐라 밀크셰이크",
+      "english_name": "Strawberry Vanilla Milkshake",
+      "category": "milkshake",
+      "ingredients": ["우유", "딸기 아이스크림", "바닐라 시럽"],
+      "allergens": ["우유"],
+      "description": "우유와 딸기 아이스크림으로 만든 밀크셰이크"
+    },
+    {
+      "id": 70,
+      "name": "더블 초콜릿 밀크셰이크",
+      "english_name": "Double Chocolate Milkshake",
+      "category": "milkshake",
+      "ingredients": ["우유", "초콜릿 아이스크림", "초콜릿 시럽", "초콜릿 가루"],
+      "allergens": ["우유", "초콜릿"],
+      "description": "우유와 초콜릿 아이스크림으로 만든 밀크셰이크"
+    },
+    {
+      "id": 71,
+      "name": "핫 초콜릿",
+      "english_name": "Hot Chocolate",
+      "category": "chocolate",
+      "ingredients": ["우유", "초콜릿 가루", "설탕"],
+      "allergens": ["우유", "초콜릿"],
+      "description": "우유와 초콜릿 가루로 만든 뜨거운 음료"
+    },
+    {
+      "id": 72,
+      "name": "아이스 초콜릿",
+      "english_name": "Iced Chocolate",
+      "category": "chocolate",
+      "ingredients": ["우유", "초콜릿 가루", "설탕", "얼음"],
+      "allergens": ["우유", "초콜릿"],
+      "description": "우유와 초콜릿 가루로 만든 차가운 음료"
+    },
+    {
+      "id": 73,
+      "name": "화이트 초콜릿",
+      "english_name": "White Chocolate",
+      "category": "chocolate",
+      "ingredients": ["우유", "화이트 초콜릿 가루", "설탕"],
+      "allergens": ["우유", "초콜릿"],
+      "description": "우유와 화이트 초콜릿 가루로 만든 음료"
+    },
+    {
+      "id": 74,
+      "name": "다크 초콜릿",
+      "english_name": "Dark Chocolate",
+      "category": "chocolate",
+      "ingredients": ["우유", "다크 초콜릿 가루", "설탕"],
+      "allergens": ["우유", "초콜릿"],
+      "description": "우유와 다크 초콜릿 가루로 만든 음료"
+    },
+    {
+      "id": 75,
+      "name": "민트 초콜릿",
+      "english_name": "Mint Chocolate",
+      "category": "chocolate",
+      "ingredients": ["우유", "초콜릿 가루", "민트 시럽", "설탕"],
+      "allergens": ["우유", "초콜릿"],
+      "description": "우유와 초콜릿 가루, 민트 시럽으로 만든 음료"
+    },
+    {
+      "id": 76,
+      "name": "오렌지 초콜릿",
+      "english_name": "Orange Chocolate",
+      "category": "chocolate",
+      "ingredients": ["우유", "초콜릿 가루", "오렌지 시럽", "설탕"],
+      "allergens": ["우유", "초콜릿"],
+      "description": "우유와 초콜릿 가루, 오렌지 시럽으로 만든 음료"
+    },
+    {
+      "id": 77,
+      "name": "헤이즐넛 초콜릿",
+      "english_name": "Hazelnut Chocolate",
+      "category": "chocolate",
+      "ingredients": ["우유", "초콜릿 가루", "헤이즐넛 시럽", "설탕"],
+      "allergens": ["우유", "초콜릿", "헤이즐넛"],
+      "description": "우유와 초콜릿 가루, 헤이즐넛 시럽으로 만든 음료"
+    },
+    {
+      "id": 78,
+      "name": "바닐라 초콜릿",
+      "english_name": "Vanilla Chocolate",
+      "category": "chocolate",
+      "ingredients": ["우유", "초콜릿 가루", "바닐라 시럽", "설탕"],
+      "allergens": ["우유", "초콜릿"],
+      "description": "우유와 초콜릿 가루, 바닐라 시럽으로 만든 음료"
+    },
+    {
+      "id": 79,
+      "name": "카라멜 초콜릿",
+      "english_name": "Caramel Chocolate",
+      "category": "chocolate",
+      "ingredients": ["우유", "초콜릿 가루", "카라멜 시럽", "설탕"],
+      "allergens": ["우유", "초콜릿"],
+      "description": "우유와 초콜릿 가루, 카라멜 시럽으로 만든 음료"
+    },
+    {
+      "id": 80,
+      "name": "라즈베리 초콜릿",
+      "english_name": "Raspberry Chocolate",
+      "category": "chocolate",
+      "ingredients": ["우유", "초콜릿 가루", "라즈베리 시럽", "설탕"],
+      "allergens": ["우유", "초콜릿"],
+      "description": "우유와 초콜릿 가루, 라즈베리 시럽으로 만든 음료"
+    },
+    {
+      "id": 81,
+      "name": "스페인 라떼",
+      "english_name": "Spanish Latte",
+      "category": "coffee",
+      "ingredients": ["에스프레소", "우유", "연유", "우유 거품"],
+      "allergens": ["우유"],
+      "description": "에스프레소와 우유, 연유로 만든 라떼"
+    },
+    {
+      "id": 82,
+      "name": "비엔나 커피",
+      "english_name": "Vienna Coffee",
+      "category": "coffee",
+      "ingredients": ["에스프레소", "우유", "크림"],
+      "allergens": ["우유"],
+      "description": "에스프레소와 우유, 크림으로 만든 커피"
+    },
+    {
+      "id": 83,
+      "name": "아이리시 커피",
+      "english_name": "Irish Coffee",
+      "category": "coffee",
+      "ingredients": ["에스프레소", "위스키", "크림"],
+      "allergens": ["우유"],
+      "description": "에스프레소와 위스키, 크림으로 만든 커피"
+    },
+    {
+      "id": 84,
+      "name": "터키 커피",
+      "english_name": "Turkish Coffee",
+      "category": "coffee",
+      "ingredients": ["커피 가루", "물", "설탕"],
+      "allergens": [],
+      "description": "커피 가루를 물에 끓여 만든 커피"
+    },
+    {
+      "id": 85,
+      "name": "그릭 커피",
+      "english_name": "Greek Coffee",
+      "category": "coffee",
+      "ingredients": ["커피 가루", "물", "설탕"],
+      "allergens": [],
+      "description": "커피 가루를 물에 끓여 만든 커피"
+    },
+    {
+      "id": 86,
+      "name": "베트남 커피",
+      "english_name": "Vietnamese Coffee",
+      "category": "coffee",
+      "ingredients": ["커피", "연유", "얼음"],
+      "allergens": ["우유"],
+      "description": "커피와 연유로 만든 베트남식 커피"
+    },
+    {
+      "id": 87,
+      "name": "태국 커피",
+      "english_name": "Thai Coffee",
+      "category": "coffee",
+      "ingredients": ["커피", "연유", "얼음"],
+      "allergens": ["우유"],
+      "description": "커피와 연유로 만든 태국식 커피"
+    },
+    {
+      "id": 88,
+      "name": "인도 커피",
+      "english_name": "Indian Coffee",
+      "category": "coffee",
+      "ingredients": ["커피", "우유", "설탕"],
+      "allergens": ["우유"],
+      "description": "커피와 우유로 만든 인도식 커피"
+    },
+    {
+      "id": 89,
+      "name": "이탈리아 커피",
+      "english_name": "Italian Coffee",
+      "category": "coffee",
+      "ingredients": ["에스프레소"],
+      "allergens": [],
+      "description": "이탈리아식 에스프레소"
+    },
+    {
+      "id": 90,
+      "name": "프랑스 커피",
+      "english_name": "French Coffee",
+      "category": "coffee",
+      "ingredients": ["커피", "우유"],
+      "allergens": ["우유"],
+      "description": "프랑스식 커피"
+    },
+    {
+      "id": 91,
+      "name": "독일 커피",
+      "english_name": "German Coffee",
+      "category": "coffee",
+      "ingredients": ["커피", "우유"],
+      "allergens": ["우유"],
+      "description": "독일식 커피"
+    },
+    {
+      "id": 92,
+      "name": "스위스 커피",
+      "english_name": "Swiss Coffee",
+      "category": "coffee",
+      "ingredients": ["커피", "우유"],
+      "allergens": ["우유"],
+      "description": "스위스식 커피"
+    },
+    {
+      "id": 93,
+      "name": "오스트리아 커피",
+      "english_name": "Austrian Coffee",
+      "category": "coffee",
+      "ingredients": ["커피", "우유", "크림"],
+      "allergens": ["우유"],
+      "description": "오스트리아식 커피"
+    },
+    {
+      "id": 94,
+      "name": "헝가리 커피",
+      "english_name": "Hungarian Coffee",
+      "category": "coffee",
+      "ingredients": ["커피", "우유"],
+      "allergens": ["우유"],
+      "description": "헝가리식 커피"
+    },
+    {
+      "id": 95,
+      "name": "폴란드 커피",
+      "english_name": "Polish Coffee",
+      "category": "coffee",
+      "ingredients": ["커피", "우유"],
+      "allergens": ["우유"],
+      "description": "폴란드식 커피"
+    },
+    {
+      "id": 96,
+      "name": "체코 커피",
+      "english_name": "Czech Coffee",
+      "category": "coffee",
+      "ingredients": ["커피", "우유"],
+      "allergens": ["우유"],
+      "description": "체코식 커피"
+    },
+    {
+      "id": 97,
+      "name": "슬로바키아 커피",
+      "english_name": "Slovak Coffee",
+      "category": "coffee",
+      "ingredients": ["커피", "우유"],
+      "allergens": ["우유"],
+      "description": "슬로바키아식 커피"
+    },
+    {
+      "id": 98,
+      "name": "슬로베니아 커피",
+      "english_name": "Slovenian Coffee",
+      "category": "coffee",
+      "ingredients": ["커피", "우유"],
+      "allergens": ["우유"],
+      "description": "슬로베니아식 커피"
+    },
+    {
+      "id": 99,
+      "name": "크로아티아 커피",
+      "english_name": "Croatian Coffee",
+      "category": "coffee",
+      "ingredients": ["커피", "우유"],
+      "allergens": ["우유"],
+      "description": "크로아티아식 커피"
+    },
+    {
+      "id": 100,
+      "name": "세르비아 커피",
+      "english_name": "Serbian Coffee",
+      "category": "coffee",
+      "ingredients": ["커피", "우유"],
+      "allergens": ["우유"],
+      "description": "세르비아식 커피"
+    }
+  ],
+  "allergen_categories": {
+    "우유": {
+      "severity": "high",
+      "description": "유제품 알레르기",
+      "common_ingredients": ["우유", "크림", "버터", "치즈", "요거트", "연유"]
+    },
+    "초콜릿": {
+      "severity": "medium",
+      "description": "초콜릿 알레르기",
+      "common_ingredients": ["초콜릿", "코코아", "카카오", "다크 초콜릿", "화이트 초콜릿"]
+    },
+    "헤이즐넛": {
+      "severity": "high",
+      "description": "견과류 알레르기",
+      "common_ingredients": ["헤이즐넛", "아몬드", "땅콩", "호두"]
+    },
+    "아몬드": {
+      "severity": "high",
+      "description": "견과류 알레르기",
+      "common_ingredients": ["아몬드", "아몬드 우유", "아몬드 시럽"]
+    },
+    "밀": {
+      "severity": "high",
+      "description": "글루텐 알레르기",
+      "common_ingredients": ["밀", "밀가루", "쿠키", "빵"]
+    }
+  }
+} 

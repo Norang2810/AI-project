@@ -1,0 +1,85 @@
+version: '3.8'
+
+services:
+  # Frontend Service
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: ../docker/Dockerfile.frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:3001
+      - REACT_APP_AI_SERVER_URL=http://localhost:8000
+    depends_on:
+      - backend
+    volumes:
+      - ../frontend:/app
+      - /app/node_modules
+
+  # Backend Service
+  backend:
+    build:
+      context: ../backend
+      dockerfile: ../docker/Dockerfile.backend
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=development
+      - PORT=3001
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_NAME=myweb
+      - DB_USER=root
+      - DB_PASSWORD=password
+      - JWT_SECRET=your_jwt_secret_key_here
+      - CORS_ORIGIN=http://localhost:3000
+    depends_on:
+      - mysql
+    volumes:
+      - ../backend:/app
+      - /app/node_modules
+      - ../backend/uploads:/app/uploads
+
+  # AI Server Service
+  ai-server:
+    build:
+      context: ../ai-server
+      dockerfile: ../docker/Dockerfile.ai
+    ports:
+      - "8000:8000"
+    environment:
+      # Google Translate는 API 키가 불필요합니다
+      - DEBUG=True
+    volumes:
+      - ../ai-server:/app
+      - ../data:/app/data
+
+  # MySQL Database
+  mysql:
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=myweb
+      - MYSQL_USER=myweb_user
+      - MYSQL_PASSWORD=myweb_password
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  # Nginx Reverse Proxy
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - frontend
+      - backend
+      - ai-server
+
+volumes:
+  mysql_data: 
