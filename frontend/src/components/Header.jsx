@@ -107,7 +107,7 @@ const Header = () => {
     <HeaderContainer>
       <Nav>
         <Logo>
-          🍽️ <span>알레르기 안전</span>
+          🍽️ <span>알쥬알쥬</span>
         </Logo>
         
         <NavMenu>
