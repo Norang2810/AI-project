@@ -1,0 +1,306 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_VD_016612",
+    "src_path": "\\OCR\\KE\\VD",
+    "label_path": "\\OCR\\KE\\VD",
+    "language_type": "KE",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KE_V6_016612.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "further",
+      "polygon_points": [[1290.000,567.000],[1430.000,567.000],[1430.000,612.000],[1290.000,612.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "arrest",
+      "polygon_points": [[785.000,572.000],[910.000,572.000],[910.000,612.000],[785.000,612.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "division",
+      "polygon_points": [[1207.000,622.000],[1370.000,622.000],[1370.000,672.000],[1207.000,672.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "and",
+      "polygon_points": [[1115.000,627.000],[1200.000,627.000],[1200.000,670.000],[1115.000,670.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "due",
+      "polygon_points": [[348.892,625.513],[439.953,625.513],[440.000,667.000],[350.000,667.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "assessment",
+      "polygon_points": [[870.000,630.000],[1111.005,629.207],[1111.005,670.598],[870.000,670.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "The",
+      "polygon_points": [[305.462,565.400],[385.698,564.763],[385.061,613.796],[305.462,612.523]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "police",
+      "polygon_points": [[392.066,562.853],[518.788,562.216],[518.788,621.438],[393.340,623.348]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "were",
+      "polygon_points": [[524.519,573.042],[631.500,573.042],[631.500,616.343],[525.793,613.796]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "able",
+      "polygon_points": [[638.505,565.400],[729.566,565.400],[730.840,616.343],[641.689,615.070]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "to",
+      "polygon_points": [[739.500,572.023],[781.528,572.660],[780.892,612.141],[737.590,610.230]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "the",
+      "polygon_points": [[919.330,565.400],[988.104,565.400],[986.830,613.796],[919.330,611.249]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "scene",
+      "polygon_points": [[997.019,576.862],[1118.010,575.589],[1118.010,613.796],[998.293,613.796]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "without",
+      "polygon_points": [[1126.288,565.400],[1283.576,565.400],[1284.212,611.249],[1126.925,612.523]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "damage",
+      "polygon_points": [[1439.972,565.400],[1609.995,566.674],[1611.269,622.711],[1442.519,619.527]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "to",
+      "polygon_points": [[487.076,628.060],[486.439,670.089],[444.410,668.178],[444.410,626.787]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "the",
+      "polygon_points": [[567.311,624.876],[567.948,673.910],[499.175,671.362],[498.538,624.240]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "rapid",
+      "polygon_points": [[577.500,624.240],[684.481,622.966],[684.481,683.461],[577.500,680.914]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "situation",
+      "polygon_points": [[694.288,626.023],[866.222,626.023],[864.948,670.598],[693.651,670.598]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "of",
+      "polygon_points": [[1377.184,623.476],[1423.670,622.202],[1423.033,670.598],[1377.184,669.325]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "duties",
+      "polygon_points": [[1429.401,626.023],[1552.939,626.660],[1552.939,671.872],[1431.311,670.598]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "경찰의",
+      "polygon_points": [[112.769,737.589],[289.160,736.315],[289.797,801.268],[113.406,799.358]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "신속한",
+      "polygon_points": [[299.349,735.042],[472.557,734.405],[473.193,801.268],[299.349,802.542]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "상황",
+      "polygon_points": [[480.453,735.296],[597.623,735.933],[596.986,804.070],[480.453,801.523]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 32,
+      "text": "판단과",
+      "polygon_points": [[604.627,736.570],[777.198,735.933],[777.198,805.343],[604.627,804.070]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 33,
+      "text": "임무",
+      "polygon_points": [[784.458,735.678],[900.991,735.678],[899.717,806.362],[781.910,803.815]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 34,
+      "text": "분담으로",
+      "polygon_points": [[1135.967,735.042],[1137.877,803.815],[907.995,805.089],[905.448,735.042]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 35,
+      "text": "추가",
+      "polygon_points": [[113.406,845.843],[235.670,844.570],[236.943,913.343],[115.953,913.343]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 36,
+      "text": "피해",
+      "polygon_points": [[357.934,845.843],[359.208,915.891],[241.401,915.891],[240.764,849.664]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 37,
+      "text": "없이",
+      "polygon_points": [[485.293,847.117],[485.293,913.980],[368.123,914.617],[366.212,848.391]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 38,
+      "text": "현장",
+      "polygon_points": [[608.830,846.098],[607.557,914.235],[492.934,912.325],[493.571,844.825]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 39,
+      "text": "검거할",
+      "polygon_points": [[790.316,846.098],[791.590,914.872],[615.835,914.872],[615.835,846.098]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 40,
+      "text": "수",
+      "polygon_points": [[853.995,848.645],[855.269,916.782],[796.047,914.872],[796.684,848.645]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 41,
+      "text": "있었습니다",
+      "polygon_points": [[1149.467,847.372],[1148.830,914.872],[861.000,914.872],[861.637,847.372]]
+    }
+  ]
+}

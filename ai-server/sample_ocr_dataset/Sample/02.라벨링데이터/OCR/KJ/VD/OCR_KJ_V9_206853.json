@@ -1,0 +1,114 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206853",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206853.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "少し",
+      "polygon_points": [[645.222,865.497],[551.872,860.959],[552.521,807.802],[641.332,805.857]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "取引量と",
+      "polygon_points": [[850.256,862.584],[654.563,861.449],[654.563,808.130],[846.853,808.697]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "価格が",
+      "polygon_points": [[1001.139,861.449],[856.496,860.882],[853.660,807.563],[1006.811,810.966]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "回復する",
+      "polygon_points": [[1203.071,859.180],[1007.945,859.748],[1010.782,808.697],[1199.668,812.101]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "様子で",
+      "polygon_points": [[1360.193,861.449],[1209.878,859.748],[1212.147,806.995],[1363.029,810.399]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "조금",
+      "polygon_points": [[742.483,967.184],[637.546,968.886],[631.874,902.520],[743.050,905.923]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "거래량과",
+      "polygon_points": [[967.672,965.482],[755.529,964.915],[746.454,904.789],[969.374,906.491]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "가격이",
+      "polygon_points": [[1132.735,968.886],[974.479,965.482],[973.912,903.654],[1130.466,905.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "회복되는",
+      "polygon_points": [[1344.311,966.617],[1138.975,963.781],[1140.109,905.356],[1346.013,906.491]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "모습으로",
+      "polygon_points": [[1558.723,964.348],[1356.223,963.213],[1353.954,903.087],[1557.588,907.058]]
+    }
+  ]
+}

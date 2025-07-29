@@ -1,0 +1,66 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_PB_010526",
+    "src_path": "\\OCR\\KE\\PB",
+    "label_path": "\\OCR\\KE\\PB",
+    "language_type": "KE",
+    "group": "PB",
+    "small_group": 5
+  },
+  "Images": {
+    "file_name": "OCR_KE_P5_010526.jpeg",
+    "created_day": "2023.08.27.",
+    "extension": "jpeg",
+    "width": 3024,
+    "height": 1140,
+    "location": null,
+    "device_type": "iPhone 14 Pro",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "아방고개길",
+      "polygon_points": [[1634.000,153.000],[1933.000,153.000],[1933.000,216.000],[1634.000,216.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "1",
+      "polygon_points": [[1502.740,186.675],[1502.740,225.037],[1533.165,226.360],[1531.843,178.738]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "73",
+      "polygon_points": [[1554.331,184.029],[1556.976,229.006],[1609.890,227.683],[1608.567,174.769]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Abanggogae-gil",
+      "polygon_points": [[1628.409,272.659],[1953.827,273.982],[1951.181,219.746],[1631.055,218.423]]
+    }
+  ]
+}

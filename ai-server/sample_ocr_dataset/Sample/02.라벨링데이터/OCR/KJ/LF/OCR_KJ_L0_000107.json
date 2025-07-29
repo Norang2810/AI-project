@@ -1,0 +1,122 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000107",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000107.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2915,
+    "height": 831,
+    "location": "36.56541539972222, 128.7280006",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "신영상회",
+      "polygon_points": [[105.598,127.215],[2782.388,439.098],[2858.517,819.742],[66.306,598.723]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Sinyeong",
+      "polygon_points": [[827.595,110.024],[255.400,19.161],[248.033,119.847],[817.772,198.432]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "store",
+      "polygon_points": [[879.166,114.936],[874.254,193.521],[1205.783,242.636],[1210.695,171.419]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "シンヨン",
+      "polygon_points": [[1807.447,230.357],[1394.878,183.697],[1389.966,252.459],[1807.447,308.942]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "商会",
+      "polygon_points": [[2043.201,252.459],[1817.270,222.990],[1817.270,323.676],[2043.201,345.778]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "新",
+      "polygon_points": [[2204.000,273.000],[2310.608,283.562],[2316.000,380.000],[2199.279,365.421]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "英",
+      "polygon_points": [[2320.000,292.000],[2414.296,299.934],[2427.000,390.000],[2320.000,390.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "商",
+      "polygon_points": [[2523.441,314.123],[2421.936,305.391],[2440.490,399.256],[2533.264,409.079]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "会",
+      "polygon_points": [[2633.678,325.038],[2535.447,319.580],[2539.813,404.714],[2643.501,415.628]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "xxx",
+      "polygon_points": [[817.499,829.289],[815.316,771.442],[1007.412,786.722],[1005.229,830.381]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "xxx",
+      "polygon_points": [[1054.344,830.381],[1054.344,794.363],[1255.172,811.826],[1257.911,831.000]]
+    }
+  ]
+}

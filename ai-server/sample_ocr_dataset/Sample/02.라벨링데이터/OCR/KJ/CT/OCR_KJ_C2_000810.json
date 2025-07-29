@@ -1,0 +1,186 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_CT_000810",
+    "src_path": "\\OCR\\KJ\\CT",
+    "label_path": "\\OCR\\KJ\\CT",
+    "language_type": "KJ",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KJ_C2_000810.jpeg",
+    "created_day": "2023.08.23.",
+    "extension": "jpeg",
+    "width": 3024,
+    "height": 3024,
+    "location": "37.546892, 127.103025",
+    "device_type": "iPhone 12 mini",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "새말정",
+      "polygon_points": [[437.000,1256.000],[1169.000,1256.000],[1169.000,1437.000],[437.000,1437.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "새말빗물펌프장",
+      "polygon_points": [[1328.571,1312.571],[2019.273,1300.104],[2016.779,1412.312],[1328.571,1412.312]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Station",
+      "polygon_points": [[1749.218,1451.233],[1990.301,1454.120],[2003.293,1517.639],[1749.218,1524.857]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Pumping",
+      "polygon_points": [[1415.744,1462.782],[1729.008,1455.564],[1730.451,1540.737],[1414.301,1543.624]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "Flood",
+      "polygon_points": [[1396.977,1533.519],[1396.977,1457.008],[1200.647,1464.226],[1200.647,1539.293]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "Saemal",
+      "polygon_points": [[1183.323,1534.962],[1183.323,1468.556],[937.910,1471.444],[930.692,1543.624]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "Saemaljeong",
+      "polygon_points": [[888.827,1558.060],[891.714,1474.331],[441.308,1480.105],[438.421,1562.391]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "新",
+      "polygon_points": [[441.308,1581.158],[439.865,1656.226],[507.714,1650.451],[517.820,1581.158]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "村",
+      "polygon_points": [[581.338,1581.158],[522.150,1581.158],[507.714,1650.451],[579.895,1650.451]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "亭",
+      "polygon_points": [[653.519,1578.271],[590.000,1578.271],[581.338,1654.782],[656.406,1649.008]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "新",
+      "polygon_points": [[695.383,1578.271],[692.496,1650.451],[758.902,1649.008],[764.677,1575.383]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "村",
+      "polygon_points": [[835.414,1575.383],[767.564,1573.940],[763.233,1646.120],[831.083,1644.677]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "雨",
+      "polygon_points": [[907.594,1641.789],[910.481,1576.827],[836.857,1578.271],[836.857,1644.677]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "水",
+      "polygon_points": [[975.444,1641.789],[971.113,1572.496],[914.812,1576.827],[904.707,1640.346]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "泵",
+      "polygon_points": [[1044.737,1640.346],[1044.737,1569.609],[976.887,1572.496],[978.331,1641.789]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "站",
+      "polygon_points": [[1122.692,1638.902],[1049.068,1638.902],[1047.624,1566.722],[1125.579,1566.722]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "セマルジョン",
+      "polygon_points": [[1236.737,1568.165],[1232.406,1634.571],[1600.526,1627.353],[1600.526,1558.060]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "セマル雨水ポンプ場",
+      "polygon_points": [[1626.511,1559.504],[1622.181,1633.128],[2225.609,1621.579],[2228.496,1543.624]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "150m",
+      "polygon_points": [[2329.143,1370.943],[2337.371,1447.743],[2515.657,1442.257],[2518.400,1379.171]]
+    }
+  ]
+}

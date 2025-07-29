@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_001038",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_001038.jpeg",
+    "created_day": "2023.08.23.",
+    "extension": "jpeg",
+    "width": 2527,
+    "height": 3691,
+    "location": "36.0102347, 129.3294224",
+    "device_type": "iPhone 14",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "유림회관",
+      "polygon_points": [[583.431,1611.991],[1936.394,1606.601],[1939.089,1921.933],[583.431,1916.542]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "裕",
+      "polygon_points": [[898.415,1958.502],[1026.884,1966.737],[1015.354,2091.912],[891.827,2091.912]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "출입문",
+      "polygon_points": [[630.870,2242.226],[895.836,2242.226],[895.836,2334.871],[630.870,2333.018]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "유림회관",
+      "polygon_points": [[825.426,2560.927],[1405.387,2572.044],[1403.534,2709.159],[830.985,2705.454]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "현위치",
+      "polygon_points": [[1023.000,3407.000],[1289.577,3409.574],[1281.671,3502.466],[1023.000,3498.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "林",
+      "polygon_points": [[1094.412,1958.502],[1084.530,2085.323],[1224.528,2088.617],[1221.233,1960.149]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "會",
+      "polygon_points": [[1287.115,1958.502],[1285.468,2086.970],[1407.348,2090.264],[1412.289,1958.502]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "館",
+      "polygon_points": [[1478.171,1955.208],[1474.876,2088.617],[1596.757,2085.323],[1609.933,1958.502]]
+    }
+  ]
+}

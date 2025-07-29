@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -226,12 +226,93 @@ const SuccessMessage = styled.div`
   text-align: center;
 `;
 
+const ErrorMessage = styled.div`
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 1rem;
+  text-align: center;
+`;
+
 const AllergyPage = () => {
   const [selectedAllergies, setSelectedAllergies] = useState({});
   const [severity, setSeverity] = useState('medium');
   const [isLoading, setIsLoading] = useState(false);
   const [success, setSuccess] = useState('');
+  const [error, setError] = useState('');
+  const [isCheckingAuth, setIsCheckingAuth] = useState(true);
   const navigate = useNavigate();
+
+  // 로그인 상태 확인
+  useEffect(() => {
+    const checkAuthStatus = () => {
+      const token = localStorage.getItem('token');
+      const user = localStorage.getItem('user');
+      
+      if (!token || !user) {
+        setError('로그인이 필요합니다. 로그인 페이지로 이동합니다.');
+        setTimeout(() => {
+          navigate('/login');
+        }, 2000);
+        return;
+      }
+      
+      // 토큰 유효성 검증 (선택사항)
+      try {
+        const userData = JSON.parse(user);
+        if (!userData.id) {
+          throw new Error('Invalid user data');
+        }
+      } catch (err) {
+        localStorage.removeItem('token');
+        localStorage.removeItem('user');
+        setError('로그인 정보가 유효하지 않습니다. 다시 로그인해주세요.');
+        setTimeout(() => {
+          navigate('/login');
+        }, 2000);
+        return;
+      }
+      
+      setIsCheckingAuth(false);
+    };
+
+    checkAuthStatus();
+  }, [navigate]);
+
+  // 기존 알레르기 정보 로드
+  useEffect(() => {
+    if (!isCheckingAuth) {
+      loadExistingAllergies();
+    }
+  }, [isCheckingAuth]);
+
+  const loadExistingAllergies = async () => {
+    try {
+      const token = localStorage.getItem('token');
+      const response = await fetch('http://localhost:3001/api/user/allergies', {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        if (data.success && data.data.allergies) {
+          const existingAllergies = {};
+          data.data.allergies.forEach(allergy => {
+            existingAllergies[allergy.name] = true;
+          });
+          setSelectedAllergies(existingAllergies);
+          setSeverity(data.data.allergies[0]?.severity || 'medium');
+        }
+      }
+    } catch (err) {
+      console.error('기존 알레르기 정보 로드 실패:', err);
+    }
+  };
 
   // 확장된 알레르기 카테고리 (8개)
   const allergyCategories = {
@@ -293,6 +374,7 @@ const AllergyPage = () => {
   const handleSubmit = async () => {
     setIsLoading(true);
     setSuccess('');
+    setError('');
 
     try {
       const selectedItems = Object.keys(selectedAllergies).filter(
@@ -302,6 +384,9 @@ const AllergyPage = () => {
       const token = localStorage.getItem('token');
       if (!token) {
         setError('로그인이 필요합니다.');
+        setTimeout(() => {
+          navigate('/login');
+        }, 2000);
         return;
       }
 
@@ -336,6 +421,18 @@ const AllergyPage = () => {
 
   const selectedCount = Object.values(selectedAllergies).filter(Boolean).length;
 
+  // 로그인 상태 확인 중일 때 로딩 표시
+  if (isCheckingAuth) {
+    return (
+      <AllergyContainer>
+        <AllergyCard>
+          <Title>🔐 로그인 확인 중...</Title>
+          <Subtitle>잠시만 기다려주세요.</Subtitle>
+        </AllergyCard>
+      </AllergyContainer>
+    );
+  }
+
   return (
     <AllergyContainer>
       <AllergyCard>
@@ -345,6 +442,7 @@ const AllergyPage = () => {
           선택된 정보는 메뉴 분석 시 안전성을 판단하는 데 사용됩니다.
         </Subtitle>
 
+        {error && <ErrorMessage>{error}</ErrorMessage>}
         {success && <SuccessMessage>{success}</SuccessMessage>}
 
         <AllergyGrid>

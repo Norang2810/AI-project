@@ -1,0 +1,74 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_PB_010590",
+    "src_path": "\\OCR\\KE\\PB",
+    "label_path": "\\OCR\\KE\\PB",
+    "language_type": "KE",
+    "group": "PB",
+    "small_group": 5
+  },
+  "Images": {
+    "file_name": "OCR_KE_P5_010590.jpg",
+    "created_day": "2023.08.27.",
+    "extension": "jpg",
+    "width": 4032,
+    "height": 1816,
+    "location": null,
+    "device_type": "SM-G991N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "반지로32번길",
+      "polygon_points": [[482.462,911.733],[2040.280,911.733],[2012.084,672.068],[482.462,679.117]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Banji-ro",
+      "polygon_points": [[468.364,1119.677],[1134.490,1119.677],[1106.294,954.026],[471.888,943.453]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "32beon-gil",
+      "polygon_points": [[1138.014,943.453],[2047.329,946.977],[2057.902,1133.775],[1173.259,1116.152]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "45",
+      "polygon_points": [[2304.615,763.705],[2487.888,756.656],[2480.839,901.159],[2336.336,894.110]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "1",
+      "polygon_points": [[2576.000,760.180],[2646.490,749.607],[2646.490,883.537],[2576.000,876.488]]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_CT_000377",
+    "src_path": "\\OCR\\KC\\CT",
+    "label_path": "\\OCR\\KC\\CT",
+    "language_type": "KC",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KC_C2_000377.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.2012715, 128.8127624",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "계단주의",
+      "polygon_points": [[1341.775,921.949],[3164.185,941.975],[3097.430,1435.962],[1361.801,1415.935]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "steps",
+      "polygon_points": [[1445.722,1449.954],[2147.603,1469.026],[2136.159,1663.570],[1464.795,1636.868]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "ahead",
+      "polygon_points": [[2197.192,1442.325],[2960.106,1457.583],[2944.848,1720.788],[2174.305,1671.199]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "小",
+      "polygon_points": [[1758.517,1682.642],[1983.576,1686.457],[1975.947,1869.556],[1766.146,1865.742]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "心",
+      "polygon_points": [[2005.319,1690.528],[2194.903,1698.538],[2181.552,1885.452],[1997.309,1877.442]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "臺",
+      "polygon_points": [[2202.914,1695.785],[2382.199,1699.599],[2374.570,1871.255],[2197.192,1865.533]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "階",
+      "polygon_points": [[2403.179,1703.414],[2393.642,1880.791],[2578.649,1884.606],[2582.464,1716.765]]
+    }
+  ]
+}

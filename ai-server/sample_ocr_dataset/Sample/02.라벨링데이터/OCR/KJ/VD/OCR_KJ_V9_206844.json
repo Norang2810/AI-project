@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206844",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206844.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "私が",
+      "polygon_points": [[773.450,860.545],[677.022,859.978],[679.291,810.062],[778.555,808.928]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "個人的に",
+      "polygon_points": [[977.652,861.112],[779.123,863.381],[782.526,812.898],[977.085,811.764]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "考えている",
+      "polygon_points": [[1229.501,864.516],[985.026,859.978],[981.055,812.898],[1229.501,810.629]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "제가",
+      "polygon_points": [[855.131,966.049],[741.686,964.348],[743.387,907.058],[853.996,906.491]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "개인적으로",
+      "polygon_points": [[1120.026,966.617],[861.938,964.915],[857.400,904.222],[1120.026,907.058]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "생각하고",
+      "polygon_points": [[1338.408,964.348],[1125.698,964.915],[1126.833,906.491],[1335.005,903.087]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "있는",
+      "polygon_points": [[1456.959,967.184],[1347.484,966.049],[1342.946,904.789],[1449.017,901.953]]
+    }
+  ]
+}

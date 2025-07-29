@@ -1,0 +1,130 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_000314",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_000314.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 419,
+    "height": 366,
+    "location": null,
+    "device_type": "SM-S901N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 2
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "종합유통단지",
+      "polygon_points": [[129.150,37.918],[392.136,36.706],[395.772,106.997],[133.997,104.574]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "綜",
+      "polygon_points": [[130.361,179.713],[177.626,179.713],[173.991,113.057],[125.514,113.057]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "合",
+      "polygon_points": [[221.255,179.713],[215.196,114.269],[176.414,111.845],[177.626,184.560]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "流",
+      "polygon_points": [[263.673,179.713],[263.673,111.845],[216.408,111.845],[221.255,182.136]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "通",
+      "polygon_points": [[306.090,182.136],[304.878,113.057],[264.885,111.845],[261.249,180.925]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "團",
+      "polygon_points": [[350.931,182.136],[347.295,115.481],[304.878,113.057],[301.242,183.348]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "地",
+      "polygon_points": [[395.772,182.136],[392.136,110.633],[347.295,113.057],[348.507,184.560]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "Distribution",
+      "polygon_points": [[129.150,240.309],[273.368,242.733],[274.580,193.044],[130.361,184.560]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "Complex",
+      "polygon_points": [[392.136,251.216],[386.077,194.256],[279.428,189.408],[269.732,248.792]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "국우동",
+      "polygon_points": [[132.785,325.143],[256.401,328.779],[255.189,258.487],[131.573,254.852]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "Gugu-dong",
+      "polygon_points": [[398.196,343.322],[394.560,274.242],[261.249,273.031],[264.885,340.898]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "10",
+      "polygon_points": [[47.951,160.322],[100.063,162.746],[100.063,202.739],[51.587,207.587]]
+    }
+  ]
+}

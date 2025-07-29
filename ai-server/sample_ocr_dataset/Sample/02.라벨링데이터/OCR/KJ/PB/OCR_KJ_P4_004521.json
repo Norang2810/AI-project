@@ -1,0 +1,106 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_PB_004521",
+    "src_path": "\\OCR\\KJ\\PB",
+    "label_path": "\\OCR\\KJ\\PB",
+    "language_type": "KJ",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KJ_P4_004521.jpeg",
+    "created_day": "2023.08.25.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": null,
+    "device_type": "iPhone 8 Plus",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 4
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "A042",
+      "polygon_points": [[852.000,1386.477],[1393.091,1384.295],[1382.182,1622.114],[841.091,1624.295]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "마곡나루",
+      "polygon_points": [[1469.455,1165.807],[2628.000,1159.261],[2654.182,1506.170],[1449.818,1493.080]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Magongnaru",
+      "polygon_points": [[1452.000,1523.932],[2608.364,1526.114],[2614.909,1724.659],[1443.273,1698.477]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "麻谷",
+      "polygon_points": [[1452.000,1724.659],[1722.545,1726.841],[1718.182,1857.750],[1449.818,1862.114]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "ナル",
+      "polygon_points": [[1984.364,1857.750],[1980.000,1731.205],[1713.818,1729.023],[1709.455,1857.750]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "口",
+      "polygon_points": [[2519.532,1747.841],[2641.091,1747.841],[2639.221,1875.010],[2528.883,1871.269]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "渡",
+      "polygon_points": [[2377.403,1734.750],[2506.442,1734.750],[2512.052,1882.490],[2379.273,1876.880]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "谷",
+      "polygon_points": [[2239.013,1880.620],[2240.883,1740.360],[2369.922,1731.010],[2375.532,1880.620]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "麻",
+      "polygon_points": [[2098.753,1734.750],[2229.662,1732.880],[2242.753,1891.841],[2104.364,1871.269]]
+    }
+  ]
+}

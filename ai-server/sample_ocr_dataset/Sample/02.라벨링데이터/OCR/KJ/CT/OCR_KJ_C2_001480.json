@@ -1,0 +1,162 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_CT_001480",
+    "src_path": "\\OCR\\KJ\\CT",
+    "label_path": "\\OCR\\KJ\\CT",
+    "language_type": "KJ",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KJ_C2_001480.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 3024,
+    "height": 4032,
+    "location": "35.20526388888889, 129.07603333333333",
+    "device_type": "iPhone 12",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "복천박물관",
+      "polygon_points": [[1929.660,2123.375],[1293.741,2135.214],[1300.506,2020.207],[1955.030,1986.382]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "福",
+      "polygon_points": [[1453.736,2381.802],[1347.185,2368.272],[1357.333,2265.104],[1455.427,2266.795]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "泉",
+      "polygon_points": [[1565.360,2375.037],[1457.118,2375.037],[1455.427,2263.412],[1546.756,2256.647]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "博",
+      "polygon_points": [[1654.997,2375.037],[1558.595,2371.654],[1553.521,2256.647],[1665.145,2251.574]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "物",
+      "polygon_points": [[1768.313,2369.963],[1661.762,2366.580],[1666.836,2258.339],[1776.769,2254.956]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "馆",
+      "polygon_points": [[1893.467,2356.433],[1780.152,2354.741],[1781.843,2253.265],[1898.541,2246.500]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "2km",
+      "polygon_points": [[1269.387,2469.748],[1078.272,2462.983],[1093.494,2380.110],[1257.548,2378.419]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "Bokcheon",
+      "polygon_points": [[1634.702,2459.600],[1276.152,2456.218],[1279.534,2378.419],[1631.319,2378.419]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "Museum",
+      "polygon_points": [[1952.662,2446.070],[1648.232,2447.761],[1646.541,2373.345],[1945.897,2369.963]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "충렬대로146번길",
+      "polygon_points": [[1922.895,2680.481],[1430.734,2688.937],[1430.734,2607.756],[1924.587,2594.226]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "1",
+      "polygon_points": [[1992.238,2628.051],[2000.694,2683.864],[2031.137,2678.790],[2026.063,2624.669]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "20",
+      "polygon_points": [[2135.996,2673.716],[2071.728,2675.407],[2076.801,2626.360],[2125.848,2619.595]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "Chungnyeol-daero",
+      "polygon_points": [[1814.654,2743.058],[1418.895,2748.132],[1429.043,2688.937],[1824.801,2680.481]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "xxx",
+      "polygon_points": [[1905.983,2743.058],[1823.110,2743.058],[1828.184,2682.172],[1904.291,2675.407]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "beon-gil",
+      "polygon_points": [[2086.949,2739.676],[1902.600,2737.984],[1902.600,2687.246],[2090.332,2685.555]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "福泉博物館",
+      "polygon_points": [[1354.000,2143.000],[1893.752,2128.207],[1899.000,2237.000],[1353.752,2253.587]]
+    }
+  ]
+}

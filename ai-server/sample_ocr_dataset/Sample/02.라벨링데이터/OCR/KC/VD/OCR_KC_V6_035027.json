@@ -1,0 +1,154 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_VD_035027",
+    "src_path": "\\OCR\\KC\\VD",
+    "label_path": "\\OCR\\KC\\VD",
+    "language_type": "KC",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KC_V6_035027.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "그대로",
+      "polygon_points": [[475.000,882.000],[688.059,891.731],[683.471,972.029],[475.000,975.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "칼을",
+      "polygon_points": [[837.183,882.554],[837.183,974.323],[685.765,967.440],[690.353,884.849]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "든",
+      "polygon_points": [[917.480,882.554],[924.363,969.734],[846.360,967.440],[850.948,880.260]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "채",
+      "polygon_points": [[1002.366,891.731],[1006.955,965.146],[928.400,968.660],[928.951,884.849]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "일어나는",
+      "polygon_points": [[1296.025,882.554],[1289.143,967.440],[1020.720,969.734],[1011.543,891.731]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "남성",
+      "polygon_points": [[1445.149,889.437],[1440.561,974.323],[1302.908,974.323],[1298.319,880.260]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "一",
+      "polygon_points": [[752.404,626.781],[798.977,621.964],[800.583,660.506],[754.010,660.506]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "个",
+      "polygon_points": [[845.549,623.570],[842.337,678.172],[805.401,673.354],[798.977,618.752]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "人",
+      "polygon_points": [[892.122,621.964],[892.122,670.142],[845.549,674.960],[848.761,629.993]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "拿",
+      "polygon_points": [[935.482,625.175],[937.088,678.172],[888.910,678.172],[896.940,621.964]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "着",
+      "polygon_points": [[978.843,625.175],[977.237,678.172],[940.300,676.566],[932.270,621.964]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "刀",
+      "polygon_points": [[1022.204,628.387],[1023.809,674.960],[977.237,674.960],[980.449,623.570]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "站",
+      "polygon_points": [[1073.594,623.570],[1070.687,673.865],[1020.598,674.960],[1025.415,626.781]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "起",
+      "polygon_points": [[1158.709,623.570],[1165.133,671.748],[1116.954,671.748],[1120.166,621.964]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "来",
+      "polygon_points": [[1110.218,621.981],[1116.395,675.100],[1069.451,676.336],[1074.393,624.451]]
+    }
+  ]
+}

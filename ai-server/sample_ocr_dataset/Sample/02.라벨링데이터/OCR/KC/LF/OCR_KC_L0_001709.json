@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_001709",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_001709.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 4000,
+    "height": 1800,
+    "location": "36.56566619444445, 128.7332916111111",
+    "device_type": "SM-A326K",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "雄",
+      "polygon_points": [[175.000,150.000],[1043.000,150.000],[1043.000,695.000],[175.000,695.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "府",
+      "polygon_points": [[1264.000,163.000],[2069.000,163.000],[2069.000,713.000],[1264.000,713.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "公",
+      "polygon_points": [[2290.000,216.000],[2980.000,216.000],[2980.000,721.000],[2290.000,721.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "園",
+      "polygon_points": [[3139.000,228.000],[3730.000,228.000],[3730.000,770.000],[3139.000,770.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "웅부공원",
+      "polygon_points": [[721.000,841.000],[3336.000,841.000],[3336.000,1360.000],[721.000,1360.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Woongbu",
+      "polygon_points": [[842.000,1387.000],[2285.000,1387.000],[2285.000,1681.000],[842.000,1681.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "Park",
+      "polygon_points": [[2438.000,1403.000],[3115.000,1403.000],[3115.000,1636.000],[2438.000,1636.000]]
+    }
+  ]
+}

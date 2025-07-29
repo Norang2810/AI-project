@@ -1,0 +1,138 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_VD_016613",
+    "src_path": "\\OCR\\KE\\VD",
+    "label_path": "\\OCR\\KE\\VD",
+    "language_type": "KE",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KE_V6_016613.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Overturned",
+      "polygon_points": [[530.505,709.952],[766.755,706.768],[767.392,758.985],[533.689,756.438]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "SUV",
+      "polygon_points": [[777.198,708.042],[868.259,706.768],[866.349,753.891],[779.109,755.164]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "in",
+      "polygon_points": [[874.627,710.589],[917.293,710.589],[916.656,755.801],[875.901,753.891]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "the",
+      "polygon_points": [[926.208,708.042],[994.344,709.315],[996.255,757.711],[926.844,756.438]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "middle",
+      "polygon_points": [[1004.533,709.315],[1146.538,709.315],[1146.538,755.801],[1003.896,753.891]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "of",
+      "polygon_points": [[1155.198,708.042],[1203.594,708.042],[1201.684,756.438],[1157.109,753.891]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "the",
+      "polygon_points": [[1211.873,710.589],[1276.826,709.315],[1277.462,757.711],[1209.962,755.164]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "road",
+      "polygon_points": [[1290.198,708.042],[1386.354,708.042],[1386.991,757.711],[1287.651,756.438]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "길",
+      "polygon_points": [[385.443,843.424],[459.948,842.787],[458.038,940.853],[387.354,936.395]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "한복판에",
+      "polygon_points": [[479.689,835.400],[772.613,835.400],[771.340,948.112],[479.052,944.292]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "뒤집혀",
+      "polygon_points": [[790.953,838.966],[1015.104,840.240],[1012.557,945.947],[787.769,944.037]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "있는",
+      "polygon_points": [[1027.840,837.056],[1190.222,838.966],[1189.585,956.136],[1031.024,951.042]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "SUV차량",
+      "polygon_points": [[1206.396,841.768],[1524.793,839.858],[1524.156,950.023],[1203.212,950.023]]
+    }
+  ]
+}

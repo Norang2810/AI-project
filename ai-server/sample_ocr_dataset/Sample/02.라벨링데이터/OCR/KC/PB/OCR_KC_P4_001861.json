@@ -1,0 +1,242 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_001861",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_001861.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 4000,
+    "height": 3000,
+    "location": null,
+    "device_type": "SM-N986N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 2
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "xxx",
+      "polygon_points": [[0.000,1809.000],[1220.000,1809.000],[1220.000,2126.000],[0.000,2126.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "안동선거관리위원회",
+      "polygon_points": [[2593.000,1750.000],[3811.000,1750.000],[3811.000,2125.000],[2593.000,2125.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "영덕",
+      "polygon_points": [[2859.000,685.000],[3179.000,685.000],[3179.000,874.000],[2859.000,874.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "영양",
+      "polygon_points": [[2856.000,872.000],[3185.000,872.000],[3185.000,1040.000],[2856.000,1040.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "청송",
+      "polygon_points": [[2847.000,1043.000],[3190.000,1043.000],[3190.000,1216.000],[2847.000,1216.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "안동문화관광단지",
+      "polygon_points": [[2425.156,860.981],[1360.279,801.324],[1361.770,599.981],[2428.139,656.655]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "35",
+      "polygon_points": [[2540.000,707.000],[2750.000,707.000],[2750.000,870.000],[2540.000,870.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "安",
+      "polygon_points": [[1365.000,819.000],[1488.000,819.000],[1488.000,1007.000],[1365.000,1007.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "東",
+      "polygon_points": [[1500.000,829.000],[1617.000,829.000],[1617.000,1009.000],[1500.000,1009.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "文",
+      "polygon_points": [[1635.000,840.000],[1757.000,840.000],[1757.000,1011.000],[1635.000,1011.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "化",
+      "polygon_points": [[1769.000,848.000],[1900.000,848.000],[1900.000,1007.000],[1769.000,1007.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "觀",
+      "polygon_points": [[1903.000,849.000],[2020.000,849.000],[2020.000,1023.000],[1903.000,1023.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "光",
+      "polygon_points": [[2025.000,869.000],[2152.000,869.000],[2152.000,1021.000],[2025.000,1021.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "圍",
+      "polygon_points": [[2173.000,866.000],[2289.000,866.000],[2289.000,1035.000],[2173.000,1035.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "地",
+      "polygon_points": [[2302.000,877.000],[2425.000,877.000],[2425.000,1038.000],[2302.000,1038.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "Andong",
+      "polygon_points": [[1357.000,1015.000],[1650.000,1015.000],[1650.000,1161.000],[1357.000,1161.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "Culture",
+      "polygon_points": [[1654.000,1027.000],[1913.000,1027.000],[1913.000,1159.000],[1654.000,1159.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "Tour",
+      "polygon_points": [[1926.000,1027.000],[2101.000,1027.000],[2101.000,1179.000],[1926.000,1179.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 32,
+      "text": "Complex",
+      "polygon_points": [[2112.000,1047.000],[2431.000,1047.000],[2431.000,1205.000],[2112.000,1205.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 33,
+      "text": "Yeongdeok",
+      "polygon_points": [[3205.000,745.000],[3728.000,745.000],[3728.000,913.000],[3205.000,913.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 34,
+      "text": "Yeongyang",
+      "polygon_points": [[3205.000,937.000],[3717.000,937.000],[3717.000,1086.000],[3205.000,1086.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 35,
+      "text": "Cheongsong",
+      "polygon_points": [[3201.000,1120.000],[3771.000,1120.000],[3771.000,1271.000],[3201.000,1271.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 36,
+      "text": "Andong",
+      "polygon_points": [[2594.000,2129.000],[2844.000,2129.000],[2844.000,2350.000],[2594.000,2350.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 37,
+      "text": "National",
+      "polygon_points": [[2847.000,2131.000],[3123.000,2131.000],[3123.000,2331.000],[2847.000,2331.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 38,
+      "text": "Election",
+      "polygon_points": [[3122.000,2139.000],[3394.000,2139.000],[3394.000,2335.000],[3122.000,2335.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 39,
+      "text": "Commission",
+      "polygon_points": [[3393.000,2138.000],[3794.000,2138.000],[3794.000,2351.000],[3393.000,2351.000]]
+    }
+  ]
+}

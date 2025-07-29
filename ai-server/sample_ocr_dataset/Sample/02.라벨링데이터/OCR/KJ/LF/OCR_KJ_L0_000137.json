@@ -1,0 +1,138 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000137",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000137.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1864,
+    "height": 588,
+    "location": "36.565423, 128.72837179972223",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Yeongga",
+      "polygon_points": [[4.702,85.390],[6.626,8.444],[200.913,33.452],[193.218,102.702]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Boribap",
+      "polygon_points": [[387.505,118.091],[385.581,37.299],[204.760,29.604],[206.684,95.008]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Barely",
+      "polygon_points": [[549.090,121.939],[551.014,43.070],[402.894,31.528],[402.894,106.550]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "Rice",
+      "polygon_points": [[662.585,54.612],[668.355,125.786],[564.479,114.244],[562.556,43.070]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "with",
+      "polygon_points": [[781.850,54.612],[672.203,52.688],[674.126,123.862],[781.850,123.862]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "Vegetables",
+      "polygon_points": [[1020.380,71.924],[1028.075,143.099],[797.239,129.633],[793.392,54.612]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "永嘉麦飯",
+      "polygon_points": [[1103.263,61.890],[1108.392,151.659],[1295.626,159.354],[1288.786,76.424]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "永",
+      "polygon_points": [[1352.053,76.424],[1359.634,159.796],[1403.397,160.757],[1393.779,83.331]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "嘉",
+      "polygon_points": [[1439.465,83.331],[1395.702,81.408],[1404.840,165.566],[1445.717,166.047]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "大",
+      "polygon_points": [[1480.823,86.697],[1442.351,84.774],[1449.564,167.971],[1492.365,167.490]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "麦",
+      "polygon_points": [[1525.067,87.659],[1480.342,85.736],[1494.769,171.818],[1536.609,173.261]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "饭",
+      "polygon_points": [[1568.829,87.178],[1526.509,87.659],[1537.570,174.704],[1578.928,173.742]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "영가보리밥",
+      "polygon_points": [[91.266,123.862],[100.884,527.825],[1707.117,560.527],[1687.881,195.037]]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_CT_000365",
+    "src_path": "\\OCR\\KE\\CT",
+    "label_path": "\\OCR\\KE\\CT",
+    "language_type": "KE",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KE_C2_000365.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.2012715, 128.8127624",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "휠체어",
+      "polygon_points": [[601.125,1544.918],[1642.503,1524.892],[1612.463,1024.230],[571.085,1044.256]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "유모차길",
+      "polygon_points": [[1702.582,1084.309],[3204.569,1064.283],[3234.609,1544.918],[1752.648,1564.945]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "WAY",
+      "polygon_points": [[641.178,2285.899],[1011.668,2285.899],[981.628,2456.124],[661.205,2446.111]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "OF",
+      "polygon_points": [[1001.655,2245.846],[1201.920,2275.885],[1201.920,2486.163],[1001.655,2486.163]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "WHEEL",
+      "polygon_points": [[1211.933,2275.885],[1672.542,2285.899],[1682.556,2476.150],[1201.920,2446.111]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "CHAIR",
+      "polygon_points": [[1712.595,2295.912],[2103.112,2315.938],[2113.125,2526.216],[1712.595,2496.177]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "AND",
+      "polygon_points": [[2143.165,2325.952],[2453.575,2355.991],[2453.575,2556.256],[2133.152,2526.216]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "STROLLER",
+      "polygon_points": [[2503.642,2335.965],[3334.741,2376.018],[3314.715,2646.375],[2483.615,2566.269]]
+    }
+  ]
+}
