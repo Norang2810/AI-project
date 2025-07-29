@@ -10,7 +10,7 @@ const AllergyContainer = styled.div`
 
 const AllergyCard = styled.div`
   background: white;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 3rem;
   border-radius: 15px;
@@ -33,7 +33,7 @@ const Subtitle = styled.p`
 
 const AllergyGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   margin-bottom: 2rem;
 `;
@@ -62,6 +62,28 @@ const CategoryTitle = styled.h3`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+`;
+
+const SeverityBadge = styled.span`
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  
+  &.high {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  &.medium {
+    background-color: #ffc107;
+    color: #212529;
+  }
+  
+  &.low {
+    background-color: #28a745;
+    color: white;
+  }
 `;
 
 const CheckboxList = styled.div`
@@ -211,14 +233,48 @@ const AllergyPage = () => {
   const [success, setSuccess] = useState('');
   const navigate = useNavigate();
 
+  // 확장된 알레르기 카테고리 (8개)
   const allergyCategories = {
-    '곡물': ['밀', '보리', '호밀', '오트밀', '옥수수'],
-    '견과류': ['땅콩', '아몬드', '호두', '캐슈넛', '피스타치오'],
-    '유제품': ['우유', '치즈', '요거트', '버터', '크림'],
-    '해산물': ['새우', '게', '조개', '오징어', '고등어'],
-    '계란': ['계란 흰자', '계란 노른자'],
-    '과일': ['딸기', '키위', '망고', '복숭아', '사과'],
-    '기타': ['대두', 'MSG', '아황산염', '색소', '보존료']
+    '유제품': {
+      icon: '🥛',
+      severity: 'high',
+      items: ['우유', '크림', '버터', '치즈', '요거트', '연유', '우유 거품']
+    },
+    '견과류': {
+      icon: '🥜',
+      severity: 'high',
+      items: ['헤이즐넛', '아몬드', '땅콩', '호두', '캐슈넛', '피스타치오']
+    },
+    '글루텐': {
+      icon: '🌾',
+      severity: 'high',
+      items: ['밀', '밀가루', '보리', '호밀', '오트밀']
+    },
+    '초콜릿': {
+      icon: '🍫',
+      severity: 'medium',
+      items: ['초콜릿', '코코아', '카카오', '다크 초콜릿', '화이트 초콜릿', '초콜릿 가루']
+    },
+    '계란': {
+      icon: '🥚',
+      severity: 'high',
+      items: ['계란', '계란 흰자', '계란 노른자']
+    },
+    '해산물': {
+      icon: '🦐',
+      severity: 'high',
+      items: ['새우', '게', '조개', '오징어', '고등어']
+    },
+    '과일': {
+      icon: '🍎',
+      severity: 'medium',
+      items: ['딸기', '키위', '망고', '복숭아', '사과', '오렌지', '레몬', '라임', '블루베리', '바나나']
+    },
+    '식품첨가물': {
+      icon: '⚠️',
+      severity: 'low',
+      items: ['MSG', '아황산염', '색소', '보존료', '인공감미료']
+    }
   };
 
   const severityLevels = [
@@ -292,20 +348,17 @@ const AllergyPage = () => {
         {success && <SuccessMessage>{success}</SuccessMessage>}
 
         <AllergyGrid>
-          {Object.entries(allergyCategories).map(([category, items]) => (
+          {Object.entries(allergyCategories).map(([category, info]) => (
             <AllergyCategory key={category}>
               <CategoryTitle>
-                {category === '곡물' && '🌾'}
-                {category === '견과류' && '🥜'}
-                {category === '유제품' && '🥛'}
-                {category === '해산물' && '🦐'}
-                {category === '계란' && '🥚'}
-                {category === '과일' && '🍎'}
-                {category === '기타' && '⚠️'}
-                {category}
+                {info.icon} {category}
+                <SeverityBadge className={info.severity}>
+                  {info.severity === 'high' ? '높음' : 
+                   info.severity === 'medium' ? '보통' : '낮음'}
+                </SeverityBadge>
               </CategoryTitle>
               <CheckboxList>
-                {items.map(item => (
+                {info.items.map(item => (
                   <CheckboxItem key={item}>
                     <input
                       type="checkbox"
