@@ -204,11 +204,22 @@ const SuccessMessage = styled.div`
   text-align: center;
 `;
 
+const ErrorMessage = styled.div`
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 1rem;
+  text-align: center;
+`;
+
 const AllergyPage = () => {
   const [selectedAllergies, setSelectedAllergies] = useState({});
   const [severity, setSeverity] = useState('medium');
   const [isLoading, setIsLoading] = useState(false);
   const [success, setSuccess] = useState('');
+  const [error, setError] = useState('');
   const navigate = useNavigate();
 
   const allergyCategories = {
@@ -290,6 +301,7 @@ const AllergyPage = () => {
         </Subtitle>
 
         {success && <SuccessMessage>{success}</SuccessMessage>}
+        {error && <ErrorMessage>{error}</ErrorMessage>}
 
         <AllergyGrid>
           {Object.entries(allergyCategories).map(([category, items]) => (
