@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import logo from '../assets/logo.png';
 
 const HeaderContainer = styled.header`
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: white;
   backdrop-filter: blur(10px);
   z-index: 1000;
   padding: 1rem 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 `;
 
@@ -27,10 +28,15 @@ const Nav = styled.nav`
 const Logo = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: #3a2e2e;
   
+  img {
+    width: 400px;
+    height: 80px;
+    object-fit: contain;
+  }
   span {
-    color: #007bff;
+    color: #274472;
   }
 `;
 
@@ -48,7 +54,7 @@ const NavItem = styled.li`
 
 const NavLink = styled.a`
   text-decoration: none;
-  color: #333;
+  color: #3a2e2e;
   font-weight: 500;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -56,18 +62,25 @@ const NavLink = styled.a`
   cursor: pointer;
 
   &:hover {
-    color: #007bff;
-    background-color: #f8f9fa;
+    color: #274472;
+    background-color: #ece1d0;
   }
 
   &.active {
-    color: #007bff;
-    background-color: #e3f2fd;
+    color: #274472;
+    background-color: #d6cab8;
   }
 `;
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState('home');
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    setIsLoggedIn(!!token);
+  }, []);
 
   // 스크롤 위치에 따른 활성 섹션 감지
   useEffect(() => {
@@ -103,11 +116,17 @@ const Header = () => {
     }
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    setIsLoggedIn(false);
+    navigate('/');
+  };
+
   return (
     <HeaderContainer>
       <Nav>
         <Logo>
-          🍽️ <span>알쥬알쥬</span>
+          <img src={logo} alt="logo" />
         </Logo>
         
         <NavMenu>
@@ -146,16 +165,33 @@ const Header = () => {
         </NavMenu>
         
         <NavMenu>
-          <NavItem>
-            <NavLink as={Link} to="/login">
-              로그인
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink as={Link} to="/register">
-              회원가입
-            </NavLink>
-          </NavItem>
+          {isLoggedIn ? (
+            <>
+              <NavItem>
+                <NavLink as={Link} to="/allergy">
+                  알레르기 설정
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={handleLogout}>
+                  로그아웃
+                </NavLink>
+              </NavItem>
+            </>
+          ) : (
+            <>
+              <NavItem>
+                <NavLink as={Link} to="/login">
+                  로그인
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink as={Link} to="/register">
+                  회원가입
+                </NavLink>
+              </NavItem>
+            </>
+          )}
         </NavMenu>
       </Nav>
     </HeaderContainer>

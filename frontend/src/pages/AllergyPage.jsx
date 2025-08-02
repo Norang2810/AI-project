@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const AllergyContainer = styled.div`
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #f6f1eb;
   padding: 2rem;
 `;
 
@@ -14,19 +14,19 @@ const AllergyCard = styled.div`
   margin: 0 auto;
   padding: 3rem;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 `;
 
 const Title = styled.h1`
   text-align: center;
-  color: #333;
+  color: #3a2e2e;
   margin-bottom: 2rem;
   font-size: 2rem;
 `;
 
 const Subtitle = styled.p`
   text-align: center;
-  color: #666;
+  color: #a3795e;
   margin-bottom: 3rem;
   font-size: 1.1rem;
 `;
@@ -39,18 +39,18 @@ const AllergyGrid = styled.div`
 `;
 
 const AllergyCategory = styled.div`
-  border: 2px solid #e1e5e9;
+  border: 2px solid #d7bba6;
   border-radius: 10px;
   padding: 1.5rem;
   transition: all 0.3s ease;
   
   &:hover {
-    border-color: #007bff;
+    border-color: #274472;
     transform: translateY(-2px);
   }
   
   &.selected {
-    border-color: #007bff;
+    border-color: #274472;
     background-color: #f8f9ff;
   }
 `;
@@ -58,7 +58,7 @@ const AllergyCategory = styled.div`
 const CategoryTitle = styled.h3`
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: #3a2e2e;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -80,31 +80,31 @@ const CheckboxItem = styled.label`
   transition: background-color 0.2s ease;
   
   &:hover {
-    background-color: #f8f9fa;
+    background-color: #e8ecf5;
   }
   
   input[type="checkbox"] {
     width: 18px;
     height: 18px;
-    accent-color: #007bff;
+    accent-color: #274472;
   }
   
   span {
     font-size: 0.9rem;
-    color: #555;
+    color: #3a2e2e;
   }
 `;
 
 const SeveritySection = styled.div`
   margin: 2rem 0;
   padding: 2rem;
-  background-color: #f8f9fa;
+  background-color: #fdfaf6;
   border-radius: 10px;
 `;
 
 const SeverityTitle = styled.h3`
   margin-bottom: 1rem;
-  color: #333;
+  color: #3a2e2e;
 `;
 
 const SeverityOptions = styled.div`
@@ -118,18 +118,18 @@ const SeverityOption = styled.label`
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  border: 2px solid #e1e5e9;
+  border: 2px solid #d7bba6;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
   
   &:hover {
-    border-color: #007bff;
+    border-color: #274472;
   }
   
   &.selected {
-    border-color: #007bff;
-    background-color: #007bff;
+    border-color: #274472;
+    background-color: #274472;
     color: white;
   }
   
@@ -155,20 +155,20 @@ const Button = styled.button`
   transition: all 0.3s ease;
   
   &.primary {
-    background-color: #007bff;
+    background-color: #274472;
     color: white;
     
     &:hover {
-      background-color: #0056b3;
+      background-color: #1d3557;
     }
   }
   
   &.secondary {
-    background-color: #6c757d;
+    background-color: #a3795e;
     color: white;
     
     &:hover {
-      background-color: #545b62;
+      background-color: #3a2e2e;
     }
   }
   
@@ -181,10 +181,10 @@ const Button = styled.button`
 const LinkText = styled.p`
   text-align: center;
   margin-top: 1.5rem;
-  color: #666;
+  color: #a3795e;
   
   a {
-    color: #007bff;
+    color: #274472;
     text-decoration: none;
     font-weight: bold;
     

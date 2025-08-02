@@ -13,13 +13,13 @@ const UploadContainer = styled.div`
   transition: all 0.3s ease;
 
   &:hover {
-    border-color: #007bff;
-    background-color: #f0f8ff;
+    border-color: #274472;
+    background-color: #f4f6f8;
   }
 `;
 
 const UploadButton = styled.button`
-  background-color: #007bff;
+  background-color: #a3795e;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -29,7 +29,7 @@ const UploadButton = styled.button`
   margin: 10px;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: #3a2e2e;
   }
 
   &:disabled {
@@ -52,22 +52,22 @@ const StatusMessage = styled.div`
   border-radius: 5px;
   font-weight: bold;
 
-  &.success {
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
+   &.success {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #059669;
   }
-
+  
   &.error {
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #dc2626;
   }
-
+  
   &.loading {
-    background-color: #d1ecf1;
-    color: #0c5460;
-    border: 1px solid #bee5eb;
+    background: #fef9f4;
+    border: 1px solid #d7bba6;
+    color: #274472;
   }
 `;
 
