@@ -1,0 +1,154 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_PB_002593",
+    "src_path": "\\OCR\\KJ\\PB",
+    "label_path": "\\OCR\\KJ\\PB",
+    "language_type": "KJ",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KJ_P4_002593.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 3000,
+    "height": 11495,
+    "location": null,
+    "device_type": null,
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 4
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "출입구",
+      "polygon_points": [[843.272,2768.187],[1486.349,2655.214],[1477.659,2907.231],[860.653,2994.133]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Entrance",
+      "polygon_points": [[756.370,3054.964],[1590.632,2924.611],[1590.632,3089.725],[747.680,3220.079]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "역삼",
+      "polygon_points": [[652.113,3489.476],[1295.190,3359.123],[1390.783,5166.690],[669.494,5218.832]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "센터필드",
+      "polygon_points": [[1373.402,3506.856],[1721.011,3437.335],[1781.843,4940.744],[1434.234,4958.125]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Yeoksam",
+      "polygon_points": [[599.959,5592.499],[1886.113,5470.836],[1920.874,5774.994],[599.959,5922.727]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Centerfield",
+      "polygon_points": [[878.046,5922.727],[1738.379,5809.754],[1712.308,5992.249],[851.975,6096.532]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "驿",
+      "polygon_points": [[1025.780,6148.673],[1295.177,6087.842],[1312.558,6374.619],[1060.541,6409.380]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "三",
+      "polygon_points": [[1329.938,6105.222],[1573.264,6070.461],[1590.645,6339.858],[1338.628,6374.619]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "ヨ",
+      "polygon_points": [[825.905,6531.043],[1025.780,6504.973],[1034.470,6748.299],[817.215,6774.370]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "ツ",
+      "polygon_points": [[1051.851,6513.663],[1234.346,6513.663],[1251.726,6713.538],[1069.231,6756.989]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "サ",
+      "polygon_points": [[1260.416,6461.522],[1521.123,6426.761],[1512.433,6670.087],[1277.797,6696.158]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "ム",
+      "polygon_points": [[1547.194,6426.761],[1781.830,6400.690],[1825.281,6635.326],[1529.813,6652.707]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "4",
+      "polygon_points": [[809.370,1992.609],[889.921,2695.599],[1505.038,2600.403],[1439.132,1882.766]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "221",
+      "polygon_points": [[1138.897,9066.455],[1146.219,9330.076],[1614.880,9286.139],[1592.912,9029.841]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "2호선",
+      "polygon_points": [[985.117,9403.305],[999.763,9725.509],[1805.273,9637.635],[1790.628,9308.108]]
+    }
+  ]
+}

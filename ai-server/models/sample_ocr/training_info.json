@@ -1,0 +1,24 @@
+{
+  "total_images": 364,
+  "sample_texts": [],
+  "dataset_info": {
+    "json_files": 364,
+    "total_files": 364,
+    "sample_files": [
+      "OCR_KJ_C2_000106.json",
+      "OCR_KJ_C2_000478.json",
+      "OCR_KJ_C2_000810.json",
+      "OCR_KJ_C2_000902.json",
+      "OCR_KJ_C2_000904.json",
+      "OCR_KJ_C2_001480.json",
+      "OCR_KJ_C2_001841.json",
+      "OCR_KJ_C2_001971.json",
+      "OCR_KJ_C2_002416.json",
+      "OCR_KJ_C2_002951.json"
+    ],
+    "categories": [
+      "CT"
+    ]
+  },
+  "model_type": "sample_ocr"
+}

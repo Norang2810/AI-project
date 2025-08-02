@@ -1,0 +1,122 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000128",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000128.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2226,
+    "height": 1304,
+    "location": "36.56541479972222, 128.72834729972223",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "Minsok",
+      "polygon_points": [[31.777,157.270],[48.508,0.000],[437.166,130.244],[430.409,261.995]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Tteokjip",
+      "polygon_points": [[866.202,420.772],[849.311,275.508],[443.922,143.757],[430.409,272.130]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Rice",
+      "polygon_points": [[1076.468,467.695],[1076.468,354.524],[863.639,293.716],[885.597,432.224]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Cake",
+      "polygon_points": [[1108.561,479.519],[1095.048,357.903],[1275.784,450.804],[1277.473,543.706]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "民",
+      "polygon_points": [[1841.810,739.661],[1822.155,611.903],[1888.491,620.502],[1915.517,760.545]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "俗",
+      "polygon_points": [[1978.168,767.916],[1958.513,645.071],[1897.090,629.101],[1915.517,751.946]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "年",
+      "polygon_points": [[2041.362,789.005],[2022.392,673.325],[1968.340,657.355],[1978.168,777.743]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "糕",
+      "polygon_points": [[2117.373,815.186],[2089.502,689.347],[2021.937,672.456],[2047.274,797.450]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "店",
+      "polygon_points": [[2179.870,832.922],[2145.243,705.393],[2092.880,698.637],[2117.373,822.787]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "民俗餅屋",
+      "polygon_points": [[1420.611,471.638],[1434.969,608.457],[1761.813,695.446],[1750.834,564.540]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "민속떡집",
+      "polygon_points": [[173.663,883.591],[152.895,180.920],[2131.080,824.404],[2203.764,1304.000]]
+    }
+  ]
+}

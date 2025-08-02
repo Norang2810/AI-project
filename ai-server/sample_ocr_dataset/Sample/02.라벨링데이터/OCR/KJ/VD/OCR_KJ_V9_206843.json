@@ -1,0 +1,106 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206843",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206843.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "私も",
+      "polygon_points": [[592.505,861.680],[498.912,858.276],[500.614,811.196],[590.236,811.196]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "正確に",
+      "polygon_points": [[747.925,859.411],[601.013,858.276],[601.013,814.033],[746.791,812.898]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "予測するのは",
+      "polygon_points": [[1052.526,861.680],[755.299,858.276],[754.732,810.062],[1055.362,814.600]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "難しいですが",
+      "polygon_points": [[1359.396,863.381],[1059.333,859.411],[1058.198,809.495],[1364.501,808.928]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "저",
+      "polygon_points": [[765.509,967.184],[708.786,965.482],[708.219,905.923],[763.807,905.923]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "또한",
+      "polygon_points": [[882.925,966.617],[772.883,964.348],[772.883,904.789],[886.896,902.520]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "정확히",
+      "polygon_points": [[1049.123,967.184],[892.568,964.348],[892.001,905.923],[1048.555,902.520]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "예측하긴",
+      "polygon_points": [[1270.341,967.751],[1062.169,963.213],[1059.900,900.818],[1269.207,903.087]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "어렵지만",
+      "polygon_points": [[1484.753,969.453],[1276.580,965.482],[1276.013,905.356],[1490.425,905.923]]
+    }
+  ]
+}

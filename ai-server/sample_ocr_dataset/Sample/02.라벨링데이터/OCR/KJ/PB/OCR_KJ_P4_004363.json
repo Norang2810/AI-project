@@ -1,0 +1,218 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_PB_004363",
+    "src_path": "\\OCR\\KJ\\PB",
+    "label_path": "\\OCR\\KJ\\PB",
+    "language_type": "KJ",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KJ_P4_004363.JPG",
+    "created_day": "2023.08.25.",
+    "extension": "JPG",
+    "width": 4240,
+    "height": 2832,
+    "location": null,
+    "device_type": "ZV-E10",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 3
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "경상감영공원",
+      "polygon_points": [[2099.562,1208.478],[2887.000,1211.000],[2887.000,1399.000],[2097.928,1404.634]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "대구약령시",
+      "polygon_points": [[1027.244,1219.921],[1728.000,1217.000],[1713.789,1422.615],[1017.436,1422.615]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Gyeongsang",
+      "polygon_points": [[1959.000,1482.000],[2439.566,1488.000],[2444.470,1633.483],[1959.000,1620.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Gamyeong",
+      "polygon_points": [[2454.278,1473.289],[2833.512,1481.462],[2851.493,1626.944],[2452.643,1625.310]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Daegu",
+      "polygon_points": [[873.588,1488.000],[1185.803,1492.904],[1172.726,1635.117],[870.319,1625.310]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Yangnyeongsi",
+      "polygon_points": [[1197.246,1474.923],[1829.848,1479.827],[1824.944,1643.290],[1198.880,1635.117]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "大邱((テグ)",
+      "polygon_points": [[1269.169,1692.329],[1615.711,1693.964],[1589.557,1855.793],[1249.554,1857.427]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "慶尚",
+      "polygon_points": [[2558.894,1687.426],[2728.896,1685.791],[2733.800,1854.158],[2557.259,1862.331]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "大",
+      "polygon_points": [[800.030,1682.522],[768.972,1860.697],[855.607,1877.043],[907.916,1687.426]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "市",
+      "polygon_points": [[1184.169,1855.793],[1203.784,1689.060],[1118.783,1690.695],[1094.264,1857.427]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "令",
+      "polygon_points": [[1045.225,1684.156],[1112.245,1685.791],[1095.898,1863.966],[1019.071,1860.697]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "藥",
+      "polygon_points": [[971.666,1684.156],[1048.494,1682.522],[1017.436,1877.043],[938.974,1860.697]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "邱",
+      "polygon_points": [[891.569,1685.791],[978.205,1682.522],[934.070,1873.774],[855.607,1862.331]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "公園",
+      "polygon_points": [[3096.688,1841.081],[3072.169,1664.541],[2893.994,1672.714],[2905.436,1850.889]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "監営",
+      "polygon_points": [[2723.992,1658.002],[2910.340,1659.637],[2897.263,1868.870],[2730.530,1860.697]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "Park",
+      "polygon_points": [[3055.822,1599.155],[2864.570,1613.867],[2844.955,1453.673],[3024.764,1447.135]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "园",
+      "polygon_points": [[2480.432,1849.254],[2475.528,1675.983],[2372.546,1679.252],[2390.527,1855.793]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "公",
+      "polygon_points": [[2300.622,1685.791],[2385.623,1689.060],[2390.527,1855.793],[2305.526,1857.427]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "营",
+      "polygon_points": [[2215.621,1677.618],[2310.430,1672.714],[2305.526,1868.870],[2227.064,1865.600]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "监",
+      "polygon_points": [[2128.986,1675.983],[2223.794,1677.618],[2223.794,1865.600],[2130.620,1859.062]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "尚",
+      "polygon_points": [[2053.793,1684.156],[2135.524,1685.791],[2135.524,1865.600],[2058.697,1863.966]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "庆",
+      "polygon_points": [[1960.619,1685.791],[2055.427,1679.252],[2057.062,1873.774],[1950.811,1865.600]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "藥令市",
+      "polygon_points": [[1849.464,1855.793],[1852.733,1671.079],[1610.807,1667.810],[1594.461,1865.600]]
+    }
+  ]
+}

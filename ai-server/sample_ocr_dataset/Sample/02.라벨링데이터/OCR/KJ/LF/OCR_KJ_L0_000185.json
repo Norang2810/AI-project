@@ -1,0 +1,162 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000185",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000185.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1920,
+    "height": 1080,
+    "location": "36.55915, 128.749587",
+    "device_type": null,
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": 2,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "교통약자",
+      "polygon_points": [[575.594,436.285],[914.960,442.570],[917.474,551.921],[578.108,549.407]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "우선창구",
+      "polygon_points": [[938.841,442.570],[1265.000,445.000],[1271.923,555.692],[941.355,550.664]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "국가유공상이자",
+      "polygon_points": [[1314.658,461.423],[1687.960,465.194],[1690.474,531.810],[1317.171,529.297]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "장애인",
+      "polygon_points": [[1320.942,543.123],[1441.605,543.123],[1446.633,609.739],[1325.970,610.996]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Priority",
+      "polygon_points": [[579.365,565.747],[703.799,567.004],[703.799,608.482],[580.622,609.739]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "노약자",
+      "polygon_points": [[1573.581,541.866],[1576.095,608.482],[1451.661,608.482],[1447.890,541.866]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "임산부",
+      "polygon_points": [[1692.988,613.510],[1691.731,546.893],[1579.866,544.380],[1582.379,610.996]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "障害",
+      "polygon_points": [[962.723,573.288],[1031.853,573.288],[1030.596,613.510],[965.237,613.510]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "高齢者",
+      "polygon_points": [[1045.679,573.288],[1045.679,616.023],[1142.756,615.993],[1141.778,576.889]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "Lane",
+      "polygon_points": [[788.866,566.135],[791.783,607.225],[705.056,607.225],[702.542,565.747]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "爱",
+      "polygon_points": [[811.351,572.001],[848.499,571.023],[847.522,611.105],[811.351,610.127]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "心",
+      "polygon_points": [[881.738,572.979],[878.805,613.060],[849.477,610.127],[845.566,572.001]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "窗",
+      "polygon_points": [[912.043,612.082],[911.065,570.046],[879.782,571.023],[878.805,613.060]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "口",
+      "polygon_points": [[944.304,577.867],[945.281,614.038],[913.021,612.082],[912.043,575.911]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "優先",
+      "polygon_points": [[1143.000,576.000],[1208.000,576.000],[1208.000,615.000],[1143.000,615.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "窓口",
+      "polygon_points": [[1207.000,578.000],[1269.000,578.000],[1269.000,616.000],[1207.000,616.000]]
+    }
+  ]
+}

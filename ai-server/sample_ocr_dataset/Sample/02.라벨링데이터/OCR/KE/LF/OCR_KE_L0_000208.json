@@ -1,0 +1,82 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000208",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000208.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 4128,
+    "height": 2322,
+    "location": "37.274166666666666, 127.05416666666666",
+    "device_type": "SM-A710K",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "국토교통부",
+      "polygon_points": [[1478.924,424.296],[2726.382,469.583],[2693.445,778.360],[1450.105,737.190]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "국토지리정보원",
+      "polygon_points": [[245.872,724.972],[231.940,1263.676],[3584.908,1314.760],[3584.908,827.140]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "National",
+      "polygon_points": [[700.984,1328.692],[710.272,1463.368],[1281.484,1486.588],[1262.908,1314.760]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "Geographic",
+      "polygon_points": [[1313.992,1319.404],[2001.304,1337.980],[1996.660,1477.300],[1300.060,1481.944]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "Information",
+      "polygon_points": [[2665.396,1351.912],[2660.752,1472.656],[2015.236,1463.368],[2019.880,1342.624]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "Institute",
+      "polygon_points": [[3166.948,1379.776],[3120.508,1500.520],[2693.260,1477.300],[2697.904,1337.980]]
+    }
+  ]
+}

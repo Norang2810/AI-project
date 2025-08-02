@@ -1,0 +1,314 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_PB_004936",
+    "src_path": "\\OCR\\KJ\\PB",
+    "label_path": "\\OCR\\KJ\\PB",
+    "language_type": "KJ",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KJ_P4_004936.jpeg",
+    "created_day": "2023.08.25.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": null,
+    "device_type": "iPhone 8 Plus",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 4
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "갈아타는",
+      "polygon_points": [[607.146,663.964],[609.572,899.285],[1400.446,896.859],[1390.742,661.538]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "곳",
+      "polygon_points": [[1504.763,659.112],[1509.615,896.859],[1703.695,894.433],[1696.417,656.686]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "Transfer",
+      "polygon_points": [[609.572,918.693],[604.720,1069.105],[1131.160,1054.549],[1131.160,918.693]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "換",
+      "polygon_points": [[1184.532,930.823],[1179.680,1049.697],[1298.554,1049.697],[1293.702,933.249]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "乘",
+      "polygon_points": [[1412.576,1052.123],[1415.002,923.545],[1288.850,930.823],[1296.128,1044.845]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "のりかえ",
+      "polygon_points": [[1453.817,923.545],[1453.817,1049.697],[1900.200,1044.845],[1890.496,923.545]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "소요산",
+      "polygon_points": [[1113.208,1179.730],[1105.930,1301.030],[1428.587,1305.882],[1435.865,1177.304]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "인천",
+      "polygon_points": [[1549.887,1174.878],[1554.739,1318.012],[1768.226,1308.308],[1758.522,1170.026]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "신창",
+      "polygon_points": [[1879.822,1172.452],[1884.674,1315.586],[2103.013,1303.456],[2100.587,1172.452]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 32,
+      "text": "1호선",
+      "polygon_points": [[657.121,1218.546],[657.121,1359.253],[943.389,1354.401],[945.815,1220.972]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 33,
+      "text": "Line1",
+      "polygon_points": [[894.869,1424.755],[897.295,1361.679],[715.345,1361.679],[712.919,1432.033]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 34,
+      "text": "Soyosan",
+      "polygon_points": [[1401.901,1410.199],[1397.049,1327.716],[1108.356,1330.142],[1098.652,1415.051]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 35,
+      "text": "Incheon",
+      "polygon_points": [[1833.728,1402.921],[1836.154,1325.290],[1542.609,1320.438],[1540.183,1405.347]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 36,
+      "text": "Sinchang",
+      "polygon_points": [[2202.479,1422.329],[2202.479,1322.864],[1865.266,1325.290],[1870.118,1398.069]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 37,
+      "text": "Line4",
+      "polygon_points": [[713.890,1763.424],[706.612,1838.630],[900.691,1833.778],[893.413,1768.276]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 38,
+      "text": "Jinjeop",
+      "polygon_points": [[1104.474,1734.312],[1102.048,1821.648],[1373.760,1814.370],[1366.482,1734.312]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 39,
+      "text": "Oido",
+      "polygon_points": [[1550.857,1722.182],[1546.005,1802.240],[1725.529,1807.092],[1720.677,1727.034]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 40,
+      "text": "4호선",
+      "polygon_points": [[653.240,1625.142],[648.388,1748.868],[949.211,1756.146],[949.211,1620.290]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 41,
+      "text": "진접",
+      "polygon_points": [[1104.474,1581.474],[1109.326,1717.330],[1327.666,1714.904],[1330.092,1581.474]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 42,
+      "text": "오이도",
+      "polygon_points": [[1555.709,1576.622],[1543.579,1707.626],[1873.514,1707.626],[1861.384,1571.770]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 43,
+      "text": "1",
+      "polygon_points": [[1226.982,2133.272],[1219.276,2333.630],[1340.005,2336.199],[1334.868,2120.428]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 44,
+      "text": "2",
+      "polygon_points": [[1548.070,2140.978],[1530.089,2349.042],[1689.348,2338.768],[1694.485,2110.153]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 45,
+      "text": "3",
+      "polygon_points": [[1897.413,2138.409],[1892.275,2331.062],[2036.122,2315.649],[2038.691,2140.978]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 46,
+      "text": "4",
+      "polygon_points": [[2210.794,2122.997],[2210.794,2325.924],[2385.465,2328.493],[2377.759,2117.860]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 47,
+      "text": "5",
+      "polygon_points": [[2547.293,2120.428],[2547.293,2328.493],[2711.690,2336.199],[2709.121,2120.428]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 48,
+      "text": "6",
+      "polygon_points": [[2894.068,2120.428],[2891.499,2318.218],[3035.346,2320.787],[3040.483,2110.153]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 49,
+      "text": "7",
+      "polygon_points": [[1211.570,2490.321],[1209.001,2695.817],[1327.162,2695.817],[1373.398,2482.615]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 50,
+      "text": "8",
+      "polygon_points": [[1527.520,2487.752],[1532.657,2706.091],[1709.898,2682.973],[1689.348,2474.909]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 51,
+      "text": "9",
+      "polygon_points": [[1874.294,2480.046],[1876.863,2688.111],[2030.985,2690.679],[2028.416,2480.046]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 52,
+      "text": "9-1",
+      "polygon_points": [[2161.989,2459.496],[2167.126,2685.542],[2436.839,2685.542],[2429.133,2464.634]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 53,
+      "text": "나가는",
+      "polygon_points": [[2488.213,2418.397],[2472.801,2613.618],[2937.735,2605.912],[2922.323,2431.241]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 54,
+      "text": "곳",
+      "polygon_points": [[3014.796,2428.672],[3014.796,2623.893],[3161.212,2613.618],[3163.781,2426.103]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 55,
+      "text": "Exit",
+      "polygon_points": [[2668.022,2729.210],[2665.453,2623.893],[2490.782,2623.893],[2477.938,2739.485]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 56,
+      "text": "出",
+      "polygon_points": [[2796.457,2726.641],[2796.457,2629.031],[2711.690,2631.599],[2706.553,2726.641]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 57,
+      "text": "口",
+      "polygon_points": [[2886.361,2724.072],[2883.793,2634.168],[2799.026,2634.168],[2793.888,2724.072]]
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_VD_035019",
+    "src_path": "\\OCR\\KC\\VD",
+    "label_path": "\\OCR\\KC\\VD",
+    "language_type": "KC",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KC_V6_035019.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "A씨는",
+      "polygon_points": [[236.297,816.800],[449.085,808.770],[443.063,889.068],[236.297,889.068]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "음주를",
+      "polygon_points": [[461.130,804.756],[669.903,806.763],[661.873,887.060],[461.130,889.068]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "시인했지만",
+      "polygon_points": [[1033.249,812.785],[1027.227,889.068],[677.933,885.053],[683.955,802.748]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "음주측정을",
+      "polygon_points": [[1386.557,808.770],[1384.550,883.046],[1039.271,889.068],[1037.264,806.763]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "거부했고",
+      "polygon_points": [[1673.621,812.785],[1667.598,885.053],[1386.557,885.053],[1394.587,814.793]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "경찰은",
+      "polygon_points": [[370.795,975.388],[380.833,899.105],[589.606,899.105],[589.606,975.388]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "A씨를",
+      "polygon_points": [[798.379,979.402],[806.409,891.075],[599.643,903.120],[603.658,983.417]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "상대로",
+      "polygon_points": [[816.446,977.395],[822.468,895.090],[1031.241,893.083],[1021.204,975.388]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "채혈을",
+      "polygon_points": [[1246.037,973.380],[1248.044,897.098],[1039.271,897.098],[1027.227,977.395]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "진행했다",
+      "polygon_points": [[1539.122,971.373],[1537.115,897.098],[1258.082,899.105],[1252.059,979.402]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "A",
+      "polygon_points": [[251.406,724.761],[279.819,727.232],[287.231,771.704],[253.877,770.469]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "先",
+      "polygon_points": [[329.233,724.761],[331.704,771.704],[289.702,771.704],[285.996,728.467]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "生",
+      "polygon_points": [[374.941,723.526],[377.411,770.469],[331.704,771.704],[334.174,727.232]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "承",
+      "polygon_points": [[418.178,722.291],[420.907,775.790],[376.176,767.998],[379.882,722.291]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "认",
+      "polygon_points": [[457.709,724.761],[467.592,774.175],[423.119,771.704],[423.119,727.232]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "喝",
+      "polygon_points": [[509.593,721.055],[509.593,770.469],[467.592,771.704],[467.592,727.232]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "酒",
+      "polygon_points": [[557.772,723.526],[555.301,770.469],[505.887,774.175],[512.064,722.291]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "但",
+      "polygon_points": [[643.010,721.055],[645.481,769.234],[599.773,771.704],[602.244,728.467]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "拒",
+      "polygon_points": [[689.954,724.761],[688.718,775.410],[645.481,770.469],[644.246,723.526]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "绝",
+      "polygon_points": [[731.955,727.232],[734.426,775.410],[687.483,775.410],[689.954,727.232]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "接",
+      "polygon_points": [[776.428,722.291],[781.369,776.646],[734.426,771.704],[734.426,722.291]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "受",
+      "polygon_points": [[820.900,724.761],[825.841,771.704],[782.604,774.175],[781.369,725.997]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "酒",
+      "polygon_points": [[867.843,722.291],[867.843,771.704],[823.371,771.704],[825.841,723.526]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "精",
+      "polygon_points": [[912.316,724.761],[911.080,777.881],[872.785,774.175],[865.372,721.055]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "检",
+      "polygon_points": [[956.788,719.820],[959.259,769.234],[916.022,771.704],[909.845,723.526]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "测",
+      "polygon_points": [[1002.496,723.526],[1003.731,774.175],[956.788,775.410],[959.259,718.585]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "警",
+      "polygon_points": [[1093.170,725.255],[1095.641,774.669],[1042.521,772.198],[1053.639,727.726]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 32,
+      "text": "方",
+      "polygon_points": [[1133.936,725.255],[1137.642,773.434],[1093.170,773.434],[1093.170,725.255]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 33,
+      "text": "对",
+      "polygon_points": [[1188.292,725.255],[1184.585,775.904],[1138.878,774.669],[1138.878,720.314]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 34,
+      "text": "A",
+      "polygon_points": [[1215.469,725.255],[1219.175,772.198],[1185.821,770.963],[1190.762,725.255]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 35,
+      "text": "先",
+      "polygon_points": [[1258.706,724.020],[1261.177,774.669],[1217.940,773.434],[1215.469,727.726]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 36,
+      "text": "生",
+      "polygon_points": [[1303.179,725.255],[1304.414,770.963],[1261.177,772.198],[1261.177,725.255]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 37,
+      "text": "进",
+      "polygon_points": [[1350.122,720.314],[1350.122,769.728],[1305.649,770.963],[1305.649,725.255]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 38,
+      "text": "行",
+      "polygon_points": [[1394.594,722.785],[1395.829,774.669],[1350.122,772.198],[1348.886,720.314]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 39,
+      "text": "了",
+      "polygon_points": [[1439.066,721.549],[1431.654,778.375],[1398.300,775.904],[1395.829,721.549]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 40,
+      "text": "血",
+      "polygon_points": [[1482.304,720.314],[1483.539,773.434],[1435.360,775.904],[1444.008,722.785]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 41,
+      "text": "液",
+      "polygon_points": [[1529.247,720.314],[1532.953,774.669],[1481.068,777.140],[1483.539,720.314]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 42,
+      "text": "检",
+      "polygon_points": [[1572.484,721.549],[1572.484,772.198],[1531.717,774.669],[1526.776,720.314]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 43,
+      "text": "测",
+      "polygon_points": [[1619.427,720.314],[1615.721,775.904],[1572.484,775.904],[1574.954,720.314]]
+    }
+  ]
+}

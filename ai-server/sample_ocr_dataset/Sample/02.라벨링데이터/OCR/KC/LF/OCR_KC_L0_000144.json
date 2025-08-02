@@ -1,0 +1,106 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_000144",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_000144.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1554,
+    "height": 755,
+    "location": "36.56539829972222, 128.7284715",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Boosan",
+      "polygon_points": [[60.298,257.337],[313.788,231.806],[308.317,306.576],[62.122,339.402]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Foods",
+      "polygon_points": [[373.969,213.569],[567.279,197.156],[572.750,273.750],[355.733,291.987]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "釜山",
+      "polygon_points": [[680.346,160.683],[840.333,150.182],[838.667,245.182],[676.699,266.456]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "食品",
+      "polygon_points": [[848.667,141.849],[1017.000,121.849],[1010.333,226.849],[842.082,247.091]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "釜",
+      "polygon_points": [[1135.333,103.516],[1208.667,93.516],[1213.667,195.182],[1132.000,205.182]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "山",
+      "polygon_points": [[1283.667,81.849],[1215.333,91.849],[1217.000,186.849],[1302.000,180.182]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "食",
+      "polygon_points": [[1367.000,68.516],[1300.333,78.516],[1305.333,196.849],[1388.667,183.516]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "品",
+      "polygon_points": [[1450.333,55.182],[1375.333,66.849],[1393.667,176.849],[1485.333,171.849]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "부산식품",
+      "polygon_points": [[48.667,378.516],[3.667,753.516],[1270.333,620.182],[1270.333,215.182]]
+    }
+  ]
+}

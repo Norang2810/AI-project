@@ -1,0 +1,130 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_CT_000368",
+    "src_path": "\\OCR\\KC\\CT",
+    "label_path": "\\OCR\\KC\\CT",
+    "language_type": "KC",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KC_C2_000368.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.2012715, 128.8127624",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "FRONT",
+      "polygon_points": [[352.466,1527.938],[923.889,1522.597],[913.208,1720.192],[347.126,1714.852]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "GATE",
+      "polygon_points": [[1377.823,1501.236],[939.910,1506.576],[929.229,1725.532],[1388.503,1709.511]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "正",
+      "polygon_points": [[1452.588,1527.938],[1575.417,1522.597],[1575.417,1693.490],[1457.928,1693.490]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "門",
+      "polygon_points": [[1720.371,1518.616],[1586.861,1518.616],[1579.232,1697.901],[1731.815,1678.828]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "BACK",
+      "polygon_points": [[2174.305,1518.616],[2654.940,1514.801],[2639.682,1705.530],[2166.675,1694.086]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "GATE",
+      "polygon_points": [[2693.086,1503.358],[3139.391,1491.914],[3143.205,1701.715],[2681.642,1697.901]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "後",
+      "polygon_points": [[3257.642,1518.616],[3402.596,1503.358],[3387.338,1690.272],[3261.457,1694.086]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "門",
+      "polygon_points": [[3532.291,1510.987],[3406.411,1510.987],[3387.338,1709.344],[3528.477,1709.344]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "일주문",
+      "polygon_points": [[305.166,1171.490],[1132.927,1171.490],[1140.556,1480.470],[308.980,1514.801]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "(정문)",
+      "polygon_points": [[1167.258,1179.119],[1159.629,1472.841],[1811.921,1453.768],[1792.848,1160.046]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "불이문",
+      "polygon_points": [[2109.457,1163.861],[2109.457,1469.026],[2967.735,1438.510],[2979.179,1137.159]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "(후문)",
+      "polygon_points": [[3055.470,1133.344],[3021.139,1461.397],[3726.834,1449.954],[3707.762,1129.530]]
+    }
+  ]
+}

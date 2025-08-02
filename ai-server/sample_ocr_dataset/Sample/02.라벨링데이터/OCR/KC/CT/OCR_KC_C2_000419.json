@@ -1,0 +1,154 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_CT_000419",
+    "src_path": "\\OCR\\KC\\CT",
+    "label_path": "\\OCR\\KC\\CT",
+    "language_type": "KC",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KC_C2_000419.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 630,
+    "height": 798,
+    "location": null,
+    "device_type": null,
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "홍범식",
+      "polygon_points": [[5.000,59.000],[205.000,59.000],[205.000,196.000],[5.000,196.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "군수",
+      "polygon_points": [[225.000,50.000],[373.000,50.000],[373.000,182.000],[225.000,182.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "순절비",
+      "polygon_points": [[395.000,37.000],[606.000,37.000],[606.000,180.000],[395.000,180.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "HongBeomSik",
+      "polygon_points": [[7.000,399.000],[266.000,399.000],[266.000,456.000],[7.000,456.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "GunSu",
+      "polygon_points": [[277.000,395.000],[406.000,395.000],[406.000,447.000],[277.000,447.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "SunJeolBi",
+      "polygon_points": [[417.000,392.000],[613.000,392.000],[613.000,446.000],[417.000,446.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "1km",
+      "polygon_points": [[90.000,638.000],[294.000,638.000],[294.000,736.000],[90.000,736.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "洪",
+      "polygon_points": [[9.898,260.956],[6.846,345.638],[75.508,343.731],[72.074,260.574]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "範",
+      "polygon_points": [[74.745,256.760],[76.270,343.350],[140.736,341.824],[137.684,255.234]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "植",
+      "polygon_points": [[138.829,254.471],[141.499,342.205],[209.779,339.916],[208.635,254.090]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "郡",
+      "polygon_points": [[229.615,256.760],[228.470,341.061],[301.709,338.772],[298.658,253.708]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "守",
+      "polygon_points": [[303.235,248.368],[303.616,339.535],[365.412,338.391],[366.175,248.368]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "殉",
+      "polygon_points": [[392.877,246.842],[390.588,336.102],[463.064,334.576],[463.064,247.605]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "節",
+      "polygon_points": [[464.590,244.172],[464.971,334.576],[532.107,332.669],[533.633,244.553]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "碑",
+      "polygon_points": [[535.921,243.409],[533.633,333.432],[609.160,332.287],[605.346,241.120]]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206867",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206867.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "地方",
+      "polygon_points": [[623.206,859.411],[525.076,857.709],[527.912,808.360],[622.639,808.928]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "地域の",
+      "polygon_points": [[777.492,856.007],[624.908,855.440],[627.744,808.928],[774.088,808.360]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "低迷",
+      "polygon_points": [[886.399,863.381],[784.866,859.978],[779.193,811.196],[881.294,809.495]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "そして",
+      "polygon_points": [[1078.122,859.978],[932.345,858.844],[934.046,809.495],[1076.988,808.928]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "ソウル地域の",
+      "polygon_points": [[1387.828,864.516],[1086.630,857.709],[1086.063,810.062],[1390.097,807.793]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "지방",
+      "polygon_points": [[784.298,964.915],[670.853,964.348],[672.555,899.117],[784.298,903.654]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "지역의",
+      "polygon_points": [[949.361,964.915],[793.374,962.646],[791.672,901.953],[949.361,905.923]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "침체",
+      "polygon_points": [[1062.240,968.318],[959.572,966.049],[958.437,899.684],[1062.240,905.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "그리고",
+      "polygon_points": [[1238.647,964.348],[1087.198,961.512],[1084.361,906.491],[1240.349,905.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "서울지역의",
+      "polygon_points": [[1507.513,969.453],[1250.559,967.751],[1250.559,903.654],[1501.840,906.491]]
+    }
+  ]
+}

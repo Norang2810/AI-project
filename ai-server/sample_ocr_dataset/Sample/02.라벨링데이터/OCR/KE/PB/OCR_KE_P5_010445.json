@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_PB_010445",
+    "src_path": "\\OCR\\KE\\PB",
+    "label_path": "\\OCR\\KE\\PB",
+    "language_type": "KE",
+    "group": "PB",
+    "small_group": 5
+  },
+  "Images": {
+    "file_name": "OCR_KE_P5_010445.jpeg",
+    "created_day": "2023.08.27.",
+    "extension": "jpeg",
+    "width": 3024,
+    "height": 4032,
+    "location": null,
+    "device_type": "iPhone 12 Pro",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "동탄원천로",
+      "polygon_points": [[1307.000,1286.000],[2500.886,1332.731],[2526.670,1577.680],[1311.591,1558.342]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Dongtanwoncheon-ro",
+      "polygon_points": [[799.130,1548.673],[2529.893,1613.134],[2520.224,1793.623],[844.253,1761.393]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "2",
+      "polygon_points": [[666.986,1361.738],[776.569,1361.738],[757.231,1506.774],[663.763,1506.774]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "1140",
+      "polygon_points": [[844.253,1500.328],[1173.001,1500.328],[1179.447,1364.961],[853.922,1339.177]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "광교호수로",
+      "polygon_points": [[786.238,2409.220],[2004.540,2393.105],[2017.432,2144.932],[763.677,2144.932]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "Gwanggyohosu-ro",
+      "polygon_points": [[770.123,2612.270],[2439.648,2628.385],[2439.648,2409.220],[776.569,2415.666]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "2",
+      "polygon_points": [[2114.123,2370.544],[2230.152,2380.213],[2214.037,2244.846],[2123.792,2248.069]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "430",
+      "polygon_points": [[2313.950,2373.767],[2607.245,2376.990],[2571.792,2241.623],[2304.281,2235.177]]
+    }
+  ]
+}

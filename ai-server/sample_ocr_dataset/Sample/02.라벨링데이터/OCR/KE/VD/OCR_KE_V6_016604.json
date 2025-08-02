@@ -1,0 +1,106 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_VD_016604",
+    "src_path": "\\OCR\\KE\\VD",
+    "label_path": "\\OCR\\KE\\VD",
+    "language_type": "KE",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KE_V6_016604.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "손님들",
+      "polygon_points": [[1298.731,883.796],[1521.609,883.796],[1520.000,970.000],[1297.000,970.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Customers",
+      "polygon_points": [[563.745,624.367],[784.712,623.730],[785.349,669.579],[563.109,670.853]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "hurriedly",
+      "polygon_points": [[794.901,618.254],[978.934,618.891],[978.934,681.296],[793.627,681.296]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "begin",
+      "polygon_points": [[985.939,623.348],[1102.472,622.075],[1103.745,678.749],[986.576,678.749]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "to",
+      "polygon_points": [[1111.387,627.806],[1157.236,628.443],[1159.783,671.108],[1110.113,670.471]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "evacuate",
+      "polygon_points": [[1168.698,630.608],[1352.731,627.424],[1352.731,671.362],[1169.335,669.452]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "황급하게",
+      "polygon_points": [[391.939,883.160],[688.684,883.160],[685.500,971.674],[389.392,972.947]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "대피하기",
+      "polygon_points": [[699.764,881.249],[987.594,879.339],[986.321,971.674],[695.943,970.400]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "시작하는",
+      "polygon_points": [[1000.330,884.433],[1284.976,882.523],[1286.887,972.310],[997.783,970.400]]
+    }
+  ]
+}

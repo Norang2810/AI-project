@@ -1,0 +1,122 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_000654",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_000654.jpeg",
+    "created_day": "2023.08.23.",
+    "extension": "jpeg",
+    "width": 2319,
+    "height": 2628,
+    "location": "37.6439531, 126.7856111",
+    "device_type": "iPhone 14",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 2
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "삼랑진",
+      "polygon_points": [[919.495,812.416],[1484.861,818.745],[1467.984,1019.154],[879.413,1002.278]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Samnangjin",
+      "polygon_points": [[900.509,1014.935],[1434.231,1025.483],[1411.026,1124.633],[896.290,1111.975]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "三",
+      "polygon_points": [[1056.617,1135.181],[1138.891,1133.071],[1130.452,1215.345],[1052.398,1211.125]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "浪",
+      "polygon_points": [[1220.145,1210.920],[1139.609,1204.095],[1143.705,1119.464],[1222.876,1123.559]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "津",
+      "polygon_points": [[1297.951,1205.460],[1222.876,1205.460],[1224.241,1124.924],[1297.951,1130.384]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "원동",
+      "polygon_points": [[1409.883,1336.501],[1576.415,1337.866],[1573.685,1426.593],[1412.613,1423.863]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "Wondong",
+      "polygon_points": [[1558.670,1470.273],[1406.537,1465.370],[1408.518,1426.593],[1570.955,1426.593]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "xxx",
+      "polygon_points": [[1451.843,1466.475],[1522.336,1468.098],[1519.309,1503.410],[1449.633,1500.730]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "밀양",
+      "polygon_points": [[755.552,1319.786],[924.043,1327.857],[911.491,1414.539],[755.552,1411.598]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "xxx",
+      "polygon_points": [[761.209,1421.169],[919.226,1420.064],[911.491,1458.740],[756.789,1456.530]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "xxx",
+      "polygon_points": [[774.469,1459.845],[883.865,1463.160],[877.235,1491.890],[779.994,1495.205]]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000028",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000028.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 580,
+    "height": 1856,
+    "location": null,
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "MISO",
+      "polygon_points": [[17.344,16.051],[15.912,376.940],[124.752,376.940],[120.455,23.212]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "GARLIC",
+      "polygon_points": [[35.962,965.533],[149.097,974.126],[129.048,429.928],[31.665,419.903]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "CHICKEN",
+      "polygon_points": [[43.122,1758.916],[159.122,1768.940],[140.505,1024.249],[35.962,1015.656]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "미소",
+      "polygon_points": [[165.975,318.202],[540.239,378.391],[545.711,557.862],[199.899,545.825]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "마늘닭",
+      "polygon_points": [[189.686,583.876],[566.138,592.630],[572.704,1835.800],[233.459,1824.857]]
+    }
+  ]
+}

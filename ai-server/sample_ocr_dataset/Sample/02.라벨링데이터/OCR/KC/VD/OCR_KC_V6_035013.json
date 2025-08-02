@@ -1,0 +1,202 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_VD_035013",
+    "src_path": "\\OCR\\KC\\VD",
+    "label_path": "\\OCR\\KC\\VD",
+    "language_type": "KC",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KC_V6_035013.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "충격을",
+      "polygon_points": [[340.000,472.000],[529.633,479.027],[517.721,550.497],[350.956,562.409]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "속도를",
+      "polygon_points": [[962.000,477.000],[1137.133,473.071],[1133.162,550.497],[964.412,550.497]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "무시한",
+      "polygon_points": [[547.500,475.056],[527.648,554.468],[696.398,546.527],[714.265,479.027]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "내",
+      "polygon_points": [[1216.545,477.041],[1200.662,550.497],[1147.059,544.541],[1151.030,473.071]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "도망가는",
+      "polygon_points": [[1234.412,475.056],[1212.574,542.556],[1440.883,542.556],[1444.853,486.968]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "A씨",
+      "polygon_points": [[1567.942,471.085],[1565.956,552.483],[1448.824,550.497],[1468.677,479.027]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "더욱더",
+      "polygon_points": [[799.633,558.438],[781.765,486.968],[952.500,479.027],[950.515,550.497]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "채",
+      "polygon_points": [[769.853,562.409],[771.839,471.085],[722.206,481.012],[704.339,558.438]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "A",
+      "polygon_points": [[668.412,718.584],[672.647,766.231],[706.530,769.407],[705.471,729.172]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "先",
+      "polygon_points": [[746.765,722.819],[748.831,772.068],[706.530,769.407],[708.647,723.878]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "生",
+      "polygon_points": [[790.177,725.996],[795.471,770.466],[751.000,769.407],[751.000,727.054]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "不",
+      "polygon_points": [[841.000,724.937],[837.824,775.760],[799.706,771.525],[795.471,727.054]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "顾",
+      "polygon_points": [[886.530,727.054],[888.647,777.878],[837.824,775.760],[844.177,723.878]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "震",
+      "polygon_points": [[931.000,725.996],[928.883,771.525],[886.530,776.819],[888.647,728.113]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "动",
+      "polygon_points": [[971.184,726.407],[971.184,772.068],[930.486,773.061],[931.478,726.407]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "继",
+      "polygon_points": [[1018.831,726.407],[1017.838,772.068],[973.169,773.061],[973.169,726.407]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "续",
+      "polygon_points": [[1062.508,725.414],[1062.508,777.032],[1019.824,770.083],[1017.838,725.414]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "加",
+      "polygon_points": [[1108.169,725.414],[1110.155,771.076],[1064.493,774.054],[1064.493,724.421]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "速",
+      "polygon_points": [[1156.809,726.407],[1149.861,773.061],[1112.140,774.054],[1108.169,723.429]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "逃",
+      "polygon_points": [[1197.508,725.414],[1197.508,773.061],[1155.816,773.061],[1157.802,722.436]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "跑",
+      "polygon_points": [[1244.162,722.436],[1243.169,775.046],[1197.508,774.054],[1198.500,723.429]]
+    }
+  ]
+}

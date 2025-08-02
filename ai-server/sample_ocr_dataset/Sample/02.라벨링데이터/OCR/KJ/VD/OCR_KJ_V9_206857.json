@@ -1,0 +1,106 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206857",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206857.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "完全に",
+      "polygon_points": [[572.475,864.516],[424.996,862.247],[428.399,807.226],[573.609,813.465]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "回復するには",
+      "polygon_points": [[875.941,859.978],[579.849,859.978],[580.416,810.062],[876.508,812.331]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "小し",
+      "polygon_points": [[972.937,859.411],[882.181,860.545],[882.748,813.465],[971.235,813.465]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "難しくないでしようか",
+      "polygon_points": [[1480.071,866.439],[981.609,861.552],[983.005,812.683],[1487.052,812.683]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "완연하게",
+      "polygon_points": [[876.659,966.049],[657.142,962.079],[658.844,901.386],[876.092,899.684]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "회복되기는",
+      "polygon_points": [[1139.285,968.318],[882.898,961.512],[882.898,904.789],[1142.121,905.923]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "좀",
+      "polygon_points": [[1206.218,968.318],[1150.062,964.348],[1150.062,904.222],[1201.113,903.087]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "어렵지",
+      "polygon_points": [[1368.445,964.915],[1210.756,966.049],[1209.621,904.222],[1370.146,904.789]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "않겠나",
+      "polygon_points": [[1538.613,970.587],[1377.520,966.617],[1375.819,904.789],[1542.016,907.058]]
+    }
+  ]
+}

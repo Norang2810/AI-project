@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_PB_010410",
+    "src_path": "\\OCR\\KE\\PB",
+    "label_path": "\\OCR\\KE\\PB",
+    "language_type": "KE",
+    "group": "PB",
+    "small_group": 5
+  },
+  "Images": {
+    "file_name": "OCR_KE_P5_010410.jpg",
+    "created_day": "2023.08.27.",
+    "extension": "jpg",
+    "width": 2252,
+    "height": 4000,
+    "location": null,
+    "device_type": "SM-F711N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "태복산로15번길",
+      "polygon_points": [[1413.171,1457.037],[1000.279,1494.901],[994.870,1431.795],[1414.974,1386.720]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "15beon-gil",
+      "polygon_points": [[1467.262,1496.704],[1263.520,1521.946],[1256.308,1475.068],[1465.459,1446.219]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Taeboksan-ro",
+      "polygon_points": [[1009.295,1545.385],[1254.505,1521.946],[1252.702,1478.674],[1002.082,1494.901]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "부부의날",
+      "polygon_points": [[1835.078,1731.096],[1625.927,1752.733],[1618.715,1677.006],[1836.881,1651.764]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "발원지",
+      "polygon_points": [[2006.365,1711.263],[1844.093,1725.687],[1836.881,1657.173],[2006.365,1637.339]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "일방통행",
+      "polygon_points": [[1931.640,2536.004],[1752.059,2557.640],[1769.368,2644.185],[1942.458,2611.731]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "44",
+      "polygon_points": [[1499.063,1401.343],[1499.063,1435.467],[1463.872,1436.534],[1460.673,1406.675]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "2",
+      "polygon_points": [[1542.784,1400.277],[1543.851,1426.936],[1524.656,1430.135],[1521.457,1400.277]]
+    }
+  ]
+}

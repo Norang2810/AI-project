@@ -1,0 +1,154 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000142",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000142.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2138,
+    "height": 672,
+    "location": null,
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Beef",
+      "polygon_points": [[291.525,134.523],[407.518,128.849],[392.389,210.801],[285.221,212.693]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Sinsedae",
+      "polygon_points": [[8.000,148.000],[250.549,139.566],[246.136,216.475],[9.106,224.670]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Boiled",
+      "polygon_points": [[622.835,114.490],[455.148,125.207],[453.888,204.638],[619.683,195.182]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Octopus",
+      "polygon_points": [[641.116,110.078],[638.595,198.964],[836.540,190.769],[838.431,123.316]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "新世代韓牛",
+      "polygon_points": [[944.549,85.562],[945.809,189.578],[1227.598,173.188],[1218.772,66.650]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "タコ",
+      "polygon_points": [[1255.966,69.172],[1257.857,157.428],[1359.352,152.384],[1353.048,70.432]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "新",
+      "polygon_points": [[1463.508,46.547],[1476.746,155.606],[1534.112,152.454],[1527.808,45.917]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "世",
+      "polygon_points": [[1580.762,41.504],[1529.069,48.439],[1536.634,153.715],[1590.848,149.302]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "代",
+      "polygon_points": [[1636.867,42.135],[1583.284,41.504],[1594.000,146.150],[1646.323,146.150]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "韩",
+      "polygon_points": [[1694.234,37.091],[1636.867,38.983],[1650.106,146.150],[1706.211,140.477]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "牛",
+      "polygon_points": [[1754.752,30.157],[1694.864,35.831],[1708.733,139.846],[1761.056,137.325]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "章",
+      "polygon_points": [[1781.229,28.896],[1790.055,130.390],[1847.421,128.499],[1836.074,21.962]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "鱼",
+      "polygon_points": [[1889.027,24.483],[1838.595,25.744],[1850.573,127.869],[1906.048,122.195]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "신세대한우",
+      "polygon_points": [[100.269,255.584],[98.062,659.355],[1346.884,617.434],[1324.820,189.392]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "문어",
+      "polygon_points": [[1527.808,178.360],[1563.111,608.608],[2055.137,553.448],[2013.216,132.026]]
+    }
+  ]
+}

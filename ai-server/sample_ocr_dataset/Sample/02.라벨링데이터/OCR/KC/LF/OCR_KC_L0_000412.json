@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_000412",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_000412.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 2070,
+    "height": 878,
+    "location": "37.510933, 127.123925",
+    "device_type": "iPhone 13",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "일반음식점",
+      "polygon_points": [[1704.706,761.514],[2052.093,766.886],[2059.000,854.000],[1704.706,852.837]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "베이징마라탕",
+      "polygon_points": [[218.460,442.777],[223.832,693.469],[1654.567,729.282],[1640.242,487.543]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "北",
+      "polygon_points": [[46.557,107.924],[26.860,394.429],[354.550,403.382],[358.131,90.017]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "京",
+      "polygon_points": [[376.038,102.552],[682.240,98.970],[684.031,433.823],[367.085,433.823]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "麻",
+      "polygon_points": [[734.170,115.086],[1072.604,116.877],[1088.720,455.311],[716.263,439.195]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "辣",
+      "polygon_points": [[1099.464,127.621],[1106.626,444.567],[1468.339,473.218],[1455.804,122.249]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "烫",
+      "polygon_points": [[1493.408,147.318],[1491.618,467.846],[1801.401,478.590],[1792.448,154.481]]
+    }
+  ]
+}

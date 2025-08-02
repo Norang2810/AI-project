@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_001163",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_001163.jpeg",
+    "created_day": "2023.08.24.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.8581982, 128.5805738",
+    "device_type": "iPhone 13 Pro",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "유성온천역",
+      "polygon_points": [[255.375,2301.879],[238.029,2747.095],[1937.945,2747.095],[1932.163,2278.751]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "⑤",
+      "polygon_points": [[2307.994,2741.313],[2307.994,2272.969],[1943.727,2284.533],[1943.727,2752.877]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "儒",
+      "polygon_points": [[2365.815,2296.097],[2371.597,2712.403],[2701.172,2706.621],[2712.736,2290.315]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "城",
+      "polygon_points": [[3042.312,2706.621],[3036.530,2301.879],[2724.300,2301.879],[2718.518,2706.621]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "溫",
+      "polygon_points": [[3371.887,2712.403],[3354.541,2296.097],[3048.094,2307.661],[3053.876,2712.403]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "泉",
+      "polygon_points": [[3672.553,2695.057],[3649.424,2307.661],[3371.887,2313.443],[3383.451,2706.621]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "驛",
+      "polygon_points": [[3996.346,2319.225],[3689.899,2325.007],[3689.899,2695.057],[4013.692,2683.493]]
+    }
+  ]
+}

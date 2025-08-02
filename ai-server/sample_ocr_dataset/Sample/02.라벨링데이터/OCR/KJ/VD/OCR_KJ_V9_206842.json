@@ -1,0 +1,146 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206842",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206842.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "価格",
+      "polygon_points": [[573.786,862.247],[477.358,859.978],[475.089,810.629],[573.219,810.629]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "変動",
+      "polygon_points": [[677.022,865.083],[576.623,862.247],[576.055,814.033],[677.022,808.928]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "差が",
+      "polygon_points": [[773.450,859.411],[681.559,861.112],[681.559,807.793],[779.123,811.764]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "大きく",
+      "polygon_points": [[917.446,861.680],[776.854,860.545],[780.824,811.196],[916.879,810.629]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "起きている",
+      "polygon_points": [[1174.909,865.575],[929.867,862.275],[930.692,805.346],[1175.734,812.772]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "状況なから",
+      "polygon_points": [[1426.213,865.083],[1187.978,863.381],[1182.306,807.793],[1431.885,808.928]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "가격",
+      "polygon_points": [[616.780,968.886],[510.709,966.617],[509.575,903.087],[619.617,905.923]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "변동",
+      "polygon_points": [[726.822,968.886],[631.528,967.184],[628.125,904.789],[731.360,905.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "차가",
+      "polygon_points": [[850.478,965.482],[739.301,966.049],[739.301,903.087],[852.747,904.789]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "크게",
+      "polygon_points": [[970.163,967.751],[857.285,964.348],[857.285,903.087],[965.625,903.654]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "일어나고",
+      "polygon_points": [[1181.738,967.184],[976.402,968.318],[972.999,905.356],[1178.902,904.789]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "있는",
+      "polygon_points": [[1292.915,968.318],[1193.083,964.348],[1190.814,902.520],[1298.587,904.789]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "상황이기",
+      "polygon_points": [[1516.402,969.453],[1304.827,965.482],[1303.692,904.222],[1516.969,901.953]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "때문에",
+      "polygon_points": [[1688.839,967.751],[1527.180,966.049],[1524.343,901.953],[1689.406,903.654]]
+    }
+  ]
+}
