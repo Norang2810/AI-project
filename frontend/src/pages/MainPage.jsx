@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Header from '../components/Header';
 import ImageUpload from '../components/ImageUpload';
 
+
 const MainContainer = styled.div`
   padding-top: 80px; // 헤더 높이만큼 패딩
 `;
@@ -17,13 +18,13 @@ const Section = styled.section`
   padding: 2rem;
   
   &:nth-child(even) {
-    background-color: #f8f9fa;
+    background-color: #fffaf4;
   }
 `;
 
 const HeroSection = styled(Section)`
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: linear-gradient(135deg, #f6f1eb 0%, #d8c3a5 100%);
+  color: #3e2f1c;
   text-align: center;
 `;
 
@@ -41,7 +42,7 @@ const HeroSubtitle = styled.p`
 
 const CTAButton = styled(Link)`
   display: inline-block;
-  background-color: #007bff;
+  background-color: #8b5e3c;
   color: white;
   padding: 1rem 2rem;
   border-radius: 50px;
@@ -51,9 +52,9 @@ const CTAButton = styled(Link)`
   transition: all 0.3s ease;
   
   &:hover {
-    background-color: #0056b3;
+    background-color: #6e4b2a;
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(139, 94, 60, 0.3);
   }
 `;
 
@@ -61,7 +62,7 @@ const SectionTitle = styled.h2`
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-align: center;
-  color: #333;
+  color: #3e2f1c;
 `;
 
 const SectionContent = styled.div`
@@ -78,10 +79,10 @@ const FeatureGrid = styled.div`
 `;
 
 const FeatureCard = styled.div`
-  background: white;
+  background: #fffaf4;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(139, 94, 60, 0.15);
   text-align: center;
   transition: transform 0.3s ease;
   
@@ -98,11 +99,11 @@ const FeatureIcon = styled.div`
 const FeatureTitle = styled.h3`
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: #5a4332;
 `;
 
 const FeatureDescription = styled.p`
-  color: #666;
+  color: #6f4f3c;
   line-height: 1.6;
 `;
 
@@ -130,7 +131,7 @@ const MainPage = () => {
       <MainContainer>
         {/* Hero Section */}
         <HeroSection id="home">
-          <HeroTitle>🍽️ 알레르기 안전 메뉴 분석</HeroTitle>
+          <HeroTitle>☕ 알레르기 안전 메뉴 분석</HeroTitle>
           <HeroSubtitle>
             메뉴판을 업로드하면 알레르기 정보를 분석해드립니다!
           </HeroSubtitle>
@@ -146,7 +147,7 @@ const MainPage = () => {
         </Section>
 
         {/* Analysis Section */}
-        <Section id="analysis">
+        <Section id="analysis" style={{ backgroundColor: '#fffaf9' }}>
           <SectionContent>
             <SectionTitle>분석 결과</SectionTitle>
             <div style={{ textAlign: 'center', padding: '2rem' }}>
@@ -166,6 +167,14 @@ const MainPage = () => {
         <Section id="about">
           <SectionContent>
             <SectionTitle>서비스 소개</SectionTitle>
+
+            {/* Timeline Header */}
+    <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+      <h3 style={{ fontSize: '1.2rem', color: '#5a4332' }}>
+      Your Guide to Allergenic Ingredients <br/><br/>
+      </h3>
+    </div>
+
             <FeatureGrid>
               <FeatureCard>
                 <FeatureIcon>📸</FeatureIcon>

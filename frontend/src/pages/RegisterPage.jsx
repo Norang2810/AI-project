@@ -7,22 +7,22 @@ const RegisterContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #f6f1eb 0%, #d8c3a5 100%);
   padding: 2rem;
 `;
 
 const RegisterCard = styled.div`
-  background: white;
+  background: #fffaf4;
   padding: 3rem;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 500px;
 `;
 
 const Title = styled.h1`
   text-align: center;
-  color: #333;
+  color: #3e2f1c;
   margin-bottom: 2rem;
   font-size: 2rem;
 `;
@@ -52,23 +52,24 @@ const FormGroup = styled.div`
 const Label = styled.label`
   font-weight: bold;
   color: #555;
+  text-align: left;
 `;
 
 const Input = styled.input`
   padding: 1rem;
-  border: 2px solid #e1e5e9;
+  border: 2px solid #cbbeb5;
   border-radius: 8px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
   
   &:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #fff6e9;
   }
 `;
 
 const Button = styled.button`
-  background-color: #007bff;
+  background-color: #8b5e3c;
   color: white;
   padding: 1rem;
   border: none;
@@ -79,11 +80,11 @@ const Button = styled.button`
   transition: background-color 0.3s ease;
   
   &:hover {
-    background-color: #0056b3;
+    background-color: #6e4b2a;
   }
   
   &:disabled {
-    background-color: #ccc;
+    background-color: #cbbeb5;
     cursor: not-allowed;
   }
 `;
@@ -91,10 +92,10 @@ const Button = styled.button`
 const LinkText = styled.p`
   text-align: center;
   margin-top: 1.5rem;
-  color: #666;
+  color: #5a4332;
   
   a {
-    color: #007bff;
+    color: #a67c52;
     text-decoration: none;
     font-weight: bold;
     
@@ -114,8 +115,8 @@ const ErrorMessage = styled.div`
 `;
 
 const SuccessMessage = styled.div`
-  background-color: #d4edda;
-  color: #155724;
+  background-color: #e4f5e8;
+  color: #2d624d;
   padding: 1rem;
   border-radius: 8px;
   border: 1px solid #c3e6cb;
@@ -201,13 +202,13 @@ const RegisterPage = () => {
   return (
     <RegisterContainer>
       <RegisterCard>
-        <Title>🍽️ 회원가입</Title>
+        <Title>☕ 회원가입</Title>
         
         {error && <ErrorMessage>{error}</ErrorMessage>}
         {success && <SuccessMessage>{success}</SuccessMessage>}
         
         <Form onSubmit={handleSubmit}>
-          <FormRow>
+          
             <FormGroup>
               <Label htmlFor="name">이름</Label>
               <Input
@@ -232,7 +233,7 @@ const RegisterPage = () => {
                 placeholder="전화번호를 입력하세요"
               />
             </FormGroup>
-          </FormRow>
+          
           
           <FormGroup>
             <Label htmlFor="email">이메일</Label>
@@ -247,7 +248,7 @@ const RegisterPage = () => {
             />
           </FormGroup>
           
-          <FormRow>
+         
             <FormGroup>
               <Label htmlFor="password">비밀번호</Label>
               <Input
@@ -273,7 +274,7 @@ const RegisterPage = () => {
                 placeholder="비밀번호를 다시 입력하세요"
               />
             </FormGroup>
-          </FormRow>
+         
           
           <Button type="submit" disabled={isLoading}>
             {isLoading ? '회원가입 중...' : '회원가입'}

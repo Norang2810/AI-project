@@ -7,7 +7,7 @@ const LoginContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #f6f1eb 0%, #d8c3a5 100%);
   padding: 2rem;
 `;
 
@@ -15,14 +15,14 @@ const LoginCard = styled.div`
   background: white;
   padding: 3rem;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(139, 94, 60, 0.2);
   width: 100%;
   max-width: 400px;
 `;
 
 const Title = styled.h1`
   text-align: center;
-  color: #333;
+  color: #3e2f1c;
   margin-bottom: 2rem;
   font-size: 2rem;
 `;
@@ -41,24 +41,24 @@ const FormGroup = styled.div`
 
 const Label = styled.label`
   font-weight: bold;
-  color: #555;
+  color: #5a4332;
 `;
 
 const Input = styled.input`
   padding: 1rem;
-  border: 2px solid #e1e5e9;
+  border: 2px solid #cbbeb5;
   border-radius: 8px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
   
   &:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #8b5e3c;
   }
 `;
 
 const Button = styled.button`
-  background-color: #007bff;
+  background-color: #8b5e3c;
   color: white;
   padding: 1rem;
   border: none;
@@ -69,11 +69,11 @@ const Button = styled.button`
   transition: background-color 0.3s ease;
   
   &:hover {
-    background-color: #0056b3;
+    background-color: #6e4b2a;
   }
   
   &:disabled {
-    background-color: #ccc;
+    background-color: #cbbeb5;
     cursor: not-allowed;
   }
 `;
@@ -84,7 +84,7 @@ const LinkText = styled.p`
   color: #666;
   
   a {
-    color: #007bff;
+    color: #274472;
     text-decoration: none;
     font-weight: bold;
     
@@ -155,7 +155,7 @@ const LoginPage = () => {
   return (
     <LoginContainer>
       <LoginCard>
-        <Title>🍽️ 로그인</Title>
+        <Title>☕ 로그인</Title>
         
         {error && <ErrorMessage>{error}</ErrorMessage>}
         
@@ -203,4 +203,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage; 
+export default LoginPage;
