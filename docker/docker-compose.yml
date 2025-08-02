@@ -9,8 +9,8 @@ services:
     ports:
       - "3000:80"
     environment:
-      - REACT_APP_API_URL=http://localhost:3001
-      - REACT_APP_AI_SERVER_URL=http://localhost:8000
+      - REACT_APP_API_URL=http://192.168.1.96:3001
+      - REACT_APP_AI_SERVER_URL=http://192.168.1.96:8000
     depends_on:
       - backend
     volumes:
@@ -27,13 +27,13 @@ services:
     environment:
       - NODE_ENV=development
       - PORT=3001
-      - DB_HOST=mysql
-      - DB_PORT=3306
+      - DB_HOST=192.168.1.96
+      - DB_PORT=3307
       - DB_NAME=myweb
       - DB_USER=root
-      - DB_PASSWORD=password
+      - DB_PASSWORD=1234
       - JWT_SECRET=your_jwt_secret_key_here
-      - CORS_ORIGIN=http://localhost:3000
+      - CORS_ORIGIN=http://192.168.1.96:3000
     depends_on:
       - mysql
     volumes:
@@ -51,6 +51,7 @@ services:
     environment:
       # Google Translate는 API 키가 불필요합니다
       - DEBUG=True
+      - HOST=192.168.1.96
     volumes:
       - ../ai-server:/app
       - ../data:/app/data
