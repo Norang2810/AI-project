@@ -1,0 +1,106 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000127",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000127.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2876,
+    "height": 939,
+    "location": "36.56541479972222, 128.72834729972223",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Codi",
+      "polygon_points": [[114.103,257.447],[318.896,227.767],[301.088,396.944],[99.263,399.912]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Accessories",
+      "polygon_points": [[850.169,319.776],[844.233,198.087],[330.768,248.543],[330.768,370.232]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "コーディアクセサリー",
+      "polygon_points": [[965.922,304.936],[968.890,144.663],[1817.740,67.495],[1811.804,198.087]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "可",
+      "polygon_points": [[1909.748,206.991],[1900.844,46.719],[1995.821,40.783],[2001.757,189.183]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "迪",
+      "polygon_points": [[2104.235,175.662],[2093.765,22.975],[1995.821,40.783],[2004.065,195.696]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "饰",
+      "polygon_points": [[2197.645,171.375],[2209.517,25.943],[2099.041,36.166],[2108.687,172.694]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "品",
+      "polygon_points": [[2310.512,150.434],[2295.672,14.648],[2211.084,24.294],[2211.084,158.596]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "코디",
+      "polygon_points": [[78.487,446.411],[942.178,342.530],[942.178,930.196],[17.721,939.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "악세사리",
+      "polygon_points": [[2862.479,766.956],[2820.927,134.770],[942.178,339.562],[948.084,939.000]]
+    }
+  ]
+}

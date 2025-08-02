@@ -1,0 +1,114 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000203",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000203.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 4128,
+    "height": 2322,
+    "location": "37.25972222222222, 127.03111111111112",
+    "device_type": "SM-A710K",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "IBIS",
+      "polygon_points": [[1039.850,971.662],[1304.717,976.076],[1309.131,1139.411],[1031.021,1130.582]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "수원",
+      "polygon_points": [[2514.276,1399.863],[2942.477,1408.692],[2942.477,1638.243],[2527.519,1625.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "앰배서더",
+      "polygon_points": [[1706.432,1373.376],[2492.203,1395.449],[2505.447,1633.829],[1737.333,1625.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "(주)호텔 앙코르",
+      "polygon_points": [[1150.000,1865.000],[1859.000,1865.000],[1859.000,1988.000],[1150.000,1988.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "문화체육관광부",
+      "polygon_points": [[2123.000,1870.000],[2816.000,1870.000],[2816.000,1999.000],[2123.000,1999.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "ibis",
+      "polygon_points": [[1777.063,327.152],[1768.234,653.821],[2289.139,662.650],[2306.797,344.810]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "이비스",
+      "polygon_points": [[1061.922,1391.034],[1048.679,1616.171],[1671.116,1625.000],[1679.945,1368.962]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "HOTELS",
+      "polygon_points": [[1803.549,706.795],[1799.135,803.912],[2222.922,803.912],[2218.508,697.966]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "AMBASSADOR",
+      "polygon_points": [[1340.032,1002.563],[1335.618,1139.411],[2359.770,1170.312],[2368.599,1011.392]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "SUWON",
+      "polygon_points": [[2986.622,1011.392],[2982.207,1174.726],[2390.671,1170.312],[2399.500,993.734]]
+    }
+  ]
+}

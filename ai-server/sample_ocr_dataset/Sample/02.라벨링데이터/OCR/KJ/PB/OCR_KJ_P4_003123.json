@@ -1,0 +1,266 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_PB_003123",
+    "src_path": "\\OCR\\KJ\\PB",
+    "label_path": "\\OCR\\KJ\\PB",
+    "language_type": "KJ",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KJ_P4_003123.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.2057, 129.07852222222223",
+    "device_type": "iPhone 12",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 4
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "서면",
+      "polygon_points": [[2168.350,1710.400],[2481.178,1689.545],[2481.178,1804.248],[2164.179,1814.676]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "연산",
+      "polygon_points": [[1349.143,1756.121],[1621.303,1745.693],[1596.277,1861.439],[1318.903,1876.038]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "다대포해수욕장",
+      "polygon_points": [[1910.789,1861.600],[2481.178,1834.488],[2478.049,1921.037],[1902.447,1946.063]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "부산역",
+      "polygon_points": [[1311.603,1897.936],[1586.892,1896.893],[1555.609,2023.067],[1268.850,2025.153]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "30m",
+      "polygon_points": [[285.850,2065.740],[209.729,2063.654],[233.712,2006.303],[301.491,2013.602]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "Yeonsan",
+      "polygon_points": [[1134.809,1825.768],[1297.566,1819.649],[1305.908,1776.896],[1139.067,1774.810]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "Busan",
+      "polygon_points": [[1127.597,1933.310],[1008.722,1926.010],[990.995,1980.234],[1116.126,1980.234]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "Station",
+      "polygon_points": [[1262.113,1970.849],[1115.084,1975.020],[1132.811,1915.583],[1270.455,1919.754]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "Seomyeon",
+      "polygon_points": [[1883.276,1784.356],[2113.334,1771.837],[2117.897,1718.662],[1891.618,1724.918]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "Dadaepo",
+      "polygon_points": [[1910.388,2002.292],[1788.385,2005.420],[1794.641,1948.069],[1913.516,1947.026]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "Beach",
+      "polygon_points": [[2005.279,1998.121],[1909.345,1999.164],[1915.601,1944.940],[2009.450,1941.812]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "莲",
+      "polygon_points": [[1126.394,1885.904],[1081.555,1885.904],[1095.111,1821.253],[1138.907,1827.510]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "山",
+      "polygon_points": [[1171.232,1880.690],[1129.522,1877.562],[1135.778,1827.510],[1180.617,1826.467]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "蓮山",
+      "polygon_points": [[1187.275,1877.241],[1277.995,1874.113],[1292.593,1823.018],[1194.574,1823.018]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "釜",
+      "polygon_points": [[996.450,2039.912],[946.397,2039.912],[967.253,1980.474],[1008.963,1980.474]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "山",
+      "polygon_points": [[1034.722,2032.744],[996.450,2037.826],[1005.835,1981.517],[1045.459,1980.474]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "站",
+      "polygon_points": [[1077.478,2032.744],[1033.750,2031.773],[1043.468,1978.328],[1092.054,1980.271]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "釜山駅",
+      "polygon_points": [[1102.743,2032.744],[1247.529,2028.858],[1261.133,1971.526],[1117.318,1974.441]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "西",
+      "polygon_points": [[2056.974,1827.225],[2004.501,1827.225],[2005.473,1777.667],[2061.833,1776.696]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "面",
+      "polygon_points": [[2105.560,1822.367],[2056.974,1827.225],[2061.833,1772.809],[2115.277,1769.894]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "多",
+      "polygon_points": [[2055.031,1993.390],[2023.935,1995.333],[2027.822,1941.888],[2061.833,1941.888]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "大",
+      "polygon_points": [[2087.097,1992.418],[2056.974,1992.418],[2058.917,1938.973],[2089.041,1938.973]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "浦",
+      "polygon_points": [[2115.277,1991.446],[2087.097,1990.475],[2088.069,1938.002],[2120.136,1934.115]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "海",
+      "polygon_points": [[2145.401,1988.531],[2113.334,1990.475],[2120.136,1934.115],[2150.259,1934.115]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "水",
+      "polygon_points": [[2175.524,1987.559],[2145.401,1988.531],[2149.288,1934.115],[2178.439,1935.086]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "浴",
+      "polygon_points": [[2204.676,1986.588],[2175.524,1986.588],[2178.439,1933.143],[2207.591,1934.115]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "场",
+      "polygon_points": [[2238.686,1983.673],[2204.676,1983.673],[2204.676,1933.143],[2239.658,1929.256]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "多大浦海水浴場",
+      "polygon_points": [[2256.177,1980.757],[2470.928,1976.870],[2471.899,1920.511],[2258.120,1929.256]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 32,
+      "text": "1",
+      "polygon_points": [[2678.147,1743.171],[2616.929,1746.086],[2626.646,1872.410],[2686.893,1864.637]]
+    }
+  ]
+}

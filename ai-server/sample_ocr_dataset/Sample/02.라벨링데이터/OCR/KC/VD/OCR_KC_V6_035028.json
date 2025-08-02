@@ -1,0 +1,154 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_VD_035028",
+    "src_path": "\\OCR\\KC\\VD",
+    "label_path": "\\OCR\\KC\\VD",
+    "language_type": "KC",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KC_V6_035028.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "성큼성큼",
+      "polygon_points": [[335.000,892.000],[627.492,889.437],[620.000,967.000],[335.000,967.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "손님에게",
+      "polygon_points": [[942.711,890.565],[1221.075,890.565],[1222.860,970.862],[935.574,963.725]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "他",
+      "polygon_points": [[713.919,624.698],[758.392,624.698],[757.156,671.641],[710.213,672.877]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "走",
+      "polygon_points": [[797.923,625.934],[801.629,672.877],[759.627,672.877],[762.098,625.934]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "到",
+      "polygon_points": [[847.336,625.934],[841.160,670.406],[805.335,672.877],[802.864,628.404]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "邻",
+      "polygon_points": [[891.809,624.698],[893.044,672.877],[846.101,672.877],[851.042,627.169]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "桌",
+      "polygon_points": [[935.046,625.934],[935.046,672.877],[895.515,674.112],[894.280,627.169]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "的",
+      "polygon_points": [[980.754,624.698],[979.518,670.406],[936.281,671.641],[935.046,627.169]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "顾",
+      "polygon_points": [[1022.755,623.463],[1025.226,672.877],[983.224,674.112],[979.518,625.934]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "客",
+      "polygon_points": [[1068.463,628.404],[1068.463,672.877],[1027.697,675.347],[1027.697,628.404]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "面",
+      "polygon_points": [[1116.642,623.463],[1114.171,677.818],[1073.404,672.877],[1074.640,625.934]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "前",
+      "polygon_points": [[1162.349,625.934],[1164.820,672.877],[1120.348,672.877],[1119.112,624.698]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "옆",
+      "polygon_points": [[707.172,888.781],[705.388,969.078],[637.581,967.294],[639.365,892.349]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "테이블",
+      "polygon_points": [[933.789,885.212],[924.867,963.725],[717.878,965.509],[723.232,883.428]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "다가갑니다",
+      "polygon_points": [[1585.090,894.134],[1576.168,974.431],[1226.429,969.078],[1226.429,883.428]]
+    }
+  ]
+}

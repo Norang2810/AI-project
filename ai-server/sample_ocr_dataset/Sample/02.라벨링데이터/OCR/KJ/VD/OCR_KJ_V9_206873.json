@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206873",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206873.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "二つの",
+      "polygon_points": [[800.987,859.978],[653.508,859.411],[654.643,811.764],[800.987,813.465]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "悪材料が",
+      "polygon_points": [[1003.487,862.814],[807.227,859.411],[807.227,810.062],[1007.458,811.196]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "あります",
+      "polygon_points": [[1204.286,862.247],[1008.025,860.545],[1015.399,810.062],[1206.555,810.062]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "두",
+      "polygon_points": [[903.655,967.751],[848.067,966.049],[844.097,901.386],[900.252,901.386]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "가지",
+      "polygon_points": [[1019.370,968.886],[911.597,964.915],[907.059,901.386],[1018.235,903.654]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "악재가",
+      "polygon_points": [[1191.239,967.184],[1026.176,964.915],[1024.475,902.520],[1182.731,904.789]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "있는데",
+      "polygon_points": [[1347.227,966.617],[1199.181,966.049],[1187.836,902.520],[1349.496,903.087]]
+    }
+  ]
+}

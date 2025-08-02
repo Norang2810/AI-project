@@ -1,0 +1,122 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_CT_002978",
+    "src_path": "\\OCR\\KJ\\CT",
+    "label_path": "\\OCR\\KJ\\CT",
+    "language_type": "KJ",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KJ_C2_002978.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 3024,
+    "height": 4032,
+    "location": "35.20475277777778, 129.07756111111112",
+    "device_type": "iPhone 12",
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": 1,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "엘리베이터",
+      "polygon_points": [[1549.223,2409.009],[2448.440,2485.213],[2466.729,2722.973],[1555.319,2637.623]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "지상",
+      "polygon_points": [[992.000,2420.000],[1464.000,2420.000],[1464.000,2635.000],[992.000,2635.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Elevator",
+      "polygon_points": [[1002.000,2661.000],[1449.000,2661.000],[1449.000,2766.000],[1002.000,2766.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "화장실",
+      "polygon_points": [[992.000,3034.000],[1974.000,3034.000],[1974.000,3281.000],[992.000,3281.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Toilet",
+      "polygon_points": [[982.258,3317.371],[1287.078,3323.467],[1293.174,3436.250],[979.210,3439.299]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "电",
+      "polygon_points": [[2064.367,2698.587],[2143.621,2698.587],[2152.765,2817.467],[2073.512,2805.274]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "梯",
+      "polygon_points": [[2225.922,2701.635],[2152.765,2698.587],[2155.813,2808.322],[2232.018,2814.419]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "洗",
+      "polygon_points": [[1701.632,3323.467],[1802.223,3317.371],[1796.126,3442.347],[1701.632,3442.347]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "手",
+      "polygon_points": [[1887.572,3314.323],[1811.367,3320.419],[1802.223,3439.299],[1893.669,3448.443]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "间",
+      "polygon_points": [[1979.018,3317.371],[1890.620,3323.467],[1890.620,3442.347],[1988.163,3439.299]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "エレベーター",
+      "polygon_points": [[1514.908,2655.033],[2022.650,2688.563],[2017.860,2793.944],[1505.328,2774.783]]
+    }
+  ]
+}

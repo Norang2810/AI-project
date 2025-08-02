@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_001041",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_001041.jpeg",
+    "created_day": "2023.08.23.",
+    "extension": "jpeg",
+    "width": 4030,
+    "height": 2235,
+    "location": "37.5177232, 126.934584",
+    "device_type": "iPhone 14",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "육동면",
+      "polygon_points": [[1902.811,1491.630],[2215.799,1488.691],[2212.860,1597.429],[1902.811,1603.307]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "양산본점",
+      "polygon_points": [[224.724,1529.835],[492.160,1526.896],[484.813,1600.368],[218.846,1600.368]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "직화구이",
+      "polygon_points": [[3098.925,1531.305],[3326.687,1531.305],[3334.034,1594.490],[3101.864,1595.960]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "면요리",
+      "polygon_points": [[3351.667,1532.774],[3517.712,1531.305],[3523.590,1597.429],[3357.545,1598.898]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "전문점",
+      "polygon_points": [[3541.223,1537.182],[3704.330,1534.244],[3715.000,1600.000],[3548.570,1594.490]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "xxx",
+      "polygon_points": [[1655.947,1233.011],[1648.600,1456.364],[1829.339,1451.956],[1824.931,1238.889]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "餇",
+      "polygon_points": [[1927.791,1243.297],[1927.791,1441.670],[2158.491,1446.078],[2152.614,1249.175]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "麺",
+      "polygon_points": [[2268.698,1241.827],[2261.351,1429.914],[2461.193,1446.078],[2440.621,1272.685]]
+    }
+  ]
+}

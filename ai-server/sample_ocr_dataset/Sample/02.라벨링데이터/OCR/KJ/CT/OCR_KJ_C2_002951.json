@@ -1,0 +1,218 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_CT_002951",
+    "src_path": "\\OCR\\KJ\\CT",
+    "label_path": "\\OCR\\KJ\\CT",
+    "language_type": "KJ",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KJ_C2_002951.jpeg",
+    "created_day": "2023.08.24.",
+    "extension": "jpeg",
+    "width": 3024,
+    "height": 4032,
+    "location": null,
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "가야누리",
+      "polygon_points": [[917.239,454.004],[1403.426,395.326],[1344.748,2633.464],[900.474,2599.933]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "어린이",
+      "polygon_points": [[1495.634,361.796],[1797.405,353.414],[1772.258,1501.821],[1478.869,1501.821]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "박물관",
+      "polygon_points": [[1478.869,1552.116],[1797.405,1543.734],[1780.640,2625.081],[1453.721,2608.316]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Education",
+      "polygon_points": [[849.245,3030.872],[1256.397,3069.192],[1258.792,3155.412],[846.850,3121.882]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Hall",
+      "polygon_points": [[1277.952,3062.007],[1445.603,3073.982],[1440.813,3169.782],[1270.767,3164.992]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Gayanuri",
+      "polygon_points": [[1486.318,3088.352],[1874.310,3112.302],[1869.520,3208.102],[1479.133,3181.757]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Children\u0027s",
+      "polygon_points": [[1048.031,3294.323],[1361.777,3325.458],[1359.382,3397.308],[1038.451,3363.778]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "Museum",
+      "polygon_points": [[1673.129,3358.988],[1378.542,3320.668],[1373.752,3399.703],[1677.919,3428.443]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "加",
+      "polygon_points": [[1055.372,3164.952],[1122.432,3169.524],[1122.432,3242.681],[1049.275,3236.585]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "耶",
+      "polygon_points": [[1195.589,3175.621],[1125.480,3169.524],[1123.956,3248.777],[1192.541,3245.729]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "世",
+      "polygon_points": [[1265.697,3183.241],[1198.637,3175.621],[1200.161,3248.777],[1264.173,3253.350]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "界",
+      "polygon_points": [[1337.330,3187.814],[1270.270,3183.241],[1270.270,3251.826],[1340.378,3257.922]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "儿",
+      "polygon_points": [[1114.812,3396.615],[1158.806,3397.737],[1157.486,3448.434],[1110.239,3448.434]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "童",
+      "polygon_points": [[1163.277,3398.854],[1202.395,3402.207],[1204.630,3454.738],[1161.041,3449.150]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "博",
+      "polygon_points": [[1251.573,3407.796],[1207.983,3403.325],[1207.983,3452.503],[1254.926,3454.738]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "物",
+      "polygon_points": [[1301.868,3410.031],[1256.043,3406.678],[1253.808,3454.738],[1301.868,3458.091]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "馆",
+      "polygon_points": [[1349.928,3416.737],[1306.338,3412.266],[1305.221,3458.091],[1351.045,3465.915]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "子",
+      "polygon_points": [[1373.399,3421.208],[1422.576,3423.443],[1414.753,3469.268],[1370.046,3464.797]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "供",
+      "polygon_points": [[1466.166,3425.678],[1427.047,3421.208],[1419.223,3470.385],[1468.401,3477.091]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "博",
+      "polygon_points": [[1516.461,3431.267],[1471.754,3425.678],[1470.636,3478.209],[1517.578,3482.680]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "物",
+      "polygon_points": [[1570.109,3435.738],[1520.931,3431.267],[1518.696,3482.680],[1566.756,3486.033]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "館",
+      "polygon_points": [[1615.933,3443.561],[1572.344,3436.855],[1567.874,3484.915],[1612.580,3490.503]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "カヤヌリ",
+      "polygon_points": [[1400.333,3196.160],[1680.767,3214.449],[1674.670,3302.846],[1388.140,3272.364]]
+    }
+  ]
+}

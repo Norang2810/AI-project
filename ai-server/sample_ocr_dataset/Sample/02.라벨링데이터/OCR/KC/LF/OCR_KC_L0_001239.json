@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_001239",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_001239.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 1909,
+    "height": 1909,
+    "location": null,
+    "device_type": "Galaxy S23",
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": 1,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "출발",
+      "polygon_points": [[375.000,450.000],[749.000,450.000],[738.779,644.037],[362.089,641.116]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "2F",
+      "polygon_points": [[755.000,515.000],[917.000,515.000],[917.000,644.000],[755.000,644.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Departures",
+      "polygon_points": [[988.000,396.000],[1730.000,396.000],[1730.000,526.000],[988.000,526.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "出",
+      "polygon_points": [[979.000,570.000],[1092.291,568.602],[1079.516,699.093],[979.000,698.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "发",
+      "polygon_points": [[1095.941,573.165],[1082.253,695.443],[1203.619,694.530],[1202.707,571.340]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "出",
+      "polygon_points": [[1251.070,569.515],[1243.770,692.705],[1351.448,693.618],[1354.185,568.602]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "發",
+      "polygon_points": [[1356.923,567.690],[1354.185,697.268],[1474.639,693.618],[1474.639,565.865]]
+    }
+  ]
+}

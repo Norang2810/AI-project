@@ -1,0 +1,106 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000115",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000115.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2938,
+    "height": 970,
+    "location": "36.56544, 128.72812859972223",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "윤",
+      "polygon_points": [[783.981,325.410],[737.153,967.617],[68.188,967.617],[41.429,352.169]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "하이패션",
+      "polygon_points": [[844.188,492.651],[2877.843,335.444],[2921.326,894.031],[777.291,947.548]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Yunhai",
+      "polygon_points": [[33.230,258.579],[375.358,237.554],[352.423,338.855],[38.964,350.323]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "Fashion",
+      "polygon_points": [[413.585,227.998],[788.206,197.416],[782.472,315.919],[404.028,335.032]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "尹ハイファッション",
+      "polygon_points": [[933.467,172.569],[1831.792,90.382],[1822.235,222.264],[918.176,300.628]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "尹",
+      "polygon_points": [[1984.698,75.091],[2091.733,59.801],[2103.201,193.594],[1990.432,205.062]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "海",
+      "polygon_points": [[2210.235,46.421],[2217.881,185.949],[2112.758,193.594],[2095.556,57.889]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "时",
+      "polygon_points": [[2222.017,44.536],[2326.376,32.495],[2346.445,179.667],[2223.355,189.033]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "装",
+      "polygon_points": [[2448.127,27.143],[2462.845,172.978],[2354.472,176.992],[2330.390,32.495]]
+    }
+  ]
+}

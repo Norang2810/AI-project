@@ -1,0 +1,74 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000074",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000074.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 3021,
+    "height": 481,
+    "location": "36.5680485, 128.7198759",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "MYOUNG",
+      "polygon_points": [[587.549,135.570],[137.967,104.646],[147.482,2.361],[589.928,35.663]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "DENTAL",
+      "polygon_points": [[604.200,42.799],[922.951,80.859],[927.709,164.115],[601.821,137.949]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "CLINIC",
+      "polygon_points": [[1210.779,180.766],[941.981,164.115],[941.981,78.480],[1213.157,104.646]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "명치과",
+      "polygon_points": [[1931.537,30.905],[2780.747,104.646],[2814.050,440.049],[1955.324,401.989]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "의원",
+      "polygon_points": [[2935.365,356.793],[2811.671,347.278],[2799.777,252.128],[2923.472,259.265]]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_VD_016605",
+    "src_path": "\\OCR\\KE\\VD",
+    "label_path": "\\OCR\\KE\\VD",
+    "language_type": "KE",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KE_V6_016605.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "who",
+      "polygon_points": [[725.000,627.000],[815.000,627.000],[815.000,665.000],[725.000,665.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "남성",
+      "polygon_points": [[1365.977,887.617],[1504.797,886.344],[1506.071,967.853],[1367.887,969.763]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "A",
+      "polygon_points": [[577.500,626.405],[612.524,626.405],[613.160,669.070],[576.863,669.707]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "man",
+      "polygon_points": [[622.076,633.409],[715.047,632.773],[715.047,667.796],[622.076,667.796]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "remains",
+      "polygon_points": [[827.632,621.820],[988.104,622.457],[987.467,668.306],[825.085,667.032]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "calmly",
+      "polygon_points": [[998.165,618.891],[1133.165,620.801],[1130.618,685.117],[994.981,678.749]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "at",
+      "polygon_points": [[1138.896,625.895],[1182.198,625.895],[1182.198,670.471],[1138.896,671.108]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "the",
+      "polygon_points": [[1189.203,620.801],[1258.613,621.438],[1258.613,669.834],[1189.840,669.834]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "bar",
+      "polygon_points": [[1268.165,621.438],[1342.033,620.801],[1342.033,672.381],[1268.802,672.381]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "태연하게",
+      "polygon_points": [[410.406,885.070],[692.505,883.796],[690.594,974.221],[418.047,974.221]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "술집에",
+      "polygon_points": [[703.330,883.160],[913.472,883.160],[914.745,972.947],[700.783,971.037]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "계속",
+      "polygon_points": [[922.387,888.254],[1065.028,888.254],[1068.849,974.858],[923.660,972.947]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "남아있는",
+      "polygon_points": [[1080.694,888.254],[1356.425,888.254],[1356.425,971.674],[1078.783,970.400]]
+    }
+  ]
+}

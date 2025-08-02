@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206868",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206868.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "現在の",
+      "polygon_points": [[827.230,859.411],[677.483,861.112],[678.617,810.062],[827.798,813.465]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "規制政策への",
+      "polygon_points": [[1130.697,863.949],[829.499,858.276],[830.634,810.629],[1134.100,812.898]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "意志",
+      "polygon_points": [[1240.172,865.083],[1134.667,862.814],[1137.504,810.629],[1237.335,810.629]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "현재의",
+      "polygon_points": [[900.970,966.049],[736.474,965.482],[739.877,898.549],[902.104,903.087]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "규제정책에",
+      "polygon_points": [[1169.835,968.886],[911.747,964.915],[910.046,905.923],[1173.806,904.222]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "대한",
+      "polygon_points": [[1288.386,967.751],[1180.046,964.915],[1180.046,901.953],[1288.386,903.654]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "의지를",
+      "polygon_points": [[1455.718,966.049],[1296.327,965.482],[1292.924,903.087],[1455.718,904.222]]
+    }
+  ]
+}

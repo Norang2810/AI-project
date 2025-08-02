@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_001972",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_001972.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 2241,
+    "height": 1825,
+    "location": null,
+    "device_type": "SM-F721N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "도깨비",
+      "polygon_points": [[834.655,458.483],[732.045,711.345],[1981.693,619.728],[2076.975,374.196]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "야시장",
+      "polygon_points": [[559.806,736.997],[2007.346,821.284],[1886.412,1088.804],[387.567,1129.116]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "怪",
+      "polygon_points": [[612.628,1290.227],[529.563,1529.651],[231.504,1544.310],[290.138,1297.556]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "鬼",
+      "polygon_points": [[817.849,1514.993],[864.268,1275.568],[654.161,1273.125],[507.575,1534.538]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "夜",
+      "polygon_points": [[915.573,1265.796],[812.963,1507.663],[1113.465,1500.334],[1194.087,1260.910]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "市",
+      "polygon_points": [[1396.865,1490.562],[1514.134,1238.922],[1203.860,1251.137],[1135.453,1497.891]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "場",
+      "polygon_points": [[1741.343,1483.232],[1812.193,1229.149],[1501.919,1236.479],[1409.081,1468.574]]
+    }
+  ]
+}

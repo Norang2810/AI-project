@@ -1,0 +1,114 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_000737",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_000737.jpg",
+    "created_day": "2023.08.23.",
+    "extension": "jpg",
+    "width": 1308,
+    "height": 766,
+    "location": "35.2550559, 128.6542955",
+    "device_type": "SM-G981N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "막걸리정식전문점",
+      "polygon_points": [[643.000,125.000],[1121.000,125.000],[1121.000,204.000],[643.000,204.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "찌지미",
+      "polygon_points": [[572.000,208.000],[1130.000,208.000],[1130.000,427.000],[572.000,427.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "도계점",
+      "polygon_points": [[985.000,463.000],[1139.000,463.000],[1139.000,527.000],[985.000,527.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "호프",
+      "polygon_points": [[450.000,467.000],[569.000,467.000],[569.000,551.000],[450.000,551.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "知",
+      "polygon_points": [[187.000,485.000],[272.000,485.000],[272.000,558.000],[187.000,558.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "知",
+      "polygon_points": [[276.000,480.000],[350.000,480.000],[350.000,551.000],[276.000,551.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "味",
+      "polygon_points": [[356.000,476.000],[435.000,476.000],[435.000,554.000],[356.000,554.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "酒",
+      "polygon_points": [[369.000,363.000],[414.000,363.000],[414.000,416.000],[369.000,416.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "퓨전대포집",
+      "polygon_points": [[186.000,378.000],[362.000,378.000],[362.000,425.000],[186.000,425.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "소주",
+      "polygon_points": [[625.000,470.000],[736.000,470.000],[736.000,549.000],[625.000,549.000]]
+    }
+  ]
+}

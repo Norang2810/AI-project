@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000143",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000143.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2937,
+    "height": 930,
+    "location": "36.56539829972222, 128.7284715",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "GangwonFisheries",
+      "polygon_points": [[522.972,345.715],[527.013,438.664],[1471.325,333.591],[1465.937,246.030]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "江原水産",
+      "polygon_points": [[1629.833,322.515],[1629.833,205.318],[2152.505,147.393],[2156.547,260.548]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "江",
+      "polygon_points": [[2338.704,116.709],[2349.480,233.906],[2480.148,219.088],[2463.983,105.932]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "原",
+      "polygon_points": [[2482.843,105.932],[2489.578,211.005],[2614.858,192.146],[2605.428,89.767]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "水",
+      "polygon_points": [[2738.790,73.602],[2604.081,93.808],[2618.899,189.452],[2752.261,177.328]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "产",
+      "polygon_points": [[2876.194,46.660],[2885.623,139.609],[2758.997,169.245],[2750.914,68.213]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "강원수산",
+      "polygon_points": [[88.908,534.063],[70.722,920.006],[1464.964,796.747],[1509.418,348.165]]
+    }
+  ]
+}

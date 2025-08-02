@@ -1,0 +1,138 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_VD_016617",
+    "src_path": "\\OCR\\KE\\VD",
+    "label_path": "\\OCR\\KE\\VD",
+    "language_type": "KE",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KE_V6_016617.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Citizens",
+      "polygon_points": [[484.091,705.883],[484.091,764.793],[647.224,757.240],[647.224,714.946]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "rushing",
+      "polygon_points": [[808.081,767.275],[804.758,712.998],[654.111,708.567],[655.219,757.306]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "towards",
+      "polygon_points": [[814.727,711.891],[819.158,758.414],[979.773,757.306],[980.881,712.998]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "the",
+      "polygon_points": [[1058.419,757.306],[1057.311,712.998],[994.173,706.352],[994.173,756.198]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "vehicle",
+      "polygon_points": [[1216.819,756.198],[1209.065,709.675],[1068.388,711.891],[1071.711,757.306]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "all",
+      "polygon_points": [[1269.988,757.306],[1269.988,710.783],[1221.250,712.998],[1222.358,757.306]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "at",
+      "polygon_points": [[1324.265,760.629],[1324.265,711.891],[1283.281,712.998],[1276.634,757.306]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "once",
+      "polygon_points": [[1431.711,757.306],[1432.819,719.644],[1334.234,719.644],[1329.804,756.198]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "일제히",
+      "polygon_points": [[333.988,839.278],[325.127,941.186],[565.496,934.540],[576.573,841.494]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "차량을",
+      "polygon_points": [[819.158,934.540],[828.019,847.032],[586.542,844.817],[576.573,932.324]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "향해",
+      "polygon_points": [[995.281,932.324],[1006.358,849.248],[846.850,845.924],[834.665,933.432]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "달려오는",
+      "polygon_points": [[1323.158,934.530],[1332.019,850.346],[1016.327,847.023],[1011.896,933.423]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "시민들",
+      "polygon_points": [[1577.927,933.423],[1584.573,838.161],[1350.850,850.346],[1332.019,934.530]]
+    }
+  ]
+}
