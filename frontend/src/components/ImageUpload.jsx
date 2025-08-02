@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { useNavigate } from 'react-router-dom';
+import { isLoggedIn, showLoginAlert } from '../utils/auth';
 
 const UploadContainer = styled.div`
   display: flex;
@@ -76,8 +78,16 @@ const ImageUpload = () => {
   const [preview, setPreview] = useState(null);
   const [isUploading, setIsUploading] = useState(false);
   const [status, setStatus] = useState('');
+  const navigate = useNavigate();
 
   const handleFileSelect = (event) => {
+    if (!isLoggedIn()) {
+      event.preventDefault();
+      showLoginAlert();
+      navigate('/login');
+      return;
+    }
+
     const file = event.target.files[0];
     if (file) {
       setSelectedFile(file);
@@ -94,6 +104,12 @@ const ImageUpload = () => {
   };
 
   const handleUpload = async () => {
+    if (!isLoggedIn()) {
+      showLoginAlert();
+      navigate('/login');
+      return;
+    }
+
     if (!selectedFile) {
       setStatus('이미지를 먼저 선택해주세요.');
       return;

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import Header from '../components/Header';
 import ImageUpload from '../components/ImageUpload';
+import { isLoggedIn, showLoginAlert } from '../utils/auth';
 
 
 const MainContainer = styled.div`
@@ -110,6 +111,15 @@ const FeatureDescription = styled.p`
 const MainPage = () => {
   const [apiStatus, setApiStatus] = useState('Loading...');
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
+
+  const handleAllergyClick = (e) => {
+    if (!isLoggedIn()) {
+      e.preventDefault();
+      showLoginAlert();
+      navigate('/login');
+    }
+  };
 
   useEffect(() => {
     // API 서버 상태 확인
@@ -135,7 +145,7 @@ const MainPage = () => {
           <HeroSubtitle>
             메뉴판을 업로드하면 알레르기 정보를 분석해드립니다!
           </HeroSubtitle>
-          <CTAButton to="/allergy">알레르기 설정하기</CTAButton>
+          <CTAButton to="/allergy" onClick={handleAllergyClick}>알레르기 설정하기</CTAButton>
         </HeroSection>
 
         {/* Upload Section */}

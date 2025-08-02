@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import { isLoggedIn, showLoginAlert } from '../utils/auth';
 
 const AllergyContainer = styled.div`
   min-height: 100vh;
@@ -221,6 +222,13 @@ const AllergyPage = () => {
   const [success, setSuccess] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!isLoggedIn()) {
+      showLoginAlert();
+      navigate('/login');
+    }
+  }, [navigate]);
 
   const allergyCategories = {
     '곡물': ['밀', '보리', '호밀', '오트밀', '옥수수'],
