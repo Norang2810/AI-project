@@ -1,6 +1,9 @@
 # Backend Dockerfile
 FROM node:18-alpine
 
+# bash 설치
+RUN apk add --no-cache bash
+
 # 작업 디렉토리 설정
 WORKDIR /app
 
@@ -16,5 +19,5 @@ COPY . .
 # 포트 노출
 EXPOSE 3001
 
-# 애플리케이션 실행
-CMD ["npm", "start"] 
+# 앱 실행
+CMD ["npm", "start"]
