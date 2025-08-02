@@ -48,11 +48,14 @@ class AIAnalysisEngine:
     
     def analyze_menu_text(self, menu_text: str, user_allergies: List[str] = None) -> Dict:
         """메뉴 텍스트 종합 분석"""
-        if not self.models_loaded:
-            if not self.load_all_models():
-                return {"error": "AI 모델 로드 실패"}
-        
         try:
+            self.logger.info(f"메뉴 텍스트 분석 시작: {menu_text[:50]}...")
+            
+            if not self.models_loaded:
+                self.logger.warning("모델이 로드되지 않았습니다. 모델을 다시 로드합니다.")
+                if not self.load_all_models():
+                    return {"error": "AI 모델 로드 실패"}
+            
             results = {
                 "input_text": menu_text,
                 "analysis_timestamp": None,
@@ -64,30 +67,61 @@ class AIAnalysisEngine:
             }
             
             # 1. 메뉴 분류
-            classification = self.menu_classifier.predict(menu_text)
-            results["menu_classification"] = classification
+            self.logger.info("메뉴 분류 시작...")
+            try:
+                classification = self.menu_classifier.predict(menu_text)
+                results["menu_classification"] = classification
+                self.logger.info(f"메뉴 분류 완료: {classification}")
+            except Exception as e:
+                self.logger.error(f"메뉴 분류 오류: {e}")
+                results["menu_classification"] = {"error": str(e)}
             
             # 2. 유사한 메뉴 찾기
-            similar_menus = self.similarity_model.find_similar_menus(menu_text, top_k=5)
-            results["similar_menus"] = similar_menus
+            self.logger.info("유사 메뉴 검색 시작...")
+            try:
+                similar_menus = self.similarity_model.find_similar_menus(menu_text, top_k=5)
+                results["similar_menus"] = similar_menus
+                self.logger.info(f"유사 메뉴 검색 완료: {len(similar_menus)}개 발견")
+            except Exception as e:
+                self.logger.error(f"유사 메뉴 검색 오류: {e}")
+                results["similar_menus"] = []
             
             # 3. 성분 추출 및 분석
-            extracted_ingredients = self.ingredient_matcher.extract_ingredients_from_text(menu_text)
-            results["ingredient_analysis"] = {
-                "extracted_ingredients": extracted_ingredients,
-                "ingredient_count": len(extracted_ingredients)
-            }
+            self.logger.info("성분 추출 시작...")
+            try:
+                extracted_ingredients = self.ingredient_matcher.extract_ingredients_from_text(menu_text)
+                results["ingredient_analysis"] = {
+                    "extracted_ingredients": extracted_ingredients,
+                    "ingredient_count": len(extracted_ingredients)
+                }
+                self.logger.info(f"성분 추출 완료: {len(extracted_ingredients)}개 성분")
+            except Exception as e:
+                self.logger.error(f"성분 추출 오류: {e}")
+                results["ingredient_analysis"] = {
+                    "extracted_ingredients": [],
+                    "ingredient_count": 0,
+                    "error": str(e)
+                }
             
             # 4. 알레르기 위험도 분석
             if user_allergies and extracted_ingredients:
-                allergy_risk = self.allergy_predictor.predict_risk(extracted_ingredients, user_allergies)
-                ingredient_risk = self.ingredient_matcher.check_allergy_risk(extracted_ingredients, user_allergies)
-                
-                results["allergy_risk"] = {
-                    "ml_prediction": allergy_risk,
-                    "rule_based_analysis": ingredient_risk,
-                    "final_risk_level": self._determine_final_risk(allergy_risk, ingredient_risk)
-                }
+                self.logger.info("알레르기 위험도 분석 시작...")
+                try:
+                    allergy_risk = self.allergy_predictor.predict_risk(extracted_ingredients, user_allergies)
+                    ingredient_risk = self.ingredient_matcher.check_allergy_risk(extracted_ingredients, user_allergies)
+                    
+                    results["allergy_risk"] = {
+                        "ml_prediction": allergy_risk,
+                        "rule_based_analysis": ingredient_risk,
+                        "final_risk_level": self._determine_final_risk(allergy_risk, ingredient_risk)
+                    }
+                    self.logger.info(f"알레르기 위험도 분석 완료: {results['allergy_risk']['final_risk_level']}")
+                except Exception as e:
+                    self.logger.error(f"알레르기 위험도 분석 오류: {e}")
+                    results["allergy_risk"] = {
+                        "error": str(e),
+                        "final_risk_level": "unknown"
+                    }
             
             # 5. 추천 시스템
             if user_allergies:

@@ -30,7 +30,7 @@ def create_models_directory():
 
 def check_data_availability():
     """데이터셋 가용성 확인"""
-    dataset_path = Path("../data/datasets/cafe_menu_dataset.json")
+    dataset_path = Path("data/datasets/cafe_menu_dataset.json")
     
     if not dataset_path.exists():
         logger.error(f"❌ 데이터셋을 찾을 수 없습니다: {dataset_path}")

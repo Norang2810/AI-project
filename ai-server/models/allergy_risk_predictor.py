@@ -30,7 +30,7 @@ class AllergyRiskPredictor:
     
     def create_training_data(self):
         """훈련 데이터 생성"""
-        with open('../data/datasets/cafe_menu_dataset.json', 'r', encoding='utf-8') as f:
+        with open('data/datasets/cafe_menu_dataset.json', 'r', encoding='utf-8') as f:
             data = json.load(f)
         
         training_data = []

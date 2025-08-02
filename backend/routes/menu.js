@@ -4,10 +4,23 @@ const path = require('path');
 const fs = require('fs');
 const FormData = require('form-data');
 const axios = require('axios');
+// const sharp = require('sharp'); // 임시로 주석 처리
 const { MenuAnalysis, UserAllergy } = require('../models');
 const { authenticateToken } = require('../middleware/auth');
 
 const router = express.Router();
+
+// 이미지 리사이징 함수 (임시로 비활성화)
+async function resizeImage(filePath, maxWidth = 800, maxHeight = 800) {
+  try {
+    // 임시로 원본 파일 그대로 반환
+    console.log('이미지 리사이징 비활성화됨');
+    return filePath;
+  } catch (error) {
+    console.error('이미지 리사이징 오류:', error);
+    return filePath; // 오류 발생 시 원본 파일 반환
+  }
+}
 
 // Multer 설정
 const storage = multer.diskStorage({
@@ -25,7 +38,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ 
   storage: storage,
-  limits: { fileSize: 10 * 1024 * 1024 }, // 10MB 제한
+  limits: { fileSize: 5 * 1024 * 1024 }, // 5MB로 제한
   fileFilter: function (req, file, cb) {
     const allowedTypes = /jpeg|jpg|png|gif/;
     const extname = allowedTypes.test(path.extname(file.originalname).toLowerCase());
@@ -58,11 +71,16 @@ router.post('/analyze', authenticateToken, upload.single('image'), async (req, r
     
     const allergyNames = userAllergies.map(allergy => allergy.allergyName);
 
+    // 이미지 리사이징 적용
+    console.log('이미지 리사이징 시작...');
+    const resizedImagePath = await resizeImage(req.file.path, 800, 800);
+    console.log('이미지 리사이징 완료:', resizedImagePath);
+
     // AI 서버로 이미지 전송 (axios 사용)
     const formData = new FormData();
     
-    // 파일을 Buffer로 읽어서 추가
-    const fileBuffer = fs.readFileSync(req.file.path);
+    // 파일을 Buffer로 읽어서 추가 (리사이징된 이미지 사용)
+    const fileBuffer = fs.readFileSync(resizedImagePath);
     formData.append('file', fileBuffer, {
       filename: req.file.originalname,
       contentType: req.file.mimetype
@@ -80,11 +98,33 @@ router.post('/analyze', authenticateToken, upload.single('image'), async (req, r
       mimetype: req.file.mimetype
     });
     
-    const aiResponse = await axios.post('http://localhost:8000/analyze-image', formData, {
-      headers: {
-        ...formData.getHeaders()
+    // 재시도 로직 추가
+    let aiResponse;
+    let retryCount = 0;
+    const maxRetries = 3;
+    
+    while (retryCount < maxRetries) {
+      try {
+        const aiServerUrl = process.env.AI_SERVER_URL || 'http://ai-server:8000';
+        aiResponse = await axios.post(`${aiServerUrl}/analyze-image`, formData, {
+          headers: {
+            ...formData.getHeaders()
+          },
+          timeout: 600000 // 10분 타임아웃
+        });
+        break; // 성공하면 루프 종료
+      } catch (error) {
+        retryCount++;
+        console.error(`AI 서버 요청 실패 (${retryCount}/${maxRetries}):`, error.message);
+        
+        if (retryCount >= maxRetries) {
+          throw new Error(`AI 서버 연결 실패 (${maxRetries}회 시도): ${error.message}`);
+        }
+        
+        // 재시도 전 2초 대기
+        await new Promise(resolve => setTimeout(resolve, 2000));
       }
-    });
+    }
 
     console.log('AI 서버 응답 상태:', aiResponse.status, aiResponse.statusText);
 

@@ -21,7 +21,7 @@ class IngredientMatcher:
         
     def load_ingredient_data(self):
         """성분 데이터 로드 및 동의어 설정"""
-        with open('../data/datasets/cafe_menu_dataset.json', 'r', encoding='utf-8') as f:
+        with open('data/datasets/cafe_menu_dataset.json', 'r', encoding='utf-8') as f:
             data = json.load(f)
         
         # 알레르기 카테고리별 성분 매핑
