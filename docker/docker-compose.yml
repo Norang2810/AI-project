@@ -31,7 +31,7 @@ services:
     environment:
       - NODE_ENV=${NODE_ENV}
       - PORT=${PORT}
-      - DB_HOST=mysql
+      - DB_HOST=${DB_HOST}
       - DB_PORT=${DB_PORT}
       - DB_NAME=${DB_NAME}
       - DB_USER=${DB_USER}
@@ -45,8 +45,9 @@ services:
       - /app/node_modules
       - ../backend/uploads:/app/uploads
     depends_on:
-      - mysql
       - ai-server
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   # AI Server Service
   ai-server:
@@ -68,20 +69,6 @@ services:
         reservations:
           memory: 6G
 
-  # MySQL Database
-  mysql:
-    image: mysql:8.0
-    ports:
-      - "3307:3306"
-    environment:
-      - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=myweb
-      - MYSQL_USER=myweb_user
-      - MYSQL_PASSWORD=myweb_password
-    volumes:
-      - mysql_data:/var/lib/mysql
-      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
-
   # Nginx Reverse Proxy
   nginx:
     image: nginx:alpine
@@ -94,5 +81,3 @@ services:
       - backend
       - ai-server
 
-volumes:
-  mysql_data:
