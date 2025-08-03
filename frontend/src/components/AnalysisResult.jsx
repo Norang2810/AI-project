@@ -254,11 +254,11 @@ const AnalysisResult = ({ analysis }) => {
       {analysis.menuAnalysis.map((item, index) => {
         switch (item.type) {
           case 'ingredients':
-            return renderIngredients(item.data.ingredients, item.data.riskAnalysis);
+            return <div key={`${item.type}-${index}`}>{renderIngredients(item.data.ingredients, item.data.riskAnalysis)}</div>;
           case 'risk_assessment':
-            return renderRiskAssessment(item.data);
+            return <div key={`${item.type}-${index}`}>{renderRiskAssessment(item.data)}</div>;
           case 'recommendations':
-            return renderRecommendations(item.data);
+            return <div key={`${item.type}-${index}`}>{renderRecommendations(item.data)}</div>;
           default:
             return null;
         }
