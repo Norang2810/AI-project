@@ -1,0 +1,170 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_VD_016607",
+    "src_path": "\\OCR\\KE\\VD",
+    "label_path": "\\OCR\\KE\\VD",
+    "language_type": "KE",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KE_V6_016607.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "man",
+      "polygon_points": [[677.000,632.000],[767.000,632.000],[767.000,665.000],[677.000,665.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "말하지만",
+      "polygon_points": [[1408.387,885.070],[1693.033,887.617],[1693.670,971.674],[1408.387,974.221]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "I",
+      "polygon_points": [[497.010,627.551],[511.019,626.277],[510.382,667.669],[499.557,666.395]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "tell",
+      "polygon_points": [[523.118,622.457],[583.613,620.546],[582.976,669.579],[521.844,668.306]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "the",
+      "polygon_points": [[589.981,622.457],[663.849,623.730],[665.123,670.853],[590.618,669.579]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "holding",
+      "polygon_points": [[776.561,616.089],[931.302,617.362],[931.939,681.042],[779.109,681.042]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "the",
+      "polygon_points": [[940.217,621.183],[1008.991,619.909],[1008.991,670.853],[940.854,670.216]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "knife",
+      "polygon_points": [[1023.637,620.546],[1118.519,619.273],[1118.519,675.947],[1021.727,674.037]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "to",
+      "polygon_points": [[1128.708,627.806],[1176.467,627.806],[1175.830,672.381],[1128.071,668.560]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "put",
+      "polygon_points": [[1187.293,629.716],[1256.066,628.443],[1255.429,679.386],[1184.745,679.386]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "it",
+      "polygon_points": [[1266.255,622.711],[1294.274,622.075],[1294.274,673.655],[1266.892,673.018]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "down",
+      "polygon_points": [[1303.443,621.947],[1418.703,621.947],[1419.340,672.891],[1303.443,671.617]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "칼을",
+      "polygon_points": [[226.118,887.617],[376.401,888.891],[375.764,970.400],[229.302,971.037]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "들고",
+      "polygon_points": [[387.863,888.254],[524.137,887.617],[526.684,975.494],[385.316,974.221]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "있는",
+      "polygon_points": [[541.330,891.438],[680.788,893.348],[681.425,973.584],[538.783,972.947]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "남성에게",
+      "polygon_points": [[691.995,881.249],[967.726,882.523],[967.726,974.221],[690.085,975.494]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "내려놓으라고",
+      "polygon_points": [[978.552,888.891],[1396.288,887.617],[1398.835,972.947],[980.462,971.037]]
+    }
+  ]
+}

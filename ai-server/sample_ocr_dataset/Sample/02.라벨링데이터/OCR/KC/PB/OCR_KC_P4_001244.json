@@ -1,0 +1,306 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_001244",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_001244.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 2585,
+    "height": 1298,
+    "location": null,
+    "device_type": "Galaxy S23",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 3
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "신숭겸장군유적지",
+      "polygon_points": [[383.000,256.000],[1278.000,256.000],[1278.000,449.000],[383.000,449.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "Historic",
+      "polygon_points": [[382.000,509.000],[552.000,509.000],[552.000,605.000],[382.000,605.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "Site",
+      "polygon_points": [[563.000,506.000],[648.000,506.000],[648.000,606.000],[563.000,606.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "of",
+      "polygon_points": [[658.000,509.000],[707.000,509.000],[707.000,606.000],[658.000,606.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "General",
+      "polygon_points": [[715.000,506.000],[891.000,506.000],[891.000,605.000],[715.000,605.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "Sin",
+      "polygon_points": [[901.000,504.000],[973.000,504.000],[973.000,601.000],[901.000,601.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "Sung-gyeom",
+      "polygon_points": [[981.000,505.000],[1273.000,505.000],[1273.000,616.000],[981.000,616.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "申",
+      "polygon_points": [[375.000,658.000],[462.000,658.000],[462.000,821.000],[375.000,821.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "崇",
+      "polygon_points": [[475.000,664.000],[583.000,664.000],[583.000,823.000],[475.000,823.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "謙",
+      "polygon_points": [[591.000,662.000],[700.000,662.000],[700.000,822.000],[591.000,822.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "將",
+      "polygon_points": [[703.000,658.000],[817.000,658.000],[817.000,822.000],[703.000,822.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "軍",
+      "polygon_points": [[823.000,669.000],[925.000,669.000],[925.000,821.000],[823.000,821.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "遺",
+      "polygon_points": [[932.000,658.000],[1043.000,658.000],[1043.000,825.000],[932.000,825.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "跡",
+      "polygon_points": [[1047.000,661.000],[1158.000,661.000],[1158.000,822.000],[1047.000,822.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "地",
+      "polygon_points": [[1163.000,655.000],[1274.000,655.000],[1274.000,820.000],[1163.000,820.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "申",
+      "polygon_points": [[368.000,857.000],[462.000,857.000],[462.000,1013.000],[368.000,1013.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "崇",
+      "polygon_points": [[474.000,855.000],[579.000,855.000],[579.000,1008.000],[474.000,1008.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "谦",
+      "polygon_points": [[586.000,855.000],[696.000,855.000],[696.000,1006.000],[586.000,1006.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "將",
+      "polygon_points": [[698.000,853.000],[808.000,853.000],[808.000,1011.000],[698.000,1011.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "军",
+      "polygon_points": [[813.000,861.000],[922.000,861.000],[922.000,1007.000],[813.000,1007.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "遗",
+      "polygon_points": [[925.000,851.000],[1037.000,851.000],[1037.000,1007.000],[925.000,1007.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "址",
+      "polygon_points": [[1040.000,846.000],[1155.000,846.000],[1155.000,1006.000],[1040.000,1006.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "3.5km",
+      "polygon_points": [[119.000,882.000],[312.000,882.000],[312.000,988.000],[119.000,988.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "불로동고분군",
+      "polygon_points": [[1597.000,258.000],[2498.000,258.000],[2498.000,493.000],[1597.000,493.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "Bullo-dong",
+      "polygon_points": [[1601.000,572.000],[2008.000,572.000],[2008.000,725.000],[1601.000,725.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 32,
+      "text": "Ancient",
+      "polygon_points": [[2029.000,577.000],[2302.000,577.000],[2302.000,706.000],[2029.000,706.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 33,
+      "text": "Tomb",
+      "polygon_points": [[2313.000,577.000],[2511.000,577.000],[2511.000,709.000],[2313.000,709.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 34,
+      "text": "不",
+      "polygon_points": [[1589.000,790.000],[1749.000,790.000],[1749.000,979.000],[1589.000,979.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 35,
+      "text": "老",
+      "polygon_points": [[1755.000,778.000],[1905.000,778.000],[1905.000,980.000],[1755.000,980.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 36,
+      "text": "洞",
+      "polygon_points": [[1910.000,787.000],[2061.000,787.000],[2061.000,981.000],[1910.000,981.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 37,
+      "text": "古",
+      "polygon_points": [[2072.000,784.000],[2215.000,784.000],[2215.000,984.000],[2072.000,984.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 38,
+      "text": "墳",
+      "polygon_points": [[2221.000,788.000],[2369.939,787.347],[2379.866,988.872],[2221.000,988.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 39,
+      "text": "群",
+      "polygon_points": [[2371.924,787.347],[2381.851,983.908],[2531.754,982.915],[2522.820,791.318]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 40,
+      "text": "1.7km",
+      "polygon_points": [[1371.000,876.000],[1561.000,876.000],[1561.000,977.000],[1371.000,977.000]]
+    }
+  ]
+}

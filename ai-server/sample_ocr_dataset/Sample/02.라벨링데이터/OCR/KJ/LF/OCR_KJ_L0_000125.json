@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000125",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000125.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2502,
+    "height": 1011,
+    "location": "36.56544, 128.72812859972223",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Yeongdong",
+      "polygon_points": [[65.940,237.864],[556.797,201.607],[551.220,349.422],[65.940,368.945]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Clothing",
+      "polygon_points": [[593.054,209.974],[587.476,349.422],[1053.233,304.799],[1044.866,148.617]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "ヨンド衣類",
+      "polygon_points": [[1187.104,151.406],[1845.300,90.049],[1853.666,254.598],[1181.526,285.276]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "英",
+      "polygon_points": [[2005.000,76.000],[2128.000,76.000],[2128.000,232.000],[2005.000,232.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "㑈",
+      "polygon_points": [[2138.000,69.000],[2239.000,69.000],[2239.000,215.000],[2138.000,215.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "服",
+      "polygon_points": [[2253.000,65.000],[2358.000,65.000],[2358.000,215.000],[2253.000,215.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "装",
+      "polygon_points": [[2364.000,47.000],[2481.000,47.000],[2481.000,219.000],[2364.000,219.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "영동의류",
+      "polygon_points": [[59.415,401.916],[2304.533,241.551],[2335.909,910.902],[48.957,973.654]]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_000181",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_000181.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1920,
+    "height": 1080,
+    "location": "36.55915, 128.749587",
+    "device_type": null,
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": 2,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "나가는",
+      "polygon_points": [[777.670,430.257],[1194.292,433.833],[1219.325,609.065],[765.153,601.912]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "곳",
+      "polygon_points": [[1274.756,437.409],[1432.107,437.409],[1424.955,625.157],[1264.027,612.641]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Exit",
+      "polygon_points": [[1094.160,719.925],[1256.875,716.349],[1244.358,625.157],[1087.007,626.945]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "出",
+      "polygon_points": [[1357.007,718.137],[1358.796,635.886],[1287.272,634.098],[1285.484,716.349]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "口",
+      "polygon_points": [[1432.107,716.349],[1428.531,635.886],[1364.160,635.886],[1357.007,721.714]]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000199",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000199.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 656,
+    "height": 318,
+    "location": "36.246254, 127.6194078",
+    "device_type": "iPhone 12 Pro Max",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "커피하우스",
+      "polygon_points": [[94.552,73.020],[608.342,85.635],[613.503,187.705],[102.580,153.873]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Coffee",
+      "polygon_points": [[160.496,167.062],[292.384,175.663],[290.664,224.978],[158.775,219.243]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "house",
+      "polygon_points": [[312.454,215.803],[459.824,222.110],[459.824,178.530],[307.293,168.782]]
+    }
+  ]
+}

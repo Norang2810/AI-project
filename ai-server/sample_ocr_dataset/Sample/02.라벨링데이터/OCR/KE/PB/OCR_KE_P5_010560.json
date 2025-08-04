@@ -1,0 +1,74 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_PB_010560",
+    "src_path": "\\OCR\\KE\\PB",
+    "label_path": "\\OCR\\KE\\PB",
+    "language_type": "KE",
+    "group": "PB",
+    "small_group": 5
+  },
+  "Images": {
+    "file_name": "OCR_KE_P5_010560.png",
+    "created_day": "2023.08.27.",
+    "extension": "png",
+    "width": 1170,
+    "height": 2532,
+    "location": null,
+    "device_type": null,
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "30",
+      "polygon_points": [[57.939,1346.653],[172.839,1338.245],[178.444,1230.352],[64.945,1231.753]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "14",
+      "polygon_points": [[259.714,1318.628],[352.194,1318.628],[357.799,1221.944],[269.523,1221.944]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "아란6길",
+      "polygon_points": [[465.693,1301.814],[996.755,1282.197],[993.952,1137.871],[462.891,1158.890]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "Aran",
+      "polygon_points": [[523.143,1413.911],[750.140,1408.306],[744.535,1314.425],[534.353,1320.030]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "6-gil",
+      "polygon_points": [[782.368,1402.701],[998.156,1390.090],[999.557,1296.209],[764.152,1297.610]]
+    }
+  ]
+}

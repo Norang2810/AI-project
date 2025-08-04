@@ -1,0 +1,58 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000112",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000112.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1726,
+    "height": 748,
+    "location": "36.565347, 128.727968",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "또또찜닭",
+      "polygon_points": [[1627.261,482.603],[64.411,549.454],[46.343,23.686],[1627.261,29.106]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Ttotto",
+      "polygon_points": [[503.455,693.995],[98.740,710.256],[84.286,551.260],[496.228,542.227]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Jjimdak",
+      "polygon_points": [[1029.223,686.768],[537.783,683.154],[530.556,547.647],[1025.609,542.227]]
+    }
+  ]
+}

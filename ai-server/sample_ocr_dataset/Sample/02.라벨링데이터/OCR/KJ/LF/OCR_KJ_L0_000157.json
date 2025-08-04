@@ -1,0 +1,114 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000157",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000157.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2463,
+    "height": 726,
+    "location": null,
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Gyeongnam",
+      "polygon_points": [[99.599,11.519],[682.668,53.019],[680.593,165.067],[97.524,136.018]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Store",
+      "polygon_points": [[769.817,46.794],[1099.739,61.318],[1093.514,179.592],[773.967,165.067]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "慶南",
+      "polygon_points": [[1253.287,61.318],[1249.137,187.892],[1487.760,192.042],[1487.760,73.768]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "商会",
+      "polygon_points": [[1718.083,82.068],[1724.307,196.192],[1496.060,189.967],[1493.985,75.843]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "庆",
+      "polygon_points": [[1882.006,92.443],[2002.355,92.443],[2006.505,206.567],[1884.081,204.492]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "南",
+      "polygon_points": [[2112.329,98.668],[2114.404,210.717],[2004.430,204.492],[1998.205,94.518]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "商",
+      "polygon_points": [[2226.452,94.518],[2224.377,212.792],[2112.329,210.717],[2108.179,92.443]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "会",
+      "polygon_points": [[2350.951,96.593],[2344.726,223.167],[2222.302,219.017],[2220.227,94.518]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "경남",
+      "polygon_points": [[132.799,183.742],[130.724,698.337],[1238.762,690.037],[1232.537,221.092]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "상회",
+      "polygon_points": [[1323.837,233.542],[1323.837,708.712],[2375.851,706.637],[2361.326,241.842]]
+    }
+  ]
+}

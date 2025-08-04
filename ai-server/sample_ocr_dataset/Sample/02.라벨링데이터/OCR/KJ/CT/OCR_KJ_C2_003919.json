@@ -1,0 +1,402 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_CT_003919",
+    "src_path": "\\OCR\\KJ\\CT",
+    "label_path": "\\OCR\\KJ\\CT",
+    "language_type": "KJ",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KJ_C2_003919.jpg",
+    "created_day": "2023.08.25.",
+    "extension": "jpg",
+    "width": 1170,
+    "height": 1396,
+    "location": "35.17068611111111, 128.03805",
+    "device_type": null,
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "진양호",
+      "polygon_points": [[290.000,536.000],[508.197,550.288],[505.304,627.180],[284.042,615.483]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "전망대",
+      "polygon_points": [[512.846,556.796],[723.896,567.023],[724.826,646.051],[509.090,633.237]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Observation",
+      "polygon_points": [[429.836,630.591],[574.196,643.078],[574.277,671.052],[428.394,657.061]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Deck",
+      "polygon_points": [[577.981,641.564],[638.000,647.000],[640.059,675.632],[579.495,671.846]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "0.4km",
+      "polygon_points": [[587.000,701.000],[663.000,701.000],[663.000,730.000],[587.000,730.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "진양호",
+      "polygon_points": [[287.000,777.000],[510.604,783.890],[512.875,857.324],[277.983,847.760]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "동물원",
+      "polygon_points": [[515.146,790.703],[737.719,799.031],[736.205,866.408],[518.174,863.380]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "Zoo",
+      "polygon_points": [[440.198,860.352],[493.192,862.623],[496.977,889.877],[439.441,889.120]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "일년계단",
+      "polygon_points": [[294.000,1016.000],[538.000,1016.000],[538.000,1099.000],[294.000,1099.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "(소원계단)",
+      "polygon_points": [[543.157,1032.959],[732.000,1036.000],[733.177,1106.393],[543.157,1098.822]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "0ne-year",
+      "polygon_points": [[298.000,1108.000],[405.000,1108.000],[405.000,1136.000],[298.000,1136.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "Stairs",
+      "polygon_points": [[403.000,1108.000],[469.723,1108.664],[469.873,1138.228],[403.000,1139.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "阶",
+      "polygon_points": [[504.150,1143.775],[530.306,1145.026],[530.306,1174.487],[508.399,1173.732]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "0.5km",
+      "polygon_points": [[596.000,1183.000],[674.000,1183.000],[676.383,1211.762],[592.533,1210.251]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "ジンヤン(晋陽)湖",
+      "polygon_points": [[288.229,682.233],[475.511,693.414],[471.784,727.889],[284.502,712.049]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "展望台",
+      "polygon_points": [[546.325,729.752],[550.052,698.073],[477.375,690.619],[473.648,730.684]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "Jinyangho",
+      "polygon_points": [[292.573,622.638],[425.814,630.209],[422.786,658.976],[288.102,647.470]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "晋",
+      "polygon_points": [[288.031,652.163],[288.031,680.931],[314.528,682.445],[315.285,655.948]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "阳",
+      "polygon_points": [[315.285,653.677],[341.025,654.434],[341.025,683.959],[317.556,680.174]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "湖",
+      "polygon_points": [[344.810,654.434],[370.550,656.705],[370.550,683.202],[344.053,681.688]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "展",
+      "polygon_points": [[378.120,660.491],[374.335,683.959],[403.860,685.473],[401.589,658.976]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "望",
+      "polygon_points": [[431.114,662.005],[405.374,658.976],[403.860,691.530],[432.628,689.258]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "台",
+      "polygon_points": [[456.096,690.773],[456.096,665.790],[431.871,663.519],[435.656,691.530]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "Jinyangho",
+      "polygon_points": [[293.331,852.024],[435.656,857.324],[435.656,887.606],[289.545,882.306]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "0.3km",
+      "polygon_points": [[587.066,924.701],[674.884,928.486],[673.370,959.525],[585.552,952.712]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "晋",
+      "polygon_points": [[287.274,889.120],[320.584,886.848],[316.799,921.673],[284.246,918.645]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "阳",
+      "polygon_points": [[353.137,918.645],[353.895,889.120],[322.098,888.363],[320.584,921.673]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "湖",
+      "polygon_points": [[386.448,922.430],[387.205,895.176],[355.409,889.120],[353.137,923.944]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "动",
+      "polygon_points": [[419.001,923.187],[419.001,892.905],[384.177,889.877],[387.205,922.430]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "物",
+      "polygon_points": [[453.825,923.944],[453.068,892.148],[422.029,892.148],[418.244,923.944]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 32,
+      "text": "园",
+      "polygon_points": [[489.406,924.701],[488.649,892.905],[453.068,891.391],[453.068,926.972]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 33,
+      "text": "晋陽湖",
+      "polygon_points": [[387.962,960.282],[387.205,923.187],[282.732,920.916],[281.218,958.011]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 34,
+      "text": "動物園",
+      "polygon_points": [[485.621,964.068],[485.621,926.972],[387.205,922.430],[386.448,959.525]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 35,
+      "text": "(Wishing",
+      "polygon_points": [[558.298,1141.974],[558.298,1105.636],[467.452,1105.636],[467.452,1139.703]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 36,
+      "text": "Stairs)",
+      "polygon_points": [[632.489,1147.274],[629.461,1107.150],[559.055,1104.879],[562.083,1141.217]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 37,
+      "text": "一",
+      "polygon_points": [[300.661,1145.782],[299.150,1169.955],[331.633,1169.200],[329.366,1144.271]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 38,
+      "text": "年",
+      "polygon_points": [[359.111,1174.747],[359.583,1145.026],[330.122,1140.494],[328.894,1173.992]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 39,
+      "text": "台",
+      "polygon_points": [[385.267,1175.998],[379.979,1143.516],[361.094,1141.249],[356.561,1175.243]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 40,
+      "text": "阶",
+      "polygon_points": [[416.994,1177.509],[415.483,1142.005],[378.468,1141.249],[383.000,1178.265]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 41,
+      "text": "階段",
+      "polygon_points": [[419.260,1216.035],[363.643,1221.583],[358.072,1179.775],[419.260,1179.020]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 42,
+      "text": "一年",
+      "polygon_points": [[302.927,1216.035],[365.154,1216.295],[354.295,1175.243],[299.150,1175.998]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 44,
+      "text": "愿",
+      "polygon_points": [[430.591,1175.243],[431.347,1142.760],[451.743,1141.249],[454.009,1172.221]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 45,
+      "text": "望",
+      "polygon_points": [[481.204,1173.732],[480.449,1140.494],[453.254,1140.494],[454.765,1173.732]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 46,
+      "text": "台",
+      "polygon_points": [[506.416,1172.481],[500.089,1145.782],[484.226,1143.516],[480.449,1172.221]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 47,
+      "text": "願い",
+      "polygon_points": [[431.347,1213.769],[429.836,1181.286],[484.226,1178.265],[481.204,1213.769]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 48,
+      "text": "階段",
+      "polygon_points": [[533.327,1213.769],[531.817,1178.265],[482.715,1179.775],[482.715,1213.769]]
+    }
+  ]
+}

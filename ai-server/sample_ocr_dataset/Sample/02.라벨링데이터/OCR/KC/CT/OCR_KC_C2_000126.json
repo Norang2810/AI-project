@@ -1,0 +1,130 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_CT_000126",
+    "src_path": "\\OCR\\KC\\CT",
+    "label_path": "\\OCR\\KC\\CT",
+    "language_type": "KC",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KC_C2_000126.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.79170277777778, 129.34965555555556",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "세계유산",
+      "polygon_points": [[228.870,1451.663],[1431.652,1432.185],[1460.870,1719.489],[189.913,1763.315]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "석굴암",
+      "polygon_points": [[1563.130,1407.837],[2790.261,1393.228],[2785.391,1763.315],[1543.652,1768.185]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "석굴",
+      "polygon_points": [[2882.783,1388.359],[3622.957,1388.359],[3681.391,1729.228],[2863.304,1743.837]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "世",
+      "polygon_points": [[262.957,1855.837],[506.435,1836.359],[521.043,2074.967],[233.739,2070.098]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "界",
+      "polygon_points": [[594.087,1850.967],[818.087,1846.098],[808.348,2099.315],[560.000,2079.837]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "遺",
+      "polygon_points": [[871.652,1846.098],[1105.391,1836.359],[1139.478,2099.315],[857.043,2065.228]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "産",
+      "polygon_points": [[1197.913,1836.359],[1421.913,1821.750],[1460.870,2070.098],[1163.826,2104.185]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "石",
+      "polygon_points": [[1641.043,1816.880],[1928.348,1792.533],[1928.348,2050.620],[1606.957,2070.098]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "窟",
+      "polygon_points": [[2059.826,1807.141],[2303.304,1792.533],[2293.565,2050.620],[2030.609,2050.620]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "庵",
+      "polygon_points": [[2415.304,1816.880],[2697.739,1763.315],[2726.957,2026.272],[2366.609,2040.880]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "石",
+      "polygon_points": [[2955.826,1802.272],[3311.304,1773.054],[3306.435,2011.663],[2965.565,2026.272]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "窟",
+      "polygon_points": [[3380.870,1774.370],[3614.609,1757.674],[3606.261,1978.891],[3347.478,2012.283]]
+    }
+  ]
+}

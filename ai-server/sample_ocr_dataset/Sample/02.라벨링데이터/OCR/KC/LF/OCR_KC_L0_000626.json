@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_000626",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_000626.jpg",
+    "created_day": "2023.08.23.",
+    "extension": "jpg",
+    "width": 4000,
+    "height": 1194,
+    "location": null,
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "xxx",
+      "polygon_points": [[3193.772,416.336],[3596.886,442.288],[3589.965,566.855],[3209.343,566.855]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Business",
+      "polygon_points": [[2475.779,393.845],[3178.201,483.810],[3171.280,559.935],[2463.668,544.364]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "거목",
+      "polygon_points": [[1401.384,553.014],[1769.896,563.395],[1768.166,779.658],[1396.194,774.468]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "비지니스클럽",
+      "polygon_points": [[1846.021,563.395],[2942.000,585.000],[2942.000,809.000],[1840.830,783.118]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "ROOM",
+      "polygon_points": [[3076.125,649.900],[3410.035,660.281],[3406.574,753.707],[3074.394,745.056]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "巨",
+      "polygon_points": [[529.412,306.721],[806.228,244.437],[876.946,710.610],[508.651,766.929]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "木",
+      "polygon_points": [[774.579,928.140],[1434.847,938.377],[1171.252,413.745],[882.064,406.067]]
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_002051",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_002051.JPG",
+    "created_day": "2023.08.24.",
+    "extension": "JPG",
+    "width": 4000,
+    "height": 2252,
+    "location": null,
+    "device_type": null,
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 4
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "직통",
+      "polygon_points": [[1426.000,706.000],[1649.000,706.000],[1649.000,865.000],[1426.000,865.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "직통",
+      "polygon_points": [[1951.000,743.000],[2168.000,743.000],[2168.000,904.000],[1951.000,904.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "북대구",
+      "polygon_points": [[1301.000,1001.000],[1554.000,1001.000],[1554.000,1175.000],[1301.000,1175.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "마산",
+      "polygon_points": [[1839.000,1038.000],[2079.000,1038.000],[2079.000,1223.000],[1839.000,1223.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "대구서부",
+      "polygon_points": [[1404.000,1287.000],[1612.000,1287.000],[1612.000,1393.000],[1404.000,1393.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "정류장",
+      "polygon_points": [[1438.000,1397.000],[1599.000,1397.000],[1599.000,1502.000],[1438.000,1502.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "창원",
+      "polygon_points": [[1866.000,1337.000],[2075.000,1337.000],[2075.000,1497.000],[1866.000,1497.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "BukDaegu",
+      "polygon_points": [[1565.000,1015.000],[1803.000,1015.000],[1803.000,1105.000],[1565.000,1105.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "Massan",
+      "polygon_points": [[2124.000,1051.000],[2293.000,1051.000],[2293.000,1134.000],[2124.000,1134.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "Daegu",
+      "polygon_points": [[1615.000,1293.000],[1676.000,1293.000],[1676.000,1353.000],[1615.000,1353.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "xxx",
+      "polygon_points": [[1678.000,1294.000],[1775.000,1294.000],[1775.000,1354.000],[1678.000,1354.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "xxx",
+      "polygon_points": [[1642.000,1351.000],[1691.000,1351.000],[1691.000,1394.000],[1642.000,1394.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "xxx",
+      "polygon_points": [[1691.000,1351.000],[1746.000,1351.000],[1746.000,1398.000],[1691.000,1398.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "Changwon",
+      "polygon_points": [[2081.000,1353.000],[2345.000,1353.000],[2345.000,1430.000],[2081.000,1430.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "北",
+      "polygon_points": [[1591.000,1112.000],[1649.000,1112.000],[1649.000,1168.000],[1591.000,1168.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "大",
+      "polygon_points": [[1649.000,1112.000],[1704.000,1112.000],[1704.000,1168.000],[1649.000,1168.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "邱",
+      "polygon_points": [[1705.000,1112.000],[1764.000,1112.000],[1764.000,1178.000],[1705.000,1178.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "馬",
+      "polygon_points": [[2152.000,1146.000],[2213.000,1146.000],[2213.000,1199.000],[2152.000,1199.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 32,
+      "text": "山",
+      "polygon_points": [[2212.000,1136.000],[2262.000,1136.000],[2262.000,1206.000],[2212.000,1206.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 33,
+      "text": "xxx",
+      "polygon_points": [[1635.000,1404.000],[1666.000,1404.000],[1666.000,1439.000],[1635.000,1439.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 34,
+      "text": "xxx",
+      "polygon_points": [[1667.000,1402.000],[1699.000,1402.000],[1699.000,1442.000],[1667.000,1442.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 35,
+      "text": "xxx",
+      "polygon_points": [[1698.000,1402.000],[1730.000,1402.000],[1730.000,1449.000],[1698.000,1449.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 36,
+      "text": "xxx",
+      "polygon_points": [[1726.000,1406.000],[1769.000,1406.000],[1769.000,1448.000],[1726.000,1448.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 37,
+      "text": "xxx",
+      "polygon_points": [[1654.000,1441.000],[1689.000,1441.000],[1689.000,1483.000],[1654.000,1483.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 38,
+      "text": "xxx",
+      "polygon_points": [[1687.000,1447.000],[1718.000,1447.000],[1718.000,1485.000],[1687.000,1485.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 39,
+      "text": "xxx",
+      "polygon_points": [[1718.000,1447.000],[1747.000,1447.000],[1747.000,1489.000],[1718.000,1489.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 40,
+      "text": "昌",
+      "polygon_points": [[2160.000,1440.000],[2215.000,1440.000],[2215.000,1505.000],[2160.000,1505.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 41,
+      "text": "原",
+      "polygon_points": [[2219.000,1441.000],[2271.000,1441.000],[2271.000,1504.000],[2219.000,1504.000]]
+    }
+  ]
+}

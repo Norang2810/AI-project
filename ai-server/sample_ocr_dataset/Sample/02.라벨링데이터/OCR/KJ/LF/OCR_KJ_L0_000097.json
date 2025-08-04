@@ -1,0 +1,154 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000097",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000097.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2470,
+    "height": 526,
+    "location": "36.5657098, 128.7274676",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "Andong",
+      "polygon_points": [[73.000,61.000],[279.000,61.000],[279.000,135.000],[73.000,135.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Spicy",
+      "polygon_points": [[804.000,64.000],[984.000,64.000],[984.000,141.000],[804.000,141.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Joongang",
+      "polygon_points": [[286.000,67.000],[559.000,67.000],[559.000,138.000],[286.000,138.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Chicken",
+      "polygon_points": [[990.000,67.000],[1215.000,67.000],[1215.000,135.000],[990.000,135.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Braised",
+      "polygon_points": [[569.000,70.000],[804.000,70.000],[804.000,135.000],[569.000,135.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "안동",
+      "polygon_points": [[17.099,162.131],[6.218,487.009],[604.676,491.672],[614.003,159.023]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "중앙",
+      "polygon_points": [[1509.358,151.250],[1529.566,508.771],[634.210,518.097],[640.428,151.250]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "찜닭",
+      "polygon_points": [[1538.892,151.250],[2381.397,155.914],[2415.595,493.226],[1540.447,499.444]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "安東中央チムタク",
+      "polygon_points": [[1300.064,62.391],[1296.400,137.260],[1725.425,134.152],[1728.534,64.202]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "安",
+      "polygon_points": [[1841.897,58.838],[1843.673,136.115],[1885.421,138.780],[1880.091,59.726]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "东",
+      "polygon_points": [[1925.392,138.780],[1888.085,139.668],[1882.756,57.061],[1914.733,60.614]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "中",
+      "polygon_points": [[1978.687,137.892],[1933.386,136.115],[1920.951,62.391],[1966.251,60.614]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "央",
+      "polygon_points": [[2042.641,137.892],[1984.016,137.004],[1972.469,56.173],[2031.982,59.726]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "烧",
+      "polygon_points": [[2101.265,137.004],[2044.417,137.892],[2031.094,55.285],[2087.942,58.838]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "鸡",
+      "polygon_points": [[2161.666,137.004],[2147.454,58.838],[2090.606,59.726],[2100.377,137.004]]
+    }
+  ]
+}

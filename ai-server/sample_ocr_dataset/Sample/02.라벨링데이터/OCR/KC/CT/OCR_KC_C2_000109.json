@@ -1,0 +1,82 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_CT_000109",
+    "src_path": "\\OCR\\KC\\CT",
+    "label_path": "\\OCR\\KC\\CT",
+    "language_type": "KC",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KC_C2_000109.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.79493055555555, 129.34935",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "Way",
+      "polygon_points": [[1467.000,861.000],[1990.000,861.000],[1990.000,1081.000],[1467.000,1081.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "Out",
+      "polygon_points": [[2053.000,869.000],[2515.000,869.000],[2515.000,1089.000],[2053.000,1089.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "내려가는",
+      "polygon_points": [[1078.000,1243.000],[2472.000,1243.000],[2472.000,1538.000],[1078.000,1538.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "길",
+      "polygon_points": [[2520.000,1248.000],[2871.000,1248.000],[2871.000,1549.000],[2520.000,1549.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "出",
+      "polygon_points": [[1717.000,1579.000],[1906.000,1579.000],[1906.000,1766.000],[1717.000,1766.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "路",
+      "polygon_points": [[1949.000,1594.000],[2196.000,1594.000],[2196.000,1763.000],[1949.000,1763.000]]
+    }
+  ]
+}

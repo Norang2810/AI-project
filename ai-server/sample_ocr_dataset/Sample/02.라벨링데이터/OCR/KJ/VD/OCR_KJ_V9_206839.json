@@ -1,0 +1,106 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206839",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206839.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "その後",
+      "polygon_points": [[728.639,861.112],[584.564,860.545],[584.564,805.524],[727.505,809.495]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "不動産に",
+      "polygon_points": [[974.816,860.545],[777.988,859.978],[776.854,812.331],[976.517,811.764]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "関連する",
+      "polygon_points": [[1180.789,859.278],[982.190,859.978],[984.459,809.495],[1178.008,809.218]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "그",
+      "polygon_points": [[838.114,961.512],[779.123,961.512],[782.526,908.760],[829.038,908.760]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "다음",
+      "polygon_points": [[950.992,970.020],[847.757,962.646],[844.921,906.491],[949.858,905.923]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "부동산과",
+      "polygon_points": [[1165.404,970.587],[961.770,964.915],[957.799,906.491],[1169.375,905.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "관련된",
+      "polygon_points": [[1336.139,969.453],[1176.181,968.318],[1175.614,905.923],[1335.572,904.222]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "것",
+      "polygon_points": [[1399.669,966.617],[1349.186,966.049],[1344.648,903.654],[1399.669,902.520]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "もの",
+      "polygon_points": [[1283.691,859.278],[1194.695,858.351],[1193.768,806.437],[1281.837,812.926]]
+    }
+  ]
+}

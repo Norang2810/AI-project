@@ -1,0 +1,74 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_000335",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_000335.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 2532,
+    "height": 679,
+    "location": "37.4453511, 127.1330711",
+    "device_type": "iPhone 14 Pro",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "大",
+      "polygon_points": [[388.772,81.837],[999.343,76.853],[986.882,645.058],[328.961,640.074]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "家",
+      "polygon_points": [[1046.693,47.913],[1614.898,36.979],[1622.374,655.026],[1014.295,650.042]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "大",
+      "polygon_points": [[1659.756,501.480],[1717.906,506.464],[1717.906,586.212],[1654.772,591.196]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "家",
+      "polygon_points": [[1726.545,509.229],[1718.570,585.987],[1789.346,585.987],[1790.343,508.233]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "대가",
+      "polygon_points": [[2145.720,383.385],[2532.000,385.877],[2527.016,575.278],[2130.768,582.755]]
+    }
+  ]
+}

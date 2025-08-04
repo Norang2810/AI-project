@@ -1,0 +1,74 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_002340",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_002340.jpeg",
+    "created_day": "2023.08.24.",
+    "extension": "jpeg",
+    "width": 3514,
+    "height": 2263,
+    "location": null,
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "금연",
+      "polygon_points": [[957.000,888.000],[2375.000,888.000],[2375.000,1301.000],[957.000,1301.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "NO",
+      "polygon_points": [[1316.000,1354.000],[1664.000,1354.000],[1664.000,1545.000],[1316.000,1545.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "SMOKING",
+      "polygon_points": [[1720.000,1354.000],[2696.000,1354.000],[2696.000,1563.000],[1720.000,1563.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "禁",
+      "polygon_points": [[613.000,1329.000],[855.000,1329.000],[855.000,1568.000],[613.000,1568.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "煙",
+      "polygon_points": [[881.000,1334.000],[1164.000,1334.000],[1164.000,1555.000],[881.000,1555.000]]
+    }
+  ]
+}

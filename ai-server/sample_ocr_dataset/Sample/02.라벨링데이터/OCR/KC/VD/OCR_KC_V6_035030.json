@@ -1,0 +1,162 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_VD_035030",
+    "src_path": "\\OCR\\KC\\VD",
+    "label_path": "\\OCR\\KC\\VD",
+    "language_type": "KC",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KC_V6_035030.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "손님은",
+      "polygon_points": [[402.000,880.000],[619.432,893.369],[622.644,967.242],[402.000,972.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "남성을",
+      "polygon_points": [[937.409,883.733],[1149.395,890.157],[1150.037,970.454],[940.621,972.060]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "顾",
+      "polygon_points": [[691.930,625.934],[733.932,628.404],[733.932,670.406],[686.989,674.112]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "客",
+      "polygon_points": [[782.110,623.463],[777.169,671.641],[737.638,671.641],[740.109,628.404]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "吓",
+      "polygon_points": [[831.524,623.463],[825.347,667.935],[780.875,670.406],[784.581,624.698]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "了",
+      "polygon_points": [[871.055,627.169],[864.878,671.641],[830.289,671.641],[831.524,624.698]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "一",
+      "polygon_points": [[913.057,632.110],[914.292,655.582],[869.820,658.053],[872.290,635.816]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "跳",
+      "polygon_points": [[960.000,620.992],[958.765,672.877],[915.527,674.112],[915.527,627.169]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "将",
+      "polygon_points": [[1047.709,622.228],[1052.651,670.406],[1000.766,667.935],[1009.414,623.463]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "男",
+      "polygon_points": [[1092.182,622.228],[1089.711,671.641],[1047.709,671.641],[1047.709,627.169]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "子",
+      "polygon_points": [[1136.654,624.698],[1135.419,670.406],[1088.476,670.406],[1095.888,623.463]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "推",
+      "polygon_points": [[1186.068,623.463],[1183.597,667.935],[1137.889,670.406],[1137.889,623.463]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "开",
+      "polygon_points": [[1226.834,623.463],[1228.070,667.935],[1186.068,670.406],[1186.068,622.228]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "깜짝",
+      "polygon_points": [[786.450,894.975],[773.603,970.454],[643.521,967.242],[637.097,891.763]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "놀라",
+      "polygon_points": [[929.380,883.733],[929.380,968.848],[784.844,967.242],[791.268,890.157]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "밀쳐냅니다",
+      "polygon_points": [[1514.587,883.733],[1506.557,980.090],[1156.461,967.242],[1156.461,886.945]]
+    }
+  ]
+}

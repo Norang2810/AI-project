@@ -1,0 +1,114 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000141",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000141.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2587,
+    "height": 599,
+    "location": "36.565398, 128.728472",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Moa",
+      "polygon_points": [[167.800,124.947],[160.680,205.040],[289.521,204.866],[300.200,122.104]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Fashion",
+      "polygon_points": [[313.747,116.048],[307.517,197.921],[601.191,188.131],[603.861,109.818]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Women\u0027s",
+      "polygon_points": [[645.885,101.414],[638.765,185.066],[924.430,176.167],[922.650,96.074]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "Clothing",
+      "polygon_points": [[968.432,89.449],[962.202,165.982],[1292.363,165.092],[1293.253,85.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "モアファッション",
+      "polygon_points": [[1461.349,63.839],[1464.019,147.492],[2078.954,114.565],[2075.394,31.802]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "莫",
+      "polygon_points": [[2196.621,21.123],[2197.511,118.124],[2295.403,114.565],[2283.834,13.114]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "阿",
+      "polygon_points": [[2376.385,15.783],[2288.283,16.673],[2299.852,118.124],[2379.055,112.785]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "时",
+      "polygon_points": [[2462.708,6.884],[2378.165,12.224],[2385.285,114.565],[2474.277,111.895]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "装",
+      "polygon_points": [[2553.480,5.994],[2464.488,9.554],[2477.836,114.565],[2563.269,95.876]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "모아패션",
+      "polygon_points": [[35.893,244.913],[7.254,598.999],[2510.763,554.605],[2473.387,130.113]]
+    }
+  ]
+}
