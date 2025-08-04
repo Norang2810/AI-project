@@ -118,7 +118,7 @@ const MainPage = () => {
   useEffect(() => {
     // API 서버 상태 확인
     fetch('http://localhost:3001/api/health')
-      .then(response => response.json())
+      .then(response => response.json())  
       .then(data => {
         setApiStatus('API 서버 연결 성공!');
         console.log('API Response:', data);
