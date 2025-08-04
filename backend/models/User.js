@@ -34,14 +34,14 @@ module.exports = (sequelize) => {
     timestamps: true,
     underscored: true,
     hooks: {
-      beforeCreate: async (user) => {
+      beforeCreate: async (user) => { //새 유저 생성 시 비밀번호 해싱
         if (user.password) {
           user.password = await bcrypt.hash(user.password, 10);
         }
       },
-      beforeUpdate: async (user) => {
+      beforeUpdate: async (user) => { //비밀번호 변경 시 해싱
         if (user.changed('password')) {
-          user.password = await bcrypt.hash(user.password, 10);
+          user.password = await bcrypt.hash(user.password, 10); //솔트 라운드를 10으로 설정
         }
       },
     },
@@ -52,7 +52,7 @@ module.exports = (sequelize) => {
     return await bcrypt.compare(candidatePassword, this.password);
   };
 
-  // 클래스 메서드
+  // 클래스 메서드 SELECT * FROM users WHERE email = 'aaa@bbb.com' 실행되는 구조.
   User.findByEmail = function(email) {
     return this.findOne({ where: { email } });
   };
