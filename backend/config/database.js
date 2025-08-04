@@ -1,5 +1,6 @@
 const { Sequelize } = require('sequelize');
 
+
 // 환경 변수에서 데이터베이스 설정 가져오기
 const DB_HOST = process.env.DB_HOST;
 const DB_PORT = process.env.DB_PORT || 3306;
