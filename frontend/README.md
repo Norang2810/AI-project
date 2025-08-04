@@ -5,7 +5,6 @@ React.js 기반의 프론트엔드 애플리케이션입니다.
 
 ## 기술 스택
 - React.js
-- TypeScript
 - Styled Components / CSS Modules
 - React Router
 - Axios
