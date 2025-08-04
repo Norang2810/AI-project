@@ -2,55 +2,7 @@
 
 알레르기 안전 메뉴 분석 AI 프로젝트
 
-## 🚀 96서버 설정
 
-### 환경 변수 설정
-
-96서버에서 실행하기 위해 다음 환경 변수를 설정하세요:
-
-```bash
-# 백엔드 환경 변수 (backend/.env)
-NODE_ENV=development
-DB_HOST=192.168.1.96
-DB_PORT=3307
-DB_NAME=myweb
-DB_USER=root
-DB_PASSWORD=1234
-JWT_SECRET=your_jwt_secret_key_here
-CORS_ORIGIN=http://192.168.1.96:3000
-PORT=3001
-AI_SERVER_URL=http://192.168.1.96:8000
-```
-
-### 서버 실행 방법
-
-1. **백엔드 서버 실행**
-```bash
-cd backend
-npm install
-npm start
-```
-
-2. **AI 서버 실행**
-```bash
-cd ai-server
-pip install -r requirements.txt
-python main.py
-```
-
-3. **프론트엔드 실행**
-```bash
-cd frontend
-npm install
-npm start
-```
-
-### Docker 실행 (선택사항)
-
-```bash
-cd docker
-docker-compose up -d
-```
 
 ## 📁 프로젝트 구조
 
