@@ -1,0 +1,274 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_VD_035026",
+    "src_path": "\\OCR\\KC\\VD",
+    "label_path": "\\OCR\\KC\\VD",
+    "language_type": "KC",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KC_V6_035026.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "주인이",
+      "polygon_points": [[960.000,802.000],[1167.000,802.000],[1167.000,890.000],[967.405,885.454]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "말에도",
+      "polygon_points": [[1172.000,805.000],[1392.000,805.000],[1392.000,890.000],[1172.000,890.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "잘라주겠다는",
+      "polygon_points": [[522.000,807.000],[950.000,807.000],[953.353,891.477],[522.000,890.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "빼앗는데",
+      "polygon_points": [[1196.253,899.507],[1477.293,895.492],[1475.000,980.000],[1190.230,971.774]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "욕을",
+      "polygon_points": [[442.000,897.000],[588.000,897.499],[577.963,975.789],[442.000,977.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "칼을",
+      "polygon_points": [[1043.688,969.767],[1037.665,895.492],[1186.215,895.492],[1182.201,969.767]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "억지로",
+      "polygon_points": [[1023.613,969.767],[1023.613,897.499],[826.885,897.499],[820.862,967.759]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "하면서",
+      "polygon_points": [[808.818,897.499],[804.803,983.819],[600.044,967.759],[602.052,893.484]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "尽",
+      "polygon_points": [[395.212,626.169],[443.390,627.507],[442.052,673.009],[396.550,668.994]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "管",
+      "polygon_points": [[487.554,620.816],[486.215,674.348],[443.390,673.009],[443.390,623.493]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "主",
+      "polygon_points": [[530.379,624.831],[531.717,664.980],[490.230,673.009],[492.907,624.831]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "人",
+      "polygon_points": [[571.866,624.831],[578.557,668.994],[534.394,671.671],[541.085,626.169]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "嘴",
+      "polygon_points": [[625.398,624.831],[620.044,670.333],[579.896,670.333],[577.219,626.169]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "上",
+      "polygon_points": [[662.870,623.493],[669.561,674.348],[622.721,673.009],[630.751,626.169]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "说",
+      "polygon_points": [[709.710,623.493],[711.048,677.024],[674.914,675.686],[665.546,624.831]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "要",
+      "polygon_points": [[759.227,624.831],[752.535,677.024],[715.063,674.348],[715.063,624.831]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "砍",
+      "polygon_points": [[807.405,624.831],[804.728,668.994],[753.873,671.671],[760.565,626.169]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "他",
+      "polygon_points": [[894.394,624.831],[891.717,671.671],[844.877,674.348],[846.215,626.169]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "还",
+      "polygon_points": [[933.204,623.493],[941.234,671.671],[895.732,673.009],[897.070,622.154]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "是",
+      "polygon_points": [[982.721,674.348],[978.706,624.831],[943.911,624.831],[937.219,671.671]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "咒",
+      "polygon_points": [[1026.885,622.154],[1026.885,674.348],[978.706,671.671],[981.383,626.169]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "骂",
+      "polygon_points": [[1073.725,622.154],[1067.033,670.333],[1032.238,670.333],[1026.885,622.154]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "着",
+      "polygon_points": [[1115.212,623.493],[1117.888,668.994],[1068.372,667.656],[1079.078,628.846]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "强",
+      "polygon_points": [[1209.695,624.296],[1205.680,672.474],[1152.149,669.797],[1161.517,628.310]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "行",
+      "polygon_points": [[1253.859,625.634],[1248.505,673.812],[1204.342,675.151],[1207.018,622.957]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "把",
+      "polygon_points": [[1298.022,626.972],[1299.360,671.136],[1245.829,671.136],[1259.212,622.957]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "刀",
+      "polygon_points": [[1342.186,622.957],[1338.171,676.489],[1300.699,673.812],[1296.684,625.634]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "拿",
+      "polygon_points": [[1385.011,622.957],[1383.673,672.474],[1338.171,672.474],[1344.862,626.972]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "走",
+      "polygon_points": [[1431.851,622.957],[1429.175,672.474],[1382.334,673.812],[1390.364,626.972]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 32,
+      "text": "了",
+      "polygon_points": [[1476.015,624.296],[1463.970,671.136],[1430.513,675.151],[1435.866,626.972]]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000081",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000081.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 3077,
+    "height": 727,
+    "location": "36.5667416, 128.7233204",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "HOSPITAL",
+      "polygon_points": [[2652.000,550.000],[3041.735,541.178],[3036.000,639.000],[2651.731,651.455]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "SUNGSO",
+      "polygon_points": [[2323.589,560.006],[2644.000,562.000],[2644.000,647.000],[2323.589,646.076]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "ANDONG",
+      "polygon_points": [[2019.000,582.000],[2311.000,582.000],[2311.000,647.000],[2019.000,647.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "안동성소병원",
+      "polygon_points": [[50.805,86.621],[1858.902,100.136],[1868.428,384.021],[52.712,475.473]]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000184",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000184.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1920,
+    "height": 1080,
+    "location": "36.55915, 128.749587",
+    "device_type": null,
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "Station",
+      "polygon_points": [[570.000,417.000],[826.965,422.482],[829.898,497.268],[570.000,490.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "駅務室",
+      "polygon_points": [[1467.779,451.810],[1655.478,462.075],[1661.344,530.995],[1467.000,520.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "역무실",
+      "polygon_points": [[569.571,211.401],[1057.881,237.797],[1071.078,404.966],[571.771,378.571]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Room",
+      "polygon_points": [[1043.991,423.949],[1042.525,511.932],[838.696,500.201],[834.297,425.415]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "车",
+      "polygon_points": [[1059.000,434.000],[1129.000,434.000],[1129.000,504.000],[1059.000,504.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "站",
+      "polygon_points": [[1128.000,443.000],[1194.000,443.000],[1194.000,510.000],[1128.000,510.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "服",
+      "polygon_points": [[1191.000,446.000],[1258.000,446.000],[1258.000,511.000],[1191.000,511.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "务",
+      "polygon_points": [[1254.000,449.000],[1319.000,449.000],[1319.000,514.000],[1254.000,514.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "中",
+      "polygon_points": [[1317.000,449.000],[1379.000,449.000],[1379.000,518.000],[1317.000,518.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "心",
+      "polygon_points": [[1377.000,447.000],[1447.000,447.000],[1447.000,517.000],[1377.000,517.000]]
+    }
+  ]
+}

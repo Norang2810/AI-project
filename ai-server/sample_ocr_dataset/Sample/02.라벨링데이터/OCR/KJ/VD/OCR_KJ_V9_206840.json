@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206840",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206840.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "そして",
+      "polygon_points": [[746.791,861.680],[606.118,860.545],[606.686,812.331],[749.059,811.196]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "不動産に",
+      "polygon_points": [[952.694,860.545],[753.597,859.411],[756.433,810.629],[952.127,813.465]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "関連していない",
+      "polygon_points": [[1308.506,860.311],[955.530,861.680],[958.933,811.764],[1308.769,813.766]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "그리고",
+      "polygon_points": [[900.509,965.482],[745.089,963.781],[747.358,905.923],[895.404,906.491]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "부동산과",
+      "polygon_points": [[1113.786,968.886],[909.585,963.213],[905.614,907.625],[1115.488,905.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "관련되지",
+      "polygon_points": [[1335.572,969.453],[1124.564,966.049],[1123.996,903.087],[1336.139,905.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "않은",
+      "polygon_points": [[1449.017,970.020],[1342.379,966.049],[1341.812,904.222],[1456.391,906.491]]
+    }
+  ]
+}

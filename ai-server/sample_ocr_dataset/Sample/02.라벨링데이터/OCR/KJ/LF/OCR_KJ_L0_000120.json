@@ -1,0 +1,106 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000120",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000120.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 3581,
+    "height": 895,
+    "location": "36.56544, 128.72812859972223",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "대풍만두",
+      "polygon_points": [[314.014,282.325],[3264.665,193.380],[3311.071,827.596],[290.811,850.799]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "大",
+      "polygon_points": [[2891.956,39.541],[3056.955,34.384],[3074.143,192.509],[2914.300,194.227]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "丰",
+      "polygon_points": [[3077.580,29.228],[3211.642,22.353],[3230.548,173.602],[3084.455,177.040]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "饺",
+      "polygon_points": [[3230.548,22.353],[3376.641,20.634],[3398.985,190.790],[3240.861,178.759]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "子",
+      "polygon_points": [[3545.078,20.634],[3551.953,183.915],[3407.579,183.915],[3381.798,18.916]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "Daepung",
+      "polygon_points": [[105.187,137.509],[643.153,134.071],[639.716,262.977],[91.437,275.008]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "Mandu",
+      "polygon_points": [[708.466,123.759],[1093.464,116.884],[1086.589,244.071],[694.716,247.508]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "Dumpling",
+      "polygon_points": [[1171.151,110.009],[1764.117,103.134],[1765.836,235.477],[1162.557,244.071]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "大豊饅頭",
+      "polygon_points": [[2057.335,70.478],[2696.707,48.134],[2694.988,204.540],[2059.054,220.008]]
+    }
+  ]
+}

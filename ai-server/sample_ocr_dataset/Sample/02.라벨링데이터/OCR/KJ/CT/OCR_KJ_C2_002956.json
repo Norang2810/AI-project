@@ -1,0 +1,138 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_CT_002956",
+    "src_path": "\\OCR\\KJ\\CT",
+    "label_path": "\\OCR\\KJ\\CT",
+    "language_type": "KJ",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KJ_C2_002956.jpeg",
+    "created_day": "2023.08.24.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": null,
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "Mt.",
+      "polygon_points": [[1437.906,1786.491],[1683.096,1786.491],[1695.669,1949.950],[1444.193,1949.950]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "국립김해박물관",
+      "polygon_points": [[1795.147,2429.428],[2285.525,2427.632],[2285.525,2499.482],[1795.147,2501.278]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "구지봉",
+      "polygon_points": [[1387.611,1258.391],[2651.279,1195.522],[2644.992,1673.326],[1419.046,1704.761]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Gujibong",
+      "polygon_points": [[2418.663,1786.491],[1714.530,1773.917],[1720.817,1949.950],[2424.950,1962.524]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "龟",
+      "polygon_points": [[2472.433,1786.501],[2623.318,1782.909],[2630.503,1940.979],[2486.803,1930.202]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "旨",
+      "polygon_points": [[2644.873,1772.131],[2777.796,1772.131],[2770.611,1937.387],[2648.466,1937.387]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "峰",
+      "polygon_points": [[2928.682,1772.131],[2784.981,1779.316],[2784.981,1930.202],[2939.460,1930.202]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "亀",
+      "polygon_points": [[3022.087,1782.909],[3169.381,1775.724],[3165.788,1923.017],[3022.087,1926.609]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "旨",
+      "polygon_points": [[3320.266,1772.131],[3190.936,1768.539],[3190.936,1933.794],[3316.674,1926.609]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "峰",
+      "polygon_points": [[3481.929,1768.539],[3338.229,1768.539],[3331.044,1923.017],[3481.929,1923.017]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "GIMHAE",
+      "polygon_points": [[1933.458,2539.000],[1791.554,2539.000],[1793.350,2506.667],[1931.662,2506.667]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "NATIONAL",
+      "polygon_points": [[2118.473,2537.204],[1942.440,2539.000],[1942.440,2508.463],[2114.880,2504.871]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "MUSEUM",
+      "polygon_points": [[2280.136,2537.204],[2125.658,2537.204],[2120.269,2504.871],[2283.729,2504.871]]
+    }
+  ]
+}

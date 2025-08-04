@@ -1,0 +1,186 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_VD_016614",
+    "src_path": "\\OCR\\KE\\VD",
+    "label_path": "\\OCR\\KE\\VD",
+    "language_type": "KE",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KE_V6_016614.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "with",
+      "polygon_points": [[822.000,707.000],[922.387,707.914],[922.387,753.763],[822.000,755.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "발생했다",
+      "polygon_points": [[1216.967,889.527],[1544.915,888.891],[1544.915,982.499],[1213.783,985.683]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "A",
+      "polygon_points": [[395.123,709.570],[437.788,709.570],[438.425,754.782],[397.670,754.145]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "small",
+      "polygon_points": [[446.703,706.386],[553.047,705.749],[553.047,756.693],[446.703,756.056]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "SUV",
+      "polygon_points": [[559.415,707.023],[651.113,707.023],[649.840,757.329],[561.326,755.419]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "collided",
+      "polygon_points": [[659.392,704.476],[818.590,706.386],[818.590,757.966],[661.939,756.056]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "another",
+      "polygon_points": [[928.118,702.820],[1089.226,702.183],[1088.590,756.947],[929.392,757.584]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "vehicle",
+      "polygon_points": [[1096.104,706.004],[1241.293,706.641],[1239.382,758.858],[1098.014,756.947]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "and",
+      "polygon_points": [[1254.028,711.735],[1327.896,711.098],[1327.896,756.310],[1252.118,756.310]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "fell",
+      "polygon_points": [[1337.448,709.825],[1401.764,710.461],[1401.764,756.310],[1339.359,754.400]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "over",
+      "polygon_points": [[1412.972,721.287],[1506.580,720.650],[1506.580,755.674],[1413.609,754.400]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "소형",
+      "polygon_points": [[449.123,795.664],[621.057,795.664],[614.689,887.999],[440.844,882.905]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "SUV",
+      "polygon_points": [[627.425,793.754],[790.443,795.027],[782.802,884.815],[619.783,882.268]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "차량이",
+      "polygon_points": [[797.703,794.391],[1035.863,793.117],[1032.679,889.273],[784.967,886.726]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "다른",
+      "polygon_points": [[1048.854,794.263],[1211.873,791.716],[1209.326,884.051],[1040.576,882.777]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "차량과",
+      "polygon_points": [[1221.425,793.626],[1465.953,792.990],[1466.590,885.325],[1216.330,883.414]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "부딪혀",
+      "polygon_points": [[375.382,891.438],[626.278,891.438],[621.821,988.867],[371.561,986.320]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "넘어지는",
+      "polygon_points": [[638.760,890.164],[953.335,892.075],[953.335,986.320],[631.118,985.683]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "사고가",
+      "polygon_points": [[1209.326,891.438],[1208.689,982.499],[957.156,985.683],[959.066,891.438]]
+    }
+  ]
+}

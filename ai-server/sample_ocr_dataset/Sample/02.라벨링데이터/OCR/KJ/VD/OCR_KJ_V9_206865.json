@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206865",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206865.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "そして",
+      "polygon_points": [[704.798,859.272],[552.665,857.359],[560.319,810.475],[698.100,810.475]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "前月税申告制の",
+      "polygon_points": [[1108.253,860.761],[755.190,862.674],[757.103,807.179],[1113.037,803.352]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "ようなもの",
+      "polygon_points": [[1362.765,857.890],[1113.037,862.674],[1123.562,803.352],[1363.721,809.093]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "그리고",
+      "polygon_points": [[865.648,964.415],[715.429,972.070],[718.299,896.482],[869.476,900.309]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "전월세신고제",
+      "polygon_points": [[1188.412,963.884],[873.622,962.502],[877.449,900.309],[1188.412,901.266]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "같은",
+      "polygon_points": [[1307.057,968.668],[1197.981,966.754],[1193.196,901.691],[1308.971,904.561]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "것들도",
+      "polygon_points": [[1466.844,963.884],[1320.452,967.711],[1311.841,898.821],[1466.844,906.475]]
+    }
+  ]
+}

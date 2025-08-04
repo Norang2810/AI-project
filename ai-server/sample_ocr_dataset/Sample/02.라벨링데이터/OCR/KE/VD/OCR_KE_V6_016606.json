@@ -1,0 +1,146 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_VD_016606",
+    "src_path": "\\OCR\\KE\\VD",
+    "label_path": "\\OCR\\KE\\VD",
+    "language_type": "KE",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KE_V6_016606.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "Police",
+      "polygon_points": [[377.000,622.000],[510.000,622.000],[510.000,672.000],[377.000,672.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "officers",
+      "polygon_points": [[518.278,621.056],[663.467,620.419],[663.467,671.362],[515.094,671.362]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "received",
+      "polygon_points": [[674.675,619.400],[847.245,620.037],[845.335,672.891],[674.675,670.980]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "a",
+      "polygon_points": [[855.524,634.683],[884.816,634.683],[883.543,670.343],[856.160,669.070]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "report",
+      "polygon_points": [[896.915,627.551],[1026.184,626.914],[1024.274,679.768],[895.005,679.768]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "and",
+      "polygon_points": [[1033.189,622.457],[1113.425,622.457],[1113.425,673.400],[1034.462,672.126]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "arrived",
+      "polygon_points": [[1123.231,616.471],[1264.599,618.381],[1263.326,671.235],[1125.778,669.961]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "at",
+      "polygon_points": [[1275.425,624.112],[1320.000,625.386],[1318.090,671.872],[1275.425,669.325]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "the",
+      "polygon_points": [[1328.915,621.565],[1396.415,622.839],[1396.415,668.688],[1329.552,666.777]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "scene",
+      "polygon_points": [[1404.693,632.391],[1523.137,633.664],[1521.863,668.688],[1405.330,669.325]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "신고받은",
+      "polygon_points": [[373.726,885.070],[666.014,885.707],[666.651,974.221],[378.821,972.947]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "경찰관들이",
+      "polygon_points": [[676.203,887.362],[1018.797,884.815],[1018.160,974.603],[677.476,974.603]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "현장에",
+      "polygon_points": [[1031.151,882.523],[1245.113,883.796],[1244.477,976.768],[1034.972,976.768]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "도착하고",
+      "polygon_points": [[1252.627,887.617],[1536.637,885.070],[1537.910,972.947],[1251.991,972.947]]
+    }
+  ]
+}

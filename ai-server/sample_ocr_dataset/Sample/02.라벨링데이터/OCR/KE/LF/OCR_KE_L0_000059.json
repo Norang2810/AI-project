@@ -1,0 +1,74 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000059",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000059.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1929,
+    "height": 781,
+    "location": null,
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "안동서부초등학교",
+      "polygon_points": [[32.597,101.168],[40.267,475.079],[1882.980,446.317],[1875.310,116.508]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Andong",
+      "polygon_points": [[111.215,534.522],[113.132,674.499],[527.311,686.004],[525.394,528.769]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "xxx",
+      "polygon_points": [[845.615,534.522],[832.193,680.251],[538.816,672.581],[544.569,523.017]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Elementary",
+      "polygon_points": [[1451.544,517.264],[1441.956,680.251],[849.450,672.581],[841.780,523.017]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "School",
+      "polygon_points": [[1850.383,517.264],[1838.878,670.664],[1459.214,661.076],[1474.554,515.347]]
+    }
+  ]
+}

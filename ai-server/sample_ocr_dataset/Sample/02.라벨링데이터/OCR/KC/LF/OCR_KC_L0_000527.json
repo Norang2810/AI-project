@@ -1,0 +1,74 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_000527",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_000527.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1848,
+    "height": 1923,
+    "location": "35.88427589972222, 128.6165899",
+    "device_type": "Galaxy S23",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "신암1동",
+      "polygon_points": [[180.588,858.134],[1615.442,851.559],[1612.154,1198.357],[172.370,1186.852]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "新",
+      "polygon_points": [[336.591,1304.214],[621.480,1301.475],[617.029,1592.656],[321.183,1589.003]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "岩",
+      "polygon_points": [[633.465,1305.940],[911.049,1307.767],[909.223,1587.177],[620.682,1585.351]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "1",
+      "polygon_points": [[943.921,1324.203],[1057.146,1324.203],[1051.667,1570.741],[943.921,1574.393]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "洞",
+      "polygon_points": [[1117.411,1302.288],[1108.280,1589.003],[1389.516,1587.177],[1398.647,1311.419]]
+    }
+  ]
+}

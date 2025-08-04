@@ -1,0 +1,74 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000225",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000225.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 3000,
+    "height": 4000,
+    "location": "35.6939301, 128.4598164",
+    "device_type": "SM-N986N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "닭",
+      "polygon_points": [[917.421,1267.771],[1651.647,1453.877],[1656.745,2167.708],[925.069,2078.479]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "CHICKEN",
+      "polygon_points": [[1118.823,2134.566],[1577.714,2180.455],[1557.319,2320.671],[1131.570,2272.233]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "수제맥주",
+      "polygon_points": [[924.487,2737.081],[2019.707,2737.081],[2049.232,3082.898],[927.546,3153.142]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "CRAFT",
+      "polygon_points": [[915.309,3183.735],[1600.538,3140.684],[1624.333,3416.019],[903.072,3514.136]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "BEER",
+      "polygon_points": [[1622.650,3133.677],[2055.655,3098.377],[2088.601,3359.592],[1636.770,3418.424]]
+    }
+  ]
+}

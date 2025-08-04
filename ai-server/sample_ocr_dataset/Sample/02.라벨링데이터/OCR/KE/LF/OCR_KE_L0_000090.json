@@ -1,0 +1,58 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000090",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000090.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 3201,
+    "height": 988,
+    "location": "36.5668699, 128.7249447",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "몽블랑",
+      "polygon_points": [[189.035,144.629],[1729.674,160.382],[1720.222,771.597],[166.981,771.597]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "MONT",
+      "polygon_points": [[2627.593,932.277],[2218.016,935.427],[2218.016,815.705],[2618.141,818.855]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "BLANC",
+      "polygon_points": [[3122.235,929.126],[2652.797,935.427],[2646.496,822.006],[3115.934,809.404]]
+    }
+  ]
+}

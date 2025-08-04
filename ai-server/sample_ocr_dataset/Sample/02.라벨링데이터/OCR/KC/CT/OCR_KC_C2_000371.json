@@ -1,0 +1,114 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_CT_000371",
+    "src_path": "\\OCR\\KC\\CT",
+    "label_path": "\\OCR\\KC\\CT",
+    "language_type": "KC",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KC_C2_000371.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.2012715, 128.8127624",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "관람객출입금지",
+      "polygon_points": [[841.113,1088.836],[3237.616,1055.459],[3210.914,1536.094],[867.815,1562.796]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "觀",
+      "polygon_points": [[1308.397,1648.311],[1510.570,1648.311],[1525.828,1842.854],[1308.397,1839.040]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "覽",
+      "polygon_points": [[1697.483,1636.868],[1522.013,1629.238],[1541.086,1850.483],[1735.629,1835.225]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "客",
+      "polygon_points": [[1930.172,1629.238],[1712.742,1636.868],[1747.073,1858.113],[1922.543,1839.040]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "出",
+      "polygon_points": [[2117.086,1629.238],[1933.987,1625.424],[1949.245,1854.298],[2124.715,1835.225]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "入",
+      "polygon_points": [[2323.073,1635.079],[2139.974,1636.868],[2136.159,1861.927],[2334.517,1846.669]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "禁",
+      "polygon_points": [[2554.490,1643.980],[2343.841,1632.113],[2358.675,1857.596],[2548.556,1866.497]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "止",
+      "polygon_points": [[2774.040,1652.881],[2566.358,1649.914],[2554.490,1863.530],[2774.040,1869.464]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "STAFF",
+      "polygon_points": [[1471.576,1884.298],[2056.053,1896.166],[2041.219,2100.881],[1474.543,2086.046]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "ONLY",
+      "polygon_points": [[2082.755,1887.265],[2619.762,1902.099],[2560.424,2094.947],[2059.020,2094.947]]
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 const { Sequelize } = require('sequelize');
 
-// 환경 변수에서 데이터베이스 설정 가져오기
-const DB_HOST = process.env.DB_HOST || 'localhost';
-const DB_PORT = process.env.DB_PORT || 3306;
+// 환경 변수에서 데이터베이스 설정 가져오기 (96서버용)
+const DB_HOST = process.env.DB_HOST || '192.168.1.96';
+const DB_PORT = process.env.DB_PORT || 3307;
 const DB_NAME = process.env.DB_NAME || 'myweb';
 const DB_USER = process.env.DB_USER || 'root';
 const DB_PASSWORD = process.env.DB_PASSWORD || '1234';

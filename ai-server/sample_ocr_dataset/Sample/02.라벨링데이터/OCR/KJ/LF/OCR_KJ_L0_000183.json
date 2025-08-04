@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000183",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000183.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1920,
+    "height": 1080,
+    "location": "36.55915, 128.749587",
+    "device_type": null,
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "Room",
+      "polygon_points": [[939.103,369.772],[1167.861,385.169],[1180.000,462.000],[945.702,455.556]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "授乳室",
+      "polygon_points": [[1447.000,397.000],[1675.000,397.000],[1691.364,484.151],[1460.406,484.151]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "수유방",
+      "polygon_points": [[604.765,145.414],[1128.268,176.208],[1139.266,358.774],[609.164,343.377]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Nursing",
+      "polygon_points": [[930.305,477.552],[606.964,459.955],[600.366,356.575],[923.759,370.926]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "母",
+      "polygon_points": [[1197.765,383.495],[1277.840,389.568],[1282.239,462.155],[1203.054,462.155]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "嬰",
+      "polygon_points": [[1357.393,468.965],[1281.978,466.451],[1274.436,387.266],[1349.851,389.780]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "室",
+      "polygon_points": [[1422.752,396.064],[1435.321,470.222],[1356.136,466.451],[1348.594,389.780]]
+    }
+  ]
+}

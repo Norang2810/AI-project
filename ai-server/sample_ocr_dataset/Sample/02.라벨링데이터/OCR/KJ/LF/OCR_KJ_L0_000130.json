@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000130",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000130.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2127,
+    "height": 819,
+    "location": "36.5654204, 128.7283682",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "SoobokRestaurant",
+      "polygon_points": [[11.000,72.000],[875.000,72.000],[875.000,174.000],[11.000,174.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "スボク食堂",
+      "polygon_points": [[1015.087,189.015],[1010.697,57.312],[1555.068,61.702],[1563.849,180.235]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "修",
+      "polygon_points": [[1697.746,193.405],[1675.796,63.897],[1786.585,59.875],[1800.914,189.015]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "福",
+      "polygon_points": [[1912.861,197.795],[1890.911,66.092],[1793.170,62.070],[1811.889,193.405]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "餐",
+      "polygon_points": [[1987.980,69.753],[1893.593,67.009],[1914.446,200.358],[2012.126,193.224]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "馆",
+      "polygon_points": [[1993.468,65.912],[2019.260,195.419],[2109.806,192.676],[2094.989,67.009]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "수복식당",
+      "polygon_points": [[60.242,219.746],[33.901,797.043],[2081.880,770.702],[2048.954,219.746]]
+    }
+  ]
+}

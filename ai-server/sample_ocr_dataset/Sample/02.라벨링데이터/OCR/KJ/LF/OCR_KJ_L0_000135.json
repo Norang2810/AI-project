@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000135",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000135.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1340,
+    "height": 660,
+    "location": "36.565423, 128.72837179972223",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "HyundaeClothingRepairs",
+      "polygon_points": [[449.893,48.417],[459.387,0.000],[1182.684,92.384],[1182.684,145.145]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "現代洋服補正",
+      "polygon_points": [[463.572,64.050],[453.802,130.489],[866.118,185.204],[863.187,113.879]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "现",
+      "polygon_points": [[452.825,202.791],[462.595,138.306],[529.035,147.099],[524.150,212.562]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "代",
+      "polygon_points": [[591.566,224.286],[598.406,158.824],[532.943,151.007],[527.081,212.562]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "改",
+      "polygon_points": [[658.983,223.309],[659.960,164.686],[601.337,157.847],[592.543,223.309]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "衣",
+      "polygon_points": [[724.446,229.172],[727.377,173.480],[663.868,164.686],[659.960,216.470]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "店",
+      "polygon_points": [[786.977,242.850],[798.702,182.273],[736.170,169.571],[727.377,233.080]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "현대옷수선",
+      "polygon_points": [[9.904,530.999],[11.614,159.962],[1271.769,298.460],[1276.899,652.398]]
+    }
+  ]
+}

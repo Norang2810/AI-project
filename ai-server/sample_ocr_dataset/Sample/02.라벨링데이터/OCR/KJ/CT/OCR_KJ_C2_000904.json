@@ -1,0 +1,82 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_CT_000904",
+    "src_path": "\\OCR\\KJ\\CT",
+    "label_path": "\\OCR\\KJ\\CT",
+    "language_type": "KJ",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KJ_C2_000904.jpeg",
+    "created_day": "2023.08.23.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.2012715, 128.8127624",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "お手洗い",
+      "polygon_points": [[1218.909,1861.143],[2144.000,1878.597],[2144.000,2117.974],[1213.922,2093.039]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "화장실",
+      "polygon_points": [[393.143,1100.000],[352.000,1593.714],[2114.286,1641.714],[2100.571,1120.571]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "洗",
+      "polygon_points": [[326.234,1868.623],[308.779,2105.507],[543.169,2108.000],[553.143,1868.623]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "手",
+      "polygon_points": [[573.091,1871.117],[558.130,2105.507],[775.065,2108.000],[782.545,1873.610]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "间",
+      "polygon_points": [[800.000,1871.117],[782.545,2117.974],[974.545,2122.961],[989.507,1873.610]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "TOILET",
+      "polygon_points": [[2385.810,2050.762],[2381.238,2306.762],[3542.381,2320.476],[3524.095,2059.905]]
+    }
+  ]
+}

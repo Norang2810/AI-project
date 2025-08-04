@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_CT_000198",
+    "src_path": "\\OCR\\KE\\CT",
+    "label_path": "\\OCR\\KE\\CT",
+    "language_type": "KE",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KE_C2_000198.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 1386,
+    "height": 1175,
+    "location": "36.246254, 127.6194078",
+    "device_type": "iPhone 12 Pro Max",
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "INTERNATIONAL",
+      "polygon_points": [[608.114,811.128],[1276.032,808.895],[1287.201,909.417],[601.412,920.587]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "WELCOME",
+      "polygon_points": [[127.838,62.792],[1345.281,250.434],[1336.346,487.222],[159.112,382.231]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "JEJU",
+      "polygon_points": [[123.371,411.271],[101.032,815.596],[858.304,788.790],[871.707,469.351]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "to",
+      "polygon_points": [[992.334,480.520],[985.633,614.550],[878.409,601.147],[869.473,467.117]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "AIRPORT",
+      "polygon_points": [[125.604,967.497],[882.876,945.159],[869.473,1137.269],[109.967,1175.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "혼저옵서",
+      "polygon_points": [[1063.817,489.455],[1061.583,601.147],[1307.306,607.849],[1302.838,505.092]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "환영합니다",
+      "polygon_points": [[1309.540,627.953],[1302.838,788.790],[865.006,782.088],[869.473,607.849]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "제주공항",
+      "polygon_points": [[1287.201,940.691],[1280.500,1088.125],[867.239,1119.398],[871.707,945.159]]
+    }
+  ]
+}

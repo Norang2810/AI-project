@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_PB_004519",
+    "src_path": "\\OCR\\KJ\\PB",
+    "label_path": "\\OCR\\KJ\\PB",
+    "language_type": "KJ",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KJ_P4_004519.jpeg",
+    "created_day": "2023.08.25.",
+    "extension": "jpeg",
+    "width": 3585,
+    "height": 1035,
+    "location": null,
+    "device_type": "iPhone 8 Plus",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 4
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "서울역",
+      "polygon_points": [[359.781,277.337],[951.302,278.433],[944.729,508.469],[353.209,504.087]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Seoul",
+      "polygon_points": [[396.416,533.663],[737.089,532.568],[730.516,662.921],[394.226,664.017]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Station",
+      "polygon_points": [[752.424,536.949],[1174.157,543.522],[1176.348,665.112],[752.424,666.207]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "ソウル駅",
+      "polygon_points": [[406.937,700.014],[758.495,696.454],[760.275,786.346],[403.377,788.126]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "首",
+      "polygon_points": [[832.366,698.234],[917.808,699.124],[917.808,786.346],[832.366,784.566]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "尔",
+      "polygon_points": [[1003.250,788.126],[1001.470,695.564],[920.478,695.564],[918.698,789.016]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "站",
+      "polygon_points": [[1089.582,789.016],[1088.692,697.344],[1002.360,697.344],[1004.140,788.126]]
+    }
+  ]
+}

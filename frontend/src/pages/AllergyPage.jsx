@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -10,7 +10,7 @@ const AllergyContainer = styled.div`
 
 const AllergyCard = styled.div`
   background: white;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 3rem;
   border-radius: 15px;
@@ -33,7 +33,7 @@ const Subtitle = styled.p`
 
 const AllergyGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   margin-bottom: 2rem;
 `;
@@ -62,6 +62,28 @@ const CategoryTitle = styled.h3`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+`;
+
+const SeverityBadge = styled.span`
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  
+  &.high {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  &.medium {
+    background-color: #ffc107;
+    color: #212529;
+  }
+  
+  &.low {
+    background-color: #28a745;
+    color: white;
+  }
 `;
 
 const CheckboxList = styled.div`
@@ -204,21 +226,136 @@ const SuccessMessage = styled.div`
   text-align: center;
 `;
 
+const ErrorMessage = styled.div`
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 1rem;
+  text-align: center;
+`;
+
 const AllergyPage = () => {
   const [selectedAllergies, setSelectedAllergies] = useState({});
   const [severity, setSeverity] = useState('medium');
   const [isLoading, setIsLoading] = useState(false);
   const [success, setSuccess] = useState('');
+  const [error, setError] = useState('');
+  const [isCheckingAuth, setIsCheckingAuth] = useState(true);
   const navigate = useNavigate();
 
+  // 로그인 상태 확인
+  useEffect(() => {
+    const checkAuthStatus = () => {
+      const token = localStorage.getItem('token');
+      const user = localStorage.getItem('user');
+      
+      if (!token || !user) {
+        setError('로그인이 필요합니다. 로그인 페이지로 이동합니다.');
+        setTimeout(() => {
+          navigate('/login');
+        }, 2000);
+        return;
+      }
+      
+      // 토큰 유효성 검증 (선택사항)
+      try {
+        const userData = JSON.parse(user);
+        if (!userData.id) {
+          throw new Error('Invalid user data');
+        }
+      } catch (err) {
+        localStorage.removeItem('token');
+        localStorage.removeItem('user');
+        setError('로그인 정보가 유효하지 않습니다. 다시 로그인해주세요.');
+        setTimeout(() => {
+          navigate('/login');
+        }, 2000);
+        return;
+      }
+      
+      setIsCheckingAuth(false);
+    };
+
+    checkAuthStatus();
+  }, [navigate]);
+
+  // 기존 알레르기 정보 로드
+  useEffect(() => {
+    if (!isCheckingAuth) {
+      loadExistingAllergies();
+    }
+  }, [isCheckingAuth]);
+
+  const loadExistingAllergies = async () => {
+    try {
+      const token = localStorage.getItem('token');
+      const response = await fetch('http://localhost:3001/api/user/allergies', {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        if (data.success && data.data.allergies) {
+          const existingAllergies = {};
+          data.data.allergies.forEach(allergy => {
+            existingAllergies[allergy.name] = true;
+          });
+          setSelectedAllergies(existingAllergies);
+          setSeverity(data.data.allergies[0]?.severity || 'medium');
+        }
+      }
+    } catch (err) {
+      console.error('기존 알레르기 정보 로드 실패:', err);
+    }
+  };
+
+  // 확장된 알레르기 카테고리 (8개)
   const allergyCategories = {
-    '곡물': ['밀', '보리', '호밀', '오트밀', '옥수수'],
-    '견과류': ['땅콩', '아몬드', '호두', '캐슈넛', '피스타치오'],
-    '유제품': ['우유', '치즈', '요거트', '버터', '크림'],
-    '해산물': ['새우', '게', '조개', '오징어', '고등어'],
-    '계란': ['계란 흰자', '계란 노른자'],
-    '과일': ['딸기', '키위', '망고', '복숭아', '사과'],
-    '기타': ['대두', 'MSG', '아황산염', '색소', '보존료']
+    '유제품': {
+      icon: '🥛',
+      severity: 'high',
+      items: ['우유', '크림', '버터', '치즈', '요거트', '연유', '우유 거품']
+    },
+    '견과류': {
+      icon: '🥜',
+      severity: 'high',
+      items: ['헤이즐넛', '아몬드', '땅콩', '호두', '캐슈넛', '피스타치오']
+    },
+    '글루텐': {
+      icon: '🌾',
+      severity: 'high',
+      items: ['밀', '밀가루', '보리', '호밀', '오트밀']
+    },
+    '초콜릿': {
+      icon: '🍫',
+      severity: 'medium',
+      items: ['초콜릿', '코코아', '카카오', '다크 초콜릿', '화이트 초콜릿', '초콜릿 가루']
+    },
+    '계란': {
+      icon: '🥚',
+      severity: 'high',
+      items: ['계란', '계란 흰자', '계란 노른자']
+    },
+    '해산물': {
+      icon: '🦐',
+      severity: 'high',
+      items: ['새우', '게', '조개', '오징어', '고등어']
+    },
+    '과일': {
+      icon: '🍎',
+      severity: 'medium',
+      items: ['딸기', '키위', '망고', '복숭아', '사과', '오렌지', '레몬', '라임', '블루베리', '바나나']
+    },
+    '식품첨가물': {
+      icon: '⚠️',
+      severity: 'low',
+      items: ['MSG', '아황산염', '색소', '보존료', '인공감미료']
+    }
   };
 
   const severityLevels = [
@@ -237,6 +374,7 @@ const AllergyPage = () => {
   const handleSubmit = async () => {
     setIsLoading(true);
     setSuccess('');
+    setError('');
 
     try {
       const selectedItems = Object.keys(selectedAllergies).filter(
@@ -246,6 +384,9 @@ const AllergyPage = () => {
       const token = localStorage.getItem('token');
       if (!token) {
         setError('로그인이 필요합니다.');
+        setTimeout(() => {
+          navigate('/login');
+        }, 2000);
         return;
       }
 
@@ -280,6 +421,18 @@ const AllergyPage = () => {
 
   const selectedCount = Object.values(selectedAllergies).filter(Boolean).length;
 
+  // 로그인 상태 확인 중일 때 로딩 표시
+  if (isCheckingAuth) {
+    return (
+      <AllergyContainer>
+        <AllergyCard>
+          <Title>🔐 로그인 확인 중...</Title>
+          <Subtitle>잠시만 기다려주세요.</Subtitle>
+        </AllergyCard>
+      </AllergyContainer>
+    );
+  }
+
   return (
     <AllergyContainer>
       <AllergyCard>
@@ -289,23 +442,21 @@ const AllergyPage = () => {
           선택된 정보는 메뉴 분석 시 안전성을 판단하는 데 사용됩니다.
         </Subtitle>
 
+        {error && <ErrorMessage>{error}</ErrorMessage>}
         {success && <SuccessMessage>{success}</SuccessMessage>}
 
         <AllergyGrid>
-          {Object.entries(allergyCategories).map(([category, items]) => (
+          {Object.entries(allergyCategories).map(([category, info]) => (
             <AllergyCategory key={category}>
               <CategoryTitle>
-                {category === '곡물' && '🌾'}
-                {category === '견과류' && '🥜'}
-                {category === '유제품' && '🥛'}
-                {category === '해산물' && '🦐'}
-                {category === '계란' && '🥚'}
-                {category === '과일' && '🍎'}
-                {category === '기타' && '⚠️'}
-                {category}
+                {info.icon} {category}
+                <SeverityBadge className={info.severity}>
+                  {info.severity === 'high' ? '높음' : 
+                   info.severity === 'medium' ? '보통' : '낮음'}
+                </SeverityBadge>
               </CategoryTitle>
               <CheckboxList>
-                {items.map(item => (
+                {info.items.map(item => (
                   <CheckboxItem key={item}>
                     <input
                       type="checkbox"

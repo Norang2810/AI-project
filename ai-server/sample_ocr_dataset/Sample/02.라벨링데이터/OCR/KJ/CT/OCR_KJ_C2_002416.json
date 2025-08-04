@@ -1,0 +1,82 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_CT_002416",
+    "src_path": "\\OCR\\KJ\\CT",
+    "label_path": "\\OCR\\KJ\\CT",
+    "language_type": "KJ",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KJ_C2_002416.jpeg",
+    "created_day": "2023.08.24.",
+    "extension": "jpeg",
+    "width": 2766,
+    "height": 2101,
+    "location": null,
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "제6주차장",
+      "polygon_points": [[535.308,219.258],[2513.256,210.143],[2504.141,652.219],[544.423,661.334]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "parking",
+      "polygon_points": [[566.054,988.689],[1843.306,989.472],[1840.124,1290.496],[570.105,1298.598]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "停",
+      "polygon_points": [[549.849,1359.364],[780.762,1359.364],[784.813,1588.251],[557.951,1594.328]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "车",
+      "polygon_points": [[825.324,1353.288],[1048.134,1353.288],[1044.083,1584.200],[825.324,1582.175]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "场",
+      "polygon_points": [[1082.568,1357.339],[1305.379,1357.339],[1311.455,1580.149],[1090.671,1576.098]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "駐車場",
+      "polygon_points": [[560.914,1674.021],[1331.483,1678.121],[1315.540,1911.942],[567.543,1909.353]]
+    }
+  ]
+}
