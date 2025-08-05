@@ -22,38 +22,45 @@ const Section = styled.section`
 `;
 
 const HeroSection = styled(Section)`
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #ffecd5ff; 
+  color: #A2601E; /* Figma 색상으로 변경 */
   text-align: center;
+  min-height: 100vh; /* 전체 화면 높이 */
 `;
 
 const HeroTitle = styled.h1`
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
+  font-family: 'Ownglyph_meetme-Rg', sans-serif;
+  font-size: 48px; /* Figma 크기 */
+  font-weight: 700; /* Figma 굵기 */
+  line-height: 58px; /* Figma 줄 높이 */
+  color: #A2601E; /* Figma 색상 */
+  margin-bottom: 2rem;
 `;
 
 const HeroSubtitle = styled.p`
-  font-size: 1.2rem;
+  font-family: 'Ownglyph_meetme-Rg', sans-serif;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   opacity: 0.9;
 `;
 
 const CTAButton = styled(Link)`
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 50px;
+  width: 400px; /* Figma 너비 */
+  height: 80px; /* Figma 높이 */
+  background: rgba(255, 122, 0, 0.1); /* Figma 배경색 */
+  border: 1px solid #99632E; /* Figma 테두리 */
+  border-radius: 30px; /* Figma 모서리 */
+  color: #A47148; /* Figma 텍스트 색상 */
+  font-family: 'Ownglyph_meetme-Rg', sans-serif;
+  font-size: 40px; /* Figma 크기 */
+  font-weight: 700; /* Figma 굵기 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
   
   &:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    background: rgba(255, 122, 0, 0.2); /* 호버 효과 */
   }
 `;
 
@@ -130,7 +137,7 @@ const MainPage = () => {
       <MainContainer>
         {/* Hero Section */}
         <HeroSection id="home">
-          <HeroTitle>🍽️ 알레르기 안전 메뉴 분석</HeroTitle>
+          <HeroTitle>☕ 알레르기 안전 메뉴 분석</HeroTitle>
           <HeroSubtitle>
             메뉴판을 업로드하면 알레르기 정보를 분석해드립니다!
           </HeroSubtitle>

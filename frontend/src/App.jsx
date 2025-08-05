@@ -7,9 +7,12 @@ import MainPage from './pages/MainPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import AllergyPage from './pages/AllergyPage';
+import OcrResultPage from './pages/OcrResultPage';
 
 function App() {
   return (
+
+
     <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <div className="App">
         <Routes>
@@ -17,6 +20,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/allergy" element={<AllergyPage />} />
+          <Route path="/ocr-result" element={<OcrResultPage />} />
         </Routes>
       </div>
     </Router>

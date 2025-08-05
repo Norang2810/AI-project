@@ -9,7 +9,7 @@ const UploadContainer = styled.div`
   border: 2px dashed #ccc;
   border-radius: 10px;
   margin: 20px;
-  background-color: #f9f9f9;
+  background: #ffecd5ff; 
   transition: all 0.3s ease;
 
   &:hover {
@@ -19,7 +19,7 @@ const UploadContainer = styled.div`
 `;
 
 const UploadButton = styled.button`
-  background-color: #007bff;
+  background-color: #fddbb2ff; 
   color: white;
   border: none;
   padding: 10px 20px;
@@ -29,7 +29,7 @@ const UploadButton = styled.button`
   margin: 10px;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: #fafafaff;
   }
 
   &:disabled {

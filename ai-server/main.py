@@ -33,7 +33,7 @@ app.add_middleware(
 )
 
 # EasyOCR 리더 초기화 (한국어, 영어, 일본어, 중국어 지원)
-reader = easyocr.Reader(['ko', 'en', 'ja', 'zh'], gpu=False)
+reader = easyocr.Reader(['ko', 'en', 'ja'], gpu=False)
 
 # Google Translate 설정
 translator = Translator()
