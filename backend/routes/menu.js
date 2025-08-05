@@ -137,7 +137,7 @@ router.post('/analyze', authenticateToken, upload.single('image'), async (req, r
     console.log('AI 서버 응답:', JSON.stringify(aiResult, null, 2));
     
     // 분석 결과를 상세하게 가공
-    const detailedAnalysis = processAnalysisResult(aiResult, allergyNames);
+    const detailedAnalysis = await processAnalysisResult(aiResult, allergyNames,userId, req.file.path);
     
     // 임시 파일 삭제
     fs.unlinkSync(req.file.path);
@@ -164,7 +164,7 @@ router.post('/analyze', authenticateToken, upload.single('image'), async (req, r
 });
 
 // 분석 결과 가공 함수
-function processAnalysisResult(aiResult, userAllergies) {
+async function processAnalysisResult(aiResult, userAllergies,userId, imageUrl) {
   console.log('processAnalysisResult 입력:', { aiResult, userAllergies });
   
   if (!aiResult || !aiResult.analysis) {
@@ -176,6 +176,20 @@ function processAnalysisResult(aiResult, userAllergies) {
       timestamp: new Date().toISOString(),
       error: '분석 결과 형식 오류'
     };
+  }
+
+  try {
+    await MenuAnalysis.create({
+      userId: userId,
+      imageUrl: imageUrl,
+      extractedText: aiResult.extracted_text,
+      translatedText: aiResult.translated_text || null,
+      analysisResult: aiResult.analysis, // 그대로 JSON으로 저장
+    });
+
+    console.log('✅ MenuAnalysis DB 저장 성공');
+  } catch (error) {
+    console.error('❌ MenuAnalysis DB 저장 실패:', error);
   }
   
   const analysis = aiResult.analysis;
