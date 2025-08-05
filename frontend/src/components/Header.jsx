@@ -66,7 +66,33 @@ const NavLink = styled.a`
   }
 `;
 
-const Header = () => {
+const AuthButton = styled.button`
+  background: none;
+  border: none;
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 1rem;
+
+  &:hover {
+    color: #007bff;
+    background-color: #f8f9fa;
+  }
+
+  &.logout {
+    color: #dc3545;
+    
+    &:hover {
+      color: #c82333;
+      background-color: #f8d7da;
+    }
+  }
+`;
+
+const Header = ({ isLoggedIn, setIsLoggedIn }) => {
   const [activeSection, setActiveSection] = useState('home');
 
   // 스크롤 위치에 따른 활성 섹션 감지
@@ -80,7 +106,7 @@ const Header = () => {
         if (element) {
           const offsetTop = element.offsetTop;
           const offsetHeight = element.offsetHeight;
-          
+
           if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
             setActiveSection(section);
             break;
@@ -96,11 +122,19 @@ const Header = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ 
+      element.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
     }
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    setIsLoggedIn(false);
+    // 로그아웃 후 홈페이지로 리다이렉트
+    window.location.href = '/';
   };
 
   return (
@@ -109,10 +143,10 @@ const Header = () => {
         <Logo>
           🍽️ <span>알레르기 안전</span>
         </Logo>
-        
+
         <NavMenu>
           <NavItem>
-            <NavLink 
+            <NavLink
               className={activeSection === 'home' ? 'active' : ''}
               onClick={() => scrollToSection('home')}
             >
@@ -120,7 +154,7 @@ const Header = () => {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink 
+            <NavLink
               className={activeSection === 'upload' ? 'active' : ''}
               onClick={() => scrollToSection('upload')}
             >
@@ -128,7 +162,7 @@ const Header = () => {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink 
+            <NavLink
               className={activeSection === 'analysis' ? 'active' : ''}
               onClick={() => scrollToSection('analysis')}
             >
@@ -136,7 +170,7 @@ const Header = () => {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink 
+            <NavLink
               className={activeSection === 'about' ? 'active' : ''}
               onClick={() => scrollToSection('about')}
             >
@@ -144,18 +178,28 @@ const Header = () => {
             </NavLink>
           </NavItem>
         </NavMenu>
-        
+
         <NavMenu>
-          <NavItem>
-            <NavLink as={Link} to="/login">
-              로그인
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink as={Link} to="/register">
-              회원가입
-            </NavLink>
-          </NavItem>
+          {isLoggedIn ? (
+            <NavItem>
+              <AuthButton className="logout" onClick={handleLogout}>
+                로그아웃
+              </AuthButton>
+            </NavItem>
+          ) : (
+            <>
+              <NavItem>
+                <NavLink as={Link} to="/login">
+                  로그인
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink as={Link} to="/register">
+                  회원가입
+                </NavLink>
+              </NavItem>
+            </>
+          )}
         </NavMenu>
       </Nav>
     </HeaderContainer>
