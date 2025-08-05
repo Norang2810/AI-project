@@ -1,0 +1,194 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_CT_000400",
+    "src_path": "\\OCR\\KC\\CT",
+    "label_path": "\\OCR\\KC\\CT",
+    "language_type": "KC",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KC_C2_000400.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.2012715, 128.8127624",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "Hall",
+      "polygon_points": [[2620.737,1077.862],[2861.000,1081.000],[2861.000,1218.000],[2615.114,1225.923]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "대웅전",
+      "polygon_points": [[1097.000,1086.000],[1806.000,1086.000],[1806.000,1312.000],[1097.000,1312.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Daeungjeon",
+      "polygon_points": [[1863.000,1092.000],[2593.000,1092.000],[2588.876,1231.546],[1863.566,1227.797]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "석가탑",
+      "polygon_points": [[1105.908,1373.473],[1805.604,1367.642],[1808.520,1595.043],[1111.739,1586.297]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Seokgatap",
+      "polygon_points": [[1853.000,1370.000],[2508.702,1379.953],[2508.702,1522.079],[1853.000,1506.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "다보탑",
+      "polygon_points": [[1123.000,1653.000],[1800.000,1653.000],[1800.000,1863.000],[1123.000,1863.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "Dabotap",
+      "polygon_points": [[1863.000,1659.000],[2368.763,1655.458],[2366.576,1795.398],[1863.000,1795.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "Pagoda",
+      "polygon_points": [[2405.934,1651.085],[2866.000,1659.000],[2866.000,1800.000],[2412.494,1797.584]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "화장실",
+      "polygon_points": [[1212.000,2499.000],[1953.000,2499.000],[1953.000,2724.000],[1212.000,2724.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "TOILET",
+      "polygon_points": [[1307.000,2740.000],[1863.000,2740.000],[1863.000,2877.000],[1307.000,2877.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "Pagoda",
+      "polygon_points": [[2545.873,1373.393],[2541.500,1517.706],[2994.116,1519.892],[2991.930,1382.139]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "大",
+      "polygon_points": [[1891.366,1233.394],[1884.806,1313.750],[1965.162,1310.470],[1961.882,1236.674]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "雄",
+      "polygon_points": [[1974.050,1233.321],[1973.078,1313.009],[2052.766,1311.065],[2052.766,1232.349]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "殿",
+      "polygon_points": [[2058.597,1235.265],[2056.653,1313.980],[2139.256,1311.065],[2138.285,1234.293]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "釋",
+      "polygon_points": [[1886.588,1521.946],[1888.532,1595.803],[1967.248,1594.831],[1964.332,1519.030]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "迦",
+      "polygon_points": [[1975.022,1519.030],[1972.107,1591.915],[2052.766,1592.887],[2048.879,1520.974]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "塔",
+      "polygon_points": [[2056.653,1519.030],[2059.569,1592.887],[2135.369,1593.859],[2137.313,1520.974]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "多",
+      "polygon_points": [[1886.878,1799.567],[1886.878,1875.521],[1968.356,1875.521],[1961.451,1799.567]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "寶",
+      "polygon_points": [[1975.705,1798.384],[1976.642,1876.163],[2048.798,1877.100],[2045.691,1798.186]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "塔",
+      "polygon_points": [[2059.106,1798.384],[2059.106,1876.163],[2130.325,1877.100],[2134.073,1799.322]]
+    }
+  ]
+}

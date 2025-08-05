@@ -1,27 +1,35 @@
-from fastapi import FastAPI, File, UploadFile, HTTPException
+from fastapi import FastAPI, File, UploadFile, HTTPException, Query, Body, Form
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-import requests
-import json
-import io
-import os
-from PIL import Image
-import numpy as np
-import cv2
+from fastapi.responses import JSONResponse
 import easyocr
-from typing import List, Optional
+import cv2
+import numpy as np
+import json
+import os
+import sys
+import time
+import uuid
+from typing import List, Dict, Optional
+import logging
+from datetime import datetime
+import traceback
 import re
 from googletrans import Translator
 
-# 환경 변수 설정
-from dotenv import load_dotenv
-load_dotenv()
+# AI 모델들 import (안전한 import)
+try:
+    from models.ai_analysis_engine import AIAnalysisEngine
+    from models.menu_classifier import MenuClassifier
+    from models.allergy_risk_predictor import AllergyRiskPredictor
+    from models.menu_similarity import MenuSimilarityModel
+    from models.ingredient_matcher import IngredientMatcher
+    MODELS_AVAILABLE = True
+except ImportError as e:
+    print(f"⚠️ AI 모델 import 실패: {e}")
+    MODELS_AVAILABLE = False
 
-app = FastAPI(
-    title="알레르기 안전 메뉴 분석 AI 서버",
-    description="OCR과 번역을 통한 메뉴 분석 서비스",
-    version="1.0.0"
-)
+# FastAPI 앱 초기화
+app = FastAPI(title="알레르기 안전 메뉴 분석 AI 서버", version="2.0.0")
 
 # CORS 설정
 app.add_middleware(
@@ -32,223 +40,494 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# EasyOCR 리더 초기화 (한국어, 영어, 일본어, 중국어 지원)
-reader = easyocr.Reader(['ko', 'en', 'ja'], gpu=False)
+# 로깅 설정
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
 
-# Google Translate 설정
-translator = Translator()
+# AI 분석 엔진 초기화 (안전한 초기화)
+ai_engine = None
+if MODELS_AVAILABLE:
+    try:
+        ai_engine = AIAnalysisEngine()
+        logger.info("✅ AI 분석 엔진 초기화 완료")
+    except Exception as e:
+        logger.error(f"❌ AI 분석 엔진 초기화 실패: {e}")
+        ai_engine = None
 
-class TranslationRequest(BaseModel):
-    text: str
-    source: str = "en"
-    target: str = "ko"
+# EasyOCR 초기화 (안전한 초기화)
+reader = None
+try:
+    logger.info("EasyOCR 초기화 시작...")
+    reader = easyocr.Reader(
+        ['en'],  # 영어만 사용 (안정성 향상)
+        gpu=False, 
+        model_storage_directory='./models', 
+        download_enabled=True,
+        # 안정성 최적화 설정
+        quantize=False,  # 양자화 비활성화 (안정성 향상)
+        verbose=False  # 불필요한 로그 제거
+    )
+    logger.info("✅ EasyOCR 초기화 완료")
+except Exception as e:
+    logger.error(f"❌ EasyOCR 초기화 실패: {e}")
+    reader = None
 
-class AnalysisRequest(BaseModel):
-    image_url: str
+# 대안 OCR 함수 (Tesseract 사용)
+def extract_text_with_tesseract(image):
+    """Tesseract를 사용한 텍스트 추출 (대안)"""
+    try:
+        import pytesseract
+        from PIL import Image
+        import numpy as np
+        
+        # OpenCV 이미지를 PIL 이미지로 변환
+        image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        pil_image = Image.fromarray(image_rgb)
+        
+        # Tesseract OCR 실행
+        text = pytesseract.image_to_string(pil_image, lang='eng')
+        logger.info("✅ Tesseract OCR 완료")
+        return text.strip()
+    except Exception as e:
+        logger.error(f"❌ Tesseract OCR 실패: {e}")
+        return ""
 
-def preprocess_image(image: np.ndarray) -> np.ndarray:
-    """이미지 전처리 함수"""
-    # 그레이스케일 변환
-    if len(image.shape) == 3:
-        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+@app.on_event("startup")
+async def startup_event():
+    """서버 시작 시 AI 모델들 로드"""
+    logger.info("🚀 AI 서버 시작 중...")
+    
+    # AI 모델들 로드 (안전한 로드)
+    if ai_engine is not None:
+        try:
+            if ai_engine.load_all_models():
+                logger.info("✅ 모든 AI 모델 로드 완료")
+            else:
+                logger.warning("⚠️ 일부 AI 모델 로드 실패")
+        except Exception as e:
+            logger.error(f"❌ AI 모델 로드 중 오류: {e}")
     else:
-        gray = image
+        logger.warning("⚠️ AI 엔진이 초기화되지 않았습니다")
     
-    # 노이즈 제거
-    denoised = cv2.fastNlMeansDenoising(gray)
-    
-    # 대비 향상
-    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
-    enhanced = clahe.apply(denoised)
-    
-    # 이진화
-    _, binary = cv2.threshold(enhanced, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
-    
-    return binary
-
-def extract_text_with_easyocr(image: np.ndarray) -> List[dict]:
-    """EasyOCR을 사용한 텍스트 추출"""
-    try:
-        # 이미지 전처리
-        processed_image = preprocess_image(image)
-        
-        # EasyOCR로 텍스트 추출
-        results = reader.readtext(processed_image)
-        
-        extracted_texts = []
-        for (bbox, text, confidence) in results:
-            if confidence > 0.5:  # 신뢰도 50% 이상만 사용
-                extracted_texts.append({
-                    'text': text,
-                    'confidence': confidence,
-                    'bbox': bbox
-                })
-        
-        return extracted_texts
-    except Exception as e:
-        print(f"EasyOCR 오류: {e}")
-        return []
-
-def translate_text(text: str, source: str = "en", target: str = "ko") -> str:
-    """Google Translate를 사용한 텍스트 번역"""
-    try:
-        # Google Translate로 번역
-        result = translator.translate(text, src=source, dest=target)
-        return result.text
-    except Exception as e:
-        print(f"번역 오류: {e}")
-        return text
-
-def analyze_menu_ingredients(extracted_text: str) -> dict:
-    """추출된 텍스트에서 메뉴와 성분 분석"""
-    try:
-        # 카페 메뉴 데이터셋 로드
-        with open('data/datasets/cafe_menu_dataset.json', 'r', encoding='utf-8') as f:
-            menu_data = json.load(f)
-        
-        menu_items = []
-        found_items = []
-        
-        # 추출된 텍스트를 줄별로 분석
-        lines = extracted_text.split('\n')
-        for line in lines:
-            line = line.strip()
-            if not line:
-                continue
-            
-            # 메뉴 데이터셋과 매칭
-            for menu_item in menu_data['menu_items']:
-                # 메뉴 이름 매칭 (한글, 영어 모두)
-                if (menu_item['name'].lower() in line.lower() or 
-                    menu_item['english_name'].lower() in line.lower()):
-                    
-                    # 이미 찾은 메뉴인지 확인
-                    if menu_item['id'] not in found_items:
-                        found_items.append(menu_item['id'])
-                        menu_items.append({
-                            'id': menu_item['id'],
-                            'name': menu_item['name'],
-                            'english_name': menu_item['english_name'],
-                            'category': menu_item['category'],
-                            'ingredients': menu_item['ingredients'],
-                            'allergens': menu_item['allergens'],
-                            'description': menu_item['description'],
-                            'matched_text': line
-                        })
-        
-        return {
-            'total_items_found': len(menu_items),
-            'menu_items': menu_items,
-            'raw_extracted_text': extracted_text
-        }
-        
-    except Exception as e:
-        print(f"메뉴 분석 오류: {e}")
-        return {
-            'total_items_found': 0,
-            'menu_items': [],
-            'raw_extracted_text': extracted_text
-        }
+    logger.info("✅ AI 서버 시작 완료")
 
 @app.get("/")
 async def root():
+    """서버 상태 확인"""
     return {
         "message": "알레르기 안전 메뉴 분석 AI 서버",
-        "version": "1.0.0",
-        "features": [
-            "다중분류 OCR (EasyOCR)",
-            "Google Translate 번역",
-            "메뉴 성분 분석"
-        ]
+        "version": "2.0.0",
+        "status": "running",
+        "models_loaded": ai_engine.models_loaded if ai_engine else False,
+        "ocr_available": reader is not None
     }
 
 @app.get("/health")
 async def health_check():
+    """헬스 체크"""
+    model_status = {}
+    if ai_engine:
+        try:
+            model_status = ai_engine.get_model_status()
+        except Exception as e:
+            logger.error(f"모델 상태 확인 오류: {e}")
+            model_status = {"error": str(e)}
+    
     return {
         "status": "healthy",
-        "ocr_available": True,
-        "translation_available": True
+        "models_loaded": ai_engine.models_loaded if ai_engine else False,
+        "model_status": model_status,
+        "ocr_available": reader is not None,
+        "timestamp": datetime.now().isoformat()
     }
 
-@app.post("/ocr/extract")
-async def extract_text(file: UploadFile = File(...)):
-    """이미지에서 텍스트 추출"""
+
+
+@app.post("/analyze-menu")
+async def analyze_menu(
+    menu_text: str = Body(...),
+    user_allergies: Optional[List[str]] = Body(None)
+):
+    """메뉴 텍스트 분석"""
     try:
-        # 이미지 파일 읽기
-        image_data = await file.read()
-        image = Image.open(io.BytesIO(image_data))
-        image_np = np.array(image)
+        logger.info(f"📩 메뉴 분석 요청 수신됨")
+        logger.info(f"📝 입력된 메뉴 텍스트: {menu_text}")
+        logger.info(f"⚠️ 사용자 알레르기 정보: {user_allergies}")
+
+        if ai_engine is None:
+            raise HTTPException(status_code=500, detail="AI 엔진이 초기화되지 않았습니다")
+        # ✅ 번역 (영어 → 한글)
+        translated_text = ""
+        try:
+            translator = Translator()
+            translated_text = translator.translate(menu_text, src='en', dest='ko').text
+            logger.info(f"🈯 번역된 메뉴 텍스트: {translated_text}")
+        except Exception as translate_error:
+            logger.warning(f"⚠️ 번역 실패, 원본 텍스트 사용: {translate_error}")
+            translated_text = menu_text
+
+        # ✅ 메뉴 분석
+        result = ai_engine.analyze_menu_text(translated_text, user_allergies)
+
+        if "error" in result:
+            logger.error(f"🚫 분석 결과에 오류 포함됨: {result['error']}")
+            raise HTTPException(status_code=500, detail=result["error"])
+
+        logger.info(f"✅ 분석 결과 성공적으로 반환됨")
+        return {
+            "success": True,
+            "extracted_text": menu_text,
+            "translated_text": translated_text,
+            "analysis": result,
+            "timestamp": datetime.now().isoformat()
+        }
+
+    except Exception as e:
+        logger.error(f"❌ 메뉴 분석 중 오류 발생: {e}")
+        logger.error(traceback.format_exc())
+        raise HTTPException(status_code=500, detail=f"분석 실패: {str(e)}")
+
+@app.post("/analyze-image")
+async def analyze_menu_image(
+    file: UploadFile = File(...),
+    user_allergies: Optional[str] = Form(default=None)
+):
+    try:
+        logger.info(f"이미지 분석 요청: {file.filename}")
+        logger.info(f"파일 크기: {file.size} bytes")
+        logger.info(f"파일 타입: {file.content_type}")
+        logger.info(f"사용자 알레르기: {user_allergies}")
         
-        # EasyOCR로 텍스트 추출
-        ocr_results = extract_text_with_easyocr(image_np)
+        if not file or not file.filename:
+            logger.error("파일이 없거나 파일명이 없습니다")
+            raise HTTPException(status_code=400, detail="파일이 필요합니다")
+
+        allergies_list = []
+        if user_allergies:
+            try:
+                allergies_list = [a.strip() for a in user_allergies.split(',')]
+            except Exception:
+                logger.warning(f"알레르기 정보 파싱 실패: {user_allergies}")
         
-        # 추출된 텍스트들을 하나의 문자열로 결합
-        extracted_text = '\n'.join([result['text'] for result in ocr_results])
+        file_extension = os.path.splitext(file.filename)[1] or ".png"
+        safe_filename = f"temp_{uuid.uuid4().hex}{file_extension}"
+        image_path = safe_filename
+
+        content = await file.read()
+        logger.info(f"읽은 파일 크기: {len(content)} bytes")
+        logger.info(f"안전한 파일명: {safe_filename}")
+
+        with open(image_path, "wb") as buffer:
+            buffer.write(content)
+
+        if not os.path.exists(image_path):
+            raise HTTPException(status_code=400, detail="이미지 파일 저장 실패")
+        
+        logger.info(f"이미지 파일 저장됨: {image_path}")
+
+        if reader is None:
+            raise HTTPException(status_code=500, detail="OCR 엔진이 초기화되지 않았습니다")
+
+        extracted_text = ""
+
+        try:
+            image = cv2.imdecode(np.frombuffer(content, np.uint8), cv2.IMREAD_COLOR)
+            if image is None:
+                raise Exception("이미지를 읽을 수 없습니다")
+
+            height, width = image.shape[:2]
+            if width > 800 or height > 800:
+                scale = min(800/width, 800/height)
+                image = cv2.resize(image, (int(width*scale), int(height*scale)))
+                logger.info(f"이미지 크기 조정: {width}x{height} -> {image.shape[1]}x{image.shape[0]}")
+            
+            logger.info("EasyOCR 텍스트 추출 시작...")
+            
+            try:
+                logger.info("📌 EasyOCR 실행 전 - 이미지 크기: %s", str(image.shape))
+                
+                start_time = time.time()
+                
+                results = reader.readtext(
+                    image,
+                    detail=0,
+                    text_threshold=0.3,
+                    link_threshold=0.3,
+                    low_text=0.2
+                )
+                
+                elapsed_time = time.time() - start_time
+                logger.info("📌 EasyOCR 결과 추출 성공 - 결과 개수: %d", len(results))
+                logger.info("⏱ OCR 실행 시간: %.2f초", elapsed_time)
+                logger.debug("📌 OCR 결과 내용: %s", results)
+
+            except Exception as e:
+                logger.error("❌ EasyOCR 실행 중 오류 발생: %s", str(e))
+                raise e
+
+            if isinstance(results, list):
+                extracted_text = " ".join(results)
+            else:
+                extracted_text = " ".join([text[1] for text in results])
+
+            logger.info(f"OCR 결과: {len(results)}개 텍스트 블록 발견")
+            logger.info(f"추출된 텍스트: {extracted_text[:200]}...")
+
+            if not extracted_text.strip():
+                raise HTTPException(status_code=500, detail="OCR에서 텍스트를 추출할 수 없습니다.")
+
+        except Exception as ocr_error:
+            logger.error(f"EasyOCR 처리 중 오류: {ocr_error}")
+            logger.info("Tesseract OCR로 대체 시도...")
+
+            try:
+                extracted_text = extract_text_with_tesseract(image)
+                if not extracted_text:
+                    raise Exception("Tesseract OCR도 실패")
+                logger.info("✅ Tesseract OCR로 텍스트 추출 성공")
+            except Exception as tesseract_error:
+                logger.error(f"Tesseract OCR도 실패: {tesseract_error}")
+                raise HTTPException(status_code=500, detail=f"모든 OCR 처리 실패: {str(ocr_error)}")
+
+        finally:
+            try:
+                if os.path.exists(image_path):
+                    os.remove(image_path)
+                    logger.info(f"임시 파일 삭제됨: {image_path}")
+            except Exception as cleanup_error:
+                logger.warning(f"임시 파일 삭제 실패: {cleanup_error}")
+
+        if not extracted_text.strip():
+            raise HTTPException(status_code=500, detail="OCR에서 텍스트를 추출할 수 없습니다.")
+
+        extracted_text = extracted_text.replace('\n', ' ').replace('\r', ' ')
+        extracted_text = ' '.join(extracted_text.split())
+
+        menu_keywords = ['coffee', 'latte', 'cappuccino', 'americano', 'espresso',
+                         'mocha', 'caramel', 'vanilla', 'chocolate', 'milk', 'cream', 'sugar', 'syrup', 'ice', 'hot',
+                         '카페', '라떼', '카푸치노', '아메리카노', '에스프레소', '모카', '카라멜', '바닐라', '초콜릿', '우유', '크림', '설탕', '시럽', '아이스', '핫']
+
+        meaningful_words = []
+        for word in extracted_text.split():
+            if any(k in word.lower() for k in menu_keywords):
+                meaningful_words.append(word)
+            elif not re.match(r'^[0-9~!@#$%^&*()_+\-=\[\]{};:\'"\\|,.<>/?]+$', word):
+                meaningful_words.append(word)
+
+        extracted_text = ' '.join(meaningful_words)
+        logger.info(f"정제된 텍스트: {extracted_text}")
+
+        # ✅ 번역 (영어 → 한글)
+        translated_text = ""
+        try:
+            translator = Translator()
+            translated_text = translator.translate(extracted_text, src='en', dest='ko').text
+            logger.info(f"🈯 번역된 메뉴 텍스트: {translated_text}")
+        except Exception as translate_error:
+            logger.warning(f"⚠️ 번역 실패, 원본 텍스트 사용: {translate_error}")
+            translated_text = extracted_text
+
+        if ai_engine is None:
+            raise HTTPException(status_code=500, detail="AI 엔진이 초기화되지 않았습니다")
+
+        # 번역된 텍스트로 분석 (번역 실패시 원본 텍스트 사용)
+        analysis_result = ai_engine.analyze_menu_text(translated_text, allergies_list)
+
+        return JSONResponse(status_code=200, content={
+            "success": True,
+            "extracted_text": extracted_text,
+            "translated_text": translated_text,
+            "analysis": analysis_result,
+            "timestamp": datetime.now().isoformat()
+        })
+
+    except Exception as e:
+        import traceback
+        logger.error(f"이미지 분석 중 오류: {e}")
+        logger.error(f"오류 상세 정보: {traceback.format_exc()}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/batch-analyze")
+async def batch_analyze_menus(
+    menu_texts: List[str] = Body(...),
+    user_allergies: Optional[List[str]] = Body(None)
+):
+    """여러 메뉴 일괄 분석"""
+    try:
+        logger.info(f"일괄 분석 요청: {len(menu_texts)}개 메뉴")
+        
+        if ai_engine is None:
+            raise HTTPException(status_code=500, detail="AI 엔진이 초기화되지 않았습니다")
+        
+        results = ai_engine.batch_analyze_menus(menu_texts, user_allergies)
         
         return {
             "success": True,
-            "extracted_text": extracted_text,
-            "ocr_results": ocr_results,
-            "total_detections": len(ocr_results)
+            "results": results,
+            "total_analyzed": len(results),
+            "timestamp": datetime.now().isoformat()
         }
         
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"OCR 처리 오류: {str(e)}")
+        logger.error(f"일괄 분석 중 오류: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/translate")
-async def translate_text_api(request: TranslationRequest):
-    """텍스트 번역"""
+@app.get("/find-similar-menus")
+async def find_similar_menus(
+    query: str,
+    top_k: int = 5,
+    user_allergies: Optional[List[str]] = None
+):
+    """유사한 메뉴 찾기"""
     try:
-        translated_text = translate_text(
-            request.text, 
-            request.source, 
-            request.target
-        )
+        logger.info(f"유사 메뉴 검색: {query}")
         
-        return {
-            "success": True,
-            "original_text": request.text,
-            "translated_text": translated_text,
-            "source": request.source,
-            "target": request.target
-        }
+        if ai_engine is None:
+            raise HTTPException(status_code=500, detail="AI 엔진이 초기화되지 않았습니다")
         
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"번역 오류: {str(e)}")
-
-@app.post("/menu/analyze")
-async def analyze_menu(file: UploadFile = File(...)):
-    """메뉴 이미지 분석 (OCR + 번역 + 성분 분석)"""
-    try:
-        # 1. 이미지에서 텍스트 추출
-        image_data = await file.read()
-        image = Image.open(io.BytesIO(image_data))
-        image_np = np.array(image)
-        
-        ocr_results = extract_text_with_easyocr(image_np)
-        extracted_text = '\n'.join([result['text'] for result in ocr_results])
-        
-        # 2. 영어 텍스트를 한국어로 번역
-        translated_text = translate_text(extracted_text, "en", "ko")
-        
-        # 3. 메뉴 성분 분석
-        analysis_result = analyze_menu_ingredients(translated_text)
-        
-        return {
-            "success": True,
-            "extracted_text": extracted_text,
-            "translated_text": translated_text,
-            "analysis_result": analysis_result,
-            "ocr_confidence": {
-                "high_confidence": len([r for r in ocr_results if r['confidence'] > 0.8]),
-                "medium_confidence": len([r for r in ocr_results if 0.5 <= r['confidence'] <= 0.8]),
-                "low_confidence": len([r for r in ocr_results if r['confidence'] < 0.5])
+        if user_allergies:
+            # 알레르기를 고려한 추천
+            suggestions = ai_engine.similarity_model.get_menu_suggestions(query, user_allergies)
+        else:
+            # 일반적인 유사 메뉴 검색
+            similar_menus = ai_engine.similarity_model.find_similar_menus(query, top_k)
+            suggestions = {
+                "query": query,
+                "suggestions": similar_menus,
+                "total_found": len(similar_menus)
             }
+        
+        return {
+            "success": True,
+            "suggestions": suggestions,
+            "timestamp": datetime.now().isoformat()
         }
         
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"메뉴 분석 오류: {str(e)}")
+        logger.error(f"유사 메뉴 검색 중 오류: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/find-safe-menus")
+async def find_safe_menus(
+    user_allergies: List[str],
+    top_k: int = 10
+):
+    """사용자 알레르기에 안전한 메뉴 찾기"""
+    try:
+        logger.info(f"안전 메뉴 검색: {user_allergies}")
+        
+        if ai_engine is None:
+            raise HTTPException(status_code=500, detail="AI 엔진이 초기화되지 않았습니다")
+        
+        safe_menus = ai_engine.similarity_model.find_safe_menus(user_allergies, top_k)
+        
+        return {
+            "success": True,
+            "safe_menus": safe_menus,
+            "total_safe": len(safe_menus),
+            "user_allergies": user_allergies,
+            "timestamp": datetime.now().isoformat()
+        }
+        
+    except Exception as e:
+        logger.error(f"안전 메뉴 검색 중 오류: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/check-ingredient-risk")
+async def check_ingredient_risk(
+    ingredients: List[str] = Body(...),
+    user_allergies: List[str] = Body(...)
+):
+    """성분 알레르기 위험도 체크"""
+    try:
+        logger.info(f"성분 위험도 체크: {ingredients} vs {user_allergies}")
+        
+        if ai_engine is None:
+            raise HTTPException(status_code=500, detail="AI 엔진이 초기화되지 않았습니다")
+        
+        risk_analysis = ai_engine.ingredient_matcher.check_allergy_risk(ingredients, user_allergies)
+        
+        return {
+            "success": True,
+            "risk_analysis": risk_analysis,
+            "timestamp": datetime.now().isoformat()
+        }
+        
+    except Exception as e:
+        logger.error(f"성분 위험도 체크 중 오류: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/model-status")
+async def get_model_status():
+    """AI 모델 상태 확인"""
+    try:
+        if ai_engine is None:
+            return {
+                "success": False,
+                "error": "AI 엔진이 초기화되지 않았습니다",
+                "timestamp": datetime.now().isoformat()
+            }
+        
+        status = ai_engine.get_model_status()
+        
+        return {
+            "success": True,
+            "model_status": status,
+            "timestamp": datetime.now().isoformat()
+        }
+        
+    except Exception as e:
+        logger.error(f"모델 상태 확인 중 오류: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/retrain-models")
+async def retrain_models():
+    """모든 AI 모델 재훈련"""
+    try:
+        logger.info("모델 재훈련 시작")
+        
+        if ai_engine is None:
+            raise HTTPException(status_code=500, detail="AI 엔진이 초기화되지 않았습니다")
+        
+        results = ai_engine.retrain_models()
+        
+        return {
+            "success": True,
+            "training_results": results,
+            "timestamp": datetime.now().isoformat()
+        }
+        
+    except Exception as e:
+        logger.error(f"모델 재훈련 중 오류: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/ingredient-suggestions")
+async def get_ingredient_suggestions(
+    partial_ingredient: str,
+    top_k: int = 5
+):
+    """성분명 자동완성"""
+    try:
+        if ai_engine is None:
+            raise HTTPException(status_code=500, detail="AI 엔진이 초기화되지 않았습니다")
+        
+        suggestions = ai_engine.ingredient_matcher.get_ingredient_suggestions(partial_ingredient, top_k)
+        
+        return {
+            "success": True,
+            "suggestions": suggestions,
+            "query": partial_ingredient,
+            "timestamp": datetime.now().isoformat()
+        }
+        
+    except Exception as e:
+        logger.error(f"성분 자동완성 중 오류: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
     import uvicorn
+    logger.info("🚀 AI 서버 시작...")
     uvicorn.run(app, host="0.0.0.0", port=8000) 

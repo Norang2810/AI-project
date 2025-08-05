@@ -1,0 +1,50 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000169",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000169.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1367,
+    "height": 587,
+    "location": null,
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "도서관",
+      "polygon_points": [[1315.873,319.177],[61.054,302.162],[66.725,14.334],[1307.365,12.916]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "LIBRARY",
+      "polygon_points": [[1015.283,531.858],[428.283,543.201],[425.447,401.414],[1006.776,394.324]]
+    }
+  ]
+}

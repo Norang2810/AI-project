@@ -1,0 +1,50 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000164",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000164.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 3446,
+    "height": 1145,
+    "location": null,
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "도쿄라멘",
+      "polygon_points": [[538.876,328.526],[534.928,877.336],[2489.324,750.991],[2520.911,12.664]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "東京ラーメン",
+      "polygon_points": [[45.342,964.198],[25.600,1090.543],[554.669,1047.112],[534.928,928.664]]
+    }
+  ]
+}

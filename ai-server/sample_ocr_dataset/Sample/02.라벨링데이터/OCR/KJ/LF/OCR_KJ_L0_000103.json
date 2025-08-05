@@ -1,0 +1,210 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000103",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000103.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1769,
+    "height": 471,
+    "location": "36.56542939972222, 128.7280001",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "Market",
+      "polygon_points": [[608.963,51.930],[753.000,52.000],[753.000,112.000],[607.850,115.387]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Product",
+      "polygon_points": [[437.519,60.837],[595.604,58.610],[601.000,115.000],[437.519,118.727]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Special",
+      "polygon_points": [[270.527,67.516],[423.046,63.063],[423.000,133.000],[272.753,136.540]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Andong",
+      "polygon_points": [[114.668,77.536],[260.000,78.000],[258.281,139.879],[113.554,142.106]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "안동",
+      "polygon_points": [[46.758,177.731],[32.285,456.051],[445.312,444.918],[448.651,165.485]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "특산물",
+      "polygon_points": [[1083.220,434.898],[1069.861,129.860],[451.991,153.239],[447.538,459.390]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "판매장",
+      "polygon_points": [[1757.867,391.480],[1088.787,413.746],[1076.541,136.540],[1741.168,109.821]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "安",
+      "polygon_points": [[831.858,36.036],[829.949,112.375],[873.844,109.831],[870.664,34.128]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "東",
+      "polygon_points": [[918.375,107.922],[873.844,109.194],[872.572,32.219],[915.195,30.311]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "特",
+      "polygon_points": [[960.998,28.402],[918.375,31.583],[919.012,107.286],[959.726,104.105]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "産",
+      "polygon_points": [[962.907,28.402],[1004.257,27.766],[1006.802,103.469],[962.270,104.741]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "物",
+      "polygon_points": [[1047.516,27.130],[1004.893,28.402],[1006.165,104.741],[1048.788,100.288]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "販",
+      "polygon_points": [[1091.411,28.402],[1093.955,97.744],[1050.697,100.288],[1049.424,29.675]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "売",
+      "polygon_points": [[1139.123,96.471],[1095.864,97.744],[1092.683,23.949],[1135.942,22.677]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "埸",
+      "polygon_points": [[1183.018,93.290],[1139.123,95.199],[1136.578,21.404],[1179.837,18.860]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "安",
+      "polygon_points": [[1250.451,19.496],[1250.451,92.018],[1292.437,90.110],[1289.256,18.860]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "东",
+      "polygon_points": [[1334.153,13.044],[1339.497,87.857],[1296.747,89.638],[1292.294,18.388]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "特",
+      "polygon_points": [[1380.466,11.263],[1384.028,83.404],[1343.060,86.966],[1335.044,13.935]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "产",
+      "polygon_points": [[1425.887,10.373],[1430.341,80.732],[1386.700,82.513],[1382.247,12.154]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "品",
+      "polygon_points": [[1469.528,6.810],[1474.872,79.841],[1434.794,81.622],[1429.450,13.044]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "卖",
+      "polygon_points": [[1515.840,4.138],[1521.184,80.732],[1476.653,79.841],[1473.090,7.701]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "场",
+      "polygon_points": [[1564.825,1.466],[1568.387,76.279],[1524.747,77.169],[1519.403,3.248]]
+    }
+  ]
+}

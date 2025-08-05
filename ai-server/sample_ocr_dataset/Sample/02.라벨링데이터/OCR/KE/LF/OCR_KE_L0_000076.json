@@ -1,0 +1,66 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000076",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000076.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1578,
+    "height": 417,
+    "location": null,
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "마스터플랜",
+      "polygon_points": [[140.543,23.746],[1136.448,43.057],[1132.310,298.241],[146.060,267.894]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "영어",
+      "polygon_points": [[1193.678,90.048],[1492.667,94.934],[1489.736,262.993],[1191.724,247.360]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "MASTER PLAN",
+      "polygon_points": [[489.523,295.482],[932.301,306.517],[932.301,392.038],[488.144,374.106]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "ENGLISH",
+      "polygon_points": [[944.716,313.414],[1217.831,320.311],[1212.314,394.797],[943.336,389.279]]
+    }
+  ]
+}

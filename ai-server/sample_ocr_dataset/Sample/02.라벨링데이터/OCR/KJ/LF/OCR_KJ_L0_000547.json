@@ -1,0 +1,210 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000547",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000547.jpeg",
+    "created_day": "2023.08.23.",
+    "extension": "jpeg",
+    "width": 868,
+    "height": 785,
+    "location": "35.8414, 129.2184",
+    "device_type": null,
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "Bite",
+      "polygon_points": [[116.885,4.727],[111.638,47.354],[190.335,46.698],[188.367,9.973]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "かむ",
+      "polygon_points": [[415.276,8.006],[402.816,120.804],[456.592,122.772],[461.839,9.317]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "문다",
+      "polygon_points": [[102.516,274.501],[95.303,354.510],[140.553,351.231],[143.832,273.190]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "咬",
+      "polygon_points": [[356.313,312.538],[353.034,359.100],[391.630,356.741],[394.089,311.491]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "たたく",
+      "polygon_points": [[524.259,11.285],[511.799,174.580],[566.231,175.892],[576.068,13.908]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Kick",
+      "polygon_points": [[759.873,11.285],[754.626,52.601],[832.667,53.256],[835.946,12.596]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "때린다",
+      "polygon_points": [[785.151,224.064],[770.068,338.174],[813.351,340.142],[825.155,224.064]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "踢",
+      "polygon_points": [[511.680,309.319],[505.778,357.193],[543.613,356.741],[544.596,309.523]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "Butt",
+      "polygon_points": [[102.934,435.591],[98.343,472.972],[176.384,469.693],[179.007,435.591]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "突く",
+      "polygon_points": [[386.242,421.819],[377.061,526.748],[430.181,528.716],[435.428,420.508]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "들이받는다",
+      "polygon_points": [[92.262,573.311],[79.146,766.773],[124.397,765.462],[134.889,572.655]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "顶",
+      "polygon_points": [[329.664,709.062],[325.073,755.625],[368.468,752.192],[368.468,707.926]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "突進",
+      "polygon_points": [[492.006,418.719],[482.824,524.960],[539.224,524.960],[545.126,421.998]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "Knock",
+      "polygon_points": [[605.460,415.440],[598.246,460.691],[704.338,454.183],[708.631,413.404]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "돌진",
+      "polygon_points": [[749.857,646.761],[738.052,721.523],[776.745,721.523],[785.270,646.761]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "冲",
+      "polygon_points": [[486.878,700.537],[479.009,744.476],[512.849,742.355],[518.260,700.056]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "人",
+      "polygon_points": [[399.007,311.491],[393.597,357.233],[429.011,355.266],[430.486,310.999]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "人",
+      "polygon_points": [[549.023,309.523],[545.580,354.774],[580.502,354.282],[580.010,311.491]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "人",
+      "polygon_points": [[402.406,749.241],[404.373,705.466],[372.403,705.466],[370.435,750.717]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "撞",
+      "polygon_points": [[548.263,742.847],[552.198,702.023],[521.703,700.548],[516.292,742.355]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "人",
+      "polygon_points": [[585.152,739.896],[585.152,702.515],[555.641,701.531],[550.230,743.831]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "down",
+      "polygon_points": [[716.500,411.258],[710.777,447.744],[801.636,445.598],[802.351,411.258]]
+    }
+  ]
+}

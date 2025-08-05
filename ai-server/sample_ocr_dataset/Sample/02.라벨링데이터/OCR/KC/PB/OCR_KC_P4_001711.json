@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_001711",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_001711.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 4000,
+    "height": 1800,
+    "location": "36.56597516666667, 128.73260497222222",
+    "device_type": "SM-A326K",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 3
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "안동태사묘",
+      "polygon_points": [[1079.000,585.000],[2615.000,585.000],[2616.430,820.113],[1065.691,845.729]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "安",
+      "polygon_points": [[1226.000,847.000],[1443.000,847.000],[1443.000,1022.000],[1226.000,1022.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "東",
+      "polygon_points": [[1461.000,848.000],[1677.000,848.000],[1677.000,1030.000],[1461.000,1030.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "太",
+      "polygon_points": [[1699.000,847.000],[1934.000,847.000],[1934.000,1031.000],[1699.000,1031.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "師",
+      "polygon_points": [[1938.000,843.000],[2176.000,843.000],[2176.000,1015.000],[1938.000,1015.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "廟",
+      "polygon_points": [[2185.000,846.000],[2431.000,846.000],[2431.000,1020.000],[2185.000,1020.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "ANDONG",
+      "polygon_points": [[1084.000,1035.000],[1736.000,1035.000],[1736.000,1175.000],[1084.000,1175.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "TAESAMYO",
+      "polygon_points": [[1749.000,1033.000],[2530.000,1033.000],[2530.000,1176.000],[1749.000,1176.000]]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000098",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000098.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2749,
+    "height": 540,
+    "location": "36.565095972222224, 128.72749097222223",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "underwear",
+      "polygon_points": [[544.000,109.000],[925.560,93.728],[927.000,155.000],[541.496,169.849]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Lotte",
+      "polygon_points": [[304.483,111.028],[519.006,109.298],[519.000,166.000],[302.753,175.039]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "롯데",
+      "polygon_points": [[46.711,209.639],[19.030,519.313],[615.887,500.282],[626.267,197.529]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "메리야스",
+      "polygon_points": [[1809.600,156.009],[1818.250,462.222],[622.807,517.583],[638.377,204.449]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "양말",
+      "polygon_points": [[1980.872,154.279],[1994.712,458.762],[2636.549,443.192],[2593.298,135.248]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "ロツテメリヤス",
+      "polygon_points": [[1050.121,83.348],[1044.931,159.469],[1508.576,133.518],[1513.767,67.778]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "靴下",
+      "polygon_points": [[1526.453,63.711],[1526.453,137.525],[1679.848,136.978],[1676.388,60.858]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "乐",
+      "polygon_points": [[1784.860,54.244],[1780.708,134.517],[1865.133,130.365],[1859.597,52.860]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "天",
+      "polygon_points": [[1949.558,50.092],[1949.558,128.981],[1865.133,133.133],[1862.365,51.476]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "针",
+      "polygon_points": [[2031.215,127.597],[2027.063,43.172],[1952.326,45.940],[1950.942,131.749]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "织",
+      "polygon_points": [[2122.560,124.828],[2118.408,43.172],[2029.831,43.172],[2031.215,131.749]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "袜",
+      "polygon_points": [[2247.122,116.524],[2240.201,34.867],[2151.624,34.867],[2159.929,122.060]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "子",
+      "polygon_points": [[2328.778,108.220],[2324.626,30.715],[2244.353,32.099],[2249.890,110.988]]
+    }
+  ]
+}

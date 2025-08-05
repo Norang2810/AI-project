@@ -1,0 +1,290 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_000969",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_000969.jpg",
+    "created_day": "2023.08.23.",
+    "extension": "jpg",
+    "width": 2397,
+    "height": 2529,
+    "location": null,
+    "device_type": null,
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 2
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "석주로",
+      "polygon_points": [[509.372,324.517],[501.933,513.476],[878.363,452.474],[875.387,260.539]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Seokjuro",
+      "polygon_points": [[490.030,537.282],[485.567,687.557],[891.754,622.091],[884.315,480.743]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "육사로",
+      "polygon_points": [[1595.514,159.364],[1594.027,367.666],[2015.093,309.639],[2006.165,98.362]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Yuksaro",
+      "polygon_points": [[1589.563,385.520],[1589.563,522.404],[2004.678,465.865],[1997.238,342.372]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "34",
+      "polygon_points": [[768.261,901.809],[762.310,1047.620],[887.290,1037.205],[894.730,897.346]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "영덕",
+      "polygon_points": [[985.489,833.368],[981.026,1059.523],[1253.305,1034.230],[1248.842,800.635]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Yeongdeok",
+      "polygon_points": [[1269.672,891.394],[1272.648,1058.035],[1675.859,1007.448],[1677.347,852.710]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "영양",
+      "polygon_points": [[1762.155,755.999],[1760.668,1011.912],[2068.656,979.178],[2070.144,726.241]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "안동공예문화전시관",
+      "polygon_points": [[262.387,1235.091],[259.411,1407.684],[741.479,1374.951],[742.967,1188.968]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "임하댐",
+      "polygon_points": [[845.630,1145.819],[841.166,1377.927],[1244.378,1337.754],[1242.890,1095.232]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "Imha",
+      "polygon_points": [[1278.599,1184.504],[1277.111,1327.339],[1482.437,1303.533],[1476.485,1168.137]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "Dam",
+      "polygon_points": [[1506.242,1160.698],[1509.218,1302.045],[1699.665,1281.215],[1698.177,1150.283]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "안동댐",
+      "polygon_points": [[251.972,1485.053],[251.972,1690.378],[597.156,1650.206],[600.132,1456.783]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "Andong",
+      "polygon_points": [[241.586,1702.260],[242.876,1849.261],[468.535,1824.761],[465.956,1680.338]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "Dam",
+      "polygon_points": [[480.141,1679.049],[478.851,1797.681],[618.115,1789.944],[619.405,1675.180]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "민속박물관",
+      "polygon_points": [[249.323,1907.288],[250.612,2104.579],[763.827,2064.605],[766.406,1864.735]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "民",
+      "polygon_points": [[271.244,2113.605],[263.507,2282.527],[358.929,2272.211],[353.771,2103.289]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "俗",
+      "polygon_points": [[366.666,2105.868],[364.087,2272.211],[445.325,2259.317],[442.746,2099.421]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "博",
+      "polygon_points": [[447.903,2096.842],[454.351,2265.764],[536.878,2254.159],[534.299,2089.105]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "物",
+      "polygon_points": [[540.746,2091.684],[544.615,2261.896],[628.431,2252.869],[632.300,2081.368]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "館",
+      "polygon_points": [[637.458,2085.236],[633.589,2256.738],[740.616,2245.132],[734.169,2074.920]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "Folk",
+      "polygon_points": [[240.297,2290.264],[241.586,2402.449],[411.798,2392.133],[407.929,2274.790]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "Museum",
+      "polygon_points": [[435.009,2274.790],[433.719,2386.975],[754.801,2374.081],[754.801,2261.896]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "5",
+      "polygon_points": [[1409.991,1378.268],[1403.947,1581.362],[1499.449,1578.944],[1501.867,1372.224]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "55",
+      "polygon_points": [[1384.605,1751.815],[1380.978,1915.016],[1510.329,1913.807],[1511.538,1744.562]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "대구",
+      "polygon_points": [[1599.787,1342.001],[1592.534,1558.393],[1851.236,1534.215],[1853.654,1319.032]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "Daegu",
+      "polygon_points": [[1877.832,1397.610],[1875.414,1563.228],[2155.877,1535.424],[2151.041,1384.312]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "남안동IC",
+      "polygon_points": [[1591.325,1622.464],[1594.952,1848.527],[2117.192,1814.678],[2120.819,1584.988]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "S.Andong",
+      "polygon_points": [[1592.534,1856.989],[1588.907,2020.189],[1981.797,1989.967],[1981.797,1830.393]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "IC",
+      "polygon_points": [[1997.512,1854.571],[1998.721,1962.162],[2068.837,1956.118],[2070.046,1855.780]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "시민운동장",
+      "polygon_points": [[1587.698,2034.696],[1584.072,2234.163],[2174.010,2209.985],[2176.428,1983.922]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 32,
+      "text": "Stadium",
+      "polygon_points": [[1588.907,2249.878],[1584.072,2374.394],[1937.068,2367.141],[1931.023,2240.207]]
+    }
+  ]
+}

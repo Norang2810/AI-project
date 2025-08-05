@@ -1,0 +1,114 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206833",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206833.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "それとも",
+      "polygon_points": [[749.591,860.959],[553.817,862.256],[555.762,810.395],[752.184,811.043]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "多くの",
+      "polygon_points": [[904.480,861.680],[754.777,864.201],[756.722,807.154],[905.614,812.331]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "期待の",
+      "polygon_points": [[1207.911,862.256],[1055.570,859.663],[1060.756,812.340],[1209.207,812.988]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "ように",
+      "polygon_points": [[1359.603,868.090],[1216.986,862.904],[1220.228,813.636],[1362.845,813.636]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "아니면",
+      "polygon_points": [[894.801,967.274],[735.330,965.977],[734.033,903.096],[892.208,903.096]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "많은",
+      "polygon_points": [[1008.247,965.977],[903.877,966.626],[899.988,905.041],[1008.895,906.337]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "분들의",
+      "polygon_points": [[1178.739,967.922],[1018.619,966.626],[1014.081,901.800],[1177.443,903.744]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "기대와",
+      "polygon_points": [[1341.452,969.219],[1189.759,966.626],[1182.629,907.634],[1346.638,905.041]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "같이",
+      "polygon_points": [[1465.918,973.108],[1355.714,968.570],[1352.473,905.041],[1459.435,899.207]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "方々の",
+      "polygon_points": [[1051.959,862.247],[908.450,862.814],[909.017,811.764],[1057.631,806.659]]
+    }
+  ]
+}

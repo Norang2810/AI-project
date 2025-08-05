@@ -1,0 +1,162 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000243",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000243.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 4000,
+    "height": 3000,
+    "location": "35.6939301, 128.4598164",
+    "device_type": "SM-N986N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "Marinated",
+      "polygon_points": [[614.000,1546.000],[1437.881,1533.114],[1441.372,1714.668],[614.000,1713.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Grilled",
+      "polygon_points": [[1483.269,1529.622],[1986.033,1536.605],[1984.000,1703.000],[1479.000,1703.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Pork",
+      "polygon_points": [[2045.387,1540.097],[2405.003,1543.588],[2401.512,1704.193],[2041.000,1703.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "専門店",
+      "polygon_points": [[2900.784,1794.970],[3302.297,1791.479],[3288.332,1980.015],[2893.802,1976.524]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "味付け牛肉焼き",
+      "polygon_points": [[1993.016,1794.970],[2876.344,1794.970],[2869.362,1969.541],[1986.033,1973.032]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "주물럭",
+      "polygon_points": [[561.535,915.133],[1954.610,908.150],[1951.119,1442.337],[582.484,1459.794]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "전문점",
+      "polygon_points": [[2031.422,946.556],[3368.634,950.047],[3323.246,1442.337],[2041.896,1435.354]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "Restaurant",
+      "polygon_points": [[2446.900,1529.622],[3277.857,1533.114],[3267.383,1707.685],[2446.900,1711.176]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "調",
+      "polygon_points": [[630.142,1791.713],[776.781,1791.713],[781.669,1989.677],[639.918,1984.789]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "味",
+      "polygon_points": [[920.977,1794.157],[923.421,1999.453],[781.669,1992.121],[774.337,1794.157]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "烤",
+      "polygon_points": [[1057.840,1794.157],[1062.728,1994.565],[933.197,1992.121],[920.977,1789.269]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "豬",
+      "polygon_points": [[1197.148,1794.157],[1199.592,1994.565],[1067.616,1989.677],[1060.284,1794.157]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "肉",
+      "polygon_points": [[1334.011,1789.269],[1338.899,1997.009],[1202.036,1992.121],[1197.148,1794.157]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "専",
+      "polygon_points": [[1509.979,1784.381],[1512.423,1994.565],[1380.447,1989.677],[1370.671,1786.825]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "門",
+      "polygon_points": [[1654.174,1789.269],[1649.286,1989.677],[1512.423,1987.233],[1507.535,1789.269]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "店",
+      "polygon_points": [[1788.594,1784.381],[1786.150,1994.565],[1649.286,1994.565],[1644.398,1786.825]]
+    }
+  ]
+}

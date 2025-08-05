@@ -1,0 +1,154 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_VD_016610",
+    "src_path": "\\OCR\\KE\\VD",
+    "label_path": "\\OCR\\KE\\VD",
+    "language_type": "KE",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KE_V6_016610.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "the",
+      "polygon_points": [[1107.693,623.730],[1177.104,623.730],[1177.000,667.000],[1107.000,667.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "officers",
+      "polygon_points": [[1187.929,623.730],[1336.939,625.004],[1338.212,667.669],[1187.000,667.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "The",
+      "polygon_points": [[420.722,624.494],[501.594,624.494],[501.594,669.707],[422.632,667.796]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "moment",
+      "polygon_points": [[512.420,629.589],[687.538,627.042],[687.538,672.891],[511.146,672.891]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "the",
+      "polygon_points": [[693.524,619.400],[766.118,619.400],[766.118,671.617],[694.160,670.343]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "man",
+      "polygon_points": [[775.033,632.136],[867.368,631.499],[868.005,669.070],[776.307,669.707]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "focuses",
+      "polygon_points": [[876.920,621.947],[1032.934,623.858],[1034.844,670.343],[877.557,668.433]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "on",
+      "polygon_points": [[1041.467,632.009],[1100.052,632.645],[1100.052,672.763],[1042.104,672.126]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "in",
+      "polygon_points": [[1347.764,626.277],[1382.151,625.004],[1384.061,668.306],[1348.401,667.669]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "front",
+      "polygon_points": [[1393.995,622.202],[1497.793,620.928],[1497.793,669.325],[1395.269,669.961]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "남성이",
+      "polygon_points": [[378.821,887.362],[587.689,886.726],[588.962,972.693],[381.368,973.966]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "앞쪽",
+      "polygon_points": [[600.425,886.344],[741.156,886.344],[741.793,975.494],[600.425,975.494]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "경찰관들에게",
+      "polygon_points": [[750.071,888.891],[1169.080,887.617],[1168.443,975.494],[750.708,973.584]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "집중한",
+      "polygon_points": [[1180.543,891.438],[1392.594,888.891],[1395.142,970.400],[1178.632,975.494]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "순간",
+      "polygon_points": [[1402.146,891.438],[1545.425,888.891],[1544.788,970.400],[1402.783,970.400]]
+    }
+  ]
+}

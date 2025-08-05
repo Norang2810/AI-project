@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_001970",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_001970.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 3000,
+    "height": 4000,
+    "location": "37.5115776, 127.0578371",
+    "device_type": "SM-S901N",
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": 1,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "약",
+      "polygon_points": [[1196.000,1092.000],[1303.000,1092.000],[1303.000,1260.000],[1196.000,1260.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "약",
+      "polygon_points": [[1141.000,1306.000],[1842.000,1306.000],[1842.000,2121.000],[1141.000,2121.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "PHARMACY",
+      "polygon_points": [[1766.542,2375.647],[1067.034,2275.893],[1081.597,2137.725],[1802.190,2222.501]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "药",
+      "polygon_points": [[1392.157,2560.376],[1182.798,2514.810],[1208.660,2312.839],[1429.103,2344.859]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "店",
+      "polygon_points": [[1612.601,2593.627],[1398.315,2552.987],[1437.655,2341.187],[1654.473,2381.805]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "온누리",
+      "polygon_points": [[1451.219,3249.417],[1069.728,3156.164],[1100.812,2935.747],[1487.955,3000.742]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "약국",
+      "polygon_points": [[1699.894,3246.591],[1465.348,3158.990],[1493.607,3045.956],[1722.501,3079.866]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "B1",
+      "polygon_points": [[1478.912,3521.830],[1196.326,3439.880],[1218.933,3281.632],[1532.603,3340.975]]
+    }
+  ]
+}

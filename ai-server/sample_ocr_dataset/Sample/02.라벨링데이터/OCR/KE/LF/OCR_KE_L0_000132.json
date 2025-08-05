@@ -1,0 +1,66 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000132",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000132.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 2571,
+    "height": 1446,
+    "location": "36.3867956, 127.3079056",
+    "device_type": "iPhone 14 Pro Max",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "TEN",
+      "polygon_points": [[415.805,625.585],[974.646,632.570],[964.168,898.020],[422.791,884.049]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "BROWN",
+      "polygon_points": [[1016.559,643.049],[1935.153,681.469],[1928.168,936.440],[1023.544,918.976]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "탠브라운",
+      "polygon_points": [[1355.356,1257.773],[579.965,1240.310],[576.472,995.817],[1362.342,1027.252]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "뷰티",
+      "polygon_points": [[1770.994,1282.223],[1393.776,1264.759],[1400.762,1023.759],[1774.486,1030.744]]
+    }
+  ]
+}

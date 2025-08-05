@@ -1,0 +1,82 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000064",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000064.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1667,
+    "height": 1141,
+    "location": null,
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "평화동",
+      "polygon_points": [[362.534,136.941],[1209.189,97.254],[1209.189,397.111],[371.353,414.749]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "행정복지센터",
+      "polygon_points": [[1511.251,685.944],[78.111,736.655],[64.882,443.412],[1506.841,397.111]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Pyeonghwa-dong",
+      "polygon_points": [[309.618,849.101],[1107.767,833.667],[1109.971,941.704],[309.618,957.138]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Community",
+      "polygon_points": [[840.982,1060.765],[320.642,1073.994],[314.027,965.957],[840.982,954.933]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Service",
+      "polygon_points": [[1211.394,1038.717],[849.801,1043.126],[845.392,959.343],[1204.779,937.294]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Center",
+      "polygon_points": [[1526.684,1027.692],[1218.008,1029.897],[1215.803,932.885],[1522.275,926.270]]
+    }
+  ]
+}

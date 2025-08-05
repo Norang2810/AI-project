@@ -1,0 +1,58 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_CT_000085",
+    "src_path": "\\OCR\\KE\\CT",
+    "label_path": "\\OCR\\KE\\CT",
+    "language_type": "KE",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KE_C2_000085.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 3024,
+    "height": 4032,
+    "location": "35.244122222222224, 128.870025",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": 2,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "누리홀",
+      "polygon_points": [[964.681,1519.789],[1364.549,1519.789],[1372.546,2602.098],[956.684,2594.100]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Nuri",
+      "polygon_points": [[746.087,1527.786],[900.702,1541.115],[908.700,1871.673],[740.755,1871.673]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Hall",
+      "polygon_points": [[748.752,1903.662],[914.031,1900.996],[914.031,2207.562],[740.755,2220.891]]
+    }
+  ]
+}

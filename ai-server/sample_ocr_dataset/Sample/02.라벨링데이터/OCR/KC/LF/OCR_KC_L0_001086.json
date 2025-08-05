@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_001086",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_001086.jpeg",
+    "created_day": "2023.08.23.",
+    "extension": "jpeg",
+    "width": 2440,
+    "height": 2420,
+    "location": "37.4901186, 127.0195082",
+    "device_type": "iPhone 14",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "남양산역",
+      "polygon_points": [[711.472,1134.458],[708.828,1351.273],[1851.073,1396.222],[1839.175,1170.153]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Namyangsan",
+      "polygon_points": [[726.015,1371.103],[723.370,1487.443],[1197.984,1503.308],[1196.662,1400.188]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Stn.",
+      "polygon_points": [[1211.204,1389.612],[1209.882,1494.053],[1371.172,1499.342],[1367.205,1396.222]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "南",
+      "polygon_points": [[1473.434,1393.799],[1478.061,1500.224],[1558.573,1501.149],[1553.946,1394.725]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "梁",
+      "polygon_points": [[1566.902,1395.650],[1571.529,1510.403],[1654.818,1511.329],[1652.967,1403.053]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "山",
+      "polygon_points": [[1662.222,1401.203],[1665.923,1506.702],[1745.510,1508.552],[1739.958,1403.979]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "驛",
+      "polygon_points": [[1752.914,1403.979],[1758.466,1516.881],[1842.681,1515.030],[1844.531,1407.681]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "M",
+      "polygon_points": [[536.000,1228.000],[592.000,1228.000],[592.000,1289.000],[536.000,1289.000]]
+    }
+  ]
+}
