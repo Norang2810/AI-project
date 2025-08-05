@@ -14,7 +14,7 @@ import logging
 from datetime import datetime
 import traceback
 import re
-
+from googletrans import Translator
 
 # AI 모델들 import (안전한 import)
 try:
@@ -144,6 +144,8 @@ async def health_check():
         "timestamp": datetime.now().isoformat()
     }
 
+
+
 @app.post("/analyze-menu")
 async def analyze_menu(
     menu_text: str = Body(...),
@@ -157,9 +159,18 @@ async def analyze_menu(
 
         if ai_engine is None:
             raise HTTPException(status_code=500, detail="AI 엔진이 초기화되지 않았습니다")
+        # ✅ 번역 (영어 → 한글)
+        translated_text = ""
+        try:
+            translator = Translator()
+            translated_text = translator.translate(menu_text, src='en', dest='ko').text
+            logger.info(f"🈯 번역된 메뉴 텍스트: {translated_text}")
+        except Exception as translate_error:
+            logger.warning(f"⚠️ 번역 실패, 원본 텍스트 사용: {translate_error}")
+            translated_text = menu_text
 
-        # AI 분석 엔진으로 종합 분석
-        result = ai_engine.analyze_menu_text(menu_text, user_allergies)
+        # ✅ 메뉴 분석
+        result = ai_engine.analyze_menu_text(translated_text, user_allergies)
 
         if "error" in result:
             logger.error(f"🚫 분석 결과에 오류 포함됨: {result['error']}")
@@ -168,6 +179,8 @@ async def analyze_menu(
         logger.info(f"✅ 분석 결과 성공적으로 반환됨")
         return {
             "success": True,
+            "extracted_text": menu_text,
+            "translated_text": translated_text,
             "analysis": result,
             "timestamp": datetime.now().isoformat()
         }
@@ -307,14 +320,26 @@ async def analyze_menu_image(
         extracted_text = ' '.join(meaningful_words)
         logger.info(f"정제된 텍스트: {extracted_text}")
 
+        # ✅ 번역 (영어 → 한글)
+        translated_text = ""
+        try:
+            translator = Translator()
+            translated_text = translator.translate(extracted_text, src='en', dest='ko').text
+            logger.info(f"🈯 번역된 메뉴 텍스트: {translated_text}")
+        except Exception as translate_error:
+            logger.warning(f"⚠️ 번역 실패, 원본 텍스트 사용: {translate_error}")
+            translated_text = extracted_text
+
         if ai_engine is None:
             raise HTTPException(status_code=500, detail="AI 엔진이 초기화되지 않았습니다")
 
-        analysis_result = ai_engine.analyze_menu_text(extracted_text, allergies_list)
+        # 번역된 텍스트로 분석 (번역 실패시 원본 텍스트 사용)
+        analysis_result = ai_engine.analyze_menu_text(translated_text, allergies_list)
 
         return JSONResponse(status_code=200, content={
             "success": True,
             "extracted_text": extracted_text,
+            "translated_text": translated_text,
             "analysis": analysis_result,
             "timestamp": datetime.now().isoformat()
         })
