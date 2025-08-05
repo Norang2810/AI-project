@@ -10,6 +10,8 @@ router.post('/allergies', authenticateToken, async (req, res) => {
     const { allergies, severity } = req.body;
     const userId = req.user.id;
 
+    console.log(allergies, severity);
+
     // 기존 알레르기 정보 삭제
     await UserAllergy.destroy({
       where: { userId }

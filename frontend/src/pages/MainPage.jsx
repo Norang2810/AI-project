@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import Header from '../components/Header';
 import ImageUpload from '../components/ImageUpload';
+import AnalysisResult from '../components/AnalysisResult';
 
 const MainContainer = styled.div`
   padding-top: 80px; // 헤더 높이만큼 패딩
@@ -58,6 +59,7 @@ const CTAButton = styled(Link)`
   align-items: center;
   justify-content: center;
   text-decoration: none;
+
   
   &:hover {
     background: rgba(255, 122, 0, 0.2); /* 호버 효과 */
@@ -116,11 +118,13 @@ const FeatureDescription = styled.p`
 const MainPage = () => {
   const [apiStatus, setApiStatus] = useState('Loading...');
   const [error, setError] = useState(null);
+  const [analysisResult, setAnalysisResult] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // API 서버 상태 확인
     fetch('http://localhost:3001/api/health')
-      .then(response => response.json())
+      .then(response => response.json())  
       .then(data => {
         setApiStatus('API 서버 연결 성공!');
         console.log('API Response:', data);
@@ -141,31 +145,47 @@ const MainPage = () => {
           <HeroSubtitle>
             메뉴판을 업로드하면 알레르기 정보를 분석해드립니다!
           </HeroSubtitle>
-          <CTAButton to="/allergy">알레르기 설정하기</CTAButton>
+          <CTAButton 
+            onClick={() => {
+              const token = localStorage.getItem('token');
+              if (!token) {
+                alert('로그인이 필요합니다. 로그인 페이지로 이동합니다.');
+                navigate('/login');
+              } else {
+                navigate('/allergy');
+              }
+            }}
+          >
+            알레르기 설정하기
+          </CTAButton>
         </HeroSection>
 
         {/* Upload Section */}
         <Section id="upload">
           <SectionContent>
             <SectionTitle>메뉴판 업로드</SectionTitle>
-            <ImageUpload />
+            <ImageUpload onAnalysisComplete={setAnalysisResult} />
           </SectionContent>
         </Section>
 
-        {/* Analysis Section */}
+        {/* Analysis Results Section */}
         <Section id="analysis">
           <SectionContent>
             <SectionTitle>분석 결과</SectionTitle>
-            <div style={{ textAlign: 'center', padding: '2rem' }}>
-              <p>메뉴판을 업로드하면 여기에 분석 결과가 표시됩니다.</p>
-              <div style={{ marginTop: '20px', padding: '10px', backgroundColor: '#f0f0f0', borderRadius: '5px', display: 'inline-block' }}>
-                <h3>서버 상태:</h3>
-                <p>{apiStatus}</p>
-                {error && (
-                  <p style={{ color: 'red' }}>{error}</p>
-                )}
+            {analysisResult ? (
+              <AnalysisResult analysis={analysisResult} />
+            ) : (
+              <div style={{ textAlign: 'center', padding: '2rem' }}>
+                <p>메뉴판을 업로드하면 여기에 분석 결과가 표시됩니다.</p>
+                <div style={{ marginTop: '20px', padding: '10px', backgroundColor: '#f0f0f0', borderRadius: '5px', display: 'inline-block' }}>
+                  <h3>서버 상태:</h3>
+                  <p>{apiStatus}</p>
+                  {error && (
+                    <p style={{ color: 'red' }}>{error}</p>
+                  )}
+                </div>
               </div>
-            </div>
+            )}
           </SectionContent>
         </Section>
 

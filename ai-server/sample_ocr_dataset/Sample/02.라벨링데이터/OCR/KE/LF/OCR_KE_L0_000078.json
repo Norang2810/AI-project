@@ -1,0 +1,66 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000078",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000078.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 717,
+    "height": 638,
+    "location": "36.5668293, 128.72290269972223",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "Question",
+      "polygon_points": [[0.001,38.695],[717.001,26.693],[712.945,165.062],[0.001,184.994]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Cafe",
+      "polygon_points": [[170.491,220.541],[549.592,211.294],[554.215,363.859],[172.032,360.777]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "퀘스천",
+      "polygon_points": [[172.032,420.879],[437.095,414.714],[437.095,525.671],[178.196,527.212]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "카페",
+      "polygon_points": [[434.013,407.009],[614.317,405.468],[615.858,525.671],[446.341,527.212]]
+    }
+  ]
+}

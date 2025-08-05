@@ -1,0 +1,154 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_VD_016611",
+    "src_path": "\\OCR\\KE\\VD",
+    "label_path": "\\OCR\\KE\\VD",
+    "language_type": "KE",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KE_V6_016611.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "subdue",
+      "polygon_points": [[1250.000,627.000],[1417.000,627.000],[1417.000,670.000],[1250.000,670.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "an",
+      "polygon_points": [[960.000,630.000],[1012.000,630.000],[1012.000,670.000],[960.000,670.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Snatch",
+      "polygon_points": [[455.618,619.400],[594.439,620.674],[593.802,670.343],[454.344,670.343]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "the",
+      "polygon_points": [[602.080,624.494],[672.764,624.494],[672.764,667.796],[603.354,667.796]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "man\u0027s",
+      "polygon_points": [[682.953,620.674],[807.127,621.947],[807.764,670.980],[682.953,670.343]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "arm",
+      "polygon_points": [[816.043,633.409],[896.915,632.773],[896.915,672.891],[815.406,670.980]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "in",
+      "polygon_points": [[902.010,621.947],[950.406,621.947],[948.495,672.254],[904.557,670.343]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "instant",
+      "polygon_points": [[1020.962,621.947],[1159.783,623.221],[1159.783,671.617],[1021.599,671.617]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "and",
+      "polygon_points": [[1169.972,624.494],[1247.024,622.584],[1247.024,672.254],[1169.335,670.980]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "it",
+      "polygon_points": [[1424.052,623.730],[1449.524,623.730],[1450.160,668.306],[1422.778,668.306]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "순식간의",
+      "polygon_points": [[324.311,884.433],[610.231,885.707],[610.231,976.768],[323.675,975.494]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "남성의",
+      "polygon_points": [[624.750,888.891],[830.434,888.891],[831.708,975.494],[623.476,978.042]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "팔을",
+      "polygon_points": [[837.311,885.070],[987.594,883.796],[989.505,974.221],[841.769,974.858]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "낚아채",
+      "polygon_points": [[1206.014,883.796],[1207.288,975.494],[995.236,975.494],[994.599,888.891]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "제압합니다",
+      "polygon_points": [[1212.764,886.344],[1566.184,886.344],[1568.094,977.405],[1213.401,976.768]]
+    }
+  ]
+}

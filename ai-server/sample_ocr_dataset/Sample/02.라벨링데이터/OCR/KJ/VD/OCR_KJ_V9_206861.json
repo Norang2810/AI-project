@@ -1,0 +1,82 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206861",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206861.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "ご存",
+      "polygon_points": [[877.820,860.545],[780.257,860.545],[784.795,810.062],[878.387,811.764]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "知のように",
+      "polygon_points": [[1128.534,867.352],[881.791,864.516],[884.059,809.495],[1129.669,812.898]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "잘",
+      "polygon_points": [[930.005,966.049],[869.879,966.617],[868.177,903.087],[928.303,903.654]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "아시는",
+      "polygon_points": [[1089.963,967.751],[941.349,965.482],[939.648,905.356],[1091.665,906.491]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "바와",
+      "polygon_points": [[1211.917,967.751],[1101.307,967.184],[1099.606,903.654],[1210.215,906.491]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "같이",
+      "polygon_points": [[1324.795,966.049],[1221.559,967.184],[1215.320,904.789],[1332.736,907.058]]
+    }
+  ]
+}

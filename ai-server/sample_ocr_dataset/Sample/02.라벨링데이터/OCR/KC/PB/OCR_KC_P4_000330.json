@@ -1,0 +1,202 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_000330",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_000330.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 2422,
+    "height": 1396,
+    "location": "37.5855421, 126.8751675",
+    "device_type": "iPhone 13",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 2
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "1132",
+      "polygon_points": [[356.485,179.623],[655.408,173.460],[627.673,296.727],[334.914,293.645]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "성산",
+      "polygon_points": [[267.117,355.279],[658.490,333.707],[630.755,515.526],[248.627,524.771]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "城",
+      "polygon_points": [[254.790,654.202],[396.547,666.528],[393.466,518.608],[257.872,518.608]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "山",
+      "polygon_points": [[445.854,663.447],[603.020,654.202],[581.448,518.608],[461.262,515.526]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Seongsan",
+      "polygon_points": [[196.238,792.877],[698.552,802.122],[713.960,666.528],[211.647,666.528]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "조천",
+      "polygon_points": [[165.421,993.186],[603.020,1005.513],[615.346,829.857],[196.238,814.449]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "朝",
+      "polygon_points": [[183.911,1153.433],[319.505,1159.597],[347.240,1011.676],[202.402,1002.431]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "天",
+      "polygon_points": [[402.711,1153.433],[550.631,1156.515],[559.876,1005.513],[418.119,1002.431]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "Jocheon",
+      "polygon_points": [[116.115,1298.272],[652.326,1292.109],[652.326,1156.515],[159.258,1162.678]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "연삼로",
+      "polygon_points": [[938.922,829.857],[1166.967,842.184],[1179.293,725.080],[938.922,731.244]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "연삼로",
+      "polygon_points": [[1287.152,731.244],[1518.278,734.325],[1505.951,820.612],[1308.724,826.776]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "도청",
+      "polygon_points": [[1752.485,302.890],[2171.594,284.400],[2159.267,472.383],[1746.322,472.383]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "道",
+      "polygon_points": [[1755.567,626.467],[1918.896,632.630],[1915.814,469.301],[1774.057,478.546]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "廳",
+      "polygon_points": [[2137.695,626.467],[2140.777,478.546],[1989.775,469.301],[1989.775,626.467]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "Provincial",
+      "polygon_points": [[1737.077,743.570],[2109.960,752.815],[2106.878,629.548],[1737.077,629.548]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "Office",
+      "polygon_points": [[2334.922,752.815],[2334.922,617.221],[2125.368,626.467],[2113.042,743.570]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "시청",
+      "polygon_points": [[1727.832,983.941],[2162.349,974.696],[2146.940,786.714],[1737.077,789.795]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "市",
+      "polygon_points": [[1767.894,1128.780],[1912.733,1134.943],[1912.733,990.105],[1783.302,987.023]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "廳",
+      "polygon_points": [[2159.267,1138.025],[2153.103,980.859],[1968.203,971.614],[1968.203,1134.943]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "City",
+      "polygon_points": [[1737.077,1289.027],[1983.611,1292.109],[1983.611,1156.515],[1733.995,1134.943]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "Hall",
+      "polygon_points": [[2276.371,1276.701],[2273.289,1119.535],[2002.101,1138.025],[2005.183,1282.864]]
+    }
+  ]
+}

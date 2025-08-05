@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_PB_010577",
+    "src_path": "\\OCR\\KE\\PB",
+    "label_path": "\\OCR\\KE\\PB",
+    "language_type": "KE",
+    "group": "PB",
+    "small_group": 5
+  },
+  "Images": {
+    "file_name": "OCR_KE_P5_010577.jpg",
+    "created_day": "2023.08.27.",
+    "extension": "jpg",
+    "width": 4000,
+    "height": 2252,
+    "location": null,
+    "device_type": "SM-F721N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "평화윗길",
+      "polygon_points": [[2208.000,536.000],[3255.000,536.000],[3255.000,781.000],[2208.000,781.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "41-43",
+      "polygon_points": [[1708.000,619.000],[2114.000,619.000],[2114.000,750.000],[1708.000,750.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "41-1",
+      "polygon_points": [[1286.000,625.000],[1572.000,625.000],[1572.000,739.000],[1286.000,739.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Pyeonghwawit-gil",
+      "polygon_points": [[1708.000,802.000],[3299.714,818.412],[3340.218,956.124],[1708.000,963.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "단원로",
+      "polygon_points": [[1130.000,1468.000],[1947.000,1468.000],[1947.000,1718.000],[1130.000,1718.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "79-1",
+      "polygon_points": [[2197.000,1489.000],[2546.000,1489.000],[2546.000,1630.000],[2234.470,1640.635]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "Danwon-ro",
+      "polygon_points": [[1088.218,1754.045],[2137.261,1798.599],[2165.613,1948.462],[1093.000,1947.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "79-8",
+      "polygon_points": [[2351.930,1810.750],[2736.714,1806.699],[2736.714,1664.937],[2360.031,1648.735]]
+    }
+  ]
+}

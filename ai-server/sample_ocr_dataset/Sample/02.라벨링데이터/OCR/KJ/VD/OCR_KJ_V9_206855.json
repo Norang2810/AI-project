@@ -1,0 +1,114 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206855",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206855.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "つまり",
+      "polygon_points": [[720.804,859.411],[578.431,860.545],[576.162,811.764],[724.775,812.898]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "肯定的な",
+      "polygon_points": [[976.624,861.112],[775.826,859.411],[776.393,807.793],[977.758,811.196]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "影響",
+      "polygon_points": [[1080.426,860.545],[984.565,860.545],[982.296,813.465],[1080.426,811.764]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "要因",
+      "polygon_points": [[1180.826,862.814],[1084.397,859.978],[1083.830,812.898],[1182.527,813.465]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "よりも",
+      "polygon_points": [[1331.141,859.978],[1189.334,859.978],[1191.603,810.629],[1326.603,814.033]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "즉",
+      "polygon_points": [[818.935,967.184],[768.452,965.482],[765.615,901.386],[820.069,904.789]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "긍정적인",
+      "polygon_points": [[1031.645,967.184],[829.145,963.781],[827.443,904.789],[1032.779,906.491]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "영향",
+      "polygon_points": [[1150.762,966.049],[1043.557,963.781],[1038.452,902.520],[1151.330,903.654]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "요인",
+      "polygon_points": [[1269.880,969.453],[1160.405,964.348],[1160.405,901.953],[1269.880,905.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "보다는",
+      "polygon_points": [[1430.973,968.886],[1277.821,964.915],[1273.283,903.087],[1430.973,905.356]]
+    }
+  ]
+}

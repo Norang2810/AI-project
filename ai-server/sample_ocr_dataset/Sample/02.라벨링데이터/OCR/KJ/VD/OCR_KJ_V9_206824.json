@@ -1,0 +1,138 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206824",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206824.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "私たちの",
+      "polygon_points": [[572.156,859.810],[370.223,860.944],[370.787,811.122],[573.751,810.297]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "地域の",
+      "polygon_points": [[724.740,857.541],[580.097,857.541],[579.530,809.326],[727.009,810.461]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "不動産",
+      "polygon_points": [[878.458,859.810],[729.845,857.541],[732.681,809.894],[880.160,812.163]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "市場の",
+      "polygon_points": [[1027.072,862.079],[882.996,858.675],[883.563,809.326],[1034.446,812.730]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "全般的な",
+      "polygon_points": [[1229.572,862.646],[1035.013,860.377],[1037.849,812.730],[1232.975,812.730]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "動向であり",
+      "polygon_points": [[1478.584,862.646],[1238.647,862.079],[1236.378,811.595],[1486.525,810.461]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "우리",
+      "polygon_points": [[627.177,966.617],[522.240,961.512],[522.807,903.654],[627.177,904.789]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "지역의",
+      "polygon_points": [[791.672,964.915],[635.118,962.646],[633.983,906.491],[793.374,904.789]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "부동산",
+      "polygon_points": [[952.765,968.318],[801.315,964.915],[800.748,903.654],[957.303,903.654]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "시장에",
+      "polygon_points": [[1121.231,966.049],[963.542,963.213],[968.647,905.356],[1119.530,903.654]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "대한",
+      "polygon_points": [[1232.408,966.617],[1129.740,963.213],[1128.038,904.789],[1242.051,904.222]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "전반적인",
+      "polygon_points": [[1454.193,967.751],[1248.857,962.079],[1247.156,905.923],[1453.059,905.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "동향이고",
+      "polygon_points": [[1672.009,966.617],[1464.971,966.049],[1458.731,906.491],[1673.710,903.087]]
+    }
+  ]
+}

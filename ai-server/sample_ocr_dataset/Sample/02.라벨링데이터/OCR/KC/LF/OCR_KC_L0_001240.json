@@ -1,0 +1,130 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_001240",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_001240.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 2497,
+    "height": 1158,
+    "location": null,
+    "device_type": "Galaxy S23",
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": 1,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "국제선도착",
+      "polygon_points": [[77.651,697.279],[44.755,975.629],[1024.041,817.476],[1055.672,532.799]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "International",
+      "polygon_points": [[1146.235,431.880],[1122.987,612.333],[1914.545,469.521],[1930.044,286.853]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Arrivals",
+      "polygon_points": [[1954.400,274.676],[1927.830,465.092],[2401.658,382.062],[2408.300,212.679]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "国",
+      "polygon_points": [[1120.257,672.384],[1100.934,852.737],[1216.069,835.024],[1241.029,655.476]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "际",
+      "polygon_points": [[1245.568,655.485],[1218.485,834.218],[1344.088,816.505],[1363.411,635.348]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "到",
+      "polygon_points": [[1365.826,638.568],[1347.308,813.285],[1464.859,794.766],[1488.209,616.024]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "达",
+      "polygon_points": [[1491.429,609.583],[1468.080,791.546],[1604.955,773.027],[1606.565,600.726]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "国",
+      "polygon_points": [[1653.263,583.013],[1634.745,769.002],[1754.712,750.483],[1775.645,561.274]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "際",
+      "polygon_points": [[1778.061,561.274],[1757.932,746.458],[1885.145,723.914],[1909.299,543.561]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "線",
+      "polygon_points": [[1910.910,537.120],[1887.561,724.719],[2020.409,698.149],[2027.656,522.627]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "到",
+      "polygon_points": [[2030.876,525.848],[2023.630,697.344],[2150.843,680.436],[2164.530,496.863]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "着",
+      "polygon_points": [[2166.946,490.421],[2153.258,681.241],[2278.056,665.943],[2303.015,479.955]]
+    }
+  ]
+}

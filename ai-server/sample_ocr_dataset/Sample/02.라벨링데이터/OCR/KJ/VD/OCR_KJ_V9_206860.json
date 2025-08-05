@@ -1,0 +1,138 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206860",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206860.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "調整を",
+      "polygon_points": [[722.223,859.411],[577.580,860.545],[577.580,811.764],[724.491,812.898]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "示すしか",
+      "polygon_points": [[928.432,860.516],[727.996,860.959],[731.238,808.450],[931.224,811.647]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "最初の",
+      "polygon_points": [[1182.426,860.959],[1034.623,860.959],[1036.568,811.043],[1183.723,809.099]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "理由は",
+      "polygon_points": [[1335.415,864.849],[1186.964,863.552],[1188.260,809.099],[1336.712,813.636]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "조정을",
+      "polygon_points": [[771.944,967.184],[615.956,962.646],[614.822,904.222],[769.675,903.654]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "나타낼",
+      "polygon_points": [[942.679,968.886],[782.154,967.751],[781.019,903.087],[939.843,904.222]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "수",
+      "polygon_points": [[1006.775,967.184],[951.187,966.049],[948.918,905.923],[1005.641,904.789]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "밖에",
+      "polygon_points": [[1117.952,967.751],[1018.687,967.751],[1013.582,901.953],[1121.355,904.789]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "없는",
+      "polygon_points": [[1235.935,967.751],[1130.431,967.751],[1128.729,905.356],[1237.637,904.222]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "첫",
+      "polygon_points": [[1306.839,966.049],[1248.414,966.617],[1243.876,903.087],[1301.733,905.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "번째",
+      "polygon_points": [[1418.582,967.751],[1313.078,965.482],[1312.511,903.087],[1416.313,907.058]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "이유는",
+      "polygon_points": [[1579.107,970.020],[1432.196,964.348],[1427.658,903.087],[1577.973,903.654]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "ない",
+      "polygon_points": [[1026.867,861.214],[936.111,861.214],[934.715,810.251],[1028.263,813.043]]
+    }
+  ]
+}

@@ -73,4 +73,12 @@ jspm_packages/
 
 # Temporary files
 tmp/
-temp/ 
+temp/
+
+# AI Server - Large files and datasets
+ai-server/sample_ocr_dataset.zip
+ai-server/sample_ocr_dataset/
+ai-server/models/*.pth
+ai-server/models/*.zip
+ai-server/*.zip
+ai-server/*.json 

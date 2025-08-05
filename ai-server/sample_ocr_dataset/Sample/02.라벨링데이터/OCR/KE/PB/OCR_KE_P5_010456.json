@@ -1,0 +1,74 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_PB_010456",
+    "src_path": "\\OCR\\KE\\PB",
+    "label_path": "\\OCR\\KE\\PB",
+    "language_type": "KE",
+    "group": "PB",
+    "small_group": 5
+  },
+  "Images": {
+    "file_name": "OCR_KE_P5_010456.jpg",
+    "created_day": "2023.08.27.",
+    "extension": "jpg",
+    "width": 2252,
+    "height": 4000,
+    "location": null,
+    "device_type": "SM-F711N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "명지로14번길",
+      "polygon_points": [[1497.913,1305.584],[1012.901,1327.220],[1011.098,1238.872],[1501.519,1208.221]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Myeongji-ro",
+      "polygon_points": [[1207.627,1384.917],[892.098,1401.144],[888.492,1334.432],[1204.021,1321.811]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "14beon-gil",
+      "polygon_points": [[1496.110,1366.886],[1223.854,1379.508],[1222.051,1320.008],[1496.110,1307.387]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "17",
+      "polygon_points": [[846.203,1279.352],[847.641,1319.597],[810.271,1322.471],[807.396,1282.227]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "1",
+      "polygon_points": [[897.946,1282.227],[897.946,1321.034],[877.824,1321.034],[873.512,1277.915]]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_CT_003100",
+    "src_path": "\\OCR\\KJ\\CT",
+    "label_path": "\\OCR\\KJ\\CT",
+    "language_type": "KJ",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KJ_C2_003100.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.20547222222222, 129.0785527777778",
+    "device_type": "iPhone 12",
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": 1,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "여자화장실",
+      "polygon_points": [[1212.037,1533.201],[2523.595,1542.470],[2542.133,1811.270],[1205.085,1808.952]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Toilet",
+      "polygon_points": [[1524.361,1968.461],[1214.742,1968.461],[1211.534,1840.122],[1524.361,1844.935]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Women",
+      "polygon_points": [[1550.029,1835.309],[1550.029,1970.066],[1986.384,1965.253],[1984.779,1836.913]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "トイレ",
+      "polygon_points": [[2356.841,1959.823],[2101.766,1958.219],[2104.974,1829.879],[2356.841,1839.505]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "女子",
+      "polygon_points": [[2388.926,1967.844],[2589.456,1972.657],[2581.435,1853.943],[2380.904,1844.318]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "洗",
+      "polygon_points": [[2815.516,1983.792],[2711.240,1982.488],[2703.419,1861.268],[2807.695,1863.875]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "手",
+      "polygon_points": [[2908.060,1991.613],[2815.516,1986.399],[2807.695,1859.964],[2902.847,1863.875]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "间",
+      "polygon_points": [[3003.212,1995.523],[2909.364,1991.613],[2901.543,1863.875],[2999.302,1874.302]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "女",
+      "polygon_points": [[3132.254,2009.861],[3039.709,2004.647],[3033.191,1893.854],[3129.647,1900.371]]
+    }
+  ]
+}

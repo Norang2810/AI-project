@@ -1,0 +1,66 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_PB_010605",
+    "src_path": "\\OCR\\KE\\PB",
+    "label_path": "\\OCR\\KE\\PB",
+    "language_type": "KE",
+    "group": "PB",
+    "small_group": 5
+  },
+  "Images": {
+    "file_name": "OCR_KE_P5_010605.jpg",
+    "created_day": "2023.08.27.",
+    "extension": "jpg",
+    "width": 4032,
+    "height": 1816,
+    "location": null,
+    "device_type": "SM-G991N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "90",
+      "polygon_points": [[764.420,1017.467],[993.510,1017.467],[986.462,1186.642],[792.615,1193.691]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "반송로",
+      "polygon_points": [[1145.063,1116.152],[1828.811,1098.530],[1839.385,887.061],[1152.112,908.208]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Bansong-ro",
+      "polygon_points": [[1123.916,1306.474],[1881.678,1274.754],[1888.727,1112.628],[1127.441,1147.872]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "86",
+      "polygon_points": [[1973.315,946.977],[2220.028,939.928],[2234.126,1119.677],[2054.378,1147.872]]
+    }
+  ]
+}

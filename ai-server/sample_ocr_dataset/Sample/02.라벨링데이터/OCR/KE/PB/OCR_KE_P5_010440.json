@@ -1,0 +1,74 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_PB_010440",
+    "src_path": "\\OCR\\KE\\PB",
+    "label_path": "\\OCR\\KE\\PB",
+    "language_type": "KE",
+    "group": "PB",
+    "small_group": 5
+  },
+  "Images": {
+    "file_name": "OCR_KE_P5_010440.jpg",
+    "created_day": "2023.08.27.",
+    "extension": "jpg",
+    "width": 2252,
+    "height": 4000,
+    "location": null,
+    "device_type": "SM-F711N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "태복산로14번길",
+      "polygon_points": [[1201.944,1962.037],[755.069,1931.232],[758.675,1857.308],[1198.965,1896.495]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "14beon-gil",
+      "polygon_points": [[1253.583,2019.633],[1046.036,2002.752],[1036.340,1952.868],[1256.562,1974.946]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Taeboksan-ro",
+      "polygon_points": [[761.031,1983.884],[1027.168,2007.717],[1038.143,1956.474],[760.038,1938.203]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "13",
+      "polygon_points": [[1326.584,1932.299],[1323.164,1965.357],[1295.806,1960.797],[1293.526,1931.159]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "1",
+      "polygon_points": [[1361.922,1935.719],[1361.922,1968.777],[1341.403,1966.497],[1343.683,1934.579]]
+    }
+  ]
+}

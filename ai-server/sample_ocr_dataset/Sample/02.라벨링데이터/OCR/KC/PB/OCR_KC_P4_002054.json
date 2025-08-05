@@ -1,0 +1,202 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_002054",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_002054.JPG",
+    "created_day": "2023.08.24.",
+    "extension": "JPG",
+    "width": 4000,
+    "height": 2252,
+    "location": null,
+    "device_type": null,
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 4
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "직통",
+      "polygon_points": [[1818.162,889.653],[1572.215,952.858],[1581.833,812.709],[1825.032,750.879]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "동서울",
+      "polygon_points": [[1639.541,1233.705],[1368.862,1283.169],[1385.350,1129.280],[1653.281,1049.588]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "DongSeoul",
+      "polygon_points": [[1928.083,1055.084],[1656.029,1127.906],[1661.525,1046.840],[1939.075,971.269]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "東",
+      "polygon_points": [[1759.080,1186.989],[1690.380,1200.729],[1698.624,1123.784],[1757.706,1110.044]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "首",
+      "polygon_points": [[1829.154,1166.379],[1761.828,1171.875],[1765.950,1110.044],[1826.406,1096.304]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "尔",
+      "polygon_points": [[1899.229,1148.517],[1836.024,1151.265],[1836.024,1093.556],[1901.977,1077.068]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "동서울심야",
+      "polygon_points": [[1608.489,1560.170],[1332.313,1616.504],[1351.549,1439.257],[1631.847,1370.556]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "DongSeoul",
+      "polygon_points": [[1905.274,1384.296],[1620.855,1452.997],[1640.091,1365.060],[1919.015,1297.734]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "東",
+      "polygon_points": [[1688.181,1527.193],[1630.473,1529.941],[1630.473,1463.989],[1686.807,1451.623]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "首",
+      "polygon_points": [[1734.897,1516.201],[1690.929,1518.949],[1689.555,1452.997],[1736.271,1437.883]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "尔",
+      "polygon_points": [[1789.858,1502.461],[1734.897,1505.209],[1734.897,1436.509],[1789.858,1428.265]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "深",
+      "polygon_points": [[1848.940,1488.721],[1787.110,1491.469],[1788.484,1425.517],[1839.322,1411.777]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "夜",
+      "polygon_points": [[1902.526,1476.355],[1846.192,1477.729],[1839.322,1411.777],[1895.656,1400.785]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "인천공항",
+      "polygon_points": [[1572.215,1907.244],[1285.047,1960.830],[1307.031,1776.713],[1587.329,1710.761]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "Incheon",
+      "polygon_points": [[1751.935,1773.141],[1598.046,1791.003],[1606.290,1714.058],[1743.691,1678.334]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "Airport",
+      "polygon_points": [[1890.710,1736.043],[1754.683,1758.027],[1756.057,1681.082],[1900.328,1646.732]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "仁",
+      "polygon_points": [[1672.243,1873.443],[1606.290,1881.688],[1607.664,1803.369],[1673.617,1795.125]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "川",
+      "polygon_points": [[1740.943,1855.581],[1672.243,1865.199],[1683.235,1788.255],[1738.195,1774.515]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "空",
+      "polygon_points": [[1809.643,1843.215],[1740.943,1847.337],[1740.943,1784.133],[1804.147,1767.645]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "港",
+      "polygon_points": [[1883.840,1832.223],[1808.269,1836.345],[1804.147,1766.271],[1878.344,1752.531]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "5",
+      "polygon_points": [[2350.019,435.719],[2035.985,534.708],[2088.893,159.233],[2361.966,75.604]]
+    }
+  ]
+}

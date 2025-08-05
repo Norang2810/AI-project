@@ -1,0 +1,114 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206845",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206845.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "いくつかの",
+      "polygon_points": [[726.902,859.014],[477.322,853.828],[473.433,813.636],[730.144,807.802]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "ファクト",
+      "polygon_points": [[916.194,862.904],[735.978,859.014],[733.385,808.450],[916.842,812.988]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "つまり",
+      "polygon_points": [[1124.934,857.718],[984.910,858.366],[981.668,811.692],[1124.934,811.043]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "事実を",
+      "polygon_points": [[1279.868,859.663],[1134.657,859.663],[1132.713,811.043],[1278.571,809.747]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "持って",
+      "polygon_points": [[1432.857,866.145],[1285.054,859.663],[1283.757,809.099],[1438.043,811.043]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "몇가지",
+      "polygon_points": [[912.953,969.867],[759.964,967.922],[757.371,902.448],[917.491,906.337]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "팩트",
+      "polygon_points": [[1028.991,965.329],[922.677,962.736],[923.973,904.393],[1028.991,905.689]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "즉",
+      "polygon_points": [[1109.375,967.274],[1056.866,965.329],[1056.218,900.503],[1108.727,903.744]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "사실을",
+      "polygon_points": [[1274.681,967.922],[1117.154,965.977],[1119.747,901.151],[1273.385,904.393]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "가지고",
+      "polygon_points": [[1442.581,967.274],[1283.109,969.219],[1279.219,903.096],[1436.746,900.503]]
+    }
+  ]
+}

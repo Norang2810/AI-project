@@ -1,0 +1,122 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206872",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206872.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "2",
+      "polygon_points": [[514.795,859.978],[485.299,858.276],[484.732,812.331],[514.228,811.764]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "番目の",
+      "polygon_points": [[665.110,861.680],[517.631,860.545],[518.198,812.331],[663.975,810.629]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "取引量が",
+      "polygon_points": [[863.072,862.814],[669.648,858.844],[669.648,809.495],[873.282,811.196]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "大幅に",
+      "polygon_points": [[1015.656,862.247],[870.446,861.680],[874.984,811.196],[1019.059,811.196]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "増加することなく",
+      "polygon_points": [[1414.984,869.054],[1025.299,861.112],[1026.433,808.360],[1411.013,808.360]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "두",
+      "polygon_points": [[732.610,970.020],[678.723,967.184],[674.753,908.192],[732.043,903.087]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "번째",
+      "polygon_points": [[854.564,969.453],[744.522,966.617],[741.686,903.087],[850.026,905.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "거래량이",
+      "polygon_points": [[1072.379,969.453],[862.505,964.348],[858.534,903.654],[1072.379,905.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "크게",
+      "polygon_points": [[1188.660,967.751],[1080.887,964.915],[1077.484,904.789],[1187.526,905.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "늘어나지",
+      "polygon_points": [[1401.370,968.318],[1196.601,968.886],[1192.064,900.251],[1406.475,907.058]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "않고",
+      "polygon_points": [[1519.354,966.617],[1411.013,967.184],[1407.043,905.356],[1514.249,905.923]]
+    }
+  ]
+}

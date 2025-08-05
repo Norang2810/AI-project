@@ -1,0 +1,82 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_000026",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_000026.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 2268,
+    "location": "37.5239079, 127.0989414",
+    "device_type": "iPhone 14 Pro Max",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "24OPEN",
+      "polygon_points": [[600.259,662.601],[600.259,1052.340],[2220.259,1033.557],[2229.651,657.905]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "一",
+      "polygon_points": [[557.998,1211.992],[562.694,1343.470],[830.346,1324.688],[830.346,1216.688]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "片",
+      "polygon_points": [[1083.911,1160.340],[1055.738,1427.992],[825.651,1427.992],[877.303,1155.644]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "丹",
+      "polygon_points": [[1332.781,1160.340],[1318.694,1423.296],[1083.911,1404.514],[1112.085,1150.948]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "心",
+      "polygon_points": [[1591.042,1160.340],[1605.129,1409.209],[1342.172,1413.905],[1356.259,1174.427]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "일편단심",
+      "polygon_points": [[1727.216,1141.557],[1717.825,1423.296],[2656.955,1427.992],[2671.042,1165.035]]
+    }
+  ]
+}

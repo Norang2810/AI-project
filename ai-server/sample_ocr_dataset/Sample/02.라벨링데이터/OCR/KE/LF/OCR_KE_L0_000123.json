@@ -1,0 +1,66 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000123",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000123.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 2531,
+    "height": 1424,
+    "location": "37.026217, 127.96305",
+    "device_type": "iPhone 14 Pro Max",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "권선종묘농약사",
+      "polygon_points": [[54.811,820.305],[2297.439,784.533],[2261.667,1255.072],[54.811,1235.810]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Fourseason",
+      "polygon_points": [[653.387,1279.724],[1076.320,1279.912],[1085.059,1358.835],[653.387,1362.275]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "seed",
+      "polygon_points": [[1093.518,1279.912],[1284.556,1279.724],[1286.276,1363.995],[1103.977,1363.995]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "market",
+      "polygon_points": [[1592.262,1365.903],[1303.335,1359.024],[1293.016,1273.033],[1595.841,1278.005]]
+    }
+  ]
+}

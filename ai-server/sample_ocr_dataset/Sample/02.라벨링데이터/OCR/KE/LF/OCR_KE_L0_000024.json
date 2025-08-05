@@ -1,0 +1,74 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000024",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000024.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 2268,
+    "location": "36.246254, 127.6194078",
+    "device_type": "iPhone 14 Pro Max",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "2.1m",
+      "polygon_points": [[1179.645,1151.757],[1179.106,1415.728],[1628.170,1411.192],[1619.098,1139.032]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "높이제한",
+      "polygon_points": [[1681.459,1132.078],[1682.602,1420.264],[2626.090,1438.408],[2653.306,1157.176]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "2.1m",
+      "polygon_points": [[2724.444,1225.553],[2694.130,1402.120],[2961.754,1406.656],[2957.218,1252.432]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "HEIGHT",
+      "polygon_points": [[3342.778,1261.504],[3347.314,1406.656],[2975.362,1415.728],[2979.898,1256.968]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "LIIMIT",
+      "polygon_points": [[3678.442,1266.040],[3664.834,1411.192],[3365.458,1406.656],[3369.994,1270.576]]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_CT_000714",
+    "src_path": "\\OCR\\KC\\CT",
+    "label_path": "\\OCR\\KC\\CT",
+    "language_type": "KC",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KC_C2_000714.jpeg",
+    "created_day": "2023.08.23.",
+    "extension": "jpeg",
+    "width": 1159,
+    "height": 466,
+    "location": "36.992223, 127.5864581",
+    "device_type": "iPhone 14 Pro",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "안동놋다리밟기전수교육관",
+      "polygon_points": [[39.000,33.000],[1131.660,47.100],[1131.000,189.000],[39.000,189.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "놋다리밟기",
+      "polygon_points": [[207.000,215.000],[699.000,215.000],[699.000,332.000],[207.000,332.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Andong",
+      "polygon_points": [[35.000,357.000],[257.000,357.000],[257.000,460.000],[35.000,460.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Nottaribalggi",
+      "polygon_points": [[289.000,356.000],[652.000,356.000],[652.000,461.000],[289.000,461.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Training",
+      "polygon_points": [[680.000,356.000],[904.000,356.000],[904.000,462.000],[680.000,462.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "Center",
+      "polygon_points": [[939.000,357.000],[1122.000,357.000],[1122.000,443.000],[939.000,443.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "安",
+      "polygon_points": [[37.000,214.000],[111.000,214.000],[111.000,328.000],[37.000,328.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "東",
+      "polygon_points": [[122.000,218.000],[198.000,218.000],[198.000,327.000],[122.000,327.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "傳",
+      "polygon_points": [[704.000,218.000],[790.000,218.000],[790.000,328.000],[704.000,328.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "修",
+      "polygon_points": [[797.000,221.000],[869.000,221.000],[869.000,330.000],[797.000,330.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "敎",
+      "polygon_points": [[880.000,222.000],[953.000,222.000],[953.000,329.000],[880.000,329.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "育",
+      "polygon_points": [[964.000,221.000],[1035.000,221.000],[1035.000,332.000],[964.000,332.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "館",
+      "polygon_points": [[1046.000,221.000],[1120.000,221.000],[1120.000,332.000],[1046.000,332.000]]
+    }
+  ]
+}
