@@ -1,0 +1,114 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_001584",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_001584.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 4000,
+    "height": 2252,
+    "location": null,
+    "device_type": null,
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 1
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "대구",
+      "polygon_points": [[244.000,341.000],[1185.000,341.000],[1185.000,836.000],[244.000,836.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "콘서트하우스",
+      "polygon_points": [[219.000,854.000],[2977.000,854.000],[2977.000,1402.000],[219.000,1402.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Daegu",
+      "polygon_points": [[663.000,1427.000],[1371.000,1427.000],[1371.000,1649.000],[663.000,1649.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "Concert",
+      "polygon_points": [[1419.000,1424.000],[2253.000,1424.000],[2253.000,1651.000],[1419.000,1651.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "House",
+      "polygon_points": [[2294.000,1442.000],[2974.000,1442.000],[2974.000,1664.000],[2294.000,1664.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "大",
+      "polygon_points": [[1894.000,1674.000],[2111.000,1674.000],[2111.000,1876.000],[1894.000,1876.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "邱",
+      "polygon_points": [[2122.000,1674.000],[2326.000,1674.000],[2326.000,1893.000],[2122.000,1893.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "音",
+      "polygon_points": [[2330.000,1676.000],[2532.000,1676.000],[2532.000,1899.000],[2330.000,1899.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "樂",
+      "polygon_points": [[2537.000,1674.000],[2753.000,1674.000],[2753.000,1896.000],[2537.000,1896.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "堂",
+      "polygon_points": [[2753.000,1678.000],[2970.000,1678.000],[2970.000,1901.000],[2753.000,1901.000]]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000167",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000167.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1600,
+    "height": 739,
+    "location": "36.55915, 128.749587",
+    "device_type": null,
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "화랑마트",
+      "polygon_points": [[601.862,217.968],[1294.451,239.388],[1326.582,437.526],[617.927,441.096]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "HWARANG",
+      "polygon_points": [[1231.200,507.103],[1061.265,509.959],[1051.269,459.978],[1229.772,452.838]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "MART",
+      "polygon_points": [[1329.733,501.391],[1231.200,502.819],[1235.484,455.694],[1331.161,455.694]]
+    }
+  ]
+}

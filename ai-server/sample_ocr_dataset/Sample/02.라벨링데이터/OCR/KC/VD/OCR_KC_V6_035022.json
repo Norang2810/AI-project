@@ -1,0 +1,210 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_VD_035022",
+    "src_path": "\\OCR\\KC\\VD",
+    "label_path": "\\OCR\\KC\\VD",
+    "language_type": "KC",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KC_V6_035022.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "평화로워",
+      "polygon_points": [[440.000,882.000],[723.715,892.159],[726.635,970.996],[440.000,975.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "연제구의",
+      "polygon_points": [[960.000,882.000],[1228.858,886.319],[1239.078,972.456],[960.000,972.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "位",
+      "polygon_points": [[577.043,623.463],[622.751,628.404],[627.692,667.935],[577.043,671.641]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "于",
+      "polygon_points": [[665.988,624.698],[663.517,671.641],[630.163,667.935],[625.221,624.698]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "延",
+      "polygon_points": [[711.696,627.169],[711.696,672.877],[667.223,669.171],[667.223,623.463]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "济",
+      "polygon_points": [[756.168,628.404],[756.168,667.935],[711.696,671.641],[711.696,625.934]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "区",
+      "polygon_points": [[803.111,623.463],[796.934,667.935],[759.874,670.406],[754.933,624.698]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "的",
+      "polygon_points": [[848.819,620.992],[845.113,667.935],[799.405,670.406],[805.582,623.463]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "一",
+      "polygon_points": [[888.350,630.875],[889.585,659.288],[845.113,658.053],[847.584,629.640]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "家",
+      "polygon_points": [[935.293,628.404],[936.528,674.112],[889.585,669.171],[892.056,625.934]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "看",
+      "polygon_points": [[978.530,624.698],[976.059,671.641],[934.058,672.877],[938.999,624.698]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "起",
+      "polygon_points": [[1025.473,627.169],[1027.944,672.877],[982.236,670.406],[981.001,628.404]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "来",
+      "polygon_points": [[1065.004,623.463],[1069.946,670.406],[1026.708,665.465],[1027.944,624.698]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "很",
+      "polygon_points": [[1114.418,627.169],[1116.889,674.112],[1072.416,669.171],[1071.181,628.404]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "安",
+      "polygon_points": [[1160.126,623.463],[1160.126,669.171],[1119.359,672.877],[1116.889,630.875]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "静",
+      "polygon_points": [[1202.127,623.463],[1202.127,674.112],[1162.596,671.641],[1163.832,623.463]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "的",
+      "polygon_points": [[1249.070,619.757],[1245.364,666.700],[1208.304,670.406],[1209.539,630.875]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "酒",
+      "polygon_points": [[1298.484,625.934],[1293.543,669.171],[1252.777,670.406],[1254.012,623.463]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "吧",
+      "polygon_points": [[1339.251,625.934],[1340.486,667.935],[1299.720,667.935],[1299.720,619.757]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "보이는",
+      "polygon_points": [[739.774,889.239],[948.547,887.779],[948.547,970.996],[736.854,973.916]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "한",
+      "polygon_points": [[1244.918,883.399],[1326.675,890.699],[1319.375,970.996],[1256.597,970.996]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "술집",
+      "polygon_points": [[1472.670,889.239],[1472.670,966.616],[1322.295,968.076],[1338.355,893.619]]
+    }
+  ]
+}

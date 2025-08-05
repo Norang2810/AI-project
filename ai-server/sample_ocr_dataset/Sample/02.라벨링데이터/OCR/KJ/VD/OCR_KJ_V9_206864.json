@@ -1,0 +1,154 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206864",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206864.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "今",
+      "polygon_points": [[579.527,862.275],[528.373,860.625],[520.948,811.947],[570.451,806.996]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "現",
+      "polygon_points": [[675.958,858.844],[626.609,860.545],[626.042,812.898],[674.256,812.898]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "政府は",
+      "polygon_points": [[824.004,859.978],[679.929,858.276],[677.093,812.331],[827.408,807.793]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "その",
+      "polygon_points": [[930.076,858.276],[835.916,856.575],[835.916,814.033],[927.807,811.764]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "様々な",
+      "polygon_points": [[1079.824,857.142],[934.046,858.844],[932.345,807.793],[1078.689,810.062]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "議論の",
+      "polygon_points": [[1232.975,862.247],[1085.496,860.545],[1085.496,806.091],[1234.109,808.928]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "中でも",
+      "polygon_points": [[1379.319,861.112],[1239.214,861.112],[1238.647,810.062],[1376.483,811.764]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "지금",
+      "polygon_points": [[731.546,967.751],[625.475,967.184],[619.803,904.222],[725.874,905.923]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "현",
+      "polygon_points": [[795.076,967.184],[739.488,964.348],[734.382,904.222],[791.105,903.087]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "정부는",
+      "polygon_points": [[951.063,965.482],[805.853,964.915],[799.614,902.520],[953.332,904.789]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "그",
+      "polygon_points": [[1019.130,963.213],[960.139,963.781],[961.840,902.520],[1014.025,907.058]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "여러",
+      "polygon_points": [[1133.143,963.781],[1028.206,964.915],[1023.101,903.087],[1128.605,904.789]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "가지",
+      "polygon_points": [[1244.887,966.049],[1143.920,966.049],[1132.576,905.356],[1244.887,902.520]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "논란",
+      "polygon_points": [[1360.034,966.049],[1252.828,966.049],[1250.559,901.953],[1361.735,905.923]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "속에서도",
+      "polygon_points": [[1574.446,965.482],[1369.677,963.781],[1369.677,902.520],[1571.042,905.923]]
+    }
+  ]
+}

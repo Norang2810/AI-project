@@ -1,0 +1,186 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_CT_000399",
+    "src_path": "\\OCR\\KC\\CT",
+    "label_path": "\\OCR\\KC\\CT",
+    "language_type": "KC",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KC_C2_000399.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.2012715, 128.8127624",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "화장실",
+      "polygon_points": [[517.667,436.978],[1799.362,360.877],[1847.426,777.428],[581.752,829.497]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "TOILET",
+      "polygon_points": [[786.022,1065.810],[1671.193,1037.773],[1655.171,825.492],[749.974,837.508]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "佛",
+      "polygon_points": [[319.754,1595.468],[617.291,1584.024],[605.847,1303.653],[279.701,1297.931]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "國",
+      "polygon_points": [[943.437,1578.302],[943.437,1292.209],[628.735,1280.766],[640.178,1584.024]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "寺",
+      "polygon_points": [[1240.973,1555.415],[1252.417,1263.600],[943.437,1257.878],[954.880,1589.746]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "美",
+      "polygon_points": [[1538.509,1555.415],[1549.953,1257.878],[1252.417,1257.878],[1246.695,1572.580]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "術",
+      "polygon_points": [[1864.655,1549.693],[1858.933,1275.044],[1544.231,1269.322],[1544.231,1566.858]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "館",
+      "polygon_points": [[2173.635,1549.693],[2156.470,1252.156],[1836.046,1257.878],[1853.211,1549.693]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "SOUVENIR",
+      "polygon_points": [[2225.132,1566.858],[2986.139,1521.083],[2974.695,1315.097],[2225.132,1320.819]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "SHOP",
+      "polygon_points": [[3483.940,1521.083],[3489.662,1297.931],[2980.417,1326.540],[2991.860,1526.805]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "관광기념품",
+      "polygon_points": [[1893.264,1881.560],[2780.152,1864.395],[2774.430,1618.355],[1898.986,1618.355]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "朱",
+      "polygon_points": [[3117.741,1847.229],[3094.854,1606.911],[2923.198,1606.911],[2934.642,1841.507]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "印",
+      "polygon_points": [[3266.509,1835.785],[3272.231,1612.633],[3094.854,1612.633],[3123.463,1841.507]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "帳",
+      "polygon_points": [[3433.474,1844.490],[3437.479,1596.161],[3269.257,1584.145],[3265.251,1840.485]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "傅",
+      "polygon_points": [[429.500,2120.855],[697.855,2108.839],[713.876,2349.157],[457.537,2341.147]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "統",
+      "polygon_points": [[1014.274,2341.147],[990.242,2076.797],[713.876,2096.824],[729.898,2353.163]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "茶",
+      "polygon_points": [[1278.623,2333.136],[1258.597,2068.786],[986.237,2104.834],[1006.263,2349.157]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "불국다원",
+      "polygon_points": [[2532.282,2341.147],[2532.282,2032.739],[1290.639,2048.760],[1302.655,2369.184]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 32,
+      "text": "생활자기전시판매",
+      "polygon_points": [[1907.455,2635.035],[3349.362,2606.998],[3365.384,2410.739],[1923.476,2426.760]]
+    }
+  ]
+}

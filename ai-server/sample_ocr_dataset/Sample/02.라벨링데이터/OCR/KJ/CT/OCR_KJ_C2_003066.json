@@ -1,0 +1,162 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_CT_003066",
+    "src_path": "\\OCR\\KJ\\CT",
+    "label_path": "\\OCR\\KJ\\CT",
+    "language_type": "KJ",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KJ_C2_003066.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 3024,
+    "height": 4032,
+    "location": "35.205058333333334, 129.07829166666667",
+    "device_type": "iPhone 12",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "동래구",
+      "polygon_points": [[603.000,1464.000],[1206.649,1470.627],[1204.365,1683.078],[589.856,1683.078]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Dongnae-gu",
+      "polygon_points": [[602.198,1712.633],[1367.056,1719.402],[1370.440,1856.467],[592.045,1856.467]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "관광",
+      "polygon_points": [[1652.111,1685.362],[1654.395,1466.058],[1240.916,1463.773],[1236.347,1685.362]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "안내도",
+      "polygon_points": [[2310.024,1680.793],[1697.799,1676.224],[1690.946,1459.205],[2298.602,1466.058]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Tour",
+      "polygon_points": [[1705.488,1832.776],[1705.488,1712.633],[1378.901,1707.556],[1377.209,1829.392]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Map",
+      "polygon_points": [[1994.848,1858.159],[1989.771,1705.864],[1719.025,1705.864],[1724.102,1859.851]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "东",
+      "polygon_points": [[586.632,1980.603],[678.008,1979.176],[682.292,1892.082],[590.915,1890.654]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "莱",
+      "polygon_points": [[767.958,1979.176],[770.813,1889.227],[682.292,1889.227],[676.581,1977.748]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "区",
+      "polygon_points": [[853.623,1976.320],[857.907,1884.943],[773.669,1884.943],[767.958,1973.465]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "旅",
+      "polygon_points": [[945.000,1976.320],[945.000,1886.371],[860.762,1883.516],[853.623,1976.320]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "游",
+      "polygon_points": [[1030.666,1977.748],[1039.232,1884.943],[946.428,1883.516],[947.856,1976.320]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "指",
+      "polygon_points": [[1122.042,1976.320],[1123.470,1886.371],[1039.232,1884.943],[1029.238,1973.465]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "南",
+      "polygon_points": [[1206.280,1972.037],[1207.708,1884.943],[1123.470,1884.943],[1120.615,1974.892]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "地",
+      "polygon_points": [[1294.802,1970.609],[1293.374,1883.516],[1207.708,1883.516],[1207.708,1973.465]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "图",
+      "polygon_points": [[1384.751,1979.176],[1383.323,1880.660],[1291.946,1882.088],[1294.802,1974.892]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "東莱区観光案内図",
+      "polygon_points": [[556.649,2123.380],[1296.229,2124.807],[1300.513,2012.014],[565.215,2016.297]]
+    }
+  ]
+}

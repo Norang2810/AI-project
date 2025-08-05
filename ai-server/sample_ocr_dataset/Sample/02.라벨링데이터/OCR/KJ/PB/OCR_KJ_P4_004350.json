@@ -1,0 +1,378 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_PB_004350",
+    "src_path": "\\OCR\\KJ\\PB",
+    "label_path": "\\OCR\\KJ\\PB",
+    "language_type": "KJ",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KJ_P4_004350.JPG",
+    "created_day": "2023.08.25.",
+    "extension": "JPG",
+    "width": 4240,
+    "height": 2832,
+    "location": null,
+    "device_type": "ZV-E10",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 3
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "성유스티노신학교",
+      "polygon_points": [[823.663,286.663],[3067.683,293.458],[3080.938,558.544],[810.036,540.872]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "St.",
+      "polygon_points": [[795.892,561.848],[982.000,571.000],[987.763,700.702],[793.367,698.178]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Justin\u0027s",
+      "polygon_points": [[1040.781,551.749],[1583.575,551.749],[1583.575,698.178],[1033.207,693.128]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Seminary",
+      "polygon_points": [[1651.740,559.323],[2356.111,576.996],[2353.586,713.325],[1649.216,705.752]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "聖ユスティノ神学校",
+      "polygon_points": [[1680.401,722.014],[2678.891,726.432],[2687.727,854.557],[1671.565,850.138]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "성모당",
+      "polygon_points": [[765.855,925.246],[2025.013,929.664],[2007.340,1194.750],[739.346,1185.914]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "The",
+      "polygon_points": [[726.092,1208.004],[982.342,1208.004],[977.924,1353.801],[726.092,1344.965]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "聖母堂",
+      "polygon_points": [[1220.919,1380.310],[1622.966,1384.728],[1623.000,1515.000],[1212.083,1517.271]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "샬트르성바오로수녀원",
+      "polygon_points": [[692.382,1614.617],[3754.669,1620.724],[3786.479,1914.085],[664.611,1897.375]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "Convent",
+      "polygon_points": [[655.403,1928.154],[1273.936,1936.990],[1256.264,2091.624],[637.730,2087.206]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "Chartres",
+      "polygon_points": [[2996.994,1936.990],[3654.000,1951.000],[3659.708,2104.878],[3005.830,2100.460]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "シャルトル聖パウロ修道女会",
+      "polygon_points": [[1879.215,2122.550],[3445.000,2128.000],[3445.000,2266.000],[1861.543,2272.766]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "圣",
+      "polygon_points": [[800.941,725.949],[912.025,725.949],[909.500,834.507],[790.842,837.032]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "犹",
+      "polygon_points": [[1020.583,831.983],[909.500,829.458],[912.025,728.473],[1023.108,725.949]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "斯",
+      "polygon_points": [[1124.093,837.032],[1018.059,837.032],[1023.108,725.949],[1134.192,723.424]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "定",
+      "polygon_points": [[1232.652,837.032],[1134.192,839.557],[1131.667,725.949],[1242.751,718.375]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "神",
+      "polygon_points": [[1343.736,839.557],[1237.701,842.081],[1237.701,720.899],[1348.785,720.899]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "学",
+      "polygon_points": [[1452.295,837.032],[1346.260,837.032],[1346.260,720.899],[1452.295,718.375]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "院",
+      "polygon_points": [[1565.903,839.557],[1452.295,834.507],[1454.819,720.899],[1576.001,723.424]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "Shrine",
+      "polygon_points": [[1442.196,1347.007],[1000.386,1341.957],[1005.436,1200.578],[1447.245,1210.677]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "of",
+      "polygon_points": [[1598.723,1347.007],[1469.967,1341.957],[1475.016,1210.677],[1608.822,1205.628]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "Our",
+      "polygon_points": [[1876.432,1352.056],[1636.592,1352.056],[1639.117,1205.628],[1876.432,1205.628]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "Lady",
+      "polygon_points": [[2239.978,1218.251],[2232.404,1369.728],[1914.301,1352.056],[1911.777,1213.201]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "of",
+      "polygon_points": [[2401.554,1357.105],[2270.274,1354.581],[2270.274,1223.300],[2401.554,1220.775]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "Lourdes",
+      "polygon_points": [[2436.899,1213.201],[2972.120,1215.726],[2974.645,1359.630],[2441.948,1359.630]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "圣",
+      "polygon_points": [[710.054,1389.925],[838.810,1389.925],[831.236,1511.107],[697.431,1508.583]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "母",
+      "polygon_points": [[970.091,1387.401],[957.468,1511.107],[831.236,1511.107],[836.286,1394.975]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 32,
+      "text": "堂",
+      "polygon_points": [[1098.847,1513.632],[962.517,1506.058],[965.042,1382.351],[1101.372,1384.876]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 33,
+      "text": "of",
+      "polygon_points": [[1428.983,2090.809],[1280.535,2087.275],[1284.069,1942.361],[1439.586,1935.292]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 34,
+      "text": "Sisters",
+      "polygon_points": [[1471.396,2090.809],[1969.758,2094.344],[1973.292,1931.758],[1474.931,1928.223]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 35,
+      "text": "of",
+      "polygon_points": [[2148.061,1940.476],[2143.643,2088.483],[2000.054,2088.483],[2008.891,1944.895]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 36,
+      "text": "St.",
+      "polygon_points": [[2386.638,2097.319],[2185.615,2092.901],[2185.615,1931.640],[2391.056,1938.267]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 37,
+      "text": "Paul",
+      "polygon_points": [[2428.610,1944.895],[2731.249,1942.685],[2737.877,2095.110],[2430.819,2095.110]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 38,
+      "text": "de",
+      "polygon_points": [[2969.827,2101.737],[2777.639,2097.319],[2771.012,1940.476],[2965.409,1944.895]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 39,
+      "text": "沙",
+      "polygon_points": [[654.744,2119.409],[780.660,2121.618],[774.033,2258.579],[648.117,2254.161]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 40,
+      "text": "尔",
+      "polygon_points": [[888.903,2256.370],[774.033,2256.370],[780.660,2119.409],[899.948,2126.036]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 41,
+      "text": "德",
+      "polygon_points": [[1010.401,2260.788],[888.903,2258.579],[897.739,2123.827],[1019.237,2123.827]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 42,
+      "text": "圣",
+      "polygon_points": [[1136.317,2254.161],[1010.401,2251.952],[1019.237,2126.036],[1138.526,2126.036]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 43,
+      "text": "保",
+      "polygon_points": [[1251.187,2265.207],[1134.107,2260.788],[1138.526,2126.036],[1257.814,2126.036]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 44,
+      "text": "录",
+      "polygon_points": [[1368.267,2256.370],[1248.978,2258.579],[1255.605,2130.455],[1372.685,2137.082]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 45,
+      "text": "修",
+      "polygon_points": [[1489.764,2262.997],[1370.476,2260.788],[1370.476,2134.873],[1498.600,2128.246]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 46,
+      "text": "女",
+      "polygon_points": [[1609.053,2265.207],[1494.182,2262.997],[1494.182,2130.455],[1613.471,2126.036]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 47,
+      "text": "院",
+      "polygon_points": [[1741.596,2267.416],[1611.262,2265.207],[1613.471,2132.664],[1737.178,2128.246]]
+    }
+  ]
+}

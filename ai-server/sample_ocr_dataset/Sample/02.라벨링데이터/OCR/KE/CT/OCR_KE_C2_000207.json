@@ -1,0 +1,66 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_CT_000207",
+    "src_path": "\\OCR\\KE\\CT",
+    "label_path": "\\OCR\\KE\\CT",
+    "language_type": "KE",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KE_C2_000207.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 4128,
+    "height": 2322,
+    "location": "37.26083333333333, 127.03527777777778",
+    "device_type": "SM-A710K",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "경기아트센터",
+      "polygon_points": [[1829.421,1030.999],[2631.417,1083.697],[2639.651,1271.433],[1837.655,1231.910]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "GYEONGGI",
+      "polygon_points": [[1841.376,1321.645],[2207.790,1338.113],[2200.929,1264.007],[1840.003,1253.028]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "ARTS",
+      "polygon_points": [[2218.617,1268.103],[2220.020,1347.154],[2385.798,1344.958],[2383.298,1272.220]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "CENTER",
+      "polygon_points": [[2389.473,1277.367],[2391.532,1347.356],[2631.348,1350.444],[2634.436,1283.542]]
+    }
+  ]
+}

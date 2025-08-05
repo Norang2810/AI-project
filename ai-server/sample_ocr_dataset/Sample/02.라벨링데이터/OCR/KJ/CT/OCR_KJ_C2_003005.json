@@ -1,0 +1,106 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_CT_003005",
+    "src_path": "\\OCR\\KJ\\CT",
+    "label_path": "\\OCR\\KJ\\CT",
+    "language_type": "KJ",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KJ_C2_003005.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 3024,
+    "height": 4032,
+    "location": "35.20475, 129.07754444444444",
+    "device_type": "iPhone 12",
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": 1,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "만남의",
+      "polygon_points": [[950.000,1743.000],[1589.051,1740.378],[1586.472,1967.351],[950.000,1979.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Place",
+      "polygon_points": [[1349.277,2008.297],[1625.900,2012.489],[1630.092,2121.462],[1361.850,2121.462]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Meeting",
+      "polygon_points": [[934.341,2012.489],[1324.129,2016.680],[1324.129,2146.609],[934.341,2150.800]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "相",
+      "polygon_points": [[2277.709,2044.729],[2357.665,2047.308],[2362.824,2147.898],[2280.288,2145.319]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "会",
+      "polygon_points": [[2437.622,2052.466],[2367.982,2052.466],[2367.982,2155.636],[2445.359,2153.057]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "场",
+      "polygon_points": [[2525.316,2060.204],[2445.359,2057.625],[2450.518,2158.215],[2530.474,2168.532]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "所",
+      "polygon_points": [[2607.852,2067.942],[2533.054,2067.942],[2530.474,2178.849],[2610.431,2178.849]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "장소",
+      "polygon_points": [[1679.325,1740.378],[2110.058,1745.537],[2120.375,1967.351],[1679.325,1967.351]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "出会いの広場",
+      "polygon_points": [[1686.841,2006.847],[2215.873,2021.749],[2204.696,2144.693],[1690.567,2137.242]]
+    }
+  ]
+}

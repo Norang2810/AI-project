@@ -1,0 +1,178 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_VD_016615",
+    "src_path": "\\OCR\\KE\\VD",
+    "label_path": "\\OCR\\KE\\VD",
+    "language_type": "KE",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KE_V6_016615.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "that",
+      "polygon_points": [[511.019,710.589],[593.802,709.952],[594.439,755.801],[512.293,757.075]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "situation",
+      "polygon_points": [[320.000,712.000],[505.000,712.000],[505.000,755.000],[320.000,755.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "obstructs",
+      "polygon_points": [[597.000,712.000],[791.080,710.971],[791.717,756.820],[597.000,757.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "traffic",
+      "polygon_points": [[799.995,708.424],[919.712,709.060],[921.623,754.273],[800.632,754.909]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "A",
+      "polygon_points": [[281.774,712.499],[315.524,711.862],[316.160,753.891],[283.047,754.527]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "by",
+      "polygon_points": [[927.991,709.060],[980.208,709.060],[980.844,767.009],[928.627,765.735]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "blocking",
+      "polygon_points": [[991.033,707.150],[1162.330,708.424],[1162.967,769.556],[992.307,765.098]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "the",
+      "polygon_points": [[1172.519,708.424],[1243.203,707.787],[1241.929,756.820],[1172.519,754.909]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "middle",
+      "polygon_points": [[1252.627,709.060],[1393.995,707.787],[1393.359,757.457],[1251.991,757.457]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "of",
+      "polygon_points": [[1405.076,707.660],[1450.288,707.023],[1449.651,757.329],[1405.712,757.329]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "the",
+      "polygon_points": [[1459.203,709.570],[1526.703,710.207],[1526.066,757.966],[1458.566,757.966]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "road",
+      "polygon_points": [[1538.165,706.386],[1633.047,707.023],[1633.047,757.329],[1538.802,756.056]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "도로",
+      "polygon_points": [[371.052,856.924],[521.335,858.197],[521.972,921.240],[371.689,919.966]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "중앙을",
+      "polygon_points": [[527.703,849.282],[732.113,851.193],[733.387,948.622],[530.250,945.438]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "막아",
+      "polygon_points": [[739.627,847.754],[891.821,849.664],[891.821,950.914],[740.901,949.641]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "교통을",
+      "polygon_points": [[1097.505,852.211],[1098.778,946.457],[902.010,945.183],[901.373,852.211]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "방해하는",
+      "polygon_points": [[1110.495,840.494],[1379.859,841.768],[1379.859,946.839],[1112.406,947.476]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "상황",
+      "polygon_points": [[1384.061,841.641],[1530.524,841.641],[1529.250,943.527],[1383.425,944.801]]
+    }
+  ]
+}

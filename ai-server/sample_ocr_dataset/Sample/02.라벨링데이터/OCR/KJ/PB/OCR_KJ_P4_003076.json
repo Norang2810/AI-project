@@ -1,0 +1,314 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_PB_003076",
+    "src_path": "\\OCR\\KJ\\PB",
+    "label_path": "\\OCR\\KJ\\PB",
+    "language_type": "KJ",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KJ_P4_003076.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.20535, 129.07849166666668",
+    "device_type": "iPhone 12",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 4
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "1",
+      "polygon_points": [[764.000,1795.000],[810.000,1795.000],[810.000,1895.000],[764.000,1895.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "서면",
+      "polygon_points": [[917.000,1713.000],[1161.000,1713.000],[1161.000,1803.000],[917.000,1803.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "Seomyeon",
+      "polygon_points": [[1189.000,1705.000],[1378.000,1705.000],[1378.000,1753.000],[1189.000,1753.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "西",
+      "polygon_points": [[1193.000,1759.000],[1228.000,1759.000],[1228.000,1797.000],[1193.000,1797.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "面",
+      "polygon_points": [[1231.000,1757.000],[1268.000,1757.000],[1268.000,1796.000],[1231.000,1796.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "다대포해수욕장",
+      "polygon_points": [[893.351,1899.381],[1337.903,1888.921],[1338.949,1821.977],[903.811,1833.483]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "Dadaepo",
+      "polygon_points": [[982.262,1944.360],[887.075,1943.314],[892.305,1902.519],[985.400,1901.473]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "Beach",
+      "polygon_points": [[1054.436,1938.084],[982.262,1934.946],[985.400,1901.473],[1055.482,1900.427]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "多",
+      "polygon_points": [[1093.138,1934.946],[1064.896,1933.900],[1070.126,1898.335],[1093.138,1897.289]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "大",
+      "polygon_points": [[1115.104,1933.900],[1115.104,1901.473],[1094.184,1900.427],[1093.138,1933.900]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "浦",
+      "polygon_points": [[1137.070,1933.900],[1138.116,1899.381],[1115.104,1899.381],[1115.104,1931.808]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "海",
+      "polygon_points": [[1156.944,1931.808],[1160.082,1897.289],[1137.070,1897.289],[1137.070,1931.808]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "水",
+      "polygon_points": [[1177.864,1931.808],[1177.864,1898.335],[1160.082,1896.243],[1157.990,1932.854]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "浴",
+      "polygon_points": [[1200.877,1932.854],[1201.923,1897.289],[1177.864,1897.289],[1177.864,1930.762]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "场",
+      "polygon_points": [[1223.889,1933.900],[1223.889,1894.151],[1200.877,1893.105],[1200.877,1930.762]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "多大浦海水浴場",
+      "polygon_points": [[1383.927,1925.531],[1233.303,1930.762],[1233.303,1892.059],[1386.019,1885.783]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "85m",
+      "polygon_points": [[1525.000,1885.000],[1604.000,1885.000],[1604.000,1932.000],[1525.000,1932.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "타는",
+      "polygon_points": [[1768.000,1701.000],[2000.000,1701.000],[2000.000,1817.000],[1768.000,1817.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "곳",
+      "polygon_points": [[2030.000,1696.000],[2158.000,1696.000],[2158.000,1812.000],[2030.000,1812.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "Tracks",
+      "polygon_points": [[1684.000,1834.000],[1862.000,1834.000],[1862.000,1897.000],[1684.000,1897.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "乘",
+      "polygon_points": [[1900.000,1829.000],[1953.000,1829.000],[1953.000,1896.000],[1900.000,1896.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "车",
+      "polygon_points": [[1954.000,1829.000],[2005.000,1829.000],[2005.000,1897.000],[1954.000,1897.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "处",
+      "polygon_points": [[2006.000,1828.000],[2062.000,1828.000],[2062.000,1895.000],[2006.000,1895.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 32,
+      "text": "のりば",
+      "polygon_points": [[2101.000,1819.000],[2253.000,1819.000],[2253.000,1883.000],[2101.000,1883.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 33,
+      "text": "85m",
+      "polygon_points": [[2379.000,1861.000],[2465.000,1861.000],[2465.000,1904.000],[2379.000,1904.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 34,
+      "text": "1",
+      "polygon_points": [[3164.000,1727.000],[3229.000,1727.000],[3229.000,1828.000],[3164.000,1828.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 35,
+      "text": "범어사",
+      "polygon_points": [[2789.000,1661.000],[3056.000,1661.000],[3056.000,1752.000],[2789.000,1752.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 36,
+      "text": "Beomeosa",
+      "polygon_points": [[2577.229,1706.346],[2771.786,1701.116],[2764.464,1666.598],[2570.953,1666.598]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 37,
+      "text": "梵",
+      "polygon_points": [[2507.146,1712.622],[2544.803,1710.530],[2551.079,1754.462],[2509.238,1754.462]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 38,
+      "text": "鱼",
+      "polygon_points": [[2589.781,1752.370],[2584.551,1711.576],[2543.757,1711.576],[2552.125,1756.554]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 39,
+      "text": "寺",
+      "polygon_points": [[2629.529,1752.370],[2627.437,1710.530],[2584.551,1710.530],[2589.781,1752.370]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 40,
+      "text": "梵魚寺",
+      "polygon_points": [[2653.587,1753.416],[2774.924,1750.278],[2773.878,1708.438],[2652.541,1709.484]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 41,
+      "text": "노포",
+      "polygon_points": [[2815.000,1782.000],[3083.000,1782.000],[3083.000,1873.000],[2815.000,1873.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 42,
+      "text": "Nopo",
+      "polygon_points": [[2678.691,1792.118],[2783.292,1787.934],[2789.568,1837.096],[2684.967,1840.234]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 43,
+      "text": "老圃",
+      "polygon_points": [[2807.350,1883.121],[2713.209,1886.259],[2707.979,1841.280],[2795.844,1837.096]]
+    }
+  ]
+}

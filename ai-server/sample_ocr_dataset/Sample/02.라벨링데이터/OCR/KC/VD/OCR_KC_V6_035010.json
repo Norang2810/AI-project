@@ -1,0 +1,298 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_VD_035010",
+    "src_path": "\\OCR\\KC\\VD",
+    "label_path": "\\OCR\\KC\\VD",
+    "language_type": "KC",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KC_V6_035010.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "진주시",
+      "polygon_points": [[580.231,436.101],[740.826,438.395],[745.415,511.810],[561.878,504.927]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "명석면",
+      "polygon_points": [[935.834,431.512],[919.775,511.810],[754.591,502.633],[747.709,436.101]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "오미리",
+      "polygon_points": [[1103.311,436.101],[1098.723,514.104],[938.128,502.633],[956.482,429.218]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "국도에서",
+      "polygon_points": [[1344.204,438.395],[1339.615,518.693],[1112.488,507.221],[1119.371,433.807]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "경차",
+      "polygon_points": [[493.051,523.281],[614.644,530.164],[598.585,603.578],[488.463,592.107]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "한",
+      "polygon_points": [[681.177,527.869],[669.706,594.401],[603.173,585.225],[623.821,520.987]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "대가",
+      "polygon_points": [[805.064,525.575],[800.476,603.578],[669.706,594.401],[690.353,527.869]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "도로를",
+      "polygon_points": [[981.718,530.164],[979.424,603.578],[807.358,594.401],[821.123,520.987]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "역주행",
+      "polygon_points": [[1172.138,530.164],[1158.373,594.401],[1000.072,594.401],[1002.366,527.869]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "중이에요",
+      "polygon_points": [[1396.971,525.575],[1403.853,592.107],[1172.138,592.107],[1188.197,530.164]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "在",
+      "polygon_points": [[402.706,723.864],[441.517,725.203],[444.193,774.719],[394.676,770.704]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "晋",
+      "polygon_points": [[485.680,722.526],[483.004,770.704],[440.178,773.381],[444.193,723.864]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "州",
+      "polygon_points": [[533.859,722.526],[532.520,770.704],[485.680,770.704],[488.357,723.864]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "市",
+      "polygon_points": [[579.360,722.526],[576.684,770.704],[533.859,773.381],[532.520,722.526]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "明",
+      "polygon_points": [[623.524,725.203],[618.171,772.043],[574.007,774.719],[579.360,726.541]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "石",
+      "polygon_points": [[666.349,726.541],[666.349,773.381],[619.509,774.719],[623.524,726.541]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "面",
+      "polygon_points": [[707.836,727.879],[709.175,769.366],[670.364,772.043],[667.688,726.541]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "近",
+      "polygon_points": [[758.691,727.879],[756.015,776.058],[713.189,770.704],[713.189,725.203]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "江",
+      "polygon_points": [[801.517,725.203],[800.178,770.704],[758.691,770.704],[757.353,727.879]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "里",
+      "polygon_points": [[845.680,727.879],[845.680,776.058],[800.178,773.381],[802.855,727.879]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "的",
+      "polygon_points": [[889.844,726.541],[888.505,774.719],[847.018,774.719],[845.680,726.541]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "国",
+      "polygon_points": [[932.669,727.879],[934.007,776.058],[892.520,772.043],[891.182,726.541]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "道",
+      "polygon_points": [[980.847,722.526],[980.847,772.043],[936.684,770.704],[935.346,722.526]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "上",
+      "polygon_points": [[1027.688,725.203],[1026.349,770.704],[983.524,773.381],[980.847,725.203]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "一",
+      "polygon_points": [[1112.000,730.556],[1114.676,759.998],[1066.498,755.983],[1066.498,734.571]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "辆",
+      "polygon_points": [[1162.855,727.879],[1157.502,778.734],[1114.676,769.366],[1114.676,725.203]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "小",
+      "polygon_points": [[1204.342,721.188],[1205.680,776.058],[1158.840,777.396],[1158.840,725.203]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 32,
+      "text": "型",
+      "polygon_points": [[1249.844,725.203],[1251.182,776.058],[1205.680,776.058],[1204.342,725.203]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 33,
+      "text": "车",
+      "polygon_points": [[1295.346,727.879],[1296.684,777.396],[1253.859,776.058],[1253.859,726.541]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 34,
+      "text": "正",
+      "polygon_points": [[1340.847,722.526],[1343.524,776.058],[1298.022,776.058],[1296.684,725.203]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 35,
+      "text": "在",
+      "polygon_points": [[1386.082,721.188],[1383.405,773.381],[1345.933,774.719],[1343.256,722.526]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 36,
+      "text": "倒",
+      "polygon_points": [[1430.245,720.652],[1430.245,772.846],[1388.758,774.719],[1386.082,721.188]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 37,
+      "text": "车",
+      "polygon_points": [[1477.085,721.188],[1474.409,773.381],[1435.598,776.058],[1436.937,725.203]]
+    }
+  ]
+}

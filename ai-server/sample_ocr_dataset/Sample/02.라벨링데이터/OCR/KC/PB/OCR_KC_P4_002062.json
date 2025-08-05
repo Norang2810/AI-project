@@ -1,0 +1,306 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_002062",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_002062.JPG",
+    "created_day": "2023.08.24.",
+    "extension": "JPG",
+    "width": 4000,
+    "height": 2252,
+    "location": null,
+    "device_type": null,
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 4
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "10",
+      "polygon_points": [[2112.583,486.390],[1739.768,572.037],[1739.768,249.603],[2120.140,151.361]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "진보",
+      "polygon_points": [[923.626,1059.485],[730.166,1095.759],[755.356,960.740],[937.733,912.375]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Jinbo",
+      "polygon_points": [[1088.874,938.573],[962.923,965.778],[988.113,905.322],[1087.866,878.116]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "真",
+      "polygon_points": [[1018.341,1039.333],[961.915,1050.417],[971.991,978.877],[1022.372,968.801]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "寶",
+      "polygon_points": [[1087.866,1023.212],[1022.372,1030.265],[1038.493,965.778],[1085.851,952.679]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "영덕",
+      "polygon_points": [[1444.559,944.215],[1219.863,986.535],[1235.984,871.668],[1460.680,795.090]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Yeongdeok",
+      "polygon_points": [[1756.715,778.766],[1482.646,846.276],[1483.654,779.774],[1755.708,707.226]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "盈",
+      "polygon_points": [[1602.551,894.641],[1540.080,904.717],[1549.148,843.253],[1599.529,834.185]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "德",
+      "polygon_points": [[1680.137,876.504],[1602.551,884.565],[1605.574,834.185],[1668.046,819.071]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "포항",
+      "polygon_points": [[2067.864,788.238],[1801.856,833.580],[1824.023,697.553],[2076.932,639.112]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "Pohang",
+      "polygon_points": [[2359.062,634.880],[2130.336,682.238],[2124.290,615.736],[2366.115,564.348]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "浦",
+      "polygon_points": [[2233.111,741.686],[2161.571,748.740],[2166.609,683.245],[2237.142,672.162]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "項",
+      "polygon_points": [[2313.720,721.534],[2238.149,730.603],[2239.157,675.184],[2306.667,654.025]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "부산",
+      "polygon_points": [[2716.359,620.169],[2463.450,676.595],[2444.306,536.538],[2718.375,473.059]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "Busan",
+      "polygon_points": [[3032.748,468.625],[2790.922,520.013],[2778.831,448.473],[3023.679,397.085]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "釜",
+      "polygon_points": [[2912.843,573.416],[2831.226,584.500],[2832.234,520.013],[2901.759,507.922]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "山",
+      "polygon_points": [[2980.352,553.264],[2919.896,561.325],[2911.835,506.914],[2980.352,487.770]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "영양",
+      "polygon_points": [[844.428,1365.798],[629.808,1407.110],[651.976,1276.121],[864.581,1213.649]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "Yeongyang",
+      "polygon_points": [[1129.581,1238.839],[872.641,1277.128],[878.687,1209.619],[1151.748,1146.140]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "英",
+      "polygon_points": [[997.585,1335.569],[934.105,1341.615],[940.151,1277.128],[1000.607,1261.007]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "陽",
+      "polygon_points": [[1056.026,1314.410],[1000.607,1325.493],[1004.638,1262.014],[1065.094,1253.953]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "수비",
+      "polygon_points": [[1415.741,1240.452],[1177.946,1269.672],[1199.106,1136.668],[1439.924,1083.265]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "Subi",
+      "polygon_points": [[1656.358,1102.006],[1505.217,1135.257],[1505.217,1057.672],[1668.449,1018.375]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "首",
+      "polygon_points": [[1573.734,1195.714],[1513.278,1201.759],[1515.293,1142.311],[1579.780,1123.166]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "比",
+      "polygon_points": [[1653.335,1171.531],[1579.780,1184.630],[1589.856,1121.151],[1654.342,1104.022]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "주왕산",
+      "polygon_points": [[755.759,2001.396],[497.812,2023.563],[535.093,1871.414],[780.949,1825.065]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "Juwangsan",
+      "polygon_points": [[1053.003,1848.643],[785.987,1888.947],[799.086,1811.361],[1061.064,1772.065]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "周",
+      "polygon_points": [[868.611,1970.563],[806.139,1969.555],[824.276,1894.993],[877.679,1887.939]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "王",
+      "polygon_points": [[931.083,1949.403],[870.626,1954.441],[873.649,1893.985],[926.045,1883.909]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "山",
+      "polygon_points": [[976.425,1939.327],[925.037,1941.342],[930.075,1884.916],[986.501,1875.848]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "청송",
+      "polygon_points": [[1360.927,1869.399],[1098.950,1895.597],[1124.140,1749.494],[1369.996,1696.091]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 32,
+      "text": "Cheongsong",
+      "polygon_points": [[1669.255,1734.380],[1386.118,1769.646],[1396.194,1694.076],[1683.361,1643.695]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 33,
+      "text": "青",
+      "polygon_points": [[1517.106,1843.202],[1450.604,1843.202],[1453.627,1773.677],[1523.152,1765.616]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 34,
+      "text": "松",
+      "polygon_points": [[1590.662,1826.072],[1518.114,1824.057],[1522.144,1762.593],[1592.677,1748.487]]
+    }
+  ]
+}

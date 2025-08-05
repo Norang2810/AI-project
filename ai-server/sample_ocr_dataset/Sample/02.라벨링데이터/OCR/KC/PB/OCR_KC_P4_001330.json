@@ -1,0 +1,234 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_001330",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_001330.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 4000,
+    "height": 3000,
+    "location": null,
+    "device_type": "SM-N986N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 2
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "제50보병사단",
+      "polygon_points": [[185.000,1965.000],[924.000,1965.000],[924.000,2134.000],[185.000,2134.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "종합유통단지",
+      "polygon_points": [[1314.000,1790.000],[1879.000,1790.000],[1879.000,1947.000],[1314.000,1947.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "10",
+      "polygon_points": [[1117.000,2076.000],[1229.000,2076.000],[1229.000,2169.000],[1117.000,2169.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "綜",
+      "polygon_points": [[1304.000,1968.000],[1399.000,1968.000],[1399.000,2113.000],[1304.000,2113.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "合",
+      "polygon_points": [[1405.000,1968.000],[1494.000,1968.000],[1494.000,2113.000],[1405.000,2113.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "流",
+      "polygon_points": [[1501.000,1975.000],[1592.000,1975.000],[1592.000,2113.000],[1501.000,2113.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "通",
+      "polygon_points": [[1598.000,1975.000],[1691.000,1975.000],[1691.000,2119.000],[1598.000,2119.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "團",
+      "polygon_points": [[1700.000,1975.000],[1787.000,1975.000],[1787.000,2117.000],[1700.000,2117.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "地",
+      "polygon_points": [[1792.000,1981.000],[1879.000,1981.000],[1879.000,2122.000],[1792.000,2122.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "Distribution",
+      "polygon_points": [[1300.000,2135.000],[1617.000,2135.000],[1617.000,2257.000],[1300.000,2257.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "Complex",
+      "polygon_points": [[1629.000,2141.000],[1870.000,2141.000],[1870.000,2280.000],[1629.000,2280.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "국우동",
+      "polygon_points": [[1304.000,2301.000],[1571.000,2301.000],[1571.000,2449.000],[1304.000,2449.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "Gugu-dong",
+      "polygon_points": [[1597.000,2330.000],[1882.000,2330.000],[1882.000,2480.000],[1597.000,2480.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "강북경찰서",
+      "polygon_points": [[1960.000,1791.000],[2519.000,1791.000],[2519.000,1911.000],[1958.509,1899.934]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "Gangbuk",
+      "polygon_points": [[1955.067,1906.818],[2301.000,1917.000],[2301.000,1995.000],[1955.000,1995.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "Police",
+      "polygon_points": [[2319.000,1914.000],[2547.000,1914.000],[2547.000,1993.000],[2319.000,1993.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "Stn",
+      "polygon_points": [[2560.000,1910.000],[2691.000,1910.000],[2691.000,1995.000],[2560.000,1995.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "학정동",
+      "polygon_points": [[1957.000,1997.000],[2297.000,1997.000],[2297.000,2107.000],[1957.000,2107.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "Hakjeong-dong",
+      "polygon_points": [[2319.000,2030.000],[2750.000,2030.000],[2750.000,2130.000],[2317.559,2125.344]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 32,
+      "text": "칠곡경북대병원",
+      "polygon_points": [[1961.000,2127.000],[2751.594,2139.684],[2751.594,2246.758],[1958.095,2234.330]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 33,
+      "text": "Kyungpook",
+      "polygon_points": [[1957.000,2244.000],[2201.000,2244.000],[2201.000,2337.000],[1957.000,2337.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 34,
+      "text": "Natl",
+      "polygon_points": [[2208.000,2244.000],[2297.000,2244.000],[2297.000,2320.000],[2208.000,2320.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 35,
+      "text": "Univ",
+      "polygon_points": [[2307.000,2247.000],[2407.000,2247.000],[2407.000,2322.000],[2307.000,2322.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 36,
+      "text": "Medical",
+      "polygon_points": [[2416.000,2249.000],[2591.000,2249.000],[2591.000,2326.000],[2416.000,2326.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 37,
+      "text": "Center",
+      "polygon_points": [[2600.000,2252.000],[2750.000,2252.000],[2750.000,2329.000],[2600.000,2329.000]]
+    }
+  ]
+}

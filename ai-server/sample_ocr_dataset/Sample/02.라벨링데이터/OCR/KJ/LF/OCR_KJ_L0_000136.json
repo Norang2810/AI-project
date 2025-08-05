@@ -1,0 +1,122 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000136",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000136.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2042,
+    "height": 634,
+    "location": "36.565423, 128.72837179972223",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Jinseong",
+      "polygon_points": [[14.000,13.000],[327.572,40.001],[330.000,120.000],[17.795,94.791]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Clothing",
+      "polygon_points": [[357.000,36.000],[645.779,54.752],[652.000,137.000],[361.290,115.865]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Repairs",
+      "polygon_points": [[715.000,53.000],[968.200,73.718],[970.000,148.000],[708.999,128.509]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "ジンソン",
+      "polygon_points": [[1063.000,72.000],[1329.000,72.000],[1329.000,161.000],[1063.029,141.153]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "洋服補正",
+      "polygon_points": [[1334.000,81.000],[1603.000,81.000],[1603.000,179.000],[1332.767,166.440]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "真",
+      "polygon_points": [[1690.194,106.820],[1702.838,186.899],[1767.638,189.006],[1752.887,106.820]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "城",
+      "polygon_points": [[1818.214,107.874],[1833.492,192.167],[1771.852,187.425],[1756.048,106.820]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "改",
+      "polygon_points": [[1883.014,115.776],[1820.321,112.615],[1834.545,195.328],[1898.819,200.596]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "衣",
+      "polygon_points": [[1946.234,118.937],[1886.702,114.723],[1898.292,200.069],[1961.512,202.177]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "店",
+      "polygon_points": [[2008.927,121.571],[1946.234,117.884],[1964.146,203.230],[2018.937,206.391]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "진성옷수선",
+      "polygon_points": [[114.732,124.294],[1908.068,214.909],[1969.180,619.516],[167.415,577.369]]
+    }
+  ]
+}

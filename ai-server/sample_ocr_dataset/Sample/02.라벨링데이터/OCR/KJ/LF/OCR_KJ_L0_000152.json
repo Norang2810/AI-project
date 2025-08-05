@@ -1,0 +1,154 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000152",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000152.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2119,
+    "height": 642,
+    "location": null,
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "民",
+      "polygon_points": [[1559.383,59.236],[1632.741,48.757],[1645.317,153.554],[1563.575,159.842]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "キムパ",
+      "polygon_points": [[1241.000,86.000],[1475.545,63.428],[1469.257,166.130],[1242.895,191.281]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "ミヌネ",
+      "polygon_points": [[978.806,107.443],[1205.168,90.676],[1183.000,197.000],[968.326,195.473]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Rice",
+      "polygon_points": [[534.466,143.074],[667.655,141.786],[665.869,220.334],[532.370,237.392]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Gimbap",
+      "polygon_points": [[293.432,155.650],[510.000,175.000],[509.315,249.967],[289.240,249.967]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Minoone",
+      "polygon_points": [[37.727,178.705],[278.761,182.897],[281.000,252.000],[39.823,266.735]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "민우네",
+      "polygon_points": [[125.757,285.598],[124.130,642.000],[1184.209,591.606],[1184.209,218.528]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "김밥",
+      "polygon_points": [[1209.360,220.624],[1205.168,585.318],[2007.915,524.536],[1938.749,145.170]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "宇",
+      "polygon_points": [[1712.387,140.978],[1704.003,42.469],[1628.549,55.044],[1645.317,153.554]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "家",
+      "polygon_points": [[1771.073,31.989],[1792.033,143.074],[1704.003,147.266],[1706.099,44.565]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "菜",
+      "polygon_points": [[1867.487,130.498],[1947.133,120.019],[1915.693,19.413],[1859.103,27.797]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "饭",
+      "polygon_points": [[1999.531,15.222],[2018.395,128.403],[2104.328,113.731],[2079.177,13.126]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "包",
+      "polygon_points": [[1934.557,19.413],[2003.723,13.126],[2012.107,115.827],[1938.749,122.115]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "紫",
+      "polygon_points": [[1854.911,25.701],[1777.361,29.893],[1792.033,145.170],[1869.583,136.786]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "Roll",
+      "polygon_points": [[830.105,131.075],[699.788,138.216],[698.003,222.119],[833.676,211.408]]
+    }
+  ]
+}

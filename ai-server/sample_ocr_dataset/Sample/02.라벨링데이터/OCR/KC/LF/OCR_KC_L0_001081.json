@@ -1,0 +1,106 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_001081",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_001081.jpeg",
+    "created_day": "2023.08.23.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.8581982, 128.5805738",
+    "device_type": "iPhone 13 Pro",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "북해도식양고기화로구이전문",
+      "polygon_points": [[1029.000,2257.000],[3868.048,2389.778],[3877.157,2614.453],[1029.253,2499.079]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "北",
+      "polygon_points": [[328.838,1833.101],[319.496,2115.229],[715.596,2126.440],[719.333,1844.312]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "海",
+      "polygon_points": [[844.515,1846.180],[823.963,2141.387],[1197.642,2169.413],[1206.984,1859.259]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "道",
+      "polygon_points": [[1341.509,1866.733],[1326.562,2167.544],[1698.373,2193.702],[1700.241,1881.680]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "式",
+      "polygon_points": [[1804.871,1892.890],[1804.871,2176.886],[2167.340,2212.386],[2096.341,1920.916]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "羊",
+      "polygon_points": [[2279.444,1915.311],[2262.628,2212.386],[2628.834,2244.149],[2612.019,1935.863]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "肉",
+      "polygon_points": [[2742.806,1954.547],[2733.464,2242.280],[3064.171,2246.017],[3039.881,1956.416]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "專",
+      "polygon_points": [[3155.722,1969.494],[3170.669,2268.438],[3506.981,2288.990],[3495.770,1980.705]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "門",
+      "polygon_points": [[3613.479,2010.599],[3609.742,2281.517],[3925.501,2298.332],[3897.475,2018.073]]
+    }
+  ]
+}

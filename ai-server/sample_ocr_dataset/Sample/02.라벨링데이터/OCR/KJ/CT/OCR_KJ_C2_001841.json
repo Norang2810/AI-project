@@ -1,0 +1,106 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_CT_001841",
+    "src_path": "\\OCR\\KJ\\CT",
+    "label_path": "\\OCR\\KJ\\CT",
+    "language_type": "KJ",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KJ_C2_001841.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 2856,
+    "height": 598,
+    "location": null,
+    "device_type": "SM-A530N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "50m",
+      "polygon_points": [[267.073,218.659],[457.152,230.690],[447.528,300.466],[267.073,288.435]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Manbeopsa",
+      "polygon_points": [[1763.646,300.466],[2297.793,346.181],[2302.605,440.017],[1768.458,389.490]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Temple",
+      "polygon_points": [[2348.320,348.587],[2663.515,375.054],[2677.951,464.078],[2362.757,442.423]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "대한불교조계종",
+      "polygon_points": [[1000.923,110.386],[1843.046,144.071],[1843.046,264.375],[1000.923,230.690]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "만법사",
+      "polygon_points": [[1915.228,88.732],[2682.763,153.696],[2699.606,343.775],[1915.228,286.029]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "萬",
+      "polygon_points": [[2000.472,424.675],[2087.090,427.425],[2085.715,507.169],[2003.222,500.294]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "法",
+      "polygon_points": [[2168.209,512.668],[2087.090,505.794],[2087.090,431.550],[2165.459,437.049]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "寺",
+      "polygon_points": [[2256.202,518.168],[2170.959,512.668],[2166.834,438.424],[2250.703,443.924]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "マソボプ寺",
+      "polygon_points": [[2353.820,457.673],[2704.418,472.797],[2711.292,558.040],[2352.445,531.917]]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_VD_016618",
+    "src_path": "\\OCR\\KE\\VD",
+    "label_path": "\\OCR\\KE\\VD",
+    "language_type": "KE",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KE_V6_016618.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "I",
+      "polygon_points": [[565.683,711.483],[562.662,758.309],[585.319,756.798],[586.830,706.952]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "found",
+      "polygon_points": [[713.706,754.264],[716.080,710.352],[590.278,709.165],[590.278,756.637]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "my",
+      "polygon_points": [[726.761,715.099],[726.761,761.384],[784.915,767.319],[795.597,719.846]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "place",
+      "polygon_points": [[915.465,763.758],[911.904,709.165],[800.344,711.538],[801.531,763.758]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "with",
+      "polygon_points": [[1008.036,757.824],[1008.036,710.352],[917.838,712.725],[921.399,757.824]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "a",
+      "polygon_points": [[1050.761,757.824],[1043.641,722.220],[1016.344,722.220],[1016.344,756.637]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "\u0027thump\u0027",
+      "polygon_points": [[1210.981,769.692],[1213.355,711.538],[1050.761,710.352],[1059.069,753.077]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "sound",
+      "polygon_points": [[1352.212,759.011],[1351.025,706.791],[1222.849,717.472],[1219.289,755.450]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "\u0027쿵\u0027하는",
+      "polygon_points": [[316.127,842.084],[312.567,937.029],[590.281,940.590],[596.215,851.579]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "소리와",
+      "polygon_points": [[619.958,846.825],[595.035,938.210],[844.266,935.836],[859.695,845.638]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "함께",
+      "polygon_points": [[1017.541,935.836],[1031.783,853.946],[858.508,845.638],[857.321,938.210]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "제자리를",
+      "polygon_points": [[1343.914,940.583],[1358.156,848.012],[1042.464,850.385],[1028.222,939.396]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "찾았다",
+      "polygon_points": [[1603.830,940.583],[1619.258,848.012],[1374.775,846.825],[1355.786,939.396]]
+    }
+  ]
+}

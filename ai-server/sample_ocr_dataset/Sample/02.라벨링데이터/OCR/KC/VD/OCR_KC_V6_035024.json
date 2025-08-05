@@ -1,0 +1,122 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_VD_035024",
+    "src_path": "\\OCR\\KC\\VD",
+    "label_path": "\\OCR\\KC\\VD",
+    "language_type": "KC",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KC_V6_035024.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "술에",
+      "polygon_points": [[620.000,885.000],[761.983,882.507],[760.219,976.037],[620.000,975.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "취한",
+      "polygon_points": [[776.101,889.566],[919.042,886.037],[910.219,974.272],[777.866,970.743]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "듯한",
+      "polygon_points": [[1069.042,878.978],[1067.277,967.213],[922.571,970.743],[920.807,886.037]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "한",
+      "polygon_points": [[1153.748,886.037],[1146.689,963.684],[1077.866,965.449],[1076.101,886.037]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "남성",
+      "polygon_points": [[1296.689,882.507],[1294.924,970.743],[1160.807,967.213],[1153.748,887.801]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "一",
+      "polygon_points": [[823.748,624.860],[821.983,667.213],[870.243,662.620],[867.974,625.183]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "个",
+      "polygon_points": [[911.290,621.236],[912.283,674.839],[868.606,674.839],[872.577,621.236]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "醉",
+      "polygon_points": [[958.937,624.214],[956.952,672.853],[916.253,672.853],[916.253,622.228]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "酒",
+      "polygon_points": [[1003.606,625.206],[1004.599,670.868],[958.937,672.853],[959.930,625.206]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "的",
+      "polygon_points": [[1048.276,623.221],[1047.283,673.846],[1008.570,668.883],[1004.599,627.192]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "人",
+      "polygon_points": [[1092.945,626.199],[1097.908,671.861],[1048.276,670.868],[1053.239,628.184]]
+    }
+  ]
+}

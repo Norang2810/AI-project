@@ -1,0 +1,610 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_CT_000011",
+    "src_path": "\\OCR\\KE\\CT",
+    "label_path": "\\OCR\\KE\\CT",
+    "language_type": "KE",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KE_C2_000011.jpeg",
+    "created_day": "2023.08.20.",
+    "extension": "jpeg",
+    "width": 3024,
+    "height": 4032,
+    "location": "35.24390277777778, 128.86990277777778",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "시설안내",
+      "polygon_points": [[840.000,420.000],[1396.000,420.000],[1396.000,577.000],[840.000,577.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "대표이사실",
+      "polygon_points": [[871.000,677.000],[1354.000,677.000],[1354.000,782.000],[871.000,782.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "경영기획본부장실",
+      "polygon_points": [[883.390,912.396],[1489.581,912.396],[1479.716,1000.608],[882.980,993.440]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "문화예술본부장실",
+      "polygon_points": [[1643.000,897.000],[2273.000,897.000],[2273.000,1002.000],[1643.000,1002.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "공연기획팀",
+      "polygon_points": [[1643.000,1092.000],[2100.000,1092.000],[2100.000,1202.000],[1643.000,1202.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "경영기획팀",
+      "polygon_points": [[876.000,1181.000],[1317.000,1181.000],[1317.000,1286.000],[876.000,1286.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "무대예술팀",
+      "polygon_points": [[1643.000,1202.000],[2100.000,1202.000],[2100.000,1312.000],[1643.000,1312.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "전시교육팀",
+      "polygon_points": [[1638.000,1312.000],[2094.000,1312.000],[2094.000,1422.000],[1638.000,1422.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "영상미디어센터",
+      "polygon_points": [[861.000,1417.000],[1485.000,1417.000],[1485.000,1522.000],[861.000,1522.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "문화도시팀",
+      "polygon_points": [[1638.000,1422.000],[2100.000,1422.000],[2100.000,1533.000],[1638.000,1533.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "Office",
+      "polygon_points": [[1653.000,1543.000],[1842.000,1543.000],[1842.000,1606.000],[1653.000,1606.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "마루홀",
+      "polygon_points": [[861.000,1706.000],[1134.000,1706.000],[1134.000,1811.000],[861.000,1811.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "누리홀",
+      "polygon_points": [[1165.000,1706.000],[1433.000,1706.000],[1433.000,1816.000],[1165.000,1816.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "아람배움터",
+      "polygon_points": [[1791.000,1714.428],[2210.000,1711.000],[2210.000,1821.000],[1788.696,1806.588]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 33,
+      "text": "전당시설팀",
+      "polygon_points": [[862.792,2292.500],[1301.832,2290.708],[1296.456,2387.476],[853.832,2382.100]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 34,
+      "text": "문화도시센터",
+      "polygon_points": [[1632.000,2294.000],[2163.000,2294.000],[2159.640,2394.072],[1629.720,2389.464]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 36,
+      "text": "Cutural",
+      "polygon_points": [[1678.104,2405.592],[1880.856,2407.896],[1878.552,2470.104],[1678.104,2465.496]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 37,
+      "text": "뮤지시스",
+      "polygon_points": [[862.792,2486.036],[1194.312,2491.412],[1214.024,2573.844],[861.000,2575.636]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 38,
+      "text": "윤슬미술관",
+      "polygon_points": [[1656.648,2584.596],[2086.728,2593.556],[2084.936,2693.908],[1635.144,2684.948]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 39,
+      "text": "MUSISIS",
+      "polygon_points": [[866.376,2589.972],[1081.000,2583.000],[1072.456,2647.316],[861.000,2647.316]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 40,
+      "text": "편의시설",
+      "polygon_points": [[845.000,2677.000],[1201.480,2679.572],[1208.648,2779.924],[844.872,2774.548]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 43,
+      "text": "주차장",
+      "polygon_points": [[840.000,2866.000],[1128.000,2866.000],[1128.000,2971.000],[840.000,2971.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 44,
+      "text": "시립예술단연습실",
+      "polygon_points": [[1647.688,2880.276],[2303.560,2894.612],[2301.768,2989.588],[1636.936,2986.004]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 45,
+      "text": "Parking",
+      "polygon_points": [[840.000,2971.000],[1071.000,2971.000],[1071.000,3034.000],[840.000,3034.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 47,
+      "text": "스포츠센터",
+      "polygon_points": [[850.248,3265.556],[1280.328,3265.556],[1283.912,3360.532],[844.872,3353.364]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 48,
+      "text": "주차장",
+      "polygon_points": [[1640.520,3279.892],[1923.656,3281.684],[1923.656,3369.492],[1647.688,3364.116]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 50,
+      "text": "Parking",
+      "polygon_points": [[1660.232,3392.788],[1884.232,3394.580],[1879.000,3459.000],[1658.440,3459.092]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 52,
+      "text": "INFORMATION",
+      "polygon_points": [[1439.063,442.581],[1448.328,555.912],[2193.800,552.328],[2199.290,454.522]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 53,
+      "text": "매표소",
+      "polygon_points": [[1466.551,1704.534],[1481.544,1816.985],[1728.792,1815.804],[1731.436,1717.028]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 54,
+      "text": "재무관리팀",
+      "polygon_points": [[864.584,1969.940],[861.000,2055.956],[1305.416,2066.708],[1305.416,1971.732]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 55,
+      "text": "정책홍보팀",
+      "polygon_points": [[1636.477,1976.915],[1644.104,2064.916],[2088.781,2071.874],[2086.728,1980.692]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 56,
+      "text": "CEO\u0027s",
+      "polygon_points": [[904.008,860.692],[1081.416,860.692],[1077.832,794.388],[900.424,794.388]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 57,
+      "text": "Office",
+      "polygon_points": [[1092.168,857.108],[1258.824,862.484],[1264.200,805.140],[1095.752,792.596]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 58,
+      "text": "Director\u0027s",
+      "polygon_points": [[905.800,1072.148],[1171.016,1072.148],[1163.848,1005.844],[896.840,1002.260]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 59,
+      "text": "Office",
+      "polygon_points": [[1176.392,1073.940],[1366.344,1072.148],[1346.632,1009.428],[1179.976,1007.636]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 60,
+      "text": "Management",
+      "polygon_points": [[887.880,1357.076],[1239.112,1362.452],[1246.280,1299.732],[889.672,1288.980]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 61,
+      "text": "Planning",
+      "polygon_points": [[1255.240,1355.284],[1489.992,1366.036],[1486.408,1294.356],[1253.448,1294.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 62,
+      "text": "Media",
+      "polygon_points": [[882.504,1584.660],[1058.120,1588.244],[1050.952,1527.316],[886.088,1521.940]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 63,
+      "text": "Center",
+      "polygon_points": [[1074.248,1586.452],[1253.448,1584.660],[1262.408,1532.692],[1065.288,1523.732]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 64,
+      "text": "Director\u0027s",
+      "polygon_points": [[1701.448,1011.220],[1699.656,1068.564],[1970.248,1070.356],[1966.664,1011.220]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 65,
+      "text": "Office",
+      "polygon_points": [[1982.792,1066.772],[2156.616,1068.564],[2153.032,1007.636],[1977.416,1005.844]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 66,
+      "text": "Maru",
+      "polygon_points": [[868.168,1887.508],[1009.736,1885.716],[1004.360,1840.916],[868.168,1826.580]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 67,
+      "text": "Hall",
+      "polygon_points": [[1020.488,1892.884],[1126.216,1882.132],[1120.840,1831.956],[1016.904,1831.956]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 68,
+      "text": "Nuri",
+      "polygon_points": [[1185.352,1889.300],[1300.040,1887.508],[1301.832,1826.580],[1194.312,1831.956]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 69,
+      "text": "Hall",
+      "polygon_points": [[1309.000,1892.884],[1411.144,1887.508],[1411.144,1840.916],[1310.792,1830.164]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 70,
+      "text": "Ticket",
+      "polygon_points": [[1459.528,1835.540],[1463.112,1889.300],[1629.768,1892.884],[1626.184,1835.540]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 71,
+      "text": "Box",
+      "polygon_points": [[1748.040,1842.708],[1748.040,1889.300],[1647.688,1887.508],[1642.312,1837.332]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 72,
+      "text": "Aram",
+      "polygon_points": [[1794.632,1842.708],[1796.424,1892.884],[1952.328,1896.468],[1945.160,1835.540]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 73,
+      "text": "Academy",
+      "polygon_points": [[1966.664,1839.124],[1963.080,1898.260],[2244.424,1910.804],[2237.256,1846.292]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 74,
+      "text": "Financial",
+      "polygon_points": [[852.040,2125.844],[1097.544,2125.844],[1099.336,2072.084],[853.832,2064.916]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 75,
+      "text": "Accounting",
+      "polygon_points": [[1427.272,2079.252],[1420.104,2140.180],[1106.504,2118.676],[1120.840,2070.292]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 76,
+      "text": "Public",
+      "polygon_points": [[1658.440,2125.844],[1819.720,2131.220],[1821.512,2073.876],[1662.024,2073.876]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 77,
+      "text": "Relation",
+      "polygon_points": [[1837.640,2131.220],[2058.056,2131.220],[2052.680,2079.252],[1835.848,2073.876]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 78,
+      "text": "Facilities",
+      "polygon_points": [[868.168,2453.780],[1101.128,2455.572],[1099.336,2392.852],[869.960,2396.436]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 79,
+      "text": "Management",
+      "polygon_points": [[1472.072,2468.116],[1108.296,2460.948],[1108.296,2396.436],[1475.656,2400.020]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 80,
+      "text": "Convenience",
+      "polygon_points": [[862.792,2835.476],[1239.112,2839.060],[1226.568,2783.508],[862.792,2774.548]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 81,
+      "text": "Facility",
+      "polygon_points": [[1253.448,2779.924],[1457.736,2785.300],[1430.856,2860.564],[1248.072,2833.684]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 82,
+      "text": "Yunseul",
+      "polygon_points": [[1665.608,2760.212],[1880.648,2758.420],[1882.440,2706.452],[1653.064,2695.700]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 83,
+      "text": "art",
+      "polygon_points": [[1975.624,2710.036],[1970.248,2762.004],[1894.984,2754.836],[1898.568,2720.788]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 84,
+      "text": "of",
+      "polygon_points": [[1993.544,2720.788],[1988.168,2769.172],[2052.680,2767.380],[2049.096,2708.244]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 85,
+      "text": "Museum",
+      "polygon_points": [[2068.808,2710.036],[2068.808,2769.172],[2305.352,2769.172],[2296.392,2724.372]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 86,
+      "text": "Studio",
+      "polygon_points": [[1694.280,3045.140],[1864.520,3046.932],[1866.312,2991.380],[1696.072,2986.004]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 87,
+      "text": "of",
+      "polygon_points": [[1882.440,3002.132],[1884.232,3046.932],[1943.368,3046.932],[1948.744,2991.380]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 88,
+      "text": "art",
+      "polygon_points": [[1961.288,3045.140],[2045.512,3045.140],[2045.512,2991.380],[1966.664,2991.380]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 89,
+      "text": "Troupe",
+      "polygon_points": [[2063.432,3048.724],[2260.552,3064.852],[2262.344,3002.132],[2059.848,2986.004]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 90,
+      "text": "Sports",
+      "polygon_points": [[862.792,3446.548],[1036.616,3446.548],[1041.992,3380.244],[866.376,3376.660]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 91,
+      "text": "Center",
+      "polygon_points": [[1061.704,3439.380],[1248.072,3444.756],[1249.864,3390.996],[1054.536,3376.660]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 92,
+      "text": "2",
+      "polygon_points": [[652.680,1021.832],[656.264,1175.944],[767.368,1175.944],[760.200,1000.328]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 93,
+      "text": "1",
+      "polygon_points": [[663.040,1785.224],[691.712,1932.168],[741.888,1939.336],[745.472,1774.472]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 94,
+      "text": "M",
+      "polygon_points": [[630.784,2534.280],[609.280,2699.144],[784.896,2677.640],[770.560,2555.784]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 95,
+      "text": "B1",
+      "polygon_points": [[602.112,3222.408],[598.528,3394.440],[763.392,3387.272],[756.224,3229.576]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 96,
+      "text": "City",
+      "polygon_points": [[1901.592,2472.408],[2000.664,2477.016],[2014.488,2419.416],[1906.200,2403.288]]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_001159",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_001159.jpeg",
+    "created_day": "2023.08.23.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.8581982, 128.5805738",
+    "device_type": "iPhone 13 Pro",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 3
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "대전종합관광안내센터",
+      "polygon_points": [[564.000,1084.000],[3594.012,1119.138],[3597.000,1590.000],[564.230,1567.245]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "大",
+      "polygon_points": [[593.000,1619.000],[913.000,1619.000],[913.000,1997.000],[593.000,1997.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "田",
+      "polygon_points": [[944.000,1624.000],[1250.000,1624.000],[1250.000,2006.000],[944.000,2006.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "綜",
+      "polygon_points": [[1287.000,1611.000],[1601.000,1611.000],[1601.000,2003.000],[1287.000,2003.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "合",
+      "polygon_points": [[1634.000,1617.000],[1950.000,1617.000],[1950.000,2009.000],[1634.000,2009.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "觀",
+      "polygon_points": [[1968.000,1632.000],[2274.000,1632.000],[2274.000,2002.000],[1968.000,2002.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "光",
+      "polygon_points": [[2300.000,1634.000],[2606.000,1634.000],[2606.000,2017.000],[2300.000,2017.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "案",
+      "polygon_points": [[2632.000,1637.000],[2944.000,1637.000],[2944.000,2037.000],[2632.000,2037.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "內",
+      "polygon_points": [[2985.000,1644.000],[3256.000,1644.000],[3256.000,2026.000],[2985.000,2026.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "所",
+      "polygon_points": [[3278.000,1651.000],[3590.000,1651.000],[3590.000,2029.000],[3278.000,2029.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "Tourist",
+      "polygon_points": [[666.000,2082.000],[1395.000,2082.000],[1395.000,2323.000],[666.000,2323.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "Information",
+      "polygon_points": [[1480.000,2085.000],[2653.000,2085.000],[2653.000,2325.000],[1480.000,2325.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "Center",
+      "polygon_points": [[2743.000,2090.000],[3457.000,2090.000],[3457.000,2320.000],[2743.000,2320.000]]
+    }
+  ]
+}

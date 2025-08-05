@@ -1,0 +1,274 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_PB_003086",
+    "src_path": "\\OCR\\KJ\\PB",
+    "label_path": "\\OCR\\KJ\\PB",
+    "language_type": "KJ",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KJ_P4_003086.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.20550277777778, 129.07850555555555",
+    "device_type": "iPhone 12",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 4
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "고객안내기",
+      "polygon_points": [[1709.098,1258.028],[2722.401,1199.286],[2734.639,1422.017],[1709.098,1458.731]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Passenger",
+      "polygon_points": [[1473.926,1505.599],[1852.568,1495.319],[1852.568,1587.838],[1470.499,1591.265]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Guide",
+      "polygon_points": [[1867.988,1491.892],[2090.719,1491.892],[2094.000,1564.000],[1867.988,1563.852]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "편히",
+      "polygon_points": [[2814.000,1653.000],[3060.000,1653.000],[3060.000,1785.000],[2814.000,1785.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "저녁엔",
+      "polygon_points": [[2441.000,1659.000],[2798.000,1659.000],[2798.000,1800.000],[2441.000,1800.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "저물어갑니다.",
+      "polygon_points": [[1797.790,1695.527],[2436.000,1685.000],[2436.000,1816.000],[1796.362,1815.459]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "쨍쨍",
+      "polygon_points": [[1365.178,1716.943],[1560.781,1709.805],[1556.498,1818.314],[1359.000,1821.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "6:33:28",
+      "polygon_points": [[2068.000,1958.000],[2850.000,1958.000],[2850.000,2147.000],[2068.000,2147.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "오후",
+      "polygon_points": [[1618.276,1937.034],[2016.292,1934.398],[2013.656,2171.626],[1610.368,2171.626]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "열차가",
+      "polygon_points": [[1512.000,2331.000],[1816.000,2331.000],[1816.000,2478.000],[1512.000,2478.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "전역에",
+      "polygon_points": [[1821.000,2341.000],[2147.000,2341.000],[2147.000,2483.000],[1821.000,2483.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "도착하였습니다.",
+      "polygon_points": [[2157.000,2346.000],[2955.000,2346.000],[2955.000,2499.000],[2157.000,2499.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "다대포",
+      "polygon_points": [[2735.000,2509.000],[3099.714,2513.510],[3112.174,2675.496],[2735.000,2672.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "장전",
+      "polygon_points": [[1164.006,2810.764],[1277.085,2815.904],[1273.658,2893.003],[1160.580,2886.150]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "乗客ガイド",
+      "polygon_points": [[2133.552,1567.278],[2568.734,1555.285],[2563.594,1452.486],[2136.978,1464.479]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "乘",
+      "polygon_points": [[2626.546,1543.872],[2721.850,1539.589],[2718.637,1454.994],[2626.546,1460.348]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "客",
+      "polygon_points": [[2810.728,1539.589],[2806.444,1451.781],[2721.850,1453.923],[2720.779,1539.589]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "向",
+      "polygon_points": [[2899.606,1532.093],[2894.252,1444.285],[2806.444,1447.498],[2809.657,1534.234]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "导",
+      "polygon_points": [[2994.909,1533.164],[2989.555,1441.073],[2896.393,1444.285],[2899.606,1535.305]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "해도",
+      "polygon_points": [[1772.090,1812.603],[1773.518,1696.955],[1572.203,1702.666],[1566.492,1816.887]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "방면",
+      "polygon_points": [[3389.420,2694.187],[3376.959,2532.201],[3127.750,2525.971],[3133.980,2691.072]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "부산대",
+      "polygon_points": [[1597.475,2915.276],[1782.513,2925.556],[1782.513,2846.743],[1597.475,2834.750]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "온천장",
+      "polygon_points": [[2099.476,2952.969],[2303.360,2961.535],[2301.647,2879.296],[2102.903,2869.016]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "명륜",
+      "polygon_points": [[2687.714,2983.808],[2833.346,2994.088],[2833.346,2903.283],[2682.574,2898.143]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "동래",
+      "polygon_points": [[3294.227,3023.215],[3450.139,3024.000],[3444.999,2944.402],[3287.374,2937.549]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "xxx",
+      "polygon_points": [[3096.000,1635.000],[3411.000,1635.000],[3411.000,1778.000],[3096.000,1778.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "다대포해수욕장",
+      "polygon_points": [[1561.000,2622.000],[1794.000,2622.000],[1794.000,2685.000],[1561.000,2685.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "다대포해수욕장",
+      "polygon_points": [[2571.000,2670.000],[2859.000,2670.000],[2859.000,2733.000],[2571.000,2733.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "행",
+      "polygon_points": [[1807.000,2625.000],[1842.000,2625.000],[1842.000,2680.000],[1807.000,2680.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "행",
+      "polygon_points": [[2869.000,2685.000],[2909.000,2685.000],[2909.000,2732.000],[2869.000,2732.000]]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000131",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000131.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2612,
+    "height": 1000,
+    "location": "36.5654206, 128.7283682",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "平和食品",
+      "polygon_points": [[1249.243,94.463],[1815.312,70.203],[1815.312,204.981],[1254.635,231.936]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Foods",
+      "polygon_points": [[707.000,139.000],[1079.423,118.723],[1078.000,238.000],[707.000,238.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Pyeonghwa",
+      "polygon_points": [[49.718,293.934],[47.023,159.156],[667.002,156.461],[664.306,269.674]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "平",
+      "polygon_points": [[2018.810,186.945],[2014.018,44.380],[2148.197,34.795],[2151.791,180.955]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "和",
+      "polygon_points": [[2306.337,173.767],[2290.762,37.191],[2151.791,38.389],[2169.761,182.153]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "食",
+      "polygon_points": [[2433.328,168.974],[2427.337,20.419],[2291.960,37.191],[2306.337,179.757]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "品",
+      "polygon_points": [[2590.269,158.192],[2559.121,10.835],[2438.120,24.013],[2450.100,164.182]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "평화식품",
+      "polygon_points": [[65.892,334.368],[49.718,930.087],[2149.561,878.871],[2130.692,215.763]]
+    }
+  ]
+}
