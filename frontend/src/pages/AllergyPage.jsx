@@ -236,7 +236,7 @@ const ErrorMessage = styled.div`
   text-align: center;
 `;
 
-const AllergyPage = () => {
+const AllergyPage = ({ isLoggedIn, setIsLoggedIn }) => {
   const [selectedAllergies, setSelectedAllergies] = useState({});
   const [severity, setSeverity] = useState('medium');
   const [isLoading, setIsLoading] = useState(false);

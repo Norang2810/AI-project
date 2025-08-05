@@ -109,7 +109,7 @@ const FeatureDescription = styled.p`
   line-height: 1.6;
 `;
 
-const MainPage = () => {
+const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
   const [apiStatus, setApiStatus] = useState('Loading...');
   const [error, setError] = useState(null);
   const [analysisResult, setAnalysisResult] = useState(null);
@@ -131,7 +131,7 @@ const MainPage = () => {
 
   return (
     <>
-      <Header />
+      <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
       <MainContainer>
         {/* Hero Section */}
         <HeroSection id="home">
