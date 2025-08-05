@@ -171,13 +171,6 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
             ) : (
               <div style={{ textAlign: 'center', padding: '2rem' }}>
                 <p>메뉴판을 업로드하면 여기에 분석 결과가 표시됩니다.</p>
-                <div style={{ marginTop: '20px', padding: '10px', backgroundColor: '#f0f0f0', borderRadius: '5px', display: 'inline-block' }}>
-                  <h3>서버 상태:</h3>
-                  <p>{apiStatus}</p>
-                  {error && (
-                    <p style={{ color: 'red' }}>{error}</p>
-                  )}
-                </div>
               </div>
             )}
           </SectionContent>
