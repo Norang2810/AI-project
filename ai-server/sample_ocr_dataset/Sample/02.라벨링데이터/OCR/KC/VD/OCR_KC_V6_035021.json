@@ -1,0 +1,178 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_VD_035021",
+    "src_path": "\\OCR\\KC\\VD",
+    "label_path": "\\OCR\\KC\\VD",
+    "language_type": "KC",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KC_V6_035021.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "A씨를",
+      "polygon_points": [[334.751,807.304],[543.524,814.187],[542.097,891.283],[325.574,887.602]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "상대로",
+      "polygon_points": [[561.878,807.304],[763.768,811.893],[761.474,880.719],[552.701,883.013]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "조사를",
+      "polygon_points": [[984.012,809.599],[984.012,894.484],[770.651,889.896],[784.416,798.127]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "이어",
+      "polygon_points": [[1133.136,809.599],[1130.842,889.896],[1002.366,889.896],[1000.072,809.599]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "나갈",
+      "polygon_points": [[1151.490,807.304],[1286.848,809.599],[1286.848,883.013],[1144.607,885.307]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "방침이다",
+      "polygon_points": [[1582.802,807.304],[1571.331,894.484],[1300.614,883.013],[1298.319,809.599]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "我",
+      "polygon_points": [[658.637,722.833],[712.168,724.617],[713.953,774.580],[662.206,776.364]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "们",
+      "polygon_points": [[755.180,722.291],[752.709,774.175],[716.884,774.175],[710.707,727.232]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "将",
+      "polygon_points": [[799.652,724.761],[799.652,771.704],[755.180,769.234],[760.121,725.997]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "继",
+      "polygon_points": [[844.125,724.761],[844.125,771.704],[804.594,772.940],[802.123,725.997]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "续",
+      "polygon_points": [[893.538,724.761],[891.068,771.704],[849.066,771.704],[845.360,722.291]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "对",
+      "polygon_points": [[936.775,724.761],[936.775,775.410],[888.597,772.940],[893.538,725.997]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "先",
+      "polygon_points": [[982.483,724.761],[981.248,775.410],[938.011,776.646],[939.246,725.997]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "生",
+      "polygon_points": [[1024.485,725.997],[1023.250,772.940],[982.483,775.410],[984.954,729.703]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "进",
+      "polygon_points": [[1072.663,727.232],[1071.428,775.410],[1020.779,771.704],[1026.956,727.232]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "行",
+      "polygon_points": [[1115.900,723.526],[1115.900,771.704],[1075.134,772.940],[1072.663,729.703]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "调",
+      "polygon_points": [[1161.608,725.997],[1164.079,769.234],[1118.371,771.704],[1118.371,727.232]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "查",
+      "polygon_points": [[1209.787,725.997],[1208.551,774.175],[1161.608,771.704],[1159.137,725.997]]
+    }
+  ]
+}

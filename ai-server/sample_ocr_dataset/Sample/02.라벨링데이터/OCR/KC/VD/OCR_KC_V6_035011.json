@@ -1,0 +1,154 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_VD_035011",
+    "src_path": "\\OCR\\KC\\VD",
+    "label_path": "\\OCR\\KC\\VD",
+    "language_type": "KC",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KC_V6_035011.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "신고를",
+      "polygon_points": [[355.000,800.000],[569.824,806.744],[569.824,886.156],[355.000,892.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "급히",
+      "polygon_points": [[895.000,800.000],[1039.942,808.332],[1038.353,892.509],[895.000,895.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "警",
+      "polygon_points": [[747.049,720.507],[801.788,721.166],[801.755,775.213],[755.873,775.213]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "车",
+      "polygon_points": [[848.213,721.166],[848.213,773.700],[806.674,771.256],[805.453,724.831]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "接",
+      "polygon_points": [[890.973,724.831],[890.973,777.365],[848.213,778.587],[850.656,722.387]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "报",
+      "polygon_points": [[933.733,724.831],[934.955,774.921],[894.638,777.365],[889.751,729.718]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "后",
+      "polygon_points": [[978.937,724.831],[981.380,777.365],[938.620,773.700],[938.620,726.053]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "赶",
+      "polygon_points": [[1026.584,722.387],[1026.584,773.700],[983.824,778.587],[982.602,726.053]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "赴",
+      "polygon_points": [[1068.122,728.496],[1071.788,773.700],[1030.249,774.921],[1030.249,719.944]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "现",
+      "polygon_points": [[1113.326,724.831],[1115.770,773.700],[1077.896,774.921],[1068.122,721.166]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "场",
+      "polygon_points": [[1160.973,728.496],[1168.303,773.700],[1117.736,772.887],[1117.736,726.233]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "접수",
+      "polygon_points": [[719.118,808.332],[727.059,886.156],[577.765,887.744],[579.353,806.744]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "받고",
+      "polygon_points": [[738.177,813.097],[744.530,886.156],[874.765,882.979],[874.765,806.744]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "출동하는",
+      "polygon_points": [[1055.824,806.744],[1055.824,889.332],[1332.177,884.568],[1322.647,809.921]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "경찰차",
+      "polygon_points": [[1346.471,805.156],[1341.706,889.332],[1564.059,887.744],[1557.706,809.921]]
+    }
+  ]
+}

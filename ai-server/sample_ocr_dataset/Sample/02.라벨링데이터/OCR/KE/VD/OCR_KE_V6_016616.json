@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_VD_016616",
+    "src_path": "\\OCR\\KE\\VD",
+    "label_path": "\\OCR\\KE\\VD",
+    "language_type": "KE",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KE_V6_016616.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "그때",
+      "polygon_points": [[475.741,480.834],[640.033,478.924],[640.033,571.895],[474.467,572.532]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "놀라운",
+      "polygon_points": [[648.311,480.452],[880.741,477.268],[880.104,568.329],[649.585,572.150]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "일이",
+      "polygon_points": [[895.005,479.051],[1049.745,477.777],[1049.109,569.476],[896.278,569.476]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "벌어지는데",
+      "polygon_points": [[1067.576,476.122],[1440.736,477.395],[1439.462,578.645],[1065.028,573.551]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "Then",
+      "polygon_points": [[596.349,708.424],[710.972,707.150],[710.335,757.457],[598.896,757.457]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "something",
+      "polygon_points": [[719.887,709.697],[935.760,712.881],[935.760,769.556],[721.160,764.461]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "amazing",
+      "polygon_points": [[949.769,710.079],[1123.613,710.079],[1124.250,768.664],[951.043,768.664]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "happens",
+      "polygon_points": [[1135.330,710.079],[1311.085,710.079],[1311.722,764.207],[1135.330,763.570]]
+    }
+  ]
+}

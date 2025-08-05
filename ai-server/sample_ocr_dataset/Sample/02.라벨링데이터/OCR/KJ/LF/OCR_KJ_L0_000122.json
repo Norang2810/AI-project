@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000122",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000122.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2983,
+    "height": 1040,
+    "location": "36.56544, 128.72812859972223",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "미래패션",
+      "polygon_points": [[2880.079,492.341],[122.286,148.065],[133.045,951.376],[2980.493,1023.100]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "未",
+      "polygon_points": [[2378.228,281.571],[2482.945,298.785],[2498.724,436.495],[2365.317,407.806]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "来",
+      "polygon_points": [[2508.765,303.088],[2633.565,317.433],[2647.910,453.709],[2510.200,432.192]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "时",
+      "polygon_points": [[2647.910,314.564],[2765.538,324.606],[2779.883,466.619],[2659.386,449.406]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "尚",
+      "polygon_points": [[2785.621,333.212],[2913.290,346.123],[2913.290,483.833],[2795.662,466.619]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "Mirae",
+      "polygon_points": [[70.432,10.454],[510.818,72.137],[506.514,195.502],[64.694,128.081]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "Fashion",
+      "polygon_points": [[588.280,73.571],[1183.590,161.074],[1176.418,274.399],[576.804,191.199]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "未来ファッション",
+      "polygon_points": [[1319.579,149.599],[2237.648,280.137],[2234.779,403.502],[1295.193,283.006]]
+    }
+  ]
+}

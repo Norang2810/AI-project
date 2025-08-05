@@ -1,0 +1,58 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_000954",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_000954.jpg",
+    "created_day": "2023.08.23.",
+    "extension": "jpg",
+    "width": 4624,
+    "height": 3468,
+    "location": "36.5703569, 128.6942357",
+    "device_type": "SM-A536N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "대가",
+      "polygon_points": [[933.692,1808.913],[926.282,2735.195],[3994.128,2801.887],[3971.897,1794.093]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "大",
+      "polygon_points": [[4137.040,1795.862],[4120.103,2032.991],[4412.278,2016.053],[4412.278,1787.394]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "家",
+      "polygon_points": [[4124.337,2253.181],[4416.513,2253.181],[4403.810,2037.225],[4111.634,2032.991]]
+    }
+  ]
+}

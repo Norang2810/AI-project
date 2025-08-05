@@ -1,0 +1,186 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_CT_003211",
+    "src_path": "\\OCR\\KJ\\CT",
+    "label_path": "\\OCR\\KJ\\CT",
+    "language_type": "KJ",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KJ_C2_003211.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.15625277777778, 129.05915833333333",
+    "device_type": "iPhone 12",
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": 1,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "범내골방면",
+      "polygon_points": [[253.000,1687.000],[848.000,1687.000],[848.000,1829.000],[253.000,1829.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "서면몰",
+      "polygon_points": [[1160.000,1642.000],[1897.000,1642.000],[1897.000,1930.000],[1160.000,1930.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "서면지하도상가",
+      "polygon_points": [[1940.000,1656.000],[2816.000,1656.000],[2816.000,1798.000],[1940.000,1798.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "Seomyeon",
+      "polygon_points": [[1937.000,1806.000],[2160.000,1806.000],[2160.000,1862.000],[1937.000,1862.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "Underground",
+      "polygon_points": [[2171.000,1808.000],[2453.000,1808.000],[2453.000,1864.000],[2171.000,1864.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "Shopping",
+      "polygon_points": [[2461.000,1810.000],[2671.000,1810.000],[2671.000,1866.000],[2461.000,1866.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "Center",
+      "polygon_points": [[2681.000,1813.000],[2833.000,1813.000],[2833.000,1863.000],[2681.000,1863.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "Seomyeon",
+      "polygon_points": [[1936.000,1871.000],[2155.000,1871.000],[2155.000,1924.000],[1936.000,1924.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "Mall",
+      "polygon_points": [[2163.000,1874.000],[2256.000,1874.000],[2256.000,1917.000],[2163.000,1917.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "西面モール",
+      "polygon_points": [[2280.000,1872.000],[2522.000,1872.000],[2522.000,1923.000],[2280.000,1923.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "西",
+      "polygon_points": [[2547.000,1876.000],[2594.000,1876.000],[2594.000,1919.000],[2547.000,1919.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "面",
+      "polygon_points": [[2596.000,1877.000],[2642.000,1877.000],[2642.000,1919.000],[2596.000,1919.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "购",
+      "polygon_points": [[2645.000,1876.000],[2693.000,1876.000],[2693.000,1923.000],[2645.000,1923.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "物",
+      "polygon_points": [[2695.000,1875.000],[2739.000,1875.000],[2739.000,1927.000],[2695.000,1927.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "中",
+      "polygon_points": [[2743.000,1876.000],[2787.000,1876.000],[2787.000,1923.000],[2743.000,1923.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "心",
+      "polygon_points": [[2791.000,1873.000],[2838.000,1873.000],[2838.000,1927.000],[2791.000,1927.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "출입구",
+      "polygon_points": [[3034.000,1697.000],[3419.000,1697.000],[3419.000,1842.000],[3034.000,1842.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "5",
+      "polygon_points": [[3486.000,1719.000],[3590.000,1719.000],[3590.000,1832.000],[3486.000,1832.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "7",
+      "polygon_points": [[3700.000,1726.000],[3793.000,1726.000],[3793.000,1836.000],[3700.000,1836.000]]
+    }
+  ]
+}

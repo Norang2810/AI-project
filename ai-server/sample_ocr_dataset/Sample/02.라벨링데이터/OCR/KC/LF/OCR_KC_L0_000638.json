@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_000638",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_000638.jpeg",
+    "created_day": "2023.08.23.",
+    "extension": "jpeg",
+    "width": 1682,
+    "height": 582,
+    "location": "37.5177232, 126.934584",
+    "device_type": "iPhone 14",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "동대구역",
+      "polygon_points": [[218.000,59.000],[1397.000,59.000],[1397.000,382.000],[218.000,382.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Dongdaegu",
+      "polygon_points": [[74.000,398.000],[702.000,398.000],[702.000,533.000],[74.000,533.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Station",
+      "polygon_points": [[725.000,398.000],[1120.000,398.000],[1120.000,509.000],[725.000,509.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "xxx",
+      "polygon_points": [[1159.000,399.000],[1248.000,399.000],[1248.000,506.000],[1159.000,506.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "大",
+      "polygon_points": [[1256.000,406.000],[1337.000,406.000],[1337.000,507.000],[1256.000,507.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "邱",
+      "polygon_points": [[1345.000,406.000],[1433.000,406.000],[1433.000,506.000],[1345.000,506.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "xxx",
+      "polygon_points": [[1441.000,401.000],[1529.000,401.000],[1529.000,511.000],[1441.000,511.000]]
+    }
+  ]
+}

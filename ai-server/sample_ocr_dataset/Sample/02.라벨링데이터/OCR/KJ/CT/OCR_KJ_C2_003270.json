@@ -1,0 +1,122 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_CT_003270",
+    "src_path": "\\OCR\\KJ\\CT",
+    "label_path": "\\OCR\\KJ\\CT",
+    "language_type": "KJ",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KJ_C2_003270.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 3024,
+    "height": 4032,
+    "location": "35.15333888888889, 129.0592638888889",
+    "device_type": "iPhone 12",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "라온",
+      "polygon_points": [[855.000,2349.000],[1162.000,2349.000],[1162.000,2492.000],[855.000,2492.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "젊음",
+      "polygon_points": [[1216.000,2358.000],[1508.000,2358.000],[1508.000,2495.000],[1216.000,2495.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "의",
+      "polygon_points": [[1559.000,2362.000],[1713.000,2362.000],[1713.000,2499.000],[1559.000,2499.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "거리",
+      "polygon_points": [[1758.000,2362.000],[2055.000,2362.000],[2055.000,2503.000],[1758.000,2503.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "120m",
+      "polygon_points": [[2393.000,2509.000],[2643.000,2509.000],[2643.000,2590.000],[2393.000,2590.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "Young",
+      "polygon_points": [[851.000,2535.000],[1135.000,2535.000],[1135.000,2635.000],[851.000,2635.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "Street",
+      "polygon_points": [[1156.000,2548.000],[1427.000,2548.000],[1427.000,2631.000],[1156.000,2631.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "若者通り",
+      "polygon_points": [[853.000,2644.000],[1194.000,2644.000],[1194.000,2731.000],[853.000,2731.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "青",
+      "polygon_points": [[1335.000,2644.000],[1416.000,2644.000],[1416.000,2729.000],[1335.000,2729.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "春",
+      "polygon_points": [[1427.000,2648.000],[1508.000,2648.000],[1508.000,2738.000],[1427.000,2738.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "街",
+      "polygon_points": [[1510.000,2642.000],[1597.000,2642.000],[1597.000,2738.000],[1510.000,2738.000]]
+    }
+  ]
+}

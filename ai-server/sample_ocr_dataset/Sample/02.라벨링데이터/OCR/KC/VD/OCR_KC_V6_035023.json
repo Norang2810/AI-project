@@ -1,0 +1,218 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_VD_035023",
+    "src_path": "\\OCR\\KC\\VD",
+    "label_path": "\\OCR\\KC\\VD",
+    "language_type": "KC",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KC_V6_035023.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "예약은",
+      "polygon_points": [[949.065,806.390],[1237.000,800.000],[1237.000,887.000],[947.621,884.358]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "잠시후",
+      "polygon_points": [[690.000,802.000],[839.333,803.503],[833.557,882.914],[690.000,885.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "일이",
+      "polygon_points": [[720.000,905.000],[873.985,904.572],[866.766,988.316],[720.000,992.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "끔찍한",
+      "polygon_points": [[446.605,901.684],[699.279,891.578],[694.948,986.872],[457.000,990.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "후",
+      "polygon_points": [[859.546,799.171],[853.771,880.027],[933.183,880.027],[931.739,804.947]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "벌어지게",
+      "polygon_points": [[892.755,907.460],[1177.194,904.572],[1167.087,982.540],[886.980,986.872]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "되는데",
+      "polygon_points": [[1201.739,913.235],[1408.210,907.460],[1395.215,995.535],[1185.857,982.540]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "过",
+      "polygon_points": [[543.217,619.784],[591.856,618.791],[592.849,669.416],[540.239,670.409]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "了",
+      "polygon_points": [[633.548,622.762],[629.577,672.394],[596.820,670.409],[591.856,619.784]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "一",
+      "polygon_points": [[679.209,629.710],[679.209,663.460],[631.562,661.475],[635.533,630.703]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "段",
+      "polygon_points": [[724.871,624.747],[721.893,671.402],[684.173,673.387],[680.202,622.762]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "时",
+      "polygon_points": [[766.562,623.755],[770.533,673.387],[726.856,674.380],[727.849,628.718]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "间",
+      "polygon_points": [[818.180,626.733],[818.180,674.380],[771.526,673.387],[771.526,626.733]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "这",
+      "polygon_points": [[857.886,626.733],[906.526,622.762],[908.511,674.380],[854.908,670.409]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "里",
+      "polygon_points": [[949.209,622.762],[949.209,670.409],[913.474,674.380],[905.533,621.769]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "发",
+      "polygon_points": [[991.893,626.733],[992.886,668.424],[954.173,671.402],[948.217,624.747]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "生",
+      "polygon_points": [[1034.577,625.740],[1044.503,674.380],[996.856,673.387],[995.864,624.747]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "了",
+      "polygon_points": [[1079.246,626.733],[1080.239,670.409],[1047.481,675.372],[1040.533,623.755]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "可",
+      "polygon_points": [[1131.856,625.740],[1127.886,672.394],[1085.202,673.387],[1084.209,623.755]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "怕",
+      "polygon_points": [[1172.555,622.762],[1171.562,671.402],[1130.864,671.402],[1129.871,627.725]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "的",
+      "polygon_points": [[1216.231,622.762],[1219.209,672.394],[1178.511,671.402],[1173.548,622.762]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "事",
+      "polygon_points": [[1261.893,622.762],[1263.878,672.394],[1223.180,672.394],[1221.195,625.740]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "情",
+      "polygon_points": [[1311.526,626.733],[1307.555,674.380],[1264.871,675.372],[1264.871,621.769]]
+    }
+  ]
+}

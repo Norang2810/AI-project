@@ -1,0 +1,122 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206870",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206870.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "私たちの",
+      "polygon_points": [[599.879,864.516],[399.080,860.545],[399.648,810.629],[599.879,810.062]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "地域では",
+      "polygon_points": [[799.543,864.516],[602.715,861.112],[604.417,809.495],[801.812,808.928]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "かなりの",
+      "polygon_points": [[1057.064,860.545],[852.862,858.844],[857.400,810.629],[1055.362,811.196]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "要影響の",
+      "polygon_points": [[1258.996,857.709],[1061.601,858.844],[1059.900,811.764],[1258.996,812.898]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "要因として",
+      "polygon_points": [[1510.278,859.978],[1262.400,859.411],[1262.400,808.360],[1511.412,811.196]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "우리",
+      "polygon_points": [[709.921,966.049],[606.118,963.213],[607.253,904.222],[706.517,905.923]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "지역에는",
+      "polygon_points": [[924.333,967.184],[718.429,964.348],[716.728,900.818],[927.169,907.058]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "상당한",
+      "polygon_points": [[1092.232,970.587],[932.274,966.049],[933.408,905.356],[1097.904,903.087]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "부정적",
+      "polygon_points": [[1259.564,970.020],[1103.009,967.751],[1104.711,901.386],[1256.160,904.222]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "영향",
+      "polygon_points": [[1376.412,966.617],[1264.669,964.348],[1263.534,903.087],[1376.412,903.087]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "요인으로",
+      "polygon_points": [[1593.660,967.184],[1380.950,964.348],[1385.488,901.953],[1589.123,906.491]]
+    }
+  ]
+}

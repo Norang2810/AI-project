@@ -1,0 +1,66 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_PB_010602",
+    "src_path": "\\OCR\\KE\\PB",
+    "label_path": "\\OCR\\KE\\PB",
+    "language_type": "KE",
+    "group": "PB",
+    "small_group": 5
+  },
+  "Images": {
+    "file_name": "OCR_KE_P5_010602.jpg",
+    "created_day": "2023.08.27.",
+    "extension": "jpg",
+    "width": 4032,
+    "height": 1816,
+    "location": null,
+    "device_type": "SM-G991N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "172",
+      "polygon_points": [[690.406,908.208],[930.070,918.782],[915.972,1049.187],[690.406,1052.712]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "충혼로",
+      "polygon_points": [[1078.098,1031.565],[1659.636,1045.663],[1673.734,865.914],[1099.245,848.292]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Chunghon-ro",
+      "polygon_points": [[997.035,1169.019],[1733.650,1211.313],[1761.846,1084.432],[989.986,1031.565]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "168",
+      "polygon_points": [[1818.238,1133.775],[2040.280,1137.299],[2029.706,954.026],[1793.566,943.453]]
+    }
+  ]
+}

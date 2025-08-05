@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000133",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000133.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1232,
+    "height": 670,
+    "location": "36.565423, 128.72837179972223",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Honrye",
+      "polygon_points": [[65.671,150.236],[65.671,68.656],[315.697,77.985],[308.676,136.350]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "jeong",
+      "polygon_points": [[510.024,143.293],[520.438,77.334],[327.058,77.985],[320.747,141.734]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "婚",
+      "polygon_points": [[617.402,131.635],[617.402,55.894],[700.087,59.681],[690.619,131.635]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "礼",
+      "polygon_points": [[767.483,127.217],[771.270,59.681],[701.349,62.205],[699.456,132.898]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "精",
+      "polygon_points": [[842.734,131.635],[849.046,55.894],[776.951,57.156],[772.533,127.848]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "婚礼精",
+      "polygon_points": [[914.338,120.905],[924.437,48.319],[1156.712,43.901],[1154.819,125.955]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "혼례",
+      "polygon_points": [[24.013,624.096],[55.257,240.495],[1171.345,210.987],[1160.930,610.210]]
+    }
+  ]
+}

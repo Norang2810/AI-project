@@ -1,0 +1,74 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000145",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000145.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1432,
+    "height": 672,
+    "location": "36.56539829972222, 128.7284715",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "Toseok",
+      "polygon_points": [[38.681,182.021],[42.163,274.291],[299.821,242.954],[303.303,155.907]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "トソク",
+      "polygon_points": [[719.385,96.715],[714.163,190.726],[964.857,152.425],[963.116,60.156]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "土",
+      "polygon_points": [[1126.764,30.560],[1128.505,147.202],[1232.961,135.016],[1217.292,20.114]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "石",
+      "polygon_points": [[1225.997,18.373],[1241.665,128.052],[1328.712,112.384],[1321.748,11.410]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "토석",
+      "polygon_points": [[80.463,317.814],[49.126,660.778],[1184.214,601.586],[1168.546,173.316]]
+    }
+  ]
+}

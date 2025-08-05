@@ -1,0 +1,122 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000110",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000110.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2112,
+    "height": 575,
+    "location": "36.565346499722224, 128.72796769972223",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Andong",
+      "polygon_points": [[30.106,23.587],[226.253,23.587],[219.411,101.133],[34.668,96.572]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Donsumption",
+      "polygon_points": [[253.622,21.306],[591.178,16.744],[586.616,105.695],[253.622,101.133]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Center",
+      "polygon_points": [[611.705,19.025],[607.143,98.852],[794.167,94.291],[794.167,19.025]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "安東消費センター",
+      "polygon_points": [[885.398,3.060],[1382.607,5.340],[1380.327,94.291],[878.556,98.852]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "안동소비센타",
+      "polygon_points": [[109.933,117.099],[2089.648,87.448],[2101.052,509.392],[91.687,534.481]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "安",
+      "polygon_points": [[1446.925,0.283],[1514.934,0.283],[1519.910,86.538],[1455.219,84.879]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "㑈",
+      "polygon_points": [[1584.601,84.050],[1524.057,85.709],[1518.251,0.283],[1571.331,0.283]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "消",
+      "polygon_points": [[1647.634,78.244],[1587.919,82.391],[1573.235,0.000],[1633.534,0.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "费",
+      "polygon_points": [[1707.349,75.756],[1654.269,78.244],[1635.716,0.000],[1694.079,0.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "中",
+      "polygon_points": [[1764.575,74.927],[1713.154,74.927],[1696.567,0.283],[1756.282,1.942]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "心",
+      "polygon_points": [[1835.072,72.439],[1767.063,73.268],[1762.124,0.000],[1832.584,1.113]]
+    }
+  ]
+}

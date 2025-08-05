@@ -1,0 +1,122 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_001057",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_001057.jpeg",
+    "created_day": "2023.08.23.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.8581982, 128.5805738",
+    "device_type": "iPhone 13 Pro",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "글로벌",
+      "polygon_points": [[261.157,1301.588],[255.375,1729.458],[1440.690,1723.676],[1429.126,1284.242]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "병원",
+      "polygon_points": [[3065.440,1342.063],[3129.042,1723.676],[3909.616,1706.330],[3846.013,1295.806]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "Global",
+      "polygon_points": [[295.849,1821.971],[295.849,2105.290],[1099.551,2070.598],[1082.205,1804.625]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "365mc",
+      "polygon_points": [[1145.807,1810.407],[1140.025,2093.726],[1955.291,2064.816],[1937.945,1798.843]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "Hospital",
+      "polygon_points": [[2001.547,1798.843],[2018.893,2070.598],[2996.055,2059.034],[2978.709,1810.407]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "国",
+      "polygon_points": [[295.849,2180.457],[295.849,2440.648],[544.476,2440.648],[538.694,2180.457]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "际",
+      "polygon_points": [[793.103,2423.302],[787.321,2203.585],[561.822,2197.803],[561.822,2423.302]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "365mc",
+      "polygon_points": [[839.359,2203.585],[839.359,2400.174],[1654.625,2388.609],[1648.843,2197.803]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "医",
+      "polygon_points": [[1700.881,2197.803],[1706.663,2394.391],[1932.163,2394.391],[1920.598,2192.021]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "院",
+      "polygon_points": [[2192.354,2400.174],[2175.008,2192.021],[1943.727,2186.239],[1949.509,2400.174]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "365mc",
+      "polygon_points": [[1463.818,1336.281],[1452.254,1712.112],[3100.132,1694.766],[3024.966,1301.588]]
+    }
+  ]
+}

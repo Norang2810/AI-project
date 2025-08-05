@@ -1,0 +1,106 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_000012",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_000012.jpeg",
+    "created_day": "2023.08.20.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.244033333333334, 128.87011666666666",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "우측통행",
+      "polygon_points": [[616.957,1120.113],[2598.555,1125.274],[2577.913,1507.144],[622.118,1491.663]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "Keep",
+      "polygon_points": [[637.599,1538.107],[1024.630,1548.427],[1034.951,1692.919],[663.401,1667.117]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "to",
+      "polygon_points": [[1086.555,1672.277],[1223.305,1666.105],[1197.503,1542.255],[1060.753,1538.107]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "the",
+      "polygon_points": [[1262.009,1667.117],[1478.746,1682.598],[1468.425,1538.107],[1256.848,1538.107]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "right",
+      "polygon_points": [[1525.189,1672.277],[1850.295,1661.956],[1829.654,1517.465],[1525.189,1543.267]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "右",
+      "polygon_points": [[1984.121,1541.823],[2101.778,1541.823],[2103.842,1675.994],[1979.993,1669.801]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "側",
+      "polygon_points": [[2110.035,1541.823],[2246.270,1539.759],[2242.141,1673.929],[2112.099,1671.865]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "通",
+      "polygon_points": [[2248.334,1669.801],[2380.440,1669.801],[2372.184,1537.695],[2248.334,1537.695]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "行",
+      "polygon_points": [[2384.569,1539.759],[2514.611,1541.823],[2500.162,1667.737],[2386.633,1663.609]]
+    }
+  ]
+}

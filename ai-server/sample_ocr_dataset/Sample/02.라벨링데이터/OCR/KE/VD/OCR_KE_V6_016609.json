@@ -1,0 +1,138 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_VD_016609",
+    "src_path": "\\OCR\\KE\\VD",
+    "label_path": "\\OCR\\KE\\VD",
+    "language_type": "KE",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KE_V6_016609.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "남성의",
+      "polygon_points": [[404.547,890.164],[612.778,888.891],[613.415,971.674],[404.547,969.763]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "Inspector",
+      "polygon_points": [[574.826,622.839],[767.774,623.476],[769.047,674.419],[575.462,675.693]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "Ko",
+      "polygon_points": [[776.689,623.476],[830.179,623.476],[830.179,673.782],[779.236,674.419]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "sneaks",
+      "polygon_points": [[845.972,621.947],[979.061,621.947],[978.425,672.891],[843.425,670.343]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "up",
+      "polygon_points": [[989.250,634.683],[1046.561,633.409],[1046.561,680.532],[991.160,677.985]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "behind",
+      "polygon_points": [[1058.024,620.674],[1201.939,621.310],[1202.576,675.438],[1057.387,672.891]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "a",
+      "polygon_points": [[1208.561,632.518],[1237.217,632.518],[1236.580,668.815],[1207.288,668.178]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "man",
+      "polygon_points": [[1244.222,633.155],[1344.198,631.881],[1344.198,670.089],[1244.859,671.362]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "뒤로",
+      "polygon_points": [[626.788,889.527],[770.703,890.164],[770.066,970.400],[625.514,970.400]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "살며시",
+      "polygon_points": [[777.708,890.164],[989.123,891.438],[986.576,975.494],[778.344,972.947]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "접근하는",
+      "polygon_points": [[997.910,881.249],[1281.920,881.249],[1282.557,974.858],[1000.458,973.584]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "고",
+      "polygon_points": [[1288.288,891.438],[1364.703,891.438],[1364.066,969.127],[1287.651,966.579]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "경위",
+      "polygon_points": [[1374.255,888.891],[1513.712,887.617],[1511.802,978.042],[1373.618,975.494]]
+    }
+  ]
+}

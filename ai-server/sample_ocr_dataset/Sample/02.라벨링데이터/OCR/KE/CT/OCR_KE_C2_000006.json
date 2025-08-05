@@ -1,0 +1,474 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_CT_000006",
+    "src_path": "\\OCR\\KE\\CT",
+    "label_path": "\\OCR\\KE\\CT",
+    "language_type": "KE",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KE_C2_000006.jpeg",
+    "created_day": "2023.08.20.",
+    "extension": "jpeg",
+    "width": 3024,
+    "height": 4032,
+    "location": "35.2012715, 128.8127624",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 45,
+      "text": "가야",
+      "polygon_points": [[1062.897,629.961],[1062.897,761.466],[1308.539,763.948],[1313.502,624.999]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 46,
+      "text": "문명의",
+      "polygon_points": [[1338.314,632.442],[1695.611,622.518],[1690.649,768.910],[1338.314,758.985]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 47,
+      "text": "길",
+      "polygon_points": [[1722.905,629.961],[1842.004,624.999],[1844.485,754.023],[1730.348,758.985]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 48,
+      "text": "국립김해박물관",
+      "polygon_points": [[1253.952,858.234],[1248.990,950.040],[1834.560,952.521],[1822.154,860.716]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 49,
+      "text": "Gaya",
+      "polygon_points": [[819.737,1056.733],[817.255,1111.320],[963.648,1111.320],[963.648,1061.695]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 50,
+      "text": "Culture",
+      "polygon_points": [[983.498,1113.801],[1181.996,1111.320],[1177.034,1064.177],[983.498,1049.289]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 51,
+      "text": "Route",
+      "polygon_points": [[1189.440,1108.839],[1358.164,1111.320],[1363.126,1064.177],[1184.478,1056.733]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 52,
+      "text": "Gimhae",
+      "polygon_points": [[1407.788,1059.214],[1407.788,1111.320],[1608.768,1106.358],[1611.249,1056.733]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 53,
+      "text": "National",
+      "polygon_points": [[1628.618,1106.358],[1851.929,1108.839],[1854.410,1056.733],[1623.655,1054.252]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 54,
+      "text": "Museum",
+      "polygon_points": [[1874.260,1103.876],[2095.089,1101.395],[2092.608,1061.695],[1871.778,1046.808]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 55,
+      "text": "No",
+      "polygon_points": [[1147.259,2763.820],[1149.740,2853.144],[1271.321,2858.106],[1276.283,2783.670]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 56,
+      "text": "S03-001173",
+      "polygon_points": [[1315.983,2766.301],[1311.020,2848.182],[1782.454,2845.700],[1777.492,2763.820]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 57,
+      "text": "방문자",
+      "polygon_points": [[474.846,3222.847],[479.808,3302.247],[678.306,3302.247],[680.788,3222.847]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 58,
+      "text": "여권을",
+      "polygon_points": [[698.156,3225.329],[886.730,3222.847],[886.730,3312.172],[695.675,3307.209]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 59,
+      "text": "지참하지",
+      "polygon_points": [[901.617,3304.728],[1167.109,3292.322],[1167.109,3220.366],[911.542,3220.366]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 60,
+      "text": "않으신",
+      "polygon_points": [[1189.440,3220.366],[1373.051,3222.847],[1378.014,3297.284],[1184.478,3302.247]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 61,
+      "text": "분들은",
+      "polygon_points": [[1397.863,3220.366],[1596.362,3217.885],[1591.399,3302.247],[1397.863,3299.766]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 62,
+      "text": "본",
+      "polygon_points": [[1616.212,3220.366],[1688.167,3222.847],[1673.280,3294.803],[1611.249,3292.322]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 63,
+      "text": "용지에",
+      "polygon_points": [[1889.147,3212.922],[1896.591,3304.728],[1703.055,3302.247],[1693.130,3225.329]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 64,
+      "text": "도장을",
+      "polygon_points": [[2105.014,3225.329],[2109.977,3304.728],[1913.959,3294.803],[1913.959,3225.329]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 65,
+      "text": "찍어주세요",
+      "polygon_points": [[2122.383,3299.766],[2464.793,3299.766],[2454.868,3210.441],[2119.902,3215.404]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 66,
+      "text": "다른",
+      "polygon_points": [[457.477,3359.315],[454.996,3446.158],[596.426,3446.158],[591.463,3364.278]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 67,
+      "text": "방문자를",
+      "polygon_points": [[606.351,3364.278],[881.767,3359.315],[874.324,3443.677],[601.388,3443.677]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 68,
+      "text": "위해",
+      "polygon_points": [[1023.198,3354.353],[1015.754,3433.752],[881.767,3438.714],[889.211,3361.796]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 69,
+      "text": "용지는",
+      "polygon_points": [[1035.604,3359.315],[1229.140,3361.796],[1229.140,3443.677],[1043.047,3443.677]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 70,
+      "text": "한",
+      "polygon_points": [[1248.990,3354.353],[1318.464,3354.353],[1325.908,3446.158],[1256.433,3441.196]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 71,
+      "text": "사람당",
+      "polygon_points": [[1343.276,3441.196],[1529.369,3436.233],[1536.812,3351.871],[1340.795,3354.353]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 72,
+      "text": "한",
+      "polygon_points": [[1551.700,3354.353],[1628.618,3359.315],[1626.137,3441.196],[1554.181,3443.677]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 73,
+      "text": "장씩",
+      "polygon_points": [[1636.062,3438.714],[1770.048,3433.752],[1775.010,3346.909],[1645.986,3354.353]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 74,
+      "text": "사용해",
+      "polygon_points": [[1797.342,3354.353],[1990.878,3349.390],[1983.434,3438.714],[1787.417,3436.233]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 75,
+      "text": "주시기",
+      "polygon_points": [[2008.246,3356.834],[2199.301,3354.353],[2194.338,3446.158],[2003.284,3441.196]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 76,
+      "text": "바랍니다",
+      "polygon_points": [[2209.226,3433.752],[2482.161,3438.714],[2487.124,3366.759],[2209.226,3359.315]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 77,
+      "text": "if",
+      "polygon_points": [[454.784,3512.578],[511.232,3512.578],[501.556,3581.928],[454.784,3578.702]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 78,
+      "text": "you",
+      "polygon_points": [[520.909,3588.379],[632.192,3581.928],[632.192,3525.480],[522.522,3528.706]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 79,
+      "text": "don\u0027t",
+      "polygon_points": [[646.708,3519.029],[804.762,3512.578],[801.536,3586.766],[641.869,3580.315]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 80,
+      "text": "have",
+      "polygon_points": [[814.439,3509.352],[954.752,3522.254],[959.591,3583.541],[812.826,3577.090]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 81,
+      "text": "a",
+      "polygon_points": [[970.880,3530.318],[972.493,3580.315],[1007.975,3583.541],[1012.813,3527.093]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 82,
+      "text": "Visitor\u0027s",
+      "polygon_points": [[1028.941,3519.029],[1032.167,3573.864],[1277.312,3575.477],[1275.700,3507.739]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 83,
+      "text": "passport,",
+      "polygon_points": [[1291.828,3527.093],[1293.440,3588.379],[1572.455,3585.154],[1567.616,3520.642]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 84,
+      "text": "please",
+      "polygon_points": [[1586.970,3515.803],[1586.970,3586.766],[1783.732,3578.702],[1782.119,3520.642]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 85,
+      "text": "stamp",
+      "polygon_points": [[1803.085,3519.029],[1799.860,3588.379],[1988.557,3585.154],[1983.719,3530.318]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 86,
+      "text": "it",
+      "polygon_points": [[2003.072,3517.416],[2049.844,3522.254],[2049.844,3581.928],[2003.072,3583.541]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 87,
+      "text": "on",
+      "polygon_points": [[2064.359,3527.093],[2140.160,3525.480],[2135.322,3583.541],[2069.197,3583.541]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 88,
+      "text": "this",
+      "polygon_points": [[2156.288,3517.416],[2280.474,3519.029],[2272.410,3580.315],[2154.676,3583.541]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 89,
+      "text": "paper",
+      "polygon_points": [[2291.764,3533.544],[2472.397,3525.480],[2457.882,3583.541],[2286.925,3591.605]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 90,
+      "text": "Please",
+      "polygon_points": [[704.768,3628.699],[711.220,3698.050],[907.981,3694.824],[911.207,3635.150]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 91,
+      "text": "use",
+      "polygon_points": [[930.560,3691.598],[1032.167,3691.598],[1033.780,3639.989],[924.109,3646.440]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 92,
+      "text": "one",
+      "polygon_points": [[1056.359,3694.824],[1161.191,3689.986],[1153.127,3639.989],[1043.456,3639.989]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 93,
+      "text": "sheet",
+      "polygon_points": [[1167.642,3639.989],[1177.319,3699.662],[1343.437,3689.986],[1338.599,3635.150]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 94,
+      "text": "per",
+      "polygon_points": [[1359.565,3646.440],[1356.340,3704.501],[1456.333,3702.888],[1466.010,3641.602]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 95,
+      "text": "person",
+      "polygon_points": [[1474.074,3694.824],[1682.125,3689.986],[1678.900,3638.376],[1475.687,3639.989]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 96,
+      "text": "for",
+      "polygon_points": [[1698.253,3633.538],[1693.415,3693.211],[1778.893,3696.437],[1777.280,3633.538]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 97,
+      "text": "other",
+      "polygon_points": [[1798.247,3696.437],[1961.140,3698.050],[1962.752,3649.666],[1801.472,3630.312]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 98,
+      "text": "visitors",
+      "polygon_points": [[1978.880,3638.376],[1978.880,3694.824],[2211.124,3699.662],[2201.447,3633.538]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 99,
+      "text": "03",
+      "polygon_points": [[1110.316,873.075],[1113.374,949.526],[1186.767,943.410],[1186.767,873.075]]
+    }
+  ]
+}

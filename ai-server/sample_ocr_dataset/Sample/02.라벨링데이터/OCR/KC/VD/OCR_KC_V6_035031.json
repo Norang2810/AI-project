@@ -1,0 +1,186 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_VD_035031",
+    "src_path": "\\OCR\\KC\\VD",
+    "label_path": "\\OCR\\KC\\VD",
+    "language_type": "KC",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KC_V6_035031.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "말려보지만",
+      "polygon_points": [[1042.280,804.915],[1397.000,805.000],[1397.000,890.000],[1042.280,890.565]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "주인이",
+      "polygon_points": [[522.000,807.000],[747.709,811.893],[738.532,889.896],[522.000,890.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "主",
+      "polygon_points": [[641.130,623.438],[690.456,621.143],[688.161,667.028],[642.277,671.616]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "人",
+      "polygon_points": [[730.604,616.555],[732.898,671.616],[689.308,670.469],[693.897,625.732]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "紧",
+      "polygon_points": [[777.636,625.732],[777.636,669.322],[732.898,671.616],[731.751,621.143]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "急",
+      "polygon_points": [[817.784,626.879],[824.667,672.763],[781.077,672.763],[779.930,624.585]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "阻",
+      "polygon_points": [[868.257,622.291],[868.257,671.616],[826.961,672.763],[817.784,626.879]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "止",
+      "polygon_points": [[915.288,624.585],[912.994,667.028],[872.845,669.322],[869.404,623.438]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "但",
+      "polygon_points": [[1001.321,626.879],[1001.321,672.763],[961.172,672.763],[954.290,625.732]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "情",
+      "polygon_points": [[1051.794,622.291],[1042.617,671.616],[1005.910,675.057],[1003.615,625.732]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "况",
+      "polygon_points": [[1094.237,625.732],[1096.531,668.175],[1042.617,671.616],[1051.794,624.585]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "变",
+      "polygon_points": [[1140.121,623.438],[1143.562,672.763],[1094.237,670.469],[1094.237,623.438]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "得",
+      "polygon_points": [[1186.005,624.585],[1186.005,672.763],[1143.562,670.469],[1140.121,623.438]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "更",
+      "polygon_points": [[1226.154,621.143],[1229.595,668.175],[1184.858,672.763],[1186.005,623.438]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "糟",
+      "polygon_points": [[1276.627,624.585],[1277.774,672.763],[1229.595,672.763],[1228.448,628.026]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "다급하게",
+      "polygon_points": [[1026.220,808.483],[1028.005,888.781],[746.072,888.781],[751.425,806.699]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "상황",
+      "polygon_points": [[1258.191,970.862],[1256.406,899.487],[1122.577,895.918],[1101.165,965.509]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "악화되는",
+      "polygon_points": [[821.016,970.862],[821.016,899.487],[1099.380,895.918],[1095.811,969.078]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "점점",
+      "polygon_points": [[667.559,974.431],[669.343,897.703],[808.525,897.703],[808.525,970.862]]
+    }
+  ]
+}

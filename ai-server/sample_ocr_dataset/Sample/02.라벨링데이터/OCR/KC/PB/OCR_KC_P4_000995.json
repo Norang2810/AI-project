@@ -1,0 +1,170 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_000995",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_000995.jpeg",
+    "created_day": "2023.08.23.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.8581982, 128.5805738",
+    "device_type": "iPhone 13 Pro",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 3
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "Dongchundang",
+      "polygon_points": [[790.747,1612.678],[1824.386,1622.123],[1832.482,1798.895],[796.145,1804.292]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "우암사적공원",
+      "polygon_points": [[756.000,1842.000],[1929.639,1844.774],[1932.337,2045.834],[755.663,2045.834]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Historical",
+      "polygon_points": [[1045.538,2200.498],[1512.000,2199.000],[1512.000,2283.000],[1047.746,2288.822]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "동춘당",
+      "polygon_points": [[735.614,1256.476],[1932.723,1239.127],[1939.663,1502.837],[732.145,1492.428]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Uam",
+      "polygon_points": [[758.484,2198.289],[759.588,2288.822],[1000.272,2284.406],[998.064,2210.434]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Park",
+      "polygon_points": [[1552.298,2194.977],[1552.298,2284.406],[1768.692,2278.885],[1760.964,2191.665]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "4km",
+      "polygon_points": [[2062.265,2205.813],[2064.578,2339.982],[2339.855,2349.235],[2330.602,2213.910]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "1.5km",
+      "polygon_points": [[1992.867,1595.114],[1991.711,1733.910],[2353.735,1739.693],[2351.422,1598.584]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "同",
+      "polygon_points": [[768.304,1618.565],[948.555,1613.451],[944.720,1489.449],[764.469,1490.727]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "春",
+      "polygon_points": [[1265.593,1618.565],[1449.679,1614.730],[1445.844,1494.562],[1259.201,1486.892]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "堂",
+      "polygon_points": [[1895.833,1616.008],[1888.162,1490.727],[1697.684,1488.170],[1701.519,1614.730]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "尤",
+      "polygon_points": [[758.679,2059.019],[960.136,2054.733],[951.563,2186.180],[760.108,2184.752]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "庵",
+      "polygon_points": [[981.568,2059.019],[970.137,2191.895],[1167.308,2191.895],[1163.022,2059.019]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "史",
+      "polygon_points": [[1178.738,2061.877],[1168.737,2189.038],[1354.478,2186.180],[1354.478,2059.019]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "xxx",
+      "polygon_points": [[1555.935,2056.162],[1548.791,2189.038],[1358.764,2189.038],[1360.193,2056.162]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "公",
+      "polygon_points": [[1564.507,2059.019],[1560.221,2181.894],[1745.962,2183.323],[1743.104,2059.019]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "xxx",
+      "polygon_points": [[1947.419,2056.162],[1954.563,2186.180],[1751.677,2183.323],[1748.819,2056.162]]
+    }
+  ]
+}

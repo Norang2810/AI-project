@@ -1,0 +1,66 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_PB_010516",
+    "src_path": "\\OCR\\KE\\PB",
+    "label_path": "\\OCR\\KE\\PB",
+    "language_type": "KE",
+    "group": "PB",
+    "small_group": 5
+  },
+  "Images": {
+    "file_name": "OCR_KE_P5_010516.jpeg",
+    "created_day": "2023.08.27.",
+    "extension": "jpeg",
+    "width": 3024,
+    "height": 4032,
+    "location": null,
+    "device_type": "iPhone 14 Pro",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "농암로",
+      "polygon_points": [[1197.000,1853.000],[1590.000,1853.000],[1590.000,1995.000],[1197.000,1995.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "1",
+      "polygon_points": [[1627.541,1904.387],[1676.395,1902.860],[1673.342,1970.035],[1639.755,1970.035]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "3197",
+      "polygon_points": [[1734.410,1902.860],[1876.392,1899.807],[1877.919,1970.035],[1735.936,1973.088]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Nongam-ro",
+      "polygon_points": [[1201.593,2102.857],[1671.815,2093.697],[1661.128,1999.042],[1197.013,2000.569]]
+    }
+  ]
+}

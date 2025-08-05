@@ -1,0 +1,202 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_CT_003269",
+    "src_path": "\\OCR\\KJ\\CT",
+    "label_path": "\\OCR\\KJ\\CT",
+    "language_type": "KJ",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KJ_C2_003269.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 3024,
+    "height": 4032,
+    "location": "35.153286111111115, 129.05934166666665",
+    "device_type": "iPhone 12",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "늘품",
+      "polygon_points": [[935.766,1753.128],[1214.422,1708.458],[1214.858,1857.777],[957.037,1876.502]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "학원",
+      "polygon_points": [[1507.967,1810.561],[1505.840,1659.534],[1242.074,1712.712],[1269.727,1838.214]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "거리",
+      "polygon_points": [[1839.802,1751.001],[1799.386,1612.737],[1546.256,1653.152],[1554.764,1795.671]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "라온",
+      "polygon_points": [[860.843,2588.623],[1035.269,2682.217],[1065.049,2550.334],[884.242,2469.503]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "67",
+      "polygon_points": [[433.524,2218.027],[414.379,2341.401],[488.829,2432.868],[559.025,2324.384]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "젊음",
+      "polygon_points": [[1082.978,2582.487],[1084.700,2716.801],[1234.511,2799.456],[1248.287,2663.420]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "의",
+      "polygon_points": [[1344.718,2845.949],[1353.327,2730.577],[1263.785,2696.138],[1251.731,2804.622]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "거리",
+      "polygon_points": [[1370.547,2756.407],[1344.718,2873.501],[1508.305,2971.653],[1525.525,2849.393]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "120m",
+      "polygon_points": [[1654.735,3058.966],[1656.307,3137.578],[1777.369,3187.889],[1782.086,3121.855]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "Education",
+      "polygon_points": [[949.150,1915.950],[1309.192,1868.783],[1309.192,1936.389],[953.867,1994.562]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "Street",
+      "polygon_points": [[1562.323,1892.367],[1326.487,1926.956],[1326.487,1857.777],[1549.745,1829.477]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "Young",
+      "polygon_points": [[861.105,2696.653],[1023.045,2795.704],[1030.907,2723.381],[865.822,2618.041]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "Street",
+      "polygon_points": [[1186.558,2880.604],[1188.130,2803.565],[1035.623,2720.236],[1029.334,2786.270]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "若者通り",
+      "polygon_points": [[856.388,2715.520],[1067.068,2833.437],[1035.623,2901.044],[861.105,2805.137]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "塾通り",
+      "polygon_points": [[928.713,2015.602],[1152.914,1980.646],[1149.297,2061.407],[940.767,2081.898]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "学",
+      "polygon_points": [[1243.317,1957.744],[1242.112,2021.629],[1314.435,2024.040],[1315.640,1949.306]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "院",
+      "polygon_points": [[1387.963,2013.192],[1386.758,1930.020],[1312.024,1945.690],[1319.256,2014.397]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "街",
+      "polygon_points": [[1477.161,1993.906],[1469.929,1925.199],[1389.168,1930.020],[1393.990,2003.549]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "青",
+      "polygon_points": [[1127.314,2866.614],[1121.664,2959.278],[1164.605,2958.148],[1179.296,2900.515]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "春",
+      "polygon_points": [[1224.498,2921.986],[1213.197,2990.919],[1165.735,2963.798],[1183.816,2899.385]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "街",
+      "polygon_points": [[1270.830,2949.107],[1261.789,3014.650],[1219.978,2994.309],[1224.498,2924.246]]
+    }
+  ]
+}

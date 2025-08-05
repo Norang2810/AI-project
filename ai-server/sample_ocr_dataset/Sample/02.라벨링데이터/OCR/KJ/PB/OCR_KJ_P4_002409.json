@@ -1,0 +1,194 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_PB_002409",
+    "src_path": "\\OCR\\KJ\\PB",
+    "label_path": "\\OCR\\KJ\\PB",
+    "language_type": "KJ",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KJ_P4_002409.jpeg",
+    "created_day": "2023.08.24.",
+    "extension": "jpeg",
+    "width": 3024,
+    "height": 1090,
+    "location": null,
+    "device_type": null,
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 4
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "노량진",
+      "polygon_points": [[665.000,257.000],[1063.929,298.384],[1059.000,431.000],[658.929,384.784]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "청년",
+      "polygon_points": [[1198.886,331.871],[1411.286,357.071],[1416.686,484.871],[1198.886,459.671]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "일자리",
+      "polygon_points": [[1436.486,369.671],[1738.886,411.071],[1747.886,528.071],[1445.486,488.471]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Noryangjin",
+      "polygon_points": [[675.129,414.484],[1047.729,463.084],[1047.729,546.784],[667.029,500.884]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Job",
+      "polygon_points": [[1072.029,471.184],[1177.329,479.284],[1182.729,552.184],[1061.229,538.684]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Center",
+      "polygon_points": [[1204.329,487.384],[1420.329,514.384],[1412.229,595.384],[1201.629,562.984]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "for",
+      "polygon_points": [[1525.629,533.284],[1436.529,522.484],[1423.029,576.484],[1522.929,600.784]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "the",
+      "polygon_points": [[1541.829,541.384],[1639.029,552.184],[1639.029,616.984],[1539.129,603.484]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "young",
+      "polygon_points": [[1830.729,581.884],[1649.829,557.584],[1657.929,633.184],[1836.129,652.084]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "200m",
+      "polygon_points": [[2167.286,663.071],[2352.686,686.471],[2358.086,771.071],[2163.686,744.071]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "青",
+      "polygon_points": [[666.086,519.071],[741.686,524.471],[732.686,601.871],[660.686,596.471]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "年",
+      "polygon_points": [[813.686,537.071],[759.686,529.871],[747.086,609.071],[817.286,618.071]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "就",
+      "polygon_points": [[900.086,549.671],[828.086,538.871],[822.686,616.271],[900.086,625.271]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "业",
+      "polygon_points": [[984.686,555.071],[916.286,546.071],[910.886,628.871],[986.486,630.671]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "中",
+      "polygon_points": [[1060.286,565.871],[1000.886,555.071],[995.486,632.471],[1060.286,636.071]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "心",
+      "polygon_points": [[1143.086,580.271],[1071.086,565.871],[1067.486,643.271],[1137.686,648.671]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "青年",
+      "polygon_points": [[1197.086,587.471],[1319.793,599.442],[1318.340,676.422],[1197.086,661.271]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "就業サポー",
+      "polygon_points": [[1346.486,605.471],[1645.141,645.921],[1629.164,706.924],[1346.486,682.871]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "センター",
+      "polygon_points": [[1688.486,654.071],[1886.248,674.970],[1887.700,744.687],[1692.086,720.671]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "센터",
+      "polygon_points": [[1762.286,420.071],[1947.686,445.271],[1947.686,565.871],[1765.886,538.871]]
+    }
+  ]
+}

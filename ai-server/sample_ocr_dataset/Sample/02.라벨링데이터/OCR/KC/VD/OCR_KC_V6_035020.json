@@ -1,0 +1,258 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_VD_035020",
+    "src_path": "\\OCR\\KC\\VD",
+    "label_path": "\\OCR\\KC\\VD",
+    "language_type": "KC",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KC_V6_035020.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "경찰은",
+      "polygon_points": [[550.000,802.000],[776.616,807.304],[769.733,887.602],[550.000,892.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "마약",
+      "polygon_points": [[355.000,892.000],[505.899,889.896],[492.134,972.488],[355.000,975.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "결과를",
+      "polygon_points": [[960.000,895.000],[1166.632,892.190],[1171.220,972.488],[960.000,977.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "혈중알코올농도와",
+      "polygon_points": [[1343.286,809.599],[1340.992,887.602],[776.616,889.896],[785.793,802.716]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "투약",
+      "polygon_points": [[650.434,981.664],[652.728,889.896],[510.487,894.484],[503.605,974.782]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "여부",
+      "polygon_points": [[794.969,977.076],[790.381,894.484],[655.023,892.190],[661.905,974.782]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "감정",
+      "polygon_points": [[813.323,981.664],[811.029,896.779],[950.976,896.779],[946.387,981.664]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "나오는",
+      "polygon_points": [[1391.464,899.073],[1386.876,981.664],[1182.691,972.488],[1180.397,899.073]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "대로",
+      "polygon_points": [[1540.588,889.896],[1542.882,981.664],[1400.641,972.488],[1402.936,896.779]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "血",
+      "polygon_points": [[506.766,723.388],[550.564,724.848],[553.484,773.027],[511.145,770.107]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "液",
+      "polygon_points": [[597.283,724.848],[603.123,773.027],[554.944,773.027],[552.024,724.848]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "酒",
+      "polygon_points": [[648.381,724.848],[644.001,777.407],[600.203,771.567],[597.283,720.468]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "精",
+      "polygon_points": [[690.720,723.388],[690.720,775.947],[644.001,774.487],[644.001,724.848]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "含",
+      "polygon_points": [[735.978,726.308],[730.138,775.947],[692.180,773.027],[690.720,727.768]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "量",
+      "polygon_points": [[776.857,721.928],[778.317,778.867],[730.138,777.407],[735.978,727.768]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "和",
+      "polygon_points": [[827.955,727.768],[826.495,773.027],[778.317,773.027],[782.697,723.388]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "吸",
+      "polygon_points": [[864.454,721.928],[871.754,771.567],[827.955,773.027],[826.495,726.308]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "毒",
+      "polygon_points": [[915.552,726.308],[908.253,775.947],[874.674,770.107],[864.454,726.308]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "情",
+      "polygon_points": [[957.891,721.928],[959.351,773.027],[911.173,771.567],[917.012,723.388]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "况",
+      "polygon_points": [[1006.069,720.468],[1007.529,771.567],[962.271,773.027],[959.351,724.848]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "分",
+      "polygon_points": [[1042.568,719.008],[1049.868,775.947],[1008.989,774.487],[1010.449,723.388]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "析",
+      "polygon_points": [[1092.207,723.388],[1089.287,773.027],[1049.868,773.027],[1048.408,726.308]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "结",
+      "polygon_points": [[1138.925,727.768],[1140.385,775.947],[1092.207,773.027],[1090.747,721.928]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "果",
+      "polygon_points": [[1185.644,721.928],[1185.644,778.867],[1140.385,778.867],[1143.305,724.848]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "一",
+      "polygon_points": [[1230.902,726.308],[1232.362,759.887],[1185.644,764.267],[1185.644,737.988]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "出",
+      "polygon_points": [[1273.241,723.388],[1270.321,775.947],[1229.442,773.027],[1230.902,726.308]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "警",
+      "polygon_points": [[1314.119,721.928],[1362.298,724.848],[1360.838,778.867],[1314.119,773.027]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "方",
+      "polygon_points": [[1409.016,726.308],[1407.556,773.027],[1360.838,775.947],[1360.838,724.848]]
+    }
+  ]
+}

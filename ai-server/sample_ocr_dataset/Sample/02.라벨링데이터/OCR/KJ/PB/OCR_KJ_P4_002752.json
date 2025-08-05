@@ -1,0 +1,226 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_PB_002752",
+    "src_path": "\\OCR\\KJ\\PB",
+    "label_path": "\\OCR\\KJ\\PB",
+    "language_type": "KJ",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KJ_P4_002752.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 4500,
+    "height": 15783,
+    "location": null,
+    "device_type": null,
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 4
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "출입구",
+      "polygon_points": [[2648.289,4224.377],[3479.549,4413.963],[3508.716,4778.551],[2619.122,4588.965]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Entrance",
+      "polygon_points": [[3625.384,4909.802],[2604.539,4647.299],[2575.372,4938.969],[3625.384,5157.722]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "강남",
+      "polygon_points": [[2619.122,5653.561],[3596.217,5784.813],[3639.968,9591.108],[2677.456,9474.440]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "출입구",
+      "polygon_points": [[650.349,4647.299],[1219.106,4370.213],[1219.106,4763.967],[635.765,4982.720]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Entrance",
+      "polygon_points": [[533.681,5113.971],[1306.607,4807.718],[1321.190,5084.804],[548.264,5376.474]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "강남",
+      "polygon_points": [[591.993,5959.793],[1277.418,5711.873],[1408.669,9518.169],[650.327,9751.505]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Gangnam",
+      "polygon_points": [[2327.474,9868.173],[4019.160,10159.843],[4004.577,10597.348],[2342.057,10451.513]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "Gangnam",
+      "polygon_points": [[344.117,10232.761],[1525.381,9999.425],[1539.964,10553.598],[358.700,10801.518]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "江",
+      "polygon_points": [[2861.732,10593.209],[3222.674,10626.022],[3233.611,11063.527],[2883.607,11041.652]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "南",
+      "polygon_points": [[3561.740,10658.835],[3244.549,10626.022],[3244.549,11096.340],[3594.553,11085.402]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "江",
+      "polygon_points": [[739.832,10833.837],[969.522,10779.148],[958.584,11172.903],[728.894,11216.654]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "南",
+      "polygon_points": [[1232.025,11118.215],[1199.212,10680.710],[958.584,10735.398],[980.459,11183.841]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "カ",
+      "polygon_points": [[2589.837,11121.652],[2883.223,11121.652],[2860.061,11569.451],[2582.116,11546.289]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "ン",
+      "polygon_points": [[3199.771,11175.696],[2898.664,11167.976],[2898.664,11561.730],[3176.608,11546.289]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "ナ",
+      "polygon_points": [[3524.039,11206.579],[3238.374,11191.138],[3192.050,11592.613],[3531.760,11600.334]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "ム",
+      "polygon_points": [[3863.749,11222.021],[3570.363,11214.300],[3547.201,11623.496],[3886.911,11615.775]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "カ",
+      "polygon_points": [[520.695,11399.596],[729.153,11345.551],[736.874,11754.747],[512.974,11785.630]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "ン",
+      "polygon_points": [[937.611,11322.389],[736.874,11353.272],[744.594,11754.747],[937.611,11731.585]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "ナ",
+      "polygon_points": [[1161.511,11268.345],[945.332,11291.507],[953.053,11700.703],[1169.232,11669.820]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "ム",
+      "polygon_points": [[1385.411,11214.300],[1153.790,11229.741],[1192.394,11677.541],[1439.455,11615.775]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "2호선",
+      "polygon_points": [[613.320,13174.928],[1323.622,13059.117],[1285.019,13560.962],[628.761,13638.168]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "2호선",
+      "polygon_points": [[2751.948,13012.793],[3709.312,13028.235],[3740.195,13545.520],[2767.389,13483.755]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "신분당",
+      "polygon_points": [[2836.876,14672.739],[3817.402,14665.019],[3817.402,15174.584],[2829.155,15190.025]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "신분당",
+      "polygon_points": [[621.040,14819.432],[1339.064,14703.622],[1339.064,15274.952],[644.202,15328.997]]
+    }
+  ]
+}

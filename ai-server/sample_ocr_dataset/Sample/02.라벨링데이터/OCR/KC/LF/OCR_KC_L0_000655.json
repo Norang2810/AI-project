@@ -1,0 +1,66 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_000655",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_000655.jpeg",
+    "created_day": "2023.08.23.",
+    "extension": "jpeg",
+    "width": 3459,
+    "height": 1410,
+    "location": "34.9622577, 127.5207517",
+    "device_type": "iPhone 14",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "물금역",
+      "polygon_points": [[889.257,358.782],[1585.959,418.299],[1578.956,726.388],[875.253,750.895]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "勿",
+      "polygon_points": [[1908.052,477.816],[1901.050,705.382],[2100.607,694.879],[2104.108,502.323]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "禁",
+      "polygon_points": [[2118.112,477.816],[2328.173,484.818],[2321.171,694.879],[2118.112,694.879]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "驛",
+      "polygon_points": [[2541.735,481.317],[2541.735,701.881],[2321.171,701.881],[2335.175,481.317]]
+    }
+  ]
+}

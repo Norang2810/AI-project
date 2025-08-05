@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_000882",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_000882.jpeg",
+    "created_day": "2023.08.23.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.2012715, 128.8127624",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": 1,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "문화상품점",
+      "polygon_points": [[793.000,862.000],[3094.000,862.000],[3094.000,1365.000],[793.000,1365.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Museum",
+      "polygon_points": [[842.000,1481.000],[2209.000,1481.000],[2209.000,1793.000],[842.000,1793.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Shop",
+      "polygon_points": [[2287.000,1460.000],[3096.000,1460.000],[3096.000,1868.000],[2287.000,1868.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "文",
+      "polygon_points": [[1185.000,1888.000],[1486.000,1888.000],[1486.000,2189.000],[1185.000,2189.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "化",
+      "polygon_points": [[1504.000,1891.000],[1796.000,1891.000],[1796.000,2187.000],[1504.000,2187.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "商",
+      "polygon_points": [[1815.000,1888.000],[2091.000,1888.000],[2091.000,2187.000],[1815.000,2187.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "品",
+      "polygon_points": [[2116.000,1898.000],[2397.000,1898.000],[2397.000,2184.000],[2116.000,2184.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "店",
+      "polygon_points": [[2420.000,1886.000],[2706.000,1886.000],[2706.000,2201.000],[2420.000,2201.000]]
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_PB_003109",
+    "src_path": "\\OCR\\KJ\\PB",
+    "label_path": "\\OCR\\KJ\\PB",
+    "language_type": "KJ",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KJ_P4_003109.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.205625, 129.0785527777778",
+    "device_type": "iPhone 12",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 4
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "내산초등학교",
+      "polygon_points": [[1389.692,2029.408],[1690.000,2026.000],[1690.000,2094.000],[1379.264,2091.973]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "나가는",
+      "polygon_points": [[2049.482,2041.707],[2379.689,2042.866],[2386.640,2173.790],[2049.482,2166.838]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "4호선",
+      "polygon_points": [[2787.345,2043.311],[3034.131,2043.311],[3057.303,2148.746],[2786.186,2155.697]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "동래우체국",
+      "polygon_points": [[1368.836,2155.697],[1627.000,2152.000],[1627.000,2226.000],[1358.409,2225.215]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "환승통로",
+      "polygon_points": [[2651.000,2163.000],[3061.938,2164.966],[3092.000,2294.000],[2664.531,2294.732]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "곳",
+      "polygon_points": [[2409.813,2177.266],[2545.371,2177.266],[2532.626,2047.500],[2400.544,2047.500]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "음수대",
+      "polygon_points": [[4027.669,2873.557],[3541.743,2888.156],[3506.290,2720.272],[3976.574,2700.459]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "3",
+      "polygon_points": [[1254.332,2126.461],[1308.555,2129.589],[1318.983,2047.211],[1263.717,2043.040]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "4",
+      "polygon_points": [[1302.299,2174.427],[1238.691,2174.427],[1225.135,2254.720],[1290.829,2258.891]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "Naesan",
+      "polygon_points": [[1464.969,2138.974],[1374.249,2137.931],[1374.249,2094.135],[1464.969,2094.135]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "Elementary",
+      "polygon_points": [[1588.015,2141.059],[1462.884,2138.974],[1464.969,2094.135],[1590.100,2096.221]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "School",
+      "polygon_points": [[1668.307,2141.059],[1588.015,2138.974],[1590.100,2096.221],[1668.307,2094.135]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "Dongnae",
+      "polygon_points": [[1353.394,2276.618],[1478.525,2273.490],[1480.611,2230.736],[1355.480,2225.523]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "Post",
+      "polygon_points": [[1548.390,2275.575],[1478.525,2272.447],[1480.611,2225.523],[1546.304,2227.608]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "Office",
+      "polygon_points": [[1629.725,2273.490],[1546.304,2275.575],[1546.304,2224.480],[1631.811,2225.523]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "Way",
+      "polygon_points": [[2226.344,2189.106],[2094.956,2189.106],[2100.170,2258.971],[2229.472,2261.057]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "Out",
+      "polygon_points": [[2343.132,2261.057],[2237.814,2257.928],[2232.600,2187.021],[2336.876,2193.277]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "10m",
+      "polygon_points": [[3235.654,2247.661],[3253.381,2315.441],[3357.657,2309.184],[3339.930,2246.618]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "萊",
+      "polygon_points": [[1706.919,2132.534],[1684.030,2131.611],[1683.788,2095.820],[1708.212,2094.702]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "山",
+      "polygon_points": [[1728.576,2137.974],[1706.939,2134.156],[1706.939,2093.429],[1728.576,2093.429]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "初",
+      "polygon_points": [[1748.939,2137.974],[1728.576,2136.702],[1728.576,2089.611],[1748.939,2089.611]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "等",
+      "polygon_points": [[1768.030,2139.247],[1747.667,2136.702],[1747.667,2094.702],[1769.303,2089.611]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "學",
+      "polygon_points": [[1785.849,2136.702],[1768.030,2136.702],[1768.030,2094.702],[1787.121,2092.156]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "校",
+      "polygon_points": [[1811.303,2132.883],[1784.576,2136.702],[1785.849,2093.429],[1811.303,2092.156]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "東",
+      "polygon_points": [[1686.576,2266.520],[1658.576,2266.520],[1657.303,2228.338],[1685.303,2225.792]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "萊",
+      "polygon_points": [[1709.485,2263.974],[1685.303,2265.247],[1686.576,2225.792],[1710.758,2225.792]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "郵",
+      "polygon_points": [[1734.939,2267.792],[1708.212,2267.792],[1709.485,2225.792],[1736.212,2225.792]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "遞",
+      "polygon_points": [[1760.394,2267.792],[1733.667,2266.520],[1734.939,2224.520],[1761.667,2225.792]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 31,
+      "text": "局",
+      "polygon_points": [[1790.939,2267.792],[1759.121,2265.247],[1760.394,2227.065],[1787.121,2225.792]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 32,
+      "text": "出",
+      "polygon_points": [[2449.929,2259.307],[2388.839,2256.762],[2387.566,2193.126],[2442.293,2189.307]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 33,
+      "text": "口",
+      "polygon_points": [[2507.202,2255.489],[2449.929,2259.307],[2441.020,2189.307],[2500.839,2189.307]]
+    }
+  ]
+}
