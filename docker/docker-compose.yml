@@ -1,11 +1,11 @@
-version: '3.8'
+
 
 services:
   # Frontend Service
   frontend:
     build:
-      context: ../frontend
-      dockerfile: ../docker/Dockerfile.frontend
+      context: ..
+      dockerfile: docker/Dockerfile.frontend
     ports:
       - "3000:80"
     environment:
@@ -13,9 +13,6 @@ services:
       - REACT_APP_AI_SERVER_URL=http://localhost:8000
     depends_on:
       - backend
-    volumes:
-      - ../frontend:/app
-      - /app/node_modules
 
   # Backend Service
   backend:
