@@ -1,0 +1,1 @@
+export { default as AllergyPage } from './AllergyPage.jsx'; 
