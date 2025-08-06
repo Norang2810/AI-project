@@ -2,71 +2,136 @@ import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import AnalysisResult from './AnalysisResult';
 
+// 메인페이지 스타일에 맞춰 전체 컨테이너 수정
 const UploadContainer = styled.div`
-  max-width: 800px;
+  max-width: 1200px; /* 메인페이지와 동일한 max-width */
+  width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 2rem; /* 메인페이지와 동일한 패딩 */
 `;
 
-const UploadArea = styled.div`
-  border: 2px dashed #d1d5db;
-  border-radius: 12px;
-  padding: 40px;
+// 메인페이지의 SectionTitle과 동일한 스타일로 변경
+const SectionTitle = styled.h2`
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
   text-align: center;
-  background: #f9fafb;
-  transition: all 0.3s ease;
+  color: #333;
+  font-family: 'Ownglyph_meetme-Rg', sans-serif; /* 메인페이지와 동일한 폰트 */
+`;
+
+// 메인페이지의 섹션 내용과 일치하도록 서브타이틀 추가
+const SectionSubtitle = styled.p`
+  font-family: 'Ownglyph_meetme-Rg', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #A2601E; /* 메인페이지와 동일한 색상으로 변경 */
+  margin-bottom: 3rem;
+  line-height: 1.6;
+  opacity: 0.8;
+`;
+
+// 메인페이지의 FeatureCard와 비슷한 스타일로 업로드 영역 수정
+const UploadArea = styled.div`
+  background: white; /* 메인페이지 카드와 동일한 배경 */
+  border: 2px dashed #d1d5db;
+  border-radius: 15px; /* 메인페이지와 비슷한 모서리 */
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease; /* 메인페이지 호버 효과와 동일 */
   cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 메인페이지와 동일한 그림자 */
   
   &:hover {
-    border-color: #3b82f6;
-    background: #f0f9ff;
+    border-color: #A2601E; /* 메인페이지 컬러와 동일 */
+    background: #fef7ed; /* 연한 오렌지 배경 */
+    transform: translateY(-5px); /* 메인페이지 호버 효과와 동일 */
   }
   
   &.drag-over {
-    border-color: #3b82f6;
-    background: #eff6ff;
+    border-color: #A2601E;
+    background: #fff7ed;
+    transform: translateY(-5px);
   }
 `;
 
+// 메인페이지의 FeatureIcon과 동일한 스타일로 수정
+const UploadIcon = styled.div`
+  font-size: 3rem; /* 메인페이지와 동일 */
+  margin-bottom: 1rem; /* 메인페이지와 동일 */
+  color: #A2601E; /* 메인페이지 컬러 */
+`;
+
+// 메인페이지의 FeatureTitle과 동일한 스타일로 수정
+const UploadTitle = styled.h3`
+  font-size: 1.5rem; /* 메인페이지와 동일 */
+  margin-bottom: 1rem; /* 메인페이지와 동일 */
+  color: #333; /* 메인페이지와 동일 */
+  font-family: 'Ownglyph_meetme-Rg', sans-serif;
+  font-weight: 700;
+`;
+
+// 메인페이지의 FeatureDescription과 동일한 스타일로 수정
+const UploadDescription = styled.p`
+  color: #A2601E; /* 메인페이지 컬러로 변경 */
+  line-height: 1.6; /* 메인페이지와 동일 */
+  margin-bottom: 2rem;
+  font-family: 'Ownglyph_meetme-Rg', sans-serif;
+  opacity: 0.8;
+`;
+
+// 메인페이지의 CTAButton과 비슷한 스타일로 버튼 수정
 const UploadButton = styled.button`
-  background: #3b82f6;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 600;
+  width: 300px; /* CTAButton보다 작게 조정 */
+  height: 60px; /* CTAButton보다 작게 조정 */
+  background: rgba(255, 122, 0, 0.1); /* 메인페이지와 동일 */
+  border: 1px solid #99632E; /* 메인페이지와 동일 */
+  border-radius: 25px; /* 메인페이지와 비슷하게 조정 */
+  color: #A47148; /* 메인페이지와 동일 */
+  font-family: 'Ownglyph_meetme-Rg', sans-serif;
+  font-size: 18px; /* 적당한 크기로 조정 */
+  font-weight: 700;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
   
   &:hover {
-    background: #2563eb;
+    background: rgba(255, 122, 0, 0.2); /* 메인페이지와 동일 */
+    transform: translateY(-2px);
   }
   
   &:disabled {
-    background: #9ca3af;
+    background: #f3f4f6;
+    color: #9ca3af;
+    border-color: #d1d5db;
     cursor: not-allowed;
+    transform: none;
   }
 `;
 
+// 메인페이지와 일치하는 이미지 미리보기 스타일
 const ImagePreview = styled.div`
-  margin-top: 20px;
+  margin-top: 2rem;
   text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 `;
 
 const PreviewImage = styled.img`
   max-width: 100%;
   max-height: 400px;
-  border-radius: 8px;
+  border-radius: 10px; /* 메인페이지 스타일과 일치 */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `;
 
+// 메인페이지 컬러 스킴에 맞춘 상태 메시지
 const StatusMessage = styled.div`
-  padding: 16px;
-  border-radius: 8px;
-  margin-top: 20px;
+  padding: 1rem 2rem;
+  border-radius: 10px; /* 메인페이지와 일치 */
+  margin-top: 2rem;
   text-align: center;
   font-weight: 500;
+  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   
   &.success {
     background: #f0fdf4;
@@ -81,18 +146,19 @@ const StatusMessage = styled.div`
   }
   
   &.loading {
-    background: #f0f9ff;
-    border: 1px solid #bae6fd;
-    color: #0369a1;
+    background: #fff7ed; /* 메인페이지 컬러와 조화 */
+    border: 1px solid #fed7aa;
+    color: #A2601E; /* 메인페이지 컬러 */
   }
 `;
 
+// 메인페이지 컬러에 맞춘 로딩 스피너
 const LoadingSpinner = styled.div`
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 3px solid #f3f3f3;
-  border-top: 3px solid #3b82f6;
+  border: 3px solid #fed7aa; /* 메인페이지 컬러와 조화 */
+  border-top: 3px solid #A2601E; /* 메인페이지 컬러 */
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin-right: 8px;
@@ -103,7 +169,43 @@ const LoadingSpinner = styled.div`
   }
 `;
 
+// 분석 완료 메시지도 메인페이지 스타일로 수정
+const CompletionCard = styled.div`
+  background: white;
+  padding: 2rem;
+  border-radius: 15px; /* 메인페이지와 일치 */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 메인페이지와 일치 */
+  text-align: center;
+  margin-top: 2rem;
+  border: 1px solid #fed7aa; /* 메인페이지 컬러와 조화 */
+`;
 
+const CompletionText = styled.p`
+  color: #A2601E; /* 메인페이지 컬러 */
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-family: 'Ownglyph_meetme-Rg', sans-serif;
+`;
+
+const ResultButton = styled.button`
+  width: 250px;
+  height: 50px;
+  background: rgba(255, 122, 0, 0.1); /* 메인페이지와 동일 */
+  border: 1px solid #99632E; /* 메인페이지와 동일 */
+  border-radius: 20px;
+  color: #A47148; /* 메인페이지와 동일 */
+  font-family: 'Ownglyph_meetme-Rg', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 122, 0, 0.2); /* 메인페이지와 동일 */
+    transform: translateY(-2px);
+  }
+`;
 
 const ImageUpload = ({ onAnalysisComplete }) => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -219,13 +321,10 @@ const ImageUpload = ({ onAnalysisComplete }) => {
 
   return (
     <UploadContainer>
-      <h1 style={{ textAlign: 'center', marginBottom: '20px', color: '#1f2937' }}>
-        메뉴판 업로드
-      </h1>
-      
-      <p style={{ textAlign: 'center', marginBottom: '30px', color: '#6b7280' }}>
-        카페 메뉴판 사진을 업로드하면 알레르기 정보를 분석해드립니다.
-      </p>
+      {/* 메인페이지 스타일에 맞춰 제목과 설명 추가 */}
+      <SectionSubtitle>
+        카페 메뉴판 사진을 업로드하면 AI가 알레르기 정보를 자동으로 분석해드립니다
+      </SectionSubtitle>
 
       <UploadArea
         className={isDragOver ? 'drag-over' : ''}
@@ -244,20 +343,19 @@ const ImageUpload = ({ onAnalysisComplete }) => {
         
         {!previewUrl ? (
           <div>
-            <div style={{ fontSize: '48px', marginBottom: '16px' }}>📷</div>
-            <p style={{ fontSize: '18px', marginBottom: '8px', color: '#374151' }}>
-              이미지 선택
-            </p>
-            <p style={{ color: '#6b7280', marginBottom: '20px' }}>
-              클릭하거나 이미지를 여기에 드래그하세요
-            </p>
-            <UploadButton>이미지 선택</UploadButton>
+            <UploadIcon>📸</UploadIcon>
+            <UploadTitle>이미지 업로드</UploadTitle>
+            <UploadDescription>
+              클릭하거나 이미지를 여기에 드래그하세요<br />
+              JPG, PNG, JPEG 파일을 지원합니다
+            </UploadDescription>
+            <UploadButton>파일 선택하기</UploadButton>
           </div>
         ) : (
           <div>
-            <p style={{ fontSize: '18px', marginBottom: '16px', color: '#374151' }}>
-              선택된 이미지
-            </p>
+            <UploadIcon>✅</UploadIcon>
+            <UploadTitle>선택된 이미지</UploadTitle>
+            <UploadDescription>분석을 시작하려면 버튼을 클릭하세요</UploadDescription>
             <UploadButton 
               onClick={(e) => {
                 e.stopPropagation();
@@ -265,7 +363,7 @@ const ImageUpload = ({ onAnalysisComplete }) => {
               }}
               disabled={isUploading}
             >
-              {isUploading ? '분석 중...' : '분석 시작'}
+              {isUploading ? '분석 중...' : '분석 시작하기'}
             </UploadButton>
           </div>
         )}
@@ -279,13 +377,13 @@ const ImageUpload = ({ onAnalysisComplete }) => {
 
       {renderStatusMessage()}
 
-      {/* 분석 결과가 있으면 분석 결과 섹션으로 스크롤 */}
+      {/* 메인페이지 스타일에 맞춘 완료 메시지 */}
       {analysisResult && (
-        <div style={{ marginTop: '20px', textAlign: 'center' }}>
-          <p style={{ color: '#059669', fontWeight: '600' }}>
-            ✅ 분석이 완료되었습니다! 분석 결과 섹션을 확인해주세요.
-          </p>
-          <button 
+        <CompletionCard>
+          <CompletionText>
+            ✨ 분석이 완료되었습니다! 분석 결과를 확인해보세요 ✨
+          </CompletionText>
+          <ResultButton 
             onClick={() => {
               const analysisSection = document.getElementById('analysis');
               if (analysisSection) {
@@ -295,22 +393,13 @@ const ImageUpload = ({ onAnalysisComplete }) => {
                 });
               }
             }}
-            style={{
-              background: '#3b82f6',
-              color: 'white',
-              border: 'none',
-              padding: '10px 20px',
-              borderRadius: '6px',
-              cursor: 'pointer',
-              marginTop: '10px'
-            }}
           >
-            분석 결과 보기
-          </button>
-        </div>
+            📊 분석 결과 보기
+          </ResultButton>
+        </CompletionCard>
       )}
     </UploadContainer>
   );
 };
 
-export default ImageUpload; 
+export default ImageUpload;
