@@ -1,28 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import Header from '../components/Header';
-import ImageUpload from '../components/ImageUpload';
-import AnalysisResult from '../components/AnalysisResult';
+import { Header, ImageUpload, AnalysisResult } from '../../components';
+import Section, { SectionTitle, SectionContent } from '../../components/common/Section/Section';
+import Button from '../../components/common/Button/Button';
 
 const MainContainer = styled.div`
   padding-top: 80px; // 헤더 높이만큼 패딩
 `;
 
-const Section = styled.section`
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  
+const StyledSection = styled(Section)`
   &:nth-child(even) {
     background-color: #ffe6c8ff;
   }
 `;
 
-const HeroSection = styled(Section)`
+const HeroSection = styled(StyledSection)`
   background: #ffecd5ff; 
   color: #A2601E; /* Figma 색상으로 변경 */
   text-align: center;
@@ -45,77 +38,15 @@ const HeroSubtitle = styled.p`
   opacity: 0.9;
 `;
 
-const CTAButton = styled.button`
-  width: 400px; /* Figma 너비 */
-  height: 80px; /* Figma 높이 */
-  background: rgba(255, 122, 0, 0.1); /* Figma 배경색 */
-  border: 1px solid #99632E; /* Figma 테두리 */
-  border-radius: 30px; /* Figma 모서리 */
-  color: #A47148; /* Figma 텍스트 색상 */
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
-  font-size: 40px; /* Figma 크기 */
-  font-weight: 700; /* Figma 굵기 */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-
-  
-  &:hover {
-    background: rgba(255, 122, 0, 0.2); /* 호버 효과 */
-  }
+const CTAButton = styled(Button)`
+  width: 400px;
+  height: 80px;
+  font-size: 40px;
 `;
 
-const SectionTitle = styled.h2`
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
-  font-size: 60px; 
-  font-weight: 520; 
-  line-height: 58px; 
-  color: #A2601E; 
-  margin-bottom: 2rem;
-`;
 
-const SectionContent = styled.div`
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-`;
 
-const FeatureGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-`;
 
-const FeatureCard = styled.div`
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
-  
-  &:hover {
-    transform: translateY(-5px);
-  }
-`;
-
-const FeatureIcon = styled.div`
-  font-size: 3rem;
-  margin-bottom: 1rem;
-`;
-
-const FeatureTitle = styled.h3`
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #333;
-`;
-
-const FeatureDescription = styled.p`
-  color: #666;
-  line-height: 1.6;
-`;
 
 const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
   const [apiStatus, setApiStatus] = useState('Loading...');
@@ -129,11 +60,15 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
       .then(response => response.json())  
       .then(data => {
         setApiStatus('API 서버 연결 성공!');
-        console.log('API Response:', data);
+        if (process.env.NODE_ENV === 'development') {
+          console.log('API Response:', data);
+        }
       })
       .catch(err => {
         setError('API 서버 연결 실패: ' + err.message);
-        console.error('API Error:', err);
+        if (process.env.NODE_ENV === 'development') {
+          console.error('API Error:', err);
+        }
       });
   }, []);
 

@@ -127,7 +127,7 @@ const AnalysisResult = ({ analysis }) => {
             <strong>⚠️ 위험한 성분 발견:</strong>
             <IngredientGrid>
               {riskAnalysis.danger.map((item, index) => (
-                <IngredientCard key={index} risk="danger">
+                <IngredientCard key={`danger-${item.ingredient}-${index}`} risk="danger">
                   {item.ingredient}
                   <br />
                   <small>매칭된 알레르기: {item.matchedAllergies.join(', ')}</small>
@@ -142,7 +142,7 @@ const AnalysisResult = ({ analysis }) => {
             <strong>✅ 안전한 성분:</strong>
             <IngredientGrid>
               {riskAnalysis.safe.map((ingredient, index) => (
-                <IngredientCard key={index} risk="safe">
+                <IngredientCard key={`safe-${ingredient}-${index}`} risk="safe">
                   {ingredient}
                 </IngredientCard>
               ))}
@@ -192,7 +192,7 @@ const AnalysisResult = ({ analysis }) => {
             <strong>✅ 안전한 대안 메뉴:</strong>
             <MenuList>
               {recommendations.safe_alternatives.slice(0, 5).map((menu, index) => (
-                <MenuTag key={index}>{menu.menu.name}</MenuTag>
+                <MenuTag key={`safe-menu-${menu.menu.name}-${index}`}>{menu.menu.name}</MenuTag>
               ))}
             </MenuList>
           </RecommendationCard>
@@ -202,7 +202,7 @@ const AnalysisResult = ({ analysis }) => {
           <WarningMessage>
             <strong>⚠️ 주의사항:</strong>
             {recommendations.warning_messages.map((warning, index) => (
-              <div key={index}>{warning.message}</div>
+              <div key={`warning-${warning.message}-${index}`}>{warning.message}</div>
             ))}
           </WarningMessage>
         )}
@@ -212,7 +212,7 @@ const AnalysisResult = ({ analysis }) => {
             <strong>💡 안전 팁:</strong>
             <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px' }}>
               {recommendations.safety_tips.map((tip, index) => (
-                <li key={index}>{tip}</li>
+                <li key={`tip-${tip}-${index}`}>{tip}</li>
               ))}
             </ul>
           </RecommendationCard>

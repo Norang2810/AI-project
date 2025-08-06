@@ -1,6 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import AnalysisResult from './AnalysisResult';
+import { Button } from '../../common/Button';
+import Card from '../../common/Card/Card';
 
 // 메인페이지 스타일에 맞춰 전체 컨테이너 수정
 const UploadContainer = styled.div`
@@ -31,20 +32,14 @@ const SectionSubtitle = styled.p`
 `;
 
 // 메인페이지의 FeatureCard와 비슷한 스타일로 업로드 영역 수정
-const UploadArea = styled.div`
-  background: white; /* 메인페이지 카드와 동일한 배경 */
+const UploadArea = styled(Card)`
   border: 2px dashed #d1d5db;
-  border-radius: 15px; /* 메인페이지와 비슷한 모서리 */
-  padding: 3rem 2rem;
-  text-align: center;
-  transition: all 0.3s ease; /* 메인페이지 호버 효과와 동일 */
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 메인페이지와 동일한 그림자 */
   
   &:hover {
-    border-color: #A2601E; /* 메인페이지 컬러와 동일 */
-    background: #fef7ed; /* 연한 오렌지 배경 */
-    transform: translateY(-5px); /* 메인페이지 호버 효과와 동일 */
+    border-color: #A2601E;
+    background: #fef7ed;
+    transform: translateY(-5px);
   }
   
   &.drag-over {
@@ -80,23 +75,10 @@ const UploadDescription = styled.p`
 `;
 
 // 메인페이지의 CTAButton과 비슷한 스타일로 버튼 수정
-const UploadButton = styled.button`
-  width: 300px; /* CTAButton보다 작게 조정 */
-  height: 60px; /* CTAButton보다 작게 조정 */
-  background: rgba(255, 122, 0, 0.1); /* 메인페이지와 동일 */
-  border: 1px solid #99632E; /* 메인페이지와 동일 */
-  border-radius: 25px; /* 메인페이지와 비슷하게 조정 */
-  color: #A47148; /* 메인페이지와 동일 */
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
-  font-size: 18px; /* 적당한 크기로 조정 */
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  
-  &:hover {
-    background: rgba(255, 122, 0, 0.2); /* 메인페이지와 동일 */
-    transform: translateY(-2px);
-  }
+const UploadButton = styled(Button)`
+  width: 300px;
+  height: 60px;
+  font-size: 18px;
   
   &:disabled {
     background: #f3f4f6;
@@ -108,13 +90,9 @@ const UploadButton = styled.button`
 `;
 
 // 메인페이지와 일치하는 이미지 미리보기 스타일
-const ImagePreview = styled.div`
+const ImagePreview = styled(Card)`
   margin-top: 2rem;
   text-align: center;
-  background: white;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 `;
 
 const PreviewImage = styled.img`
@@ -170,11 +148,7 @@ const LoadingSpinner = styled.div`
 `;
 
 // 분석 완료 메시지도 메인페이지 스타일로 수정
-const CompletionCard = styled.div`
-  background: white;
-  padding: 2rem;
-  border-radius: 15px; /* 메인페이지와 일치 */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 메인페이지와 일치 */
+const CompletionCard = styled(Card)`
   text-align: center;
   margin-top: 2rem;
   border: 1px solid #fed7aa; /* 메인페이지 컬러와 조화 */
@@ -214,7 +188,6 @@ const ImageUpload = ({ onAnalysisComplete }) => {
   const [status, setStatus] = useState({ type: '', message: '' });
   const [analysisResult, setAnalysisResult] = useState(null);
   const [isDragOver, setIsDragOver] = useState(false);
-  const resultTabRef = useRef(null);
 
   const handleFileSelect = (file) => {
     if (file && file.type.startsWith('image/')) {
