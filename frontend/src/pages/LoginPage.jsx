@@ -103,7 +103,7 @@ const ErrorMessage = styled.div`
   margin-bottom: 1rem;
 `;
 
-const LoginPage = () => {
+const LoginPage = ({setIsLoggedIn}) => {
   const [formData, setFormData] = useState({
     email: '',
     password: ''
@@ -140,6 +140,7 @@ const LoginPage = () => {
         localStorage.setItem('token', data.data.token);
         localStorage.setItem('user', JSON.stringify(data.data.user));
         
+        setIsLoggedIn(true); 
         // 로그인 성공 시 메인 페이지로 이동
         navigate('/');
       } else {
