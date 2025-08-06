@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import { theme, GlobalStyles } from './styles';
 import './App.css';
 
 // 페이지 컴포넌트들
-import MainPage from './pages/MainPage';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
-import AllergyPage from './pages/AllergyPage';
+import { MainPage, LoginPage, RegisterPage, AllergyPage } from './pages';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -20,16 +19,19 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<MainPage isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
-          <Route path="/login" element={<LoginPage setIsLoggedIn={setIsLoggedIn} />} />
-          <Route path="/register" element={<RegisterPage setIsLoggedIn={setIsLoggedIn} />} />
-          <Route path="/allergy" element={<AllergyPage isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
-        </Routes>
-      </div>
-    </Router>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <Router>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<MainPage isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
+            <Route path="/login" element={<LoginPage setIsLoggedIn={setIsLoggedIn} />} />
+            <Route path="/register" element={<RegisterPage setIsLoggedIn={setIsLoggedIn} />} />
+            <Route path="/allergy" element={<AllergyPage isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
+          </Routes>
+        </div>
+      </Router>
+    </ThemeProvider>
   );
 }
 
