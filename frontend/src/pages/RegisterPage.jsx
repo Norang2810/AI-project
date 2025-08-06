@@ -122,7 +122,7 @@ const SuccessMessage = styled.div`
   margin-bottom: 1rem;
 `;
 
-const RegisterPage = () => {
+const RegisterPage = ({ setIsLoggedIn }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
