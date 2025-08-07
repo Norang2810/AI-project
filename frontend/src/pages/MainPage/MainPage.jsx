@@ -78,7 +78,7 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
       <MainContainer>
         {/* Hero Section */}
         <HeroSection id="home">
-          <HeroTitle>☕ 알레르기 안전 메뉴 분석</HeroTitle>
+          <HeroTitle>☕ 알쥬알쥬 ☕</HeroTitle>
           <HeroSubtitle>
             메뉴판을 업로드하면 알레르기 정보를 분석해드립니다!
           </HeroSubtitle>
