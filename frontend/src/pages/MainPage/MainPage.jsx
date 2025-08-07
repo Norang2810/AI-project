@@ -1,49 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import styled from 'styled-components';
 import { Header, ImageUpload, AnalysisResult } from '../../components';
 import Section, { SectionTitle, SectionContent } from '../../components/common/Section/Section';
-import Button from '../../components/common/Button/Button';
+// import Button from '../../components/common/Button/Button';
 import NotificationToastComponent from '../../components/common/NotificationToast/NotificationToast';
-
-const MainContainer = styled.div`
-  padding-top: 80px; // 헤더 높이만큼 패딩
-`;
-
-const StyledSection = styled(Section)`
-  &:nth-child(even) {
-    background-color: #ffe6c8ff;
-  }
-`;
-
-const HeroSection = styled(StyledSection)`
-  background: #ffecd5ff; 
-  color: #A2601E; /* Figma 색상으로 변경 */
-  text-align: center;
-  min-height: 100vh; /* 전체 화면 높이 */
-`;
-
-const HeroTitle = styled.h1`
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
-  font-size: 60px; 
-  font-weight: 520; 
-  line-height: 58px; 
-  color: #A2601E; 
-  margin-bottom: 2rem;
-`;
-
-const HeroSubtitle = styled.p`
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-`;
-
-const CTAButton = styled(Button)`
-  width: 400px;
-  height: 80px;
-  font-size: 40px;
-`;
+import {
+  MainContainer,
+  HeroSection,
+  HeroTitle,
+  HeroSubtitle,
+  CTAButton
+} from './MainPage.styles';
 
 const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
   const [apiStatus, setApiStatus] = useState('Loading...');
