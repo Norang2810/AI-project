@@ -7,8 +7,9 @@ const LoginContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-color: #FFECD5; /* 부드러운 배경색 */
   padding: 2rem;
+  font-family: 'Ownglyph_meetme-Rg', sans-serif; /* 폰트 적용 */
 `;
 
 const LoginCard = styled.div`
@@ -18,11 +19,12 @@ const LoginCard = styled.div`
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: 100%;
   max-width: 400px;
+  border: 2px solid #FFD6AA; /* 카드 경계 강조 */
 `;
 
 const Title = styled.h1`
   text-align: center;
-  color: #333;
+  color: #A2601E; /* 대표 텍스트 색상 */
   margin-bottom: 2rem;
   font-size: 2rem;
 `;
@@ -30,7 +32,7 @@ const Title = styled.h1`
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 `;
 
 const FormGroup = styled.div`
@@ -41,36 +43,38 @@ const FormGroup = styled.div`
 
 const Label = styled.label`
   font-weight: bold;
-  color: #555;
+  color: #A2601E;
 `;
 
 const Input = styled.input`
   padding: 1rem;
-  border: 2px solid #e1e5e9;
+  border: 2px solid #E1C8A8;
   border-radius: 8px;
   font-size: 1rem;
+  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   transition: border-color 0.3s ease;
   
   &:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #915316;
   }
 `;
 
 const Button = styled.button`
-  background-color: #007bff;
+  background-color: #8b5e3c;
   color: white;
   padding: 1rem;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
   font-weight: bold;
+  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 1rem; /* 비밀번호와 간격 늘림 */
   
   &:hover {
-    background-color: #0056b3;
-  }
+    background-color: #6e4b2a;
   
   &:disabled {
     background-color: #ccc;
@@ -78,13 +82,25 @@ const Button = styled.button`
   }
 `;
 
+const KakaoLoginButton = styled.div`
+  width: 100%;
+  height: 45px;
+  background-image: url('/kakao_login.png'); /* public 폴더 이미지 경로 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+`;
+
 const LinkText = styled.p`
   text-align: center;
   margin-top: 1.5rem;
-  color: #666;
+  color: #915316;
   
   a {
-    color: #007bff;
+    color: #A2601E;
     text-decoration: none;
     font-weight: bold;
     
@@ -156,7 +172,7 @@ const LoginPage = ({setIsLoggedIn}) => {
   return (
     <LoginContainer>
       <LoginCard>
-        <Title>🍽️ 로그인</Title>
+        <Title>☕ 로그인</Title>
         
         {error && <ErrorMessage>{error}</ErrorMessage>}
         
@@ -190,6 +206,8 @@ const LoginPage = ({setIsLoggedIn}) => {
           <Button type="submit" disabled={isLoading}>
             {isLoading ? '로그인 중...' : '로그인'}
           </Button>
+
+          <KakaoLoginButton />
         </Form>
         
         <LinkText>
