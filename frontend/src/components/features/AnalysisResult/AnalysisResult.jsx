@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 
 const AnalysisContainer = styled.div`
@@ -104,7 +104,31 @@ const MenuTag = styled.span`
   font-weight: 500;
 `;
 
-const AnalysisResult = ({ analysis }) => {
+const AnalysisResult = ({ analysis, onNotification }) => {
+  useEffect(() => {
+    if (analysis) {
+      checkForDangerousIngredients(analysis);
+    }
+  }, [analysis]);
+
+  const checkForDangerousIngredients = (analysis) => {
+    const dangerousIngredients = analysis.menuAnalysis
+      ?.find(item => item.type === 'ingredients')
+      ?.data?.riskAnalysis?.danger || [];
+
+    if (dangerousIngredients.length > 0 && onNotification) {
+      // 우측 상단 알림 표시
+      onNotification({
+        id: Date.now(),
+        type: 'danger',
+        icon: '⚠️',
+        title: '알레르기 위험 성분 발견!',
+        message: `${dangerousIngredients.length}개의 위험 성분이 발견되었습니다.`,
+        timestamp: new Date()
+      });
+    }
+  };
+
   if (!analysis) return null;
 
   const renderRiskLevel = (riskInfo) => {
