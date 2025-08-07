@@ -81,10 +81,6 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
           <HeroTitle>☕ 알쥬알쥬 ☕</HeroTitle>
           <HeroSubtitle>
             메뉴판을 업로드하면 알레르기 정보를 분석해드립니다!
-            <br />
-            내가 마시는 이 음료 괜찮을까? 
-            <br />
-            카페 메뉴 속 숨겨진 알레르기 유발 성분, 이제 미리 확인하세요!
           </HeroSubtitle>
           <CTAButton 
             onClick={() => {

@@ -82,17 +82,6 @@ const Button = styled.button`
   }
 `;
 
-const KakaoLoginButton = styled.div`
-  width: 100%;
-  height: 45px;
-  background-image: url('/kakao_login.png'); /* public 폴더 이미지 경로 */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  margin-top: 0.5rem;
-  border-radius: 8px;
-`;
 
 const LinkText = styled.p`
   text-align: center;
@@ -206,8 +195,6 @@ const LoginPage = ({setIsLoggedIn}) => {
           <Button type="submit" disabled={isLoading}>
             {isLoading ? '로그인 중...' : '로그인'}
           </Button>
-
-          <KakaoLoginButton />
         </Form>
         
         <LinkText>
