@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { Header, ImageUpload, AnalysisResult } from '../../components';
 import Section, { SectionTitle, SectionContent } from '../../components/common/Section/Section';
 import Button from '../../components/common/Button/Button';
+import NotificationToastComponent from '../../components/common/NotificationToast/NotificationToast';
 
 const MainContainer = styled.div`
   padding-top: 80px; // 헤더 높이만큼 패딩
@@ -48,6 +49,7 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
   const [apiStatus, setApiStatus] = useState('Loading...');
   const [error, setError] = useState(null);
   const [analysisResult, setAnalysisResult] = useState(null);
+  const [notifications, setNotifications] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -67,6 +69,19 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
         }
       });
   }, []);
+
+  const handleNotification = (notification) => {
+    setNotifications(prev => [notification, ...prev]);
+    
+    // 5초 후 자동 제거
+    setTimeout(() => {
+      removeNotification(notification.id);
+    }, 5000);
+  };
+
+  const removeNotification = (id) => {
+    setNotifications(prev => prev.filter(n => n.id !== id));
+  };
 
   return (
     <>
@@ -106,7 +121,10 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
           <SectionContent>
             <SectionTitle>분석 결과</SectionTitle>
             {analysisResult ? (
-              <AnalysisResult analysis={analysisResult} />
+              <AnalysisResult 
+                analysis={analysisResult} 
+                onNotification={handleNotification}
+              />
             ) : (
               <div style={{ textAlign: 'center', padding: '2rem'}}>
                 <p style={{
@@ -327,6 +345,12 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
           </SectionContent>
         </Section>
       </MainContainer>
+
+      {/* 우측 상단 알림 컨테이너 */}
+      <NotificationToastComponent 
+        notifications={notifications} 
+        removeNotification={removeNotification} 
+      />
     </>
   );
 };
