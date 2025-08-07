@@ -11,6 +11,7 @@ services:
     environment:
       - REACT_APP_API_URL=http://localhost:3001
       - REACT_APP_AI_SERVER_URL=http://localhost:8000
+      - REACT_APP_KAKAO_REST_API_KEY=${REACT_APP_KAKAO_REST_API_KEY}
     depends_on:
       - backend
 
@@ -31,6 +32,7 @@ services:
       - DB_PASSWORD=${DB_PASSWORD}
       - JWT_SECRET=${JWT_SECRET}
       - CORS_ORIGIN=http://localhost:3000
+      - KAKAO_REST_API_KEY=${KAKAO_REST_API_KEY}
     depends_on:
       mysql:
         condition: service_healthy
