@@ -6,8 +6,5 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cp "$SCRIPT_DIR/env.prod" "$SCRIPT_DIR/.env"
 
 # 2. 빌드 및 실행
-docker-compose down -v
-docker-compose up -d --build
-
-
-JWT_SECRET=Yh8v@3$Secret!9qXeT#bNw2^KiPzR&mVu
+docker compose -f docker-compose.prod.yml down -v
+docker compose -f docker-compose.prod.yml up -d --build
