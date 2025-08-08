@@ -50,14 +50,18 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
     setNotifications(prev => prev.filter(n => n.id !== id));
   };
 
+
   return (
     <>
       <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
       <MainContainer>
         {/* Hero Section */}
         <HeroSection id="home">
-          <HeroTitle>☕ 알쥬알쥬 ☕</HeroTitle>
+          <HeroTitle> 카페 메뉴, 안심하고 고르세요 </HeroTitle>
           <HeroSubtitle>
+            사진 한 장으로 알레르기 걱정 끝! <br/>
+            AI가 메뉴 속 성분을 분석해 <br/>
+            당신에게 맞는 메뉴를 추천해드려요.<br/><br/>
             메뉴판을 업로드하면 알레르기 정보를 분석해드립니다!
           </HeroSubtitle>
           <CTAButton 
@@ -95,7 +99,6 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
             ) : (
               <div style={{ textAlign: 'center', padding: '2rem'}}>
                 <p style={{
-                  fontFamily: 'Ownglyph_meetme-Rg, sans-serif',
                   fontSize: '1.5rem',
                   color: '#A2601E',
               marginBottom: '1rem'
@@ -121,11 +124,11 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
             {/* Figma 디자인에 맞춘 새로운 그리드 레이아웃 */}
             <div style={{
               display: 'grid',
-              gridTemplateColumns: '1fr 100px 1fr',
-              gridTemplateRows: 'repeat(5, 220px)',  
-              gap: '2rem 2rem',
+              gridTemplateColumns: '1fr 60px 1fr',         // 가로폭 줄이기
+              gridTemplateRows: 'repeat(5, 320px)',        // 세로폭 늘리기
+              gap: '1rem 1rem',                             // 카드 간격 줄이기
               alignItems: 'center',
-              maxWidth: '1400px',
+              maxWidth: '1100px',                           // 전체 너비도 줄이기
               margin: '0 auto',
               position: 'relative'
               }}>
@@ -169,16 +172,15 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
                 justifyContent: 'center',
                 boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)'
               }}>
+
                 <div style={{fontSize: '4rem', marginBottom: '0.8rem'}}>⚠️</div>  {/* 이모지 변경 */}
                 <h3 style={{
-                  fontFamily: 'Ownglyph_meetme-Rg, sans-serif',
                   fontSize: '2.2rem',  
                   fontWeight: 520,
                   color: '#A2601E',
                   marginBottom: '0.8rem'
                 }}>알레르기 정보 등록</h3>
                 <p style={{
-                  fontFamily: 'Ownglyph_meetme-Rg, sans-serif',
                   fontSize: '1.2rem',  
                   color: '#A2601E',
                   lineHeight: 1.4,
@@ -202,14 +204,12 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
               }}>
                 <div style={{fontSize: '4rem', marginBottom: '0.8rem'}}>📸</div>
                 <h3 style={{
-                  fontFamily: 'Ownglyph_meetme-Rg, sans-serif',
                   fontSize: '2.2rem',
                   fontWeight: 520,
                   color: '#A2601E',
                   marginBottom: '0.8rem'
                 }}>메뉴판 사진 업로드</h3>
                 <p style={{
-                  fontFamily: 'Ownglyph_meetme-Rg, sans-serif',
                   fontSize: '1.2rem',
                   color: '#A2601E',
                   lineHeight: 1.4,
@@ -233,14 +233,12 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
               }}>
                 <div style={{fontSize: '4rem', marginBottom: '0.8rem'}}>🔍</div>
                 <h3 style={{
-                  fontFamily: 'Ownglyph_meetme-Rg, sans-serif',
                   fontSize: '2.2rem',
                   fontWeight: 520,
                   color: '#A2601E',
                   marginBottom: '0.8rem'
                 }}>OCR 분석 & 번역</h3>
                 <p style={{
-                  fontFamily: 'Ownglyph_meetme-Rg, sans-serif',
                   fontSize: '1.2rem',
                   color: '#A2601E',
                   lineHeight: 1.4,
@@ -263,14 +261,12 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
               }}>
                 <div style={{fontSize: '4rem', marginBottom: '0.8rem'}}>🧪</div>  {/* 새로운 이모지 */}
                 <h3 style={{
-                  fontFamily: 'Ownglyph_meetme-Rg, sans-serif',
                   fontSize: '2.2rem',
                   fontWeight: 520,
                   color: '#A2601E',
                   marginBottom: '0.8rem'
                 }}>알레르기 성분 분석</h3>
                 <p style={{
-                  fontFamily: 'Ownglyph_meetme-Rg, sans-serif',
                   fontSize: '1.2rem',
                   color: '#A2601E',
                   lineHeight: 1.4,
@@ -293,14 +289,12 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
               }}>
                 <div style={{fontSize: '4rem', marginBottom: '0.8rem'}}>✅</div>
                 <h3 style={{
-                  fontFamily: 'Ownglyph_meetme-Rg, sans-serif',
                   fontSize: '2.2rem',
                   fontWeight: 520,
                   color: '#A2601E',
                   marginBottom: '0.8rem'
                 }}>메뉴 추천 결과 확인</h3>
                 <p style={{
-                  fontFamily: 'Ownglyph_meetme-Rg, sans-serif',
                   fontSize: '1.2rem',
                   color: '#A2601E',
                   lineHeight: 1.4,
