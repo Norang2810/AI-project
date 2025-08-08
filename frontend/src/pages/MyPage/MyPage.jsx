@@ -149,7 +149,7 @@ const MyPage = () => {
           </InfoRow>
           
           <ChangePasswordButton>
-            비밀번호 변경
+            비밀번호변경
           </ChangePasswordButton>
         </InfoCard>
       </MyInfoContentWrapper>

@@ -40,7 +40,7 @@ export const NavButton = styled.button`
     outline: none;
   }
 `;
-
+  
 export const ContentPanel = styled.div`
   flex: 1;
   background-color: #FFF4E6; // 이 부분을 수정하세요
