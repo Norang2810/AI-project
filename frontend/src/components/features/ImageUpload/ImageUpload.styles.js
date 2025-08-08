@@ -14,11 +14,9 @@ export const SectionTitle = styled.h2`
   margin-bottom: 2rem;
   text-align: center;
   color: #333;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif; /* 메인페이지와 동일한 폰트 */
 `;
 
 export const SectionSubtitle = styled.p`
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   font-size: 1.2rem;
   text-align: center;
   color: #A2601E; /* 메인페이지와 동일한 색상으로 변경 */
@@ -54,7 +52,6 @@ export const UploadTitle = styled.h3`
   font-size: 1.5rem; /* 메인페이지와 동일 */
   margin-bottom: 1rem; /* 메인페이지와 동일 */
   color: #333; /* 메인페이지와 동일 */
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   font-weight: 700;
 `;
 
@@ -62,7 +59,6 @@ export const UploadDescription = styled.p`
   color: #A2601E; /* 메인페이지 컬러로 변경 */
   line-height: 1.6; /* 메인페이지와 동일 */
   margin-bottom: 2rem;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   opacity: 0.8;
 `;
 
@@ -98,7 +94,6 @@ export const StatusMessage = styled.div`
   margin-top: 2rem;
   text-align: center;
   font-weight: 500;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   
   &.success {
     background: #f0fdf4;
@@ -146,7 +141,6 @@ export const CompletionText = styled.p`
   font-weight: 600;
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
 `;
 
 export const ResultButton = styled.button`
@@ -156,7 +150,6 @@ export const ResultButton = styled.button`
   border: 1px solid #99632E; /* 메인페이지와 동일 */
   border-radius: 20px;
   color: #A47148; /* 메인페이지와 동일 */
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
