@@ -83,3 +83,4 @@ ai-server/*.json
 
 # 키 파일 무조건 제외
 *.pem
+ai-server/sample_ocr_dataset.zip
