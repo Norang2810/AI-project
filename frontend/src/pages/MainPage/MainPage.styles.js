@@ -20,7 +20,6 @@ export const HeroSection = styled(StyledSection)`
 `;
 
 export const HeroTitle = styled.h1`
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   font-size: 60px; 
   font-weight: 520; 
   line-height: 58px; 
@@ -29,7 +28,6 @@ export const HeroTitle = styled.h1`
 `;
 
 export const HeroSubtitle = styled.p`
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   font-size: 1.5rem;
   margin-bottom: 2rem;
   opacity: 0.9;
@@ -76,14 +74,12 @@ export const FeatureTitle = styled.h3`
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #333;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   font-weight: 700;
 `;
 
 export const FeatureDescription = styled.p`
   color: #A2601E;
   line-height: 1.6;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   opacity: 0.8;
 `;
 

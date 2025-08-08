@@ -25,7 +25,6 @@ const StyledSection = styled.section`
 `;
 
 const SectionTitle = styled.h2`
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   font-size: 60px;
   font-weight: 520;
   line-height: 58px;

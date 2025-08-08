@@ -9,7 +9,6 @@ const LoginContainer = styled.div`
   align-items: center;
   background-color: #FFECD5; /* 부드러운 배경색 */
   padding: 2rem;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif; /* 폰트 적용 */
 `;
 
 const LoginCard = styled.div`
@@ -51,7 +50,6 @@ const Input = styled.input`
   border: 2px solid #E1C8A8;
   border-radius: 8px;
   font-size: 1rem;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   transition: border-color 0.3s ease;
   
   &:focus {
@@ -68,7 +66,6 @@ const Button = styled.button`
   border-radius: 8px;
   font-size: 1rem;
   font-weight: bold;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 1rem; /* 비밀번호와 간격 늘림 */

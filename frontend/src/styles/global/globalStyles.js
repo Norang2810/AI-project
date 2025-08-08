@@ -8,7 +8,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: 'Ownglyph_meetme-Rg', sans-serif;
+    font-family: 'BMJUA', sans-serif;
     line-height: 1.6;
     color: ${({ theme }) => theme.colors.text.primary};
     background-color: ${({ theme }) => theme.colors.background.primary};
