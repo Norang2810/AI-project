@@ -7,8 +7,9 @@ const RegisterContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-color: #FFECD5;
   padding: 2rem;
+  font-family: 'Ownglyph_meetme-Rg', sans-serif;
 `;
 
 const RegisterCard = styled.div`
@@ -18,11 +19,12 @@ const RegisterCard = styled.div`
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: 100%;
   max-width: 500px;
+  border: 2px solid #FFD6AA;
 `;
 
 const Title = styled.h1`
   text-align: center;
-  color: #333;
+  color: #A2601E;
   margin-bottom: 2rem;
   font-size: 2rem;
 `;
@@ -33,15 +35,15 @@ const Form = styled.form`
   gap: 1.5rem;
 `;
 
-const FormRow = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+// const FormRow = styled.div`
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   gap: 1rem;
   
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-  }
-`;
+//   @media (max-width: 600px) {
+//     grid-template-columns: 1fr;
+//   }
+// `;
 
 const FormGroup = styled.div`
   display: flex;
@@ -51,24 +53,26 @@ const FormGroup = styled.div`
 
 const Label = styled.label`
   font-weight: bold;
-  color: #555;
+  color: #A2601E;
+  text-align: left;
 `;
 
 const Input = styled.input`
   padding: 1rem;
-  border: 2px solid #e1e5e9;
+  border: 2px solid #E1C8A8;
   border-radius: 8px;
   font-size: 1rem;
+  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   transition: border-color 0.3s ease;
   
   &:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #915316;
   }
 `;
 
 const Button = styled.button`
-  background-color: #007bff;
+  background-color: #8b5e3c;
   color: white;
   padding: 1rem;
   border: none;
@@ -79,7 +83,7 @@ const Button = styled.button`
   transition: background-color 0.3s ease;
   
   &:hover {
-    background-color: #0056b3;
+    background-color: #6e4b2a;
   }
   
   &:disabled {
@@ -91,10 +95,10 @@ const Button = styled.button`
 const LinkText = styled.p`
   text-align: center;
   margin-top: 1.5rem;
-  color: #666;
+  color: #915316;
   
   a {
-    color: #007bff;
+    color: #A2601E;
     text-decoration: none;
     font-weight: bold;
     
@@ -122,7 +126,7 @@ const SuccessMessage = styled.div`
   margin-bottom: 1rem;
 `;
 
-const RegisterPage = () => {
+const RegisterPage = ({ setIsLoggedIn }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -201,13 +205,13 @@ const RegisterPage = () => {
   return (
     <RegisterContainer>
       <RegisterCard>
-        <Title>🍽️ 회원가입</Title>
+        <Title>☕ 회원가입</Title>
         
         {error && <ErrorMessage>{error}</ErrorMessage>}
         {success && <SuccessMessage>{success}</SuccessMessage>}
         
         <Form onSubmit={handleSubmit}>
-          <FormRow>
+          
             <FormGroup>
               <Label htmlFor="name">이름</Label>
               <Input
@@ -232,7 +236,7 @@ const RegisterPage = () => {
                 placeholder="전화번호를 입력하세요"
               />
             </FormGroup>
-          </FormRow>
+          
           
           <FormGroup>
             <Label htmlFor="email">이메일</Label>
@@ -247,7 +251,7 @@ const RegisterPage = () => {
             />
           </FormGroup>
           
-          <FormRow>
+          
             <FormGroup>
               <Label htmlFor="password">비밀번호</Label>
               <Input
@@ -273,7 +277,7 @@ const RegisterPage = () => {
                 placeholder="비밀번호를 다시 입력하세요"
               />
             </FormGroup>
-          </FormRow>
+          
           
           <Button type="submit" disabled={isLoading}>
             {isLoading ? '회원가입 중...' : '회원가입'}

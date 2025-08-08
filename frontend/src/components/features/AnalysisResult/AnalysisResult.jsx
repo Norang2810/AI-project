@@ -1,110 +1,51 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useEffect, useState } from 'react';
+import {
+  AnalysisContainer,
+  RiskLevelBadge,
+  Section,
+  SectionTitle,
+  IngredientGrid,
+  IngredientCard,
+  WarningMessage,
+  SafeMessage,
+  RecommendationCard,
+  MenuList,
+  MenuTag
+} from './AnalysisResult.styles';
 
-const AnalysisContainer = styled.div`
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-`;
+const AnalysisResult = ({ analysis, onNotification }) => {
+  const [hasNotified, setHasNotified] = useState(false);
 
-const RiskLevelBadge = styled.div`
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 14px;
-  background: ${props => props.color}15;
-  color: ${props => props.color};
-  border: 2px solid ${props => props.color}30;
-`;
+  useEffect(() => {
+    // 새로운 분석 결과가 들어오면 알림 상태 리셋
+    setHasNotified(false);
+  }, [analysis]);
 
-const Section = styled.div`
-  margin-bottom: 24px;
-  padding: 20px;
-  border-radius: 8px;
-  background: #f8fafc;
-  border-left: 4px solid #3b82f6;
-`;
+  useEffect(() => {
+    if (analysis && !hasNotified) {
+      checkForDangerousIngredients(analysis);
+    }
+  }, [analysis, hasNotified]); // eslint-disable-line react-hooks/exhaustive-deps
 
-const SectionTitle = styled.h3`
-  margin: 0 0 16px 0;
-  font-size: 18px;
-  font-weight: 600;
-  color: #1f2937;
-`;
+  const checkForDangerousIngredients = (analysis) => {
+    const dangerousIngredients = analysis.menuAnalysis
+      ?.find(item => item.type === 'ingredients')
+      ?.data?.riskAnalysis?.danger || [];
 
-const IngredientGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 12px;
-  margin-top: 12px;
-`;
+    if (dangerousIngredients.length > 0 && onNotification && !hasNotified) {
+      // 우측 상단 알림 표시
+      onNotification({
+        id: Date.now(),
+        type: 'danger',
+        icon: '⚠️',
+        title: '알레르기 위험 성분 발견!',
+        message: `${dangerousIngredients.length}개의 위험 성분이 발견되었습니다.`,
+        timestamp: new Date()
+      });
+      setHasNotified(true);
+    }
+  };
 
-const IngredientCard = styled.div`
-  padding: 12px;
-  border-radius: 6px;
-  background: white;
-  border: 1px solid ${props => {
-    if (props.risk === 'danger') return '#ef4444';
-    if (props.risk === 'warning') return '#f59e0b';
-    return '#10b981';
-  }};
-  color: ${props => {
-    if (props.risk === 'danger') return '#dc2626';
-    if (props.risk === 'warning') return '#d97706';
-    return '#059669';
-  }};
-  font-weight: 500;
-`;
-
-const WarningMessage = styled.div`
-  padding: 16px;
-  border-radius: 8px;
-  background: #fef2f2;
-  border: 1px solid #fecaca;
-  color: #dc2626;
-  margin-top: 12px;
-`;
-
-const SafeMessage = styled.div`
-  padding: 16px;
-  border-radius: 8px;
-  background: #f0fdf4;
-  border: 1px solid #bbf7d0;
-  color: #059669;
-  margin-top: 12px;
-`;
-
-const RecommendationCard = styled.div`
-  padding: 16px;
-  border-radius: 8px;
-  background: white;
-  border: 1px solid #e5e7eb;
-  margin-bottom: 12px;
-`;
-
-const MenuList = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 8px;
-`;
-
-const MenuTag = styled.span`
-  padding: 4px 8px;
-  border-radius: 4px;
-  background: #3b82f6;
-  color: white;
-  font-size: 12px;
-  font-weight: 500;
-`;
-
-const AnalysisResult = ({ analysis }) => {
   if (!analysis) return null;
 
   const renderRiskLevel = (riskInfo) => {
@@ -127,7 +68,7 @@ const AnalysisResult = ({ analysis }) => {
             <strong>⚠️ 위험한 성분 발견:</strong>
             <IngredientGrid>
               {riskAnalysis.danger.map((item, index) => (
-                <IngredientCard key={index} risk="danger">
+                <IngredientCard key={`danger-${item.ingredient}-${index}`} risk="danger">
                   {item.ingredient}
                   <br />
                   <small>매칭된 알레르기: {item.matchedAllergies.join(', ')}</small>
@@ -142,7 +83,7 @@ const AnalysisResult = ({ analysis }) => {
             <strong>✅ 안전한 성분:</strong>
             <IngredientGrid>
               {riskAnalysis.safe.map((ingredient, index) => (
-                <IngredientCard key={index} risk="safe">
+                <IngredientCard key={`safe-${ingredient}-${index}`} risk="safe">
                   {ingredient}
                 </IngredientCard>
               ))}
@@ -154,7 +95,7 @@ const AnalysisResult = ({ analysis }) => {
   };
 
   const renderRiskAssessment = (riskData) => {
-    const { riskLevel, riskInfo, mlPrediction, ruleBasedAnalysis } = riskData;
+    const { riskInfo, mlPrediction, ruleBasedAnalysis } = riskData;
     
     return (
       <Section>
@@ -192,7 +133,7 @@ const AnalysisResult = ({ analysis }) => {
             <strong>✅ 안전한 대안 메뉴:</strong>
             <MenuList>
               {recommendations.safe_alternatives.slice(0, 5).map((menu, index) => (
-                <MenuTag key={index}>{menu.menu.name}</MenuTag>
+                <MenuTag key={`safe-menu-${menu.menu.name}-${index}`}>{menu.menu.name}</MenuTag>
               ))}
             </MenuList>
           </RecommendationCard>
@@ -202,7 +143,7 @@ const AnalysisResult = ({ analysis }) => {
           <WarningMessage>
             <strong>⚠️ 주의사항:</strong>
             {recommendations.warning_messages.map((warning, index) => (
-              <div key={index}>{warning.message}</div>
+              <div key={`warning-${warning.message}-${index}`}>{warning.message}</div>
             ))}
           </WarningMessage>
         )}
@@ -212,7 +153,7 @@ const AnalysisResult = ({ analysis }) => {
             <strong>💡 안전 팁:</strong>
             <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px' }}>
               {recommendations.safety_tips.map((tip, index) => (
-                <li key={index}>{tip}</li>
+                <li key={`tip-${tip}-${index}`}>{tip}</li>
               ))}
             </ul>
           </RecommendationCard>
