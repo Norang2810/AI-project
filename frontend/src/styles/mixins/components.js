@@ -5,7 +5,7 @@ export const buttonBase = css`
   transition: all 0.3s ease;
   border: none;
   outline: none;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
+  font-family: 'BMJUA', sans-serif;
   
   &:hover {
     transform: translateY(-2px);
@@ -25,6 +25,6 @@ export const cardBase = css`
 `;
 
 export const textBase = css`
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
+  font-family: 'BMJUA', sans-serif;
   line-height: 1.6;
 `; 

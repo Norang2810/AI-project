@@ -31,7 +31,6 @@ export const Logo = styled.div`
 export const NavMenuContainer = styled.div`
   display: flex;
   align-items: center;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   font-size: 25px; /* 폰트 크기 더 줄임 */
   line-height: 28px;
   color: #000000;
@@ -75,7 +74,6 @@ export const NavLink = styled.a`
 export const AuthMenuContainer = styled.div`
   display: flex;
   align-items: center;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   font-size: 25px; /* 폰트 크기 더 줄임 */
   line-height: 28px;
   color: #000000;

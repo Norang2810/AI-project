@@ -22,7 +22,6 @@ export const Title = styled.h1`
   color: #A2601E;  
   margin-bottom: 2rem;
   font-size: 4rem;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;  
   font-weight: 520;  
 `;
 
@@ -31,7 +30,6 @@ export const Subtitle = styled.p`
   color: #A2601E;  
   margin-bottom: 3rem;
   font-size: 1.1rem;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;  
 `;
 
 export const AllergyGrid = styled.div`
@@ -69,7 +67,6 @@ export const CategoryTitle = styled.h3`
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;  
   font-weight: 500;
 `;
 
@@ -151,7 +148,6 @@ export const SubmitButton = styled.button`
   border: 1px solid #99632E;
   border-radius: 20px;
   color: #A47148;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   cursor: pointer;
@@ -180,7 +176,6 @@ export const BackButton = styled(Link)`
   border-radius: 15px;
   color: #A47148;
   text-decoration: none;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   font-size: 1rem;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -240,7 +235,6 @@ export const SeveritySection = styled.div`
 export const SeverityTitle = styled.h3`
   margin-bottom: 1rem;
   color: #A2601E; 
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;  
   font-weight: 500;
   font-size: 1.6rem;
 `;
@@ -326,7 +320,6 @@ export const LinkText = styled.p`
     color: #A2601E; 
     text-decoration: none;
     font-weight: bold;
-    font-family: 'Ownglyph_meetme-Rg', sans-serif; 
     
     &:hover {
       text-decoration: underline;
