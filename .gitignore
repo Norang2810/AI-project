@@ -82,3 +82,6 @@ ai-server/models/*.pth
 ai-server/models/*.zip
 ai-server/*.zip
 ai-server/*.json 
+
+__pycache__/
+*.pyc
