@@ -104,11 +104,18 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
       <AuthMenuContainer>
         <AuthMenu>
           {isLoggedIn ? (
-            <NavItem>
-              <AuthButton className="logout" onClick={handleLogout}>
-                로그아웃
-              </AuthButton>
-            </NavItem>
+            <>
+              <NavItem>
+                <AuthLink as={Link} to="/mypage">
+                  마이페이지
+                </AuthLink>
+              </NavItem>
+              <NavItem>
+                <AuthButton className="logout" onClick={handleLogout}>
+                  로그아웃
+                </AuthButton>
+              </NavItem>
+            </>
           ) : (
             <>
               <NavItem>
