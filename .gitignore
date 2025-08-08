@@ -85,3 +85,4 @@ ai-server/*.json
 
 __pycache__/
 *.pyc
+*.pem
