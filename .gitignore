@@ -5,11 +5,9 @@ yarn-debug.log*
 yarn-error.log*
 
 # Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+docker/ .env
+frontend / .env
+backend / .env 
 
 # Build outputs
 dist/
@@ -82,3 +80,7 @@ ai-server/models/*.pth
 ai-server/models/*.zip
 ai-server/*.zip
 ai-server/*.json 
+
+# 키 파일 무조건 제외
+*.pem
+ai-server/sample_ocr_dataset.zip
