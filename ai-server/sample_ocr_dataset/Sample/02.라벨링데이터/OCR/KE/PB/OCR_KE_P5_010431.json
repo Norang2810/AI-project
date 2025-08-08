@@ -1,0 +1,82 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_PB_010431",
+    "src_path": "\\OCR\\KE\\PB",
+    "label_path": "\\OCR\\KE\\PB",
+    "language_type": "KE",
+    "group": "PB",
+    "small_group": 5
+  },
+  "Images": {
+    "file_name": "OCR_KE_P5_010431.jpg",
+    "created_day": "2023.08.27.",
+    "extension": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "location": null,
+    "device_type": "SM-G977N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "가야대로306번길",
+      "polygon_points": [[2185.997,1917.657],[1260.658,1882.606],[1257.153,1738.899],[2193.007,1749.414]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Gaya-daero",
+      "polygon_points": [[1747.863,2005.284],[1271.174,1994.769],[1267.669,1896.627],[1737.348,1910.647]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "306beon-gil",
+      "polygon_points": [[2263.109,2019.304],[1754.873,2005.284],[1747.863,1893.122],[2256.099,1907.142]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "횡단보도",
+      "polygon_points": [[3009.690,2650.505],[2555.783,2662.772],[2549.649,2552.363],[3003.556,2546.229]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "90",
+      "polygon_points": [[2395.934,1831.732],[2395.934,1920.989],[2299.538,1919.204],[2295.968,1835.303]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "1",
+      "polygon_points": [[2226.348,1831.732],[2226.348,1912.063],[2196.001,1912.063],[2185.290,1831.732]]
+    }
+  ]
+}

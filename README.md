@@ -1,3 +1,57 @@
+# UCUBE AI Project
+
+알레르기 안전 메뉴 분석 AI 프로젝트
+
+
+
+## 📁 프로젝트 구조
+
+```
+my-web/
+├── frontend/          # React 프론트엔드
+├── backend/           # Node.js 백엔드
+├── ai-server/         # Python AI 서버
+├── data/              # 데이터셋
+└── docker/            # Docker 설정
+```
+
+## 🔧 주요 기능
+
+- 메뉴 이미지 업로드 및 OCR 분석
+- 알레르기 정보 관리
+- AI 기반 메뉴 분류 및 위험도 분석
+- 유사 메뉴 추천
+
+## 🌐 접속 정보
+
+- **프론트엔드**: http://192.168.1.96:3000
+- **백엔드 API**: http://192.168.1.96:3001
+- **AI 서버**: http://192.168.1.96:8000
+- **데이터베이스**: 192.168.1.96:3307
+
+## 📝 API 문서
+
+### 인증 API
+- `POST /api/auth/register` - 회원가입
+- `POST /api/auth/login` - 로그인
+
+### 사용자 API
+- `POST /api/user/allergies` - 알레르기 정보 저장
+- `GET /api/user/allergies` - 알레르기 정보 조회
+
+### 메뉴 API
+- `POST /api/menu/analyze` - 메뉴 이미지 분석
+- `GET /api/menu/analyses` - 분석 결과 목록
+
+### AI 서버 API
+- `POST /analyze-image` - 이미지 분석
+- `POST /analyze-menu` - 텍스트 분석
+- `GET /find-similar-menus` - 유사 메뉴 검색
+
+
+
+
+
 
 ## 🧾 Git 커밋 컨벤션 (Git Commit Convention)
 
@@ -27,7 +81,7 @@
 | 브랜치 이름 | 용도 |
 |-------------|------|
 | `main` | 실제 배포용 (함부로 수정하지 않음❗) |
-| `dev` | 개발자들이 코드를 합치는 브랜치 |
+| `develop` | 개발자들이 코드를 합치는 브랜치 |
 | `feature/기능이름` | 각자 기능 개발 시 사용하는 브랜치 |
 
  2. 커밋 메시지 규칙

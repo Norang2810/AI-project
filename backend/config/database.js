@@ -1,11 +1,17 @@
 const { Sequelize } = require('sequelize');
 
+
 // 환경 변수에서 데이터베이스 설정 가져오기
-const DB_HOST = process.env.DB_HOST || 'localhost';
+const DB_HOST = process.env.DB_HOST;
 const DB_PORT = process.env.DB_PORT || 3306;
-const DB_NAME = process.env.DB_NAME || 'myweb';
-const DB_USER = process.env.DB_USER || 'root';
-const DB_PASSWORD = process.env.DB_PASSWORD || '1234';
+const DB_NAME = process.env.DB_NAME;
+const DB_USER = process.env.DB_USER;
+const DB_PASSWORD = process.env.DB_PASSWORD;
+
+// 필수 환경변수 검증
+if (!DB_HOST || !DB_NAME || !DB_USER || !DB_PASSWORD) {
+  throw new Error('필수 데이터베이스 환경변수가 설정되지 않았습니다. (DB_HOST, DB_NAME, DB_USER, DB_PASSWORD)');
+}
 
 // Sequelize 인스턴스 생성
 const sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {

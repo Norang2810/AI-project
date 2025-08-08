@@ -1,0 +1,82 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_001225",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_001225.jpeg",
+    "created_day": "2023.08.24.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": null,
+    "device_type": "iPhone X",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "xxx",
+      "polygon_points": [[0.001,990.865],[181.492,992.792],[171.855,1116.142],[0.001,1116.142]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "냉면당",
+      "polygon_points": [[1815.878,1291.530],[1813.951,1619.178],[2810.387,1634.597],[2798.823,1270.329]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "冷",
+      "polygon_points": [[1952.720,1640.379],[2197.492,1632.670],[2197.492,1858.169],[1958.502,1860.096]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "麵",
+      "polygon_points": [[2449.974,1865.878],[2432.628,1638.452],[2207.129,1630.742],[2203.274,1865.878]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "黨",
+      "polygon_points": [[2706.310,1854.314],[2459.611,1862.023],[2442.265,1638.452],[2687.037,1634.597]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "냉면",
+      "polygon_points": [[2567.542,1881.297],[2582.960,1962.245],[2712.092,1952.609],[2698.601,1871.660]]
+    }
+  ]
+}

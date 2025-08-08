@@ -1,0 +1,154 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_000317",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_000317.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 1344,
+    "height": 649,
+    "location": "37.6893353, 127.8842625",
+    "device_type": "iPhone 13",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 2
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "연삼로",
+      "polygon_points": [[200.724,80.131],[495.138,54.343],[497.287,161.793],[213.618,181.134]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "삼봉로",
+      "polygon_points": [[95.422,316.522],[366.197,305.777],[376.942,413.227],[71.783,413.227]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "동화로",
+      "polygon_points": [[877.661,284.287],[1191.416,275.691],[1202.161,378.843],[890.555,391.737]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "蓮",
+      "polygon_points": [[587.545,163.942],[589.694,77.982],[512.330,80.131],[514.479,170.389]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "三",
+      "polygon_points": [[671.356,157.495],[667.058,80.131],[598.290,82.280],[598.290,159.644]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "路",
+      "polygon_points": [[753.018,155.346],[753.018,80.131],[684.250,80.131],[675.654,155.346]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "三",
+      "polygon_points": [[73.932,490.591],[168.489,481.995],[162.042,413.227],[78.230,413.227]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "奉",
+      "polygon_points": [[280.237,492.740],[265.194,413.227],[187.830,413.227],[187.830,490.591]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "路",
+      "polygon_points": [[370.495,492.740],[366.197,413.227],[295.280,413.227],[288.833,490.591]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "東",
+      "polygon_points": [[912.045,479.846],[985.111,471.250],[974.366,389.588],[901.300,396.035]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "禾",
+      "polygon_points": [[1088.263,464.803],[1079.667,393.886],[1013.048,393.886],[1019.495,471.250]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "路",
+      "polygon_points": [[1200.012,469.101],[1184.969,383.141],[1101.157,383.141],[1116.200,469.101]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "Yeonsamro",
+      "polygon_points": [[774.508,161.793],[1094.710,148.899],[1096.859,84.429],[770.210,93.025]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "Sambongro",
+      "polygon_points": [[56.740,576.552],[415.624,574.403],[409.177,490.591],[73.932,497.038]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "Donghwaro",
+      "polygon_points": [[1245.141,557.211],[1251.588,475.548],[890.555,481.995],[890.555,559.360]]
+    }
+  ]
+}

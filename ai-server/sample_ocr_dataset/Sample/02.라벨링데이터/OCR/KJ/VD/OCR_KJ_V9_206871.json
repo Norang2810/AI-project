@@ -1,0 +1,106 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206871",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206871.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "作用",
+      "polygon_points": [[700.668,861.949],[600.836,858.923],[605.071,808.100],[703.088,809.310]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "するしかないと",
+      "polygon_points": [[1050.382,866.789],[713.374,861.949],[708.534,812.940],[1051.592,809.310]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "見ています",
+      "polygon_points": [[1312.971,869.814],[1060.063,861.343],[1060.668,806.890],[1309.340,809.310]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "작용할",
+      "polygon_points": [[834.987,968.738],[675.256,963.898],[673.441,900.369],[838.618,903.999]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "수",
+      "polygon_points": [[901.542,967.528],[847.088,964.503],[845.878,903.999],[901.542,903.999]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "밖에",
+      "polygon_points": [[1021.340,966.923],[911.828,963.898],[911.828,904.604],[1020.130,903.999]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "없다고",
+      "polygon_points": [[1187.122,968.738],[1027.996,965.108],[1026.181,900.974],[1185.912,906.419]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "보고",
+      "polygon_points": [[1304.500,967.528],[1195.592,963.898],[1193.777,905.209],[1303.290,906.419]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "있습니다",
+      "polygon_points": [[1518.080,966.318],[1309.340,965.713],[1311.155,903.394],[1521.710,902.184]]
+    }
+  ]
+}

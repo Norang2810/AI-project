@@ -1,0 +1,130 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_CT_000367",
+    "src_path": "\\OCR\\KC\\CT",
+    "label_path": "\\OCR\\KC\\CT",
+    "language_type": "KC",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KC_C2_000367.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 889,
+    "height": 4032,
+    "location": "35.2012715, 128.8127624",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "불국사",
+      "polygon_points": [[353.043,206.447],[353.043,980.000],[594.050,980.000],[593.185,202.119]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Bulguksa",
+      "polygon_points": [[348.291,2187.508],[365.784,2624.818],[481.321,2616.512],[481.321,2192.807]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Temple",
+      "polygon_points": [[353.832,2650.339],[364.397,2986.477],[469.659,2981.909],[470.738,2651.056]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Information",
+      "polygon_points": [[368.592,3009.119],[372.479,3572.764],[485.208,3564.989],[481.321,3005.232]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "佛",
+      "polygon_points": [[509.334,2316.768],[609.599,2313.310],[605.712,2192.807],[500.757,2192.807]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "國",
+      "polygon_points": [[505.106,2320.801],[505.106,2432.234],[600.990,2428.347],[599.694,2324.688]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "寺",
+      "polygon_points": [[502.514,2434.826],[503.810,2533.302],[600.990,2532.006],[602.286,2430.939]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "綜",
+      "polygon_points": [[500.075,2606.496],[500.075,2706.786],[600.365,2713.783],[600.365,2605.330]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "合",
+      "polygon_points": [[507.072,2716.115],[507.072,2817.571],[603.864,2815.239],[600.365,2713.783]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "案",
+      "polygon_points": [[504.740,2826.901],[504.740,2928.357],[602.697,2929.523],[601.531,2823.402]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "內",
+      "polygon_points": [[509.405,2935.354],[509.405,3036.810],[605.480,3035.052],[605.480,2935.564]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "종합안내",
+      "polygon_points": [[355.813,1072.029],[370.935,1994.613],[607.083,2003.359],[580.844,1063.142]]
+    }
+  ]
+}

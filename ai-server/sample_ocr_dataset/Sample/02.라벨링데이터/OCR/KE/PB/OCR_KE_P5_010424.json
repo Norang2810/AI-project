@@ -1,0 +1,74 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_PB_010424",
+    "src_path": "\\OCR\\KE\\PB",
+    "label_path": "\\OCR\\KE\\PB",
+    "language_type": "KE",
+    "group": "PB",
+    "small_group": 5
+  },
+  "Images": {
+    "file_name": "OCR_KE_P5_010424.jpg",
+    "created_day": "2023.08.27.",
+    "extension": "jpg",
+    "width": 2252,
+    "height": 4000,
+    "location": null,
+    "device_type": "SM-F711N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "태복산로14번길",
+      "polygon_points": [[661.000,1505.000],[1509.827,1508.153],[1517.316,1647.956],[661.000,1630.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Taeboksan-ro",
+      "polygon_points": [[563.657,1635.474],[1090.417,1650.452],[1087.920,1742.823],[566.154,1730.340]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "14beon-gil",
+      "polygon_points": [[1499.841,1745.319],[1102.899,1742.823],[1092.913,1647.956],[1494.848,1652.949]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "14",
+      "polygon_points": [[440.926,1555.876],[440.926,1610.325],[388.422,1612.269],[382.588,1561.710]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "2",
+      "polygon_points": [[522.598,1555.876],[520.653,1623.937],[475.928,1618.103],[481.762,1555.876]]
+    }
+  ]
+}

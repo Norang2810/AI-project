@@ -1,0 +1,66 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000045",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000045.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 980,
+    "height": 344,
+    "location": null,
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "BEAUTY",
+      "polygon_points": [[594.415,22.729],[806.006,16.998],[801.723,74.393],[593.559,71.986]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "원",
+      "polygon_points": [[82.999,14.428],[408.524,11.859],[401.671,337.383],[80.429,334.813]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "뷰티",
+      "polygon_points": [[836.845,77.364],[853.550,310.799],[403.907,316.415],[408.619,78.268]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "ONE",
+      "polygon_points": [[487.763,32.580],[483.480,68.131],[586.706,70.701],[583.279,29.582]]
+    }
+  ]
+}

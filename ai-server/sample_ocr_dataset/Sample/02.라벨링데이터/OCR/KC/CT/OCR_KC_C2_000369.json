@@ -1,0 +1,74 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_CT_000369",
+    "src_path": "\\OCR\\KC\\CT",
+    "label_path": "\\OCR\\KC\\CT",
+    "language_type": "KC",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KC_C2_000369.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.2012715, 128.8127624",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "나가는곳",
+      "polygon_points": [[941.245,681.631],[3117.457,741.710],[3057.377,1342.505],[887.841,1255.724]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "WAY",
+      "polygon_points": [[1188.238,2090.161],[2036.026,2103.512],[2016.000,2417.260],[1201.589,2397.233]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "OUT",
+      "polygon_points": [[2109.457,2116.863],[2817.060,2143.565],[2797.033,2470.664],[2082.755,2410.584]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "出",
+      "polygon_points": [[1715.603,2484.015],[1989.298,2490.690],[1982.623,2757.710],[1668.874,2764.386]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "口",
+      "polygon_points": [[2016.000,2504.041],[2283.020,2490.690],[2289.695,2777.737],[2016.000,2751.035]]
+    }
+  ]
+}

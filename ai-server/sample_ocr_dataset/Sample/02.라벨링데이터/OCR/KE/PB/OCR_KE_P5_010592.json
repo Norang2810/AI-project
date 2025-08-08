@@ -1,0 +1,66 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_PB_010592",
+    "src_path": "\\OCR\\KE\\PB",
+    "label_path": "\\OCR\\KE\\PB",
+    "language_type": "KE",
+    "group": "PB",
+    "small_group": 5
+  },
+  "Images": {
+    "file_name": "OCR_KE_P5_010592.jpg",
+    "created_day": "2023.08.27.",
+    "extension": "jpg",
+    "width": 4000,
+    "height": 2252,
+    "location": null,
+    "device_type": "SM-F721N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "163",
+      "polygon_points": [[179.826,771.295],[648.799,785.225],[672.015,1165.976],[198.399,1114.900]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "일직점곡로",
+      "polygon_points": [[941.327,678.430],[3058.671,994.174],[3058.671,1379.568],[1015.619,1189.192]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "167",
+      "polygon_points": [[3267.619,1138.116],[3736.593,1207.766],[3708.733,1569.943],[3267.619,1523.510]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Iljikjeomgok-ro",
+      "polygon_points": [[1377.797,1268.128],[2784.716,1421.357],[2738.283,1686.025],[1405.657,1569.943]]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_001825",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_001825.jpeg",
+    "created_day": "2023.08.24.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": null,
+    "device_type": "iPhone 13 Pro",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 3
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "국채보상운동기념공원",
+      "polygon_points": [[292.000,773.000],[2421.000,773.000],[2421.000,1257.000],[292.000,1257.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "国",
+      "polygon_points": [[285.000,1300.000],[511.000,1300.000],[511.000,1647.000],[285.000,1647.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "债",
+      "polygon_points": [[517.000,1309.000],[714.000,1309.000],[714.000,1644.000],[517.000,1644.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "报",
+      "polygon_points": [[727.000,1307.000],[914.000,1307.000],[914.000,1659.000],[727.000,1659.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "偿",
+      "polygon_points": [[923.000,1302.000],[1135.000,1302.000],[1135.000,1654.000],[923.000,1654.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "运",
+      "polygon_points": [[1143.000,1300.000],[1343.000,1300.000],[1343.000,1649.000],[1143.000,1649.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "动",
+      "polygon_points": [[1356.000,1311.000],[1559.000,1311.000],[1559.000,1654.000],[1356.000,1654.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "纪",
+      "polygon_points": [[1569.000,1309.000],[1766.000,1309.000],[1766.000,1642.000],[1569.000,1642.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "念",
+      "polygon_points": [[1769.000,1305.000],[1988.000,1305.000],[1988.000,1644.000],[1769.000,1644.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "公",
+      "polygon_points": [[1990.000,1322.000],[2190.000,1322.000],[2190.000,1651.000],[1990.000,1651.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "园",
+      "polygon_points": [[2197.000,1308.000],[2420.000,1308.000],[2420.000,1658.000],[2197.000,1658.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "350m",
+      "polygon_points": [[2452.000,1518.000],[2928.000,1518.000],[2928.000,1807.000],[2452.000,1807.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "Gukchaebosang",
+      "polygon_points": [[292.000,1699.000],[1354.000,1699.000],[1354.000,2078.000],[292.000,2078.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "Memorial",
+      "polygon_points": [[1403.000,1704.000],[2043.000,1704.000],[2043.000,2031.000],[1403.000,2031.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "Park",
+      "polygon_points": [[2054.000,1715.000],[2440.000,1715.000],[2440.000,2037.000],[2054.000,2037.000]]
+    }
+  ]
+}

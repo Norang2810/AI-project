@@ -1,0 +1,90 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206849",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206849.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "そして",
+      "polygon_points": [[850.072,860.959],[709.399,860.311],[711.992,810.395],[852.665,812.988]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "来年",
+      "polygon_points": [[954.441,864.201],[856.554,859.663],[858.499,809.747],[958.979,811.692]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "上半期まで",
+      "polygon_points": [[1205.318,866.794],[957.034,860.311],[964.813,808.450],[1213.097,811.043]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "그리고",
+      "polygon_points": [[891.106,963.887],[740.223,963.320],[743.059,906.597],[889.404,905.463]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "내년",
+      "polygon_points": [[1009.089,967.857],[901.883,965.021],[903.584,905.463],[1007.954,905.463]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "상반기",
+      "polygon_points": [[1176.421,968.992],[1014.761,965.021],[1015.328,904.895],[1175.286,902.626]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "정도까지를",
+      "polygon_points": [[1448.690,966.723],[1183.795,965.589],[1184.362,901.492],[1443.584,905.463]]
+    }
+  ]
+}

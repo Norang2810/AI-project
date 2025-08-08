@@ -1,0 +1,66 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_CT_000657",
+    "src_path": "\\OCR\\KC\\CT",
+    "label_path": "\\OCR\\KC\\CT",
+    "language_type": "KC",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KC_C2_000657.jpeg",
+    "created_day": "2023.08.23.",
+    "extension": "jpeg",
+    "width": 2353,
+    "height": 3313,
+    "location": "37.4837425, 127.0464338",
+    "device_type": "iPhone 14",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "물금",
+      "polygon_points": [[927.000,943.000],[1240.000,943.000],[1240.000,1726.000],[927.000,1726.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Mulgeum",
+      "polygon_points": [[792.000,1836.000],[1380.000,1836.000],[1380.000,1985.000],[792.000,1985.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "勿",
+      "polygon_points": [[977.000,2016.000],[1090.000,2016.000],[1090.000,2143.000],[977.000,2143.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "禁",
+      "polygon_points": [[1096.000,2013.000],[1214.000,2013.000],[1214.000,2142.000],[1096.000,2142.000]]
+    }
+  ]
+}

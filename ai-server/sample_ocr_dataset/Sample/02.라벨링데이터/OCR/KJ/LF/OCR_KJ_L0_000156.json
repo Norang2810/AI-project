@@ -1,0 +1,122 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000156",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000156.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2892,
+    "height": 716,
+    "location": null,
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "SENSE",
+      "polygon_points": [[104.765,220.609],[85.274,330.247],[392.259,305.883],[411.751,205.991]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Cosmetics",
+      "polygon_points": [[952.630,269.337],[955.067,186.500],[411.751,205.991],[392.259,303.447]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "センス",
+      "polygon_points": [[1162.160,159.699],[1517.874,140.208],[1510.564,240.100],[1154.851,254.719]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "化粧品",
+      "polygon_points": [[1924.751,110.971],[1522.746,132.899],[1517.874,242.537],[1924.751,215.736]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "森",
+      "polygon_points": [[2112.354,106.099],[2243.919,89.044],[2246.356,201.118],[2117.227,203.554]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "思",
+      "polygon_points": [[2387.666,181.627],[2248.792,193.809],[2243.919,93.917],[2380.357,79.298]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "化",
+      "polygon_points": [[2521.668,171.881],[2397.412,179.190],[2385.230,76.862],[2519.232,64.680]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "妆",
+      "polygon_points": [[2655.670,50.062],[2660.543,167.008],[2516.795,174.318],[2511.922,62.243]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "品",
+      "polygon_points": [[2787.235,47.625],[2796.981,159.699],[2660.543,164.572],[2650.797,54.934]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "센스",
+      "polygon_points": [[41.419,705.452],[1108.559,700.579],[1115.869,259.591],[70.655,342.429]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "화장품",
+      "polygon_points": [[2745.816,181.627],[1128.051,271.773],[1106.123,698.142],[2755.562,659.160]]
+    }
+  ]
+}

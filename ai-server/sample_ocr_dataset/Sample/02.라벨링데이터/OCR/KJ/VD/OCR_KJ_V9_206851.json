@@ -1,0 +1,154 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206851",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206851.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "短期的な",
+      "polygon_points": [[496.218,862.894],[297.121,860.625],[297.121,808.440],[495.651,812.978]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "見通しは",
+      "polygon_points": [[698.151,853.251],[499.621,860.058],[503.592,810.142],[700.987,813.545]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "あまりにも",
+      "polygon_points": [[953.403,861.192],[706.659,859.491],[707.226,811.276],[948.865,808.440]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "否定的な",
+      "polygon_points": [[1154.769,860.625],[957.941,860.058],[954.537,811.843],[1157.037,809.575]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "影響",
+      "polygon_points": [[1256.302,860.625],[1159.874,861.759],[1160.441,810.709],[1257.437,811.843]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "要因が",
+      "polygon_points": [[1402.647,861.759],[1260.273,862.894],[1261.974,810.709],[1411.155,811.276]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "多いため",
+      "polygon_points": [[1611.953,866.864],[1412.857,863.461],[1415.693,807.873],[1617.058,813.545]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "단기적인",
+      "polygon_points": [[668.088,968.318],[464.453,965.482],[458.781,901.953],[669.222,903.654]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "전망은",
+      "polygon_points": [[836.554,967.751],[677.163,964.348],[676.596,900.818],[837.689,903.087]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "워낙",
+      "polygon_points": [[955.105,967.184],[839.958,966.617],[842.794,902.520],[953.403,905.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "부정적인",
+      "polygon_points": [[1166.113,967.751],[961.911,964.915],[959.642,903.087],[1168.382,905.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "영향",
+      "polygon_points": [[1284.663,967.751],[1178.025,967.184],[1173.487,902.520],[1284.096,904.222]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "요인이",
+      "polygon_points": [[1449.726,966.617],[1292.037,967.184],[1292.037,901.386],[1445.756,905.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "많기",
+      "polygon_points": [[1566.575,966.049],[1462.205,964.915],[1457.668,901.953],[1568.277,905.356]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "때문에",
+      "polygon_points": [[1738.445,966.617],[1577.920,964.915],[1576.785,905.923],[1735.609,905.356]]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_000053",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_000053.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 889,
+    "height": 468,
+    "location": null,
+    "device_type": null,
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 3
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "이천동석불",
+      "polygon_points": [[19.441,2.567],[21.209,177.540],[879.279,181.958],[869.559,11.404]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "泥",
+      "polygon_points": [[18.558,329.536],[178.507,331.303],[172.321,180.191],[23.860,177.540]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "川",
+      "polygon_points": [[205.018,332.187],[341.991,329.536],[341.991,178.423],[200.599,179.307]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "洞",
+      "polygon_points": [[360.549,332.187],[518.731,337.489],[513.428,176.656],[360.549,179.307]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "石",
+      "polygon_points": [[548.776,325.117],[683.098,336.605],[681.331,182.842],[539.939,181.958]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "佛",
+      "polygon_points": [[719.330,326.885],[863.373,329.536],[854.536,177.540],[715.795,176.656]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Icheondong",
+      "polygon_points": [[512.545,460.323],[23.860,447.067],[22.976,330.419],[509.010,336.605]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "Seokbul",
+      "polygon_points": [[522.265,442.649],[522.265,329.536],[862.489,336.605],[863.373,440.882]]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_CT_000902",
+    "src_path": "\\OCR\\KJ\\CT",
+    "label_path": "\\OCR\\KJ\\CT",
+    "language_type": "KJ",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KJ_C2_000902.jpeg",
+    "created_day": "2023.08.23.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.2012715, 128.8127624",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "Falling",
+      "polygon_points": [[1132.571,2154.571],[1993.143,2158.000],[2003.429,2425.429],[1132.571,2415.143]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Rock",
+      "polygon_points": [[2096.000,2158.000],[2768.000,2158.000],[2772.000,2373.000],[2096.000,2370.571]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "낙석주의",
+      "polygon_points": [[971.429,1592.286],[957.714,2034.571],[2925.714,2062.000],[2942.857,1606.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "小",
+      "polygon_points": [[2092.571,2562.571],[2078.857,2782.000],[2329.143,2775.143],[2336.000,2559.143]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "心",
+      "polygon_points": [[2387.429,2552.286],[2370.286,2768.286],[2596.571,2758.000],[2596.571,2555.714]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "落",
+      "polygon_points": [[2630.857,2538.571],[2630.857,2764.857],[2864.000,2758.000],[2877.714,2535.143]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "石",
+      "polygon_points": [[2932.571,2538.571],[2901.714,2754.571],[3131.429,2754.571],[3138.286,2535.143]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "落石注意",
+      "polygon_points": [[758.857,2524.857],[745.143,2775.143],[1808.000,2788.857],[1808.000,2576.286]]
+    }
+  ]
+}

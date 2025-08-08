@@ -1,0 +1,114 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000113",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000113.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2594,
+    "height": 1009,
+    "location": "36.56544, 128.72812859972223",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "대안양행",
+      "polygon_points": [[243.465,195.842],[2484.141,582.045],[2546.768,982.166],[299.134,735.135]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Daean",
+      "polygon_points": [[108.207,6.630],[411.293,79.309],[412.840,173.637],[108.207,114.875]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Clothing",
+      "polygon_points": [[460.777,68.484],[923.138,156.627],[915.407,275.697],[454.591,184.461]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "大安洋行洋服店",
+      "polygon_points": [[1066.641,187.554],[1801.162,326.727],[1798.069,445.796],[1060.455,300.438]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "大",
+      "polygon_points": [[1930.648,358.271],[2016.761,374.798],[2028.068,479.177],[1934.997,460.911]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "安",
+      "polygon_points": [[2028.938,376.537],[2108.092,391.325],[2115.051,493.964],[2038.506,482.656]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "洋",
+      "polygon_points": [[2184.637,404.372],[2207.253,510.491],[2119.400,498.313],[2111.572,391.325]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "行",
+      "polygon_points": [[2200.294,406.112],[2281.188,423.508],[2285.537,526.148],[2209.862,513.970]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "西",
+      "polygon_points": [[2329.029,441.775],[2349.035,537.456],[2417.751,545.284],[2400.355,445.254]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "服",
+      "polygon_points": [[2409.923,451.343],[2428.189,553.112],[2507.343,558.331],[2477.769,463.520]]
+    }
+  ]
+}

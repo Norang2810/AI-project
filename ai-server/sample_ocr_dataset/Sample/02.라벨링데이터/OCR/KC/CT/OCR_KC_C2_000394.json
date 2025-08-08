@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_CT_000394",
+    "src_path": "\\OCR\\KC\\CT",
+    "label_path": "\\OCR\\KC\\CT",
+    "language_type": "KC",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KC_C2_000394.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.2012715, 128.8127624",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "관광기념품",
+      "polygon_points": [[634.172,367.882],[3404.503,374.558],[3351.099,995.379],[647.523,888.571]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "朱",
+      "polygon_points": [[587.444,1642.902],[1034.702,1642.902],[1028.026,2103.512],[600.795,2116.863]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "印",
+      "polygon_points": [[1488.636,1642.902],[1061.404,1649.578],[1061.404,2150.240],[1461.934,2136.889]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "帳",
+      "polygon_points": [[1502.940,1644.497],[1945.430,1659.755],[1937.801,2186.166],[1480.053,2163.278]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "受",
+      "polygon_points": [[1960.689,1678.828],[2406.993,1705.530],[2433.695,2216.682],[1983.576,2189.980]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "付",
+      "polygon_points": [[2475.656,1728.417],[2952.477,1758.934],[2918.146,2292.974],[2460.397,2224.311]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "所",
+      "polygon_points": [[3013.510,1774.192],[3558.993,1816.152],[3467.444,2342.563],[2956.291,2296.788]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "Souvenir",
+      "polygon_points": [[1762.331,1082.161],[1775.682,1389.233],[3110.781,1415.935],[3210.914,1115.538]]
+    }
+  ]
+}

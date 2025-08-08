@@ -1,0 +1,154 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_PB_002949",
+    "src_path": "\\OCR\\KJ\\PB",
+    "label_path": "\\OCR\\KJ\\PB",
+    "language_type": "KJ",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KJ_P4_002949.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 2252,
+    "height": 4000,
+    "location": null,
+    "device_type": "SM-S901N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 4
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "Hwarangdae",
+      "polygon_points": [[865.013,1930.823],[1347.463,1948.097],[1346.017,2059.450],[862.844,2045.790]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "3",
+      "polygon_points": [[1069.696,634.581],[1058.127,858.249],[1239.375,858.249],[1237.447,632.652]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "출입구",
+      "polygon_points": [[1262.513,869.818],[1021.491,864.034],[1025.348,933.448],[1264.442,937.304]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Entrance",
+      "polygon_points": [[1291.436,1010.575],[1291.436,948.873],[1004.138,943.089],[1006.066,1002.862]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "화랑대",
+      "polygon_points": [[1163.735,1041.637],[967.061,1030.067],[916.928,1832.188],[1148.309,1828.332]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "ファランデ",
+      "polygon_points": [[1280.941,2282.154],[910.732,2274.923],[902.055,2379.045],[1275.157,2377.599]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "서울여대입구",
+      "polygon_points": [[1177.200,1124.765],[1297.518,1124.765],[1283.635,1763.377],[1156.375,1751.808]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "646",
+      "polygon_points": [[988.492,2716.151],[979.815,2811.596],[1173.597,2817.381],[1167.812,2721.936]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "6호선",
+      "polygon_points": [[939.323,2823.165],[927.754,2953.317],[1219.873,2950.425],[1225.657,2828.950]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "Seoul",
+      "polygon_points": [[894.000,2064.000],[1010.000,2064.000],[1010.000,2129.000],[894.000,2129.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "Women\u0027s",
+      "polygon_points": [[1017.000,2069.000],[1211.000,2069.000],[1211.000,2131.000],[1017.000,2131.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "Univ.",
+      "polygon_points": [[1219.000,2073.000],[1329.000,2073.000],[1329.000,2138.000],[1219.000,2138.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "花",
+      "polygon_points": [[971.000,2170.000],[1057.000,2170.000],[1057.000,2257.000],[971.000,2257.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "郎",
+      "polygon_points": [[1063.000,2170.000],[1145.000,2170.000],[1145.000,2257.000],[1063.000,2257.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "台",
+      "polygon_points": [[1150.000,2175.000],[1227.000,2175.000],[1227.000,2261.000],[1150.000,2261.000]]
+    }
+  ]
+}

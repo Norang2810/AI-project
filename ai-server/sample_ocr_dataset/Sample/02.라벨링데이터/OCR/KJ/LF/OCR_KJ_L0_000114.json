@@ -1,0 +1,114 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000114",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000114.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 2511,
+    "height": 870,
+    "location": "36.56544, 128.72812859972223",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "구시장건어물",
+      "polygon_points": [[11.100,321.862],[2504.100,195.862],[2495.100,828.862],[20.100,852.862]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Goosijang",
+      "polygon_points": [[6.840,172.665],[431.640,154.665],[426.840,281.865],[4.440,296.265]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "dried",
+      "polygon_points": [[467.640,147.465],[714.840,136.665],[710.040,248.265],[465.240,254.265]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "fidsh",
+      "polygon_points": [[748.440,136.665],[960.840,122.265],[956.040,233.865],[748.440,238.665]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "旧市場乾物屋",
+      "polygon_points": [[1082.520,104.265],[1672.920,58.665],[1683.720,209.865],[1082.520,233.865]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "旧",
+      "polygon_points": [[1819.800,59.145],[1915.800,48.345],[1915.800,180.345],[1821.000,182.745]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "市",
+      "polygon_points": [[2010.600,42.345],[2013.000,168.345],[1925.400,174.345],[1918.200,44.745]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "场",
+      "polygon_points": [[2113.800,37.545],[2118.600,169.545],[2016.600,173.145],[2011.800,36.345]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "鱼",
+      "polygon_points": [[2199.000,41.145],[2225.400,161.145],[2123.400,167.145],[2122.200,29.145]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "干",
+      "polygon_points": [[2209.800,29.145],[2229.000,161.145],[2333.400,150.345],[2313.000,21.945]]
+    }
+  ]
+}
