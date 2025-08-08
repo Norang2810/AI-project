@@ -1,0 +1,74 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000058",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000058.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 3784,
+    "height": 552,
+    "location": null,
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Hez",
+      "polygon_points": [[1491.402,81.042],[2212.479,107.503],[2172.786,415.119],[1474.863,418.426]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "바버샵",
+      "polygon_points": [[3204.786,153.811],[3462.786,147.196],[3479.325,319.196],[3211.402,309.273]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "헤즈",
+      "polygon_points": [[3700.940,312.580],[3495.863,312.580],[3479.325,147.196],[3687.709,150.503]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "shop",
+      "polygon_points": [[638.017,143.888],[1074.632,150.503],[1064.709,375.426],[628.094,378.734]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "Barber",
+      "polygon_points": [[45.940,143.888],[608.248,157.119],[591.709,378.734],[29.402,372.119]]
+    }
+  ]
+}

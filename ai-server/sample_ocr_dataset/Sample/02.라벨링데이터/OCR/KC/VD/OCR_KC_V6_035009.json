@@ -1,0 +1,210 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_VD_035009",
+    "src_path": "\\OCR\\KC\\VD",
+    "label_path": "\\OCR\\KC\\VD",
+    "language_type": "KC",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KC_V6_035009.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "3일",
+      "polygon_points": [[299.189,478.515],[421.483,480.104],[416.718,551.574],[305.542,556.339]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "자정쯤",
+      "polygon_points": [[637.483,475.339],[637.483,562.692],[423.071,553.163],[434.189,481.692]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "진주경찰서에",
+      "polygon_points": [[654.953,480.104],[1069.483,473.751],[1072.659,561.104],[653.365,562.692]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "걸려",
+      "polygon_points": [[1079.012,476.927],[1079.012,559.515],[1218.777,553.163],[1221.953,473.751]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "온",
+      "polygon_points": [[1236.247,480.104],[1304.542,481.692],[1304.542,554.751],[1233.071,556.339]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "신고",
+      "polygon_points": [[1318.836,481.692],[1310.895,553.163],[1455.424,553.163],[1450.659,483.280]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "전화",
+      "polygon_points": [[1615.836,476.927],[1603.130,565.868],[1463.365,559.515],[1464.953,476.927]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "日",
+      "polygon_points": [[676.244,726.593],[679.222,772.255],[639.516,773.247],[638.523,724.608]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "午",
+      "polygon_points": [[721.906,726.593],[721.906,775.233],[684.185,768.284],[678.229,724.608]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "夜",
+      "polygon_points": [[767.567,726.593],[768.560,774.240],[725.876,774.240],[725.876,724.608]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "左",
+      "polygon_points": [[815.214,726.593],[817.200,775.233],[769.553,774.240],[768.560,726.593]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "右",
+      "polygon_points": [[857.898,729.571],[858.891,775.233],[819.185,770.269],[816.207,726.593]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "接",
+      "polygon_points": [[903.560,726.593],[904.553,774.240],[861.869,773.247],[859.884,726.593]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "到",
+      "polygon_points": [[949.222,724.608],[948.229,777.218],[907.531,774.240],[904.553,726.593]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "晋",
+      "polygon_points": [[993.891,726.593],[991.906,771.262],[950.214,773.247],[950.214,726.593]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "州",
+      "polygon_points": [[1039.553,727.585],[1039.553,774.240],[991.906,773.247],[993.891,728.578]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "警",
+      "polygon_points": [[1082.236,724.608],[1081.244,772.255],[1040.545,774.240],[1039.553,726.593]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "察",
+      "polygon_points": [[1131.869,724.608],[1128.891,772.255],[1084.222,772.255],[1083.229,724.608]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "局",
+      "polygon_points": [[1174.553,726.593],[1170.582,773.247],[1129.884,774.240],[1134.847,726.593]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "的",
+      "polygon_points": [[1221.207,727.585],[1216.244,771.262],[1171.575,774.240],[1177.531,729.571]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "电",
+      "polygon_points": [[1258.928,723.615],[1262.898,770.269],[1216.244,771.262],[1221.207,726.593]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "话",
+      "polygon_points": [[1308.560,726.593],[1306.575,773.247],[1267.861,770.269],[1264.884,726.593]]
+    }
+  ]
+}

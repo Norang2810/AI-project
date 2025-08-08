@@ -1,0 +1,170 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_VD_016620",
+    "src_path": "\\OCR\\KE\\VD",
+    "label_path": "\\OCR\\KE\\VD",
+    "language_type": "KE",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KE_V6_016620.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "The",
+      "polygon_points": [[362.170,709.357],[362.170,755.004],[439.868,755.976],[443.753,709.357]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "case",
+      "polygon_points": [[453.465,719.069],[451.522,755.004],[543.789,755.976],[543.789,721.012]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "was",
+      "polygon_points": [[554.472,719.069],[555.443,756.947],[629.256,755.976],[633.141,722.954]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "solved",
+      "polygon_points": [[643.824,712.271],[641.882,757.918],[772.997,754.033],[774.940,708.386]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "in",
+      "polygon_points": [[784.652,712.271],[785.623,755.004],[822.530,758.889],[821.558,716.156]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "80seconds",
+      "polygon_points": [[835.164,710.320],[835.164,754.996],[1066.315,756.939],[1064.372,710.320]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "with",
+      "polygon_points": [[1161.495,755.967],[1157.610,711.291],[1074.085,712.262],[1076.998,754.996]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "the",
+      "polygon_points": [[1169.264,709.360],[1172.178,756.950],[1242.106,753.065],[1242.106,714.216]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "help",
+      "polygon_points": [[1251.818,707.417],[1251.818,767.633],[1336.315,765.691],[1340.200,713.245]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "of",
+      "polygon_points": [[1351.854,711.302],[1349.912,758.892],[1392.646,759.863],[1403.329,706.446]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "citizens",
+      "polygon_points": [[1554.649,754.971],[1554.649,720.007],[1406.052,711.266],[1399.254,754.971]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "시민들의",
+      "polygon_points": [[607.715,883.165],[934.046,881.222],[944.730,794.783],[636.852,797.697]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "80초",
+      "polygon_points": [[492.140,886.078],[481.456,976.402],[658.219,975.431],[666.960,888.021]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "만에",
+      "polygon_points": [[834.982,979.316],[847.607,890.934],[678.615,890.934],[667.931,982.229]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "사건이",
+      "polygon_points": [[1088.471,979.316],[1103.039,888.021],[868.003,892.877],[846.636,977.373]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "도움으로",
+      "polygon_points": [[961.235,793.809],[942.782,879.277],[1271.055,881.219],[1271.055,796.723]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "해결됐다",
+      "polygon_points": [[1418.681,980.284],[1436.163,890.932],[1110.803,890.932],[1104.976,978.342]]
+    }
+  ]
+}

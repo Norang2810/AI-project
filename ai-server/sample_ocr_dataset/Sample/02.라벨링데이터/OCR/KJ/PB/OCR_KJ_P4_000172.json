@@ -1,0 +1,82 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_PB_000172",
+    "src_path": "\\OCR\\KJ\\PB",
+    "label_path": "\\OCR\\KJ\\PB",
+    "language_type": "KJ",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KJ_P4_000172.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1920,
+    "height": 1080,
+    "location": "36.55915, 128.749587",
+    "device_type": null,
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 4
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "엘리베이터",
+      "polygon_points": [[1092.000,745.000],[1522.036,727.492],[1519.103,834.539],[1093.849,855.069]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "エレベーター",
+      "polygon_points": [[1340.000,855.000],[1542.566,852.136],[1542.566,887.329],[1340.000,892.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Elevator",
+      "polygon_points": [[1097.000,862.000],[1240.000,862.000],[1240.000,900.000],[1097.000,900.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "45m",
+      "polygon_points": [[750.712,888.796],[856.293,890.262],[854.826,934.254],[749.246,932.788]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "电",
+      "polygon_points": [[1250.291,859.414],[1289.395,856.482],[1290.373,897.541],[1252.247,897.541]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "梯",
+      "polygon_points": [[1327.522,893.630],[1290.373,895.586],[1287.440,856.482],[1326.544,854.526]]
+    }
+  ]
+}

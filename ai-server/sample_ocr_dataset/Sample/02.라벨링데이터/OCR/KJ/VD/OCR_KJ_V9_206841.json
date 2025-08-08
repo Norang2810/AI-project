@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_VD_206841",
+    "src_path": "\\OCR\\KJ\\VD",
+    "label_path": "\\OCR\\KJ\\VD",
+    "language_type": "KJ",
+    "group": "VD",
+    "small_group": 9
+  },
+  "Images": {
+    "file_name": "OCR_KJ_V9_206841.png",
+    "created_day": "2023.09.19.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "まったく",
+      "polygon_points": [[842.085,866.218],[654.900,862.814],[658.870,810.629],[839.816,809.495]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "他の",
+      "polygon_points": [[955.530,865.650],[852.295,862.247],[853.996,806.091],[954.396,810.629]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "問題によって",
+      "polygon_points": [[1256.160,860.545],[959.501,861.680],[958.933,812.898],[1265.236,811.764]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "전혀",
+      "polygon_points": [[848.891,968.886],[742.820,965.482],[738.849,905.356],[846.623,905.923]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "다른",
+      "polygon_points": [[962.337,965.482],[858.534,963.781],[856.265,904.222],[961.770,904.789]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "어떤",
+      "polygon_points": [[1076.917,967.751],[973.681,965.482],[967.442,900.251],[1077.484,904.222]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "이슈에",
+      "polygon_points": [[1241.980,967.751],[1088.261,965.482],[1083.156,903.654],[1238.576,904.222]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "의해서도",
+      "polygon_points": [[1460.362,964.348],[1249.921,964.348],[1245.383,904.789],[1455.824,907.625]]
+    }
+  ]
+}

@@ -1,21 +1,18 @@
-version: '3.8'
+
 
 services:
   # Frontend Service
   frontend:
     build:
-      context: ../frontend
-      dockerfile: ../docker/Dockerfile.frontend
+      context: ..
+      dockerfile: docker/Dockerfile.frontend
     ports:
-      - "3000:3000"
+      - "3000:80"
     environment:
       - REACT_APP_API_URL=http://localhost:3001
       - REACT_APP_AI_SERVER_URL=http://localhost:8000
     depends_on:
       - backend
-    volumes:
-      - ../frontend:/app
-      - /app/node_modules
 
   # Backend Service
   backend:
@@ -30,12 +27,13 @@ services:
       - DB_HOST=mysql
       - DB_PORT=3306
       - DB_NAME=myweb
-      - DB_USER=root
-      - DB_PASSWORD=password
-      - JWT_SECRET=your_jwt_secret_key_here
+      - DB_USER=myweb_user
+      - DB_PASSWORD=${DB_PASSWORD}
+      - JWT_SECRET=${JWT_SECRET}
       - CORS_ORIGIN=http://localhost:3000
     depends_on:
-      - mysql
+      mysql:
+        condition: service_healthy
     volumes:
       - ../backend:/app
       - /app/node_modules
@@ -49,7 +47,6 @@ services:
     ports:
       - "8000:8000"
     environment:
-      # Google Translate는 API 키가 불필요합니다
       - DEBUG=True
     volumes:
       - ../ai-server:/app
@@ -59,15 +56,18 @@ services:
   mysql:
     image: mysql:8.0
     ports:
-      - "3306:3306"
+      - "3307:3306"
     environment:
-      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
       - MYSQL_DATABASE=myweb
       - MYSQL_USER=myweb_user
-      - MYSQL_PASSWORD=myweb_password
+      - MYSQL_PASSWORD=${DB_PASSWORD}
     volumes:
       - mysql_data:/var/lib/mysql
-      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
 
   # Nginx Reverse Proxy
   nginx:
@@ -82,4 +82,4 @@ services:
       - ai-server
 
 volumes:
-  mysql_data: 
+  mysql_data:

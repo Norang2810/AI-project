@@ -1,0 +1,146 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_000322",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_000322.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 346,
+    "height": 204,
+    "location": null,
+    "device_type": "SM-S901N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 3
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "안동",
+      "polygon_points": [[30.000,25.000],[92.000,25.000],[92.000,76.000],[30.000,76.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "소주",
+      "polygon_points": [[97.000,28.000],[157.000,28.000],[157.000,79.000],[97.000,79.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "박물관",
+      "polygon_points": [[160.000,33.000],[244.000,33.000],[244.000,83.000],[160.000,83.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "安",
+      "polygon_points": [[29.000,84.000],[61.000,84.000],[61.000,126.000],[29.000,126.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "東",
+      "polygon_points": [[62.000,85.000],[92.000,85.000],[92.000,126.000],[62.000,126.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "燒",
+      "polygon_points": [[93.000,87.000],[125.000,87.000],[125.000,128.000],[93.000,128.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "酎",
+      "polygon_points": [[126.000,87.000],[156.000,87.000],[156.000,128.000],[126.000,128.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "博",
+      "polygon_points": [[157.000,86.000],[186.000,86.000],[186.000,128.000],[157.000,128.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "物",
+      "polygon_points": [[186.000,88.000],[216.000,88.000],[216.000,129.000],[186.000,129.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "館",
+      "polygon_points": [[216.000,88.000],[246.000,88.000],[246.000,131.000],[216.000,131.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "Andong",
+      "polygon_points": [[27.000,135.000],[113.000,135.000],[113.000,175.000],[27.000,175.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "Soju",
+      "polygon_points": [[113.000,135.000],[160.000,135.000],[160.000,173.000],[113.000,173.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "Museum",
+      "polygon_points": [[160.000,135.000],[243.000,135.000],[243.000,169.000],[160.000,169.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "7km",
+      "polygon_points": [[247.000,143.000],[296.000,143.000],[296.000,170.000],[247.000,170.000]]
+    }
+  ]
+}

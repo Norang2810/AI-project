@@ -1,0 +1,42 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000675",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000675.jpg",
+    "created_day": "2023.08.23.",
+    "extension": "jpg",
+    "width": 12000,
+    "height": 9000,
+    "location": "35.1723488, 128.94737299972223",
+    "device_type": "SM-N986N",
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": 1,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "お手洗",
+      "polygon_points": [[9966.742,4260.677],[9948.602,3816.232],[8479.214,3807.162],[8479.214,4260.677]]
+    }
+  ]
+}

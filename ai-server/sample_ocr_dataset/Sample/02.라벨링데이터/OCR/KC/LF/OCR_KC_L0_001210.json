@@ -1,0 +1,98 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_LF_001210",
+    "src_path": "\\OCR\\KC\\LF",
+    "label_path": "\\OCR\\KC\\LF",
+    "language_type": "KC",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KC_L0_001210.jpeg",
+    "created_day": "2023.08.24.",
+    "extension": "jpeg",
+    "width": 4032,
+    "height": 3024,
+    "location": "35.8581982, 128.5805738",
+    "device_type": "iPhone 13 Pro",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "whiskey",
+      "polygon_points": [[430.769,2236.163],[1176.000,2240.471],[1167.385,2442.933],[426.462,2438.625]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "vodka",
+      "polygon_points": [[2502.769,2240.471],[3140.308,2218.933],[3155.000,2425.000],[2493.000,2425.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "beer",
+      "polygon_points": [[1606.769,2231.856],[2037.538,2262.010],[2033.231,2425.702],[1606.000,2425.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "미인",
+      "polygon_points": [[432.923,1247.784],[407.077,2113.630],[1835.077,2081.322],[1848.000,1209.014]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "美",
+      "polygon_points": [[2171.077,1551.476],[2158.154,1965.014],[2539.385,1952.091],[2532.923,1525.630]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "人",
+      "polygon_points": [[3004.615,1919.784],[2552.308,1919.784],[2545.846,1551.476],[2946.462,1557.938]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "BAR",
+      "polygon_points": [[646.154,810.317],[1232.000,767.240],[1223.385,1025.702],[628.923,1051.548]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "1F",
+      "polygon_points": [[2644.923,642.317],[2649.231,922.317],[3011.077,892.163],[3006.769,629.394]]
+    }
+  ]
+}

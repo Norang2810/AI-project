@@ -1,0 +1,114 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_LF_000182",
+    "src_path": "\\OCR\\KE\\LF",
+    "label_path": "\\OCR\\KE\\LF",
+    "language_type": "KE",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KE_L0_000182.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1920,
+    "height": 1080,
+    "location": "36.55915, 128.749587",
+    "device_type": null,
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "발매기",
+      "polygon_points": [[1079.255,860.287],[1347.578,858.797],[1347.578,952.710],[1082.236,955.691]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "신용카드",
+      "polygon_points": [[352.174,271.590],[1126.957,271.590],[1140.000,503.764],[341.739,527.242]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "전용",
+      "polygon_points": [[1202.609,271.590],[1583.478,266.372],[1588.696,508.981],[1215.652,514.198]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "credit",
+      "polygon_points": [[829.565,725.503],[323.478,738.546],[320.870,576.807],[826.957,563.764]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "card",
+      "polygon_points": [[860.870,576.807],[1223.478,558.546],[1231.304,709.851],[868.696,728.111]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "only",
+      "polygon_points": [[1270.435,568.981],[1634.087,555.359],[1638.261,722.315],[1278.261,730.720]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "승차권",
+      "polygon_points": [[572.422,861.778],[843.727,860.287],[848.199,954.200],[570.932,958.672]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "자동",
+      "polygon_points": [[864.596,860.287],[1055.404,854.325],[1057.391,954.330],[870.559,951.219]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "현금인출은",
+      "polygon_points": [[949.565,1030.851],[612.174,1041.286],[613.333,962.446],[949.565,960.127]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "불가합니다",
+      "polygon_points": [[1311.304,1029.692],[976.232,1035.489],[972.754,958.967],[1306.667,958.967]]
+    }
+  ]
+}

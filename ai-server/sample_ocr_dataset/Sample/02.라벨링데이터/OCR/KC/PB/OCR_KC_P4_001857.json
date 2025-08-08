@@ -1,0 +1,106 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KC_PB_001857",
+    "src_path": "\\OCR\\KC\\PB",
+    "label_path": "\\OCR\\KC\\PB",
+    "language_type": "KC",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KC_P4_001857.jpg",
+    "created_day": "2023.08.24.",
+    "extension": "jpg",
+    "width": 4000,
+    "height": 3000,
+    "location": null,
+    "device_type": "SM-N986N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 2
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "길주중학교",
+      "polygon_points": [[1201.000,1577.000],[2532.000,1577.000],[2532.000,1854.000],[1201.000,1854.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "GILJU",
+      "polygon_points": [[1317.000,1897.000],[1621.000,1897.000],[1621.000,1998.000],[1317.000,1998.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "MIDDLE",
+      "polygon_points": [[1626.000,1895.000],[2002.000,1895.000],[2002.000,1996.000],[1626.000,1996.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "SCHOOL",
+      "polygon_points": [[2006.000,1891.000],[2409.000,1891.000],[2409.000,1989.000],[2006.000,1989.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "吉",
+      "polygon_points": [[1629.000,2062.000],[1722.000,2062.000],[1722.000,2176.000],[1629.000,2176.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "州",
+      "polygon_points": [[1729.000,2049.000],[1822.000,2049.000],[1822.000,2171.000],[1729.000,2171.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "中",
+      "polygon_points": [[1827.000,2048.000],[1917.000,2048.000],[1917.000,2169.000],[1827.000,2169.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "學",
+      "polygon_points": [[1915.000,2052.000],[2012.000,2052.000],[2012.000,2164.000],[1915.000,2164.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "校",
+      "polygon_points": [[2007.000,2047.000],[2113.000,2047.000],[2113.000,2161.000],[2007.000,2161.000]]
+    }
+  ]
+}

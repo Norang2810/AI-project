@@ -1,0 +1,146 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000102",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000102.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 3283,
+    "height": 826,
+    "location": "36.56542939972222, 128.7280001",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Ace",
+      "polygon_points": [[210.740,20.672],[192.145,109.513],[444.207,134.306],[429.744,64.060]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "Total",
+      "polygon_points": [[809.903,179.760],[458.670,134.306],[444.207,49.597],[807.837,105.381]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "fashion",
+      "polygon_points": [[1297.498,252.073],[818.167,183.892],[811.969,92.985],[1285.101,171.496]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "에이스",
+      "polygon_points": [[1696.251,677.685],[20.661,568.183],[68.181,113.645],[1669.392,328.518]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "토탈",
+      "polygon_points": [[2572.269,770.659],[1741.705,692.148],[1725.176,349.179],[2522.683,433.888]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "패션",
+      "polygon_points": [[2553.674,460.747],[3247.877,512.399],[3276.802,820.245],[2590.863,801.650]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "エース",
+      "polygon_points": [[1462.784,192.156],[1458.652,276.866],[1716.912,311.989],[1708.648,227.280]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "トータ",
+      "polygon_points": [[1937.982,250.007],[1940.048,338.848],[1731.374,316.121],[1727.242,227.280]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "ルファッツョソ",
+      "polygon_points": [[2460.700,328.518],[2471.031,402.897],[1954.511,345.046],[1946.247,258.271]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "ace",
+      "polygon_points": [[2590.273,374.299],[2597.357,436.871],[2736.670,446.316],[2724.863,389.647]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "綜",
+      "polygon_points": [[2813.410,379.021],[2825.216,459.303],[2742.573,453.400],[2722.502,373.118]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "合",
+      "polygon_points": [[2906.678,467.567],[2892.511,389.647],[2819.313,381.382],[2828.758,464.026]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "时",
+      "polygon_points": [[2989.322,478.193],[2972.793,396.730],[2900.775,389.647],[2911.401,468.748]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "装",
+      "polygon_points": [[3060.159,412.078],[3080.229,489.999],[2995.225,479.374],[2978.696,406.175]]
+    }
+  ]
+}

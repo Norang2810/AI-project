@@ -29,7 +29,22 @@ app.set('trust proxy', 1);
 // 미들웨어 설정
 app.use(helmet());
 app.use(cors({
-  origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
+  origin: function (origin, callback) {
+    // 허용할 도메인 목록
+    const allowedOrigins = [
+      'http://localhost:3000',
+      'http://192.168.1.96:3000',
+      'http://localhost:80',
+      'http://192.168.1.96:80'
+    ];
+    
+    // origin이 없거나 허용된 도메인인 경우
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('CORS 정책에 의해 차단됨'));
+    }
+  },
   credentials: true
 }));
 

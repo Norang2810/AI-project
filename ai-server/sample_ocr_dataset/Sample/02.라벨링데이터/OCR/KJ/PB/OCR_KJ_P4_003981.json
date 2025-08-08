@@ -1,0 +1,266 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_PB_003981",
+    "src_path": "\\OCR\\KJ\\PB",
+    "label_path": "\\OCR\\KJ\\PB",
+    "language_type": "KJ",
+    "group": "PB",
+    "small_group": 4
+  },
+  "Images": {
+    "file_name": "OCR_KJ_P4_003981.jpg",
+    "created_day": "2023.08.25.",
+    "extension": "jpg",
+    "width": 3888,
+    "height": 1521,
+    "location": null,
+    "device_type": "SM-A516N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 1,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": 4
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "시청역",
+      "polygon_points": [[775.000,112.000],[927.000,112.000],[927.000,174.000],[775.000,174.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "051)678-6122",
+      "polygon_points": [[939.000,131.000],[1291.000,131.000],[1291.000,191.000],[939.000,191.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "1544-5005",
+      "polygon_points": [[1014.000,257.000],[1296.000,257.000],[1296.000,314.000],[1014.000,314.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "양정",
+      "polygon_points": [[453.000,600.000],[823.000,600.000],[823.000,762.000],[453.000,762.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "Yangjeong",
+      "polygon_points": [[901.000,616.000],[1129.113,631.576],[1126.586,694.748],[902.538,682.956]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "Yeonsan",
+      "polygon_points": [[3347.000,689.000],[3565.000,689.000],[3565.000,754.000],[3347.000,754.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "휴메트로",
+      "polygon_points": [[770.000,241.000],[899.000,241.000],[899.000,289.000],[770.000,289.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "콜센터",
+      "polygon_points": [[905.000,247.000],[1004.000,247.000],[1004.000,291.000],[905.000,291.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "City",
+      "polygon_points": [[773.000,178.000],[812.000,178.000],[812.000,207.000],[773.000,207.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "Hall",
+      "polygon_points": [[812.000,177.000],[850.000,177.000],[850.000,206.000],[812.000,206.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "Stn.",
+      "polygon_points": [[851.000,180.000],[889.000,180.000],[889.000,205.000],[851.000,205.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "Humetro",
+      "polygon_points": [[775.000,294.000],[855.000,294.000],[855.000,320.000],[775.000,320.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "call",
+      "polygon_points": [[856.000,294.000],[893.000,294.000],[893.000,324.000],[856.000,324.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "Center",
+      "polygon_points": [[896.000,295.000],[958.000,295.000],[958.000,323.000],[896.000,323.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "杨",
+      "polygon_points": [[905.000,705.000],[953.000,705.000],[953.000,765.000],[905.000,765.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "亭",
+      "polygon_points": [[955.000,703.000],[995.000,703.000],[995.000,764.000],[955.000,764.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "楊亭",
+      "polygon_points": [[1038.000,707.000],[1132.000,707.000],[1132.000,771.000],[1038.000,771.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "시청",
+      "polygon_points": [[1672.000,366.000],[2315.000,366.000],[2315.000,628.000],[1672.000,628.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "연제",
+      "polygon_points": [[1842.000,660.000],[2156.000,660.000],[2156.000,804.000],[1842.000,804.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "122",
+      "polygon_points": [[1624.000,841.000],[1826.000,841.000],[1826.000,970.000],[1624.000,970.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "City",
+      "polygon_points": [[1883.000,846.000],[2087.000,846.000],[2087.000,999.000],[1883.000,999.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "Hall",
+      "polygon_points": [[2112.000,846.000],[2332.000,846.000],[2332.000,994.000],[2112.000,994.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "市庁",
+      "polygon_points": [[2017.000,1014.000],[2205.000,1014.000],[2205.000,1120.000],[2017.000,1120.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "市",
+      "polygon_points": [[1750.000,1003.000],[1838.000,1003.000],[1838.000,1111.000],[1750.000,1111.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "厅",
+      "polygon_points": [[1847.000,1012.000],[1939.000,1012.000],[1939.000,1118.000],[1847.000,1118.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "연산",
+      "polygon_points": [[2841.000,644.000],[3288.000,644.000],[3288.000,851.000],[2841.000,851.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "蓮山",
+      "polygon_points": [[3502.000,779.000],[3615.000,779.000],[3615.000,848.000],[3502.000,848.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 29,
+      "text": "莲",
+      "polygon_points": [[3346.000,771.000],[3403.000,771.000],[3403.000,842.000],[3346.000,842.000]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 30,
+      "text": "山",
+      "polygon_points": [[3408.000,783.000],[3461.000,783.000],[3461.000,842.000],[3408.000,842.000]]
+    }
+  ]
+}

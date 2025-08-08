@@ -1,0 +1,186 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_VD_016619",
+    "src_path": "\\OCR\\KE\\VD",
+    "label_path": "\\OCR\\KE\\VD",
+    "language_type": "KE",
+    "group": "VD",
+    "small_group": 6
+  },
+  "Images": {
+    "file_name": "OCR_KE_V6_016619.png",
+    "created_day": "2023.08.29.",
+    "extension": "png",
+    "width": 1920,
+    "height": 1080,
+    "location": null,
+    "device_type": null,
+    "source": 2,
+    "condition_site": null,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "Even",
+      "polygon_points": [[254.919,710.039],[254.919,758.600],[349.127,754.715],[350.098,717.808]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "the",
+      "polygon_points": [[428.768,757.628],[429.739,711.010],[359.811,711.010],[359.811,756.657]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 12,
+      "text": "driver",
+      "polygon_points": [[559.883,754.715],[561.825,712.952],[438.480,709.067],[437.509,759.571]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 13,
+      "text": "who",
+      "polygon_points": [[661.861,759.571],[660.890,711.010],[568.624,710.039],[567.652,754.715]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 14,
+      "text": "was",
+      "polygon_points": [[752.185,759.571],[752.185,719.751],[665.746,719.751],[664.775,755.686]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 15,
+      "text": "unable",
+      "polygon_points": [[897.860,754.715],[897.860,710.039],[758.975,708.096],[758.975,758.600]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 16,
+      "text": "to",
+      "polygon_points": [[955.162,754.715],[955.162,717.808],[908.543,715.866],[905.630,756.657]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 17,
+      "text": "move",
+      "polygon_points": [[1081.421,754.715],[1081.421,721.693],[961.961,719.751],[960.989,753.744]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 18,
+      "text": "finally",
+      "polygon_points": [[1090.162,710.039],[1089.191,761.513],[1206.709,765.398],[1214.479,710.039]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 19,
+      "text": "escaped",
+      "polygon_points": [[1389.299,769.278],[1390.270,709.062],[1215.450,716.832],[1221.277,761.508]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 20,
+      "text": "from",
+      "polygon_points": [[1499.047,754.709],[1499.047,707.119],[1397.069,709.062],[1398.040,757.623]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 21,
+      "text": "the",
+      "polygon_points": [[1578.698,756.657],[1576.756,710.039],[1507.799,711.010],[1506.828,757.628]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 22,
+      "text": "car",
+      "polygon_points": [[1654.491,756.501],[1651.243,714.286],[1588.411,716.837],[1585.497,755.686]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 23,
+      "text": "옴짝달싹하지",
+      "polygon_points": [[432.647,795.503],[425.848,890.683],[890.093,878.057],[904.661,795.503]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 24,
+      "text": "마침내",
+      "polygon_points": [[843.474,978.091],[855.129,886.796],[602.611,895.537],[602.611,977.119]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 25,
+      "text": "못했던",
+      "polygon_points": [[1144.553,882.911],[1160.093,799.385],[915.345,796.472],[907.575,883.882]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 26,
+      "text": "차에서",
+      "polygon_points": [[1096.963,980.033],[1106.676,895.537],[869.697,891.652],[859.014,972.263]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 27,
+      "text": "탈출",
+      "polygon_points": [[1268.061,979.482],[1281.050,892.888],[1116.388,892.623],[1112.503,980.033]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 28,
+      "text": "운전자도",
+      "polygon_points": [[1476.720,880.005],[1487.403,797.451],[1167.871,797.451],[1160.101,883.890]]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KE_CT_000082",
+    "src_path": "\\OCR\\KE\\CT",
+    "label_path": "\\OCR\\KE\\CT",
+    "language_type": "KE",
+    "group": "CT",
+    "small_group": 2
+  },
+  "Images": {
+    "file_name": "OCR_KE_C2_000082.jpeg",
+    "created_day": "2023.08.22.",
+    "extension": "jpeg",
+    "width": 3024,
+    "height": 4032,
+    "location": "35.24406388888889, 128.87014722222222",
+    "device_type": "iPhone 11",
+    "source": 1,
+    "condition_site": 1,
+    "condition_weather": null,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 1,
+      "text": "영상미디어센터",
+      "polygon_points": [[2473.515,1605.094],[2457.521,2983.305],[2230.929,2988.637],[2244.258,1597.097]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "Meida",
+      "polygon_points": [[2057.653,1597.097],[2185.611,1602.428],[2185.611,2023.622],[2044.324,2028.954]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "Center",
+      "polygon_points": [[2174.544,2065.435],[2175.947,2528.440],[2053.882,2528.440],[2058.091,2064.032]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "2층",
+      "polygon_points": [[2879.881,2696.355],[2883.689,2908.666],[2748.496,2905.810],[2747.544,2702.068]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "윤슬미술관",
+      "polygon_points": [[1265.970,1735.225],[1261.527,2992.587],[970.512,2994.808],[979.398,1744.111]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "1,2전시실",
+      "polygon_points": [[948.298,1755.218],[932.747,2832.640],[652.840,2823.754],[661.726,1748.554]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "Yunseul",
+      "polygon_points": [[477.342,1739.668],[606.188,1744.111],[615.074,2230.617],[472.899,2230.617]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "art",
+      "polygon_points": [[475.121,2266.160],[579.531,2266.160],[590.638,2441.658],[475.121,2441.658]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "of",
+      "polygon_points": [[472.899,2474.980],[599.524,2470.537],[599.524,2601.605],[475.121,2612.712]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "Museum",
+      "polygon_points": [[461.792,2646.035],[595.081,2639.370],[595.081,3174.749],[466.235,3172.527]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "M",
+      "text_direction": 1,
+      "text_identifier": 11,
+      "text": "1,2",
+      "polygon_points": [[444.020,3203.628],[595.081,3196.964],[592.860,3392.455],[444.020,3396.898]]
+    }
+  ]
+}

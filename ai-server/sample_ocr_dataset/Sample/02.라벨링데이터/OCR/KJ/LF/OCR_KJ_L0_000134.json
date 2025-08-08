@@ -1,0 +1,106 @@
+{
+  "info": {
+    "identifier": "다중언어OCR",
+    "section": "OCR",
+    "url": "http://ishowtech.co.kr",
+    "type": "Image",
+    "year": 2023
+  },
+  "categories": {
+    "name": "OCR_KJ_LF_000134",
+    "src_path": "\\OCR\\KJ\\LF",
+    "label_path": "\\OCR\\KJ\\LF",
+    "language_type": "KJ",
+    "group": "LF",
+    "small_group": 0
+  },
+  "Images": {
+    "file_name": "OCR_KJ_L0_000134.jpg",
+    "created_day": "2023.08.22.",
+    "extension": "jpg",
+    "width": 1528,
+    "height": 728,
+    "location": "36.565423, 128.72837179972223",
+    "device_type": "SM-G988N",
+    "source": 1,
+    "condition_site": 2,
+    "condition_weather": 2,
+    "condition_indoor": null,
+    "condition_material": null,
+    "condition_color": null
+  },
+  "Annotation": [
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 2,
+      "text": "TongnamooBoribap",
+      "polygon_points": [[268.043,41.980],[274.330,104.218],[608.783,141.939],[602.496,88.502]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "E",
+      "text_direction": 1,
+      "text_identifier": 3,
+      "text": "BarelyRicewithVegetables",
+      "polygon_points": [[623.033,141.031],[619.889,83.822],[1089.516,142.916],[1091.392,191.324]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "J",
+      "text_direction": 1,
+      "text_identifier": 4,
+      "text": "丸太麦飯",
+      "polygon_points": [[269.091,177.563],[270.977,115.325],[453.920,131.670],[454.549,192.023]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 5,
+      "text": "原",
+      "polygon_points": [[274.749,241.059],[278.521,184.479],[323.157,187.622],[325.043,248.603]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 6,
+      "text": "木",
+      "polygon_points": [[365.278,256.776],[361.506,190.765],[323.786,187.622],[326.929,249.232]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 7,
+      "text": "大",
+      "polygon_points": [[409.285,259.290],[402.998,199.567],[365.906,191.394],[365.906,256.776]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 8,
+      "text": "麦",
+      "polygon_points": [[453.920,267.463],[443.862,201.453],[403.627,193.909],[411.171,259.290]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "C",
+      "text_direction": 1,
+      "text_identifier": 9,
+      "text": "饭",
+      "polygon_points": [[495.412,270.606],[488.497,204.596],[447.005,200.195],[455.806,264.320]]
+    },
+    {
+      "object_recognition": 2,
+      "text_language": "K",
+      "text_direction": 1,
+      "text_identifier": 10,
+      "text": "통나무보리밥",
+      "polygon_points": [[19.969,613.369],[25.627,234.281],[1485.399,387.048],[1511.803,703.898]]
+    }
+  ]
+}

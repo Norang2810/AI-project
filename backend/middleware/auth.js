@@ -1,7 +1,12 @@
 const jwt = require('jsonwebtoken');
 const { User } = require('../models');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key';
+const JWT_SECRET = process.env.JWT_SECRET;
+
+// JWT 시크릿 검증
+if (!JWT_SECRET) {
+  throw new Error('JWT_SECRET 환경변수가 설정되지 않았습니다.');
+}
 
 // 토큰 생성
 const generateToken = (userId) => {
