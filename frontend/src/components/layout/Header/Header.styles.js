@@ -128,6 +128,7 @@ export const AuthButton = styled.button`
 
   &.logout {
     color: #dc3545;
+    font-size: 1.5rem;
     
     &:hover {
       color: #c82333;
