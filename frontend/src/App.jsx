@@ -6,6 +6,7 @@ import './App.css';
 
 // 페이지 컴포넌트들
 import { MainPage, LoginPage, RegisterPage, AllergyPage } from './pages';
+import MyPage from './pages/MyPage';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -28,6 +29,7 @@ function App() {
             <Route path="/login" element={<LoginPage setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="/register" element={<RegisterPage setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="/allergy" element={<AllergyPage isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
+            <Route path="/mypage" element={<MyPage isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
           </Routes>
         </div>
       </Router>
