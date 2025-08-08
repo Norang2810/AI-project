@@ -1,0 +1,91 @@
+version: '3.8'
+
+services:
+  # Frontend Service
+  frontend:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.frontend
+    ports:
+      - "3000:80"
+    environment:
+      - REACT_APP_API_URL=http://localhost:3001
+      - REACT_APP_AI_SERVER_URL=http://localhost:8000
+    depends_on:
+      - backend
+
+  # Backend Service
+  backend:
+    build:
+      context: ../backend
+      dockerfile: ../docker/Dockerfile.backend
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=development
+      - PORT=3001
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_NAME=myweb
+      - DB_USER=myweb_user
+      - DB_PASSWORD=${DB_PASSWORD}
+      - JWT_SECRET=${JWT_SECRET}
+      - CORS_ORIGIN=http://localhost:3000
+    depends_on:
+      mysql:
+        condition: service_healthy
+    volumes:
+      - ../backend:/app
+      - /app/node_modules
+      - ../backend/uploads:/app/uploads
+
+  # AI Server Service (Optimized)
+  ai-server:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.ai-optimized
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=False
+    volumes:
+      - ../data:/app/data
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 1G
+
+  # MySQL Database
+  mysql:
+    image: mysql:8.0
+    ports:
+      - "3307:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+      - MYSQL_DATABASE=myweb
+      - MYSQL_USER=myweb_user
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
+  # Nginx Reverse Proxy
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - frontend
+      - backend
+      - ai-server
+
+volumes:
+  mysql_data:
