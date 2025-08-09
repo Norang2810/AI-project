@@ -15,7 +15,7 @@ module.exports = (sequelize) => {
     email: {
       type: DataTypes.STRING(100),
       allowNull: false,
-      unique: true,
+      unique: 'users_email_unique',
       validate: {
         isEmail: true,
       },
@@ -31,7 +31,7 @@ module.exports = (sequelize) => {
     kakaoId: {
       type: DataTypes.STRING(50),
       allowNull: true,
-      unique: true,
+      unique: 'users_kakaoid_unique',
     },
   }, {
     tableName: 'users',
