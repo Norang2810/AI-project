@@ -1,6 +1,7 @@
 const express = require('express');
 const { User } = require('../models');
 const { generateToken } = require('../middleware/auth');
+const axios = require('axios');
 
 const router = express.Router();
 
@@ -119,7 +120,7 @@ router.post('/login', async (req, res) => {
 
 // 카카오톡 로그인
 const KAKAO_REST_API_KEY = process.env.KAKAO_REST_API_KEY;
-const KAKAO_REDIRECT_URI = 'http://localhost:3000/auth/kakao/callback';
+const KAKAO_REDIRECT_URI = 'http://localhost:3001/api/auth/kakao/callback';
 
 router.get('/kakao/callback', async (req, res) => {
   const { code } = req.query;
@@ -188,6 +189,58 @@ router.get('/kakao/callback', async (req, res) => {
     return res.status(500).json({
       success: false,
       message: '카카오 로그인 중 오류 발생'
+    });
+  }
+});
+
+// 사용자 정보 가져오기
+router.get('/me', async (req, res) => {
+  try {
+    const authHeader = req.headers['authorization'];
+    const token = authHeader && authHeader.split(' ')[1];
+
+    if (!token) {
+      return res.status(401).json({
+        success: false,
+        message: '인증 토큰이 필요합니다.'
+      });
+    }
+
+    const { verifyToken } = require('../middleware/auth');
+    const decoded = verifyToken(token);
+    
+    if (!decoded) {
+      return res.status(403).json({
+        success: false,
+        message: '유효하지 않은 토큰입니다.'
+      });
+    }
+
+    const user = await User.findByPk(decoded.userId);
+    if (!user) {
+      return res.status(404).json({
+        success: false,
+        message: '사용자를 찾을 수 없습니다.'
+      });
+    }
+
+    res.json({
+      success: true,
+      data: {
+        user: {
+          id: user.id,
+          name: user.name,
+          email: user.email,
+          phone: user.phone
+        }
+      }
+    });
+
+  } catch (error) {
+    console.error('사용자 정보 가져오기 오류:', error);
+    res.status(500).json({
+      success: false,
+      message: '서버 오류가 발생했습니다.'
     });
   }
 });

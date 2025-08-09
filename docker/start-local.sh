@@ -1,13 +1,17 @@
 echo "   로컬 환경으로 애플리케이션을 시작합니다..."
 
 
-# 환경 변수 파일 복사
 cp env.local .env
+cd "$(dirname "$0")/.."
+cp docker/env.local frontend/.env
+# 환경 변수 파일 복사
+
 
 # 기존 컨테이너 중지 및 제거
 docker-compose down
 
 # 새로 빌드하고 시작
+cd docker
 docker-compose up --build
 
 echo "✅ 로컬 환경 설정으로 애플리케이션이 시작되었습니다."
