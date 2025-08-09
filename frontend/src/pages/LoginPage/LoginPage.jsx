@@ -196,7 +196,7 @@ const LoginPage = ({setIsLoggedIn}) => {
           <Button type="submit" disabled={isLoading}>
             {isLoading ? '로그인 중...' : '로그인'}
           </Button>
-          <KakaoLogin />
+          <KakaoLogin mode="login" />
         </Form>
         
         <LinkText>
