@@ -1,7 +1,7 @@
 // 타이포그래피 테마
 export const typography = {
   fonts: {
-    primary: 'Ownglyph_meetme-Rg, sans-serif'
+    primary: 'BMJUA, sans-serif'
   },
   sizes: {
     xs: '14px',

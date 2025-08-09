@@ -9,7 +9,6 @@ const RegisterContainer = styled.div`
   align-items: center;
   background-color: #FFECD5;
   padding: 2rem;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
 `;
 
 const RegisterCard = styled.div`
@@ -35,16 +34,6 @@ const Form = styled.form`
   gap: 1.5rem;
 `;
 
-// const FormRow = styled.div`
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   gap: 1rem;
-  
-//   @media (max-width: 600px) {
-//     grid-template-columns: 1fr;
-//   }
-// `;
-
 const FormGroup = styled.div`
   display: flex;
   flex-direction: column;
@@ -62,7 +51,6 @@ const Input = styled.input`
   border: 2px solid #E1C8A8;
   border-radius: 8px;
   font-size: 1rem;
-  font-family: 'Ownglyph_meetme-Rg', sans-serif;
   transition: border-color 0.3s ease;
   
   &:focus {
