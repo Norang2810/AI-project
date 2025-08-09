@@ -1,76 +1,92 @@
+version: "3.9"
+
 services:
-  ai-server:
-    build:
-      context: ../ai-server
-      dockerfile: ../docker/Dockerfile.ai
-    container_name: docker_ai-server
-    ports:
-      - "8000:8000"
+  mysql:
+    image: mysql:8.0
+    container_name: docker_mysql
     env_file:
-      - ../docker/env.prod
+      - ./env.prod
     environment:
-      - JWT_SECRET=Yh8v@3$Secret!9qXeT#bNw2^KiPzR&mVu
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+    volumes:
+      - mysql_data:/var/lib/mysql
+    restart: unless-stopped
     networks:
       - backend
 
   backend:
     build:
-      context: ../backend
-      dockerfile: ../docker/Dockerfile.backend
+      context: ..
+      dockerfile: ./docker/Dockerfile.backend
     container_name: docker_backend
-    ports:
-      - "3001:3001"
     env_file:
-      - ../docker/env.prod
+      - ./env.prod
     environment:
-      - JWT_SECRET=Yh8v@3$Secret!9qXeT#bNw2^KiPzR&mVu
+      # 서버 코드가 기본 3001을 쓰면 굳이 PORT 설정 안 해도 됩니다.
+      NODE_ENV: ${NODE_ENV}
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      JWT_SECRET: ${JWT_SECRET}
     depends_on:
       - mysql
+    expose:
+      - "3001"   # 내부 통신 전용
+    restart: unless-stopped
     networks:
       - backend
       - frontend
+
+  ai-server:
+    build:
+      context: ..
+      dockerfile: ./docker/Dockerfile.ai
+    container_name: docker_ai-server
+    env_file:
+      - ./env.prod
+    environment:
+      JWT_SECRET: ${JWT_SECRET}
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --workers 1
+    expose:
+      - "8000"   # 내부 통신 전용
+    restart: unless-stopped
+    networks:
+      - backend
 
   frontend:
     build:
-      context: ../frontend
-      dockerfile: ../docker/Dockerfile.frontend.prod
+      context: ..
+      dockerfile: ./docker/Dockerfile.frontend.prod
     container_name: docker_frontend
-    ports:
-      - "80:80"
+    expose:
+      - "80"     # 내부 통신 전용
+    restart: unless-stopped
     networks:
       - frontend
-
-  mysql:
-    image: mysql:8.0
-    container_name: docker_mysql
-    environment:
-      - MYSQL_ROOT_PASSWORD=1234
-      - MYSQL_DATABASE=myweb
-    volumes:
-      - mysql_data:/var/lib/mysql
-    ports:
-      - "3307:3306"
-    networks:
-      - backend
 
   nginx:
     image: nginx:alpine
     container_name: docker_nginx
     ports:
-      - "3000:80"
+      - "80:80"  # 퍼블릭 IP로 http://<EC2-IP>
+      # - "443:443"  # HTTPS 붙일 때만 오픈
     volumes:
-      - ../docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
     depends_on:
       - frontend
       - backend
       - ai-server
+    restart: unless-stopped
     networks:
       - frontend
       - backend
 
 networks:
-  backend:
-  frontend:
+  backend: {}
+  frontend: {}
 
 volumes:
-  mysql_data:
+  mysql_data: {}
