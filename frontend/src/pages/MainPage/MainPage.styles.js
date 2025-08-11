@@ -13,17 +13,29 @@ export const StyledSection = styled(Section)`
 `;
 
 export const HeroSection = styled(StyledSection)`
+
+/*  배경 레이어가 깔릴 수 있도록 보강 */
+  position: relative;
+  overflow: hidden;
+
   background: #ffecd5ff; 
   color: #A2601E; /* Figma 색상으로 변경 */
   text-align: center;
   min-height: 100vh; /* 전체 화면 높이 */
+
+    /* 가운데 정렬 (Section이 이미 해주지 않으면 대비용) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 `;
 
 export const HeroTitle = styled.h1`
   font-size: 60px; 
   font-weight: 520; 
   line-height: 58px; 
-  color: #A2601E; 
+  color:rgb(255, 255, 255); 
   margin-bottom: 2rem;
 `;
 
@@ -31,12 +43,26 @@ export const HeroSubtitle = styled.p`
   font-size: 1.5rem;
   margin-bottom: 2rem;
   opacity: 0.9;
+  color:rgb(255, 216, 126)
 `;
 
 export const CTAButton = styled(Button)`
   width: 400px;
   height: 80px;
   font-size: 40px;
+
+  background-color: #B9855A; /* 진한 베이지 */
+  color: white;
+  opacity: 1;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+
+  &:hover {
+    background-color:rgb(169, 114, 68); /* hover 시 진하게 */
+  }
 `;
 
 export const FeaturesSection = styled(StyledSection)`
@@ -128,4 +154,43 @@ export const LoadingSpinner = styled.div`
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+`;
+
+/*  배경 슬라이드 레이어 */
+export const BgWrap = styled.div`
+  position: absolute;
+  inset: 0;
+  pointer-events: none; /* 배경이 버튼 클릭을 막지 않게 */
+  overflow: hidden;
+  z-index: 0;
+`;
+
+export const BgSlide = styled.div`
+  position: absolute;
+  inset: 0;
+  background-image: ${({ src }) => `url(${src})`};
+  background-size: cover;
+  background-position: center;
+  opacity: ${({ active }) => (active ? 1 : 0)};
+  transition: opacity 900ms ease;
+  /* 흐릿+살짝 확대로 깔끔하게 */
+  filter: blur(2px) brightness(0.9);
+  transform: scale(1.05);
+`;
+
+export const BgOverlay = styled.div`
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(transparent 40%, rgba(0,0,0,0.25)),
+    linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.45) 100%);
+  z-index: 0;
+  pointer-events: none;
+`;
+
+/*  텍스트/버튼을 배경 위로 */
+export const HeroContent = styled.div`
+  position: relative;
+  z-index: 1;
+  text-align: center;
 `;
