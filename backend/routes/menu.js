@@ -38,7 +38,8 @@ const storage = multer.diskStorage({
 
 const upload = multer({ 
   storage: storage,
-  limits: { fileSize: 5 * 1024 * 1024 }, // 5MB로 제한
+  // 업로드 제한 상향 (기본 Nginx 20MB와 보조를 맞춤)
+  limits: { fileSize: 15 * 1024 * 1024 }, // 15MB
   fileFilter: function (req, file, cb) {
     const allowedTypes = /jpeg|jpg|png|gif/;
     const extname = allowedTypes.test(path.extname(file.originalname).toLowerCase());

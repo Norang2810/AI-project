@@ -30,8 +30,8 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // API 서버 상태 확인
-    fetch('http://localhost:3001/api/health')
+    // API 서버 상태 확인 (상대경로)
+    fetch('/api/health')
       .then(response => response.json())  
       .then(data => {
         setApiStatus('API 서버 연결 성공!');

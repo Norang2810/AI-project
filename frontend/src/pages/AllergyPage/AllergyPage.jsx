@@ -77,7 +77,7 @@ const AllergyPage = ({ isLoggedIn, setIsLoggedIn }) => {
   const loadExistingAllergies = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:3001/api/user/allergies', {
+      const response = await fetch('/api/user/allergies', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`
@@ -167,7 +167,7 @@ const allergyCategories = {
         return;
       }
 
-      const response = await fetch('http://localhost:3001/api/user/allergies', {
+      const response = await fetch('/api/user/allergies', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
