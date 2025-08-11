@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { KakaoLogin } from '../../components/common/Button';
 import styled from 'styled-components';
 
 const LoginContainer = styled.div`
@@ -192,6 +193,7 @@ const LoginPage = ({setIsLoggedIn}) => {
           <Button type="submit" disabled={isLoading}>
             {isLoading ? '로그인 중...' : '로그인'}
           </Button>
+          <KakaoLogin mode="login" />
         </Form>
         
         <LinkText>
