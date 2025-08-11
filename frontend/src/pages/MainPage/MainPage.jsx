@@ -18,7 +18,6 @@ import {
 
 const HERO_IMAGES = [
   '/images/hero/cafe_1.png',
-  '/images/hero/cafe_2.png',
   '/images/hero/cafe_3.png',
 ];
 
