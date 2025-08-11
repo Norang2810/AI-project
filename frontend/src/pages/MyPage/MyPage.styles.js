@@ -67,7 +67,7 @@ export const ContentArea = styled.div`
   }
 `;
 
-export const MyInfoSectionContainer = styled.div`
+export const SectionContainer = styled.div`
   background: #FFF4E6;
   padding: 2rem;
   padding-bottom: 1rem;
@@ -149,4 +149,84 @@ export const ChangePasswordButton = styled.button`
   &:hover {
     background-color: #8B4513;
   }
+`;
+
+// 알레르기 정보 섹션의 컨테이너
+export const AllergyGridContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+`;
+
+// 알레르기 카테고리 칸 (InfoCard와 유사한 역할)
+export const AllergyCategoryCard = styled(InfoCard)`
+  padding: 1.5rem;
+  background-color: white;
+  border-left: 5px solid ${({ $isCategorySelected, $badgeColor }) => 
+    $isCategorySelected ? $badgeColor : '#ccc'};
+  
+  // 카테고리 제목과 심각도 배지를 중앙 정렬
+  & > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+`;
+
+// 알레르기 카테고리 제목과 아이콘
+export const AllergyCategoryTitle = styled.h3`
+  margin: 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+`;
+
+// 심각도 배지
+export const AllergySeverityBadge = styled.span`
+  margin-left: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: ${({ $badgeColor }) => $badgeColor};
+  color: white;
+`;
+
+// 알레르기 항목들을 감싸는 컨테이너
+export const AllergyItemsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  
+  // '기타' 카테고리 항목이 많을 때 스크롤 가능하게
+  ${({ $isEtcCategory }) => 
+    $isEtcCategory && `
+      max-height: 4rem;
+      overflow-y: auto;
+    `
+  }
+`;
+
+// 알레르기 개별 항목 태그
+export const AllergyItemTag = styled.span`
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  color: #374151;
+  font-weight: 500;
+`;
+
+// 알레르기 정보 수정 버튼 컨테이너
+export const AllergyButtonContainer = styled.div`
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+`;
+
+// 선택되지 않은 카테고리에 표시할 텍스트
+export const EmptyAllergyText = styled.p`
+  color: #374151;
+  margin: 0;
 `;
