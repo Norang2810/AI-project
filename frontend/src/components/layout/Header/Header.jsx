@@ -71,8 +71,6 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
       console.error(e);
     }
   };
-  
-
 
   return (
     <HeaderContainer>
