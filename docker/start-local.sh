@@ -1,22 +1,31 @@
+#!/usr/bin/env bash
+set -euo pipefail
 
+echo "🧑‍💻 [START] 로컬 개발 환경 실행"
 
-echo "🧪 [START] 로컬 개발 환경 실행"
-# 환경 변수 파일 복사
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+cd "$SCRIPT_DIR"
 
-cp env.local .env
-cd "$(dirname "$0")/.."
-cp docker/env.local frontend/.env
-# 환경 변수 파일 복사
+# 필수 파일 체크
+[ -f "env.local" ] || { echo "❌ env.local 이 없습니다. docker/env.local 를 생성해 주세요."; exit 1; }
+[ -f "docker-compose.yml" ] || { echo "❌ docker-compose.yml 이 없습니다."; exit 1; }
 
+# 기존 컨테이너 정리(볼륨 보존)
+echo "🧹 기존 컨테이너 정리 (볼륨 보존)"
+docker compose --env-file env.local \
+  -f docker-compose.yml \
+  down
 
-# 기존 컨테이너 중지 및 제거
-docker-compose down
+# 빌드 + 기동
+echo "🔧 빌드 중..."
+docker compose --env-file env.local \
+  -f docker-compose.yml \
+  build
 
-# 새로 빌드하고 시작
-cd docker
-docker-compose up --build
+echo "📦 기동 중..."
+docker compose --env-file env.local \
+  -f docker-compose.yml \
+  up -d
 
-echo "✅ 로컬 환경 설정으로 애플리케이션이 시작되었습니다."
-echo "📱 프론트엔드: http://localhost:3000"
-echo "🔧 백엔드: http://localhost:3001"
-echo "🤖 AI 서버: http://localhost:8000"
+echo "✅ 현재 상태"
+docker ps
