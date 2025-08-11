@@ -1,0 +1,61 @@
+services:
+  ai-server:
+    build:
+      context: ../ai-server
+      dockerfile: ../docker/Dockerfile.ai
+    container_name: docker_ai-server
+    ports:
+      - "8000:8000"
+    env_file:
+      - ../docker/env.prod
+    environment:
+      - JWT_SECRET=Yh8v@3$Secret!9qXeT#bNw2^KiPzR&mVu
+    networks:
+      - backend
+
+  backend:
+    build:
+      context: ../backend
+      dockerfile: ../docker/Dockerfile.backend
+    container_name: docker_backend
+    ports:
+      - "3001:3001"
+    env_file:
+      - ../docker/env.prod
+    environment:
+      - JWT_SECRET=Yh8v@3$Secret!9qXeT#bNw2^KiPzR&mVu
+    depends_on:
+      - mysql
+    networks:
+      - backend
+      - frontend
+
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: ../docker/Dockerfile.frontend.prod
+    container_name: docker_frontend
+    ports:
+      - "80:80"
+    networks:
+      - frontend
+
+  mysql:
+    image: mysql:8.0
+    container_name: docker_mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=myweb
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+    networks:
+      - backend
+
+networks:
+  backend:
+  frontend:
+
+volumes:
+  mysql_data:
