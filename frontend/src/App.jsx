@@ -7,6 +7,8 @@ import './App.css';
 // 페이지 컴포넌트들
 import { MainPage, LoginPage, RegisterPage, AllergyPage } from './pages';
 import MyPage from './pages/MyPage';
+import KakaoLoginRedirect from './components/common/Button/KakaoLoginRedirect';
+
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -30,6 +32,9 @@ function App() {
             <Route path="/register" element={<RegisterPage setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="/allergy" element={<AllergyPage isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="/mypage" element={<MyPage isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
+            {/* ✅ 카카오 로그인 리다이렉트용 경로 추가 */}
+            <Route path="/kakao-login" element={<KakaoLoginRedirect setIsLoggedIn={setIsLoggedIn} />} />
+
           </Routes>
         </div>
       </Router>
