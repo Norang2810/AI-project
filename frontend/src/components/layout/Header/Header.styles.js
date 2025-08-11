@@ -17,9 +17,9 @@ export const HeaderContainer = styled.header`
 `;
 
 export const Logo = styled.div`
-  width: 184px;
-  height: 100px;
-  background-image: url('/aljualju.png');
+  width: 150px;
+  height: 80px;
+  background-image: url('/logo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
