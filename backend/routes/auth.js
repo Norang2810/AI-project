@@ -123,16 +123,22 @@ const KAKAO_REST_API_KEY = process.env.KAKAO_REST_API_KEY;
 const KAKAO_REDIRECT_URI = 'http://localhost:3001/api/auth/kakao/callback';
 
 router.get('/kakao/callback', async (req, res) => {
-  const { code } = req.query;
+  const { code, error } = req.query;
+
+  // 카카오에서 오류를 반환한 경우
+  if (error) {
+    console.error('카카오 인증 오류:', error);
+    return res.redirect(`http://localhost:3000/login?error=kakao_auth_failed`);
+  }
 
   if (!code) {
-    return res.status(400).json({
-      success: false,
-      message: '카카오 인가 코드가 없습니다'
-    });
+    console.error('카카오 인가 코드가 없습니다');
+    return res.redirect(`http://localhost:3000/login?error=no_auth_code`);
   }
 
   try {
+    console.log('카카오 인가 코드 수신:', code);
+    
     const tokenRes = await axios.post(
       'https://kauth.kakao.com/oauth/token',
       null,
@@ -149,28 +155,32 @@ router.get('/kakao/callback', async (req, res) => {
       }
     );
 
+    console.log('카카오 토큰 응답:', tokenRes.data);
+
     const { access_token } = tokenRes.data;
 
     if (!access_token) {
-      return res.status(401).json({
-        success: false,
-        message: '카카오 토큰 발급 실패'
-      });
+      console.error('카카오 토큰 발급 실패');
+      return res.redirect(`http://localhost:3000/login?error=token_failed`);
     }
-
 
     const userRes = await axios.get('https://kapi.kakao.com/v2/user/me', {
       headers: { Authorization: `Bearer ${access_token}` }
     });
+
+    console.log('카카오 사용자 정보:', userRes.data);
 
     const kakaoData = userRes.data;
     const kakaoId = kakaoData.id.toString(); // 고유 ID
     const email = kakaoData.kakao_account?.email || `${kakaoId}@kakao.fake`;
     const name = kakaoData.kakao_account?.profile?.nickname || '카카오유저';
 
+    console.log('카카오 ID:', kakaoId, '이메일:', email, '이름:', name);
+
     let user = await User.findOne({ where: { kakaoId } });
 
     if (!user) {
+      console.log('새 카카오 사용자 생성');
       user = await User.create({
         name,
         email,
@@ -178,18 +188,18 @@ router.get('/kakao/callback', async (req, res) => {
         password: null,
         phone: null
       });
+    } else {
+      console.log('기존 카카오 사용자 찾음:', user.id);
     }
 
     const token = generateToken(user.id);
+    console.log('JWT 토큰 생성 완료');
 
     return res.redirect(`http://localhost:3000/kakao-login?token=${token}`);    
 
   } catch (error) {
-    console.error(' 카카오 로그인 실패:', error);
-    return res.status(500).json({
-      success: false,
-      message: '카카오 로그인 중 오류 발생'
-    });
+    console.error('카카오 로그인 실패:', error.response?.data || error.message);
+    return res.redirect(`http://localhost:3000/login?error=server_error`);
   }
 });
 
