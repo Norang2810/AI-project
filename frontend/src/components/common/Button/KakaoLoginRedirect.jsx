@@ -13,7 +13,7 @@ const KakaoLoginRedirect = ({ setIsLoggedIn }) => {
       localStorage.setItem('token', token);
       
       // 사용자 정보를 가져오기 위해 서버에 요청
-      fetch('http://localhost:3001/api/auth/me', {
+      fetch('/api/auth/me', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
