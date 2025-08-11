@@ -43,7 +43,7 @@ const MyPage = () => {
   const fetchUserInfo = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:3001/api/user/profile', {
+     const response = await fetch('/api/user/profile', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -62,7 +62,7 @@ const MyPage = () => {
   const fetchAllergies = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:3001/api/user/allergies', {
+     const response = await fetch('/api/user/allergies', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
