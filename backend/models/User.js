@@ -15,18 +15,23 @@ module.exports = (sequelize) => {
     email: {
       type: DataTypes.STRING(100),
       allowNull: false,
-      unique: true,
+      unique: 'users_email_unique',
       validate: {
         isEmail: true,
       },
     },
     password: {
       type: DataTypes.STRING(255),
-      allowNull: false,
+      allowNull: true, 
     },
     phone: {
       type: DataTypes.STRING(20),
       allowNull: true,
+    },
+    kakaoId: {
+      type: DataTypes.STRING(50),
+      allowNull: true,
+      unique: 'users_kakaoid_unique',
     },
   }, {
     tableName: 'users',
@@ -49,12 +54,18 @@ module.exports = (sequelize) => {
 
   // 인스턴스 메서드
   User.prototype.comparePassword = async function(candidatePassword) {
+    if (!this.password) return false; // 카카오 로그인 사용자의 경우
     return await bcrypt.compare(candidatePassword, this.password);
   };
 
   // 클래스 메서드 SELECT * FROM users WHERE email = 'aaa@bbb.com' 실행되는 구조.
   User.findByEmail = function(email) {
     return this.findOne({ where: { email } });
+  };
+
+  // 카카오 ID로 사용자 찾기
+  User.findByKakaoId = function(kakaoId) {
+    return this.findOne({ where: { kakaoId } });
   };
 
   return User;
