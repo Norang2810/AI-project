@@ -120,7 +120,6 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
       <AuthMenuContainer>
         <AuthMenu>
           {isLoggedIn ? (
-<<<<<<< HEAD
             <>
               <NavItem>
                 <AuthLink as={Link} to="/mypage">
