@@ -6,6 +6,8 @@ yarn-error.log*
 
 # Environment variables
 docker/ .env
+docker/env.local
+docker/env.prod
 frontend / .env
 backend / .env 
 .env
