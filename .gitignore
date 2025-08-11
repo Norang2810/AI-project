@@ -8,7 +8,7 @@ yarn-error.log*
 docker/ .env
 frontend / .env
 backend / .env 
-
+.env
 # Build outputs
 dist/
 build/

@@ -50,13 +50,29 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
     }
   };
 
-  const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
-    setIsLoggedIn(false);
-    // 로그아웃 후 홈페이지로 리다이렉트
-    window.location.href = '/';
+  const handleLogout = async () => {
+    try {
+      // 1) 우리 서비스 상태/스토리지 초기화
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
+      setIsLoggedIn(false);
+  
+      // 2) 카카오 JS SDK 세션 로그아웃
+      if (window.Kakao?.Auth) {
+        await new Promise((res) => window.Kakao.Auth.logout(res));
+      }
+  
+      // 3) 서버에 refresh token 폐기(있다면)
+      await fetch('/auth/logout', { method: 'POST', credentials: 'include' });
+  
+      // 4) 필요하면 메인으로 이동 or 그대로 머무르기
+      // navigate('/') or stay
+    } catch (e) {
+      console.error(e);
+    }
   };
+  
+
 
   return (
     <HeaderContainer>

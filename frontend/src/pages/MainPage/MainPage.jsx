@@ -9,10 +9,21 @@ import {
   HeroSection,
   HeroTitle,
   HeroSubtitle,
-  CTAButton
+  CTAButton,
+  BgWrap,
+  BgSlide, 
+  BgOverlay,
+  HeroContent
 } from './MainPage.styles';
 
+const HERO_IMAGES = [
+  '/images/hero/cafe_1.png',
+  '/images/hero/cafe_2.png',
+  '/images/hero/cafe_3.png',
+];
+
 const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
+  const [heroIdx, setHeroIdx] = useState(0); //  현재 배경 인덱스
   const [apiStatus, setApiStatus] = useState('Loading...');
   const [error, setError] = useState(null);
   const [analysisResult, setAnalysisResult] = useState(null);
@@ -37,6 +48,22 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
       });
   }, []);
 
+    //  5초마다 자동 전환
+  useEffect(() => {
+    const id = setInterval(() => {
+      setHeroIdx((p) => (p + 1) % HERO_IMAGES.length);
+    }, 5000);
+    return () => clearInterval(id);
+  }, []);
+
+  //  이미지 프리로드(깜빡임 줄이기)
+  useEffect(() => {
+    HERO_IMAGES.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
   const handleNotification = (notification) => {
     setNotifications(prev => [notification, ...prev]);
     
@@ -57,27 +84,41 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
       <MainContainer>
         {/* Hero Section */}
         <HeroSection id="home">
-          <HeroTitle> 카페 메뉴, 안심하고 고르세요 </HeroTitle>
-          <HeroSubtitle>
-            사진 한 장으로 알레르기 걱정 끝! <br/>
-            AI가 메뉴 속 성분을 분석해 <br/>
-            당신에게 맞는 메뉴를 추천해드려요.<br/><br/>
-            메뉴판을 업로드하면 알레르기 정보를 분석해드립니다!
-          </HeroSubtitle>
-          <CTAButton 
-            onClick={() => {
-              const token = localStorage.getItem('token');
-              if (!token) {
-                alert('로그인이 필요합니다. 로그인 페이지로 이동합니다.');
-                navigate('/login');
-              } else {
-                navigate('/allergy');
-              }
-            }}
-          >
-            알레르기 설정하기
-          </CTAButton>
-        </HeroSection>
+  {/*  배경 슬라이드 레이어 */}
+  <BgWrap>
+    {HERO_IMAGES.map((src, i) => (
+      <BgSlide key={src} src={src} active={i === heroIdx} />
+    ))}
+  </BgWrap>
+  <BgOverlay />
+
+  {/*  텍스트/버튼 레이어 */}
+  <HeroContent>
+    {/* 대비 확보용 컬러 오버라이드 */}
+    <HeroTitle>
+      카페 메뉴, 안심하고 고르세요
+    </HeroTitle>
+    <HeroSubtitle>
+      사진 한 장으로 알레르기 걱정 끝! <br/>
+      AI가 메뉴 속 성분을 분석해 <br/>
+      당신에게 맞는 메뉴를 추천해드려요.<br/><br/>
+      메뉴판을 업로드하면 알레르기 정보를 분석해드립니다!
+    </HeroSubtitle>
+    <CTAButton
+      onClick={() => {
+        const token = localStorage.getItem('token');
+        if (!token) {
+          alert('로그인이 필요합니다. 로그인 페이지로 이동합니다.');
+          navigate('/login');
+        } else {
+          navigate('/allergy');
+        }
+      }}
+    >
+      알레르기 설정하기
+    </CTAButton>
+  </HeroContent>
+</HeroSection>
 
         {/* Upload Section */}
         <Section id="upload">
