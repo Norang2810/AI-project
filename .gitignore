@@ -91,3 +91,6 @@ ai-server/sample_ocr_dataset.zip
 docker/.env
 docker/env.local
 docker/env.prod
+docker/.env
+docker/env.local
+docker/env.prod
