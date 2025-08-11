@@ -69,7 +69,8 @@ const initializeDatabase = async () => {
     
     // 테이블 생성 (개발 환경에서만)
     if (process.env.NODE_ENV !== 'production') {
-      await sequelize.sync({ alter: true });
+      // 외래키 제약조건 오류를 방지하기 위해 force: false, alter: false로 설정
+      await sequelize.sync({ force: false, alter: false });
       console.log('✅ 데이터베이스 테이블 생성 완료');
     }
   } catch (error) {
