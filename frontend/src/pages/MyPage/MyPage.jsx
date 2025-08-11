@@ -7,15 +7,23 @@ import {
   NavButton,
   ContentPanel,
   ContentArea,
-  MyInfoSectionContainer, // ✨ 새 컴포넌트 추가
-  MyInfoContentWrapper, // ✨ 새 컴포넌트 추가
-  InfoCard, // ✨ 새 컴포넌트 추가
-  CardTitle, // ✨ 새 컴포넌트 추가
-  InfoRow, // ✨ 새 컴포넌트 추가
-  InfoLabel, // ✨ 새 컴포넌트 추가
-  InfoValue, // ✨ 새 컴포넌트 추가
-  PasswordInput, // ✨ 새 컴포넌트 추가
-  ChangePasswordButton // ✨ 새 컴포넌트 추가
+  SectionContainer,
+  MyInfoContentWrapper,
+  InfoCard,
+  CardTitle,
+  InfoRow,
+  InfoLabel,
+  InfoValue,
+  PasswordInput,
+  ChangePasswordButton,
+  AllergyGridContainer,
+  AllergyCategoryCard,
+  AllergyCategoryTitle,
+  AllergySeverityBadge,
+  AllergyItemsContainer,
+  AllergyItemTag,
+  AllergyButtonContainer,
+  EmptyAllergyText
 } from './MyPage.styles';
 
 const MyPage = () => {
@@ -32,7 +40,6 @@ const MyPage = () => {
     { id: 'imageView', label: '이미지 보기' }
   ];
 
-  // API 호출 함수들
   const fetchUserInfo = async () => {
     try {
       const token = localStorage.getItem('token');
@@ -42,7 +49,7 @@ const MyPage = () => {
           'Content-Type': 'application/json'
         }
       });
-      
+
       if (response.ok) {
         const data = await response.json();
         setUserInfo(data.data.user);
@@ -61,7 +68,7 @@ const MyPage = () => {
           'Content-Type': 'application/json'
         }
       });
-      
+
       if (response.ok) {
         const data = await response.json();
         setAllergies(data.data.allergies);
@@ -71,228 +78,187 @@ const MyPage = () => {
     }
   };
 
-  // 컴포넌트 마운트 시 데이터 로드
   useEffect(() => {
     const loadData = async () => {
       setLoading(true);
       await Promise.all([fetchUserInfo(), fetchAllergies()]);
       setLoading(false);
     };
-    
+
     loadData();
   }, []);
 
   const renderContent = () => {
     switch (activeSection) {
       case 'myInfo':
-  return (
-    <MyInfoSectionContainer>
-      <h2>내 정보</h2>
-      
-      <MyInfoContentWrapper>
-        {/* 현재 저장된 정보 (읽기 전용) */}
-        <InfoCard>
-          <CardTitle>📋 현재 등록된 정보</CardTitle>
-          
-          <div style={{ display: 'grid', gap: '1rem' }}>
-            <InfoRow>
-              <InfoLabel>이름:</InfoLabel>
-              <InfoValue>
-                {userInfo?.name || '등록된 이름이 없습니다'}
-              </InfoValue>
-            </InfoRow>
-            
-            <InfoRow>
-              <InfoLabel>이메일:</InfoLabel>
-              <InfoValue>
-                {userInfo?.email || '등록된 이메일이 없습니다'}
-              </InfoValue>
-            </InfoRow>
-                              
-            <InfoRow>
-              <InfoLabel>전화번호:</InfoLabel>
-              <InfoValue>
-                {userInfo?.phone || '등록된 전화번호가 없습니다'}
-              </InfoValue>
-            </InfoRow>
-          </div>
-        </InfoCard>
-
-        {/* 비밀번호 변경 */}
-        <InfoCard>
-          <CardTitle>🔐 비밀번호 변경</CardTitle>
-          
-          <InfoRow style={{ marginBottom: '1.5rem' }}>
-            <InfoLabel>현재 비밀번호:</InfoLabel>
-            <PasswordInput 
-              type="password" 
-              placeholder="현재 비밀번호를 입력하세요"
-            />
-          </InfoRow>
-          
-          <InfoRow style={{ marginBottom: '1.5rem' }}>
-            <InfoLabel>새 비밀번호:</InfoLabel>
-            <div style={{ flex: '1' }}>
-              <PasswordInput 
-                type="password" 
-                placeholder="새 비밀번호를 입력하세요 * 8자리 이상, 영문/숫자/특수문자 포함 *"
-              />
-            </div>
-          </InfoRow>
-          
-          <InfoRow style={{ marginBottom: '2rem' }}>
-            <InfoLabel>새 비밀번호 확인:</InfoLabel>
-            <PasswordInput 
-              type="password" 
-              placeholder="새 비밀번호를 다시 입력하세요"
-            />
-          </InfoRow>
-          
-          <ChangePasswordButton>
-            비밀번호변경
-          </ChangePasswordButton>
-        </InfoCard>
-      </MyInfoContentWrapper>
-    </MyInfoSectionContainer>
-  );
-      case 'allergyInfo':
         return (
-          <div>
-            <h2>내 알레르기 정보</h2>
-            <div style={{ marginTop: '2rem' }}>
-              {allergies.length > 0 ? (
-                <>
-                  <div style={{ marginBottom: '2rem' }}>
-                    <h3 style={{ marginBottom: '1rem', color: '#333' }}>등록된 알레르기 성분</h3>
-                    <div style={{ 
-                      display: 'grid', 
-                      gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', 
-                      gap: '1rem',
-                      marginBottom: '2rem'
-                    }}>
-                      {allergies.map((allergy) => (
-                        <div key={allergy.name} style={{
-                          padding: '1rem',
-                          border: '1px solid #ddd',
-                          borderRadius: '8px',
-                          backgroundColor: '#ffe8e0',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'space-between',
-                          boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-                        }}>
-                          <div>
-                            <span style={{ fontWeight: 'bold', fontSize: '1rem' }}>{allergy.name}</span>
-                            <div style={{ 
-                              marginTop: '0.5rem',
-                              fontSize: '0.875rem',
-                              color: '#666'
-                            }}>
-                              심각도: {
-                                allergy.severity === 'high' ? '심각' :
-                                allergy.severity === 'medium' ? '보통' : '경미'
-                              }
-                            </div>
-                          </div>
-                          <div style={{
-                            padding: '0.25rem 0.75rem',
-                            borderRadius: '12px',
-                            fontSize: '0.75rem',
-                            fontWeight: 'bold',
-                            backgroundColor: 
-                              allergy.severity === 'high' ? '#ffebee' :
-                              allergy.severity === 'medium' ? '#fff3e0' : '#e8f5e8',
-                            color: 
-                              allergy.severity === 'high' ? '#d32f2f' :
-                              allergy.severity === 'medium' ? '#f57c00' : '#388e3c'
-                          }}>
-                            {allergy.severity === 'high' ? '높음' :
-                             allergy.severity === 'medium' ? '보통' : '낮음'}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <div style={{ 
-                    backgroundColor: '#f8f9fa', 
-                    padding: '1.5rem', 
-                    borderRadius: '8px',
-                    marginBottom: '2rem'
-                  }}>
-                    <h4 style={{ marginBottom: '1rem', color: '#333' }}>알레르기 정보 요약</h4>
-                    <p style={{ margin: '0.5rem 0', color: '#666' }}>
-                      총 등록된 알레르기: <strong>{allergies.length}개</strong>
-                    </p>
-                    <p style={{ margin: '0.5rem 0', color: '#666' }}>
-                      심각도별 분포: {
-                        allergies.filter(a => a.severity === 'high').length > 0 ? 
-                        `심각 ${allergies.filter(a => a.severity === 'high').length}개, ` : ''
-                      }{
-                        allergies.filter(a => a.severity === 'medium').length > 0 ? 
-                        `보통 ${allergies.filter(a => a.severity === 'medium').length}개, ` : ''
-                      }{
-                        allergies.filter(a => a.severity === 'low').length > 0 ? 
-                        `경미 ${allergies.filter(a => a.severity === 'low').length}개` : ''
-                      }
-                                         </p>
-                   </div>
-                   
-                   <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-                     <button 
-                       style={{
-                         backgroundColor: '#ff6b35',
-                         color: 'white',
-                         padding: '0.75rem 2rem',
-                         border: 'none',
-                         borderRadius: '4px',
-                         fontSize: '1rem',
-                         cursor: 'pointer',
-                         marginRight: '1rem'
-                       }}
-                       onClick={() => navigate('/allergy')}
-                     >
-                       알레르기 정보 수정
-                     </button>
-                   </div>
-                 </>
-               ) : (
-                <div style={{ 
-                  textAlign: 'center', 
-                  padding: '3rem',
-                  backgroundColor: '#f8f9fa',
-                  borderRadius: '8px'
-                }}>
-                  <h3 style={{ color: '#666', marginBottom: '1rem' }}>등록된 알레르기 정보가 없습니다</h3>
-                  <p style={{ color: '#999', marginBottom: '2rem' }}>
-                    알레르기 정보를 등록하면 메뉴 분석 시 더 정확한 결과를 제공받을 수 있습니다.
-                  </p>
-                  <button 
-                    style={{
-                      backgroundColor: '#ff6b35',
-                      color: 'white',
-                      padding: '0.75rem 2rem',
-                      border: 'none',
-                      borderRadius: '4px',
-                      fontSize: '1rem',
-                      cursor: 'pointer'
-                    }}
-                    onClick={() => navigate('/allergy')}
-                  >
-                    알레르기 정보 등록하기
-                  </button>
+          <SectionContainer>
+            <h2>내 정보</h2>
+            <MyInfoContentWrapper>
+              <InfoCard>
+                <CardTitle>📋 현재 등록된 정보</CardTitle>
+                <div style={{ display: 'grid', gap: '1rem' }}>
+                  <InfoRow>
+                    <InfoLabel>이름:</InfoLabel>
+                    <InfoValue>
+                      {userInfo?.name || '등록된 이름이 없습니다'}
+                    </InfoValue>
+                  </InfoRow>
+
+                  <InfoRow>
+                    <InfoLabel>이메일:</InfoLabel>
+                    <InfoValue>
+                      {userInfo?.email || '등록된 이메일이 없습니다'}
+                    </InfoValue>
+                  </InfoRow>
+
+                  <InfoRow>
+                    <InfoLabel>전화번호:</InfoLabel>
+                    <InfoValue>
+                      {userInfo?.phone || '등록된 전화번호가 없습니다'}
+                    </InfoValue>
+                  </InfoRow>
                 </div>
-              )}
-            </div>
-          </div>
+              </InfoCard>
+
+              <InfoCard>
+                <CardTitle>🔐 비밀번호 변경</CardTitle>
+                <InfoRow style={{ marginBottom: '1.5rem' }}>
+                  <InfoLabel>현재 비밀번호:</InfoLabel>
+                  <PasswordInput
+                    type="password"
+                    placeholder="현재 비밀번호를 입력하세요"
+                  />
+                </InfoRow>
+                <InfoRow style={{ marginBottom: '1.5rem' }}>
+                  <InfoLabel>새 비밀번호:</InfoLabel>
+                  <div style={{ flex: '1' }}>
+                    <PasswordInput
+                      type="password"
+                      placeholder="새 비밀번호를 입력하세요 * 8자리 이상, 영문/숫자/특수문자 포함 *"
+                    />
+                  </div>
+                </InfoRow>
+                <InfoRow style={{ marginBottom: '2rem' }}>
+                  <InfoLabel>새 비밀번호 확인:</InfoLabel>
+                  <PasswordInput
+                    type="password"
+                    placeholder="새 비밀번호를 다시 입력하세요"
+                  />
+                </InfoRow>
+                <ChangePasswordButton>
+                  비밀번호변경
+                </ChangePasswordButton>
+              </InfoCard>
+            </MyInfoContentWrapper>
+          </SectionContainer>
+        );
+      case 'allergyInfo':
+        const ALLERGY_CATEGORIES = {
+          '곡물': {
+            icon: '🌾',
+            severity: 'medium',
+            items: ['밀', '보리', '호밀', '오트밀', '옥수수']
+          },
+          '견과류': {
+            icon: '🥜',
+            severity: 'high',
+            items: ['땅콩', '아몬드', '호두', '캐슈넛', '피스타치오']
+          },
+          '유제품': {
+            icon: '🥛',
+            severity: 'high',
+            items: ['우유', '치즈', '요거트', '버터', '크림', '연유']
+          },
+          '계란': {
+            icon: '🥚',
+            severity: 'high',
+            items: ['계란']
+          },
+          '과일': {
+            icon: '🍎',
+            severity: 'medium',
+            items: ['딸기', '키위', '망고', '복숭아', '사과', '파인애플', '바나나', '포도']
+          },
+          '기타': {
+            icon: '⚠️',
+            severity: 'low',
+            items: ['대두', 'MSG', '아황산염', '색소', '보존료', '코코넛', '시나몬', '꿀', '젤라틴', '콩', '바닐라', '초콜릿', '코코아', '카카오']
+          }
+        };
+
+        const selectedAllergyNames = new Set(allergies.map(a => a.name));
+
+        const getSeverityBadgeColor = (severity) => {
+          switch (severity) {
+            case 'high':
+              return '#EF4444';
+            case 'medium':
+              return '#F59E0B';
+            case 'low':
+              return '#10B981';
+            default:
+              return '#6B7280';
+          }
+        };
+
+        return (
+          <SectionContainer>
+            <h2>내 알레르기 정보</h2>
+            <MyInfoContentWrapper style={{ flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+              <AllergyGridContainer>
+                {Object.entries(ALLERGY_CATEGORIES).map(([category, info]) => {
+                  const selectedItems = info.items.filter(item => selectedAllergyNames.has(item));
+                  const badgeColor = getSeverityBadgeColor(info.severity);
+                  const isCategorySelected = selectedItems.length > 0;
+
+                  return (
+                    <AllergyCategoryCard 
+                      key={category} 
+                      $isCategorySelected={isCategorySelected} 
+                      $badgeColor={badgeColor}
+                    >
+                      <div>
+                        <AllergyCategoryTitle>
+                          <span style={{ fontSize: '1.5rem', marginRight: '0.5rem' }}>{info.icon}</span>
+                          {category}
+                        </AllergyCategoryTitle>
+                        <AllergySeverityBadge $badgeColor={badgeColor}>
+                          {info.severity === 'high' ? '높음' : info.severity === 'medium' ? '보통' : '낮음'}
+                        </AllergySeverityBadge>
+                      </div>
+                      {isCategorySelected ? (
+                        <AllergyItemsContainer $isEtcCategory={category === '기타'}>
+                          {selectedItems.map(item => (
+                            <AllergyItemTag key={item}>
+                              {item}
+                            </AllergyItemTag>
+                          ))}
+                        </AllergyItemsContainer>
+                      ) : (
+                        <EmptyAllergyText>
+                          선택된 알레르기 항목이 없습니다.
+                        </EmptyAllergyText>
+                      )}
+                    </AllergyCategoryCard>
+                  );
+                })}
+              </AllergyGridContainer>
+              <AllergyButtonContainer>
+                <ChangePasswordButton onClick={() => navigate('/allergy')}>
+                  알레르기 정보 수정
+                </ChangePasswordButton>
+              </AllergyButtonContainer>
+            </MyInfoContentWrapper>
+          </SectionContainer>
         );
       case 'analysisHistory':
         return (
           <div>
             <h2>분석 내역</h2>
             <div style={{ marginTop: '2rem' }}>
-              <div style={{ 
-                display: 'grid', 
+              <div style={{
+                display: 'grid',
                 gap: '1rem',
                 marginBottom: '2rem'
               }}>
@@ -338,10 +304,10 @@ const MyPage = () => {
           <div>
             <h2>이미지 보기</h2>
             <div style={{ marginTop: '2rem' }}>
-              <div style={{ 
-                display: 'grid', 
-                gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', 
-                gap: '1.5rem',
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
+                gap: '1rem',
                 marginBottom: '2rem'
               }}>
                 {[
