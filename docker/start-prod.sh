@@ -4,7 +4,7 @@ set -euo pipefail
 echo "🚀 [START] 배포 환경 실행"
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-cd "$SCRIPT_DIR"ㅊㅇㅇ
+cd "$SCRIPT_DIR"
 
 # 필수 파일 체크
 [ -f "env.prod" ] || { echo "❌ env.prod 가 없습니다. docker/env.prod 를 생성해 주세요."; exit 1; }

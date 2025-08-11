@@ -4,8 +4,6 @@ services:
       context: ../ai-server
       dockerfile: ../docker/Dockerfile.ai
     container_name: docker_ai-server
-    ports:
-      - "8000:8000"
     env_file:
       - ../docker/env.prod
     networks:
@@ -16,8 +14,6 @@ services:
       context: ../backend
       dockerfile: ../docker/Dockerfile.backend
     container_name: docker_backend
-    ports:
-      - "3001:3001"
     env_file:
       - ../docker/env.prod
     depends_on:
@@ -28,12 +24,14 @@ services:
 
   frontend:
     build:
-      context: ../frontend
-      dockerfile: ../docker/Dockerfile.frontend.prod
+      context: ..
+      dockerfile: docker/Dockerfile.frontend.prod
     container_name: docker_frontend
-    ports: []
+    ports:
+      - "80:80"
     networks:
       - frontend
+      - backend
 
   mysql:
     image: mysql:8.0
@@ -43,8 +41,9 @@ services:
       - MYSQL_DATABASE=myweb
     volumes:
       - mysql_data:/var/lib/mysql
-    ports:
-      - "3307:3306"
+    # 운영에서는 외부 포트 노출을 피하는 것을 권장합니다. 필요 시만 열어주세요.
+    # ports:
+    #   - "3307:3306"
     networks:
       - backend
 
