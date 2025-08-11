@@ -6,7 +6,16 @@ import {
   NavItem,
   NavButton,
   ContentPanel,
-  ContentArea
+  ContentArea,
+  MyInfoSectionContainer, // ✨ 새 컴포넌트 추가
+  MyInfoContentWrapper, // ✨ 새 컴포넌트 추가
+  InfoCard, // ✨ 새 컴포넌트 추가
+  CardTitle, // ✨ 새 컴포넌트 추가
+  InfoRow, // ✨ 새 컴포넌트 추가
+  InfoLabel, // ✨ 새 컴포넌트 추가
+  InfoValue, // ✨ 새 컴포넌트 추가
+  PasswordInput, // ✨ 새 컴포넌트 추가
+  ChangePasswordButton // ✨ 새 컴포넌트 추가
 } from './MyPage.styles';
 
 const MyPage = () => {
@@ -76,69 +85,76 @@ const MyPage = () => {
   const renderContent = () => {
     switch (activeSection) {
       case 'myInfo':
-        return (
-          <div>
-            <h2>내 정보</h2>
-            <div style={{ marginTop: '2rem' }}>
-              <div style={{ marginBottom: '1.5rem' }}>
-                <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>이름</label>
-                <input 
-                  type="text" 
-                  style={{ 
-                    width: '100%', 
-                    padding: '0.75rem', 
-                    border: '1px solid #ddd', 
-                    borderRadius: '4px',
-                    fontSize: '1rem'
-                  }}
-                  placeholder="이름을 입력하세요"
-                  defaultValue={userInfo?.name || ''}
-                />
-              </div>
-              <div style={{ marginBottom: '1.5rem' }}>
-                <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>이메일</label>
-                <input 
-                  type="email" 
-                  style={{ 
-                    width: '100%', 
-                    padding: '0.75rem', 
-                    border: '1px solid #ddd', 
-                    borderRadius: '4px',
-                    fontSize: '1rem'
-                  }}
-                  placeholder="이메일을 입력하세요"
-                  defaultValue={userInfo?.email || ''}
-                />
-              </div>
-              <div style={{ marginBottom: '1.5rem' }}>
-                <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>전화번호</label>
-                <input 
-                  type="tel" 
-                  style={{ 
-                    width: '100%', 
-                    padding: '0.75rem', 
-                    border: '1px solid #ddd', 
-                    borderRadius: '4px',
-                    fontSize: '1rem'
-                  }}
-                  placeholder="전화번호를 입력하세요"
-                  defaultValue={userInfo?.phone || ''}
-                />
-              </div>
-              <button style={{
-                backgroundColor: '#ff6b35',
-                color: 'white',
-                padding: '0.75rem 2rem',
-                border: 'none',
-                borderRadius: '4px',
-                fontSize: '1rem',
-                cursor: 'pointer'
-              }}>
-                정보 수정
-              </button>
-            </div>
+  return (
+    <MyInfoSectionContainer>
+      <h2>내 정보</h2>
+      
+      <MyInfoContentWrapper>
+        {/* 현재 저장된 정보 (읽기 전용) */}
+        <InfoCard>
+          <CardTitle>📋 현재 등록된 정보</CardTitle>
+          
+          <div style={{ display: 'grid', gap: '1rem' }}>
+            <InfoRow>
+              <InfoLabel>이름:</InfoLabel>
+              <InfoValue>
+                {userInfo?.name || '등록된 이름이 없습니다'}
+              </InfoValue>
+            </InfoRow>
+            
+            <InfoRow>
+              <InfoLabel>이메일:</InfoLabel>
+              <InfoValue>
+                {userInfo?.email || '등록된 이메일이 없습니다'}
+              </InfoValue>
+            </InfoRow>
+                              
+            <InfoRow>
+              <InfoLabel>전화번호:</InfoLabel>
+              <InfoValue>
+                {userInfo?.phone || '등록된 전화번호가 없습니다'}
+              </InfoValue>
+            </InfoRow>
           </div>
-        );
+        </InfoCard>
+
+        {/* 비밀번호 변경 */}
+        <InfoCard>
+          <CardTitle>🔐 비밀번호 변경</CardTitle>
+          
+          <InfoRow style={{ marginBottom: '1.5rem' }}>
+            <InfoLabel>현재 비밀번호:</InfoLabel>
+            <PasswordInput 
+              type="password" 
+              placeholder="현재 비밀번호를 입력하세요"
+            />
+          </InfoRow>
+          
+          <InfoRow style={{ marginBottom: '1.5rem' }}>
+            <InfoLabel>새 비밀번호:</InfoLabel>
+            <div style={{ flex: '1' }}>
+              <PasswordInput 
+                type="password" 
+                placeholder="새 비밀번호를 입력하세요 * 8자리 이상, 영문/숫자/특수문자 포함 *"
+              />
+            </div>
+          </InfoRow>
+          
+          <InfoRow style={{ marginBottom: '2rem' }}>
+            <InfoLabel>새 비밀번호 확인:</InfoLabel>
+            <PasswordInput 
+              type="password" 
+              placeholder="새 비밀번호를 다시 입력하세요"
+            />
+          </InfoRow>
+          
+          <ChangePasswordButton>
+            비밀번호변경
+          </ChangePasswordButton>
+        </InfoCard>
+      </MyInfoContentWrapper>
+    </MyInfoSectionContainer>
+  );
       case 'allergyInfo':
         return (
           <div>
