@@ -71,8 +71,6 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
       console.error(e);
     }
   };
-  
-
 
   return (
     <HeaderContainer>
@@ -120,7 +118,6 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
       <AuthMenuContainer>
         <AuthMenu>
           {isLoggedIn ? (
-<<<<<<< HEAD
             <>
               <NavItem>
                 <AuthLink as={Link} to="/mypage">
