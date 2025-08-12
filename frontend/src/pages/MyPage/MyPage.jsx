@@ -31,6 +31,11 @@ const MyPage = () => {
   const [userInfo, setUserInfo] = useState(null);
   const [allergies, setAllergies] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const [currentPassword, setCurrentPassword] = useState('');
+  const [newPassword, setNewPassword] = useState('');
+  const [confirmNewPassword, setConfirmPassword] = useState('');
+
   const navigate = useNavigate();
 
   const navItems = [
@@ -77,6 +82,35 @@ const MyPage = () => {
       console.error('알레르기 정보 조회 오류:', error);
     }
   };
+
+  const handleChangePassword = async () => {
+    try{
+      const token = localStorage.getItem('token');
+
+      const response = await fetch('api/user/password', {
+        method : 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({
+          currentPassword,
+          newPassword,
+          confirmNewPassword
+        })
+      });
+
+      const data = await response.json();
+      if(response.ok){
+        setCurrentPassword('');
+        setNewPassword('');
+        setConfirmPassword('');
+      }
+    }
+    catch(error){
+      console.error('비밀번호 변경 오류', error);
+    }
+  }
 
   useEffect(() => {
     const loadData = async () => {
@@ -128,6 +162,8 @@ const MyPage = () => {
                   <PasswordInput
                     type="password"
                     placeholder="현재 비밀번호를 입력하세요"
+                    value={currentPassword}
+                    onChange={(e)=>setCurrentPassword(e.target.value)}
                   />
                 </InfoRow>
                 <InfoRow style={{ marginBottom: '1.5rem' }}>
@@ -135,7 +171,9 @@ const MyPage = () => {
                   <div style={{ flex: '1' }}>
                     <PasswordInput
                       type="password"
-                      placeholder="새 비밀번호를 입력하세요 * 8자리 이상, 영문/숫자/특수문자 포함 *"
+                      placeholder="새 비밀번호를 입력하세요 * 6자리 이상 *"
+                      value={newPassword}
+                      onChange={(e)=>setNewPassword(e.target.value)}
                     />
                   </div>
                 </InfoRow>
@@ -144,9 +182,11 @@ const MyPage = () => {
                   <PasswordInput
                     type="password"
                     placeholder="새 비밀번호를 다시 입력하세요"
+                    value={confirmNewPassword}
+                    onChange={(e)=>setConfirmPassword(e.target.value)}
                   />
                 </InfoRow>
-                <ChangePasswordButton>
+                <ChangePasswordButton onClick={handleChangePassword}>
                   비밀번호변경
                 </ChangePasswordButton>
               </InfoCard>
