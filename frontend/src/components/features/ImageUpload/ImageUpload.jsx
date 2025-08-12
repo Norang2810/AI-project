@@ -152,9 +152,9 @@ const ImageUpload = ({ onAnalysisComplete }) => {
         {!previewUrl ? (
           <div>
             <UploadIcon>📸</UploadIcon>
-            <UploadTitle>이미지 업로드</UploadTitle>
+            <UploadTitle>메뉴판 사진 업로드드</UploadTitle>
             <UploadDescription>
-              클릭하거나 이미지를 여기에 드래그하세요<br />
+              박스를 클릭하거나 이미지를 여기로 드래그하세요<br />
               JPG, PNG, JPEG 파일을 지원합니다
             </UploadDescription>
             <UploadButton>파일 선택하기</UploadButton>
@@ -163,7 +163,10 @@ const ImageUpload = ({ onAnalysisComplete }) => {
           <div>
             <UploadIcon>✅</UploadIcon>
             <UploadTitle>선택된 이미지</UploadTitle>
-            <UploadDescription>분석을 시작하려면 버튼을 클릭하세요</UploadDescription>
+            <UploadDescription>
+              '분석 시작하기'를 눌러 알레르기 성분을 확인하세요<br/>
+              다른 사진을 업로드하려면 박스를 클릭하거나 이미지를 여기로 드래그하세요
+              </UploadDescription>
             <UploadButton 
               onClick={(e) => {
                 e.stopPropagation();
