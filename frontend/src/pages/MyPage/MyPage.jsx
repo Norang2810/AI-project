@@ -26,6 +26,26 @@ import {
   EmptyAllergyText
 } from './MyPage.styles';
 
+import styled from 'styled-components';
+
+const ErrorMessage = styled.div`
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 1rem;
+`;
+
+const SuccessMessage = styled.div`
+  background-color: #d4edda;
+  color: #155724;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #c3e6cb;
+  margin-bottom: 1rem;
+`;
+
 const MyPage = () => {
   const [activeSection, setActiveSection] = useState('myInfo');
   const [userInfo, setUserInfo] = useState(null);
@@ -35,6 +55,7 @@ const MyPage = () => {
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [confirmNewPassword, setConfirmPassword] = useState('');
+  const [message, setMessage] = useState({type: '', text: ''})
 
   const navigate = useNavigate();
 
@@ -84,6 +105,15 @@ const MyPage = () => {
   };
 
   const handleChangePassword = async () => {
+    setMessage({ type: '', text: '' });
+
+    if (newPassword !== confirmNewPassword) {
+      return setMessage({ type: 'error', text: '새 비밀번호가 일치하지 않습니다.' });
+    }
+
+    if (newPassword.length < 6) {
+      return setMessage({ type: 'error', text: '비밀번호는 6자 이상이어야 합니다.' });
+    }
     try{
       const token = localStorage.getItem('token');
 
@@ -101,10 +131,18 @@ const MyPage = () => {
       });
 
       const data = await response.json();
-      if(response.ok){
+      if(response.ok  && data.success){
+        setMessage({ type: 'success', text:'비밀번호가 변경되었습니다.' });
         setCurrentPassword('');
         setNewPassword('');
         setConfirmPassword('');
+      }
+      else {
+        if (data.message === '현재 비밀번호가 올바르지 않습니다.') {
+          setMessage({ type: 'error', text: '현재 비밀번호가 올바르지 않습니다.' });
+        } else {
+          setMessage({ type: 'error', text: data.message || '비밀번호 변경에 실패했습니다.' });
+        }
       }
     }
     catch(error){
@@ -157,6 +195,15 @@ const MyPage = () => {
 
               <InfoCard>
                 <CardTitle>🔐 비밀번호 변경</CardTitle>
+
+                {message.text && (
+                  message.type === 'error' ? (
+                    <ErrorMessage>{message.text}</ErrorMessage>
+                  ) : (
+                    <SuccessMessage>{message.text}</SuccessMessage>
+                  )
+                )}
+
                 <InfoRow style={{ marginBottom: '1.5rem' }}>
                   <InfoLabel>현재 비밀번호:</InfoLabel>
                   <PasswordInput
