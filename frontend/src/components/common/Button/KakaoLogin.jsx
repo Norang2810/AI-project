@@ -6,7 +6,7 @@ const KakaoLogin = ({ mode = 'login' }) => {
   const REDIRECT_URI = `${window.location.origin}/api/auth/kakao/callback`;
 
   const handleLogin = () => {
-    const kakaoAuthURL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
+    const kakaoAuthURL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code&prompt=login`;
     window.location.href = kakaoAuthURL;
   };
 
