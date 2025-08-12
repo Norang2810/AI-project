@@ -6,11 +6,11 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile.frontend
-    ports:
-      - "3000:80"
+    # ports:
+    #   - "3000:80"
     environment:
-      - REACT_APP_API_URL=http://localhost:3001
-      - REACT_APP_AI_SERVER_URL=http://localhost:8000
+      - REACT_APP_API_URL=http://localhost/api
+      - REACT_APP_AI_SERVER_URL=http://localhost/ai
       - REACT_APP_KAKAO_REST_API_KEY=${REACT_APP_KAKAO_REST_API_KEY}
     depends_on:
       - backend
@@ -75,10 +75,11 @@ services:
   nginx:
     image: nginx:alpine
     ports:
-      - "80:80"
+      - "3000:80"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
     depends_on:
+      - frontend
       - backend
       - ai-server
 

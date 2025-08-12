@@ -143,10 +143,11 @@ router.get('/kakao/callback', async (req, res) => {
 
   try {
     // 프록시(Nginx) 뒤에서도 올바른 오리진 계산
-    const scheme = req.headers['x-forwarded-proto'] || req.protocol;
-    const host = req.headers['x-forwarded-host'] || req.headers.host;
-    const baseOrigin = `${scheme}://${host}`;
-    const redirectUri = `${baseOrigin}/api/auth/kakao/callback`;
+    // const scheme = req.headers['x-forwarded-proto'] || req.protocol;
+    // const host = req.headers['x-forwarded-host'] || req.headers.host;
+    // const baseOrigin = `${scheme}://${host}`;
+    // const redirectUri = `${baseOrigin}/api/auth/kakao/callback`;
+    const redirectUri = `http://localhost:3000/api/auth/kakao/callback`;
 
     console.log('카카오 인가 코드 수신:', code);
     
@@ -172,9 +173,10 @@ router.get('/kakao/callback', async (req, res) => {
 
     if (!access_token) {
       console.error('카카오 토큰 발급 실패');
-      const scheme = req.headers['x-forwarded-proto'] || req.protocol;
-      const host = req.headers['x-forwarded-host'] || req.headers.host;
-      const baseOrigin = `${scheme}://${host}`;
+      // const scheme = req.headers['x-forwarded-proto'] || req.protocol;
+      // const host = req.headers['x-forwarded-host'] || req.headers.host;
+      // const baseOrigin = `${scheme}://${host}`;
+      const baseOrigin = `http://localhost:3000`;
       return res.redirect(`${baseOrigin}/login?error=token_failed`);
     }
 
@@ -210,15 +212,21 @@ router.get('/kakao/callback', async (req, res) => {
     console.log('JWT 토큰 생성 완료');
 
     // 프론트 경로도 동일 오리진 기준으로 리다이렉트
+    const baseOrigin = `http://localhost:3000`;
     return res.redirect(`${baseOrigin}/kakao-login?token=${token}`);    
 
   } catch (error) {
     console.error('카카오 로그인 실패:', error.response?.data || error.message);
-    const scheme = req.headers['x-forwarded-proto'] || req.protocol;
-    const host = req.headers['x-forwarded-host'] || req.headers.host;
-    const baseOrigin = `${scheme}://${host}`;
+    // const scheme = req.headers['x-forwarded-proto'] || req.protocol;
+    // const host = req.headers['x-forwarded-host'] || req.headers.host;
+    // const baseOrigin = `${scheme}://${host}`;
+    const baseOrigin = `http://localhost:3000`;
     return res.redirect(`${baseOrigin}/login?error=server_error`);
   }
+});
+
+router.post('/logout', (req, res) => {
+  res.status(200).json({ success: true, message: '로그아웃 되었습니다.' });
 });
 
 // 사용자 정보 가져오기

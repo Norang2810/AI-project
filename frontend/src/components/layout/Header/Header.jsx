@@ -63,7 +63,7 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
       }
   
       // 3) 서버에 refresh token 폐기(있다면)
-      await fetch('/auth/logout', { method: 'POST', credentials: 'include' });
+      await fetch('/api/auth/logout', { method: 'POST', credentials: 'include' });
   
       // 4) 필요하면 메인으로 이동 or 그대로 머무르기
       // navigate('/') or stay
