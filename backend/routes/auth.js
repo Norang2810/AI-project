@@ -120,7 +120,6 @@ router.post('/login', async (req, res) => {
 
 // 카카오톡 로그인
 const KAKAO_REST_API_KEY = process.env.KAKAO_REST_API_KEY;
-const KAKAO_REDIRECT_URI = 'http://localhost:3001/api/auth/kakao/callback';
 
 router.get('/kakao/callback', async (req, res) => {
   const { code, error } = req.query;
@@ -128,15 +127,28 @@ router.get('/kakao/callback', async (req, res) => {
   // 카카오에서 오류를 반환한 경우
   if (error) {
     console.error('카카오 인증 오류:', error);
-    return res.redirect(`http://localhost:3000/login?error=kakao_auth_failed`);
+    const scheme = req.headers['x-forwarded-proto'] || req.protocol;
+    const host = req.headers['x-forwarded-host'] || req.headers.host;
+    const baseOrigin = `${scheme}://${host}`;
+    return res.redirect(`${baseOrigin}/login?error=kakao_auth_failed`);
   }
 
   if (!code) {
     console.error('카카오 인가 코드가 없습니다');
-    return res.redirect(`http://localhost:3000/login?error=no_auth_code`);
+    const scheme = req.headers['x-forwarded-proto'] || req.protocol;
+    const host = req.headers['x-forwarded-host'] || req.headers.host;
+    const baseOrigin = `${scheme}://${host}`;
+    return res.redirect(`${baseOrigin}/login?error=no_auth_code`);
   }
 
   try {
+    // 프록시(Nginx) 뒤에서도 올바른 오리진 계산
+    // const scheme = req.headers['x-forwarded-proto'] || req.protocol;
+    // const host = req.headers['x-forwarded-host'] || req.headers.host;
+    // const baseOrigin = `${scheme}://${host}`;
+    // const redirectUri = `${baseOrigin}/api/auth/kakao/callback`;
+    const redirectUri = `http://localhost:3000/api/auth/kakao/callback`;
+
     console.log('카카오 인가 코드 수신:', code);
     
     const tokenRes = await axios.post(
@@ -149,7 +161,7 @@ router.get('/kakao/callback', async (req, res) => {
         params: {
           grant_type: 'authorization_code',
           client_id: KAKAO_REST_API_KEY,
-          redirect_uri: KAKAO_REDIRECT_URI,
+          redirect_uri: redirectUri,
           code: code
         }
       }
@@ -161,7 +173,11 @@ router.get('/kakao/callback', async (req, res) => {
 
     if (!access_token) {
       console.error('카카오 토큰 발급 실패');
-      return res.redirect(`http://localhost:3000/login?error=token_failed`);
+      // const scheme = req.headers['x-forwarded-proto'] || req.protocol;
+      // const host = req.headers['x-forwarded-host'] || req.headers.host;
+      // const baseOrigin = `${scheme}://${host}`;
+      const baseOrigin = `http://localhost:3000`;
+      return res.redirect(`${baseOrigin}/login?error=token_failed`);
     }
 
     const userRes = await axios.get('https://kapi.kakao.com/v2/user/me', {
@@ -195,12 +211,22 @@ router.get('/kakao/callback', async (req, res) => {
     const token = generateToken(user.id);
     console.log('JWT 토큰 생성 완료');
 
-    return res.redirect(`http://localhost:3000/kakao-login?token=${token}`);    
+    // 프론트 경로도 동일 오리진 기준으로 리다이렉트
+    const baseOrigin = `http://localhost:3000`;
+    return res.redirect(`${baseOrigin}/kakao-login?token=${token}`);    
 
   } catch (error) {
     console.error('카카오 로그인 실패:', error.response?.data || error.message);
-    return res.redirect(`http://localhost:3000/login?error=server_error`);
+    // const scheme = req.headers['x-forwarded-proto'] || req.protocol;
+    // const host = req.headers['x-forwarded-host'] || req.headers.host;
+    // const baseOrigin = `${scheme}://${host}`;
+    const baseOrigin = `http://localhost:3000`;
+    return res.redirect(`${baseOrigin}/login?error=server_error`);
   }
+});
+
+router.post('/logout', (req, res) => {
+  res.status(200).json({ success: true, message: '로그아웃 되었습니다.' });
 });
 
 // 사용자 정보 가져오기

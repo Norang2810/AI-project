@@ -33,7 +33,6 @@ const DOTS = ['5%', '25%', '45%', '65%', '85%'];
 
 const HERO_IMAGES = [
   '/images/hero/cafe_1.png',
-  '/images/hero/cafe_2.png',
   '/images/hero/cafe_3.png',
 ];
 
@@ -46,8 +45,8 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // API 서버 상태 확인
-    fetch('http://localhost:3001/api/health')
+    // API 서버 상태 확인 (상대경로)
+    fetch('/api/health')
       .then(response => response.json())  
       .then(data => {
         setApiStatus('API 서버 연결 성공!');

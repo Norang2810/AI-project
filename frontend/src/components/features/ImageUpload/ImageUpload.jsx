@@ -76,7 +76,7 @@ const ImageUpload = ({ onAnalysisComplete }) => {
       formData.append('image', selectedFile);
 
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:3001/api/menu/analyze', {
+      const response = await fetch('/api/menu/analyze', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`
