@@ -50,6 +50,7 @@ services:
       - "8000:8000"
     environment:
       - DEBUG=True
+      - JWT_SECRET=${JWT_SECRET}
     volumes:
       - ../ai-server:/app
       - ../data:/app/data
