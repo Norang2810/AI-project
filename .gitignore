@@ -6,11 +6,9 @@ yarn-error.log*
 
 # Environment variables
 docker/ .env
-<<<<<<< HEAD
-=======
 docker/env.local
 docker/env.prod
->>>>>>> b4a81e853e8e22ce6ebdab87b19cb0c563c719cc
+
 frontend / .env
 backend / .env 
 .env
