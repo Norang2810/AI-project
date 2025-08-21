@@ -26,11 +26,37 @@ import {
   EmptyAllergyText
 } from './MyPage.styles';
 
+import styled from 'styled-components';
+
+const ErrorMessage = styled.div`
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 1rem;
+`;
+
+const SuccessMessage = styled.div`
+  background-color: #d4edda;
+  color: #155724;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #c3e6cb;
+  margin-bottom: 1rem;
+`;
+
 const MyPage = () => {
   const [activeSection, setActiveSection] = useState('myInfo');
   const [userInfo, setUserInfo] = useState(null);
   const [allergies, setAllergies] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const [currentPassword, setCurrentPassword] = useState('');
+  const [newPassword, setNewPassword] = useState('');
+  const [confirmNewPassword, setConfirmPassword] = useState('');
+  const [message, setMessage] = useState({type: '', text: ''})
+
   const navigate = useNavigate();
 
   const navItems = [
@@ -78,6 +104,52 @@ const MyPage = () => {
     }
   };
 
+  const handleChangePassword = async () => {
+    setMessage({ type: '', text: '' });
+
+    if (newPassword !== confirmNewPassword) {
+      return setMessage({ type: 'error', text: '새 비밀번호가 일치하지 않습니다.' });
+    }
+
+    if (newPassword.length < 6) {
+      return setMessage({ type: 'error', text: '비밀번호는 6자 이상이어야 합니다.' });
+    }
+    try{
+      const token = localStorage.getItem('token');
+
+      const response = await fetch('api/user/password', {
+        method : 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({
+          currentPassword,
+          newPassword,
+          confirmNewPassword
+        })
+      });
+
+      const data = await response.json();
+      if(response.ok  && data.success){
+        setMessage({ type: 'success', text:'비밀번호가 변경되었습니다.' });
+        setCurrentPassword('');
+        setNewPassword('');
+        setConfirmPassword('');
+      }
+      else {
+        if (data.message === '현재 비밀번호가 올바르지 않습니다.') {
+          setMessage({ type: 'error', text: '현재 비밀번호가 올바르지 않습니다.' });
+        } else {
+          setMessage({ type: 'error', text: data.message || '비밀번호 변경에 실패했습니다.' });
+        }
+      }
+    }
+    catch(error){
+      console.error('비밀번호 변경 오류', error);
+    }
+  }
+
   useEffect(() => {
     const loadData = async () => {
       setLoading(true);
@@ -123,11 +195,22 @@ const MyPage = () => {
 
               <InfoCard>
                 <CardTitle>🔐 비밀번호 변경</CardTitle>
+
+                {message.text && (
+                  message.type === 'error' ? (
+                    <ErrorMessage>{message.text}</ErrorMessage>
+                  ) : (
+                    <SuccessMessage>{message.text}</SuccessMessage>
+                  )
+                )}
+
                 <InfoRow style={{ marginBottom: '1.5rem' }}>
                   <InfoLabel>현재 비밀번호:</InfoLabel>
                   <PasswordInput
                     type="password"
                     placeholder="현재 비밀번호를 입력하세요"
+                    value={currentPassword}
+                    onChange={(e)=>setCurrentPassword(e.target.value)}
                   />
                 </InfoRow>
                 <InfoRow style={{ marginBottom: '1.5rem' }}>
@@ -135,7 +218,9 @@ const MyPage = () => {
                   <div style={{ flex: '1' }}>
                     <PasswordInput
                       type="password"
-                      placeholder="새 비밀번호를 입력하세요 * 8자리 이상, 영문/숫자/특수문자 포함 *"
+                      placeholder="새 비밀번호를 입력하세요 * 6자리 이상 *"
+                      value={newPassword}
+                      onChange={(e)=>setNewPassword(e.target.value)}
                     />
                   </div>
                 </InfoRow>
@@ -144,9 +229,11 @@ const MyPage = () => {
                   <PasswordInput
                     type="password"
                     placeholder="새 비밀번호를 다시 입력하세요"
+                    value={confirmNewPassword}
+                    onChange={(e)=>setConfirmPassword(e.target.value)}
                   />
                 </InfoRow>
-                <ChangePasswordButton>
+                <ChangePasswordButton onClick={handleChangePassword}>
                   비밀번호변경
                 </ChangePasswordButton>
               </InfoCard>
