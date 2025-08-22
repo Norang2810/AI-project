@@ -12,15 +12,13 @@ const KakaoLogin = ({ mode = 'login' }) => {
 
   const buttonStyle = {
     backgroundColor: '#FEE500',    
-    color: '#3C1E1E',               
-    fontWeight: 'bold',
-    width: '100%',
+    color: '#000000ff',               
     height: '50px',
     borderRadius: '10px',
     border: 'none',
-    fontSize: '16px',
+    fontSize: '1.2rem',
     cursor: 'pointer',
-    marginTop: '4px',
+    marginTop: '-0.5rem'
   };
 
   return (
