@@ -42,34 +42,29 @@ const Form = styled.form`
 
 const FormGroup = styled.div`
   display: flex;
-  flex-direction: row;  /* column → row로 변경 */
   align-items: center;   /* 세로 중앙 정렬 */
-  gap: 1rem;            /* 라벨-입력칸 간격 */
+  gap: 0.5rem;            /* 라벨-입력칸 간격 */
 `;
 
 const Label = styled.label`
+  font-weight: bold;
   color: #A2601E;
-  text-align: left;
-  width: 120px;         /* 라벨 너비 고정 */
-  flex-shrink: 0;       /* 라벨 크기 고정 */
-  font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 500;
+  width: 150px;        /* 왼쪽 레이블 고정 폭 */
+  height: 45px;        /* 높이 지정 → 인풋과 비슷하게 */
+  display: flex;
+  align-items: center; /* 세로 중앙 */
+  justify-content: center; /* 가로 중앙 */
+  border: 2px solid transparent; /* 인풋과 어울리게 하고 싶으면 색 추가 가능 */
 `;
 
 const Input = styled.input`
-  background-color: #FFFFFF;
-  padding: 1rem;
+  flex: 1;             /* 남은 공간 전부 차지 */
+  min-width: 280px;    /* 인풋 박스 최소 길이 (늘림) */
+  padding: 0.8rem;
   border: 2px solid #E1C8A8;
   border-radius: 8px;
   font-size: 1rem;
-  text-align: center;
   transition: border-color 0.3s ease;
-  flex: 1;        /* 남은 공간을 모두 차지 */
-  width: 100%;    /* 너비를 100%로 설정 */
-
-  &::placeholder {
-    font-size: 0.8rem;     /* placeholder도 조금 더 작게 */
-  }
   
   &:focus {
     outline: none;
@@ -220,7 +215,7 @@ const RegisterPage = ({ setIsLoggedIn }) => {
         <Form onSubmit={handleSubmit}>
           
             <FormGroup>
-              <Label htmlFor="name">이름</Label>
+              <Label htmlFor="name">이름: </Label>
               <Input
                 type="text"
                 id="name"
@@ -233,7 +228,7 @@ const RegisterPage = ({ setIsLoggedIn }) => {
             </FormGroup>
             
             <FormGroup>
-              <Label htmlFor="phone">전화번호</Label>
+              <Label htmlFor="phone">전화번호: </Label>
               <Input
                 type="tel"
                 id="phone"
@@ -246,7 +241,7 @@ const RegisterPage = ({ setIsLoggedIn }) => {
           
           
           <FormGroup>
-            <Label htmlFor="email">이메일</Label>
+            <Label htmlFor="email">이메일: </Label>
             <Input
               type="email"
               id="email"
@@ -260,7 +255,7 @@ const RegisterPage = ({ setIsLoggedIn }) => {
           
           
             <FormGroup>
-              <Label htmlFor="password">비밀번호</Label>
+              <Label htmlFor="password">비밀번호: </Label>
               <Input
                 type="password"
                 id="password"
@@ -273,7 +268,7 @@ const RegisterPage = ({ setIsLoggedIn }) => {
             </FormGroup>
             
             <FormGroup>
-              <Label htmlFor="confirmPassword">비밀번호 확인</Label>
+              <Label htmlFor="confirmPassword">비밀번호 확인: </Label>
               <Input
                 type="password"
                 id="confirmPassword"
