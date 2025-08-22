@@ -23,6 +23,8 @@ export const SectionSubtitle = styled.p`
   margin-bottom: 3rem;
   line-height: 1.6;
   opacity: 0.8;
+  font-family: 'Noto Sans KR', sans-serif; 
+  font-weight: 600;
 `;
 
 export const UploadArea = styled(Card)`
@@ -60,6 +62,8 @@ export const UploadDescription = styled.p`
   line-height: 1.6; /* 메인페이지와 동일 */
   margin-bottom: 2rem;
   opacity: 0.8;
+  font-family: 'Noto Sans KR', sans-serif; 
+  font-weight: 600;
 `;
 
 export const UploadButton = styled(Button)`
