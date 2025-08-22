@@ -6,19 +6,19 @@ export const HeaderContainer = styled.header`
   left: 0;
   right: 0;
   width: 100%;
-  height: 100px;
+  height: 80px;
   background: #FFFFFF;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between; /* 좌-중앙-우 배치로 변경 */
-  padding: 8 2rem; /* 좌우 여백 통일 */
+  padding: 0 2rem; /* 좌우 여백 통일 */
 `;
 
 export const Logo = styled.div`
-  width: 150px;
-  height: 80px;
+  width: 130px;
+  height: 60px;
   background-image: url('/logo.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -62,11 +62,11 @@ export const NavLink = styled.a`
   white-space: nowrap; /* 텍스트 줄바꿈 방지 */
 
   &:hover {
-    color: rgba(255, 122, 0, 0.2);
+    color: #A2601E;
   }
 
   &.active {
-    color: rgba(255, 122, 0, 0.2);
+    color: #A2601E;
     font-weight: 500;
   }
 `;
@@ -104,7 +104,7 @@ export const AuthLink = styled.a`
   padding: 0.5rem; /* 좌우 여백 통일 */
 
   &:hover {
-    color: rgba(255, 122, 0, 0.2);
+    color: #A2601E;
   }
 `;
 
