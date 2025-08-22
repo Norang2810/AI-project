@@ -23,10 +23,10 @@ import {
 // ...컴포넌트 함수 시작 바로 아래에 추가
 const STEPS = [
   { side: 'left',  bg: '#FFF4E6', icon: '⚠️', title: '알레르기 정보 등록',   desc: '나의 알레르기 성분 등록' },
-  { side: 'right', bg: '#FFEDD5', icon: '📸', title: '메뉴판 사진 업로드',   desc: '카페 메뉴판 촬영 및 업로드' },
-  { side: 'left',  bg: '#FFE6C8', icon: '🔍', title: 'OCR 분석 & 번역',      desc: 'AI가 메뉴판 텍스트를 추출하고 번역' },
-  { side: 'right', bg: '#FFDFBB', icon: '🧪', title: '알레르기 성분 분석',   desc: '메뉴 성분과 내 알레르기 비교' },
-  { side: 'left',  bg: '#FFD8AE', icon: '✅', title: '메뉴 추천 결과 확인',  desc: '안전/위험 메뉴를 구분해 추천' },
+  { side: 'right', bg: '#FFF4E6', icon: '📸', title: '메뉴판 사진 업로드',   desc: '카페 메뉴판 촬영 및 업로드' },
+  { side: 'left',  bg: '#FFF4E6', icon: '🔍', title: 'OCR 분석 & 번역',      desc: 'AI가 텍스트를 추출하고 번역' },
+  { side: 'right', bg: '#FFF4E6', icon: '🧪', title: '알레르기 성분 분석',   desc: '메뉴 성분과 내 알레르기 비교' },
+  { side: 'left',  bg: '#FFF4E6', icon: '✅', title: '메뉴 추천 결과 확인',  desc: '안전/위험 메뉴를 구분해 추천' },
 ];
 
 const DOTS = ['5%', '25%', '45%', '65%', '85%'];
@@ -114,9 +114,8 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
     </HeroTitle>
     <HeroSubtitle>
       사진 한 장으로 알레르기 걱정 끝! <br/>
-      AI가 메뉴 속 성분을 분석해 <br/>
-      당신에게 맞는 메뉴를 추천해드려요.<br/><br/>
-      메뉴판을 업로드하면 알레르기 정보를 분석해드립니다!
+      메뉴판 속 숨은 성분까지,  <br/>
+      알쥬알쥬가 안전하게 찾아드립니다. <br/><br/>
     </HeroSubtitle>
     <CTAButton
       onClick={() => {
@@ -137,7 +136,7 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
         {/* Upload Section */}
         <Section id="upload">
           <SectionContent>
-            <SectionTitle>메뉴판 업로드</SectionTitle>
+            <SectionTitle>메뉴판 사진 업로드</SectionTitle>
             <ImageUpload onAnalysisComplete={setAnalysisResult} />
           </SectionContent>
         </Section>
@@ -156,8 +155,10 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
                 <p style={{
                   fontSize: '1.5rem',
                   color: '#A2601E',
-              marginBottom: '1rem'
-              }}>메뉴판을 업로드하면 여기에 분석 결과가 표시됩니다.</p>
+              marginBottom: '1rem',
+              fontFamily: "'Noto Sans KR', sans-serif", // 둥근 고딕체
+              fontWeight: 600                           // 굵게
+              }}>메뉴판을 업로드하면 여기에 분석 결과가 표시됩니다</p>
                 {/* <div style={{ marginTop: '20px', padding: '10px', backgroundColor: '#f0f0f0', borderRadius: '5px', display: 'inline-block' }}>
                   <h3>서버 상태:</h3>
                   <p>{apiStatus}</p>
@@ -171,7 +172,6 @@ const MainPage = ({ isLoggedIn, setIsLoggedIn }) => {
           </SectionContent>
         </Section>
 
-        {/* About Section - Figma 디자인 적용 */}
         {/* About Section */}
 <AboutSection id="about">
   <SectionContent>

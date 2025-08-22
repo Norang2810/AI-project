@@ -30,6 +30,8 @@ export const Subtitle = styled.p`
   color: #A2601E;  
   margin-bottom: 3rem;
   font-size: 1.1rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
 `;
 
 export const AllergyGrid = styled.div`
