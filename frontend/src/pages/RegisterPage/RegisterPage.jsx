@@ -3,6 +3,11 @@ import { Link, useNavigate } from 'react-router-dom';
 import { KakaoLogin } from '../../components/common/Button';
 import styled from 'styled-components';
 
+// 폰트 로드 (페이지별로)
+const FontStyle = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&display=swap');
+`;
+
 const RegisterContainer = styled.div`
   min-height: 100vh;
   display: flex;
@@ -14,9 +19,8 @@ const RegisterContainer = styled.div`
 
 const RegisterCard = styled.div`
   background: white;
-  padding: 3rem;
+  padding: 1.7rem;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: 100%;
   max-width: 500px;
   border: 2px solid #FFD6AA;
@@ -25,20 +29,21 @@ const RegisterCard = styled.div`
 const Title = styled.h1`
   text-align: center;
   color: #A2601E;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-size: 2rem;
+  font-weight: normal;
 `;
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.8rem;
 `;
 
 const FormGroup = styled.div`
   display: flex;
-  align-items: center; /* 세로 가운데 정렬 */
-  gap: 0.5rem;           /* 레이블과 인풋 사이 간격 */
+  align-items: center;   /* 세로 중앙 정렬 */
+  gap: 0.5rem;            /* 라벨-입력칸 간격 */
 `;
 
 const Label = styled.label`
@@ -68,18 +73,17 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  background-color: #8b5e3c;
+  background-color: #B9855A;
   color: white;
-  padding: 1rem;
+  padding: 0.8rem;
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
   
   &:hover {
-    background-color: #6e4b2a;
+    background-color:rgb(169, 114, 68);
   }
   
   &:disabled {
@@ -92,6 +96,8 @@ const LinkText = styled.p`
   text-align: center;
   margin-top: 1.5rem;
   color: #915316;
+    font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
   
   a {
     color: #A2601E;
@@ -201,7 +207,7 @@ const RegisterPage = ({ setIsLoggedIn }) => {
   return (
     <RegisterContainer>
       <RegisterCard>
-        <Title>☕ 회원가입</Title>
+        <Title>회원가입</Title>
         
         {error && <ErrorMessage>{error}</ErrorMessage>}
         {success && <SuccessMessage>{success}</SuccessMessage>}

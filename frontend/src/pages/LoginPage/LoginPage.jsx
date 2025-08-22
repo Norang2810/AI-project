@@ -3,6 +3,11 @@ import { Link, useNavigate } from 'react-router-dom';
 import { KakaoLogin } from '../../components/common/Button';
 import styled from 'styled-components';
 
+// 맨 위에 추가
+const FontStyle = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&display=swap');
+`;
+
 const LoginContainer = styled.div`
   min-height: 100vh;
   display: flex;
@@ -14,44 +19,57 @@ const LoginContainer = styled.div`
 
 const LoginCard = styled.div`
   background: white;
-  padding: 3rem;
+  padding: 1.7rem;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   border: 2px solid #FFD6AA; /* 카드 경계 강조 */
 `;
 
 const Title = styled.h1`
   text-align: center;
   color: #A2601E; /* 대표 텍스트 색상 */
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-size: 2rem;
+  font-weight: normal;
 `;
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.8rem;
 `;
 
 const FormGroup = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  flex-direction: row;  // column → row로 변경
+  align-items: center;  // 추가
+  gap: 1rem;
 `;
 
 const Label = styled.label`
-  font-weight: bold;
   color: #A2601E;
+  text-align: left;  // 추가
+  width: 120px;      // 추가
+  flex-shrink: 0;    // 추가
+  font-family: 'Noto Sans KR', sans-serif;  // 추가
+  font-weight: 500;  // bold → 500
 `;
 
 const Input = styled.input`
+  background-color: #FFFFFF;  // 추가
   padding: 1rem;
   border: 2px solid #E1C8A8;
   border-radius: 8px;
   font-size: 1rem;
+  text-align: center;  // 추가
   transition: border-color 0.3s ease;
+  flex: 1;        // 추가
+  width: 100%;    // 추가
+
+  &::placeholder {
+    font-size: 0.8rem;  // 추가
+  }
   
   &:focus {
     outline: none;
@@ -60,19 +78,20 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  background-color: #8b5e3c;
+  background-color: #B9855A;  // #8b5e3c → #B9855A
   color: white;
-  padding: 1rem;
+  padding: 0.8rem;  // 1rem → 0.8rem
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.2rem;  // 1rem → 1.2rem
+  // font-weight: bold; 삭제
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 1rem; /* 비밀번호와 간격 늘림 */
+  // margin-top: 1rem; 삭제
   
   &:hover {
-    background-color: #6e4b2a;
+    background-color: rgb(169, 114, 68);  // #6e4b2a → rgb(169, 114, 68)
+  }  // 닫는 중괄호 추가
   
   &:disabled {
     background-color: #ccc;
@@ -85,6 +104,8 @@ const LinkText = styled.p`
   text-align: center;
   margin-top: 1.5rem;
   color: #915316;
+  font-family: 'Noto Sans KR', sans-serif;  // 추가
+  font-weight: 500;
   
   a {
     color: #A2601E;
@@ -159,7 +180,7 @@ const LoginPage = ({setIsLoggedIn}) => {
   return (
     <LoginContainer>
       <LoginCard>
-        <Title>☕ 로그인</Title>
+        <Title>로그인</Title>
         
         {error && <ErrorMessage>{error}</ErrorMessage>}
         
