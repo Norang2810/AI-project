@@ -35,7 +35,7 @@ export const HeroTitle = styled.h1`
   font-size: 60px; 
   font-weight: 520; 
   line-height: 58px; 
-  color:rgb(255, 255, 255); 
+  color: #FFF8E7; 
   margin-bottom: 2rem;
 `;
 
@@ -43,16 +43,19 @@ export const HeroSubtitle = styled.p`
   font-size: 1.5rem;
   margin-bottom: 2rem;
   opacity: 0.9;
-  color:rgb(255, 189, 91)
+  color: #FFF8E7;
+  font-weight: 550;
+  font-family: 'Noto Sans KR', sans-serif; 
+  font-weight: 700;
 `;
 
 export const CTAButton = styled(Button)`
   width: 400px;
   height: 80px;
-  font-size: 40px;
+  font-size: 35px;
 
   background-color: #B9855A; /* 진한 베이지 */
-  color: white;
+  color: #FFF8E7;
   opacity: 1;
   font-weight: bold;
 
@@ -183,7 +186,7 @@ export const BgOverlay = styled.div`
   inset: 0;
   background:
     radial-gradient(transparent 40%, rgba(0,0,0,0.25)),
-    linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.45) 100%);
+    linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 40%, rgba(0,0,0,0.65) 100%);
   z-index: 0;
   pointer-events: none;
 `;
@@ -308,4 +311,6 @@ export const StepDesc = styled.p`
   color: #A2601E;
   line-height: 1.5;
   margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
 `;
