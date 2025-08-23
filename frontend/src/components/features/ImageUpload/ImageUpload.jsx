@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { apiFetch } from '../../../lib/apiFetch';
 import {
   UploadContainer,
   SectionSubtitle,
@@ -76,7 +77,7 @@ const ImageUpload = ({ onAnalysisComplete }) => {
       formData.append('image', selectedFile);
 
       const token = localStorage.getItem('token');
-      const response = await fetch('/api/menu/analyze', {
+      const response = await apiFetch('/api/menu/analyze', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`

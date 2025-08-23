@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { KakaoLogin } from '../../components/common/Button';
 import styled from 'styled-components';
+import { apiFetch } from '../../lib/apiFetch';
 
 const RegisterContainer = styled.div`
   min-height: 100vh;
@@ -161,7 +162,7 @@ const RegisterPage = ({ setIsLoggedIn }) => {
     }
 
     try {
-     const response = await fetch('/api/auth/register', {
+     const response = await apiFetch('/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
