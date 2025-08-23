@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { apiFetch } from '../../lib/apiFetch';
 import {
   AllergyContainer,
   AllergyCard,
@@ -34,7 +35,7 @@ const AllergyPage = ({ isLoggedIn, setIsLoggedIn }) => {
   // 로그인 상태 확인
   useEffect(() => {
     const checkAuthStatus = () => {
-      const token = localStorage.getItem('token');
+      const token = localStorage.getItem('accessToken');
       const user = localStorage.getItem('user');
       
       if (!token || !user) {
@@ -52,7 +53,7 @@ const AllergyPage = ({ isLoggedIn, setIsLoggedIn }) => {
           throw new Error('Invalid user data');
         }
       } catch (err) {
-        localStorage.removeItem('token');
+        localStorage.removeItem('accessToken');
         localStorage.removeItem('user');
         setError('로그인 정보가 유효하지 않습니다. 다시 로그인해주세요.');
         setTimeout(() => {
@@ -76,13 +77,7 @@ const AllergyPage = ({ isLoggedIn, setIsLoggedIn }) => {
 
   const loadExistingAllergies = async () => {
     try {
-      const token = localStorage.getItem('token');
-      const response = await fetch('/api/user/allergies', {
-        method: 'GET',
-        headers: {
-          'Authorization': `Bearer ${token}`
-        }
-      });
+      const response = await apiFetch('/api/user/allergies');
 
       if (response.ok) {
         const data = await response.json();
@@ -158,20 +153,10 @@ const allergyCategories = {
         item => selectedAllergies[item]
       );
 
-      const token = localStorage.getItem('token');
-      if (!token) {
-        setError('로그인이 필요합니다.');
-        setTimeout(() => {
-          navigate('/login');
-        }, 2000);
-        return;
-      }
-
-      const response = await fetch('/api/user/allergies', {
+      const response = await apiFetch('/api/user/allergies', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
         },
         body: JSON.stringify({
           allergies: selectedItems,
