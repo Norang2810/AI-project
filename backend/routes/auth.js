@@ -48,7 +48,7 @@ router.post('/register', async (req, res) => {
     await user.save();
 
     res.cookie('refreshToken', refreshToken, {
-      httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'strict', path: '/api/auth',
+      httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'strict', path: '/',
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
@@ -114,7 +114,7 @@ router.post('/login', async (req, res) => {
     await user.save();
 
     res.cookie('refreshToken', refreshToken, {
-      httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'strict', path: '/api/auth',
+      httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'strict', path: '/',
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
@@ -238,7 +238,7 @@ router.get('/kakao/callback', async (req, res) => {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
       sameSite: 'strict',
-      path: '/api/auth',
+      path: '/',
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
@@ -274,7 +274,7 @@ router.post('/refresh', async (req, res) => {
     await user.save();
 
     res.cookie('refreshToken', newRefresh, {
-      httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'strict', path: '/api/auth',
+      httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'strict', path: '/',
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
@@ -288,7 +288,7 @@ router.post('/refresh', async (req, res) => {
         if (u) { u.refreshToken = null; await u.save(); }
       }
     } catch(_) {}
-    res.clearCookie('refreshToken', { path: '/api/auth' });
+    res.clearCookie('refreshToken', { path: '/' });
     return res.status(403).json({ success:false, message:'Invalid refresh token', reason:e.name });
   }
 });
@@ -302,7 +302,7 @@ router.post('/logout', async(req, res) => {
       if (user) { user.refreshToken = null; await user.save(); }
     }
   } catch(_) {}
-  res.clearCookie('refreshToken', { path: '/api/auth' });
+  res.clearCookie('refreshToken', { path: '/' });
   return res.status(200).json({ success: true, message: '로그아웃 되었습니다.' });
 });
 
