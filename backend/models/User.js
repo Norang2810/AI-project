@@ -33,6 +33,7 @@ module.exports = (sequelize) => {
       allowNull: true,
       unique: 'users_kakaoid_unique',
     },
+    refreshToken: { type: DataTypes.TEXT, allowNull: true },
   }, {
     tableName: 'users',
     freezeTableName: true,

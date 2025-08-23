@@ -3,6 +3,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 const path = require('path');
+const cookieParser = require('cookie-parser');
 
 // dotenv가 설치되어 있지 않을 수 있으므로 try-catch로 처리
 try {
@@ -45,7 +46,8 @@ app.use(cors({
       callback(new Error('CORS 정책에 의해 차단됨'));
     }
   },
-  credentials: true
+  credentials: true,
+  allowedHeaders: ['Content-Type','Authorization'],
 }));
 
 // Rate limiting
@@ -57,6 +59,7 @@ app.use(limiter);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser()); 
 
 // 정적 파일 서빙 (업로드된 이미지)
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));

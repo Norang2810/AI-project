@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
+import { apiFetch, setTokens } from '../../../lib/apiFetch';
 
 const KakaoLoginRedirect = ({ setIsLoggedIn }) => {
   const navigate = useNavigate();
@@ -10,16 +11,10 @@ const KakaoLoginRedirect = ({ setIsLoggedIn }) => {
     
     if (token) {
       // 토큰을 localStorage에 저장
-      localStorage.setItem('token', token);
+      setTokens(token);
       
       // 사용자 정보를 가져오기 위해 서버에 요청
-      fetch('/api/auth/me', {
-        method: 'GET',
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Content-Type': 'application/json',
-        },
-      })
+      apiFetch('/api/auth/me')
       .then(response => response.json())
       .then(data => {
         if (data.success) {

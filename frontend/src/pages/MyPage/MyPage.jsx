@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { apiFetch } from '../../lib/apiFetch';
 import {
   MyPageContainer,
   NavigationPanel,
@@ -68,13 +69,7 @@ const MyPage = () => {
 
   const fetchUserInfo = async () => {
     try {
-      const token = localStorage.getItem('token');
-     const response = await fetch('/api/user/profile', {
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Content-Type': 'application/json'
-        }
-      });
+      const response = await apiFetch('/api/user/profile');
 
       if (response.ok) {
         const data = await response.json();
@@ -87,13 +82,7 @@ const MyPage = () => {
 
   const fetchAllergies = async () => {
     try {
-      const token = localStorage.getItem('token');
-     const response = await fetch('/api/user/allergies', {
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Content-Type': 'application/json'
-        }
-      });
+      const response = await apiFetch('/api/user/allergies');
 
       if (response.ok) {
         const data = await response.json();
@@ -115,13 +104,10 @@ const MyPage = () => {
       return setMessage({ type: 'error', text: '비밀번호는 6자 이상이어야 합니다.' });
     }
     try{
-      const token = localStorage.getItem('token');
-
-      const response = await fetch('api/user/password', {
+      const response = await apiFetch('/api/user/password', {
         method : 'PATCH',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
         },
         body: JSON.stringify({
           currentPassword,

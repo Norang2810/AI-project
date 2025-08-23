@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { KakaoLogin } from '../../components/common/Button';
 import styled from 'styled-components';
+import { apiFetch } from '../../lib/apiFetch';
 
 // 폰트 로드 (페이지별로)
 const FontStyle = styled.div`
@@ -174,7 +175,7 @@ const RegisterPage = ({ setIsLoggedIn }) => {
     }
 
     try {
-     const response = await fetch('/api/auth/register', {
+     const response = await apiFetch('/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
