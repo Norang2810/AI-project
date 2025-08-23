@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { KakaoLogin } from '../../components/common/Button';
 import styled from 'styled-components';
+import { apiFetch, setTokens } from '../../lib/apiFetch';
 
 const LoginContainer = styled.div`
   min-height: 100vh;
@@ -128,7 +129,7 @@ const LoginPage = ({setIsLoggedIn}) => {
     setError('');
 
     try {
-      const response = await fetch('/api/auth/login', {
+      const response = await apiFetch('/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -140,7 +141,7 @@ const LoginPage = ({setIsLoggedIn}) => {
 
       if (response.ok && data.success) {
         // 토큰을 localStorage에 저장
-        localStorage.setItem('token', data.data.token);
+        setTokens(data.data.accessToken);
         localStorage.setItem('user', JSON.stringify(data.data.user));
         
         setIsLoggedIn(true); 

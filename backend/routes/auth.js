@@ -2,6 +2,12 @@ const express = require('express');
 const { User } = require('../models');
 const { generateToken } = require('../middleware/auth');
 const axios = require('axios');
+const {
+  generateAccessToken,
+  generateRefreshToken,
+  verifyAccessToken,
+  verifyRefreshToken,
+} = require('../middleware/auth');
 
 const router = express.Router();
 
@@ -36,7 +42,15 @@ router.post('/register', async (req, res) => {
     });
 
     // 토큰 생성
-    const token = generateToken(user.id);
+    const accessToken = generateAccessToken(user.id);
+    const refreshToken = generateRefreshToken(user.id);
+    user.refreshToken = refreshToken;
+    await user.save();
+
+    res.cookie('refreshToken', refreshToken, {
+      httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'strict', path: '/api/auth',
+      maxAge: 7 * 24 * 60 * 60 * 1000,
+    });
 
     res.status(201).json({
       success: true,
@@ -48,7 +62,7 @@ router.post('/register', async (req, res) => {
           email: user.email,
           phone: user.phone
         },
-        token
+        accessToken
       }
     });
 
@@ -93,7 +107,16 @@ router.post('/login', async (req, res) => {
     }
 
     // 토큰 생성
-    const token = generateToken(user.id);
+    const accessToken = generateAccessToken(user.id);
+    const refreshToken = generateRefreshToken(user.id);
+
+    user.refreshToken = refreshToken;
+    await user.save();
+
+    res.cookie('refreshToken', refreshToken, {
+      httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'strict', path: '/api/auth',
+      maxAge: 7 * 24 * 60 * 60 * 1000,
+    });
 
     res.json({
       success: true,
@@ -105,7 +128,7 @@ router.post('/login', async (req, res) => {
           email: user.email,
           phone: user.phone
         },
-        token
+        accessToken
       }
     });
 
@@ -124,20 +147,18 @@ const KAKAO_REST_API_KEY = process.env.KAKAO_REST_API_KEY;
 router.get('/kakao/callback', async (req, res) => {
   const { code, error } = req.query;
 
+  const scheme = req.headers['x-forwarded-proto'] || req.protocol;
+    const host = req.headers['x-forwarded-host'] || req.headers.host;
+    const baseOrigin = `${scheme}://${host}`;
+
   // 카카오에서 오류를 반환한 경우
   if (error) {
     console.error('카카오 인증 오류:', error);
-    const scheme = req.headers['x-forwarded-proto'] || req.protocol;
-    const host = req.headers['x-forwarded-host'] || req.headers.host;
-    const baseOrigin = `${scheme}://${host}`;
     return res.redirect(`${baseOrigin}/login?error=kakao_auth_failed`);
   }
 
   if (!code) {
     console.error('카카오 인가 코드가 없습니다');
-    const scheme = req.headers['x-forwarded-proto'] || req.protocol;
-    const host = req.headers['x-forwarded-host'] || req.headers.host;
-    const baseOrigin = `${scheme}://${host}`;
     return res.redirect(`${baseOrigin}/login?error=no_auth_code`);
   }
 
@@ -208,12 +229,22 @@ router.get('/kakao/callback', async (req, res) => {
       console.log('기존 카카오 사용자 찾음:', user.id);
     }
 
-    const token = generateToken(user.id);
-    console.log('JWT 토큰 생성 완료');
+    const accessToken  = generateAccessToken(user.id);
+    const refreshToken = generateRefreshToken(user.id);
+    user.refreshToken = refreshToken;
+    await user.save();
+
+    res.cookie('refreshToken', refreshToken, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'strict',
+      path: '/api/auth',
+      maxAge: 7 * 24 * 60 * 60 * 1000,
+    });
 
     // 프론트 경로도 동일 오리진 기준으로 리다이렉트
     const baseOrigin = `http://localhost:3000`;
-    return res.redirect(`${baseOrigin}/kakao-login?token=${token}`);    
+    return res.redirect(`${baseOrigin}/kakao-login?token=${accessToken}`);
 
   } catch (error) {
     console.error('카카오 로그인 실패:', error.response?.data || error.message);
@@ -225,8 +256,54 @@ router.get('/kakao/callback', async (req, res) => {
   }
 });
 
-router.post('/logout', (req, res) => {
-  res.status(200).json({ success: true, message: '로그아웃 되었습니다.' });
+// access token 재발급급
+router.post('/refresh', async (req, res) => {
+  try {
+    const rt = req.cookies?.refreshToken;
+    if (!rt) return res.status(401).json({ success:false, message:'No refresh token' });
+
+    const user = await User.findOne({ where: { refreshToken: rt } });
+    if (!user) return res.status(403).json({ success:false, message:'Forbidden' });
+
+    verifyRefreshToken(rt); // 토큰 자체 유효성 검증
+
+    const newAccess  = generateAccessToken(user.id);
+    const newRefresh = generateRefreshToken(user.id);
+
+    user.refreshToken = newRefresh;
+    await user.save();
+
+    res.cookie('refreshToken', newRefresh, {
+      httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'strict', path: '/api/auth',
+      maxAge: 7 * 24 * 60 * 60 * 1000,
+    });
+
+    return res.json({ success:true, accessToken: newAccess });
+  } catch (e) {
+    // 만료/위조 => 세션 종료
+    try {
+      const rt = req.cookies?.refreshToken;
+      if (rt) {
+        const u = await User.findOne({ where: { refreshToken: rt } });
+        if (u) { u.refreshToken = null; await u.save(); }
+      }
+    } catch(_) {}
+    res.clearCookie('refreshToken', { path: '/api/auth' });
+    return res.status(403).json({ success:false, message:'Invalid refresh token', reason:e.name });
+  }
+});
+
+
+router.post('/logout', async(req, res) => {
+  try {
+    const rt = req.cookies?.refreshToken;
+    if (rt) {
+      const user = await User.findOne({ where: { refreshToken: rt } });
+      if (user) { user.refreshToken = null; await user.save(); }
+    }
+  } catch(_) {}
+  res.clearCookie('refreshToken', { path: '/api/auth' });
+  return res.status(200).json({ success: true, message: '로그아웃 되었습니다.' });
 });
 
 // 사용자 정보 가져오기
