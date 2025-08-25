@@ -137,8 +137,59 @@ router.post('/analyze', authenticateToken, upload.single('image'), async (req, r
     const aiResult = aiResponse.data;
     console.log('AI 서버 응답:', JSON.stringify(aiResult, null, 2));
     
+    // 🤖 Gemini API로 메뉴명 완성 (무조건 호출)
+    let finalResult = aiResult;
+    console.log('🚀 Gemini API로 메뉴명 완성 시작...');
+    
+    try {
+      const geminiPrompt = `
+      다음은 카페 메뉴판에서 OCR로 추출된 텍스트입니다.
+      
+      원본 텍스트: ${aiResult.extracted_text}
+      번역된 텍스트: ${aiResult.translated_text || '번역 없음'}
+      
+      이 텍스트를 분석하여 카페 음료 메뉴명들을 정확하게 추출해주세요.
+      다음 형식으로 JSON 배열로 응답해주세요:
+      ["메뉴명1", "메뉴명2", "메뉴명3"]
+      
+      주의사항:
+      - 음료 메뉴명만 추출 (커피, 차, 주스, 스무디 등)
+      - 가격, 설명, 기타 정보는 제외
+      - 정확하지 않은 텍스트는 제외
+      - 최대 10개까지 추출
+      - 한글로 응답 (가능한 경우)
+      `;
+      
+      const geminiResponse = await axios.post('http://localhost:3000/api/gemini/enhance', {
+        prompt: geminiPrompt,
+        text: aiResult.extracted_text,
+        maxTokens: 300
+      }, {
+        timeout: 30000
+      });
+      
+      if (geminiResponse.data.success && geminiResponse.data.enhancedText) {
+        try {
+          const enhancedText = JSON.parse(geminiResponse.data.enhancedText);
+          if (Array.isArray(enhancedText) && enhancedText.length > 0) {
+            // Gemini API로 보완된 텍스트로 결과 업데이트
+            finalResult = {
+              ...aiResult,
+              enhanced_text: enhancedText.join(' '),
+              enhanced_by_gemini: true
+            };
+            console.log('✅ Gemini API로 메뉴명 완성 완료:', enhancedText);
+          }
+        } catch (parseError) {
+          console.warn('⚠️ Gemini API 응답을 JSON으로 파싱할 수 없음:', parseError);
+        }
+      }
+    } catch (geminiError) {
+      console.warn('⚠️ Gemini API 호출 실패:', geminiError.message);
+    }
+    
     // 분석 결과를 상세하게 가공
-    const detailedAnalysis = await processAnalysisResult(aiResult, allergyNames,userId, req.file.path);
+    const detailedAnalysis = await processAnalysisResult(finalResult, allergyNames, userId, req.file.path);
     
     // 임시 파일 삭제
     fs.unlinkSync(req.file.path);
@@ -172,6 +223,7 @@ async function processAnalysisResult(aiResult, userAllergies,userId, imageUrl) {
     console.error('AI 결과 형식 오류:', aiResult);
     return {
       extractedText: aiResult?.extracted_text || '텍스트 추출 실패',
+      enhancedText: aiResult?.enhanced_text || null,
       menuAnalysis: [],
       userAllergies: userAllergies,
       timestamp: new Date().toISOString(),
@@ -242,6 +294,7 @@ async function processAnalysisResult(aiResult, userAllergies,userId, imageUrl) {
   
   return {
     extractedText: aiResult.extracted_text,
+    enhancedText: aiResult.enhanced_text || null,
     menuAnalysis: menuAnalysis,
     userAllergies: userAllergies,
     timestamp: new Date().toISOString()

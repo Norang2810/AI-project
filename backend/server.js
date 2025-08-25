@@ -19,6 +19,7 @@ const { User, UserAllergy, MenuAnalysis } = require('./models');
 const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/user');
 const menuRoutes = require('./routes/menu');
+const geminiRoutes = require('./routes/gemini');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -83,6 +84,7 @@ const initializeDatabase = async () => {
 app.use('/api/auth', authRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/menu', menuRoutes);
+app.use('/api/gemini', geminiRoutes);
 
 // 기본 라우트
 app.get('/api/health', (req, res) => {

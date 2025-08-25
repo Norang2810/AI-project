@@ -33,6 +33,7 @@ services:
       - JWT_SECRET=${JWT_SECRET}
       - CORS_ORIGIN=http://localhost:3000
       - KAKAO_REST_API_KEY=${KAKAO_REST_API_KEY}
+      - GEMINI_API_KEY=REMOVED_GEMINI_API_KEY
     depends_on:
       mysql:
         condition: service_healthy

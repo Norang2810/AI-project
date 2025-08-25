@@ -275,7 +275,7 @@ const AnalysisResult = ({ analysis, onNotification }) => {
       <Section>
         <SectionTitle>
           <SectionIcon>📝</SectionIcon>
-          추출된 텍스트
+          추출된 텍스트 (OCR)
         </SectionTitle>
         <div style={{ 
           background: '#f8fafc', 
@@ -294,6 +294,81 @@ const AnalysisResult = ({ analysis, onNotification }) => {
     );
   };
 
+  const renderEnhancedText = (text) => {
+    if (!text) return null;
+    
+    try {
+      // JSON 문자열을 파싱하여 배열로 변환
+      const menuNames = JSON.parse(text);
+      if (Array.isArray(menuNames)) {
+        return (
+          <Section>
+            <SectionTitle>
+              <SectionIcon>🤖</SectionIcon>
+              완성된 메뉴명 (Gemini AI)
+            </SectionTitle>
+            <div style={{ 
+              background: '#f0f9ff', 
+              padding: '1rem', 
+              borderRadius: '10px',
+              border: '2px solid #0ea5e9'
+            }}>
+              <div style={{ 
+                display: 'flex', 
+                flexWrap: 'wrap', 
+                gap: '0.5rem',
+                marginBottom: '1rem'
+              }}>
+                {menuNames.map((menuName, index) => (
+                  <span key={index} style={{
+                    background: '#0ea5e9',
+                    color: 'white',
+                    padding: '0.5rem 1rem',
+                    borderRadius: '20px',
+                    fontSize: '14px',
+                    fontWeight: '500'
+                  }}>
+                    {menuName}
+                  </span>
+                ))}
+              </div>
+              <div style={{ 
+                fontSize: '12px', 
+                color: '#64748b',
+                fontStyle: 'italic'
+              }}>
+                💡 Gemini AI가 OCR로 추출된 불완전한 텍스트를 분석하여 카페 메뉴명으로 완성했습니다.
+              </div>
+            </div>
+          </Section>
+        );
+      }
+    } catch (error) {
+      // JSON 파싱 실패 시 일반 텍스트로 표시
+      return (
+        <Section>
+          <SectionTitle>
+            <SectionIcon>🤖</SectionIcon>
+            완성된 메뉴명 (Gemini AI)
+          </SectionTitle>
+          <div style={{ 
+            background: '#f0f9ff', 
+            padding: '1rem', 
+            borderRadius: '10px',
+            border: '2px solid #0ea5e9',
+            fontFamily: 'monospace',
+            fontSize: '14px',
+            whiteSpace: 'pre-wrap'
+          }}>
+            {text}
+          </div>
+        </Section>
+      );
+    }
+    
+    return null;
+  };
+
   return (
     <AnalysisContainer>
       <AnalysisHeader>
@@ -301,6 +376,15 @@ const AnalysisResult = ({ analysis, onNotification }) => {
           AI가 분석한 메뉴판의 알레르기 성분 정보를 확인하세요
         </AnalysisSubtitle>
       </AnalysisHeader>
+      
+      {/* 추출된 텍스트와 Gemini로 완성된 메뉴명 표시 */}
+      {analysis.extractedText && (
+        <div key="extracted-text">{renderExtractedText(analysis.extractedText)}</div>
+      )}
+      
+      {analysis.enhancedText && (
+        <div key="enhanced-text">{renderEnhancedText(analysis.enhancedText)}</div>
+      )}
       
       {analysis.menuAnalysis.map((item, index) => {
         switch (item.type) {
