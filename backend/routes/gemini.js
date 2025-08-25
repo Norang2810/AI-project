@@ -42,9 +42,9 @@ router.post('/enhance', async (req, res) => {
         
         const generationConfig = {
           maxOutputTokens: maxTokens,
-          temperature: 0.1, // 더 일관된 응답을 위해 더 낮춤
-          topP: 0.8,
-          topK: 15,
+          temperature: 0.0, // 완전히 일관된 응답을 위해 0으로 설정
+          topP: 0.1, // 더 정확한 응답을 위해 낮춤
+          topK: 1, // 가장 확실한 응답만 선택
           candidateCount: 1,
         };
 
