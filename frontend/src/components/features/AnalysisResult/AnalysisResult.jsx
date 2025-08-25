@@ -403,8 +403,11 @@ const AnalysisResult = ({ analysis, onNotification }) => {
     );
   };
 
-  const renderExtractedText = (text) => {
-    if (!text) return null;
+
+
+  // OCR 텍스트와 번역된 메뉴명을 하나의 연속된 섹션으로 표시
+  const renderExtractedAndTranslated = (extractedText, enhancedText) => {
+    if (!extractedText) return null;
     
     return (
       <Section>
@@ -412,6 +415,8 @@ const AnalysisResult = ({ analysis, onNotification }) => {
           <SectionIcon>📝</SectionIcon>
           추출된 텍스트 (OCR)
         </SectionTitle>
+        
+        {/* OCR 추출된 텍스트 */}
         <div style={{ 
           background: '#f8fafc', 
           padding: '1rem', 
@@ -421,87 +426,41 @@ const AnalysisResult = ({ analysis, onNotification }) => {
           whiteSpace: 'pre-wrap',
           maxHeight: '200px',
           overflow: 'auto',
-          border: '2px solid #e5e7eb'
+          border: '2px solid #e5e7eb',
+          marginBottom: '0'
         }}>
-          {text}
+          {extractedText}
+        </div>
+        
+        {/* 아래 방향 화살표 */}
+        <div style={{
+          textAlign: 'center',
+          margin: '1rem 0',
+          fontSize: '2rem',
+          color: '#6b7280'
+        }}>
+          ↓
+        </div>
+        
+        {/* 번역된 메뉴명 */}
+        <div style={{
+          background: '#f0f9ff',
+          border: '1px solid #0ea5e9',
+          borderRadius: '10px',
+          padding: '1rem',
+          marginTop: '0'
+        }}>
+          <div style={{
+            fontSize: '14px',
+            color: '#0c4a6e',
+            fontWeight: '500',
+            lineHeight: '1.5'
+          }}>
+            {enhancedText ? enhancedText.replace(/^json\s*/, '') : '번역된 메뉴명이 없습니다.'}
+          </div>
         </div>
       </Section>
     );
-  };
-
-  const renderEnhancedText = (text) => {
-    if (!text) return null;
-    
-    try {
-      // JSON 문자열을 파싱하여 배열로 변환
-      const menuNames = JSON.parse(text);
-      if (Array.isArray(menuNames)) {
-        return (
-          <Section>
-            <SectionTitle>
-              <SectionIcon>🤖</SectionIcon>
-              완성된 메뉴명 (Gemini AI)
-            </SectionTitle>
-            <div style={{ 
-              background: '#f0f9ff', 
-              padding: '1rem', 
-              borderRadius: '10px',
-              border: '2px solid #0ea5e9'
-            }}>
-              <div style={{ 
-                display: 'flex', 
-                flexWrap: 'wrap', 
-                gap: '0.5rem',
-                marginBottom: '1rem'
-              }}>
-                {menuNames.map((menuName, index) => (
-                  <span key={index} style={{
-                    background: '#0ea5e9',
-                    color: 'white',
-                    padding: '0.5rem 1rem',
-                    borderRadius: '20px',
-                    fontSize: '14px',
-                    fontWeight: '500'
-                  }}>
-                    {menuName}
-                  </span>
-                ))}
-              </div>
-              <div style={{ 
-                fontSize: '12px', 
-                color: '#64748b',
-                fontStyle: 'italic'
-              }}>
-                💡 Gemini AI가 OCR로 추출된 불완전한 텍스트를 분석하여 카페 메뉴명으로 완성했습니다.
-              </div>
-            </div>
-          </Section>
-        );
-      }
-    } catch (error) {
-      // JSON 파싱 실패 시 일반 텍스트로 표시
-      return (
-        <Section>
-          <SectionTitle>
-            <SectionIcon>🤖</SectionIcon>
-            완성된 메뉴명 (Gemini AI)
-          </SectionTitle>
-          <div style={{ 
-            background: '#f0f9ff', 
-            padding: '1rem', 
-            borderRadius: '10px',
-            border: '2px solid #0ea5e9',
-            fontFamily: 'monospace',
-            fontSize: '14px',
-            whiteSpace: 'pre-wrap'
-          }}>
-            {text}
-          </div>
-        </Section>
-      );
-    }
-    
-    return null;
   };
 
   return (
@@ -512,13 +471,11 @@ const AnalysisResult = ({ analysis, onNotification }) => {
         </AnalysisSubtitle>
       </AnalysisHeader>
       
-      {/* 추출된 텍스트와 Gemini로 완성된 메뉴명 표시 */}
+      {/* OCR 텍스트와 번역된 메뉴명을 하나의 연속된 섹션으로 표시 */}
       {analysis.extractedText && (
-        <div key="extracted-text">{renderExtractedText(analysis.extractedText)}</div>
-      )}
-      
-      {analysis.enhancedText && (
-        <div key="enhanced-text">{renderEnhancedText(analysis.enhancedText)}</div>
+        <div key="extracted-and-translated">
+          {renderExtractedAndTranslated(analysis.extractedText, analysis.enhancedText)}
+        </div>
       )}
       
              {analysis.menuAnalysis.map((item, index) => {
