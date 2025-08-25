@@ -109,16 +109,109 @@ const AnalysisResult = ({ analysis, onNotification }) => {
     return '메뉴에서 발견되지 않음';
   };
 
+  // 짧은 메뉴명만 추출하는 함수
+  const findShortMenuName = (extractedText, ingredient) => {
+    if (!extractedText) return '텍스트 없음';
+    
+    const lines = extractedText.split('\n');
+    const similarWords = {
+      '우유': ['milk', 'latte', 'cappuccino', 'americano', 'ltt', 'mocil'],
+      '계란': ['egg', 'eggs'],
+      '밀': ['wheat', 'bread', 'croissant'],
+      '치즈': ['cheese', 'ham cheese']
+    };
+    
+    // 직접 매칭
+    for (const line of lines) {
+      if (line.toLowerCase().includes(ingredient.toLowerCase())) {
+        const words = line.split(/\s+/);
+        const menuWord = words.find(word => 
+          word.length > 2 && /[a-zA-Z가-힣]/.test(word)
+        );
+        if (menuWord) return menuWord.substring(0, 15);
+      }
+    }
+    
+    // 유사한 단어로 매칭
+    if (similarWords[ingredient]) {
+      for (const word of similarWords[ingredient]) {
+        for (const line of lines) {
+          if (line.toLowerCase().includes(word.toLowerCase())) {
+            const words = line.split(/\s+/);
+            const menuWord = words.find(w => 
+              w.length > 2 && /[a-zA-Z가-힣]/.test(w)
+            );
+            if (menuWord) return menuWord.substring(0, 15);
+          }
+        }
+      }
+    }
+    
+    return '메뉴명';
+  };
+
+  // Gemini 완성된 메뉴명에서 해당 성분이 포함된 메뉴 찾기
+  const findGeminiMenuName = (enhancedText, ingredient) => {
+    if (!enhancedText) return '완성된 메뉴명 없음';
+    
+    try {
+      const menuNames = JSON.parse(enhancedText);
+      if (Array.isArray(menuNames)) {
+        // 우유 관련 메뉴 찾기 (더 정확한 매칭)
+        if (ingredient === '우유') {
+          const milkMenus = menuNames.filter(menu => 
+            menu.toLowerCase().includes('라떼') || 
+            menu.toLowerCase().includes('카푸치노') ||
+            menu.toLowerCase().includes('모카') ||
+            menu.toLowerCase().includes('마끼아또') ||
+            menu.toLowerCase().includes('밀크셰이크') ||
+            menu.toLowerCase().includes('우유')
+          );
+          return milkMenus[0] || menuNames[0] || '카페 메뉴';
+        }
+        
+        // 계란 관련 메뉴
+        if (ingredient === '계란') {
+          const eggMenus = menuNames.filter(menu => 
+            menu.toLowerCase().includes('에그') ||
+            menu.toLowerCase().includes('계란')
+          );
+          return eggMenus[0] || menuNames[0] || '카페 메뉴';
+        }
+        
+        // 밀 관련 메뉴
+        if (ingredient === '밀') {
+          const wheatMenus = menuNames.filter(menu => 
+            menu.toLowerCase().includes('크로아상') ||
+            menu.toLowerCase().includes('브레드') ||
+            menu.toLowerCase().includes('토스트')
+          );
+          return wheatMenus[0] || menuNames[0] || '카페 메뉴';
+        }
+        
+        // 치즈 관련 메뉴
+        if (ingredient === '치즈') {
+          const cheeseMenus = menuNames.filter(menu => 
+            menu.toLowerCase().includes('치즈') ||
+            menu.toLowerCase().includes('햄치즈')
+          );
+          return cheeseMenus[0] || menuNames[0] || '카페 메뉴';
+        }
+        
+        // 기본적으로 첫 번째 메뉴 반환
+        return menuNames[0] || '카페 메뉴';
+      }
+    } catch (error) {
+      // JSON 파싱 실패 시
+      return '카페 메뉴';
+    }
+    
+    return '카페 메뉴';
+  };
+
   if (!analysis) return null;
 
-  const renderRiskLevel = (riskInfo) => {
-    return (
-      <RiskLevelBadge color={riskInfo.color}>
-        <span>{riskInfo.icon}</span>
-        <span>{riskInfo.title}</span>
-      </RiskLevelBadge>
-    );
-  };
+
 
   const renderIngredients = (ingredients, riskAnalysis) => {
     // 차트 데이터 준비
@@ -216,27 +309,48 @@ const AnalysisResult = ({ analysis, onNotification }) => {
              </div>
              <IngredientGrid>
                {riskAnalysis.danger.map((item, index) => (
-                 <IngredientCard key={`danger-${item.ingredient}-${index}`} risk="danger">
-                   <div style={{ fontWeight: '600', marginBottom: '0.5rem' }}>
-                     {item.ingredient}
-                   </div>
-                   <div style={{ fontSize: '0.9rem', color: '#dc2626' }}>
-                     매칭된 알레르기: {item.matchedAllergies.join(', ')}
-                   </div>
-                   {/* 추출된 텍스트에서 해당 성분이 발견된 부분 표시 */}
-                   {analysis.extractedText && (
-                     <div style={{ 
-                       marginTop: '0.5rem', 
-                       padding: '0.5rem', 
-                       background: '#fef2f2', 
-                       borderRadius: '5px',
-                       fontSize: '0.8rem',
-                       color: '#991b1b'
-                     }}>
-                       <strong>발견된 메뉴:</strong> {findMenuWithIngredient(analysis.extractedText, item.ingredient)}
-                     </div>
-                   )}
-                 </IngredientCard>
+                                   <IngredientCard key={`danger-${item.ingredient}-${index}`} risk="danger">
+                    <div style={{ fontWeight: '600', marginBottom: '0.5rem', color: '#dc2626' }}>
+                      {item.ingredient}
+                    </div>
+                    {/* 추출된 메뉴명 → Gemini 완성된 메뉴명 표시 */}
+                    {analysis.extractedText && analysis.enhancedText && (
+                      <div style={{ 
+                        marginTop: '0.5rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                        flexWrap: 'wrap'
+                      }}>
+                        <div style={{ 
+                          padding: '0.3rem 0.6rem', 
+                          background: '#fef2f2', 
+                          borderRadius: '5px',
+                          fontSize: '0.8rem',
+                          color: '#991b1b',
+                          border: '1px solid #fecaca',
+                          maxWidth: '200px',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          whiteSpace: 'nowrap'
+                        }}>
+                          {findShortMenuName(analysis.extractedText, item.ingredient)}
+                        </div>
+                        <span style={{ color: '#dc2626', fontSize: '1.2rem' }}>→</span>
+                        <div style={{ 
+                          padding: '0.3rem 0.6rem', 
+                          background: '#f0f9ff', 
+                          borderRadius: '5px',
+                          fontSize: '0.8rem',
+                          color: '#0c4a6e',
+                          border: '1px solid #0ea5e9',
+                          fontWeight: '500'
+                        }}>
+                          {findGeminiMenuName(analysis.enhancedText, item.ingredient)}
+                        </div>
+                      </div>
+                    )}
+                  </IngredientCard>
                ))}
              </IngredientGrid>
            </div>
@@ -245,44 +359,7 @@ const AnalysisResult = ({ analysis, onNotification }) => {
     );
   };
 
-  const renderRiskAssessment = (riskData) => {
-    const { riskInfo, mlPrediction, ruleBasedAnalysis } = riskData;
-    
-    // 위험도 점수 차트 데이터
-    const riskScoreData = [
-      { name: 'AI 예측', value: mlPrediction?.confidence * 100 || 0, color: '#3b82f6' },
-      { name: '규칙 기반', value: ruleBasedAnalysis?.risky_count / ruleBasedAnalysis?.total_ingredients * 100 || 0, color: '#ef4444' }
-    ].filter(item => item.value > 0); // 값이 0인 항목 제거
-    
-    return (
-      <Section>
-        <SectionTitle>
-          <SectionIcon>⚠️</SectionIcon>
-          알레르기 위험도 평가
-        </SectionTitle>
-        
-        <div style={{ marginBottom: '1.5rem', textAlign: 'center' }}>
-          {renderRiskLevel(riskInfo)}
-        </div>
-        
-        {/* 위험도 점수 차트 - 데이터가 있을 때만 표시 */}
-        {riskScoreData.length > 0 && (
-          <ChartContainer>
-            <ChartTitle>위험도 점수 비교</ChartTitle>
-            <ResponsiveContainer width="100%" height={250}>
-              <BarChart data={riskScoreData}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip formatter={(value) => `${value.toFixed(1)}%`} />
-                <Bar dataKey="value" fill="#A2601E" barSize={40} />
-              </BarChart>
-            </ResponsiveContainer>
-          </ChartContainer>
-        )}
-      </Section>
-    );
-  };
+
 
   const renderRecommendations = (recommendations) => {
     return (
@@ -444,18 +521,16 @@ const AnalysisResult = ({ analysis, onNotification }) => {
         <div key="enhanced-text">{renderEnhancedText(analysis.enhancedText)}</div>
       )}
       
-      {analysis.menuAnalysis.map((item, index) => {
-        switch (item.type) {
-          case 'ingredients':
-            return <div key={`${item.type}-${index}`}>{renderIngredients(item.data.ingredients, item.data.riskAnalysis)}</div>;
-          case 'risk_assessment':
-            return <div key={`${item.type}-${index}`}>{renderRiskAssessment(item.data)}</div>;
-          case 'recommendations':
-            return <div key={`${item.type}-${index}`}>{renderRecommendations(item.data)}</div>;
-          default:
-            return null;
-        }
-      })}
+             {analysis.menuAnalysis.map((item, index) => {
+         switch (item.type) {
+           case 'ingredients':
+             return <div key={`${item.type}-${index}`}>{renderIngredients(item.data.ingredients, item.data.riskAnalysis)}</div>;
+           case 'recommendations':
+             return <div key={`${item.type}-${index}`}>{renderRecommendations(item.data)}</div>;
+           default:
+             return null;
+         }
+       })}
       
       <InfoCard>
         <InfoTitle>📅 분석 정보</InfoTitle>
