@@ -68,6 +68,47 @@ const AnalysisResult = ({ analysis, onNotification }) => {
     }
   };
 
+  // 추출된 텍스트에서 특정 성분이 포함된 메뉴를 찾는 함수
+  const findMenuWithIngredient = (extractedText, ingredient) => {
+    if (!extractedText) return '텍스트 없음';
+    
+    // 추출된 텍스트를 줄 단위로 분할
+    const lines = extractedText.split('\n');
+    
+    // 해당 성분이 포함된 줄들을 찾기
+    const matchingLines = lines.filter(line => 
+      line.toLowerCase().includes(ingredient.toLowerCase())
+    );
+    
+    if (matchingLines.length > 0) {
+      // 첫 번째 매칭된 줄을 반환 (너무 길면 자르기)
+      const firstMatch = matchingLines[0].trim();
+      return firstMatch.length > 100 ? firstMatch.substring(0, 100) + '...' : firstMatch;
+    }
+    
+    // 직접 매칭이 안 되면 유사한 단어 찾기
+    const similarWords = {
+      '우유': ['milk', 'latte', 'cappuccino', 'americano'],
+      '계란': ['egg', 'eggs'],
+      '밀': ['wheat', 'bread', 'croissant'],
+      '치즈': ['cheese', 'ham cheese']
+    };
+    
+    if (similarWords[ingredient]) {
+      for (const word of similarWords[ingredient]) {
+        const found = lines.find(line => 
+          line.toLowerCase().includes(word.toLowerCase())
+        );
+        if (found) {
+          const result = found.trim();
+          return result.length > 100 ? result.substring(0, 100) + '...' : result;
+        }
+      }
+    }
+    
+    return '메뉴에서 발견되지 않음';
+  };
+
   if (!analysis) return null;
 
   const renderRiskLevel = (riskInfo) => {
@@ -159,30 +200,47 @@ const AnalysisResult = ({ analysis, onNotification }) => {
           </StatCard>
         </StatsGrid>
 
-        {/* 위험한 성분 정보 - 고정 표시 */}
-        {riskAnalysis.danger.length > 0 && (
-          <div style={{ marginTop: '1.5rem' }}>
-            <div style={{ 
-              fontSize: '1.1rem', 
-              fontWeight: '600', 
-              color: '#dc2626', 
-              marginBottom: '1rem',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.5rem'
-            }}>
-              ⚠️ 위험한 성분 발견
-            </div>
-            <IngredientGrid>
-              {riskAnalysis.danger.map((item, index) => (
-                <IngredientCard key={`danger-${item.ingredient}-${index}`} risk="danger">
-                  {item.ingredient}
-                  <small>매칭된 알레르기: {item.matchedAllergies.join(', ')}</small>
-                </IngredientCard>
-              ))}
-            </IngredientGrid>
-          </div>
-        )}
+                 {/* 위험한 성분 정보 - 고정 표시 */}
+         {riskAnalysis.danger.length > 0 && (
+           <div style={{ marginTop: '1.5rem' }}>
+             <div style={{ 
+               fontSize: '1.1rem', 
+               fontWeight: '600', 
+               color: '#dc2626', 
+               marginBottom: '1rem',
+               display: 'flex',
+               alignItems: 'center',
+               gap: '0.5rem'
+             }}>
+               ⚠️ 위험한 성분 발견
+             </div>
+             <IngredientGrid>
+               {riskAnalysis.danger.map((item, index) => (
+                 <IngredientCard key={`danger-${item.ingredient}-${index}`} risk="danger">
+                   <div style={{ fontWeight: '600', marginBottom: '0.5rem' }}>
+                     {item.ingredient}
+                   </div>
+                   <div style={{ fontSize: '0.9rem', color: '#dc2626' }}>
+                     매칭된 알레르기: {item.matchedAllergies.join(', ')}
+                   </div>
+                   {/* 추출된 텍스트에서 해당 성분이 발견된 부분 표시 */}
+                   {analysis.extractedText && (
+                     <div style={{ 
+                       marginTop: '0.5rem', 
+                       padding: '0.5rem', 
+                       background: '#fef2f2', 
+                       borderRadius: '5px',
+                       fontSize: '0.8rem',
+                       color: '#991b1b'
+                     }}>
+                       <strong>발견된 메뉴:</strong> {findMenuWithIngredient(analysis.extractedText, item.ingredient)}
+                     </div>
+                   )}
+                 </IngredientCard>
+               ))}
+             </IngredientGrid>
+           </div>
+         )}
       </Section>
     );
   };
