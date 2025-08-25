@@ -107,6 +107,8 @@ router.post('/analyze', authenticateToken, upload.single('image'), async (req, r
     while (retryCount < maxRetries) {
       try {
         const aiServerUrl = process.env.AI_SERVER_URL || 'http://ai-server:8000';
+        console.log('🔍 AI 서버 URL:', aiServerUrl);
+        console.log('🔍 환경변수 AI_SERVER_URL:', process.env.AI_SERVER_URL);
         aiResponse = await axios.post(`${aiServerUrl}/analyze-image`, formData, {
           headers: {
             ...formData.getHeaders()
@@ -137,8 +139,83 @@ router.post('/analyze', authenticateToken, upload.single('image'), async (req, r
     const aiResult = aiResponse.data;
     console.log('AI 서버 응답:', JSON.stringify(aiResult, null, 2));
     
+    // 🤖 Gemini API로 메뉴명 완성 (무조건 호출)
+    let finalResult = aiResult;
+    console.log('🚀 Gemini API로 메뉴명 완성 시작...');
+    
+    try {
+      const geminiPrompt = `
+당신은 카페 메뉴판 전문 분석가입니다. OCR로 추출된 불완전한 텍스트를 분석하여 정확한 카페 음료 메뉴명을 추출해야 합니다.
+
+**입력 텍스트:**
+${aiResult.extracted_text}
+
+**번역된 텍스트:**
+${aiResult.translated_text || '번역 없음'}
+
+**임무:**
+OCR에서 추출된 텍스트를 분석하여 카페 음료 메뉴명만을 정확하게 추출하세요.
+
+**카페 음료 메뉴 패턴:**
+- 커피: 아메리카노, 라떼, 카푸치노, 에스프레소, 모카, 마끼아또, 콜드브루
+- 차: 홍차, 녹차, 우롱차, 허브티, 레몬티, 페퍼민트
+- 기타: 주스, 스무디, 에이드, 밀크셰이크, 아이스크림
+
+**OCR 오류 수정 규칙:**
+- "LTTE" → "라떼"
+- "AMERICANO" → "아메리카노" 
+- "ESPRESSO" → "에스프레소"
+- "CAPPUCCINO" → "카푸치노"
+- "MACCHIATO" → "마끼아또"
+- "COLD BREW" → "콜드브루"
+- "HOT TEA" → "홍차"
+- "GREEN TEA" → "녹차"
+
+**응답 형식 (반드시 지켜주세요):**
+["메뉴명1", "메뉴명2", "메뉴명3"]
+
+**주의사항:**
+1. 반드시 JSON 배열 형태로 응답
+2. 음료 메뉴명만 추출 (가격, 설명, 기타 정보 제외)
+3. 한글로 응답 (가능한 경우)
+4. 최대 10개까지 추출
+5. OCR 오류가 있는 경우 올바른 메뉴명으로 수정
+6. 확실하지 않은 메뉴는 제외
+
+**예시 응답:**
+["아메리카노", "카페라떼", "카푸치노", "에스프레소", "콜드브루"]
+      `;
+      
+      const geminiResponse = await axios.post('http://host.docker.internal:3000/api/gemini/enhance', {
+        prompt: geminiPrompt,
+        text: aiResult.extracted_text,
+        maxTokens: 300
+      }, {
+        timeout: 30000
+      });
+      
+      if (geminiResponse.data.success && geminiResponse.data.enhancedText) {
+        try {
+          const enhancedText = JSON.parse(geminiResponse.data.enhancedText);
+          if (Array.isArray(enhancedText) && enhancedText.length > 0) {
+            // Gemini API로 보완된 텍스트로 결과 업데이트
+            finalResult = {
+              ...aiResult,
+              enhanced_text: enhancedText.join(' '),
+              enhanced_by_gemini: true
+            };
+            console.log('✅ Gemini API로 메뉴명 완성 완료:', enhancedText);
+          }
+        } catch (parseError) {
+          console.warn('⚠️ Gemini API 응답을 JSON으로 파싱할 수 없음:', parseError);
+        }
+      }
+    } catch (geminiError) {
+      console.warn('⚠️ Gemini API 호출 실패:', geminiError.message);
+    }
+    
     // 분석 결과를 상세하게 가공
-    const detailedAnalysis = await processAnalysisResult(aiResult, allergyNames,userId, req.file.path);
+    const detailedAnalysis = await processAnalysisResult(finalResult, allergyNames, userId, req.file.path);
     
     // 임시 파일 삭제
     fs.unlinkSync(req.file.path);
@@ -172,6 +249,7 @@ async function processAnalysisResult(aiResult, userAllergies,userId, imageUrl) {
     console.error('AI 결과 형식 오류:', aiResult);
     return {
       extractedText: aiResult?.extracted_text || '텍스트 추출 실패',
+      enhancedText: aiResult?.enhanced_text || null,
       menuAnalysis: [],
       userAllergies: userAllergies,
       timestamp: new Date().toISOString(),
@@ -242,6 +320,7 @@ async function processAnalysisResult(aiResult, userAllergies,userId, imageUrl) {
   
   return {
     extractedText: aiResult.extracted_text,
+    enhancedText: aiResult.enhanced_text || null,
     menuAnalysis: menuAnalysis,
     userAllergies: userAllergies,
     timestamp: new Date().toISOString()
