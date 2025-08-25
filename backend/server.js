@@ -24,6 +24,14 @@ const geminiRoutes = require('./routes/gemini');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// 환경변수 로그 출력
+console.log('🔍 환경변수 확인:');
+console.log('  - NODE_ENV:', process.env.NODE_ENV);
+console.log('  - PORT:', process.env.PORT);
+console.log('  - DB_HOST:', process.env.DB_HOST);
+console.log('  - AI_SERVER_URL:', process.env.AI_SERVER_URL);
+console.log('  - GEMINI_API_KEY:', process.env.GEMINI_API_KEY ? '설정됨' : '설정되지 않음');
+
 // Trust proxy 설정 (rate-limit 오류 해결)
 app.set('trust proxy', 1);
 

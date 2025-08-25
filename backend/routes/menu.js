@@ -107,6 +107,8 @@ router.post('/analyze', authenticateToken, upload.single('image'), async (req, r
     while (retryCount < maxRetries) {
       try {
         const aiServerUrl = process.env.AI_SERVER_URL || 'http://ai-server:8000';
+        console.log('🔍 AI 서버 URL:', aiServerUrl);
+        console.log('🔍 환경변수 AI_SERVER_URL:', process.env.AI_SERVER_URL);
         aiResponse = await axios.post(`${aiServerUrl}/analyze-image`, formData, {
           headers: {
             ...formData.getHeaders()
@@ -184,7 +186,7 @@ OCR에서 추출된 텍스트를 분석하여 카페 음료 메뉴명만을 정�
 ["아메리카노", "카페라떼", "카푸치노", "에스프레소", "콜드브루"]
       `;
       
-      const geminiResponse = await axios.post('http://localhost:3000/api/gemini/enhance', {
+      const geminiResponse = await axios.post('http://host.docker.internal:3000/api/gemini/enhance', {
         prompt: geminiPrompt,
         text: aiResult.extracted_text,
         maxTokens: 300
