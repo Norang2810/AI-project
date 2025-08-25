@@ -150,6 +150,75 @@ const AnalysisResult = ({ analysis, onNotification }) => {
     return '메뉴명';
   };
 
+  // OCR에서 추출된 텍스트에서 메뉴명으로 보이는 단어들을 찾기
+  const findExtractedMenuNames = (extractedText, ingredient) => {
+    if (!extractedText) return [];
+    
+    const lines = extractedText.split('\n');
+    const foundMenus = [];
+    
+    // 메뉴명으로 보이는 단어들 (대문자, 3글자 이상)
+    const menuPatterns = [
+      'LATTE', 'CAPPUCCINO', 'AMERICANO', 'ESPRESSO', 'MACCHIATO', 'MOCHA',
+      'MILKCOFFE', 'CAPPUCCINO_O', 'LATT', 'MOCIL', 'MILK', 'COFFEE',
+      'TEA', 'JUICE', 'SMOOTHIE', 'LATTE_NO', 'ICE_COFFEE', 'CARAMIL',
+      'LATL_O', 'ICL', 'LONG', 'BLACK', 'COLDCOFFE', 'LATE_NO'
+    ];
+    
+    // 각 줄에서 메뉴명 패턴 찾기
+    for (const line of lines) {
+      const upperLine = line.toUpperCase();
+      
+      for (const pattern of menuPatterns) {
+        if (upperLine.includes(pattern) && !foundMenus.includes(pattern)) {
+          foundMenus.push(pattern);
+          if (foundMenus.length >= 4) break; // 4개까지만
+        }
+      }
+      
+      if (foundMenus.length >= 4) break;
+    }
+    
+    // 4개까지만 반환
+    return foundMenus.slice(0, 4);
+  };
+
+  // 중복 제거 함수
+  const removeDuplicates = (text) => {
+    if (!text) return '';
+    const words = text.replace(/^json\s*/, '').split(' ');
+    const uniqueWords = [...new Set(words)];
+    return uniqueWords.join(' ');
+  };
+
+  // OCR 정확도 계산 함수 (간단한 추정)
+  const calculateOCRAccuracy = (extractedText) => {
+    if (!extractedText) return 0;
+    
+    // OCR 텍스트 길이와 일반적인 메뉴 텍스트 패턴을 기반으로 정확도 추정
+    const lines = extractedText.split('\n');
+    let totalChars = 0;
+    let readableChars = 0;
+    
+    lines.forEach(line => {
+      totalChars += line.length;
+      // 읽을 수 있는 문자 (영문, 숫자, 공백, 특수문자)
+      readableChars += line.replace(/[^\w\s\-_$.,#]/g, '').length;
+    });
+    
+    // 기본 정확도 (읽을 수 있는 문자 비율)
+    let accuracy = (readableChars / totalChars) * 100;
+    
+    // OCR 오류 패턴 감지 (대문자 연속, 특수문자 등)
+    const errorPatterns = extractedText.match(/[A-Z]{5,}|[0-9]{3,}|[^\w\s]{3,}/g);
+    if (errorPatterns) {
+      accuracy -= errorPatterns.length * 2; // 오류 패턴당 2% 감점
+    }
+    
+    // 최소 60%, 최대 95%로 제한
+    return Math.max(60, Math.min(95, Math.round(accuracy)));
+  };
+
   // Gemini 완성된 메뉴명에서 해당 성분이 포함된 메뉴 찾기
   const findGeminiMenuName = (enhancedText, ingredient) => {
     if (!enhancedText) return '완성된 메뉴명 없음';
@@ -313,41 +382,30 @@ const AnalysisResult = ({ analysis, onNotification }) => {
                     <div style={{ fontWeight: '600', marginBottom: '0.5rem', color: '#dc2626' }}>
                       {item.ingredient}
                     </div>
-                    {/* 추출된 메뉴명 → Gemini 완성된 메뉴명 표시 */}
-                    {analysis.extractedText && analysis.enhancedText && (
+                    {/* 추출된 메뉴명만 표시 (2개 정도) */}
+                    {analysis.extractedText && (
                       <div style={{ 
                         marginTop: '0.5rem',
                         display: 'flex',
-                        alignItems: 'center',
-                        gap: '0.5rem',
-                        flexWrap: 'wrap'
+                        flexWrap: 'wrap',
+                        gap: '0.5rem'
                       }}>
-                        <div style={{ 
-                          padding: '0.3rem 0.6rem', 
-                          background: '#fef2f2', 
-                          borderRadius: '5px',
-                          fontSize: '0.8rem',
-                          color: '#991b1b',
-                          border: '1px solid #fecaca',
-                          maxWidth: '200px',
-                          overflow: 'hidden',
-                          textOverflow: 'ellipsis',
-                          whiteSpace: 'nowrap'
-                        }}>
-                          {findShortMenuName(analysis.extractedText, item.ingredient)}
-                        </div>
-                        <span style={{ color: '#dc2626', fontSize: '1.2rem' }}>→</span>
-                        <div style={{ 
-                          padding: '0.3rem 0.6rem', 
-                          background: '#f0f9ff', 
-                          borderRadius: '5px',
-                          fontSize: '0.8rem',
-                          color: '#0c4a6e',
-                          border: '1px solid #0ea5e9',
-                          fontWeight: '500'
-                        }}>
-                          {findGeminiMenuName(analysis.enhancedText, item.ingredient)}
-                        </div>
+                        {findExtractedMenuNames(analysis.extractedText, item.ingredient).slice(0, 2).map((menuName, idx) => (
+                          <div key={idx} style={{ 
+                            padding: '0.3rem 0.6rem', 
+                            background: '#fef2f2', 
+                            borderRadius: '5px',
+                            fontSize: '0.8rem',
+                            color: '#991b1b',
+                            border: '1px solid #fecaca',
+                            maxWidth: '150px',
+                            overflow: 'hidden',
+                            textOverflow: 'ellipsis',
+                            whiteSpace: 'nowrap'
+                          }}>
+                            {menuName}
+                          </div>
+                        ))}
                       </div>
                     )}
                   </IngredientCard>
@@ -411,10 +469,22 @@ const AnalysisResult = ({ analysis, onNotification }) => {
     
     return (
       <Section>
-        <SectionTitle>
-          <SectionIcon>📝</SectionIcon>
-          추출된 텍스트 (OCR)
-        </SectionTitle>
+                 <SectionTitle>
+           <SectionIcon>📝</SectionIcon>
+           추출된 텍스트 (OCR)
+           <span style={{
+             fontSize: '14px',
+             fontWeight: '400',
+             color: '#6b7280',
+             marginLeft: '1rem',
+             background: '#f3f4f6',
+             padding: '0.2rem 0.6rem',
+             borderRadius: '12px',
+             border: '1px solid #d1d5db'
+           }}>
+             정확도: {calculateOCRAccuracy(extractedText)}%
+           </span>
+         </SectionTitle>
         
         {/* OCR 추출된 텍스트 */}
         <div style={{ 
@@ -442,23 +512,145 @@ const AnalysisResult = ({ analysis, onNotification }) => {
           ↓
         </div>
         
-        {/* 번역된 메뉴명 */}
-        <div style={{
-          background: '#f0f9ff',
-          border: '1px solid #0ea5e9',
-          borderRadius: '10px',
-          padding: '1rem',
-          marginTop: '0'
-        }}>
-          <div style={{
-            fontSize: '14px',
-            color: '#0c4a6e',
-            fontWeight: '500',
-            lineHeight: '1.5'
-          }}>
-            {enhancedText ? enhancedText.replace(/^json\s*/, '') : '번역된 메뉴명이 없습니다.'}
-          </div>
-        </div>
+                 {/* 번역된 메뉴명 */}
+         <div style={{
+           background: '#f0f9ff',
+           border: '1px solid #0ea5e9',
+           borderRadius: '10px',
+           padding: '1.5rem',
+           marginTop: '0'
+         }}>
+           <div style={{
+             fontSize: '16px',
+             color: '#0c4a6e',
+             fontWeight: '600',
+             marginBottom: '1rem',
+             textAlign: 'center'
+           }}>
+             🎯 번역된 메뉴명
+           </div>
+           
+           {/* 메뉴명을 카테고리별로 그룹화하여 표시 */}
+           {enhancedText ? (
+             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+               {/* 커피류 */}
+               <div>
+                 <div style={{
+                   fontSize: '14px',
+                   fontWeight: '600',
+                   color: '#7c3aed',
+                   marginBottom: '0.5rem',
+                   display: 'flex',
+                   alignItems: 'center',
+                   gap: '0.5rem'
+                 }}>
+                   ☕ 커피류
+                 </div>
+                 <div style={{
+                   display: 'flex',
+                   flexWrap: 'wrap',
+                   gap: '0.5rem'
+                 }}>
+                                       {removeDuplicates(enhancedText).split(' ').filter(menu => 
+                      ['에스프레소', '아메리카노', '마끼아또', '코르타도', '카푸치노', '라떼', '모카', '콜드브루'].some(coffee => menu.includes(coffee))
+                    ).map((menu, index) => (
+                     <div key={index} style={{
+                       background: '#ede9fe',
+                       color: '#5b21b6',
+                       padding: '0.4rem 0.8rem',
+                       borderRadius: '20px',
+                       fontSize: '13px',
+                       fontWeight: '500',
+                       border: '1px solid #c4b5fd'
+                     }}>
+                       {menu}
+                     </div>
+                   ))}
+                 </div>
+               </div>
+               
+               {/* 차류 */}
+               <div>
+                 <div style={{
+                   fontSize: '14px',
+                   fontWeight: '600',
+                   color: '#059669',
+                   marginBottom: '0.5rem',
+                   display: 'flex',
+                   alignItems: 'center',
+                   gap: '0.5rem'
+                 }}>
+                   🍵 차류
+                 </div>
+                 <div style={{
+                   display: 'flex',
+                   flexWrap: 'wrap',
+                   gap: '0.5rem'
+                 }}>
+                                       {removeDuplicates(enhancedText).split(' ').filter(menu => 
+                      ['홍차', '녹차', '페퍼민트', '차이', '우롱차', '허브티', '레몬티'].some(tea => menu.includes(tea))
+                    ).map((menu, index) => (
+                     <div key={index} style={{
+                       background: '#d1fae5',
+                       color: '#047857',
+                       padding: '0.4rem 0.8rem',
+                       borderRadius: '20px',
+                       fontSize: '13px',
+                       fontWeight: '500',
+                       border: '1px solid #a7f3d0'
+                     }}>
+                       {menu}
+                     </div>
+                   ))}
+                 </div>
+               </div>
+               
+               {/* 기타 음료 */}
+               <div>
+                 <div style={{
+                   fontSize: '14px',
+                   fontWeight: '600',
+                   color: '#dc2626',
+                   marginBottom: '0.5rem',
+                   display: 'flex',
+                   alignItems: 'center',
+                   gap: '0.5rem'
+                 }}>
+                   🥤 기타 음료
+                 </div>
+                 <div style={{
+                   display: 'flex',
+                   flexWrap: 'wrap',
+                   gap: '0.5rem'
+                 }}>
+                                       {removeDuplicates(enhancedText).split(' ').filter(menu => 
+                      !['에스프레소', '아메리카노', '마끼아또', '코르타도', '카푸치노', '라떼', '모카', '콜드브루', '홍차', '녹차', '페퍼민트', '차이', '우롱차', '허브티', '레몬티'].some(other => menu.includes(other))
+                    ).map((menu, index) => (
+                     <div key={index} style={{
+                       background: '#fee2e2',
+                       color: '#991b1b',
+                       padding: '0.4rem 0.8rem',
+                       borderRadius: '20px',
+                       fontSize: '13px',
+                       fontWeight: '500',
+                                                border: '1px solid #fecaca'
+                     }}>
+                       {menu}
+                     </div>
+                   ))}
+                 </div>
+               </div>
+             </div>
+           ) : (
+             <div style={{
+               textAlign: 'center',
+               color: '#6b7280',
+               fontStyle: 'italic'
+             }}>
+               번역된 메뉴명이 없습니다.
+             </div>
+           )}
+         </div>
       </Section>
     );
   };
