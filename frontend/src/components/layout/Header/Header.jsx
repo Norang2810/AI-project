@@ -11,11 +11,19 @@ import {
   AuthMenuContainer,
   AuthMenu,
   AuthLink,
-  AuthButton
+  AuthButton,
+  MobileMenuButton,
+  MobileMenu,
+  MobileNavItem,
+  MobileNavLink,
+  MobileAuthMenu,
+  MobileAuthLink,
+  MobileAuthButton
 } from './Header.styles';
 
 const Header = ({ isLoggedIn, setIsLoggedIn }) => {
   const [activeSection, setActiveSection] = useState('home');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // 스크롤 위치에 따른 활성 섹션 감지
   useEffect(() => {
@@ -49,6 +57,8 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
         block: 'start'
       });
     }
+    // 모바일 메뉴 닫기
+    setIsMobileMenuOpen(false);
   };
 
   const handleLogout = async () => {
@@ -71,15 +81,18 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
       window.location.href = '/login';
     }
   };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
   
 
   return (
     <HeaderContainer>
-
       <Logo onClick={() => scrollToSection('home')} />
 
-      <NavMenuContainer>
-
+      {/* 데스크톱 네비게이션 */}
+      <NavMenuContainer className="desktop-only">
         <NavMenu>
           <NavItem>
             <NavLink
@@ -116,7 +129,8 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
         </NavMenu>
       </NavMenuContainer>
 
-      <AuthMenuContainer>
+      {/* 데스크톱 인증 메뉴 */}
+      <AuthMenuContainer className="desktop-only">
         <AuthMenu>
           {isLoggedIn ? (
             <>
@@ -148,6 +162,82 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
         </AuthMenu>
       </AuthMenuContainer>
 
+      {/* 모바일 햄버거 메뉴 버튼 */}
+      <MobileMenuButton 
+        className="mobile-only"
+        onClick={toggleMobileMenu}
+        aria-label="메뉴 열기"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </MobileMenuButton>
+
+      {/* 모바일 메뉴 */}
+      <MobileMenu isOpen={isMobileMenuOpen}>
+        <MobileNavItem>
+          <MobileNavLink
+            className={activeSection === 'home' ? 'active' : ''}
+            onClick={() => scrollToSection('home')}
+          >
+            홈
+          </MobileNavLink>
+        </MobileNavItem>
+        <MobileNavItem>
+          <MobileNavLink
+            className={activeSection === 'upload' ? 'active' : ''}
+            onClick={() => scrollToSection('upload')}
+          >
+            메뉴 업로드
+          </MobileNavLink>
+        </MobileNavItem>
+        <MobileNavItem>
+          <MobileNavLink
+            className={activeSection === 'analysis' ? 'active' : ''}
+            onClick={() => scrollToSection('analysis')}
+          >
+            분석 결과
+          </MobileNavLink>
+        </MobileNavItem>
+        <MobileNavItem>
+          <MobileNavLink
+            className={activeSection === 'about' ? 'active' : ''}
+            onClick={() => scrollToSection('about')}
+          >
+            서비스 소개
+          </MobileNavLink>
+        </MobileNavItem>
+        
+        <MobileAuthMenu>
+          {isLoggedIn ? (
+            <>
+              <MobileNavItem>
+                <MobileAuthLink as={Link} to="/mypage" onClick={() => setIsMobileMenuOpen(false)}>
+                  마이페이지
+                </MobileAuthLink>
+              </MobileNavItem>
+              <MobileNavItem>
+                <MobileAuthButton className="logout" onClick={handleLogout}>
+                  로그아웃
+                </MobileAuthButton>
+              </MobileNavItem>
+            </>
+          ) : (
+            <>
+              <MobileNavItem>
+                <MobileAuthLink as={Link} to="/login" onClick={() => setIsMobileMenuOpen(false)}>
+                  로그인
+                </MobileAuthLink>
+              </MobileNavItem>
+              <MobileNavItem>
+                <MobileAuthLink as={Link} to="/register" onClick={() => setIsMobileMenuOpen(false)}>
+                  회원가입
+                </MobileAuthLink>
+              </MobileNavItem>
+            </>
+          )}
+        </MobileAuthMenu>
+      </MobileMenu>
     </HeaderContainer>
   );
 };

@@ -91,4 +91,86 @@ export const StyledButton = styled.button`
     cursor: not-allowed;
     transform: none;
   }
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: ${({ size }) => {
+      switch (size) {
+        case 'sm':
+          return '7px 14px';
+        case 'lg':
+          return '14px 28px';
+        default:
+          return '11px 22px';
+      }
+    }};
+    
+    font-size: ${({ size }) => {
+      switch (size) {
+        case 'sm':
+          return '13px';
+        case 'lg':
+          return '17px';
+        default:
+          return '15px';
+      }
+    }};
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: ${({ size }) => {
+      switch (size) {
+        case 'sm':
+          return '6px 12px';
+        case 'lg':
+          return '12px 24px';
+        default:
+          return '10px 20px';
+      }
+    }};
+    
+    font-size: ${({ size }) => {
+      switch (size) {
+        case 'sm':
+          return '12px';
+        case 'lg':
+          return '16px';
+        default:
+          return '14px';
+      }
+    }};
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: ${({ size }) => {
+      switch (size) {
+        case 'sm':
+          return '5px 10px';
+        case 'lg':
+          return '10px 20px';
+        default:
+          return '8px 16px';
+      }
+    }};
+    
+    font-size: ${({ size }) => {
+      switch (size) {
+        case 'sm':
+          return '11px';
+        case 'lg':
+          return '15px';
+        default:
+          return '13px';
+      }
+    }};
+  }
+
+  /* 모바일에서 호버 효과 제거 */
+  @media (max-width: 768px) {
+    &:hover {
+      transform: none;
+    }
+  }
 `;
