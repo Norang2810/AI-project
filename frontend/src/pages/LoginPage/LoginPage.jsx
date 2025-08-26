@@ -16,6 +16,21 @@ const LoginContainer = styled.div`
   align-items: center;
   background-color: #FFECD5; /* 부드러운 배경색 */
   padding: 2rem;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 1.5rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.5rem;
+  }
 `;
 
 const LoginCard = styled.div`
@@ -25,6 +40,26 @@ const LoginCard = styled.div`
   width: 100%;
   max-width: 500px;
   border: 2px solid #FFD6AA; /* 카드 경계 강조 */
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 1.5rem;
+    max-width: 450px;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 1.3rem;
+    max-width: 400px;
+    border-radius: 12px;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 1rem;
+    max-width: 100%;
+    border-radius: 10px;
+  }
 `;
 
 const Title = styled.h1`
@@ -33,12 +68,35 @@ const Title = styled.h1`
   margin-bottom: 1.5rem;
   font-size: 2rem;
   font-weight: normal;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    font-size: 1.8rem;
+    margin-bottom: 1.3rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    gap: 0.7rem;
+  }
 `;
 
 const FormGroup = styled.div`
@@ -46,6 +104,18 @@ const FormGroup = styled.div`
   flex-direction: row;  // column → row로 변경
   align-items: center;  // 추가
   gap: 1rem;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    gap: 0.8rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
 `;
 
 const Label = styled.label`
@@ -55,6 +125,25 @@ const Label = styled.label`
   flex-shrink: 0;    // 추가
   font-family: 'Noto Sans KR', sans-serif;  // 추가
   font-weight: 500;  // bold → 500
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    width: 100px;
+    font-size: 0.95rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    width: auto;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    font-size: 0.85rem;
+  }
 `;
 
 const Input = styled.input`
@@ -75,6 +164,24 @@ const Input = styled.input`
   &:focus {
     outline: none;
     border-color: #915316;
+  }
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.7rem;
+    font-size: 0.85rem;
   }
 `;
 
@@ -98,8 +205,32 @@ const Button = styled.button`
     background-color: #ccc;
     cursor: not-allowed;
   }
-`;
 
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 0.7rem;
+    font-size: 1.1rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* 모바일에서 호버 효과 제거 */
+  @media (max-width: 768px) {
+    &:hover {
+      background-color: #B9855A;
+    }
+  }
+`;
 
 const LinkText = styled.p`
   text-align: center;
@@ -117,6 +248,24 @@ const LinkText = styled.p`
       text-decoration: underline;
     }
   }
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    margin-top: 1.3rem;
+    font-size: 0.95rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    margin-top: 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+  }
 `;
 
 const ErrorMessage = styled.div`
@@ -126,6 +275,25 @@ const ErrorMessage = styled.div`
   border-radius: 8px;
   border: 1px solid #f5c6cb;
   margin-bottom: 1rem;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.7rem;
+    font-size: 0.85rem;
+  }
 `;
 
 const LoginPage = ({setIsLoggedIn}) => {
