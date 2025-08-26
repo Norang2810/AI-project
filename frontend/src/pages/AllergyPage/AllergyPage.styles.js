@@ -227,51 +227,7 @@ export const ErrorMessage = styled.div`
   font-weight: 600;
 `;
 
-export const SeveritySection = styled.div`
-  margin: 2rem 0;
-  padding: 2rem;
-  background-color: #fdfdfdff;
-  border-radius: 10px;
-`;
 
-export const SeverityTitle = styled.h3`
-  margin-bottom: 1rem;
-  color: #A2601E; 
-  font-weight: 500;
-  font-size: 1.6rem;
-`;
-
-export const SeverityOptions = styled.div`
-  display: flex;
-  gap: 2rem;       
-  flex-wrap: nowrap;  
-  justify-content: center;  
-`;
-
-export const SeverityOption = styled.label`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  border: 2px solid #e1e5e9;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  
-  &:hover {
-    border-color: #A2601E;  
-  }
-
-  &.selected {
-    border-color: #A2601E;  
-    background-color: #A2601E;  
-    color: white;
-  }
-  
-  input[type="radio"] {
-    display: none;
-  }
-`;
 
 export const ButtonGroup = styled.div`
   display: flex;
