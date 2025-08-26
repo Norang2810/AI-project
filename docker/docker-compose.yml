@@ -6,8 +6,8 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile.frontend
-    # ports:
-    #   - "3000:80"
+    ports:
+      - "3000:80"
     environment:
       - REACT_APP_API_URL=http://localhost:8081/api
       - REACT_APP_AI_SERVER_URL=http://localhost:8081/ai
