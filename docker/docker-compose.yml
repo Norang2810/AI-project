@@ -9,8 +9,8 @@ services:
     # ports:
     #   - "3000:80"
     environment:
-      - REACT_APP_API_URL=http://localhost:8080/api
-      - REACT_APP_AI_SERVER_URL=http://localhost:8080/ai
+      - REACT_APP_API_URL=http://localhost:8081/api
+      - REACT_APP_AI_SERVER_URL=http://localhost:8081/ai
       - REACT_APP_KAKAO_REST_API_KEY=${REACT_APP_KAKAO_REST_API_KEY}
     depends_on:
       - backend
@@ -34,7 +34,7 @@ services:
       - JWT_REFRESH_SECRET=${JWT_REFRESH_SECRET}
       - JWT_EXPIRES=${JWT_EXPIRES}
       - JWT_REFRESH_EXPIRES=${JWT_REFRESH_EXPIRES}
-      - CORS_ORIGIN=http://localhost:8080
+      - CORS_ORIGIN=http://localhost:8081
       - KAKAO_REST_API_KEY=${KAKAO_REST_API_KEY}
       - GEMINI_API_KEY=${GEMINI_API_KEY}
       - AI_SERVER_URL=${AI_SERVER_URL}
@@ -84,7 +84,7 @@ services:
   nginx:
     image: nginx:alpine
     ports:
-      - "8080:80"
+      - "8081:80"
     volumes:
       - ./nginx/nginx.local.conf:/etc/nginx/nginx.conf
     depends_on:
