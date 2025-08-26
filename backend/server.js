@@ -70,8 +70,29 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser()); 
 
-// 정적 파일 서빙 (업로드된 이미지)
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+// 정적 파일 서빙 (업로드된 이미지) - CORS 헤더 강화
+app.use('/uploads', (req, res, next) => {
+  // CORS 헤더 설정 - 더 강력하게
+  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+  res.header('Access-Control-Allow-Credentials', 'true');
+  res.header('Cross-Origin-Resource-Policy', 'cross-origin');
+  res.header('Cross-Origin-Embedder-Policy', 'unsafe-none');
+  
+  // OPTIONS 요청 처리
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+  
+  next();
+}, express.static(path.join(__dirname, 'uploads'), {
+  setHeaders: (res, path, stat) => {
+    // 정적 파일에 대한 추가 헤더 설정
+    res.set('Cross-Origin-Resource-Policy', 'cross-origin');
+    res.set('Cross-Origin-Embedder-Policy', 'unsafe-none');
+  }
+}));
 
 // 데이터베이스 연결 및 테이블 생성
 const initializeDatabase = async () => {

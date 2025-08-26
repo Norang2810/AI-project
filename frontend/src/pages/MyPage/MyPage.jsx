@@ -52,6 +52,8 @@ const MyPage = () => {
   const [userInfo, setUserInfo] = useState(null);
   const [allergies, setAllergies] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [analyses, setAnalyses] = useState([]);
+  const [analysesLoading, setAnalysesLoading] = useState(false);
 
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
@@ -90,6 +92,66 @@ const MyPage = () => {
       }
     } catch (error) {
       console.error('알레르기 정보 조회 오류:', error);
+    }
+  };
+
+  const fetchAnalyses = async () => {
+    try {
+      setAnalysesLoading(true);
+      const response = await apiFetch('/api/menu/user-analyses?limit=5');
+
+      if (response.ok) {
+        const data = await response.json();
+        // 이미지 URL을 백엔드 서버 경로로 변환
+        const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:3001';
+        const processedAnalyses = data.data.analyses.map(analysis => {
+          let imageUrl = null;
+          if (analysis.imageUrl) {
+            // imageUrl이 이미 /uploads/로 시작하는지 확인
+            if (analysis.imageUrl.startsWith('/uploads/')) {
+              imageUrl = `${backendUrl}${analysis.imageUrl}`;
+            } else if (analysis.imageUrl.startsWith('uploads/')) {
+              imageUrl = `${backendUrl}/${analysis.imageUrl}`;
+            } else {
+              imageUrl = `${backendUrl}/uploads/${analysis.imageUrl}`;
+            }
+            
+            // 디버깅을 위한 로그
+            console.log('이미지 URL 처리:', {
+              original: analysis.imageUrl,
+              processed: imageUrl,
+              backendUrl: backendUrl
+            });
+          }
+          
+          return {
+            ...analysis,
+            imageUrl: imageUrl
+          };
+        });
+        setAnalyses(processedAnalyses);
+      }
+    } catch (error) {
+      console.error('분석 내역 조회 오류:', error);
+    } finally {
+      setAnalysesLoading(false);
+    }
+  };
+
+  const cleanupOldAnalyses = async () => {
+    try {
+      const response = await apiFetch('/api/menu/cleanup-old-analyses?keep=5', {
+        method: 'DELETE'
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log('오래된 분석 내역 정리 완료:', data.message);
+        // 정리 후 최신 데이터 다시 가져오기
+        await fetchAnalyses();
+      }
+    } catch (error) {
+      console.error('오래된 분석 내역 정리 오류:', error);
     }
   };
 
@@ -139,12 +201,19 @@ const MyPage = () => {
   useEffect(() => {
     const loadData = async () => {
       setLoading(true);
-      await Promise.all([fetchUserInfo(), fetchAllergies()]);
+      await Promise.all([fetchUserInfo(), fetchAllergies(), fetchAnalyses()]);
       setLoading(false);
     };
 
     loadData();
   }, []);
+
+  // 분석 내역이 5개를 초과하면 자동으로 오래된 내역 정리
+  useEffect(() => {
+    if (analyses.length > 5) {
+      cleanupOldAnalyses();
+    }
+  }, [analyses.length]);
 
   const renderContent = () => {
     switch (activeSection) {
@@ -330,45 +399,86 @@ const MyPage = () => {
           <div>
             <h2>분석 내역</h2>
             <div style={{ marginTop: '2rem' }}>
-              <div style={{
-                display: 'grid',
-                gap: '1rem',
-                marginBottom: '2rem'
-              }}>
-                {[
-                  { date: '2024-01-15', menu: '김치찌개', risk: '높음', allergens: ['대두', '밀'] },
-                  { date: '2024-01-10', menu: '된장찌개', risk: '보통', allergens: ['대두'] },
-                  { date: '2024-01-05', menu: '순두부찌개', risk: '낮음', allergens: ['대두'] }
-                ].map((analysis, index) => (
-                  <div key={index} style={{
-                    padding: '1.5rem',
-                    border: '1px solid #ddd',
-                    borderRadius: '8px',
-                    backgroundColor: 'white',
-                    boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-                  }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
-                      <h4 style={{ margin: 0, color: '#333' }}>{analysis.menu}</h4>
-                      <span style={{
-                        padding: '0.25rem 0.75rem',
-                        borderRadius: '12px',
-                        fontSize: '0.875rem',
-                        fontWeight: 'bold',
-                        backgroundColor: analysis.risk === '높음' ? '#ffebee' : analysis.risk === '보통' ? '#fff3e0' : '#e8f5e8',
-                        color: analysis.risk === '높음' ? '#d32f2f' : analysis.risk === '보통' ? '#f57c00' : '#388e3c'
+              {analysesLoading ? (
+                <div style={{ textAlign: 'center', padding: '2rem' }}>
+                  <p>분석 내역을 불러오는 중...</p>
+                </div>
+              ) : analyses.length === 0 ? (
+                <div style={{ textAlign: 'center', padding: '2rem', color: '#666' }}>
+                  <p>아직 분석한 메뉴가 없습니다.</p>
+                  <p>메뉴 이미지를 업로드하여 분석을 시작해보세요!</p>
+                </div>
+              ) : (
+                <div style={{
+                  display: 'grid',
+                  gap: '1rem',
+                  marginBottom: '2rem'
+                }}>
+                  {analyses.map((analysis, index) => {
+                    const riskLevel = analysis.riskLevel;
+                    const riskInfo = {
+                      'safe': { text: '안전', color: '#10B981', bgColor: '#d1fae5' },
+                      'low_risk': { text: '보통', color: '#F59E0B', bgColor: '#fef3c7' },
+                      'high_risk': { text: '높음', color: '#EF4444', bgColor: '#fee2e2' },
+                      'dangerous': { text: '매우 위험', color: '#DC2626', bgColor: '#fecaca' },
+                      'unknown': { text: '알 수 없음', color: '#6B7280', bgColor: '#f3f4f6' }
+                    };
+
+                    const risk = riskInfo[riskLevel] || riskInfo.unknown;
+                    const analysisDate = new Date(analysis.createdAt).toLocaleDateString('ko-KR');
+                    
+                    // 메뉴명을 "최근 분석한 이미지 1, 2, 3..." 형태로 표시
+                    const displayMenuName = `최근 분석한 이미지 ${index + 1}`;
+
+                    return (
+                      <div key={analysis.id} style={{
+                        padding: '1.5rem',
+                        border: '1px solid #ddd',
+                        borderRadius: '8px',
+                        backgroundColor: 'white',
+                        boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
                       }}>
-                        {analysis.risk} 위험도
-                      </span>
-                    </div>
-                    <p style={{ margin: '0.5rem 0', color: '#666', fontSize: '0.875rem' }}>
-                      분석일: {analysis.date}
-                    </p>
-                    <p style={{ margin: '0.5rem 0', color: '#666', fontSize: '0.875rem' }}>
-                      알레르기 성분: {analysis.allergens.join(', ')}
-                    </p>
-                  </div>
-                ))}
-              </div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                          <h4 style={{ margin: 0, color: '#333' }}>{displayMenuName}</h4>
+                          <span style={{
+                            padding: '0.25rem 0.75rem',
+                            borderRadius: '12px',
+                            fontSize: '0.875rem',
+                            fontWeight: 'bold',
+                            backgroundColor: risk.bgColor,
+                            color: risk.color
+                          }}>
+                            {risk.text} 위험도
+                          </span>
+                        </div>
+                        <p style={{ margin: '0.5rem 0', color: '#666', fontSize: '0.875rem' }}>
+                          분석일: {analysisDate}
+                        </p>
+                        <p style={{ margin: '0.5rem 0', color: '#666', fontSize: '0.875rem' }}>
+                          알레르기 성분: {analysis.allergens.length > 0 ? analysis.allergens.join(', ') : '알레르기 성분 없음'}
+                        </p>
+                        {analysis.extractedText && (
+                          <details style={{ marginTop: '1rem' }}>
+                            <summary style={{ cursor: 'pointer', color: '#666', fontSize: '0.875rem' }}>
+                              추출된 텍스트 보기
+                            </summary>
+                            <p style={{ 
+                              margin: '0.5rem 0', 
+                              padding: '0.5rem', 
+                              backgroundColor: '#f9f9f9', 
+                              borderRadius: '4px',
+                              fontSize: '0.875rem',
+                              color: '#333'
+                            }}>
+                              {analysis.extractedText}
+                            </p>
+                          </details>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
             </div>
           </div>
         );
@@ -377,55 +487,188 @@ const MyPage = () => {
           <div>
             <h2>이미지 보기</h2>
             <div style={{ marginTop: '2rem' }}>
-              <div style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
-                gap: '1rem',
-                marginBottom: '2rem'
-              }}>
-                {[
-                  { name: '메뉴 이미지 1', date: '2024-01-15', size: '2.3MB' },
-                  { name: '메뉴 이미지 2', date: '2024-01-10', size: '1.8MB' },
-                  { name: '메뉴 이미지 3', date: '2024-01-05', size: '3.1MB' },
-                  { name: '메뉴 이미지 4', date: '2024-01-01', size: '2.7MB' }
-                ].map((image, index) => (
-                  <div key={index} style={{
-                    padding: '1rem',
-                    border: '1px solid #ddd',
-                    borderRadius: '8px',
-                    backgroundColor: 'white',
-                    boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-                    cursor: 'pointer',
-                    transition: 'transform 0.2s ease',
-                    ':hover': {
-                      transform: 'translateY(-2px)'
-                    }
-                  }}>
-                    <div style={{
-                      width: '100%',
-                      height: '150px',
-                      backgroundColor: '#f5f5f5',
-                      borderRadius: '4px',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      marginBottom: '1rem',
-                      border: '1px solid #eee'
-                    }}>
-                      <span style={{ color: '#999', fontSize: '0.875rem' }}>이미지 미리보기</span>
-                    </div>
-                    <h4 style={{ margin: '0 0 0.5rem 0', color: '#333', fontSize: '1rem' }}>
-                      {image.name}
-                    </h4>
-                    <p style={{ margin: '0.25rem 0', color: '#666', fontSize: '0.875rem' }}>
-                      업로드일: {image.date}
-                    </p>
-                    <p style={{ margin: '0.25rem 0', color: '#666', fontSize: '0.875rem' }}>
-                      파일 크기: {image.size}
-                    </p>
-                  </div>
-                ))}
-              </div>
+              {analysesLoading ? (
+                <div style={{ textAlign: 'center', padding: '2rem' }}>
+                  <p>이미지를 불러오는 중...</p>
+                </div>
+              ) : analyses.length === 0 ? (
+                <div style={{ textAlign: 'center', padding: '2rem', color: '#666' }}>
+                  <p>아직 업로드된 이미지가 없습니다.</p>
+                  <p>메뉴 이미지를 업로드하여 분석을 시작해보세요!</p>
+                </div>
+              ) : (
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+                  gap: '1.5rem',
+                  marginBottom: '2rem'
+                }}>
+                  {analyses.map((analysis, index) => {
+                    const analysisDate = new Date(analysis.createdAt).toLocaleString('ko-KR', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                      hour: '2-digit',
+                      minute: '2-digit'
+                    });
+                    
+                    // 파일 크기를 읽기 쉬운 형태로 변환
+                    const formatFileSize = (bytes) => {
+                      if (!bytes) return '알 수 없음';
+                      const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+                      if (bytes === 0) return '0 Bytes';
+                      const i = Math.floor(Math.log(bytes) / Math.log(1024));
+                      return Math.round(bytes / Math.pow(1024, i) * 100) / 100 + ' ' + sizes[i];
+                    };
+
+                    // 메뉴명을 "최근 분석한 이미지 1, 2, 3..." 형태로 표시
+                    const displayMenuName = `최근 분석한 이미지 ${index + 1}`;
+
+                    return (
+                      <div key={analysis.id} style={{
+                        padding: '1.25rem',
+                        border: '1px solid #e5e7eb',
+                        borderRadius: '12px',
+                        backgroundColor: 'white',
+                        boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
+                        cursor: 'pointer',
+                        transition: 'all 0.2s ease',
+                        minHeight: '320px',
+                        display: 'flex',
+                        flexDirection: 'column'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.transform = 'translateY(-4px)';
+                        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.transform = 'translateY(0)';
+                        e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.1)';
+                      }}
+                      >
+                        <div style={{
+                          width: '100%',
+                          height: '180px',
+                          backgroundColor: '#f8fafc',
+                          borderRadius: '8px',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          marginBottom: '1rem',
+                          border: '2px dashed #d1d5db',
+                          overflow: 'hidden',
+                          position: 'relative'
+                        }}>
+                          {analysis.imageUrl ? (
+                            <img 
+                              src={analysis.imageUrl} 
+                              alt="메뉴 이미지"
+                              style={{
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'cover',
+                                borderRadius: '6px'
+                              }}
+                              onLoad={(e) => {
+                                console.log('✅ 이미지 로드 성공:', analysis.imageUrl);
+                                console.log('이미지 요소:', e.target);
+                              }}
+                              onError={(e) => {
+                                console.error('❌ 이미지 로드 실패:', analysis.imageUrl);
+                                console.error('에러 상세:', e.target.error || '알 수 없는 에러');
+                                console.error('이미지 요소:', e.target);
+                                console.error('이미지 src:', e.target.src);
+                                
+                                // 이미지 요소 숨기기
+                                e.target.style.display = 'none';
+                                
+                                // 플레이스홀더 표시
+                                const placeholder = e.target.nextSibling;
+                                if (placeholder) {
+                                  placeholder.style.display = 'flex';
+                                  placeholder.innerHTML = `
+                                    <div style="text-align: center; color: #6b7280;">
+                                      <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚠️</div>
+                                      <div style="font-size: 0.875rem;">이미지 로드 실패</div>
+                                      <div style="font-size: 0.75rem; margin-top: 0.25rem; color: #9ca3af;">
+                                        ${analysis.imageUrl}
+                                      </div>
+                                      <div style="font-size: 0.75rem; margin-top: 0.25rem; color: #ef4444;">
+                                        CORS 또는 파일 접근 오류
+                                      </div>
+                                      <div style="font-size: 0.75rem; margin-top: 0.5rem; color: #f59e0b;">
+                                        <button 
+                                          onclick="window.open('${analysis.imageUrl}', '_blank')"
+                                          style="
+                                            background: #f59e0b; 
+                                            color: white; 
+                                            border: none; 
+                                            padding: 0.25rem 0.5rem; 
+                                            border-radius: 4px; 
+                                            cursor: pointer;
+                                            font-size: 0.75rem;
+                                          "
+                                        >
+                                          새 탭에서 열기
+                                        </button>
+                                      </div>
+                                    </div>
+                                  `;
+                                }
+                              }}
+                            />
+                          ) : null}
+                          <div style={{ 
+                            color: '#6b7280', 
+                            fontSize: '0.875rem',
+                            display: analysis.imageUrl ? 'none' : 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            flexDirection: 'column',
+                            gap: '0.5rem'
+                          }}>                      
+                            <span>이미지 없음</span>
+                          </div>
+                        </div>
+                        
+                        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                          <h4 style={{ 
+                            margin: 0, 
+                            color: '#1f2937', 
+                            fontSize: '1.125rem',
+                            fontWeight: '600',
+                            lineHeight: '1.4',
+                            wordBreak: 'break-word',
+                            overflow: 'hidden',
+                            textOverflow: 'ellipsis',
+                            display: '-webkit-box',
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: 'vertical'
+                          }}>
+                            {displayMenuName}
+                          </h4>
+                          
+                          <div style={{ 
+                            display: 'flex', 
+                            flexDirection: 'column', 
+                            gap: '0.5rem',
+                            fontSize: '0.875rem',
+                            color: '#6b7280'
+                          }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>                          
+                              <span style={{ flex: 1 }}>{analysisDate}</span>
+                            </div>
+                            
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>                            
+                              <span style={{ flex: 1 }}>{formatFileSize(analysis.fileSize)}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
             </div>
           </div>
         );

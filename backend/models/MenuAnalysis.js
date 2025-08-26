@@ -21,6 +21,16 @@ module.exports = (sequelize) => {
       allowNull: false,
       field: 'image_url',
     },
+    originalFilename: {
+      type: DataTypes.STRING(255),
+      allowNull: true,
+      field: 'original_filename',
+    },
+    fileSize: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      field: 'file_size',
+    },
     extractedText: {
       type: DataTypes.TEXT,
       allowNull: true,
