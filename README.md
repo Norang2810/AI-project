@@ -70,7 +70,7 @@ OCR + 텍스트 분석 + ML 모델을 결합해 실생활 문제(알레르기 �
 
 </div>  
 
->React(프론트엔드) → Node.js(백엔드 API 서버) → FastAPI(AI 분석 서버) → MySQL(DB)로 구성된 3계층 분산 아키텍처입니다.  
+>React → Node.js → FastAPI → MySQL로 구성된 3계층 분산 아키텍처입니다.    
 >각 서비스는 Docker Compose로 컨테이너화되어 AWS EC2 환경에서 Nginx Reverse Proxy + HTTPS(SSL) 기반으로 통합 배포되었습니다.
  
 
