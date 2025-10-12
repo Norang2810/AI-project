@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌿 **알쥬알쥬 (Allergy AljuAlju)**  
+# 🌿 **알쥬알쥬**  
 ### _AI 기반 메뉴 분석 및 알레르기 위험도 예측 서비스_
 
 ---
@@ -9,9 +9,37 @@
 **💼 역할** | 팀장 / 백엔드·AI 서버 개발 / 배포 담당  
 **🏢 진행 기관** | ㈜유큐브 DX AI 실무형 부트캠프  
 
-[🖥️ GitHub Repository](https://github.com/your-repo-link) • [🎞️ 시연 영상](https://your-demo-link.com) • [📘 발표 자료](https://your-ppt-link.com)
+## ⚙️ 기술 스택
+
+<div align="center">
+
+<!-- Frontend -->
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black"/>  
+
+<!-- Backend -->
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/> 
+<img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white"/> 
+<img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white"/>  
+
+<!-- AI Server -->
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>  
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white"/> 
+<img src="https://img.shields.io/badge/EasyOCR-FFD43B?style=flat-square&logo=python&logoColor=black"/> 
+<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white"/> 
+<img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>  
+
+<!-- Database -->
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>  
+
+<!-- Infra -->
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/> 
+<img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white"/> 
+<img src="https://img.shields.io/badge/AWS%20EC2-FF9900?style=flat-square&logo=amazon-ec2&logoColor=white"/> 
+<img src="https://img.shields.io/badge/SSL%20(Let's%20Encrypt)-003A70?style=flat-square&logo=letsencrypt&logoColor=white"/>  
 
 </div>
+
 
 ---
 
@@ -60,19 +88,6 @@ OCR + 텍스트 분석 + ML 모델을 결합해 실생활 문제(알레르기 �
 
 > 사용자·메뉴·분석결과 테이블을 중심으로 데이터 일관성을 유지하도록 설계  
 
----
-
-## ⚙️ **기술 스택**
-
-| 분야 | 기술 |
-|:--:|:--|
-| Frontend | React |
-| Backend | Node.js (Express), JWT |
-| AI Server | Python (FastAPI ,EasyOCR, pandas, NumPy ,scikit-learn ,cosine-similarity 기반 TF-IDF 분석) |
-| DB | MySQL |
-| Infra | Docker, Nginx, AWS EC2, SSL(Let’s Encrypt) |
-
----
 
 ## 💡 **핵심 기능**
 
