@@ -89,7 +89,7 @@ OCR + 텍스트 분석 + ML 모델을 결합해 실생활 문제(알레르기 �
 
 
 ## 💡 **핵심 기능**
-
+- **반응형 웹**
 - **OCR 기반 메뉴 이미지 분석 및 텍스트 정규화**
 - **AI 모델을 활용한 알레르기 위험도 예측**
 - **TF-IDF 기반 유사 메뉴 추천 기능**
@@ -107,13 +107,6 @@ OCR + 텍스트 분석 + ML 모델을 결합해 실생활 문제(알레르기 �
 
 ---
 
-## 🔗 **포트폴리오 링크**
-
-- 🖥️ GitHub: [https://github.com/your-repo-link](https://github.com/your-repo-link)  
-- 🎞️ 시연 영상: [https://your-demo-link.com](https://your-demo-link.com)  
-- 📘 발표 자료: [https://your-ppt-link.com](https://your-ppt-link.com)
-
----
 
 <div align="center">
 
