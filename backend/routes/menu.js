@@ -11,6 +11,189 @@ const { authenticateToken } = require('../middleware/auth');
 const { geminiEnhanceUrl } = require('../config/runtime');
 
 const router = express.Router();
+const AI_REQUEST_TIMEOUT_MS = 600000;
+const AI_REQUEST_MAX_RETRIES = 3;
+const AI_REQUEST_RETRY_DELAY_MS = 2000;
+const GEMINI_TIMEOUT_MS = 30000;
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+const getAiServerUrl = () => process.env.AI_SERVER_URL || 'http://ai-server:8000';
+
+const createAnalyzeFormData = ({ filePath, originalFilename, mimeType, allergyNames }) => {
+  const formData = new FormData();
+
+  formData.append('file', fs.createReadStream(filePath), {
+    filename: originalFilename,
+    contentType: mimeType,
+  });
+
+  if (allergyNames.length > 0) {
+    formData.append('user_allergies', allergyNames.join(','));
+  }
+
+  return formData;
+};
+
+const fetchUserAllergyNames = async (userId) => {
+  const userAllergies = await UserAllergy.findAll({
+    where: { userId },
+    attributes: ['allergyName'],
+  });
+
+  return userAllergies.map((allergy) => allergy.allergyName);
+};
+
+const requestAiAnalysis = async ({ filePath, originalFilename, mimeType, allergyNames }) => {
+  const aiServerUrl = getAiServerUrl();
+
+  console.log('Sending analyze request to AI server:', {
+    aiServerUrl,
+    filename: originalFilename,
+    mimeType,
+    allergyCount: allergyNames.length,
+  });
+
+  for (let attempt = 1; attempt <= AI_REQUEST_MAX_RETRIES; attempt += 1) {
+    const formData = createAnalyzeFormData({
+      filePath,
+      originalFilename,
+      mimeType,
+      allergyNames,
+    });
+
+    try {
+      const response = await axios.post(`${aiServerUrl}/analyze-image`, formData, {
+        headers: formData.getHeaders(),
+        timeout: AI_REQUEST_TIMEOUT_MS,
+        maxBodyLength: Infinity,
+        maxContentLength: Infinity,
+        validateStatus: () => true,
+      });
+
+      if (response.status !== 200) {
+        throw new Error(
+          `AI server analyze failed: ${response.status} - ${JSON.stringify(response.data)}`
+        );
+      }
+
+      console.log('AI server response status:', response.status);
+      return response.data;
+    } catch (error) {
+      console.error(
+        `AI analyze request failed (${attempt}/${AI_REQUEST_MAX_RETRIES}):`,
+        error.message
+      );
+
+      if (attempt === AI_REQUEST_MAX_RETRIES) {
+        throw new Error(
+          `AI server connection failed after ${AI_REQUEST_MAX_RETRIES} attempts: ${error.message}`
+        );
+      }
+
+      await sleep(AI_REQUEST_RETRY_DELAY_MS);
+    }
+  }
+
+  throw new Error('AI server request exhausted retries without a result');
+};
+
+const shouldRunGeminiEnhancement = (aiResult) =>
+  Boolean(aiResult?.extracted_text) && !aiResult?.translated_text;
+
+const buildGeminiPrompt = (aiResult) => `
+당신은 카페 메뉴 OCR 후처리 전문가입니다. OCR에서 추출된 텍스트를 보고 음료 메뉴명만 최대 15개까지 정리하세요.
+
+입력 텍스트:
+${aiResult.extracted_text}
+
+응답 규칙:
+1. 반드시 JSON 배열만 반환합니다.
+2. 음료 메뉴명만 남기고 가격, 설명, 기타 문구는 제거합니다.
+3. 확신이 낮더라도 텍스트 기반으로 가장 가능성 높은 메뉴명을 추정합니다.
+4. 중복은 제거합니다.
+
+예시 응답:
+["아메리카노", "카페라떼", "카푸치노"]
+`;
+
+const maybeEnhanceMenusWithGemini = async (aiResult) => {
+  if (!shouldRunGeminiEnhancement(aiResult)) {
+    return aiResult;
+  }
+
+  console.log('Gemini menu enhancement started because translated_text is missing');
+
+  try {
+    const geminiResponse = await axios.post(
+      geminiEnhanceUrl,
+      {
+        prompt: buildGeminiPrompt(aiResult),
+        text: aiResult.extracted_text,
+        maxTokens: 300,
+      },
+      {
+        timeout: GEMINI_TIMEOUT_MS,
+      }
+    );
+
+    if (!geminiResponse.data.success || !geminiResponse.data.enhancedText) {
+      return aiResult;
+    }
+
+    const enhancedText = JSON.parse(geminiResponse.data.enhancedText);
+    if (!Array.isArray(enhancedText) || enhancedText.length === 0) {
+      return aiResult;
+    }
+
+    console.log('Gemini menu enhancement completed:', enhancedText);
+
+    return {
+      ...aiResult,
+      enhanced_text: enhancedText.join(' '),
+      enhanced_by_gemini: true,
+    };
+  } catch (error) {
+    console.warn('Gemini menu enhancement failed:', error.message);
+    return aiResult;
+  }
+};
+
+const saveMenuAnalysis = async ({
+  aiResult,
+  userId,
+  imageUrl,
+  originalFilename,
+  fileSize,
+}) => {
+  if (!aiResult?.analysis) {
+    return;
+  }
+
+  try {
+    await MenuAnalysis.create({
+      userId,
+      imageUrl,
+      originalFilename,
+      fileSize,
+      extractedText: aiResult.extracted_text,
+      translatedText: aiResult.translated_text || aiResult.enhanced_text || null,
+      analysisResult: aiResult.analysis,
+    });
+
+    console.log('MenuAnalysis saved successfully');
+  } catch (error) {
+    console.error('Failed to save MenuAnalysis:', error);
+  }
+};
+
+const queueMenuAnalysisSave = (payload) => {
+  setImmediate(() => {
+    saveMenuAnalysis(payload).catch((error) => {
+      console.error('Unexpected MenuAnalysis persistence error:', error);
+    });
+  });
+};
 
 // 이미지 리사이징 함수 (임시로 비활성화)
 async function resizeImage(filePath, maxWidth = 800, maxHeight = 800) {
@@ -110,181 +293,50 @@ const upload = multer({
 router.post('/analyze', authenticateToken, upload.single('image'), async (req, res) => {
   try {
     if (!req.file) {
-      return res.status(400).json({ 
-        success: false, 
-        message: '이미지 파일이 필요합니다.' 
+      return res.status(400).json({
+        success: false,
+        message: '이미지 파일이 필요합니다.',
       });
     }
 
-    // 사용자 알레르기 정보 가져오기
+    const analyzeStartedAt = Date.now();
     const userId = req.user.id;
-    const userAllergies = await UserAllergy.findAll({
-      where: { userId },
-      attributes: ['allergyName']
+    const fileInfo = {
+      imageUrl: req.file.path,
+      originalFilename: req.file.originalname,
+      fileSize: req.file.size,
+      mimeType: req.file.mimetype,
+    };
+
+    const [allergyNames, resizedImagePath] = await Promise.all([
+      fetchUserAllergyNames(userId),
+      resizeImage(req.file.path, 800, 800),
+    ]);
+
+    const aiResult = await requestAiAnalysis({
+      filePath: resizedImagePath,
+      originalFilename: fileInfo.originalFilename,
+      mimeType: fileInfo.mimeType,
+      allergyNames,
     });
-    
-    const allergyNames = userAllergies.map(allergy => allergy.allergyName);
 
-    // 이미지 리사이징 적용
-    console.log('이미지 리사이징 시작...');
-    const resizedImagePath = await resizeImage(req.file.path, 800, 800);
-    console.log('이미지 리사이징 완료:', resizedImagePath);
+    const finalResult = await maybeEnhanceMenusWithGemini(aiResult);
+    const detailedAnalysis = processAnalysisResult(finalResult, allergyNames);
 
-    // AI 서버로 이미지 전송 (axios 사용)
-    const formData = new FormData();
-    
-    // 파일을 Buffer로 읽어서 추가 (리사이징된 이미지 사용)
-    const fileBuffer = fs.readFileSync(resizedImagePath);
-    formData.append('file', fileBuffer, {
-      filename: req.file.originalname,
-      contentType: req.file.mimetype
-    });
-    
-    // FormData에 알레르기 정보 추가
-    if (allergyNames.length > 0) {
-      formData.append('user_allergies', allergyNames.join(','));
-    }
-
-    console.log('AI 서버로 요청 전송 중...');
-    console.log('파일 정보:', {
-      filename: req.file.originalname,
-      size: fileBuffer.length,
-      mimetype: req.file.mimetype
-    });
-    
-    // 재시도 로직 추가
-    let aiResponse;
-    let retryCount = 0;
-    const maxRetries = 3;
-    
-    while (retryCount < maxRetries) {
-      try {
-        const aiServerUrl = process.env.AI_SERVER_URL || 'http://ai-server:8000';
-        console.log('🔍 AI 서버 URL:', aiServerUrl);
-        console.log('🔍 환경변수 AI_SERVER_URL:', process.env.AI_SERVER_URL);
-        aiResponse = await axios.post(`${aiServerUrl}/analyze-image`, formData, {
-          headers: {
-            ...formData.getHeaders()
-          },
-          timeout: 600000 // 10분 타임아웃
-        });
-        break; // 성공하면 루프 종료
-      } catch (error) {
-        retryCount++;
-        console.error(`AI 서버 요청 실패 (${retryCount}/${maxRetries}):`, error.message);
-        
-        if (retryCount >= maxRetries) {
-          throw new Error(`AI 서버 연결 실패 (${maxRetries}회 시도): ${error.message}`);
-        }
-        
-        // 재시도 전 2초 대기
-        await new Promise(resolve => setTimeout(resolve, 2000));
-      }
-    }
-
-    console.log('AI 서버 응답 상태:', aiResponse.status, aiResponse.statusText);
-
-    if (aiResponse.status !== 200) {
-      console.error('AI 서버 오류:', aiResponse.data);
-      throw new Error(`AI 서버 분석 실패: ${aiResponse.status} - ${JSON.stringify(aiResponse.data)}`);
-    }
-
-    const aiResult = aiResponse.data;
-    console.log('AI 서버 응답:', JSON.stringify(aiResult, null, 2));
-    
-    // 🤖 Gemini API로 메뉴명 완성 (무조건 호출)
-    let finalResult = aiResult;
-    console.log('🚀 Gemini API로 메뉴명 완성 시작...');
-    
-    try {
-      const geminiPrompt = `
-당신은 카페 메뉴판 전문 분석가입니다. OCR로 추출된 불완전한 텍스트를 분석하여 정확한 카페 음료 메뉴명을 추출해야 합니다.
-
-**입력 텍스트:**
-${aiResult.extracted_text}
-
-**번역된 텍스트:**
-${aiResult.translated_text || '번역 없음'}
-
-**임무:**
-OCR에서 추출된 텍스트를 분석하여 카페 음료 메뉴명만을 정확하게 추출하세요.
-
-**카페 음료 메뉴 패턴 (포괄적):**
-- **커피류**: 아메리카노, 라떼, 카푸치노, 에스프레소, 모카, 마끼아또, 콜드브루, 코르타도
-- **차류**: 홍차, 녹차, 우롱차, 허브티, 레몬티, 페퍼민트티, 차이티, 브렉퍼스트티
-- **주스류**: 오렌지주스, 사과주스, 포도주스, 콜드프레스주스, 레모네이드
-- **기타 음료**: 핫초콜릿, 말차라떼, 스무디, 에이드, 밀크셰이크, 아이스티
-
-**OCR 오류 수정 및 예측 규칙:**
-- "LTTE" → "라떼"
-- "AMERICANO" → "아메리카노" 
-- "ESPRESSO" → "에스프레소"
-- "CAPPUCCINO" → "카푸치노"
-- "MACCHIATO" → "마끼아또"
-- "COLD BREW" → "콜드브루"
-- "HOT TEA" → "홍차"
-- "GREEN TEA" → "녹차"
-- "ORANGE JUICE" → "오렌지주스"
-- "COLD PRESSED JUICE" → "콜드프레스주스"
-- "MATCHA LEMONADE" → "말차레모네이드"
-- "RALPH'S ROAST" → "랄프스로스트커피"
-- "MOCIL" → "모카"
-- "LATTE_NO" → "라떼"
-
-**응답 형식 (반드시 지켜주세요):**
-["메뉴명1", "메뉴명2", "메뉴명3"]
-
-**주의사항:**
-1. 반드시 JSON 배열 형태로 응답
-2. 음료 메뉴명만 추출 (가격, 설명, 기타 정보 제외)
-3. 한글로 응답
-4. 최대 15개까지 추출
-5. OCR 오류가 있는 경우 올바른 메뉴명으로 수정
-6. **확실하지 않은 메뉴도 포함** - 애매한 텍스트를 기반으로 예측
-7. **모든 음료 메뉴를 놓치지 마세요** - OCR에서 추출된 텍스트에 있는 모든 음료 관련 단어를 포함
-
-**예시 응답:**
-["아메리카노", "카페라떼", "카푸치노", "에스프레소", "콜드브루", "오렌지주스", "핫초콜릿", "말차라떼"]
-      `;
-      
-      const geminiResponse = await axios.post(geminiEnhanceUrl, {
-        prompt: geminiPrompt,
-        text: aiResult.extracted_text,
-        maxTokens: 300
-      }, {
-        timeout: 30000
-      });
-      
-      if (geminiResponse.data.success && geminiResponse.data.enhancedText) {
-        try {
-          const enhancedText = JSON.parse(geminiResponse.data.enhancedText);
-          if (Array.isArray(enhancedText) && enhancedText.length > 0) {
-            // Gemini API로 보완된 텍스트로 결과 업데이트
-            finalResult = {
-              ...aiResult,
-              enhanced_text: enhancedText.join(' '),
-              enhanced_by_gemini: true
-            };
-            console.log('✅ Gemini API로 메뉴명 완성 완료:', enhancedText);
-          }
-        } catch (parseError) {
-          console.warn('⚠️ Gemini API 응답을 JSON으로 파싱할 수 없음:', parseError);
-        }
-      }
-    } catch (geminiError) {
-      console.warn('⚠️ Gemini API 호출 실패:', geminiError.message);
-    }
-    
-    // 분석 결과를 상세하게 가공
-    const detailedAnalysis = await processAnalysisResult(finalResult, allergyNames, userId, req.file.path, req.file.originalname, req.file.size);
-    
-    // 이미지 파일은 보존 (삭제하지 않음)
-    // fs.unlinkSync(req.file.path); // 이 줄을 주석 처리
+    console.log('Menu analyze response ready in ms:', Date.now() - analyzeStartedAt);
 
     res.json({
       success: true,
       message: '분석이 완료되었습니다!',
-      analysis: detailedAnalysis
+      analysis: detailedAnalysis,
+    });
+
+    queueMenuAnalysisSave({
+      aiResult: finalResult,
+      userId,
+      imageUrl: fileInfo.imageUrl,
+      originalFilename: fileInfo.originalFilename,
+      fileSize: fileInfo.fileSize,
     });
 
   } catch (error) {
@@ -303,35 +355,19 @@ OCR에서 추출된 텍스트를 분석하여 카페 음료 메뉴명만을 정�
 });
 
 // 분석 결과 가공 함수
-async function processAnalysisResult(aiResult, userAllergies, userId, imageUrl, originalFilename, fileSize) {
+function processAnalysisResult(aiResult, userAllergies) {
   console.log('processAnalysisResult 입력:', { aiResult, userAllergies });
-  
+
   if (!aiResult || !aiResult.analysis) {
     console.error('AI 결과 형식 오류:', aiResult);
     return {
       extractedText: aiResult?.extracted_text || '텍스트 추출 실패',
-      enhancedText: aiResult?.enhanced_text || null,
+      enhancedText: aiResult?.translated_text || aiResult?.enhanced_text || null,
       menuAnalysis: [],
       userAllergies: userAllergies,
       timestamp: new Date().toISOString(),
       error: '분석 결과 형식 오류'
     };
-  }
-
-  try {
-    await MenuAnalysis.create({
-      userId: userId,
-      imageUrl: imageUrl,
-      originalFilename: originalFilename, // 원본 파일명 저장
-      fileSize: fileSize, // 파일 크기 저장
-      extractedText: aiResult.extracted_text,
-      translatedText: aiResult.translated_text || null,
-      analysisResult: aiResult.analysis, // 그대로 JSON으로 저장
-    });
-
-    console.log('✅ MenuAnalysis DB 저장 성공');
-  } catch (error) {
-    console.error('❌ MenuAnalysis DB 저장 실패:', error);
   }
   
   const analysis = aiResult.analysis;
@@ -383,7 +419,7 @@ async function processAnalysisResult(aiResult, userAllergies, userId, imageUrl, 
   
   return {
     extractedText: aiResult.extracted_text,
-    enhancedText: aiResult.enhanced_text || null,
+    enhancedText: aiResult.translated_text || aiResult.enhanced_text || null,
     menuAnalysis: menuAnalysis,
     userAllergies: userAllergies,
     timestamp: new Date().toISOString()
