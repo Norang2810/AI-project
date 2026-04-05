@@ -6,9 +6,13 @@ const FormData = require('form-data');
 const axios = require('axios');
 const { Op } = require('sequelize');
 // const sharp = require('sharp'); // 임시로 주석 처리
-const { MenuAnalysis, UserAllergy } = require('../models');
+const { UserAllergy } = require('../models');
 const { authenticateToken } = require('../middleware/auth');
 const { geminiEnhanceUrl } = require('../config/runtime');
+const {
+  createCompletedAnalysisArtifacts,
+  createFailedAnalysisJob,
+} = require('../services/analysisPersistence');
 
 const router = express.Router();
 const AI_REQUEST_TIMEOUT_MS = 600000;
@@ -159,38 +163,18 @@ const maybeEnhanceMenusWithGemini = async (aiResult) => {
   }
 };
 
-const saveMenuAnalysis = async ({
-  aiResult,
-  userId,
-  imageUrl,
-  originalFilename,
-  fileSize,
-}) => {
-  if (!aiResult?.analysis) {
-    return;
-  }
-
-  try {
-    await MenuAnalysis.create({
-      userId,
-      imageUrl,
-      originalFilename,
-      fileSize,
-      extractedText: aiResult.extracted_text,
-      translatedText: aiResult.translated_text || aiResult.enhanced_text || null,
-      analysisResult: aiResult.analysis,
-    });
-
-    console.log('MenuAnalysis saved successfully');
-  } catch (error) {
-    console.error('Failed to save MenuAnalysis:', error);
-  }
-};
-
 const queueMenuAnalysisSave = (payload) => {
   setImmediate(() => {
-    saveMenuAnalysis(payload).catch((error) => {
+    createCompletedAnalysisArtifacts(payload).catch((error) => {
       console.error('Unexpected MenuAnalysis persistence error:', error);
+    });
+  });
+};
+
+const queueFailedAnalysisSave = (payload) => {
+  setImmediate(() => {
+    createFailedAnalysisJob(payload).catch((error) => {
+      console.error('Unexpected analysis failure persistence error:', error);
     });
   });
 };
@@ -291,6 +275,12 @@ const upload = multer({
 
 // 메뉴 분석 API
 router.post('/analyze', authenticateToken, upload.single('image'), async (req, res) => {
+  const requestStartedAt = new Date();
+  let userId = req.user?.id || null;
+  let fileInfo = null;
+  let aiLatencyMs = 0;
+  let geminiLatencyMs = 0;
+
   try {
     if (!req.file) {
       return res.status(400).json({
@@ -300,8 +290,8 @@ router.post('/analyze', authenticateToken, upload.single('image'), async (req, r
     }
 
     const analyzeStartedAt = Date.now();
-    const userId = req.user.id;
-    const fileInfo = {
+    userId = req.user.id;
+    fileInfo = {
       imageUrl: req.file.path,
       originalFilename: req.file.originalname,
       fileSize: req.file.size,
@@ -313,17 +303,24 @@ router.post('/analyze', authenticateToken, upload.single('image'), async (req, r
       resizeImage(req.file.path, 800, 800),
     ]);
 
+    const aiStartedAt = Date.now();
     const aiResult = await requestAiAnalysis({
       filePath: resizedImagePath,
       originalFilename: fileInfo.originalFilename,
       mimeType: fileInfo.mimeType,
       allergyNames,
     });
+    aiLatencyMs = Date.now() - aiStartedAt;
 
+    const geminiStartedAt = Date.now();
     const finalResult = await maybeEnhanceMenusWithGemini(aiResult);
+    geminiLatencyMs = Date.now() - geminiStartedAt;
     const detailedAnalysis = processAnalysisResult(finalResult, allergyNames);
 
-    console.log('Menu analyze response ready in ms:', Date.now() - analyzeStartedAt);
+    const requestCompletedAt = new Date();
+    const requestLatencyMs = Date.now() - analyzeStartedAt;
+
+    console.log('Menu analyze response ready in ms:', requestLatencyMs);
 
     res.json({
       success: true,
@@ -334,13 +331,23 @@ router.post('/analyze', authenticateToken, upload.single('image'), async (req, r
     queueMenuAnalysisSave({
       aiResult: finalResult,
       userId,
+      userAllergies: allergyNames,
       imageUrl: fileInfo.imageUrl,
       originalFilename: fileInfo.originalFilename,
       fileSize: fileInfo.fileSize,
+      metrics: {
+        startedAt: requestStartedAt,
+        completedAt: requestCompletedAt,
+        requestLatencyMs,
+        aiLatencyMs,
+        geminiLatencyMs,
+      },
     });
 
   } catch (error) {
     console.error('메뉴 분석 오류:', error);
+    const requestCompletedAt = new Date();
+    const requestLatencyMs = Math.max(0, requestCompletedAt.getTime() - requestStartedAt.getTime());
     
     // 에러 발생 시에만 임시 파일 정리
     if (req.file && fs.existsSync(req.file.path)) {
@@ -350,6 +357,21 @@ router.post('/analyze', authenticateToken, upload.single('image'), async (req, r
     res.status(500).json({ 
       success: false, 
       message: '분석 중 오류가 발생했습니다.' 
+    });
+
+    queueFailedAnalysisSave({
+      userId,
+      imageUrl: fileInfo?.imageUrl || null,
+      originalFilename: fileInfo?.originalFilename || null,
+      fileSize: fileInfo?.fileSize || null,
+      errorMessage: error.message,
+      metrics: {
+        startedAt: requestStartedAt,
+        completedAt: requestCompletedAt,
+        requestLatencyMs,
+        aiLatencyMs,
+        geminiLatencyMs,
+      },
     });
   }
 });
