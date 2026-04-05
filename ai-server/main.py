@@ -32,9 +32,21 @@ except ImportError as e:
 app = FastAPI(title="알레르기 안전 메뉴 분석 AI 서버", version="2.0.0")
 
 # CORS 설정
+def parse_cors_origins(value: str) -> List[str]:
+    return [item.strip().rstrip('/') for item in value.split(',') if item.strip()]
+
+frontend_origin = os.getenv("FRONTEND_ORIGIN", "").strip().rstrip('/')
+ai_cors_origins = parse_cors_origins(os.getenv("AI_CORS_ORIGINS", ""))
+
+if not ai_cors_origins:
+    if frontend_origin:
+        ai_cors_origins = [frontend_origin]
+    else:
+        ai_cors_origins = ["http://localhost:3000", "http://localhost:8081"]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=ai_cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

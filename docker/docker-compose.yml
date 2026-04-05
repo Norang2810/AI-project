@@ -6,12 +6,14 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile.frontend
-    # ports:
-    #   - "3000:80"
+    ports:
+      - "3000:80"
     environment:
-      - REACT_APP_API_URL=http://localhost/api
-      - REACT_APP_AI_SERVER_URL=http://localhost/ai
+      - REACT_APP_API_URL=${REACT_APP_API_URL:-http://localhost:8081/api}
+      - REACT_APP_AI_SERVER_URL=${REACT_APP_AI_SERVER_URL:-http://localhost:8081/ai}
+      - REACT_APP_BACKEND_ORIGIN=${REACT_APP_BACKEND_ORIGIN:-http://localhost:3001}
       - REACT_APP_KAKAO_REST_API_KEY=${REACT_APP_KAKAO_REST_API_KEY}
+      - REACT_APP_KAKAO_REDIRECT_URI=${REACT_APP_KAKAO_REDIRECT_URI:-http://localhost:8081/api/auth/kakao/callback}
     depends_on:
       - backend
 
@@ -31,8 +33,18 @@ services:
       - DB_USER=myweb_user
       - DB_PASSWORD=${DB_PASSWORD}
       - JWT_SECRET=${JWT_SECRET}
-      - CORS_ORIGIN=http://localhost:3000
+      - JWT_REFRESH_SECRET=${JWT_REFRESH_SECRET}
+      - JWT_EXPIRES=${JWT_EXPIRES}
+      - JWT_REFRESH_EXPIRES=${JWT_REFRESH_EXPIRES}
+      - FRONTEND_ORIGIN=${FRONTEND_ORIGIN:-http://localhost:8081}
+      - CORS_ORIGIN=${CORS_ORIGIN:-http://localhost:3000}
+      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:3000,http://localhost:8081}
+      - UPLOAD_CORS_ORIGIN=${UPLOAD_CORS_ORIGIN:-http://localhost:8081}
+      - KAKAO_REDIRECT_URI=${KAKAO_REDIRECT_URI:-http://localhost:8081/api/auth/kakao/callback}
       - KAKAO_REST_API_KEY=${KAKAO_REST_API_KEY}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - AI_SERVER_URL=${AI_SERVER_URL}
+      - GEMINI_ENHANCE_URL=${GEMINI_ENHANCE_URL:-http://127.0.0.1:3001/api/gemini/enhance}
     depends_on:
       mysql:
         condition: service_healthy
@@ -50,7 +62,12 @@ services:
       - "8000:8000"
     environment:
       - DEBUG=True
+      - FRONTEND_ORIGIN=${FRONTEND_ORIGIN:-http://localhost:8081}
+      - AI_CORS_ORIGINS=${AI_CORS_ORIGINS:-http://localhost:3000,http://localhost:8081}
       - JWT_SECRET=${JWT_SECRET}
+      - JWT_REFRESH_SECRET=${JWT_REFRESH_SECRET}
+      - JWT_EXPIRES=${JWT_EXPIRES}
+      - JWT_REFRESH_EXPIRES=${JWT_REFRESH_EXPIRES}
     volumes:
       - ../ai-server:/app
       - ../data:/app/data
@@ -76,9 +93,9 @@ services:
   nginx:
     image: nginx:alpine
     ports:
-      - "3000:80"
+      - "8081:80"
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/nginx.local.conf:/etc/nginx/nginx.conf
     depends_on:
       - frontend
       - backend
@@ -86,4 +103,3 @@ services:
 
 volumes:
   mysql_data:
-  certbot-www:

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { apiFetch } from '../../lib/apiFetch';
 import {
   AllergyContainer,
   AllergyCard,
@@ -13,10 +14,6 @@ import {
   CheckboxItem,
   SuccessMessage,
   ErrorMessage,
-  SeveritySection,
-  SeverityTitle,
-  SeverityOptions,
-  SeverityOption,
   ButtonGroup,
   Button,
   LinkText
@@ -24,7 +21,7 @@ import {
 
 const AllergyPage = ({ isLoggedIn, setIsLoggedIn }) => {
   const [selectedAllergies, setSelectedAllergies] = useState({});
-  const [severity, setSeverity] = useState('medium');
+
   const [isLoading, setIsLoading] = useState(false);
   const [success, setSuccess] = useState('');
   const [error, setError] = useState('');
@@ -34,7 +31,7 @@ const AllergyPage = ({ isLoggedIn, setIsLoggedIn }) => {
   // 로그인 상태 확인
   useEffect(() => {
     const checkAuthStatus = () => {
-      const token = localStorage.getItem('token');
+      const token = localStorage.getItem('accessToken');
       const user = localStorage.getItem('user');
       
       if (!token || !user) {
@@ -52,7 +49,7 @@ const AllergyPage = ({ isLoggedIn, setIsLoggedIn }) => {
           throw new Error('Invalid user data');
         }
       } catch (err) {
-        localStorage.removeItem('token');
+        localStorage.removeItem('accessToken');
         localStorage.removeItem('user');
         setError('로그인 정보가 유효하지 않습니다. 다시 로그인해주세요.');
         setTimeout(() => {
@@ -76,13 +73,7 @@ const AllergyPage = ({ isLoggedIn, setIsLoggedIn }) => {
 
   const loadExistingAllergies = async () => {
     try {
-      const token = localStorage.getItem('token');
-      const response = await fetch('/api/user/allergies', {
-        method: 'GET',
-        headers: {
-          'Authorization': `Bearer ${token}`
-        }
-      });
+      const response = await apiFetch('/api/user/allergies');
 
       if (response.ok) {
         const data = await response.json();
@@ -92,7 +83,6 @@ const AllergyPage = ({ isLoggedIn, setIsLoggedIn }) => {
             existingAllergies[allergy.name] = true;
           });
           setSelectedAllergies(existingAllergies);
-          setSeverity(data.data.allergies[0]?.severity || 'medium');
         }
       }
     } catch (err) {
@@ -135,11 +125,7 @@ const allergyCategories = {
 };
 
 
-  const severityLevels = [
-    { value: 'low', label: '경미', description: '가벼운 증상' },
-    { value: 'medium', label: '보통', description: '일반적인 증상' },
-    { value: 'high', label: '심각', description: '심각한 증상' }
-  ];
+
 
   const handleAllergyChange = (category, item) => {
     setSelectedAllergies(prev => ({
@@ -158,24 +144,13 @@ const allergyCategories = {
         item => selectedAllergies[item]
       );
 
-      const token = localStorage.getItem('token');
-      if (!token) {
-        setError('로그인이 필요합니다.');
-        setTimeout(() => {
-          navigate('/login');
-        }, 2000);
-        return;
-      }
-
-      const response = await fetch('/api/user/allergies', {
+      const response = await apiFetch('/api/user/allergies', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
         },
         body: JSON.stringify({
-          allergies: selectedItems,
-          severity: severity
+          allergies: selectedItems
         }),
       });
 
@@ -248,26 +223,7 @@ const allergyCategories = {
           ))}
         </AllergyGrid>
 
-        <SeveritySection>
-          <SeverityTitle>알레르기 반응 심각도</SeverityTitle>
-          <SeverityOptions>
-            {severityLevels.map(level => (
-              <SeverityOption
-                key={level.value}
-                className={severity === level.value ? 'selected' : ''}
-              >
-                <input
-                  type="radio"
-                  name="severity"
-                  value={level.value}
-                  checked={severity === level.value}
-                  onChange={(e) => setSeverity(e.target.value)}
-                />
-                <span>{level.label} - {level.description}</span>
-              </SeverityOption>
-            ))}
-          </SeverityOptions>
-        </SeveritySection>
+
 
         <div style={{ textAlign: 'center', margin: '1rem 0', color: '#666' }}>
           선택된 항목: <strong>{selectedCount}개</strong>

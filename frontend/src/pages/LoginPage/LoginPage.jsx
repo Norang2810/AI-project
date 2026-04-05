@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { KakaoLogin } from '../../components/common/Button';
 import styled from 'styled-components';
+import { apiFetch, setTokens } from '../../lib/apiFetch';
+
+// 맨 위에 추가
+const FontStyle = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&display=swap');
+`;
 
 const LoginContainer = styled.div`
   min-height: 100vh;
@@ -10,81 +16,228 @@ const LoginContainer = styled.div`
   align-items: center;
   background-color: #FFECD5; /* 부드러운 배경색 */
   padding: 2rem;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 1.5rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.5rem;
+  }
 `;
 
 const LoginCard = styled.div`
   background: white;
-  padding: 3rem;
+  padding: 1.7rem;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   border: 2px solid #FFD6AA; /* 카드 경계 강조 */
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 1.5rem;
+    max-width: 450px;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 1.3rem;
+    max-width: 400px;
+    border-radius: 12px;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 1rem;
+    max-width: 100%;
+    border-radius: 10px;
+  }
 `;
 
 const Title = styled.h1`
   text-align: center;
   color: #A2601E; /* 대표 텍스트 색상 */
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-size: 2rem;
+  font-weight: normal;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    font-size: 1.8rem;
+    margin-bottom: 1.3rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.8rem;
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    gap: 0.7rem;
+  }
 `;
 
 const FormGroup = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  flex-direction: row;  // column → row로 변경
+  align-items: center;  // 추가
+  gap: 1rem;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    gap: 0.8rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
 `;
 
 const Label = styled.label`
-  font-weight: bold;
   color: #A2601E;
+  text-align: left;  // 추가
+  width: 120px;      // 추가
+  flex-shrink: 0;    // 추가
+  font-family: 'Noto Sans KR', sans-serif;  // 추가
+  font-weight: 500;  // bold → 500
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    width: 100px;
+    font-size: 0.95rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    width: auto;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    font-size: 0.85rem;
+  }
 `;
 
 const Input = styled.input`
+  background-color: #FFFFFF;  // 추가
   padding: 1rem;
   border: 2px solid #E1C8A8;
   border-radius: 8px;
   font-size: 1rem;
+  text-align: center;  // 추가
   transition: border-color 0.3s ease;
+  flex: 1;        // 추가
+  width: 100%;    // 추가
+
+  &::placeholder {
+    font-size: 0.8rem;  // 추가
+  }
   
   &:focus {
     outline: none;
     border-color: #915316;
   }
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.7rem;
+    font-size: 0.85rem;
+  }
 `;
 
 const Button = styled.button`
-  background-color: #8b5e3c;
+  background-color: #B9855A;  // #8b5e3c → #B9855A
   color: white;
-  padding: 1rem;
+  padding: 0.8rem;  // 1rem → 0.8rem
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.2rem;  // 1rem → 1.2rem
+  // font-weight: bold; 삭제
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 1rem; /* 비밀번호와 간격 늘림 */
+  // margin-top: 1rem; 삭제
   
   &:hover {
-    background-color: #6e4b2a;
+    background-color: rgb(169, 114, 68);  // #6e4b2a → rgb(169, 114, 68)
+  }  // 닫는 중괄호 추가
   
   &:disabled {
     background-color: #ccc;
     cursor: not-allowed;
   }
-`;
 
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 0.7rem;
+    font-size: 1.1rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* 모바일에서 호버 효과 제거 */
+  @media (max-width: 768px) {
+    &:hover {
+      background-color: #B9855A;
+    }
+  }
+`;
 
 const LinkText = styled.p`
   text-align: center;
   margin-top: 1.5rem;
   color: #915316;
+  font-family: 'Noto Sans KR', sans-serif;  // 추가
+  font-weight: 500;
   
   a {
     color: #A2601E;
@@ -95,6 +248,24 @@ const LinkText = styled.p`
       text-decoration: underline;
     }
   }
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    margin-top: 1.3rem;
+    font-size: 0.95rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    margin-top: 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+  }
 `;
 
 const ErrorMessage = styled.div`
@@ -104,6 +275,25 @@ const ErrorMessage = styled.div`
   border-radius: 8px;
   border: 1px solid #f5c6cb;
   margin-bottom: 1rem;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.7rem;
+    font-size: 0.85rem;
+  }
 `;
 
 const LoginPage = ({setIsLoggedIn}) => {
@@ -128,7 +318,7 @@ const LoginPage = ({setIsLoggedIn}) => {
     setError('');
 
     try {
-      const response = await fetch('/api/auth/login', {
+      const response = await apiFetch('/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -140,7 +330,7 @@ const LoginPage = ({setIsLoggedIn}) => {
 
       if (response.ok && data.success) {
         // 토큰을 localStorage에 저장
-        localStorage.setItem('token', data.data.token);
+        setTokens(data.data.accessToken);
         localStorage.setItem('user', JSON.stringify(data.data.user));
         
         setIsLoggedIn(true); 
@@ -159,7 +349,7 @@ const LoginPage = ({setIsLoggedIn}) => {
   return (
     <LoginContainer>
       <LoginCard>
-        <Title>☕ 로그인</Title>
+        <Title>로그인</Title>
         
         {error && <ErrorMessage>{error}</ErrorMessage>}
         

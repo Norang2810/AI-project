@@ -4,6 +4,11 @@ import Button from '../../components/common/Button/Button';
 
 export const MainContainer = styled.div`
   padding-top: 80px; // 헤더 높이만큼 패딩
+  
+  /* 모바일에서 헤더 패딩 조정 */
+  @media (max-width: 768px) {
+    padding-top: 60px;
+  }
 `;
 
 export const StyledSection = styled(Section)`
@@ -29,30 +34,89 @@ export const HeroSection = styled(StyledSection)`
   align-items: center;
   justify-content: center;
 
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    min-height: 90vh;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    min-height: 80vh;
+    padding: 2rem 1rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    min-height: 70vh;
+    padding: 1.5rem 0.5rem;
+  }
 `;
 
 export const HeroTitle = styled.h1`
   font-size: 60px; 
   font-weight: 520; 
   line-height: 58px; 
-  color:rgb(255, 255, 255); 
+  color: #FFF8E7; 
   margin-bottom: 2rem;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 1.5rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 1rem;
+  }
 `;
 
 export const HeroSubtitle = styled.p`
   font-size: 1.5rem;
   margin-bottom: 2rem;
   opacity: 0.9;
-  color:rgb(255, 189, 91)
+  color: #FFF8E7;
+  font-weight: 550;
+  font-family: 'Noto Sans KR', sans-serif; 
+  font-weight: 700;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    font-size: 1.3rem;
+    margin-bottom: 1.8rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
 `;
 
 export const CTAButton = styled(Button)`
   width: 400px;
   height: 80px;
-  font-size: 40px;
+  font-size: 35px;
 
   background-color: #B9855A; /* 진한 베이지 */
-  color: white;
+  color: #FFF8E7;
   opacity: 1;
   font-weight: bold;
 
@@ -62,6 +126,27 @@ export const CTAButton = styled(Button)`
 
   &:hover {
     background-color:rgb(169, 114, 68); /* hover 시 진하게 */
+  }
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    width: 350px;
+    height: 70px;
+    font-size: 30px;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    width: 280px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    width: 240px;
+    height: 50px;
+    font-size: 20px;
   }
 `;
 
@@ -183,7 +268,7 @@ export const BgOverlay = styled.div`
   inset: 0;
   background:
     radial-gradient(transparent 40%, rgba(0,0,0,0.25)),
-    linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.45) 100%);
+    linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 40%, rgba(0,0,0,0.65) 100%);
   z-index: 0;
   pointer-events: none;
 `;
@@ -210,6 +295,23 @@ export const AboutGrid = styled.div`
   max-width: 1100px;
   margin: 0 auto;
   position: relative;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 40px 1fr;
+    grid-template-rows: repeat(5, 180px);
+    gap: 0.8rem 0.8rem;
+    max-width: 900px;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 1rem 0;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
 `;
 
 export const Axis = styled.div`
@@ -217,6 +319,11 @@ export const Axis = styled.div`
   grid-row: 1 / 6;
   position: relative;
   height: 100%;
+
+  /* 모바일에서는 숨김 */
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const AxisLine = styled.div`
@@ -260,6 +367,21 @@ outline-offset: 3px;
 transform: translateY(-4px);
 box-shadow: 0 14px 28px rgba(0,0,0,0.15);
 }
+
+/* 태블릿 */
+@media (max-width: 1024px) {
+  padding: 1.5rem 1.2rem;
+  gap: 0.8rem;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  grid-column: 1 !important;
+  grid-row: auto !important;
+  margin-bottom: 1rem;
+  padding: 1.2rem 1rem;
+  gap: 0.8rem;
+}
 `;
 
 export const StepIcon = styled.div`
@@ -268,6 +390,20 @@ font-size: 4rem;
 flex-shrink: 0;           /* 아이콘 크기 고정 */
 transition: transform .22s ease, filter .22s ease;
 
+/* 태블릿 */
+@media (max-width: 1024px) {
+  font-size: 3.5rem;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  font-size: 3rem;
+}
+
+/* 작은 모바일 */
+@media (max-width: 480px) {
+  font-size: 2.5rem;
+}
 `;
 
 export const Step = styled(StepCard)`
@@ -288,6 +424,19 @@ background: linear-gradient(0deg, rgba(255,255,255,.12), rgba(255,255,255,.12)),
 transform: translateX(2px) scale(1.06);
 filter: drop-shadow(0 3px 4px rgba(0,0,0,.12));
 }
+
+/* 모바일에서 호버 효과 제거 */
+@media (max-width: 768px) {
+  &:hover {
+    transform: none;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  }
+  
+  &:hover ${StepIcon} {
+    transform: none;
+    filter: none;
+  }
+}
 `;
 
 export const StepTitle = styled.h3`
@@ -295,6 +444,22 @@ export const StepTitle = styled.h3`
   font-weight: 520;
   color: #A2601E;
   margin-bottom: 0.6rem;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    font-size: 2rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
+  }
 `;
 
 export const StepText = styled.div`
@@ -308,4 +473,22 @@ export const StepDesc = styled.p`
   color: #A2601E;
   line-height: 1.5;
   margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    font-size: 1.3rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;

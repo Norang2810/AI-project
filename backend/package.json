@@ -9,11 +9,15 @@
     "build": "echo 'No build step required'",
     "test": "jest",
     "lint": "eslint . --ext .js",
-    "lint:fix": "eslint . --ext .js --fix"
+    "lint:fix": "eslint . --ext .js --fix",
+    "perf:menu-analyze": "node scripts/benchmark-menu-analyze.js",
+    "perf:compare": "node scripts/compare-benchmark-results.js"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "axios": "^1.11.0",
     "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",

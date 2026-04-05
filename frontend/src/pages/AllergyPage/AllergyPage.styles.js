@@ -5,6 +5,21 @@ export const AllergyContainer = styled.div`
   min-height: 100vh;
   background: #ffecd5ff;
   padding: 2rem;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 1.5rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.5rem;
+  }
 `;
 
 export const AllergyCard = styled.div`
@@ -15,6 +30,23 @@ export const AllergyCard = styled.div`
   padding: 3rem;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 2.5rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 2rem;
+    border-radius: 12px;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -23,6 +55,24 @@ export const Title = styled.h1`
   margin-bottom: 2rem;
   font-size: 4rem;
   font-weight: 520;  
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    font-size: 3.5rem;
+    margin-bottom: 1.8rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+  }
 `;
 
 export const Subtitle = styled.p`
@@ -30,6 +80,27 @@ export const Subtitle = styled.p`
   color: #A2601E;  
   margin-bottom: 3rem;
   font-size: 1.1rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
 `;
 
 export const AllergyGrid = styled.div`
@@ -37,6 +108,18 @@ export const AllergyGrid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-bottom: 2rem;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 `;
 
 export const AllergyCategory = styled.div`
@@ -57,6 +140,32 @@ export const AllergyCategory = styled.div`
     border-color: #A2601E; 
     background-color: #fff8f0;  
   }
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    height: 280px;
+    padding: 1.3rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    height: auto;
+    min-height: 250px;
+    padding: 1.2rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 1rem;
+    min-height: 220px;
+  }
+
+  /* 모바일에서 호버 효과 제거 */
+  @media (max-width: 768px) {
+    &:hover {
+      transform: none;
+    }
+  }
 `;
 
 export const CategoryTitle = styled.h3`
@@ -68,6 +177,24 @@ export const CategoryTitle = styled.h3`
   justify-content: center;
   gap: 0.5rem;
   font-weight: 500;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+  }
 `;
 
 export const SeverityBadge = styled.span`
@@ -89,6 +216,12 @@ export const SeverityBadge = styled.span`
   &.low {
     background-color: #28a745;
     color: white;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+    padding: 0.15rem 0.4rem;
   }
 `;
 
@@ -117,6 +250,17 @@ export const CheckboxList = styled.div`
   &::-webkit-scrollbar-thumb:hover {
     background: #8B4513;
   }
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    gap: 0.4rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
 `;
 
 export const CheckboxItem = styled.label`
@@ -138,6 +282,24 @@ export const CheckboxItem = styled.label`
     width: 16px;
     height: 16px;
     accent-color: #A2601E;
+  }
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    font-size: 0.85rem;
+    padding: 0.25rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    font-size: 0.75rem;
+    padding: 0.15rem;
   }
 `;
 
@@ -166,6 +328,32 @@ export const SubmitButton = styled.button`
     cursor: not-allowed;
     transform: none;
   }
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 0.9rem 1.8rem;
+    font-size: 1.1rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  /* 모바일에서 호버 효과 제거 */
+  @media (max-width: 768px) {
+    &:hover {
+      transform: none;
+    }
+  }
 `;
 
 export const BackButton = styled(Link)`
@@ -185,6 +373,32 @@ export const BackButton = styled(Link)`
     background: rgba(255, 122, 0, 0.2);
     transform: translateY(-2px);
   }
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 0.7rem 1.3rem;
+    font-size: 0.95rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  /* 모바일에서 호버 효과 제거 */
+  @media (max-width: 768px) {
+    &:hover {
+      transform: none;
+    }
+  }
 `;
 
 export const LoadingSpinner = styled.div`
@@ -201,6 +415,13 @@ export const LoadingSpinner = styled.div`
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    width: 18px;
+    height: 18px;
+    border-width: 2px;
+  }
 `;
 
 export const SuccessMessage = styled.div`
@@ -212,6 +433,25 @@ export const SuccessMessage = styled.div`
   text-align: center;
   margin-top: 1rem;
   font-weight: 600;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 0.9rem 1.8rem;
+    font-size: 0.95rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.85rem;
+  }
 `;
 
 export const ErrorMessage = styled.div`
@@ -223,51 +463,24 @@ export const ErrorMessage = styled.div`
   text-align: center;
   margin-top: 1rem;
   font-weight: 600;
-`;
 
-export const SeveritySection = styled.div`
-  margin: 2rem 0;
-  padding: 2rem;
-  background-color: #fdfdfdff;
-  border-radius: 10px;
-`;
-
-export const SeverityTitle = styled.h3`
-  margin-bottom: 1rem;
-  color: #A2601E; 
-  font-weight: 500;
-  font-size: 1.6rem;
-`;
-
-export const SeverityOptions = styled.div`
-  display: flex;
-  gap: 2rem;       
-  flex-wrap: nowrap;  
-  justify-content: center;  
-`;
-
-export const SeverityOption = styled.label`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  border: 2px solid #e1e5e9;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  
-  &:hover {
-    border-color: #A2601E;  
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 0.9rem 1.8rem;
+    font-size: 0.95rem;
   }
 
-  &.selected {
-    border-color: #A2601E;  
-    background-color: #A2601E;  
-    color: white;
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
   }
-  
-  input[type="radio"] {
-    display: none;
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.85rem;
   }
 `;
 
@@ -276,6 +489,26 @@ export const ButtonGroup = styled.div`
   gap: 2rem;
   justify-content: center;
   margin-top: 2rem;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    gap: 1.5rem;
+    margin-top: 1.8rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+  }
 `;
 
 export const Button = styled.button`
@@ -309,6 +542,33 @@ export const Button = styled.button`
     background-color: #ccc;
     cursor: not-allowed;
   }
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 0.9rem 1.8rem;
+    font-size: 0.95rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    width: 200px;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.85rem;
+    width: 180px;
+  }
+
+  /* 모바일에서 호버 효과 제거 */
+  @media (max-width: 768px) {
+    &:hover {
+      background-color: inherit;
+    }
+  }
 `;
 
 export const LinkText = styled.p`
@@ -324,5 +584,23 @@ export const LinkText = styled.p`
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    margin-top: 1.3rem;
+    font-size: 0.95rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    margin-top: 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    margin-top: 1rem;
+    font-size: 0.85rem;
   }
 `;

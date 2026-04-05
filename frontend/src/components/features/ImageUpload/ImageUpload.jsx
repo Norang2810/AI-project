@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { apiFetch } from '../../../lib/apiFetch';
 import {
   UploadContainer,
   SectionSubtitle,
@@ -76,7 +77,7 @@ const ImageUpload = ({ onAnalysisComplete }) => {
       formData.append('image', selectedFile);
 
       const token = localStorage.getItem('token');
-      const response = await fetch('/api/menu/analyze', {
+      const response = await apiFetch('/api/menu/analyze', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`
@@ -152,7 +153,7 @@ const ImageUpload = ({ onAnalysisComplete }) => {
         {!previewUrl ? (
           <div>
             <UploadIcon>📸</UploadIcon>
-            <UploadTitle>메뉴판 사진 업로드드</UploadTitle>
+            {/* <UploadTitle>메뉴판 사진 업로드</UploadTitle> */}
             <UploadDescription>
               박스를 클릭하거나 이미지를 여기로 드래그하세요<br />
               JPG, PNG, JPEG 파일을 지원합니다

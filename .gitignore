@@ -3,15 +3,20 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.yarn-integrity
 
 # Environment variables
-docker/ .env
+docker/.env
 docker/env.local
 docker/env.prod
-
-frontend / .env
-backend / .env 
+frontend/.env
+frontend/.env.local
+backend/.env
+backend/.env.local
+ai-server/.env
+ai-server/.env.local
 .env
+
 # Build outputs
 dist/
 build/
@@ -34,39 +39,18 @@ out/
 ehthumbs.db
 Thumbs.db
 
-# Logs
-logs
+# Logs and runtime files
+logs/
 *.log
-
-# Runtime data
-pids
+pids/
 *.pid
 *.seed
 *.pid.lock
-
-# Coverage directory used by tools like istanbul
 coverage/
-
-# nyc test coverage
-.nyc_output
-
-# Dependency directories
-jspm_packages/
-
-# Optional npm cache directory
-.npm
-
-# Optional REPL history
+.nyc_output/
+.npm/
 .node_repl_history
-
-# Output of 'npm pack'
 *.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-# Docker
-.dockerignore
 
 # Database
 *.db
@@ -75,6 +59,15 @@ jspm_packages/
 # Temporary files
 tmp/
 temp/
+backend/uploads/
+backend/perf/results/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Secrets / certs
+*.pem
 
 # AI Server - Large files and datasets
 ai-server/sample_ocr_dataset.zip
@@ -82,19 +75,7 @@ ai-server/sample_ocr_dataset/
 ai-server/models/*.pth
 ai-server/models/*.zip
 ai-server/*.zip
-ai-server/*.json 
+ai-server/*.json
 
-
-__pycache__/
-*.pyc
-*.pem
-ai-server/sample_ocr_dataset.zip
-<<<<<<< HEAD
-=======
-docker/.env
-docker/env.local
-docker/env.prod
-docker/.env
-docker/env.local
-docker/env.prod
->>>>>>> b4a81e853e8e22ce6ebdab87b19cb0c563c719cc
+# Docker
+.dockerignore

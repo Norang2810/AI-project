@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { KakaoLogin } from '../../components/common/Button';
 import styled from 'styled-components';
+import { apiFetch } from '../../lib/apiFetch';
+
+// 폰트 로드 (페이지별로)
+const FontStyle = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&display=swap');
+`;
 
 const RegisterContainer = styled.div`
   min-height: 100vh;
@@ -10,45 +16,143 @@ const RegisterContainer = styled.div`
   align-items: center;
   background-color: #FFECD5;
   padding: 2rem;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 1.5rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.5rem;
+  }
 `;
 
 const RegisterCard = styled.div`
   background: white;
-  padding: 3rem;
+  padding: 1.7rem;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: 100%;
   max-width: 500px;
   border: 2px solid #FFD6AA;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 1.5rem;
+    max-width: 450px;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 1.3rem;
+    max-width: 400px;
+    border-radius: 12px;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 1rem;
+    max-width: 100%;
+    border-radius: 10px;
+  }
 `;
 
 const Title = styled.h1`
   text-align: center;
   color: #A2601E;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-size: 2rem;
+  font-weight: normal;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    font-size: 1.8rem;
+    margin-bottom: 1.3rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.8rem;
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    gap: 0.7rem;
+  }
 `;
 
 const FormGroup = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;   /* 세로 중앙 정렬 */
+  gap: 0.5rem;            /* 라벨-입력칸 간격 */
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    gap: 0.4rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.3rem;
+  }
 `;
 
 const Label = styled.label`
   font-weight: bold;
   color: #A2601E;
-  text-align: left;
+  width: 150px;        /* 왼쪽 레이블 고정 폭 */
+  height: 45px;        /* 높이 지정 → 인풋과 비슷하게 */
+  display: flex;
+  align-items: center; /* 세로 중앙 */
+  justify-content: center; /* 가로 중앙 */
+  border: 2px solid transparent; /* 인풋과 어울리게 하고 싶으면 색 추가 가능 */
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    width: 120px;
+    height: 40px;
+    font-size: 0.95rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    font-size: 0.85rem;
+  }
 `;
 
 const Input = styled.input`
-  padding: 1rem;
+  flex: 1;             /* 남은 공간 전부 차지 */
+  min-width: 280px;    /* 인풋 박스 최소 길이 (늘림) */
+  padding: 0.8rem;
   border: 2px solid #E1C8A8;
   border-radius: 8px;
   font-size: 1rem;
@@ -58,26 +162,70 @@ const Input = styled.input`
     outline: none;
     border-color: #915316;
   }
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    min-width: 250px;
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    min-width: auto;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
 `;
 
 const Button = styled.button`
-  background-color: #8b5e3c;
+  background-color: #B9855A;
   color: white;
-  padding: 1rem;
+  padding: 0.8rem;
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
   
   &:hover {
-    background-color: #6e4b2a;
+    background-color:rgb(169, 114, 68);
   }
   
   &:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+  }
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 0.7rem;
+    font-size: 1.1rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* 모바일에서 호버 효과 제거 */
+  @media (max-width: 768px) {
+    &:hover {
+      background-color: #B9855A;
+    }
   }
 `;
 
@@ -85,6 +233,8 @@ const LinkText = styled.p`
   text-align: center;
   margin-top: 1.5rem;
   color: #915316;
+    font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
   
   a {
     color: #A2601E;
@@ -95,6 +245,24 @@ const LinkText = styled.p`
       text-decoration: underline;
     }
   }
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    margin-top: 1.3rem;
+    font-size: 0.95rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    margin-top: 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+  }
 `;
 
 const ErrorMessage = styled.div`
@@ -104,6 +272,25 @@ const ErrorMessage = styled.div`
   border-radius: 8px;
   border: 1px solid #f5c6cb;
   margin-bottom: 1rem;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.7rem;
+    font-size: 0.85rem;
+  }
 `;
 
 const SuccessMessage = styled.div`
@@ -113,6 +300,25 @@ const SuccessMessage = styled.div`
   border-radius: 8px;
   border: 1px solid #c3e6cb;
   margin-bottom: 1rem;
+
+  /* 태블릿 */
+  @media (max-width: 1024px) {
+    padding: 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+
+  /* 작은 모바일 */
+  @media (max-width: 480px) {
+    padding: 0.7rem;
+    font-size: 0.85rem;
+  }
 `;
 
 const RegisterPage = ({ setIsLoggedIn }) => {
@@ -161,7 +367,7 @@ const RegisterPage = ({ setIsLoggedIn }) => {
     }
 
     try {
-     const response = await fetch('/api/auth/register', {
+     const response = await apiFetch('/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -194,7 +400,7 @@ const RegisterPage = ({ setIsLoggedIn }) => {
   return (
     <RegisterContainer>
       <RegisterCard>
-        <Title>☕ 회원가입</Title>
+        <Title>회원가입</Title>
         
         {error && <ErrorMessage>{error}</ErrorMessage>}
         {success && <SuccessMessage>{success}</SuccessMessage>}
@@ -202,7 +408,7 @@ const RegisterPage = ({ setIsLoggedIn }) => {
         <Form onSubmit={handleSubmit}>
           
             <FormGroup>
-              <Label htmlFor="name">이름</Label>
+              <Label htmlFor="name">이름: </Label>
               <Input
                 type="text"
                 id="name"
@@ -215,7 +421,7 @@ const RegisterPage = ({ setIsLoggedIn }) => {
             </FormGroup>
             
             <FormGroup>
-              <Label htmlFor="phone">전화번호</Label>
+              <Label htmlFor="phone">전화번호: </Label>
               <Input
                 type="tel"
                 id="phone"
@@ -228,7 +434,7 @@ const RegisterPage = ({ setIsLoggedIn }) => {
           
           
           <FormGroup>
-            <Label htmlFor="email">이메일</Label>
+            <Label htmlFor="email">이메일: </Label>
             <Input
               type="email"
               id="email"
@@ -242,7 +448,7 @@ const RegisterPage = ({ setIsLoggedIn }) => {
           
           
             <FormGroup>
-              <Label htmlFor="password">비밀번호</Label>
+              <Label htmlFor="password">비밀번호: </Label>
               <Input
                 type="password"
                 id="password"
@@ -255,7 +461,7 @@ const RegisterPage = ({ setIsLoggedIn }) => {
             </FormGroup>
             
             <FormGroup>
-              <Label htmlFor="confirmPassword">비밀번호 확인</Label>
+              <Label htmlFor="confirmPassword">비밀번호 확인: </Label>
               <Input
                 type="password"
                 id="confirmPassword"

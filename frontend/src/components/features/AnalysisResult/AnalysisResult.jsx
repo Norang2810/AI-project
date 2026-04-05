@@ -1,20 +1,43 @@
 import React, { useEffect, useState } from 'react';
 import {
+  PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
+} from 'recharts';
+import {
   AnalysisContainer,
+  AnalysisHeader,
+  AnalysisTitle,
+  AnalysisSubtitle,
   RiskLevelBadge,
   Section,
   SectionTitle,
+  SectionIcon,
   IngredientGrid,
   IngredientCard,
   WarningMessage,
   SafeMessage,
   RecommendationCard,
   MenuList,
-  MenuTag
+  MenuTag,
+  ChartContainer,
+  ChartTitle,
+  StatsGrid,
+  StatCard,
+  StatValue,
+  StatLabel,
+  InfoCard,
+  InfoTitle,
+  InfoText,
+  PreviewCard,
+  PreviewTitle,
+  PreviewList,
+  PreviewItem,
+  PreviewMore
 } from './AnalysisResult.styles';
 
 const AnalysisResult = ({ analysis, onNotification }) => {
   const [hasNotified, setHasNotified] = useState(false);
+  const [hoveredCard, setHoveredCard] = useState(null); // 통계 카드 호버 상태 관리
+  const [showAIPopup, setShowAIPopup] = useState(false); // AI 분석 결과 팝업 상태
 
   useEffect(() => {
     // 새로운 분석 결과가 들어오면 알림 상태 리셋
@@ -26,6 +49,13 @@ const AnalysisResult = ({ analysis, onNotification }) => {
       checkForDangerousIngredients(analysis);
     }
   }, [analysis, hasNotified]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // AI 분석 결과가 표시될 때 팝업 표시
+  useEffect(() => {
+    if (analysis && analysis.extractedText) {
+      setShowAIPopup(true);
+    }
+  }, [analysis]);
 
   const checkForDangerousIngredients = (analysis) => {
     const dangerousIngredients = analysis.menuAnalysis
@@ -46,88 +76,365 @@ const AnalysisResult = ({ analysis, onNotification }) => {
     }
   };
 
-  if (!analysis) return null;
+  // 추출된 텍스트에서 특정 성분이 포함된 메뉴를 찾는 함수
+  const findMenuWithIngredient = (extractedText, ingredient) => {
+    if (!extractedText) return '텍스트 없음';
 
-  const renderRiskLevel = (riskInfo) => {
-    return (
-      <RiskLevelBadge color={riskInfo.color}>
-        <span>{riskInfo.icon}</span>
-        <span>{riskInfo.title}</span>
-      </RiskLevelBadge>
+    // 추출된 텍스트를 줄 단위로 분할
+    const lines = extractedText.split('\n');
+
+    // 해당 성분이 포함된 줄들을 찾기
+    const matchingLines = lines.filter(line =>
+      line.toLowerCase().includes(ingredient.toLowerCase())
     );
+
+    if (matchingLines.length > 0) {
+      // 첫 번째 매칭된 줄을 반환 (너무 길면 자르기)
+      const firstMatch = matchingLines[0].trim();
+      return firstMatch.length > 100 ? firstMatch.substring(0, 100) + '...' : firstMatch;
+    }
+
+    // 직접 매칭이 안 되면 유사한 단어 찾기
+    const similarWords = {
+      '우유': ['milk', 'latte', 'cappuccino', 'americano'],
+      '계란': ['egg', 'eggs'],
+      '밀': ['wheat', 'bread', 'croissant'],
+      '치즈': ['cheese', 'ham cheese']
+    };
+
+    if (similarWords[ingredient]) {
+      for (const word of similarWords[ingredient]) {
+        const found = lines.find(line =>
+          line.toLowerCase().includes(word.toLowerCase())
+        );
+        if (found) {
+          const result = found.trim();
+          return result.length > 100 ? result.substring(0, 100) + '...' : result;
+        }
+      }
+    }
+
+    return '메뉴에서 발견되지 않음';
   };
 
+  // 짧은 메뉴명만 추출하는 함수
+  const findShortMenuName = (extractedText, ingredient) => {
+    if (!extractedText) return '텍스트 없음';
+
+    const lines = extractedText.split('\n');
+    const similarWords = {
+      '우유': ['milk', 'latte', 'cappuccino', 'americano', 'ltt', 'mocil'],
+      '계란': ['egg', 'eggs'],
+      '밀': ['wheat', 'bread', 'croissant'],
+      '치즈': ['cheese', 'ham cheese']
+    };
+
+    // 직접 매칭
+    for (const line of lines) {
+      if (line.toLowerCase().includes(ingredient.toLowerCase())) {
+        const words = line.split(/\s+/);
+        const menuWord = words.find(word =>
+          word.length > 2 && /[a-zA-Z가-힣]/.test(word)
+        );
+        if (menuWord) return menuWord.substring(0, 15);
+      }
+    }
+
+    // 유사한 단어로 매칭
+    if (similarWords[ingredient]) {
+      for (const word of similarWords[ingredient]) {
+        for (const line of lines) {
+          if (line.toLowerCase().includes(word.toLowerCase())) {
+            const words = line.split(/\s+/);
+            const menuWord = words.find(w =>
+              w.length > 2 && /[a-zA-Z가-힣]/.test(w)
+            );
+            if (menuWord) return menuWord.substring(0, 15);
+          }
+        }
+      }
+    }
+
+    return '메뉴명';
+  };
+
+  // OCR에서 추출된 텍스트에서 메뉴명으로 보이는 단어들을 찾기
+  const findExtractedMenuNames = (extractedText, ingredient) => {
+    if (!extractedText) return [];
+
+    const lines = extractedText.split('\n');
+    const foundMenus = [];
+
+    // 메뉴명으로 보이는 단어들 (대문자, 3글자 이상)
+    const menuPatterns = [
+      'LATTE', 'CAPPUCCINO', 'AMERICANO', 'ESPRESSO', 'MACCHIATO', 'MOCHA',
+      'MILKCOFFE', 'CAPPUCCINO_O', 'LATT', 'MOCIL', 'MILK', 'COFFEE',
+      'TEA', 'JUICE', 'SMOOTHIE', 'LATTE_NO', 'ICE_COFFEE', 'CARAMIL',
+      'LATL_O', 'ICL', 'LONG', 'BLACK', 'COLDCOFFE', 'LATE_NO'
+    ];
+
+    // 각 줄에서 메뉴명 패턴 찾기
+    for (const line of lines) {
+      const upperLine = line.toUpperCase();
+
+      for (const pattern of menuPatterns) {
+        if (upperLine.includes(pattern) && !foundMenus.includes(pattern)) {
+          foundMenus.push(pattern);
+          if (foundMenus.length >= 4) break; // 4개까지만
+        }
+      }
+
+      if (foundMenus.length >= 4) break;
+    }
+
+    // 4개까지만 반환
+    return foundMenus.slice(0, 4);
+  };
+
+  // 중복 제거 함수
+  const removeDuplicates = (text) => {
+    if (!text) return '';
+    const words = text.replace(/^json\s*/, '').split(' ');
+    const uniqueWords = [...new Set(words)];
+    return uniqueWords.join(' ');
+  };
+
+  // OCR 정확도 계산 함수 (간단한 추정)
+  const calculateOCRAccuracy = (extractedText) => {
+    if (!extractedText) return 0;
+
+    // OCR 텍스트 길이와 일반적인 메뉴 텍스트 패턴을 기반으로 정확도 추정
+    const lines = extractedText.split('\n');
+    let totalChars = 0;
+    let readableChars = 0;
+
+    lines.forEach(line => {
+      totalChars += line.length;
+      // 읽을 수 있는 문자 (영문, 숫자, 공백, 특수문자)
+      readableChars += line.replace(/[^\w\s\-_$.,#]/g, '').length;
+    });
+
+    // 기본 정확도 (읽을 수 있는 문자 비율)
+    let accuracy = (readableChars / totalChars) * 100;
+
+    // OCR 오류 패턴 감지 (대문자 연속, 특수문자 등)
+    const errorPatterns = extractedText.match(/[A-Z]{5,}|[0-9]{3,}|[^\w\s]{3,}/g);
+    if (errorPatterns) {
+      accuracy -= errorPatterns.length * 2; // 오류 패턴당 2% 감점
+    }
+
+    // 최소 60%, 최대 95%로 제한
+    return Math.max(60, Math.min(95, Math.round(accuracy)));
+  };
+
+  // Gemini 완성된 메뉴명에서 해당 성분이 포함된 메뉴 찾기
+  const findGeminiMenuName = (enhancedText, ingredient) => {
+    if (!enhancedText) return '완성된 메뉴명 없음';
+
+    try {
+      const menuNames = JSON.parse(enhancedText);
+      if (Array.isArray(menuNames)) {
+        // 우유 관련 메뉴 찾기 (더 정확한 매칭)
+        if (ingredient === '우유') {
+          const milkMenus = menuNames.filter(menu =>
+            menu.toLowerCase().includes('라떼') ||
+            menu.toLowerCase().includes('카푸치노') ||
+            menu.toLowerCase().includes('모카') ||
+            menu.toLowerCase().includes('마끼아또') ||
+            menu.toLowerCase().includes('밀크셰이크') ||
+            menu.toLowerCase().includes('우유')
+          );
+          return milkMenus[0] || menuNames[0] || '카페 메뉴';
+        }
+
+        // 계란 관련 메뉴
+        if (ingredient === '계란') {
+          const eggMenus = menuNames.filter(menu =>
+            menu.toLowerCase().includes('에그') ||
+            menu.toLowerCase().includes('계란')
+          );
+          return eggMenus[0] || menuNames[0] || '카페 메뉴';
+        }
+
+        // 밀 관련 메뉴
+        if (ingredient === '밀') {
+          const wheatMenus = menuNames.filter(menu =>
+            menu.toLowerCase().includes('크로아상') ||
+            menu.toLowerCase().includes('브레드') ||
+            menu.toLowerCase().includes('토스트')
+          );
+          return wheatMenus[0] || menuNames[0] || '카페 메뉴';
+        }
+
+        // 치즈 관련 메뉴
+        if (ingredient === '치즈') {
+          const cheeseMenus = menuNames.filter(menu =>
+            menu.toLowerCase().includes('치즈') ||
+            menu.toLowerCase().includes('햄치즈')
+          );
+          return cheeseMenus[0] || menuNames[0] || '카페 메뉴';
+        }
+
+        // 기본적으로 첫 번째 메뉴 반환
+        return menuNames[0] || '카페 메뉴';
+      }
+    } catch (error) {
+      // JSON 파싱 실패 시
+      return '카페 메뉴';
+    }
+
+    return '카페 메뉴';
+  };
+
+  if (!analysis) return null;
+
+
+
   const renderIngredients = (ingredients, riskAnalysis) => {
+    // 차트 데이터 준비
+    const pieChartData = [
+      { name: '위험', value: riskAnalysis.danger.length, color: '#ef4444' },
+      { name: '주의', value: riskAnalysis.warning?.length || 0, color: '#f59e0b' },
+      { name: '안전', value: riskAnalysis.safe.length, color: '#10b981' }
+    ].filter(item => item.value > 0); // 값이 0인 항목 제거
+
+    const barChartData = [
+      { name: '총 성분', value: riskAnalysis.totalIngredients, color: '#6b7280' },
+      { name: '위험 성분', value: riskAnalysis.danger.length, color: '#ef4444' },
+      { name: '주의 성분', value: riskAnalysis.warning?.length || 0, color: '#f59e0b' },
+      { name: '안전 성분', value: riskAnalysis.safe.length, color: '#10b981' }
+    ];
+
     return (
       <Section>
-        <SectionTitle>성분 분석</SectionTitle>
-        <p>총 {riskAnalysis.totalIngredients}개의 성분이 발견되었습니다.</p>
-        
+        <SectionTitle>
+          <SectionIcon></SectionIcon>
+          성분 분석
+        </SectionTitle>
+
+        {/* 통계 카드 */}
+        <StatsGrid>
+          <StatCard>
+            <StatValue>{riskAnalysis.totalIngredients}</StatValue>
+            <StatLabel>총 성분 수</StatLabel>
+          </StatCard>
+          <StatCard>
+            <StatValue style={{ color: '#ef4444' }}>{riskAnalysis.danger.length}</StatValue>
+            <StatLabel>위험 성분</StatLabel>
+          </StatCard>
+          <StatCard
+            onMouseEnter={() => setHoveredCard('warning')}
+            onMouseLeave={() => setHoveredCard(null)}
+            style={{ position: 'relative' }}
+          >
+            <StatValue style={{ color: '#f59e0b' }}>{riskAnalysis.warning?.length || 0}</StatValue>
+            <StatLabel>주의 성분</StatLabel>
+            {hoveredCard === 'warning' && riskAnalysis.warning && riskAnalysis.warning.length > 0 && (
+              <PreviewCard>
+                <PreviewTitle>⚠️ 주의가 필요한 성분</PreviewTitle>
+                <PreviewList>
+                  {riskAnalysis.warning.slice(0, 3).map((ingredient, index) => (
+                    <PreviewItem key={`preview-warning-${index}`} type="warning">
+                      {ingredient}
+                    </PreviewItem>
+                  ))}
+                  {riskAnalysis.warning.length > 3 && (
+                    <PreviewMore>+{riskAnalysis.warning.length - 3}개 더</PreviewMore>
+                  )}
+                </PreviewList>
+              </PreviewCard>
+            )}
+          </StatCard>
+          <StatCard
+            onMouseEnter={() => setHoveredCard('safe')}
+            onMouseLeave={() => setHoveredCard(null)}
+            style={{ position: 'relative' }}
+          >
+            <StatValue style={{ color: '#10b981' }}>{riskAnalysis.safe.length}</StatValue>
+            <StatLabel>안전 성분</StatLabel>
+            {hoveredCard === 'safe' && riskAnalysis.safe.length > 0 && (
+              <PreviewCard>
+                <PreviewTitle>✅ 안전한 성분</PreviewTitle>
+                <PreviewList>
+                  {riskAnalysis.safe.slice(0, 3).map((ingredient, index) => (
+                    <PreviewItem key={`preview-safe-${index}`} type="safe">
+                      {ingredient}
+                    </PreviewItem>
+                  ))}
+                  {riskAnalysis.safe.length > 3 && (
+                    <PreviewMore>+{riskAnalysis.safe.length - 3}개 더</PreviewMore>
+                  )}
+                </PreviewList>
+              </PreviewCard>
+            )}
+          </StatCard>
+        </StatsGrid>
+
+        {/* 위험한 성분 정보 - 고정 표시 */}
         {riskAnalysis.danger.length > 0 && (
-          <WarningMessage>
-            <strong>⚠️ 위험한 성분 발견:</strong>
+          <div style={{ marginTop: '1.5rem' }}>
+            <div style={{
+              fontSize: '1.1rem',
+              fontWeight: '600',
+              color: '#dc2626',
+              marginBottom: '1rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem'
+            }}>
+              ⚠️ 위험한 성분 발견
+            </div>
             <IngredientGrid>
               {riskAnalysis.danger.map((item, index) => (
                 <IngredientCard key={`danger-${item.ingredient}-${index}`} risk="danger">
-                  {item.ingredient}
-                  <br />
-                  <small>매칭된 알레르기: {item.matchedAllergies.join(', ')}</small>
+                  <div style={{ fontWeight: '600', marginBottom: '0.5rem', color: '#dc2626' }}>
+                    {item.ingredient}
+                  </div>
+                  {/* 추출된 메뉴명만 표시 (2개 정도) */}
+                  {analysis.extractedText && (
+                    <div style={{
+                      marginTop: '0.5rem',
+                      display: 'flex',
+                      flexWrap: 'wrap',
+                      gap: '0.5rem'
+                    }}>
+                      {findExtractedMenuNames(analysis.extractedText, item.ingredient).slice(0, 2).map((menuName, idx) => (
+                        <div key={idx} style={{
+                          padding: '0.3rem 0.6rem',
+                          background: '#fef2f2',
+                          borderRadius: '5px',
+                          fontSize: '0.8rem',
+                          color: '#991b1b',
+                          border: '1px solid #fecaca',
+                          maxWidth: '150px',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          whiteSpace: 'nowrap'
+                        }}>
+                          {menuName}
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </IngredientCard>
               ))}
             </IngredientGrid>
-          </WarningMessage>
-        )}
-        
-        {riskAnalysis.safe.length > 0 && (
-          <SafeMessage>
-            <strong>✅ 안전한 성분:</strong>
-            <IngredientGrid>
-              {riskAnalysis.safe.map((ingredient, index) => (
-                <IngredientCard key={`safe-${ingredient}-${index}`} risk="safe">
-                  {ingredient}
-                </IngredientCard>
-              ))}
-            </IngredientGrid>
-          </SafeMessage>
+          </div>
         )}
       </Section>
     );
   };
 
-  const renderRiskAssessment = (riskData) => {
-    const { riskInfo, mlPrediction, ruleBasedAnalysis } = riskData;
-    
-    return (
-      <Section>
-        <SectionTitle>알레르기 위험도 평가</SectionTitle>
-        <div style={{ marginBottom: '16px' }}>
-          {renderRiskLevel(riskInfo)}
-        </div>
-        <p>{riskInfo.description}</p>
-        
-        {mlPrediction && (
-          <div style={{ marginTop: '12px' }}>
-            <strong>AI 예측:</strong> {mlPrediction.final_risk} 
-            (신뢰도: {(mlPrediction.confidence * 100).toFixed(1)}%)
-          </div>
-        )}
-        
-        {ruleBasedAnalysis && (
-          <div style={{ marginTop: '8px' }}>
-            <strong>규칙 기반 분석:</strong> {ruleBasedAnalysis.risk_level}
-            <br />
-            <small>위험 성분: {ruleBasedAnalysis.risky_count}개 / 총 {ruleBasedAnalysis.total_ingredients}개</small>
-          </div>
-        )}
-      </Section>
-    );
-  };
+
 
   const renderRecommendations = (recommendations) => {
     return (
       <Section>
-        <SectionTitle>추천 사항</SectionTitle>
-        
+        <SectionTitle>
+          <SectionIcon></SectionIcon>
+          추천 사항
+        </SectionTitle>
+
         {recommendations.safe_alternatives && recommendations.safe_alternatives.length > 0 && (
           <RecommendationCard>
             <strong>✅ 안전한 대안 메뉴:</strong>
@@ -138,47 +445,194 @@ const AnalysisResult = ({ analysis, onNotification }) => {
             </MenuList>
           </RecommendationCard>
         )}
-        
-        {recommendations.warning_messages && recommendations.warning_messages.length > 0 && (
-          <WarningMessage>
-            <strong>⚠️ 주의사항:</strong>
-            {recommendations.warning_messages.map((warning, index) => (
-              <div key={`warning-${warning.message}-${index}`}>{warning.message}</div>
-            ))}
-          </WarningMessage>
-        )}
-        
+
         {recommendations.safety_tips && recommendations.safety_tips.length > 0 && (
           <RecommendationCard>
             <strong>💡 안전 팁:</strong>
-            <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px' }}>
+            <div style={{ margin: '0.5rem 0 0 0' }}>
               {recommendations.safety_tips.map((tip, index) => (
-                <li key={`tip-${tip}-${index}`}>{tip}</li>
+                <div key={`tip-${tip}-${index}`} style={{ marginBottom: '0.5rem' }}>{tip}</div>
               ))}
-            </ul>
+            </div>
           </RecommendationCard>
         )}
       </Section>
     );
   };
 
-  const renderExtractedText = (text) => {
-    if (!text) return null;
-    
+
+
+  // OCR 텍스트와 번역된 메뉴명을 하나의 연속된 섹션으로 표시
+  const renderExtractedAndTranslated = (extractedText, enhancedText) => {
+    if (!extractedText) return null;
+
     return (
       <Section>
-        <SectionTitle>추출된 텍스트</SectionTitle>
-        <div style={{ 
-          background: '#f8fafc', 
-          padding: '12px', 
-          borderRadius: '6px',
+        <SectionTitle>
+          <SectionIcon></SectionIcon>
+          추출된 텍스트 (OCR)
+          <span style={{
+            fontSize: '14px',
+            fontWeight: '400',
+            color: '#6b7280',
+            marginLeft: '1rem',
+            background: '#f3f4f6',
+            padding: '0.2rem 0.6rem',
+            borderRadius: '12px',
+            border: '1px solid #d1d5db'
+          }}>
+            정확도: {calculateOCRAccuracy(extractedText)}%
+          </span>
+        </SectionTitle>
+
+        {/* OCR 추출된 텍스트 */}
+        <div style={{
+          background: '#f8fafc',
+          padding: '1rem',
+          borderRadius: '10px',
           fontFamily: 'monospace',
           fontSize: '14px',
           whiteSpace: 'pre-wrap',
           maxHeight: '200px',
-          overflow: 'auto'
+          overflow: 'auto',
+          border: '2px solid #e5e7eb',
+          marginBottom: '0'
         }}>
-          {text}
+          {extractedText}
+        </div>
+
+
+        {/* 번역된 메뉴명 */}
+        <SectionTitle>
+          <SectionIcon></SectionIcon>
+          <br/>번역된 메뉴명
+        </SectionTitle>
+
+        <div style={{
+          background: '#f8fafc',
+          border: '2px solid #e5e7eb',
+          borderRadius: '10px',
+          padding: '1rem',
+          marginTop: '0'
+        }}>
+
+          {/* 메뉴명을 카테고리별로 그룹화하여 표시 */}
+          {enhancedText ? (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              {/* 커피류 */}
+              <div>
+                <div style={{
+                  fontSize: '14px',
+                  fontWeight: '600',
+                  color: '#7c3aed',
+                  marginBottom: '0.5rem',
+                  textAlign: 'left'
+                }}>
+                  커피류
+                </div>
+                <div style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '0.5rem'
+                }}>
+                  {removeDuplicates(enhancedText).split(' ').filter(menu =>
+                    ['에스프레소', '아메리카노', '마끼아또', '코르타도', '카푸치노', '라떼', '모카', '콜드브루'].some(coffee => menu.includes(coffee))
+                  ).map((menu, index) => (
+                    <div key={index} style={{
+                      background: '#ede9fe',
+                      color: '#5b21b6',
+                      padding: '0.4rem 0.8rem',
+                      borderRadius: '20px',
+                      fontSize: '13px',
+                      fontWeight: '500',
+                      border: '1px solid #c4b5fd',
+                      fontFamily: "'Noto Sans KR', sans-serif"
+                    }}>
+                      {menu}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* 차류 */}
+              <div>
+                <div style={{
+                  fontSize: '14px',
+                  fontWeight: '600',
+                  color: '#059669',
+                  marginBottom: '0.5rem',
+                  textAlign: 'left'
+                }}>
+                  차류
+                </div>
+                <div style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '0.5rem'
+                }}>
+                  {removeDuplicates(enhancedText).split(' ').filter(menu =>
+                    ['홍차', '녹차', '페퍼민트', '차이', '우롱차', '허브티', '레몬티'].some(tea => menu.includes(tea))
+                  ).map((menu, index) => (
+                    <div key={index} style={{
+                      background: '#d1fae5',
+                      color: '#047857',
+                      padding: '0.4rem 0.8rem',
+                      borderRadius: '20px',
+                      fontSize: '13px',
+                      fontWeight: '500',
+                      border: '1px solid #a7f3d0',
+                      fontFamily: "'Noto Sans KR', sans-serif"
+                    }}>
+                      {menu}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* 기타 음료 */}
+              <div>
+                <div style={{
+                  fontSize: '14px',
+                  fontWeight: '600',
+                  color: '#dc2626',
+                  marginBottom: '0.5rem',
+                  textAlign: 'left'
+                }}>
+                  기타 음료
+                </div>
+                <div style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '0.5rem'
+                }}>
+                  {removeDuplicates(enhancedText).split(' ').filter(menu =>
+                    !['에스프레소', '아메리카노', '마끼아또', '코르타도', '카푸치노', '라떼', '모카', '콜드브루', '홍차', '녹차', '페퍼민트', '차이', '우롱차', '허브티', '레몬티'].some(other => menu.includes(other))
+                  ).map((menu, index) => (
+                    <div key={index} style={{
+                      background: '#fee2e2',
+                      color: '#991b1b',
+                      padding: '0.4rem 0.8rem',
+                      borderRadius: '20px',
+                      fontSize: '13px',
+                      fontWeight: '500',
+                      border: '1px solid #fecaca',
+                      fontFamily: "'Noto Sans KR', sans-serif"
+                    }}>
+                      {menu}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div style={{
+              textAlign: 'center',
+              color: '#6b7280',
+              fontStyle: 'italic'
+            }}>
+              번역된 메뉴명이 없습니다.
+            </div>
+          )}
         </div>
       </Section>
     );
@@ -186,39 +640,100 @@ const AnalysisResult = ({ analysis, onNotification }) => {
 
   return (
     <AnalysisContainer>
-      <h2 style={{ marginBottom: '24px', color: '#1f2937' }}>
-        📊 분석 결과
-      </h2>
-      
-      {analysis.extractedText && renderExtractedText(analysis.extractedText)}
-      
+      {/* AI 분석 결과 팝업 알림 */}
+      {showAIPopup && (
+        <div style={{
+          position: 'fixed',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          background: '#f8fafc',
+          border: '3px solid #8B4513',
+          borderRadius: '12px',
+          padding: '2.5rem',
+          boxShadow: '0 20px 40px -10px rgba(139, 69, 19, 0.3)',
+          zIndex: 1000,
+          maxWidth: '650px',
+          textAlign: 'center'
+        }}>
+          <div style={{
+            fontSize: '2rem',
+            fontWeight: '700',
+            color: '#8B4513',
+            marginBottom: '1.5rem'
+          }}>
+            AI 분석 결과 안내
+          </div>
+
+          <div style={{
+            fontSize: '1rem',
+            color: '#5D4037',
+            lineHeight: '1.7',
+            marginBottom: '2rem',
+            fontFamily: "'Noto Sans KR', sans-serif",
+            fontWeight: '500'
+          }}>
+            이 분석 결과는 AI가 자동으로 생성한 것입니다.<br />
+            <strong>100% 정확하지 않을 수 있으니</strong> 너무 믿지 마시고,<br />
+            <strong>사용자가 직접 판단하여 신중하게 활용</strong>하시기 바랍니다.
+          </div>
+
+          <button
+            onClick={() => setShowAIPopup(false)}
+            style={{
+              background: '#8B4513',
+              color: 'white',
+              border: 'none',
+              borderRadius: '8px',
+              padding: '1rem 2rem',
+              fontSize: '1.1rem',
+              fontWeight: '600',
+              cursor: 'pointer',
+              transition: 'background-color 0.2s'
+            }}
+            onMouseEnter={(e) => e.target.style.background = '#A0522D'}
+            onMouseLeave={(e) => e.target.style.background = '#8B4513'}
+          >
+            닫기
+          </button>
+        </div>
+      )}
+
+      <AnalysisHeader>
+        <AnalysisSubtitle>
+          AI가 분석한 메뉴판의 알레르기 성분 정보를 확인하세요
+        </AnalysisSubtitle>
+      </AnalysisHeader>
+
+      {/* OCR 텍스트와 번역된 메뉴명을 하나의 연속된 섹션으로 표시 */}
+      {analysis.extractedText && (
+        <div key="extracted-and-translated">
+          {renderExtractedAndTranslated(analysis.extractedText, analysis.enhancedText)}
+        </div>
+      )}
+
       {analysis.menuAnalysis.map((item, index) => {
         switch (item.type) {
           case 'ingredients':
             return <div key={`${item.type}-${index}`}>{renderIngredients(item.data.ingredients, item.data.riskAnalysis)}</div>;
-          case 'risk_assessment':
-            return <div key={`${item.type}-${index}`}>{renderRiskAssessment(item.data)}</div>;
           case 'recommendations':
             return <div key={`${item.type}-${index}`}>{renderRecommendations(item.data)}</div>;
           default:
             return null;
         }
       })}
-      
-      <div style={{ 
-        marginTop: '24px', 
-        padding: '16px', 
-        background: '#f0f9ff', 
-        borderRadius: '8px',
-        border: '1px solid #bae6fd'
-      }}>
-        <strong>분석 시간:</strong> {new Date(analysis.timestamp).toLocaleString()}
-        {analysis.userAllergies && analysis.userAllergies.length > 0 && (
-          <div style={{ marginTop: '8px' }}>
-            <strong>사용자 알레르기:</strong> {analysis.userAllergies.join(', ')}
-          </div>
-        )}
-      </div>
+
+      <InfoCard>
+        <InfoTitle>분석 정보</InfoTitle>
+        <InfoText>
+          <strong>분석 시간:</strong> {new Date(analysis.timestamp).toLocaleString()}
+          {analysis.userAllergies && analysis.userAllergies.length > 0 && (
+            <div style={{ marginTop: '0.5rem' }}>
+              <strong>사용자 알레르기:</strong> {analysis.userAllergies.join(', ')}
+            </div>
+          )}
+        </InfoText>
+      </InfoCard>
     </AnalysisContainer>
   );
 };
