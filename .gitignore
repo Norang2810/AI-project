@@ -60,6 +60,7 @@ coverage/
 tmp/
 temp/
 backend/uploads/
+backend/perf/results/
 
 # Python cache
 __pycache__/
