@@ -6,7 +6,14 @@ const FormData = require('form-data');
 const axios = require('axios');
 const { Op } = require('sequelize');
 // const sharp = require('sharp'); // 임시로 주석 처리
-const { UserAllergy } = require('../models');
+const {
+  UserAllergy,
+  MenuAnalysis,
+  AnalysisJob,
+  AnalysisResult,
+  MenuItem,
+  MenuIngredient,
+} = require('../models');
 const { authenticateToken } = require('../middleware/auth');
 const { geminiEnhanceUrl } = require('../config/runtime');
 const {
@@ -518,9 +525,244 @@ function getRiskLevelInfo(riskLevel) {
 }
 
 // 사용자별 분석 내역 조회 API
+const buildAnalysisDataPayload = (analysisResult) => ({
+  menu_classification: analysisResult?.menuClassification || null,
+  ingredient_analysis: analysisResult?.ingredientAnalysis || null,
+  allergy_risk: analysisResult?.allergyRisk || null,
+  recommendations: analysisResult?.recommendations || null,
+  similar_menus: analysisResult?.similarMenus || null,
+});
+
+const formatLegacyAnalysisHistory = (analysis) => {
+  const analysisData = analysis.analysisResult || {};
+
+  return {
+    id: analysis.id,
+    imageUrl: analysis.imageUrl,
+    originalFilename: analysis.originalFilename,
+    fileSize: analysis.fileSize,
+    extractedText: analysis.extractedText,
+    translatedText: analysis.translatedText,
+    menuName:
+      analysisData.menu_classification?.predicted_menu ||
+      analysis.originalFilename ||
+      '메뉴명 없음',
+    riskLevel: analysisData.allergy_risk?.final_risk_level || 'unknown',
+    allergens: analysisData.ingredient_analysis?.extracted_ingredients || [],
+    createdAt: analysis.createdAt,
+    analysisData,
+    source: 'legacy',
+  };
+};
+
+const formatNormalizedAnalysisHistory = (analysisJob) => {
+  const analysisResult = analysisJob.analysisResult;
+  const analysisData = buildAnalysisDataPayload(analysisResult);
+  const menuItems = Array.isArray(analysisResult?.menuItems)
+    ? analysisResult.menuItems
+    : [];
+  const primaryMenuItem =
+    menuItems.find((item) => item.itemRole === 'primary') || menuItems[0] || null;
+  const extractedIngredients = analysisData.ingredient_analysis?.extracted_ingredients;
+  const ingredientNames =
+    Array.isArray(extractedIngredients) && extractedIngredients.length > 0
+      ? extractedIngredients
+      : Array.isArray(primaryMenuItem?.ingredients)
+        ? primaryMenuItem.ingredients.map((ingredient) => ingredient.ingredientName)
+        : [];
+
+  return {
+    id: analysisJob.id,
+    imageUrl: analysisJob.sourceImageUrl,
+    originalFilename: analysisJob.originalFilename,
+    fileSize: analysisJob.fileSize,
+    extractedText: analysisResult?.extractedText || null,
+    translatedText:
+      analysisResult?.translatedText || analysisResult?.enhancedText || null,
+    menuName:
+      primaryMenuItem?.displayName ||
+      analysisData.menu_classification?.predicted_menu ||
+      analysisJob.originalFilename ||
+      '메뉴명 없음',
+    riskLevel:
+      primaryMenuItem?.riskLevel ||
+      analysisData.allergy_risk?.final_risk_level ||
+      'unknown',
+    allergens: ingredientNames,
+    createdAt: analysisJob.createdAt,
+    analysisData,
+    requestLatencyMs: analysisJob.requestLatencyMs,
+    aiLatencyMs: analysisJob.aiLatencyMs,
+    geminiLatencyMs: analysisJob.geminiLatencyMs,
+    pipelineVersion: analysisJob.pipelineVersion,
+    source: 'normalized',
+  };
+};
+
+const fetchLegacyAnalysisHistory = async ({ userId, limit }) => {
+  const [analyses, totalCount] = await Promise.all([
+    MenuAnalysis.findAll({
+      where: { userId },
+      order: [['createdAt', 'DESC']],
+      limit,
+      attributes: [
+        'id',
+        'imageUrl',
+        'originalFilename',
+        'fileSize',
+        'extractedText',
+        'translatedText',
+        'analysisResult',
+        'createdAt',
+      ],
+    }),
+    MenuAnalysis.count({
+      where: { userId },
+    }),
+  ]);
+
+  return {
+    analyses: analyses.map(formatLegacyAnalysisHistory),
+    totalCount,
+  };
+};
+
+const cleanupImageFiles = (imagePaths) => {
+  imagePaths.forEach((imagePath) => {
+    if (imagePath && fs.existsSync(imagePath)) {
+      try {
+        fs.unlinkSync(imagePath);
+        console.log('Deleted analysis image file:', imagePath);
+      } catch (fileError) {
+        console.warn('Failed to delete analysis image file:', imagePath, fileError.message);
+      }
+    }
+  });
+};
+
+const cleanupLegacyAnalysisRecords = async ({ userId, keepLimit }) => {
+  const recentAnalyses = await MenuAnalysis.findAll({
+    where: { userId },
+    order: [['createdAt', 'DESC']],
+    limit: keepLimit,
+    attributes: ['id'],
+  });
+
+  const recentIds = recentAnalyses.map((analysis) => analysis.id);
+  const oldWhere = { userId };
+  if (recentIds.length > 0) {
+    oldWhere.id = { [Op.notIn]: recentIds };
+  }
+
+  const oldAnalyses = await MenuAnalysis.findAll({
+    where: oldWhere,
+    attributes: ['id', 'imageUrl'],
+  });
+
+  const oldAnalysisIds = oldAnalyses.map((analysis) => analysis.id);
+  if (oldAnalysisIds.length === 0) {
+    return {
+      deletedCount: 0,
+      keptCount: recentIds.length,
+    };
+  }
+
+  cleanupImageFiles(
+    Array.from(new Set(oldAnalyses.map((analysis) => analysis.imageUrl).filter(Boolean)))
+  );
+
+  const deletedCount = await MenuAnalysis.destroy({
+    where: {
+      id: {
+        [Op.in]: oldAnalysisIds,
+      },
+    },
+  });
+
+  return {
+    deletedCount,
+    keptCount: recentIds.length,
+  };
+};
+
 router.get('/user-analyses', authenticateToken, async (req, res) => {
   try {
     const userId = req.user.id;
+    const parsedLimit = parseInt(req.query.limit, 10);
+    const normalizedLimit = Number.isFinite(parsedLimit)
+      ? Math.min(Math.max(parsedLimit, 1), 20)
+      : 5;
+
+    const [normalizedTotalCount, normalizedJobs] = await Promise.all([
+      AnalysisJob.count({
+        where: {
+          userId,
+          status: 'completed',
+        },
+      }),
+      AnalysisJob.findAll({
+        where: {
+          userId,
+          status: 'completed',
+        },
+        order: [['createdAt', 'DESC']],
+        limit: normalizedLimit,
+        include: [
+          {
+            model: AnalysisResult,
+            as: 'analysisResult',
+            required: true,
+            include: [
+              {
+                model: MenuItem,
+                as: 'menuItems',
+                required: false,
+                include: [
+                  {
+                    model: MenuIngredient,
+                    as: 'ingredients',
+                    required: false,
+                    attributes: [
+                      'ingredientName',
+                      'matchedAllergenName',
+                      'isUserAllergen',
+                      'riskLevel',
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      }),
+    ]);
+
+    if (normalizedTotalCount > 0 || normalizedJobs.length > 0) {
+      return res.json({
+        success: true,
+        data: {
+          analyses: normalizedJobs.map(formatNormalizedAnalysisHistory),
+          totalCount: normalizedTotalCount,
+          currentLimit: normalizedLimit,
+          dataSource: 'normalized',
+        },
+      });
+    }
+
+    const legacyHistory = await fetchLegacyAnalysisHistory({
+      userId,
+      limit: normalizedLimit,
+    });
+
+    return res.json({
+      success: true,
+      data: {
+        analyses: legacyHistory.analyses,
+        totalCount: legacyHistory.totalCount,
+        currentLimit: normalizedLimit,
+        dataSource: 'legacy',
+      },
+    });
     const limit = parseInt(req.query.limit) || 5; // 기본값 5개
     
     // 최신 분석 내역 조회 (최신 5개)
@@ -586,6 +828,105 @@ router.get('/user-analyses', authenticateToken, async (req, res) => {
 router.delete('/cleanup-old-analyses', authenticateToken, async (req, res) => {
   try {
     const userId = req.user.id;
+    const parsedKeepLimit = parseInt(req.query.keep, 10);
+    const requestedKeepLimit = Number.isFinite(parsedKeepLimit)
+      ? Math.max(parsedKeepLimit, 0)
+      : 5;
+
+    const normalizedTotalCount = await AnalysisJob.count({
+      where: {
+        userId,
+        status: 'completed',
+      },
+    });
+
+    if (normalizedTotalCount > 0) {
+      const recentJobs = await AnalysisJob.findAll({
+        where: {
+          userId,
+          status: 'completed',
+        },
+        order: [['createdAt', 'DESC']],
+        limit: requestedKeepLimit,
+        attributes: ['id'],
+      });
+
+      const recentJobIds = recentJobs.map((job) => job.id);
+      const oldJobWhere = {
+        userId,
+        status: 'completed',
+      };
+
+      if (recentJobIds.length > 0) {
+        oldJobWhere.id = { [Op.notIn]: recentJobIds };
+      }
+
+      const oldJobs = await AnalysisJob.findAll({
+        where: oldJobWhere,
+        attributes: ['id', 'sourceImageUrl'],
+      });
+
+      const oldJobIds = oldJobs.map((job) => job.id);
+      if (oldJobIds.length === 0) {
+        return res.json({
+          success: true,
+          message: '정리할 오래된 분석 내역이 없습니다.',
+          data: {
+            deletedCount: 0,
+            keptCount: recentJobIds.length,
+            dataSource: 'normalized',
+          },
+        });
+      }
+
+      const oldImagePaths = Array.from(
+        new Set(oldJobs.map((job) => job.sourceImageUrl).filter(Boolean))
+      );
+
+      cleanupImageFiles(oldImagePaths);
+
+      await MenuAnalysis.destroy({
+        where: {
+          userId,
+          imageUrl: {
+            [Op.in]: oldImagePaths,
+          },
+        },
+      });
+
+      const deletedCount = await AnalysisJob.destroy({
+        where: {
+          id: {
+            [Op.in]: oldJobIds,
+          },
+        },
+      });
+
+      return res.json({
+        success: true,
+        message: `${deletedCount}개의 오래된 분석 내역이 정리되었습니다.`,
+        data: {
+          deletedCount,
+          keptCount: recentJobIds.length,
+          dataSource: 'normalized',
+        },
+      });
+    }
+
+    const legacyCleanup = await cleanupLegacyAnalysisRecords({
+      userId,
+      keepLimit: requestedKeepLimit,
+    });
+
+    return res.json({
+      success: true,
+      message: `${legacyCleanup.deletedCount}개의 오래된 분석 내역이 정리되었습니다.`,
+      data: {
+        deletedCount: legacyCleanup.deletedCount,
+        keptCount: legacyCleanup.keptCount,
+        dataSource: 'legacy',
+      },
+    });
     const keepLimit = parseInt(req.query.keep) || 5; // 유지할 개수
     
     // 최신 분석 내역 ID들 조회
