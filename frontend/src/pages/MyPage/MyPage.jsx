@@ -47,6 +47,27 @@ const SuccessMessage = styled.div`
   margin-bottom: 1rem;
 `;
 
+const getBackendOrigin = () => {
+  const explicitOrigin =
+    process.env.REACT_APP_BACKEND_ORIGIN ||
+    process.env.REACT_APP_BACKEND_URL;
+
+  if (explicitOrigin) {
+    return explicitOrigin.replace(/\/$/, '');
+  }
+
+  const apiUrl = process.env.REACT_APP_API_URL || '';
+  if (apiUrl.startsWith('http')) {
+    try {
+      return new URL(apiUrl).origin;
+    } catch (error) {
+      console.warn('Failed to parse REACT_APP_API_URL:', error);
+    }
+  }
+
+  return 'http://localhost:3001';
+};
+
 const MyPage = () => {
   const [activeSection, setActiveSection] = useState('myInfo');
   const [userInfo, setUserInfo] = useState(null);
@@ -103,7 +124,7 @@ const MyPage = () => {
       if (response.ok) {
         const data = await response.json();
         // 이미지 URL을 백엔드 서버 경로로 변환
-        const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:3001';
+        const backendUrl = getBackendOrigin();
         const processedAnalyses = data.data.analyses.map(analysis => {
           let imageUrl = null;
           if (analysis.imageUrl) {

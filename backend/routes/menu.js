@@ -8,6 +8,7 @@ const { Op } = require('sequelize');
 // const sharp = require('sharp'); // 임시로 주석 처리
 const { MenuAnalysis, UserAllergy } = require('../models');
 const { authenticateToken } = require('../middleware/auth');
+const { geminiEnhanceUrl } = require('../config/runtime');
 
 const router = express.Router();
 
@@ -246,7 +247,7 @@ OCR에서 추출된 텍스트를 분석하여 카페 음료 메뉴명만을 정�
 ["아메리카노", "카페라떼", "카푸치노", "에스프레소", "콜드브루", "오렌지주스", "핫초콜릿", "말차라떼"]
       `;
       
-      const geminiResponse = await axios.post('http://host.docker.internal:3000/api/gemini/enhance', {
+      const geminiResponse = await axios.post(geminiEnhanceUrl, {
         prompt: geminiPrompt,
         text: aiResult.extracted_text,
         maxTokens: 300
